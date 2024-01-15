@@ -15,21 +15,16 @@
 
 <!-- ACS customizations for HTML runs -->
 
+<!DOCTYPE xsl:stylesheet [
+    <!ENTITY % entities SYSTEM "./core/entities.ent">
+    %entities;
+]>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
-
-<!-- Assumes current file is in mathbook/user, so it must be copied there -->
-<xsl:import href="./core/pretext-html.xsl" />
-<!-- Assumes next file can be found in mathbook/user, so it must be copied there -->
-<xsl:import href="acs-common.xsl" />
-
-<!-- Specify options for WeBWorK exercises -->
-<xsl:param name="webwork.divisional.static" select="'no'" />
-
-<!-- added stuff for doenet interactives--> 
-    <xsl:template match="interactive[@doenet]" mode="iframe-interactive">
+    <xsl:import href="./core/pretext-html.xsl"/>
+    <xsl:template match="interactive[@doenet]" >
         <div class="doenetml-applet">
             <script type="text/doenetml">
-                <xsl:value-of disable-output-escaping="yes" select="text()"/>
+                <xsl:value-of select="text()"/>
             </script>
         </div>
         <script onload="onLoad()" type="module" src="https://dev.doenet.org/cdn/doenet-standalone.js"> </script>
@@ -38,13 +33,5 @@
             <xsl:text>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</xsl:text>
         </script>
     </xsl:template>
-<!-- added stuff for doenet interactives--> 
 
 </xsl:stylesheet>
-
-<!--
-<!DOCTYPE xsl:stylesheet [
-    <!ENTITY % entities SYSTEM "./core/entities.ent">
-    %entities;
-]> -->
-

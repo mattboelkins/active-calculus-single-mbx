@@ -50,7 +50,10 @@
       Questions like this one are central to our study of differential calculus.
     </p>
 
-    <xi:include href="./previews/PA-1-1.xml" />
+    <interactive xml:id="interactive-doenet-interactive-test" doenet="yes">
+      <xi:include href="./previews/PA-1-1-doenet.xml" parse="text"/>
+    </interactive>
+
   </introduction>
 
   <subsection permid="iwq">

@@ -11,7 +11,8 @@
       <source>source/main.ptx</source>
       <publication>publication/publication.ptx</publication>
       <output-dir>output/html</output-dir>
-      <xsl>xsl/acs-html.xsl</xsl>
+<!--       <xsl>xsl/acs-html.xsl</xsl> -->
+     <xsl>xsl/acs-doenet.xsl</xsl> 
     </target>
     <target name="html-hosted">
       <format>html</format>
@@ -85,8 +86,8 @@
       <stringparam key="debug.skip-knowls" value="yes"/>
       <!-- edit this to change the section/chapter/etc. to include
            in your subset build. Use the xml:id, not the file name! -->
-      <xmlid-root>C-8</xmlid-root>
-      <xsl>xsl/acs-html.xsl</xsl>
+      <xmlid-root>C-1</xmlid-root>
+      <xsl>xsl/acs-doenet.xsl</xsl>
     </target>
   </targets>
   <executables>
