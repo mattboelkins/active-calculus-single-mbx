@@ -12,16 +12,16 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<section name = "preview-activity-1-1-1"><title>Preview Activity 1.1.1</title>
+<section name = "preview-activity-1-1-1-d"><title>Preview Activity 1.1.1</title>
 <statement>
-    <p permid="hOW">
+    <p>
       Suppose that the height <m>s</m> of a ball at time <m>t</m>
       (in seconds)
       is given in feet by the formula <m>s(t) = 64 - 16(t-1)^2</m>.
 
-      <ol marker="a." permid="QQL">
-        <li permid="wXU">
-          <p permid="ptv">
+      <ol marker="a.">
+        <li>
+          <p>
             Construct a graph of
             <m>y = s(t)</m> on the time interval <m>0 \le t \le 3</m>.
             Label at least six distinct points on the graph,
@@ -34,29 +34,30 @@
           <graph name="g"  xmin="-1" xmax="3.5" ymin="-5" ymax="70" showNavigation="false">
             <xlabel><m>t</m></xlabel>
             <point name = "A"> (0,0)<constraints>
-      <attractToGrid dx="1/2" dy="2"/>
-    </constraints></point>
+              <attractToGrid dx="1/2" dy="2"/>
+              </constraints></point>
             <point name = "B"> (0.5,0)<constraints>
-      <attractToGrid  dx="1/2" dy="2"/>
-    </constraints></point>
+              <attractToGrid  dx="1/2" dy="2"/>
+              </constraints></point>
             <point name = "C"> (1,0)<constraints>
-      <attractToGrid  dx="1/2" dy="2"/>
-    </constraints></point>
+              <attractToGrid  dx="1/2" dy="2"/>
+              </constraints></point>
             <point name = "D"> (1.5,0)<constraints>
-      <attractToGrid  dx="1/2" dy="2"/>
-    </constraints></point>
+              <attractToGrid  dx="1/2" dy="2"/>
+              </constraints></point>
             <point name = "E"> (2,0)<constraints>
-      <attractToGrid dx="0.5" dy="2"/>
-    </constraints></point>
+              <attractToGrid dx="0.5" dy="2"/>
+              </constraints></point>
             <point name = "F"> (3,0)<constraints>
-      <attractToGrid dx="0.5" dy="2"/>
-    </constraints></point>
+              <attractToGrid dx="0.5" dy="2"/>
+              </constraints></point>
 
               <curve name="s" through="$A $B $C $D $E $F"/>
           </graph>
-<setup>
-  <function name="f">64-16(x-1)^2</function>
-</setup>
+
+          <setup>
+            <function name="f">64-16(x-1)^2</function>
+          </setup>
 
           <ul>
             <li>Starting point: <mathInput name="start"/></li>
@@ -65,12 +66,12 @@
           </ul>
           <answer> <award><when> $$f($A.x) = $A.y and $$f($B.x) = $B.y  and $$f($C.x)=$C.y and $$f($D.x)=$D.y and $$f($E.x)=$E.y and $$f($F.x)=$F.y and $start=(0,48) and $highest=(1,64) and $lands = (3,0)</when></award></answer>
           <hint hide="($start.nSubmissions < 2) and ($highest.nSubmissions < 2) and ($lands.nSubmissions < 2)">Your answers should be ordered pairs of the form <m>(x,y)</m>.</hint>
-
            <!-- End of Interactive Answers -->
         </li>
 
-        <li permid="dfd">
-          <p permid="VAE">
+
+        <li>
+          <p>
             Describe the behavior of the ball on the time interval
             <m>0 \lt t \lt 1</m> and on the time interval <m>1 \lt t \lt 3</m>.
            <!-- Interactive Answers -->
@@ -78,43 +79,43 @@
               <text name="blank"/>
             </setup>
           </p>
+
           <ul>
            <li> <m> 0\lt t \lt 1</m>: <answer name="int1desc"><choiceInput inline>
-        <choice credit="1">rising</choice>
-        <choice>falling</choice>
-        <choice>staying still</choice>
-           </choiceInput></answer></li>
+              <choice credit="1">rising</choice>
+              <choice>falling</choice>
+              <choice>staying still</choice>
+              </choiceInput></answer></li>
+
             <li><m> 1\lt t\lt 3</m>:<answer name="int2desc"><choiceInput inline>
-        <choice credit="0">rising</choice>
-        <choice credit="1">falling</choice>
-        <choice>staying still</choice>
-           </choiceInput></answer></li>
+              <choice credit="0">rising</choice>
+              <choice credit="1">falling</choice>
+              <choice>staying still</choice>
+              </choiceInput></answer></li>
           </ul>
           <p>
+            What occurs at the instant <m>t = 1</m>?<textInput name="max"/>
+          </p>
+
 
            <!-- End of Interactive Answers -->
-            What occurs at the instant <m>t = 1</m>?<textInput name="max"/>
-        </p>
          
            <!-- Interactive Answers -->
-<conditionalContent condition="$int1desc.creditAchieved=1 and $int2desc.creditAchieved=1 and $max!=$blank">
-
-    <aside>
-  <title>Check your answer</title>
-          <p>
-           The ball is rising when <m>0\lt t\lt 1</m> and falling when <m>1\lt t\lt 3</m>. The ball reaches its maximum height when <m>t=1</m>. At the exact instant when 
-          </p></aside>
+          <conditionalContent condition="$int1desc.creditAchieved=1 and $int2desc.creditAchieved=1 and $max!=$blank">
+            <aside>
+            <title>Check your answer</title>
+              <p>
+              The ball is rising when <m>0\lt t\lt 1</m> and falling when <m>1\lt t\lt 3</m>. The ball reaches its maximum height when <m>t=1</m>. 
+              </p>
+              </aside>
           </conditionalContent>
           
            <!-- End of Interactive Answers -->
         </li>
           
-        
 
-        <li permid="Jmm">
-          <p permid="BHN">
-            Consider the expression
-            <me permid="NWf">
+        <li>
+            <me>
               AV_{[0.5,1]} = \frac{s(1) - s(0.5)}{1-0.5}.
             </me>
             Compute the value of <m>AV_{[0.5,1]}</m>.
@@ -133,11 +134,23 @@
           This value is the slope of the line containing the points <m>(1,s(1))</m> and <m>(0.5,s(0.5))</m>.
           </p></aside>
           </conditionalContent>
+
              <!-- End of Interactive Answers --></p>
           <p>
             What does this value tell us about the motion of the ball?</p>
              <!-- Interactive Answers -->
           <textInput name="ballMotion" expanded/>
+
+            <conditionalContent condition="$ballMotion!=$blank"> <!--  and $units.creditAchieved=1 -->
+
+    <aside>
+  <title>Check your answer</title>
+          <p>
+            One thing you might notice is that the ball has an average velocity of 8 feet per second on the time interval <m>[0.5,1]</m>.</p>
+                </aside>
+          </conditionalContent>
+          
+
            <p> In particular, what are the units on <m>AV_{[0.5,1]}</m>?<answer name="units"><choiceInput inline>
         <choice>feet</choice>
         <choice>meters</choice>
@@ -151,15 +164,7 @@
            </choiceInput></answer>
              
           </p>
-            <conditionalContent condition="$ballMotion!=$blank and $units.creditAchieved=1">
 
-    <aside>
-  <title>Check your answer</title>
-          <p>
-            One thing you might notice is that the ball has an average velocity of 8 feet per second.</p>
-                </aside>
-          </conditionalContent>
-          
            <!-- End of Interactive Answers -->
         </li>
       </ol>
