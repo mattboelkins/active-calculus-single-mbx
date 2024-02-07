@@ -299,7 +299,15 @@
     </p>
   </subsection>
 
+<!--
+     <interactive xml:id="doenet-interactive-exercise-TBD-2" doenet="yes">
+      <xi:include href="./exercises/doenet/ez-1-1-doenet-1.xml" parse="text"/>
+    </interactive>  
+-->    
+
+<!--
  <xi:include href="./exercises/ez-1-1-d.xml" /> 
+ --> 
 
 </section>
 
