@@ -50,7 +50,7 @@
       Questions like this one are central to our study of differential calculus.
     </p>
 
-    <interactive xml:id="interactive-doenet-interactive-test" doenet="yes">
+    <interactive xml:id="doenet-interactive-PA-1-1-d" doenet="yes">
       <xi:include href="./previews/PA-1-1-doenet.xml" parse="text"/>
     </interactive>
 
@@ -299,6 +299,7 @@
     </p>
   </subsection>
 
-  <xi:include href="./exercises/ez-1-1.xml" />
+ <xi:include href="./exercises/ez-1-1-d.xml" /> 
+
 </section>
 
