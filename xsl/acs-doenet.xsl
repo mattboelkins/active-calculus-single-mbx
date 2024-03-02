@@ -27,11 +27,18 @@
                 <xsl:value-of select="text()"/>
             </script>
         </div>
-        <script onload="onLoad()" type="module" src="https://dev.doenet.org/cdn/doenet-standalone.js"> </script>
         <link rel="stylesheet" href="https://dev.doenet.org/cdn/style.css"> </link>
         <script>
-            <xsl:text>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</xsl:text>
+            <xsl:text>
+                if (!window.onDoenetLoad) {
+                    window.onDoenetLoad = () => {
+                        document.querySelectorAll(".doenetml-applet").forEach((elm) => {
+                                window.renderDoenetToContainer(elm);
+                    });
+                }
+                window.renderDoenetToContainer || document.write('&lt;script onload="onDoenetLoad()" type="module" src="https://dev.doenet.org/cdn/doenet-standalone.js">&lt;\/script>');
+            }
+        </xsl:text>
         </script>
     </xsl:template>
-
 </xsl:stylesheet>
