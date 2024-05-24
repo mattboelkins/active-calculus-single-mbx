@@ -78,7 +78,7 @@
       We first use the graph of a function to explore points where interesting behavior occurs.
     </p>
 
-    <xi:include href="./previews/PA-1-2.xml" />
+    <xi:include href="./previews/PA-1-2-D.xml" />
   </introduction>
 
   <subsection permid="BTI">
@@ -612,6 +612,6 @@
     </p>
   </subsection>
 
-  <xi:include href="./exercises/ez-1-2.xml" />
+  <xi:include href="./exercises/ez-1-2-D.xml" />
 </section>
 

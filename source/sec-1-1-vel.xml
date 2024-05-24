@@ -50,9 +50,15 @@
       Questions like this one are central to our study of differential calculus.
     </p>
 
-    <interactive xml:id="doenet-interactive-PA-1-1-d" doenet="yes">
-      <xi:include href="./previews/PA-1-1-doenet.xml" parse="text"/>
+<!--
+    <interactive xml:id="doenet-interactive-PA-1-1-d" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./previews/PA-1-1-doenet.xml" parse="text"/>
+      </slate>  
     </interactive>
+-->    
+
+    <xi:include href="./previews/PA-1-1-D.xml" />
 
   </introduction>
 
@@ -299,15 +305,7 @@
     </p>
   </subsection>
 
-<!--
-     <interactive xml:id="doenet-interactive-exercise-TBD-2" doenet="yes">
-      <xi:include href="./exercises/doenet/ez-1-1-doenet-1.xml" parse="text"/>
-    </interactive>  
--->    
-
-<!--
- <xi:include href="./exercises/ez-1-1-d.xml" /> 
- --> 
+ <xi:include href="./exercises/ez-1-1-D.xml" /> 
 
 </section>
 

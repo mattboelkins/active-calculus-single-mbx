@@ -100,7 +100,7 @@
       It is essential that you understand how the average rate of change of <m>f</m> on an interval is connected to its graph.
     </p>
 
-    <xi:include href="./previews/PA-1-3.xml" />
+    <xi:include href="./previews/PA-1-3-D.xml" />
   </introduction>
 
   <subsection permid="dFt">
@@ -400,6 +400,6 @@
     </p>
   </subsection>
 
-  <xi:include href="./exercises/ez-1-3.xml" />
+  <xi:include href="./exercises/ez-1-3-D.xml" />
 </section>
 

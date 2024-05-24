@@ -1,0 +1,146 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- 
+<section name = "preview-activity-1-1-1-d">
+  <title>Preview Activity 1.1.1</title> 
+<statement>
+-->  
+  <p>
+    Suppose that <m>f</m> is the function given by the graph below and that <m>a</m> and <m>a+h</m> are the input values as labeled on the <m>x</m>-axis.
+    Use the graph below <!--<xref ref="F-1-3-PA1">Figure</xref>-->
+    to answer the following questions.
+  </p>
+<setup>
+  <function name = "f"> 0.1*x*(x+2)*(x-3) + 2
+  </function>
+  <boolean name="showLabel1">True</boolean>
+</setup>
+  <!--interactive answers-->
+  <!--Note that the interactivity is built into the graph/figure for the problem-->
+  <graph name = "g" showNavigation="false" xmin="-1" xmax="5" ymin="-2" ymax="6" displayXAxis="false" displayYAxis="false" showBorder="false">
+    $f
+    <point styleNumber="6" coords="(1,0)"  name="fa" showCoordsWhenDragging="false" draggable="$showLabel1" labelPosition="lowerLeft"> <constraints><constrainToGrid dx="0.2" dy="0.2"/><attractTo><point>(1,$$f(1))</point></attractTo></constraints>
+    <label name="fa1" hide="$showLabel1"> (a,f(a)) </label></point>
+    <lineSegment endpoints="(1,0.12) (1,-0.12)" styleNumber="5" draggable="false" endpointsDraggable="false"/>
+    <text anchor="(1,-0.5)" draggable="false">
+    a
+  </text>
+    <point styleNumber="6" coords="(3.5,0)"  name="faph" showCoordsWhenDragging="false" draggable="$showLabel1" labelPosition="lowerRight"> <constraints><constrainToGrid dx="0.25" dy="0.148"/><attractTo><point>(3.5,$$f(3.5))</point></attractTo></constraints>
+    <label name="fa2" hide="$showLabel1"> (a+h,f(a+h)) </label>
+    </point>
+    <lineSegment endpoints="(3.5,0.12) (3.5,-0.12)" styleNumber="5" draggable="false" endpointsDraggable="false"/>
+    <text anchor="(3.5,-0.5)" draggable="false">
+    a+h
+  </text>
+    <line name="xAxis" draggable="false" styleNumber="5">y = 0</line>
+    <lineSegment name="yAxis" draggable="false" styleNumber="5" endpoints="(0,6) (0,-1)"/>
+<!--      <text anchor="(2,-1)"> Plot of y = f(x).</text> -->
+<group name="Triangle" hide>
+      <point name="P1" showCoordsWhenDragging= "false"> (-0.5,0) 
+      <constraints name="c1">
+        <attractTo threshold="0.25"> $fa $faph <point>(3.5,$$f(1)) </point> </attractTo>
+      </constraints>
+    </point>
+    <point name="P2" showCoordsWhenDragging= "false"> (0,0.5) 
+      <constraints name="c2">
+        <attractTo threshold="0.25">  $fa $faph <point>(3.5,$$f(1))</point> </attractTo>
+      </constraints>
+    </point>
+    <point name="P3" showCoordsWhenDragging= "false"> (0.5,0) 
+      <constraints name="c3"> 
+        <attractTo threshold="0.25">  $fa $faph <point>(3.5,$$f(1))</point> </attractTo>
+      </constraints>
+    </point>
+    <triangle name = "T1" vertices="$P1 $P2 $P3" styleNumber="3"/>
+</group>
+  </graph>
+  <!--End of interactive answers-->
+    
+   
+  <p permid="Zfe">
+    <ol marker="a." permid="PLs">
+      <li permid="vSB">
+        <p permid="Uvl">
+          Drag the points on the graph so that you have located
+          <m>(a,f(a))</m> and <m>(a+h, f(a+h))</m> on the graph.
+        </p>
+        <!--Answer block-->
+        <answer name="doneDragging" matchPartial><award><when> <boolean>$fa.coords= (1,$$f(1))</boolean> and <boolean>$faph.coords= (3.5 ,$$f(3.5))</boolean> </when></award></answer>
+
+        <updateValue triggerWhen="$doneDragging.creditAchieved=1" 
+          target="showLabel1.value" newValue="False" />
+
+        
+        <!--End Answer block-->
+      </li>
+      
+
+      <li permid="bZK">
+        <p permid="ACu">
+          Construct a right triangle whose hypotenuse is the line segment from
+          <m>(a,f(a))</m> to <m>(a+h,f(a+h))</m>.
+          
+        </p>
+
+  <!--Interactive Answers-->   
+        <setup>
+          <point name="V1">(1,$$f(1))</point>
+          <point name="V2">(3.5,$$f(3.5))</point>
+          <point name="V3">(3.5,$$f(1))</point>
+        </setup>
+  <p>
+     <updateValue target="Triangle.hide" newValue="false" type="boolean" disabled="$Triangle.hide=false">
+
+    <label>Add Triangle</label>
+  </updateValue> <nbsp/><nbsp/>
+<answer name="triangle" matchPartial>
+  <award unorderedCompare><when> <mathList>$T1.vertices</mathList>=<mathList>$V1 $V2 $V3</mathList></when> 
+  </award> 
+</answer></p>
+    <p>What are the lengths of the respective legs of this triangle (in either order)?</p>
+        <p>
+<mathinput name="leg1"/> and <mathinput name="leg2"/>.
+<answer name="legs" matchPartial>
+  <award>
+    <when>($leg1, $leg2) = <math unordered>(h,f(a+h)-f(a))</math></when>
+  </award>
+</answer>
+</p>
+ 
+<!--End of interactive answers-->
+      </li>
+
+      <li>
+        <p>
+          What is the slope of the line that connects the points
+          <m>(a,f(a))</m> and <m>(a+h, f(a+h))</m>?
+        </p>
+      <!--Interactive Answers-->
+      <answer name="slope"> <math>(f(a+h)-f(a))/h</math></answer>
+      <!-- End of interactive answers-->
+
+      </li>
+      <li permid="ooc">
+        <p permid="MQM">
+          Write a meaningful sentence that explains how the average rate of change of the function on a given interval and the slope of a related line are connected.
+        </p>
+        <answer name="connections" type="text" handGraded expanded forceFullCheckworkButton/>
+      </li>
+    </ol>
+  </p>
+
+<!--     
+  </statement></section>
+-->  
