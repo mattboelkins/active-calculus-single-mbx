@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC The Tangent Line Approximation</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Active Calculus">
+<meta property="book:author" content="Matthew Boelkins">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/pretext-webwork/2.18/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="boelkins-ACS" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/ActiveCalculusImage_sm.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Active Calculus</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-1-7-lim-cont-diff.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Active Calculus: Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Understanding the Derivative</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-vel.html" class="internal"><span class="codenumber">1.1</span> <span class="title">How do we measure velocity?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#iwq" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Position and average velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#ODz" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#uKI" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-vel.html#ez-1-1-D" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-2-lim.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The notion of limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#BTI" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#iaR" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#Oia" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-lim.html#ez-1-2" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The derivative of a function at a point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#dFt" class="internal"><span class="codenumber">1.3.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#JMC" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#WsC" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The derivative function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#Lgq" class="internal"><span class="codenumber">1.4.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rnz" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rjI" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-5-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#pcN" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#VjW" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#Brf" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5-units.html#tXk" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The second derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#wlN" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#csW" class="internal"><span class="codenumber">1.6.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#IAf" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#oHo" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#DjS" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Limits, Continuity, and Differentiability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#AAh" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Having a limit at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#gHq" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Being continuous at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#MOz" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Being differentiable at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#sVI" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#bFy" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">1.8</span> <span class="title">The Tangent Line Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#LnH" class="internal"><span class="codenumber">1.8.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ruQ" class="internal"><span class="codenumber">1.8.2</span> <span class="title">The local linearization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#XBZ" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ZJh" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="fgy" data-permid="fgy"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.8</span><span class="space"> </span><span class="title">The Tangent Line Approximation</span>
+</h2>
+<article class="objectives goal-like" id="jQr" data-permid="jQr"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="UHt" data-permid="UHt"><div class="para" id="qpx" data-permid="qpx">What is the formula for the general tangent line approximation to a differentiable function <span class="process-math">\(y = f(x)\)</span> at the point <span class="process-math">\((a,f(a))\text{?}\)</span>
+</div></li>
+<li id="AOC" data-permid="AOC"><div class="para" id="WwG" data-permid="WwG">What is the principle of local linearity and what is the local linearization of a differentiable function <span class="process-math">\(f\)</span> at a point <span class="process-math">\((a,f(a))\text{?}\)</span>
+</div></li>
+<li id="gVL" data-permid="gVL"><div class="para" id="CDP" data-permid="CDP">How does knowing just the tangent line approximation tell us information about the behavior of the original function itself near the point of approximation? How does knowing the second derivative’s value at this point provide us additional knowledge of the original function’s behavior?</div></li>
+</ul></article><section class="introduction" id="PXA" data-permid="PXA"><div class="para" id="HnI" data-permid="HnI">Among all functions, linear functions are simplest. One of the powerful consequences of a function <span class="process-math">\(y = f(x)\)</span> being differentiable at a point <span class="process-math">\((a,f(a))\)</span> is that, up close, the function <span class="process-math">\(y = f(x)\)</span> is locally linear and looks like its tangent line at that point. In certain circumstances, this allows us to approximate the original function <span class="process-math">\(f\)</span> with a simpler function <span class="process-math">\(L\)</span> that is linear: this can be advantageous when we have limited information about <span class="process-math">\(f\)</span> or when <span class="process-math">\(f\)</span> is computationally or algebraically complicated. We will explore all of these situations in what follows.</div> <div class="para" id="nuR" data-permid="nuR">It is essential to recall that when <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{,}\)</span> the value of <span class="process-math">\(f'(a)\)</span> provides the slope of the tangent line to <span class="process-math">\(y = f(x)\)</span> at the point <span class="process-math">\((a,f(a))\text{.}\)</span> If we know both a point on the line and the slope of the line we can find the equation of the tangent line and write the equation in point-slope form<details class="ptx-footnote" aria-live="polite" id="sec-1-8-tan-line-approx-3-2-6"><summary class="ptx-footnote__number" title="Footnote 1.8.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-1-8-tan-line-approx-3-2-6">Recall that a line with slope <span class="process-math">\(m\)</span> that passes through <span class="process-math">\((x_0,y_0)\)</span> has equation <span class="process-math">\(y - y_0 = m(x - x_0)\text{,}\)</span> and this is the <em class="emphasis">point-slope form</em> of the equation.</div></details>.</div> <article class="exploration project-like" id="OkA" data-permid="OkA"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.8.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="VOZ" data-permid="VOZ">Consider the function <span class="process-math">\(y = g(x) = -x^2+3x+2\text{.}\)</span>
+</div> <div class="para logical" id="BWi" data-permid="BWi"><ol class="lower-alpha">
+<li id="Mvn" data-permid="Mvn"><div class="para" id="Rfg" data-permid="Rfg">Use the limit definition of the derivative to compute a formula for <span class="process-math">\(y = g'(x)\text{.}\)</span>
+</div></li>
+<li id="sCw" data-permid="sCw"><div class="para" id="xmp" data-permid="xmp">Determine the slope of the tangent line to <span class="process-math">\(y = g(x)\)</span> at the value <span class="process-math">\(x = 2\text{.}\)</span>
+</div></li>
+<li id="YJF" data-permid="YJF"><div class="para" id="dty" data-permid="dty">Compute <span class="process-math">\(g(2)\text{.}\)</span>
+</div></li>
+<li id="EQO" data-permid="EQO"><div class="para" id="JAH" data-permid="JAH">Find an equation for the tangent line to <span class="process-math">\(y = g(x)\)</span> at the point <span class="process-math">\((2,g(2))\text{.}\)</span> Write your result in point-slope form.</div></li>
+<li id="kXX" data-permid="kXX"><div class="para" id="pHQ" data-permid="pHQ">On the axes provided in <a href="sec-1-8-tan-line-approx.html#idr" class="xref" data-knowl="./knowl/xref/F-1-8-PA1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.1">Figure 1.8.1</a>, sketch an accurate, labeled graph of <span class="process-math">\(y = g(x)\)</span> along with its tangent line at the point <span class="process-math">\((2,g(2))\text{.}\)</span>
+</div></li>
+</ol></div> <figure class="figure figure-like" id="idr" data-permid="idr"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_8_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.1<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(y = g(x)\)</span> and its tangent line to the point <span class="process-math">\((2,g(2))\text{.}\)</span></figcaption></figure></article></section><section class="subsection" id="LnH" data-permid="LnH"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.1</span><span class="space"> </span><span class="title">The tangent line</span>
+</h3>
+<div class="para logical" id="TCa" data-permid="TCa">
+<div class="para">Given a function <span class="process-math">\(f\)</span> that is differentiable at <span class="process-math">\(x = a\text{,}\)</span> we know that we can determine the slope of the tangent line to <span class="process-math">\(y = f(x)\)</span> at <span class="process-math">\((a,f(a))\)</span> by computing <span class="process-math">\(f'(a)\text{.}\)</span> The equation of the resulting tangent line is given in point-slope form by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y - f(a) = f'(a)(x-a) \ \ \text{or} \ \ y = f'(a)(x-a) + f(a)\text{.}
+\end{equation*}
+</div>
+<div class="para">Note well: there is a major difference between <span class="process-math">\(f(a)\)</span> and <span class="process-math">\(f(x)\)</span> in this context. The former is a constant that results from using the given fixed value of <span class="process-math">\(a\text{,}\)</span> while the latter is the general expression for the rule that defines the function. The same is true for <span class="process-math">\(f'(a)\)</span> and <span class="process-math">\(f'(x)\text{:}\)</span> we must carefully distinguish between these expressions. Each time we find the tangent line, we need to evaluate the function and its derivative at a fixed <span class="process-math">\(a\)</span>-value.</div>
+</div>
+<div class="para" id="zJj" data-permid="zJj">In <a href="sec-1-8-tan-line-approx.html#fQs" class="xref" data-knowl="./knowl/xref/F-1-8-TanLine.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.2">Figure 1.8.2</a>, we see the graph of a function <span class="process-math">\(f\)</span> and its tangent line at the point <span class="process-math">\((a,f(a))\text{.}\)</span> Notice how when we zoom in we see the local linearity of <span class="process-math">\(f\)</span> more clearly highlighted. The function and its tangent line are nearly indistinguishable up close. Local linearity can also be seen dynamically in <a class="external" href="https://gvsu.edu/s/6J" target="_blank">this applet</a><details class="ptx-footnote" aria-live="polite" id="sec-1-8-tan-line-approx-4-4-6"><summary class="ptx-footnote__number" title="Footnote 1.8.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec-1-8-tan-line-approx-4-4-6"><code class="code-inline tex2jax_ignore">gvsu.edu/s/6J</code></div></details>.</div>
+<figure class="figure figure-like" id="fQs" data-permid="fQs"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_8_TanLine.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.2<span class="period">.</span></span><span class="space"> </span>A function <span class="process-math">\(y = f(x)\)</span> and its tangent line at the point <span class="process-math">\((a,f(a))\text{:}\)</span> at left, from a distance, and at right, up close.  At right, we label the tangent line function by <span class="process-math">\(y = L(x)\)</span> and observe that for <span class="process-math">\(x\)</span> near <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(f(x) \approx L(x)\text{.}\)</span></figcaption></figure></section><section class="subsection" id="ruQ" data-permid="ruQ"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.2</span><span class="space"> </span><span class="title">The local linearization</span>
+</h3>
+<div class="para logical" id="LXB" data-permid="LXB">
+<div class="para">A slight change in perspective and notation will enable us to be more precise in discussing how the tangent line approximates <span class="process-math">\(f\)</span> near <span class="process-math">\(x = a\text{.}\)</span> By solving for <span class="process-math">\(y\text{,}\)</span> we can write the equation for the tangent line as</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y = f'(a)(x-a) + f(a)
+\end{equation*}
+</div>
+<div class="para">This line is itself a function of <span class="process-math">\(x\text{.}\)</span> Replacing the variable <span class="process-math">\(y\)</span> with the expression <span class="process-math">\(L(x)\text{,}\)</span> we call</div>
+<div class="displaymath process-math">
+\begin{equation*}
+L(x) = f'(a)(x-a) + f(a)
+\end{equation*}
+</div>
+<div class="para">the <em class="emphasis">local linearization of <span class="process-math">\(f\)</span></em> at the point <span class="process-math">\((a,f(a))\text{.}\)</span> In this notation, <span class="process-math">\(L(x)\)</span> is nothing more than a new name for the tangent line. As we saw above, for <span class="process-math">\(x\)</span> close to <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(f(x) \approx L(x)\text{.}\)</span>
+</div>
+</div>
+<article class="example example-like" id="DJi" data-permid="DJi"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="bgz" data-permid="bgz">
+<div class="para">Suppose that a function <span class="process-math">\(y = f(x)\)</span> has its tangent line approximation given by <span class="process-math">\(L(x) = 3 - 2(x-1)\)</span> at the point <span class="process-math">\((1,3)\text{,}\)</span> but we do not know anything else about the function <span class="process-math">\(f\text{.}\)</span> To estimate a value of <span class="process-math">\(f(x)\)</span> for <span class="process-math">\(x\)</span> near 1, such as <span class="process-math">\(f(1.2)\text{,}\)</span> we can use the fact that <span class="process-math">\(f(1.2) \approx L(1.2)\)</span> and hence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(1.2) \approx L(1.2) = 3 - 2(1.2-1) = 3 - 2(0.2) = 2.6\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para logical" id="seK" data-permid="seK">
+<div class="para">We emphasize that <span class="process-math">\(y = L(x)\)</span> is simply a new name for the tangent line function. Using this new notation and our observation that <span class="process-math">\(L(x) \approx f(x)\)</span> for <span class="process-math">\(x\)</span> near <span class="process-math">\(a\text{,}\)</span> it follows that we can write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) \approx f(a) + f'(a)(x-a) \ \text{for}  \  x \ \text{near}  \ a\text{.}
+\end{equation*}
+</div>
+</div>
+<article class="activity project-like" id="cIn" data-permid="cIn"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="EfD" data-permid="EfD">
+<div class="para">Suppose it is known that for a given differentiable function <span class="process-math">\(y = g(x)\text{,}\)</span> its local linearization at the point where <span class="process-math">\(a = -1\)</span> is given by <span class="process-math">\(L(x) = -2 + 3(x+1)\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="ddM" data-permid="ddM"><div class="para" id="UtU" data-permid="UtU">Compute the values of <span class="process-math">\(L(-1)\)</span> and <span class="process-math">\(L'(-1)\text{.}\)</span>
+</div></li>
+<li id="JkV" data-permid="JkV"><div class="para" id="ABd" data-permid="ABd">What must be the values of <span class="process-math">\(g(-1)\)</span> and <span class="process-math">\(g'(-1)\text{?}\)</span> Why?</div></li>
+<li id="pse" data-permid="pse"><div class="para" id="gIm" data-permid="gIm">Do you expect the value of <span class="process-math">\(g(-1.03)\)</span> to be greater than or less than the value of <span class="process-math">\(g(-1)\text{?}\)</span> Why?</div></li>
+<li id="Vzn" data-permid="Vzn"><div class="para" id="MPv" data-permid="MPv">Use the local linearization to estimate the value of <span class="process-math">\(g(-1.03)\text{.}\)</span>
+</div></li>
+<li id="BGw" data-permid="BGw"><div class="para" id="sWE" data-permid="sWE">Suppose that you also know that <span class="process-math">\(g''(-1) = 2\text{.}\)</span> What does this tell you about the graph of <span class="process-math">\(y = g(x)\)</span> at <span class="process-math">\(a = -1\text{?}\)</span>
+</div></li>
+<li id="hNF" data-permid="hNF"><div class="para" id="ZdN" data-permid="ZdN">For <span class="process-math">\(x\)</span> near <span class="process-math">\(-1\text{,}\)</span> sketch the graph of the local linearization <span class="process-math">\(y = L(x)\)</span> as well as a possible graph of <span class="process-math">\(y = g(x)\)</span> on the axes provided in <a href="sec-1-8-tan-line-approx.html#kmM" class="xref" data-knowl="./knowl/xref/F-1-8-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.4">Figure 1.8.4</a>.</div></li>
+</ol>
+</div> <figure class="figure figure-like" id="kmM" data-permid="kmM"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_8_Act1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.4<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(y = L(x)\)</span> and <span class="process-math">\(y = g(x)\text{.}\)</span></figcaption></figure></article><div class="para logical" id="YlT" data-permid="YlT">
+<div class="para">From <a href="sec-1-8-tan-line-approx.html#cIn" class="xref" data-knowl="./knowl/xref/act-1-8-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.8.2">Activity 1.8.2</a>, we see that the local linearization <span class="process-math">\(y = L(x)\)</span> is a linear function that shares two important values with the function <span class="process-math">\(y = f(x)\)</span> that it is derived from. In particular,</div>
+<ul class="disc">
+<li id="NcU" data-permid="NcU"><div class="para" id="p-derived-NcU">because <span class="process-math">\(L(x) = f(a) + f'(a)(x-a)\text{,}\)</span> it follows that <span class="process-math">\(L(a) = f(a)\text{;}\)</span> and</div></li>
+<li id="tkd" data-permid="tkd"><div class="para" id="p-derived-tkd">because <span class="process-math">\(L\)</span> is a linear function, its derivative is its slope.</div></li>
+</ul>
+<div class="para">Hence, <span class="process-math">\(L'(x) = f'(a)\)</span> for every value of <span class="process-math">\(x\text{,}\)</span> and specifically <span class="process-math">\(L'(a) = f'(a)\text{.}\)</span> Therefore, we see that <span class="process-math">\(L\)</span> is a linear function that has both the same value and the same slope as the function <span class="process-math">\(f\)</span> at the point <span class="process-math">\((a,f(a))\text{.}\)</span>
+</div>
+</div>
+<div class="para" id="Etc" data-permid="Etc">Thus, if we know the linear approximation <span class="process-math">\(y = L(x)\)</span> for a function, we know the original function’s value and its slope at the point of tangency. What remains unknown, however, is the shape of the function <span class="process-math">\(f\)</span> at the point of tangency. There are essentially four possibilities, as shown in <a href="sec-1-8-tan-line-approx.html#cVM" class="xref" data-knowl="./knowl/xref/F-1-8-Options.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.5">Figure 1.8.5</a>.</div>
+<figure class="figure figure-like" id="cVM" data-permid="cVM"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_8_Options.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.5<span class="period">.</span></span><span class="space"> </span>Four possible graphs for a nonlinear differentiable function and how it can be situated relative to its tangent line at a point.</figcaption></figure><div class="para logical" id="kAl" data-permid="kAl">
+<div class="para">These possible shapes result from the fact that there are three options for the value of the second derivative: either <span class="process-math">\(f''(a) \lt 0\text{,}\)</span> <span class="process-math">\(f''(a) = 0\text{,}\)</span> or <span class="process-math">\(f''(a) \gt 0\text{.}\)</span>
+</div>
+<ul class="disc">
+<li id="Zrm" data-permid="Zrm"><div class="para" id="p-derived-Zrm">If <span class="process-math">\(f''(a) \gt 0\text{,}\)</span> then we know the graph of <span class="process-math">\(f\)</span> is concave up, and we see the first possibility on the left, where the tangent line lies entirely below the curve.</div></li>
+<li id="Fyv" data-permid="Fyv"><div class="para" id="p-derived-Fyv">If <span class="process-math">\(f''(a) \lt 0\text{,}\)</span> then <span class="process-math">\(f\)</span> is concave down and the tangent line lies above the curve, as shown in the second figure.</div></li>
+<li id="lFE" data-permid="lFE"><div class="para" id="p-derived-lFE">If <span class="process-math">\(f''(a) = 0\)</span> and <span class="process-math">\(f''\)</span> changes sign at <span class="process-math">\(x = a\text{,}\)</span> the concavity of the graph will change, and we will see either the third or fourth figure.<details class="ptx-footnote" aria-live="polite" id="sec-1-8-tan-line-approx-5-10-4-3-4"><summary class="ptx-footnote__number" title="Footnote 1.8.3"><sup> 3 </sup></summary><div class="ptx-footnote__contents" id="sec-1-8-tan-line-approx-5-10-4-3-4">It is possible that <span class="process-math">\(f''(a) = 0\)</span> but <span class="process-math">\(f''\)</span> does not change sign at <span class="process-math">\(x = a\text{,}\)</span> in which case the graph will look like one of the first two options.</div></details>.</div></li>
+<li id="RMN" data-permid="RMN"><div class="para" id="p-derived-RMN">A fifth option (which is not very interesting) can occur if the function <span class="process-math">\(f\)</span> itself is linear, so that <span class="process-math">\(f(x) = L(x)\)</span> for all values of <span class="process-math">\(x\text{.}\)</span>
+</div></li>
+</ul>
+</div>
+<div class="para" id="QHu" data-permid="QHu">The plots in <a href="sec-1-8-tan-line-approx.html#cVM" class="xref" data-knowl="./knowl/xref/F-1-8-Options.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.5">Figure 1.8.5</a> highlight yet another important thing that we can learn from the concavity of the graph near the point of tangency: whether the tangent line lies above or below the curve itself. This is key because it tells us whether or not the tangent line approximation’s values will be too large or too small in comparison to the true value of <span class="process-math">\(f\text{.}\)</span> For instance, in the first situation in the leftmost plot in <a href="sec-1-8-tan-line-approx.html#cVM" class="xref" data-knowl="./knowl/xref/F-1-8-Options.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.5">Figure 1.8.5</a> where <span class="process-math">\(f''(a) &gt; 0\text{,}\)</span> because the tangent line falls below the curve, we know that <span class="process-math">\(L(x) \le f(x)\)</span> for all values of <span class="process-math">\(x\)</span> near <span class="process-math">\(a\text{.}\)</span>
+</div>
+<article class="activity project-like" id="WxC" data-permid="WxC"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="RNJ" data-permid="RNJ">
+<div class="para">This activity concerns a function <span class="process-math">\(f(x)\)</span> about which the following information is known:</div>
+<ul class="disc">
+<li id="FUQ" data-permid="FUQ"><div class="para" id="pGz" data-permid="pGz">
+<span class="process-math">\(f\)</span> is a differentiable function defined at every real number <span class="process-math">\(x\)</span>
+</div></li>
+<li id="mbZ" data-permid="mbZ"><div class="para" id="VNI" data-permid="VNI"><span class="process-math">\(\displaystyle f(2) = -1\)</span></div></li>
+<li id="Sji" data-permid="Sji"><div class="para" id="BUR" data-permid="BUR">
+<span class="process-math">\(y = f'(x)\)</span> has its graph given in <a href="sec-1-8-tan-line-approx.html#ecb" class="xref" data-knowl="./knowl/xref/F-1-8-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.6">Figure 1.8.6</a>
+</div></li>
+</ul>
+</div> <figure class="figure figure-like" id="ecb" data-permid="ecb"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_8_Act2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.8.6<span class="period">.</span></span><span class="space"> </span>At center, a graph of <span class="process-math">\(y = f'(x)\text{;}\)</span> at left, axes for plotting <span class="process-math">\(y = f(x)\text{;}\)</span> at right, axes for plotting <span class="process-math">\(y = f''(x)\text{.}\)</span></figcaption></figure> <div class="para logical" id="xUS" data-permid="xUS">
+<div class="para">Your task is to determine as much information as possible about <span class="process-math">\(f\)</span> (especially near the value <span class="process-math">\(a = 2\)</span>) by responding to the questions below.</div>
+<ol class="lower-alpha">
+<li id="yqr" data-permid="yqr"><div class="para" id="ica" data-permid="ica">Find a formula for the tangent line approximation, <span class="process-math">\(L(x)\text{,}\)</span> to <span class="process-math">\(f\)</span> at the point <span class="process-math">\((2,-1)\text{.}\)</span>
+</div></li>
+<li id="exA" data-permid="exA"><div class="para" id="Ojj" data-permid="Ojj">Use the tangent line approximation to estimate the value of <span class="process-math">\(f(2.07)\text{.}\)</span> Show your work carefully and clearly.</div></li>
+<li id="KEJ" data-permid="KEJ"><div class="para" id="uqs" data-permid="uqs">Sketch a graph of <span class="process-math">\(y = f''(x)\)</span> on the righthand grid in <a href="sec-1-8-tan-line-approx.html#ecb" class="xref" data-knowl="./knowl/xref/F-1-8-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.6">Figure 1.8.6</a>; label it appropriately.</div></li>
+<li id="qLS" data-permid="qLS"><div class="para" id="axB" data-permid="axB">Is the slope of the tangent line to <span class="process-math">\(y = f(x)\)</span> increasing, decreasing, or neither when <span class="process-math">\(x = 2\text{?}\)</span> Explain.</div></li>
+<li id="WTb" data-permid="WTb"><div class="para" id="GEK" data-permid="GEK">Sketch a possible graph of <span class="process-math">\(y = f(x)\)</span> near <span class="process-math">\(x = 2\)</span> on the lefthand grid in <a href="sec-1-8-tan-line-approx.html#ecb" class="xref" data-knowl="./knowl/xref/F-1-8-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.8.6">Figure 1.8.6</a>. Include a sketch of <span class="process-math">\(y=L(x)\)</span> (found in part (a)). Explain how you know the graph of <span class="process-math">\(y = f(x)\)</span> looks like you have drawn it.</div></li>
+<li id="Dak" data-permid="Dak"><div class="para" id="mLT" data-permid="mLT">Does your estimate in (b) over- or under-estimate the true value of <span class="process-math">\(f(2.07)\text{?}\)</span> Why?</div></li>
+</ol>
+</div></article><div class="para logical" id="wOD" data-permid="wOD">
+<div class="para">The idea that a differentiable function looks linear and can be well-approximated by a linear function is an important one that finds wide application in calculus. For example, by approximating a function with its local linearization, it is possible to develop an effective algorithm to estimate the zeroes of a function. Local linearity also helps us to make further sense of certain challenging limits. For instance, we have seen that the limit</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to 0} \frac{\sin(x)}{x}
+\end{equation*}
+</div>
+<div class="para">is indeterminate, because both its numerator and denominator tend to 0. While there is no algebra that we can do to simplify <span class="process-math">\(\frac{\sin(x)}{x}\text{,}\)</span> it is straightforward to show that the linearization of <span class="process-math">\(f(x) = \sin(x)\)</span> at the point <span class="process-math">\((0,0)\)</span> is given by <span class="process-math">\(L(x) = x\text{.}\)</span> Hence, for values of <span class="process-math">\(x\)</span> near 0, <span class="process-math">\(\sin(x) \approx x\text{,}\)</span> and therefore</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\sin(x)}{x} \approx \frac{x}{x} = 1\text{,}
+\end{equation*}
+</div>
+<div class="para">which makes plausible the fact that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to 0} \frac{\sin(x)}{x} = 1\text{.}
+\end{equation*}
+</div>
+</div></section><section class="subsection" id="XBZ" data-permid="XBZ"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.8.3</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="JcV" data-permid="JcV"><ul class="disc">
+<li id="xTW" data-permid="xTW"><div class="para logical" id="iKY" data-permid="iKY">
+<div class="para">The tangent line to a differentiable function <span class="process-math">\(y = f(x)\)</span> at the point <span class="process-math">\((a,f(a))\)</span> is given in point-slope form by the equation</div>
+<div class="displaymath process-math">
+\begin{equation*}
+y - f(a) = f'(a)(x-a)\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li id="ebf" data-permid="ebf"><div class="para" id="OSh" data-permid="OSh">The principle of local linearity tells us that if we zoom in on a point where a function <span class="process-math">\(y = f(x)\)</span> is differentiable, the function will be indistinguishable from its tangent line. That is, a differentiable function looks linear when viewed up close. We rename the tangent line to be the function <span class="process-math">\(y = L(x)\text{,}\)</span> where <span class="process-math">\(L(x) = f(a) + f'(a)(x-a)\text{.}\)</span> Thus, <span class="process-math">\(f(x) \approx L(x)\)</span> for all <span class="process-math">\(x\)</span> near <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="Kio" data-permid="Kio"><div class="para" id="uZq" data-permid="uZq">If we know the tangent line approximation <span class="process-math">\(L(x) = f(a) + f'(a)(x-a)\)</span> to a function <span class="process-math">\(y=f(x)\text{,}\)</span> then because <span class="process-math">\(L(a) = f(a)\)</span> and <span class="process-math">\(L'(a) = f'(a)\text{,}\)</span> we also know the values of both the function and its derivative at the point where <span class="process-math">\(x = a\text{.}\)</span> In other words, the linear approximation tells us the height and slope of the original function. If, in addition, we know the value of <span class="process-math">\(f''(a)\text{,}\)</span> we then know whether the tangent line lies above or below the graph of <span class="process-math">\(y = f(x)\text{,}\)</span> depending on the concavity of <span class="process-math">\(f\text{.}\)</span>
+</div></li>
+</ul></div></section><section class="exercises" id="ZJh" data-permid="ZJh"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.8.4</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="UaZ" data-permid="UaZ"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Approximating <span class="process-math">\(\sqrt{x}\)</span>.</span>
+</h4>
+<div class="para" id="extracted-webwork-35-1-1-1">Use linear approximation to approximate <span class="process-math">\(\sqrt {81.4}\)</span> as follows.</div> <div class="para" id="extracted-webwork-35-1-1-2">Let <span class="process-math">\(f(x) = \sqrt x\text{.}\)</span> The equation of the tangent line to <span class="process-math">\(f(x)\)</span> at <span class="process-math">\(x = 81\)</span> can be written in the form <span class="process-math">\(y = mx+b\text{.}\)</span> Compute <span class="process-math">\(m\)</span> and <span class="process-math">\(b\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-35-1-1-3">
+<span class="process-math">\(m=\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div> <div class="para" id="extracted-webwork-35-1-1-4">
+<span class="process-math">\(b=\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div> <div class="para" id="extracted-webwork-35-1-1-5">Using this find the approximation for <span class="process-math">\(\sqrt {81.4}\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-35-1-1-6">Answer: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div></article><article class="exercise exercise-like" id="Aii" data-permid="Aii"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Local linearization of a graph.</span>
+</h4>
+<div class="para" id="extracted-webwork-36-1-1-1">The figure below shows <span class="process-math">\(f(x)\)</span> and its local linearization at <span class="process-math">\(x=a\text{,}\)</span> <span class="process-math">\(y = 4 x - 4\text{.}\)</span>  (The local linearization is shown in blue.)</div> <div class="image-box" style="width: 33%; margin-left: 33.5%; margin-right: 33.5%;"><img src="generated/webwork/images/webwork-36-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-36-1-1-3">What is the value of <span class="process-math">\(a\text{?}\)</span>
+</div> <div class="para" id="extracted-webwork-36-1-1-4">
+<span class="process-math">\(a =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-36-1-1-5">What is the value of <span class="process-math">\(f(a)\text{?}\)</span>
+</div> <div class="para" id="extracted-webwork-36-1-1-6">
+<span class="process-math">\(f(a) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-36-1-1-7">Use the linearization to approximate the value of <span class="process-math">\(f(5.2)\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-36-1-1-8">
+<span class="process-math">\(f(5.2) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-36-1-1-9">Is the approximation an under- or overestimate?</div> <div class="para" id="extracted-webwork-36-1-1-10">
+<span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> (Enter <em class="alert">under</em> or <em class="alert">over</em>.)</div></article><article class="exercise exercise-like" id="gpr" data-permid="gpr"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Estimating with the local linearization.</span>
+</h4>
+<div class="para" id="extracted-webwork-37-1-1-1">Suppose that <span class="process-math">\(f(x)\)</span> is a function with <span class="process-math">\(f(90) = 40\)</span> and <span class="process-math">\(f'(90) = 2\text{.}\)</span>  Estimate <span class="process-math">\(f(94.5)\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-37-1-1-2">
+<span class="process-math">\(f(94.5) \approx\)</span> <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div></article><article class="exercise exercise-like" id="MwA" data-permid="MwA"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Predicting behavior from the local linearization.</span>
+</h4>
+<div class="para" id="extracted-webwork-38-1-1-1">The temperature, <span class="process-math">\(H\text{,}\)</span> in degrees Celsius, of a cup of coffee placed on the kitchen counter is given by <span class="process-math">\(H = f(t)\text{,}\)</span> where <span class="process-math">\(t\)</span> is in minutes since the coffee was put on the counter.</div> <div class="para logical" id="extracted-webwork-38-1-1-2">
+<div class="para">
+<em class="alert">(a)</em> Is <span class="process-math">\(f'(t)\)</span> positive or negative?</div>
+<ul class="square">
+<li id="extracted-webwork-38-1-1-2-3-1"><div class="para" id="extracted-webwork-38-1-1-2-3-1-1">positive</div></li>
+<li id="extracted-webwork-38-1-1-2-3-2"><div class="para" id="extracted-webwork-38-1-1-2-3-2-1">negative</div></li>
+</ul>
+</div> <div class="para" id="extracted-webwork-38-1-1-3"><em class="emphasis">(Be sure that you are able to give a reason for your answer.)</em></div> <div class="para" id="extracted-webwork-38-1-1-4">
+<em class="alert">(b)</em> What are the units of <span class="process-math">\(f'(10)\text{?}\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> <a class="external" href="/pg_files/helpFiles/Units.html" target="_blank">help (units)</a><details class="ptx-footnote" aria-live="polite" id="extracted-webwork-38-1-1-4-5"><summary class="ptx-footnote__number" title="Footnote 1.8.4.4.4"><sup> 4 </sup></summary><div class="ptx-footnote__contents" id="extracted-webwork-38-1-1-4-5"><code class="code-inline tex2jax_ignore">/pg_files/helpFiles/Units.html</code></div></details>
+</div> <div class="para" id="extracted-webwork-38-1-1-5">Suppose that <span class="process-math">\(|f'(10)| = 1.2\)</span> and <span class="process-math">\(f(10) = 77\text{.}\)</span>  Fill in the blanks (including units where needed) and select the appropriate terms to complete the following statement about the temperature of the coffee in this case.</div> <div class="para logical" id="extracted-webwork-38-1-1-6">
+<div class="para">At <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span> minutes after the coffee was put on the counter, its</div>
+<ul class="square">
+<li id="extracted-webwork-38-1-1-6-2-1"><div class="para" id="extracted-webwork-38-1-1-6-2-1-1">derivative</div></li>
+<li id="extracted-webwork-38-1-1-6-2-2"><div class="para" id="extracted-webwork-38-1-1-6-2-2-1">temperature</div></li>
+<li id="extracted-webwork-38-1-1-6-2-3"><div class="para" id="extracted-webwork-38-1-1-6-2-3-1">change in temperature</div></li>
+</ul>
+<div class="para">is <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> and will</div>
+<ul class="square">
+<li id="extracted-webwork-38-1-1-6-4-1"><div class="para" id="extracted-webwork-38-1-1-6-4-1-1">increase</div></li>
+<li id="extracted-webwork-38-1-1-6-4-2"><div class="para" id="extracted-webwork-38-1-1-6-4-2-1">decrease</div></li>
+</ul>
+<div class="para">by about <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> in the next 60 seconds.</div>
+</div> <div class="para" id="extracted-webwork-38-1-1-7"><em class="alert">Note: If you are using MathQuill click the textbox (Tt) button before entering an answer that contains units.</em></div></article><article class="exercise exercise-like" id="sDJ" data-permid="sDJ"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para logical" id="wwE" data-permid="wwE">
+<div class="para">A certain function <span class="process-math">\(y=p(x)\)</span> has its local linearization at <span class="process-math">\(a = 3\)</span> given by <span class="process-math">\(L(x) = -2x + 5\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="jTR" data-permid="jTR"><div class="para" id="hJf" data-permid="hJf">What are the values of <span class="process-math">\(p(3)\)</span> and <span class="process-math">\(p'(3)\text{?}\)</span> Why?</div></li>
+<li id="Qba" data-permid="Qba"><div class="para" id="NQo" data-permid="NQo">Estimate the value of <span class="process-math">\(p(2.79)\text{.}\)</span>
+</div></li>
+<li id="wij" data-permid="wij"><div class="para" id="tXx" data-permid="tXx">Suppose that <span class="process-math">\(p''(3) = 0\)</span> and you know that <span class="process-math">\(p''(x) \lt 0\)</span> for <span class="process-math">\(x \lt 3\text{.}\)</span> Is your estimate in (b) too large or too small?</div></li>
+<li id="cps" data-permid="cps"><div class="para" id="aeG" data-permid="aeG">Suppose that <span class="process-math">\(p''(x) \gt 0\)</span> for <span class="process-math">\(x \gt 3\text{.}\)</span> Use this fact and the additional information above to sketch an accurate graph of <span class="process-math">\(y = p(x)\)</span> near <span class="process-math">\(x = 3\text{.}\)</span> Include a sketch of <span class="process-math">\(y = L(x)\)</span> in your work.</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="YKS" data-permid="YKS"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para" id="cDN" data-permid="cDN">A potato is placed in an oven, and the potato’s temperature <span class="process-math">\(F\)</span> (in degrees Fahrenheit) at various points in time is taken and recorded in the following table. Time <span class="process-math">\(t\)</span> is measured in minutes.</div> <figure class="table table-like" id="NuP" data-permid="NuP"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">1.8.7<span class="period">.</span></span><span class="space"> </span>Temperature data for the potato.</figcaption><div class="tabular-box natural-width"><table class="tabular" id="tBY">
+<tr>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(t\)</span></td>
+<td class="l m b2 r0 l0 t1 lines"><span class="process-math">\(F(t)\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(70\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(15\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(180.5\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(30\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(251\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(45\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(296\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(60\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(324.5\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(75\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(342.8\)</span></td>
+</tr>
+<tr>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(90\)</span></td>
+<td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(354.5\)</span></td>
+</tr>
+</table></div></figure> <div class="para logical" id="IKW" data-permid="IKW"><ol class="lower-alpha">
+<li id="FBV" data-permid="FBV"><div class="para" id="Xka" data-permid="Xka">Use a central difference to estimate <span class="process-math">\(F'(60)\text{.}\)</span> Use this estimate as needed in subsequent questions.</div></li>
+<li id="lJe" data-permid="lJe"><div class="para" id="Drj" data-permid="Drj">Find the local linearization <span class="process-math">\(y = L(t)\)</span> to the function <span class="process-math">\(y = F(t)\)</span> at the point where <span class="process-math">\(a = 60\text{.}\)</span>
+</div></li>
+<li id="RQn" data-permid="RQn"><div class="para" id="jys" data-permid="jys">Determine an estimate for <span class="process-math">\(F(63)\)</span> by employing the local linearization.</div></li>
+<li id="xXw" data-permid="xXw"><div class="para" id="PFB" data-permid="PFB">Do you think your estimate in (c) is too large or too small? Why?</div></li>
+</ol></div></article><article class="exercise exercise-like" id="ESb" data-permid="ESb"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para logical" id="oSf" data-permid="oSf">
+<div class="para">An object moving along a straight line path has a differentiable position function <span class="process-math">\(y = s(t)\text{;}\)</span> <span class="process-math">\(s(t)\)</span> measures the object’s position relative to the origin at time <span class="process-math">\(t\text{.}\)</span> It is known that at time <span class="process-math">\(t = 9\)</span> seconds, the object’s position is <span class="process-math">\(s(9) = 4\)</span> feet (i.e., 4 feet to the right of the origin). Furthermore, the object’s instantaneous velocity at <span class="process-math">\(t = 9\)</span> is <span class="process-math">\(-1.2\)</span> feet per second, and its acceleration at the same instant is <span class="process-math">\(0.08\)</span> feet per second per second.</div>
+<ol class="lower-alpha">
+<li id="bjZ" data-permid="bjZ"><div class="para" id="sSe" data-permid="sSe">Use local linearity to estimate the position of the object at <span class="process-math">\(t = 9.34\text{.}\)</span>
+</div></li>
+<li id="Hri" data-permid="Hri"><div class="para" id="YZn" data-permid="YZn">Is your estimate likely too large or too small? Why?</div></li>
+<li id="nyr" data-permid="nyr"><div class="para" id="Fgw" data-permid="Fgw">In everyday language, describe the behavior of the moving object at <span class="process-math">\(t = 9\text{.}\)</span> Is it moving toward the origin or away from it? Is its velocity increasing or decreasing?</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="kZk" data-permid="kZk"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para logical" id="UZo" data-permid="UZo">
+<div class="para">For a certain function <span class="process-math">\(f\text{,}\)</span> its derivative is known to be <span class="process-math">\(f'(x) = (x-1)e^{-x^2}\text{.}\)</span> Note that you do not know a formula for <span class="process-math">\(y = f(x)\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="EwC" data-permid="EwC"><div class="para" id="WeH" data-permid="WeH">At what <span class="process-math">\(x\)</span>-value(s) is <span class="process-math">\(f'(x) = 0\text{?}\)</span> Justify your answer algebraically, but include a graph of <span class="process-math">\(f'\)</span> to support your conclusion.</div></li>
+<li id="kDL" data-permid="kDL"><div class="para" id="ClQ" data-permid="ClQ">Reasoning graphically, for what intervals of <span class="process-math">\(x\)</span>-values is <span class="process-math">\(f''(x) \gt 0\text{?}\)</span> What does this tell you about the behavior of the original function <span class="process-math">\(f\text{?}\)</span> Explain.</div></li>
+<li id="QKU" data-permid="QKU"><div class="para" id="isZ" data-permid="isZ">Assuming that <span class="process-math">\(f(2) = -3\text{,}\)</span> estimate the value of <span class="process-math">\(f(1.88)\)</span> by finding and using the tangent line approximation to <span class="process-math">\(f\)</span> at <span class="process-math">\(x=2\text{.}\)</span> Is your estimate larger or smaller than the true value of <span class="process-math">\(f(1.88)\text{?}\)</span> Justify your answer.</div></li>
+</ol>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-1-7-lim-cont-diff.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><span class="next-button button disabled"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></span>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="http://gvsu.edu/s/0vK" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

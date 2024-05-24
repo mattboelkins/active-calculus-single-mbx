@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC Limits, Continuity, and Differentiability</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Active Calculus">
+<meta property="book:author" content="Matthew Boelkins">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script src="_static/pretext/js/pretext-webwork/2.18/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><link href="_static/pretext/css/pretext_search.css" rel="stylesheet" type="text/css">
+<script src="_static/pretext/js/lib/jquery.min.js"></script><script src="_static/pretext/js/lib/jquery.sticky.js"></script><script src="_static/pretext/js/lib/jquery.espy.min.js"></script><script src="_static/pretext/js/pretext.js"></script><script src="_static/pretext/js/pretext_add_on.js?x=1"></script><script src="_static/pretext/js/user_preferences.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="boelkins-ACS" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/ActiveCalculusImage_sm.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root-1-2.html"><span class="title">Active Calculus</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-1-6-second-d.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-1.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-1-8-tan-line-approx.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Active Calculus: Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Understanding the Derivative</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-vel.html" class="internal"><span class="codenumber">1.1</span> <span class="title">How do we measure velocity?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#iwq" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Position and average velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#ODz" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#uKI" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-vel.html#ez-1-1-D" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-2-lim.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The notion of limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#BTI" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#iaR" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#Oia" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-lim.html#ez-1-2" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The derivative of a function at a point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#dFt" class="internal"><span class="codenumber">1.3.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#JMC" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#WsC" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The derivative function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#Lgq" class="internal"><span class="codenumber">1.4.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rnz" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rjI" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-5-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#pcN" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#VjW" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#Brf" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5-units.html#tXk" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The second derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#wlN" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#csW" class="internal"><span class="codenumber">1.6.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#IAf" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#oHo" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#DjS" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Limits, Continuity, and Differentiability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#AAh" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Having a limit at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#gHq" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Being continuous at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#MOz" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Being differentiable at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#sVI" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#bFy" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">1.8</span> <span class="title">The Tangent Line Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#LnH" class="internal"><span class="codenumber">1.8.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ruQ" class="internal"><span class="codenumber">1.8.2</span> <span class="title">The local linearization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#XBZ" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ZJh" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="UsY" data-permid="UsY"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.7</span><span class="space"> </span><span class="title">Limits, Continuity, and Differentiability</span>
+</h2>
+<article class="objectives goal-like" id="xFB" data-permid="xFB"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="iwD" data-permid="iwD"><div class="para" id="QsZ" data-permid="QsZ">What does it mean graphically to say that <span class="process-math">\(f\)</span> has limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x \to a\text{?}\)</span> How is this connected to having a left-hand limit at <span class="process-math">\(x = a\)</span> and having a right-hand limit at <span class="process-math">\(x = a\text{?}\)</span>
+</div></li>
+<li id="ODM" data-permid="ODM"><div class="para" id="wAi" data-permid="wAi">What does it mean to say that a function <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x = a\text{?}\)</span> What role do limits play in determining whether or not a function is continuous at a point?</div></li>
+<li id="uKV" data-permid="uKV"><div class="para" id="cHr" data-permid="cHr">What does it mean graphically to say that a function <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{?}\)</span> How is this connected to the function being locally linear?</div></li>
+<li id="aSe" data-permid="aSe"><div class="para" id="IOA" data-permid="IOA">How are the characteristics of a function having a limit, being continuous, and being differentiable at a given point related to one another?</div></li>
+</ul></article><section class="introduction" id="dMK" data-permid="dMK"><div class="para" id="KDN" data-permid="KDN">In <a href="sec-1-2-lim.html" class="internal" title="Section 1.2: The notion of limit">Section 1.2</a>, we learned how limits can be used to study the trend of a function near a fixed input value. In this section, we aim to quantify how the function acts and how its values change near a particular point. If the function has a limit <span class="process-math">\(L\)</span> at <span class="process-math">\(x = a\text{,}\)</span> we will consider how the value of the function <span class="process-math">\(f(a)\)</span> is related to <span class="process-math">\(\lim_{x \to a} f(x)\text{,}\)</span> and whether or not the function has a derivative <span class="process-math">\(f'(a)\)</span> at <span class="process-math">\(x = a\text{.}\)</span>
+</div> <article class="exploration project-like" id="AgV" data-permid="AgV"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="HLu" data-permid="HLu">A function <span class="process-math">\(f\)</span> is given by the graph in <a href="sec-1-7-lim-cont-diff.html#TZM" class="xref" data-knowl="./knowl/xref/F-1-7-PA1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.1">Figure 1.7.1</a>. Use the graph to answer each of the following questions. Note: to the right of <span class="process-math">\(x = 2\text{,}\)</span> the graph of <span class="process-math">\(f\)</span> is exhibiting infinite oscillatory behavior similar to the function <span class="process-math">\(\sin(\frac{\pi}{x})\)</span> that we encountered in the key example early in <a href="sec-1-2-lim.html" class="internal" title="Section 1.2: The notion of limit">Section 1.2</a>.  Assume that <span class="process-math">\(f(2) = -2.5\text{.}\)</span>
+</div> <div class="para logical" id="nSD" data-permid="nSD"><ol class="lower-alpha">
+<li id="WUs" data-permid="WUs"><div class="para" id="PpT" data-permid="PpT">For each of the values <span class="process-math">\(a = -3, -2, -1, 0, 1, 2, 3\text{,}\)</span> determine whether or not <span class="process-math">\(\lim_{x \to a} f(x)\)</span> exists. If the function has a limit <span class="process-math">\(L\)</span> at a given point, state the value of the limit using the notation <span class="process-math">\(\lim_{x \to a} f(x) = L\text{.}\)</span> If the function does not have a limit at a given point, write a sentence to explain why.</div></li>
+<li id="DbB" data-permid="DbB"><div class="para" id="vxc" data-permid="vxc">For each of the values of <span class="process-math">\(a\)</span> from part (a) where <span class="process-math">\(f\)</span> has a limit, determine the value of <span class="process-math">\(f(a)\)</span> at each such point. In addition, for each such <span class="process-math">\(a\)</span> value, does <span class="process-math">\(f(a)\)</span> have the same value as <span class="process-math">\(\lim_{x \to a} f(x)\text{?}\)</span>
+</div></li>
+<li id="jiK" data-permid="jiK"><div class="para" id="bEl" data-permid="bEl">For each of the values <span class="process-math">\(a = -3, -2, -1, 0, 1, 2, 3\text{,}\)</span> determine whether or not <span class="process-math">\(f'(a)\)</span> exists. In particular, based on the given graph, ask yourself if it is reasonable to say that <span class="process-math">\(f\)</span> has a tangent line at <span class="process-math">\((a,f(a))\)</span> for each of the given <span class="process-math">\(a\)</span>-values. If so, visually estimate the slope of the tangent line to find the value of <span class="process-math">\(f'(a)\text{.}\)</span>
+</div></li>
+</ol></div> <figure class="figure figure-like" id="TZM" data-permid="TZM"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_7_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.1<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = f(x)\text{.}\)</span></figcaption></figure></article></section><section class="subsection" id="AAh" data-permid="AAh"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.7.1</span><span class="space"> </span><span class="title">Having a limit at a point</span>
+</h3>
+<div class="para" id="qKW" data-permid="qKW">In <a href="sec-1-2-lim.html" class="internal" title="Section 1.2: The notion of limit">Section 1.2</a>, we learned that <span class="process-math">\(f\)</span> has limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> provided that we can make the value of <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close (but not equal to) <span class="process-math">\(a\text{.}\)</span> If so, we write <span class="process-math">\(\lim_{x \to a} f(x) = L\text{.}\)</span>
+</div>
+<div class="para" id="WSf" data-permid="WSf">Essentially there are two behaviors that a function can exhibit near a point where it fails to have a limit. In <a href="sec-1-7-lim-cont-diff.html#TXz" class="xref" data-knowl="./knowl/xref/F-1-7-NoLimit.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.3">Figure 1.7.3</a>, at left we see a function <span class="process-math">\(f\)</span> whose graph shows a jump at <span class="process-math">\(a = 1\text{.}\)</span> If we let <span class="process-math">\(x\)</span> approach 1 from the left side, the value of <span class="process-math">\(f\)</span> approaches 2, but if we let <span class="process-math">\(x\)</span> approach <span class="process-math">\(1\)</span> from the right, the value of <span class="process-math">\(f\)</span> tends to 3. Because the value of <span class="process-math">\(f\)</span> does not approach a single number as <span class="process-math">\(x\)</span> gets arbitrarily close to 1 from both sides, we know that <span class="process-math">\(f\)</span> does not have a limit at <span class="process-math">\(a = 1\text{.}\)</span>
+</div>
+<div class="para" id="CZo" data-permid="CZo">For such cases, we introduce the notion of <em class="emphasis">left</em> and <em class="emphasis">right</em> (or <em class="emphasis">one-sided</em>) limits. </div>
+<article class="definition definition-like" id="lrj" data-permid="lrj"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="ypv" data-permid="ypv">
+<div class="para">We say that <em class="emphasis"><span class="process-math">\(f\)</span> has limit <span class="process-math">\(L_1\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span> from the left</em> and write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to a^-} f(x) = L_1
+\end{equation*}
+</div>
+<div class="para">provided that we can make the value of <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L_1\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> while always having <span class="process-math">\(x \lt  a\text{.}\)</span> We call <span class="process-math">\(L_1\)</span> the left-hand limit of <span class="process-math">\(f\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\text{.}\)</span> Similarly, we say <em class="emphasis"><span class="process-math">\(L_2\)</span> is the right-hand limit of <span class="process-math">\(f\)</span> as <span class="process-math">\(x\)</span> approaches <span class="process-math">\(a\)</span></em> and write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to a^+} f(x) = L_2
+\end{equation*}
+</div>
+<div class="para">provided that we can make the value of <span class="process-math">\(f(x)\)</span> as close to <span class="process-math">\(L_2\)</span> as we like by taking <span class="process-math">\(x\)</span> sufficiently close to <span class="process-math">\(a\)</span> while always having <span class="process-math">\(x \gt a\text{.}\)</span>
+</div>
+</div></article><div class="para logical" id="jgx" data-permid="jgx">
+<div class="para">In the graph of the function <span class="process-math">\(f\)</span> in <a href="sec-1-7-lim-cont-diff.html#TXz" class="xref" data-knowl="./knowl/xref/F-1-7-NoLimit.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.3">Figure 1.7.3</a>, we see that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-1-7-NoLimit.html">
+\begin{equation*}
+\lim_{x \to 1^-} f(x) = 2 \ \ \text{and}  \ \lim_{x \to 1^+} f(x) = 3\text{.}
+\end{equation*}
+</div>
+<div class="para">Precisely because the left and right limits are not equal, the overall limit of <span class="process-math">\(f\)</span> as <span class="process-math">\(x \to 1\)</span> fails to exist.</div>
+</div>
+<figure class="figure figure-like" id="TXz" data-permid="TXz"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_7_NoLimit.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.3<span class="period">.</span></span><span class="space"> </span>Functions <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> that each fail to have a limit at <span class="process-math">\(a = 1\text{.}\)</span></figcaption></figure><div class="para" id="PnG" data-permid="PnG">For the function <span class="process-math">\(g\)</span> pictured at right in <a href="sec-1-7-lim-cont-diff.html#TXz" class="xref" data-knowl="./knowl/xref/F-1-7-NoLimit.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.3">Figure 1.7.3</a>, the function fails to have a limit at <span class="process-math">\(a = 1\)</span> for a different reason. While the function does not have a jump in its graph at <span class="process-math">\(a = 1\text{,}\)</span> it is still not the case that <span class="process-math">\(g\)</span> approaches a single value as <span class="process-math">\(x\)</span> approaches 1. In particular, due to the infinitely oscillating behavior of <span class="process-math">\(g\)</span> to the right of <span class="process-math">\(a = 1\text{,}\)</span> we say that the right-hand limit of <span class="process-math">\(g\)</span> as <span class="process-math">\(x \to 1^+\)</span> does not exist, and thus <span class="process-math">\(\lim_{x \to 1} g(x) \ \text{does not exist} \text{.}\)</span>
+</div>
+<div class="para" id="vuP" data-permid="vuP">To summarize, if either a left- or right-hand limit fails to exist or if the left- and right-hand limits are not equal to each other, the overall limit does not exist.</div>
+<article class="assemblage assemblage-like" id="ZcR" data-permid="ZcR"><div class="para logical" id="bBY" data-permid="bBY">
+<div class="para">A function <span class="process-math">\(f\)</span> has limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x \to a\)</span> if and only if</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to a^-} f(x) = L = \lim_{x \to a^+} f(x)\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para" id="HJh" data-permid="HJh">That is, a function has a limit at <span class="process-math">\(x = a\)</span> if and only if both the left- and right-hand limits at <span class="process-math">\(x = a\)</span> exist and have the same value.</div>
+<div class="para" id="nQq" data-permid="nQq">In <a href="sec-1-7-lim-cont-diff.html#AgV" class="xref" data-knowl="./knowl/xref/PA-1-7.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.7.1">Preview Activity 1.7.1</a>, the function <span class="process-math">\(f\)</span> given in <a href="sec-1-7-lim-cont-diff.html#TZM" class="xref" data-knowl="./knowl/xref/F-1-7-PA1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.1">Figure 1.7.1</a> fails to have a limit at only two values: at <span class="process-math">\(a = -2\)</span> (where the left- and right-hand limits are 2 and <span class="process-math">\(-1\text{,}\)</span> respectively) and at <span class="process-math">\(x = 2\text{,}\)</span> where <span class="process-math">\(\lim_{x \to 2^+} f(x)\)</span> does not exist). Note well that even at values such as <span class="process-math">\(a = -1\)</span> and <span class="process-math">\(a = 0\)</span> where there are holes in the graph, the limit still exists.</div>
+<article class="activity project-like" id="AIh" data-permid="AIh"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="ujb" data-permid="ujb">
+<div class="para">Consider a function that is piecewise-defined according to the formula</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \begin{cases}3(x+2)+2 \amp  \text{ for }-3 \lt  x \lt  -2  \\
+\frac{2}{3}(x+2)+1 \amp  \text{ for }-2 \le x \lt  -1   \\
+\frac{2}{3}(x+2)+1 \amp  \text{ for }-1 \lt  x \lt  1   \\
+2 \amp  \text{ for }x = 1   \\
+4-x \amp  \text{ for }x \gt 1 
+\end{cases}
+\end{equation*}
+</div>
+</div> <div class="para" id="aqk" data-permid="aqk">Use the given formula to answer the following questions.</div> <figure class="figure figure-like" id="mEC" data-permid="mEC"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_7_Act1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.4<span class="period">.</span></span><span class="space"> </span>Axes for plotting the function <span class="process-math">\(y = f(x)\)</span> in <a href="sec-1-7-lim-cont-diff.html#AIh" class="xref" data-knowl="./knowl/xref/act-1-7-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.7.2">Activity 1.7.2</a>.</figcaption></figure> <div class="para logical" id="Gxt" data-permid="Gxt"><ol class="lower-alpha">
+<li id="cAW" data-permid="cAW"><div class="para" id="vou" data-permid="vou">For each of the values <span class="process-math">\(a = -2, -1, 0, 1, 2\text{,}\)</span> compute <span class="process-math">\(f(a)\text{.}\)</span>
+</div></li>
+<li id="IIf" data-permid="IIf"><div class="para" id="bvD" data-permid="bvD">For each of the values <span class="process-math">\(a = -2, -1, 0, 1, 2\text{,}\)</span> determine <span class="process-math">\(\lim_{x \to a^-} f(x)\)</span> and <span class="process-math">\(\lim_{x \to a^+} f(x)\text{.}\)</span>
+</div></li>
+<li id="oPo" data-permid="oPo"><div class="para" id="HCM" data-permid="HCM">For each of the values <span class="process-math">\(a = -2, -1, 0, 1, 2\text{,}\)</span> determine <span class="process-math">\(\lim_{x \to a} f(x)\text{.}\)</span> If the limit fails to exist, explain why by discussing the left- and right-hand limits at the relevant <span class="process-math">\(a\)</span>-value.</div></li>
+<li id="UWx" data-permid="UWx"><div class="para logical" id="nJV" data-permid="nJV">
+<div class="para">For which values of <span class="process-math">\(a\)</span> is the following statement true?</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to a} f(x) \ne f(a)
+\end{equation*}
+</div>
+</div></li>
+<li id="BdG" data-permid="BdG"><div class="para" id="TRe" data-permid="TRe">On the axes provided in <a href="sec-1-7-lim-cont-diff.html#mEC" class="xref" data-knowl="./knowl/xref/F-1-7-Act1.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.4">Figure 1.7.4</a>, sketch an accurate, labeled graph of <span class="process-math">\(y = f(x)\text{.}\)</span> Be sure to carefully use open circles (○) and filled circles (●) to represent key points on the graph, as dictated by the piecewise formula.</div></li>
+</ol></div></article></section><section class="subsection" id="gHq" data-permid="gHq"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.7.2</span><span class="space"> </span><span class="title">Being continuous at a point</span>
+</h3>
+<div class="para" id="AeI" data-permid="AeI">Intuitively, a function is continuous if we can draw its graph without ever lifting our pencil from the page. Alternatively, we might say that the graph of a continuous function has no jumps or holes in it. In <a href="sec-1-7-lim-cont-diff.html#kVK" class="xref" data-knowl="./knowl/xref/F-1-7-Cont.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.5">Figure 1.7.5</a> we consider three functions that have a limit at <span class="process-math">\(a = 1\text{,}\)</span> and use them to make the idea of continuity more precise.</div>
+<figure class="figure figure-like" id="kVK" data-permid="kVK"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_7_Cont.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.5<span class="period">.</span></span><span class="space"> </span>Functions <span class="process-math">\(f\text{,}\)</span> <span class="process-math">\(g\text{,}\)</span> and <span class="process-math">\(h\)</span> that demonstrate subtly different behaviors at <span class="process-math">\(a = 1\text{.}\)</span></figcaption></figure><div class="para logical" id="glR" data-permid="glR">
+<div class="para">First consider the function in the left-most graph. Note that <span class="process-math">\(f(1)\)</span> is not defined, which leads to the resulting hole in the graph of <span class="process-math">\(f\)</span> at <span class="process-math">\(a = 1\text{.}\)</span> We will naturally say that <span class="process-math">\(f\)</span> is <em class="emphasis">not continuous at <span class="process-math">\(a = 1\)</span></em>. For the function <span class="process-math">\(g\text{,}\)</span> we observe that while <span class="process-math">\(\lim_{x \to 1} g(x) = 3\text{,}\)</span> the value of <span class="process-math">\(g(1) = 2\text{,}\)</span> and thus the limit does not equal the function value. Here, too, we will say that <span class="process-math">\(g\)</span> is <em class="emphasis">not continuous</em>, even though the function is defined at <span class="process-math">\(a = 1\text{.}\)</span> Finally, the function <span class="process-math">\(h\)</span> appears to be the most well-behaved of all three, since at <span class="process-math">\(a = 1\)</span> its limit and its function value agree. That is,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to 1} h(x) = 3 = h(1)\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="Mta" data-permid="Mta">With no hole or jump in the graph of <span class="process-math">\(h\)</span> at <span class="process-math">\(a = 1\text{,}\)</span> we say that <span class="process-math">\(h\)</span> is <em class="emphasis">continuous</em> there. More formally, we make the following definition.</div>
+<article class="definition definition-like" id="Rys" data-permid="Rys"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">1.7.6</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="ewE" data-permid="ewE">
+<div class="para">A function <span class="process-math">\(f\)</span> is <dfn class="terminology">continuous at <span class="process-math">\(x = a\)</span></dfn>  provided that</div>
+<ol class="lower-alpha">
+<li id="XXy" data-permid="XXy"><div class="para" id="oVJ" data-permid="oVJ">
+<span class="process-math">\(f\)</span> has a limit as <span class="process-math">\(x \to a\text{,}\)</span>
+</div></li>
+<li id="EeH" data-permid="EeH"><div class="para" id="VcS" data-permid="VcS">
+<span class="process-math">\(f\)</span> is defined at <span class="process-math">\(x = a\text{,}\)</span> and</div></li>
+<li id="klQ" data-permid="klQ"><div class="para" id="Bkb" data-permid="Bkb"><span class="process-math">\(\lim_{x \to a} f(x) = f(a)\text{.}\)</span></div></li>
+</ol>
+</div></article><div class="para" id="sAj" data-permid="sAj">Conditions (a) and (b) are technically contained implicitly in (c), but we state them explicitly to emphasize their individual importance. The definition says that a function is continuous at <span class="process-math">\(x = a\)</span> provided that its limit as <span class="process-math">\(x \to a\)</span> exists and equals its function value at <span class="process-math">\(x = a\text{.}\)</span> If a function is continuous at every point in an interval <span class="process-math">\([a,b]\text{,}\)</span> we say the function is “continuous on <span class="process-math">\([a,b]\text{.}\)</span>” If a function is continuous at every point in its domain, we simply say the function is “continuous.” Thus, continuous functions are particularly nice: to evaluate the limit of a continuous function at a point, all we need to do is evaluate the function.</div>
+<div class="para logical" id="YHs" data-permid="YHs">
+<div class="para">For example, consider <span class="process-math">\(p(x) = x^2 - 2x + 3\text{.}\)</span> It can be proved that every polynomial is a continuous function at every real number, and thus if we would like to know <span class="process-math">\(\lim_{x \to 2} p(x)\text{,}\)</span> we simply compute</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{x \to 2} (x^2 - 2x + 3) = 2^2 - 2 \cdot 2 + 3 = 3\text{.}
+\end{equation*}
+</div>
+</div>
+<div class="para" id="EOB" data-permid="EOB">This route of substituting an input value to evaluate a limit works whenever we know that the function being considered is continuous. Besides polynomial functions, all exponential functions and the sine and cosine functions are continuous at every point, as are many other familiar functions and combinations thereof.</div>
+<article class="activity project-like" id="Ufz" data-permid="Ufz"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.7.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="bJY" data-permid="bJY">This activity builds on your work in <a href="sec-1-7-lim-cont-diff.html#AgV" class="xref" data-knowl="./knowl/xref/PA-1-7.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.7.1">Preview Activity 1.7.1</a>, using the same function <span class="process-math">\(f\)</span> as given by the graph that is repeated in <a href="sec-1-7-lim-cont-diff.html#nYq" class="xref" data-knowl="./knowl/xref/F-1-7-A2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.7">Figure 1.7.7</a>. Assume that <span class="process-math">\(f(2) = -2.5\text{.}\)</span>
+</div> <figure class="figure figure-like" id="nYq" data-permid="nYq"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_7_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.7<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = f(x)\)</span> for <a href="sec-1-7-lim-cont-diff.html#Ufz" class="xref" data-knowl="./knowl/xref/act-1-7-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.7.3">Activity 1.7.3</a>.</figcaption></figure> <div class="para logical" id="HRh" data-permid="HRh"><ol class="lower-alpha">
+<li id="xNB" data-permid="xNB"><div class="para" id="QAZ" data-permid="QAZ">At which values of <span class="process-math">\(a\)</span> does <span class="process-math">\(\lim_{x \to a} f(x)\)</span> not exist?</div></li>
+<li id="dUK" data-permid="dUK"><div class="para" id="wIi" data-permid="wIi">At which values of <span class="process-math">\(a\)</span> is <span class="process-math">\(f(a)\)</span> not defined?</div></li>
+<li id="KbT" data-permid="KbT"><div class="para" id="cPr" data-permid="cPr">At which values of <span class="process-math">\(a\)</span> does <span class="process-math">\(f\)</span> have a limit, but <span class="process-math">\(\lim_{x \to a} f(x) \ne f(a)\text{?}\)</span>
+</div></li>
+<li id="qjc" data-permid="qjc"><div class="para" id="IWA" data-permid="IWA">State all values of <span class="process-math">\(a\)</span> for which <span class="process-math">\(f\)</span> is not continuous at <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="Wql" data-permid="Wql"><div class="para" id="pdJ" data-permid="pdJ">Which condition is stronger, and hence implies the other: <span class="process-math">\(f\)</span> has a limit at <span class="process-math">\(x = a\)</span> or <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x = a\text{?}\)</span> Explain, and hence complete the following sentence: “If <span class="process-math">\(f\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> at <span class="process-math">\(x = a\text{,}\)</span>” where you complete the blanks with <em class="emphasis">has a limit</em> and <em class="emphasis">is continuous</em>, using each phrase once.</div></li>
+</ol></div></article></section><section class="subsection" id="MOz" data-permid="MOz"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.7.3</span><span class="space"> </span><span class="title">Being differentiable at a point</span>
+</h3>
+<div class="para" id="RcT" data-permid="RcT">We recall that a function <span class="process-math">\(f\)</span> is said to be differentiable at <span class="process-math">\(x = a\)</span> if <span class="process-math">\(f'(a)\)</span> exists. Moreover, for <span class="process-math">\(f'(a)\)</span> to exist, we know that the function <span class="process-math">\(y = f(x)\)</span> must have a tangent line at the point <span class="process-math">\((a,f(a))\text{,}\)</span> since <span class="process-math">\(f'(a)\)</span> is precisely the slope of this line. In order to even ask if <span class="process-math">\(f\)</span> has a tangent line at <span class="process-math">\((a,f(a))\text{,}\)</span> it is necessary that <span class="process-math">\(f\)</span> be continuous at <span class="process-math">\(x = a\text{:}\)</span> if <span class="process-math">\(f\)</span> fails to have a limit at <span class="process-math">\(x = a\text{,}\)</span> if <span class="process-math">\(f(a)\)</span> is not defined, or if <span class="process-math">\(f(a)\)</span> does not equal the value of <span class="process-math">\(\lim_{x \to a} f(x)\text{,}\)</span> then it doesn’t make sense to talk about a tangent line to the curve at this point.</div>
+<div class="para" id="xkc" data-permid="xkc">Indeed, it can be proved formally that if a function <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{,}\)</span> then it must be continuous at <span class="process-math">\(x = a\text{.}\)</span> So, if <span class="process-math">\(f\)</span> is not continuous at <span class="process-math">\(x = a\text{,}\)</span> then it is automatically the case that <span class="process-math">\(f\)</span> is not differentiable there. For example, in <a href="sec-1-7-lim-cont-diff.html#kVK" class="xref" data-knowl="./knowl/xref/F-1-7-Cont.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.5">Figure 1.7.5</a>, both <span class="process-math">\(f\)</span> and <span class="process-math">\(g\)</span> fail to be differentiable at <span class="process-math">\(x = 1\)</span> because neither function is continuous at <span class="process-math">\(x = 1\text{.}\)</span> But can a function fail to be differentiable at a point where the function is continuous?</div>
+<div class="para" id="drl" data-permid="drl">In <a href="sec-1-7-lim-cont-diff.html#ibe" class="xref" data-knowl="./knowl/xref/F-1-7-NotDiff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.8">Figure 1.7.8</a>, the function has a sharp corner at a point. For the pictured function <span class="process-math">\(f\text{,}\)</span> we observe that <span class="process-math">\(f\)</span> is clearly continuous at <span class="process-math">\(a = 1\text{,}\)</span> since <span class="process-math">\(\lim_{x \to 1} f(x) = 1 = f(1)\text{.}\)</span>
+</div>
+<figure class="figure figure-like" id="ibe" data-permid="ibe"><div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="external/images/1_7_NotDiff.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.8<span class="period">.</span></span><span class="space"> </span>A function <span class="process-math">\(f\)</span> that is continuous at <span class="process-math">\(a = 1\)</span> but not differentiable at <span class="process-math">\(a = 1\text{;}\)</span> at right, we zoom in on the point <span class="process-math">\((1,1)\)</span> in a magnified version of the box in the left-hand plot.</figcaption></figure><div class="para" id="Jyu" data-permid="Jyu">But the function <span class="process-math">\(f\)</span> in <a href="sec-1-7-lim-cont-diff.html#ibe" class="xref" data-knowl="./knowl/xref/F-1-7-NotDiff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.8">Figure 1.7.8</a> is not differentiable at <span class="process-math">\(a = 1\)</span> because <span class="process-math">\(f'(1)\)</span> fails to exist. One way to see this is to observe that <span class="process-math">\(f'(x) = -1\)</span> for every value of <span class="process-math">\(x\)</span> that is less than 1, while <span class="process-math">\(f'(x) = +1\)</span> for every value of <span class="process-math">\(x\)</span> that is greater than 1. That makes it seem that either <span class="process-math">\(+1\)</span> or <span class="process-math">\(-1\)</span> would be equally good candidates for the value of the derivative at <span class="process-math">\(x = 1\text{.}\)</span> Alternately, we could use the limit definition of the derivative to attempt to compute <span class="process-math">\(f'(1)\text{,}\)</span> and discover that the derivative does not exist. Finally, we can see visually that the function <span class="process-math">\(f\)</span> in <a href="sec-1-7-lim-cont-diff.html#ibe" class="xref" data-knowl="./knowl/xref/F-1-7-NotDiff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.8">Figure 1.7.8</a> does not have a tangent line. When we zoom in on <span class="process-math">\((1,1)\)</span> on the graph of <span class="process-math">\(f\text{,}\)</span> no matter how closely we examine the function, it will always look like a “V”, and never like a single line, which tells us there is no possibility for a tangent line there.</div>
+<div class="para" id="pFD" data-permid="pFD">If a function does have a tangent line at a given point, when we zoom in on the point of tangency, the function and the tangent line should appear essentially indistinguishable<details class="ptx-footnote" aria-live="polite" id="sec-1-7-lim-cont-diff-6-8-1"><summary class="ptx-footnote__number" title="Footnote 1.7.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-1-7-lim-cont-diff-6-8-1">See, for instance, <a class="external" href="https://gvsu.edu/s/6J" target="_blank">this applet</a>, where zooming in shows the increasing similarity between the tangent line and the curve.</div></details>. Conversely, if we zoom in on a point and the function looks like a single straight line, then the function should have a tangent line there, and thus be differentiable. Hence, a function that is differentiable at <span class="process-math">\(x = a\)</span> will, up close, look more and more like its tangent line at <span class="process-math">\((a,f(a))\text{.}\)</span> Therefore, we say that a function that is differentiable at <span class="process-math">\(x = a\)</span> is <em class="emphasis">locally linear</em>. </div>
+<div class="para" id="VMM" data-permid="VMM">To summarize the preceding discussion of differentiability and continuity, we make several important observations.</div>
+<article class="assemblage assemblage-like" id="Fka" data-permid="Fka"><div class="para logical" id="BTV" data-permid="BTV"><ul class="disc">
+<li id="GZn" data-permid="GZn"><div class="para" id="hrk" data-permid="hrk">If <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x = a\text{.}\)</span> Equivalently, if<span class="process-math">\(f\)</span> fails to be continuous at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> will not be differentiable at <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="ngw" data-permid="ngw"><div class="para" id="Nyt" data-permid="Nyt">A function can be continuous at a point, but not be differentiable there. In particular, a function <span class="process-math">\(f\)</span> is not differentiable at <span class="process-math">\(x = a\)</span> if the graph has a sharp corner (or <em class="emphasis">cusp</em>)  at the point <span class="process-math">\((a,f(a))\text{.}\)</span>
+</div></li>
+<li id="TnF" data-permid="TnF"><div class="para" id="tFC" data-permid="tFC">If <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> is locally linear at <span class="process-math">\(x = a\text{.}\)</span> That is, when a function is differentiable, it looks linear when viewed up close because it resembles its tangent line there.</div></li>
+</ul></div></article><article class="activity project-like" id="fYs" data-permid="fYs"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.7.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="iSY" data-permid="iSY">In this activity, we explore two different functions and classify the points at which each is not differentiable. Let <span class="process-math">\(g\)</span> be the function given by the rule <span class="process-math">\(g(x) = |x|\text{,}\)</span> and let <span class="process-math">\(f\)</span> be the function that we have previously explored in <a href="sec-1-7-lim-cont-diff.html#AgV" class="xref" data-knowl="./knowl/xref/PA-1-7.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 1.7.1">Preview Activity 1.7.1</a>, whose graph is given again in <a href="sec-1-7-lim-cont-diff.html#vhq" class="xref" data-knowl="./knowl/xref/F-1-7-Act3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.9">Figure 1.7.9</a>.</div> <figure class="figure figure-like" id="vhq" data-permid="vhq"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/1_7_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.9<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(y = f(x)\)</span> for <a href="sec-1-7-lim-cont-diff.html#fYs" class="xref" data-knowl="./knowl/xref/act-1-7-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 1.7.4">Activity 1.7.4</a>.</figcaption></figure> <div class="para logical" id="Pah" data-permid="Pah"><ol class="lower-alpha">
+<li id="RkT" data-permid="RkT"><div class="para" id="DRi" data-permid="DRi">Reasoning visually, explain why <span class="process-math">\(g\)</span> is differentiable at every point <span class="process-math">\(x\)</span> such that <span class="process-math">\(x \ne 0\text{.}\)</span>
+</div></li>
+<li id="xsc" data-permid="xsc"><div class="para" id="jYr" data-permid="jYr">Use the limit definition of the derivative to show that <span class="process-math">\(g'(0) = \lim_{h \to 0} \frac{|h|}{h}\text{.}\)</span>
+</div></li>
+<li id="dzl" data-permid="dzl"><div class="para" id="QfA" data-permid="QfA">Explain why <span class="process-math">\(g'(0)\)</span> fails to exist by using small positive and negative values of <span class="process-math">\(h\text{.}\)</span>
+</div></li>
+<li id="JGu" data-permid="JGu"><div class="para" id="wmJ" data-permid="wmJ">State all values of <span class="process-math">\(a\)</span> for which <span class="process-math">\(f\)</span> is not differentiable at <span class="process-math">\(x = a\text{.}\)</span> For each, provide a reason for your conclusion.</div></li>
+<li id="pND" data-permid="pND"><div class="para" id="ctS" data-permid="ctS">True or false: if a function <span class="process-math">\(p\)</span> is differentiable at <span class="process-math">\(x = b\text{,}\)</span> then <span class="process-math">\(\lim_{x \to b} p(x)\)</span> must exist. Why?</div></li>
+</ol></div></article></section><section class="subsection" id="sVI" data-permid="sVI"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.7.4</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="Oin" data-permid="Oin"><ul class="disc">
+<li id="zuO" data-permid="zuO"><div class="para" id="ZML" data-permid="ZML">A function <span class="process-math">\(f\)</span> has limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x \to a\)</span> if and only if <span class="process-math">\(f\)</span> has a left-hand limit at <span class="process-math">\(x = a\text{,}\)</span> <span class="process-math">\(f\)</span> has a right-hand limit at <span class="process-math">\(x = a\text{,}\)</span> and the left- and right-hand limits are equal. Visually, this means that there can be a hole in the graph at <span class="process-math">\(x = a\text{,}\)</span> but the function must approach the same single value from either side of <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="fBX" data-permid="fBX"><div class="para" id="FTU" data-permid="FTU">A function <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x = a\)</span> whenever <span class="process-math">\(f(a)\)</span> is defined, <span class="process-math">\(f\)</span> has a limit as <span class="process-math">\(x \to a\text{,}\)</span> and the value of the limit and the value of the function agree. This guarantees that there is not a hole or jump in the graph of <span class="process-math">\(f\)</span> at <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="LJg" data-permid="LJg"><div class="para" id="mbd" data-permid="mbd">A function <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\)</span> whenever <span class="process-math">\(f'(a)\)</span> exists, which means that <span class="process-math">\(f\)</span> has a tangent line at <span class="process-math">\((a,f(a))\)</span> and thus <span class="process-math">\(f\)</span> is locally linear at <span class="process-math">\(x = a\text{.}\)</span> Informally, this means that the function looks like a line when viewed up close at <span class="process-math">\((a,f(a))\)</span> and that there is not a corner point or cusp at <span class="process-math">\((a,f(a))\text{.}\)</span>
+</div></li>
+<li id="rQp" data-permid="rQp"><div class="para" id="Sim" data-permid="Sim">Of the three conditions discussed in this section (having a limit at <span class="process-math">\(x = a\text{,}\)</span> being continuous at <span class="process-math">\(x = a\text{,}\)</span> and being differentiable at <span class="process-math">\(x = a\)</span>), the strongest condition is being differentiable, and the next strongest is being continuous. In particular, if <span class="process-math">\(f\)</span> is differentiable at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> is also continuous at <span class="process-math">\(x = a\text{,}\)</span> and if <span class="process-math">\(f\)</span> is continuous at <span class="process-math">\(x = a\text{,}\)</span> then <span class="process-math">\(f\)</span> has a limit at <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+</ul></div></section><section class="exercises" id="bFy" data-permid="bFy"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">1.7.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="MDE" data-permid="MDE"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Limit values of a piecewise graph.</span>
+</h4>
+<div class="para" id="extracted-webwork-31-1-1-1">Use the figure below, which gives a graph of the function <span class="process-math">\(f(x)\text{,}\)</span> to give values for the indicated limits.  If a limit does not exist, enter <em class="emphasis"><em class="alert">none</em></em>.</div> <div class="image-box" style="width: 41%; margin-left: 29.5%; margin-right: 29.5%;"><img src="generated/webwork/images/webwork-31-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-31-1-1-3">
+<em class="alert">(a)</em> <span class="process-math">\(\lim\limits_{x \rightarrow -1} f(x)\)</span> = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> <a class="external" href="/pg_files/helpFiles/Entering-Limits.html" target="_blank">help (limits)</a><details class="ptx-footnote" aria-live="polite" id="extracted-webwork-31-1-1-3-5"><summary class="ptx-footnote__number" title="Footnote 1.7.5.1.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="extracted-webwork-31-1-1-3-5"><code class="code-inline tex2jax_ignore">/pg_files/helpFiles/Entering-Limits.html</code></div></details>
+</div> <div class="para" id="extracted-webwork-31-1-1-4">
+<em class="alert">(b)</em> <span class="process-math">\(\lim\limits_{x \rightarrow 0} f(x)\)</span> = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-31-1-1-5">
+<em class="alert">(c)</em> <span class="process-math">\(\lim\limits_{x \rightarrow 1} f(x)\)</span> = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-31-1-1-6">
+<em class="alert">(d)</em> <span class="process-math">\(\lim\limits_{x \rightarrow 4} f(x)\)</span> = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div></article><article class="exercise exercise-like" id="sKN" data-permid="sKN"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Limit values of a piecewise formula.</span>
+</h4>
+<div class="para logical" id="extracted-webwork-32-1-1-1">
+<div class="para">For the function</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \begin{cases} 2 x - 4, \amp  0\le x \lt  4\\ -2, \amp  x = 4\\ x^2 - 8 x + 20, \amp  4 \lt  x \end{cases}
+\end{equation*}
+</div>
+<div class="para">use algebra to find each of the following limits:</div>
+</div> <div class="para" id="extracted-webwork-32-1-1-2">
+<span class="process-math">\(\lim\limits_{x\to 4^{+}}\, f(x) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-32-1-1-3">
+<span class="process-math">\(\lim\limits_{x\to 4^{-}}\, f(x) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-32-1-1-4">
+<span class="process-math">\(\lim\limits_{x\to 4}\, f(x) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-32-1-1-5"><em class="emphasis">(For each, enter <em class="alert">DNE</em> if the limit does not exist.)</em></div> <div class="para" id="extracted-webwork-32-1-1-6">Sketch a graph of <span class="process-math">\(f(x)\)</span> to confirm your answers.</div></article><article class="exercise exercise-like" id="YRW" data-permid="YRW"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Continuity and differentiability of a graph.</span>
+</h4>
+<div class="para" id="extracted-webwork-33-1-1-1">Consider the function graphed below.</div> <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="generated/webwork/images/webwork-33-image-1.png" class="contained"></div> <div class="para" id="extracted-webwork-33-1-1-3">At what <span class="process-math">\(x\)</span>-values does the function appear to not be continuous? <span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-33-1-1-4">At what <span class="process-math">\(x\)</span>-values does the function appear to not be differentiable? <span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-33-1-1-5"><em class="emphasis">(Enter <em class="alert">none</em> if there are no <span class="process-math">\(x\)</span>-values that apply; enter <span class="process-math">\(x\)</span>-values as a comma-separated list, e.g., <em class="alert">1,3,5</em>.)</em></div></article><article class="exercise exercise-like" id="EZf" data-permid="EZf"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Continuity of a piecewise formula.</span>
+</h4>
+<div class="para logical" id="extracted-webwork-34-1-1-1">
+<div class="para">Find <span class="process-math">\(k\)</span> so that the following function is continuous:</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \begin{cases} 
+kx \amp       \hbox{if}\quad  0\le x \lt  4 \\
+4 x^2 \amp   \hbox{if}\quad  4\le x.
+\end{cases}
+\end{equation*}
+</div>
+<div class="para">
+<span class="process-math">\(k =\)</span> <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div>
+</div></article><article class="exercise exercise-like" id="lgo" data-permid="lgo"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para" id="FXu" data-permid="FXu">Consider the graph of the function <span class="process-math">\(y = p(x)\)</span> that is provided in <a href="sec-1-7-lim-cont-diff.html#SlM" class="xref" data-knowl="./knowl/xref/F-1-7-Ez2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.10">Figure 1.7.10</a>. Assume that each portion of the graph of <span class="process-math">\(p\)</span> is a straight line, as pictured.</div> <figure class="figure figure-like" id="SlM" data-permid="SlM"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_7_Ez2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.10<span class="period">.</span></span><span class="space"> </span>At left, the piecewise linear function <span class="process-math">\(y = p(x)\text{.}\)</span>  At right, axes for plotting <span class="process-math">\(y = p'(x)\text{.}\)</span></figcaption></figure> <div class="para logical" id="meD" data-permid="meD"><ol class="lower-alpha">
+<li id="URX" data-permid="URX"><div class="para" id="SHl" data-permid="SHl">State all values of <span class="process-math">\(a\)</span> for which <span class="process-math">\(\lim_{x \to a} p(x)\)</span> does not exist.</div></li>
+<li id="AZg" data-permid="AZg"><div class="para" id="yOu" data-permid="yOu">State all values of <span class="process-math">\(a\)</span> for which <span class="process-math">\(p\)</span> is not continuous at <span class="process-math">\(a\text{.}\)</span>
+</div></li>
+<li id="hgp" data-permid="hgp"><div class="para" id="eVD" data-permid="eVD">State all values of <span class="process-math">\(a\)</span> for which <span class="process-math">\(p\)</span> is not differentiable at <span class="process-math">\(x = a\text{.}\)</span>
+</div></li>
+<li id="Nny" data-permid="Nny"><div class="para" id="LcM" data-permid="LcM">On the axes provided in <a href="sec-1-7-lim-cont-diff.html#SlM" class="xref" data-knowl="./knowl/xref/F-1-7-Ez2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.10">Figure 1.7.10</a>, sketch an accurate graph of <span class="process-math">\(y = p'(x)\text{.}\)</span>
+</div></li>
+</ol></div></article><article class="exercise exercise-like" id="Rnx" data-permid="Rnx"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para logical" id="ysV" data-permid="ysV">
+<div class="para">For each of the following prompts, give an example of a function that satisfies the stated criteria. A formula or a graph, with reasoning, is sufficient for each. If no such example is possible, explain why.</div>
+<ol class="lower-alpha">
+<li id="qAb" data-permid="qAb"><div class="para" id="Iig" data-permid="Iig">A function <span class="process-math">\(f\)</span> that is continuous at <span class="process-math">\(a = 2\)</span> but not differentiable at <span class="process-math">\(a = 2\text{.}\)</span>
+</div></li>
+<li id="WHk" data-permid="WHk"><div class="para" id="opp" data-permid="opp">A function <span class="process-math">\(g\)</span> that is differentiable at <span class="process-math">\(a = 3\)</span> but does not have a limit at <span class="process-math">\(a=3\text{.}\)</span>
+</div></li>
+<li id="COt" data-permid="COt"><div class="para" id="Uwy" data-permid="Uwy">A function <span class="process-math">\(h\)</span> that has a limit at <span class="process-math">\(a = -2\text{,}\)</span> is defined at <span class="process-math">\(a = -2\text{,}\)</span> but is not continuous at <span class="process-math">\(a = -2\text{.}\)</span>
+</div></li>
+<li id="iVC" data-permid="iVC"><div class="para logical" id="ADH" data-permid="ADH">
+<div class="para">A function <span class="process-math">\(p\)</span> that satisfies all of the following:</div>
+<ul class="disc">
+<li id="cww" data-permid="cww"><div class="para" id="cKR" data-permid="cKR">
+<span class="process-math">\(p(-1) = 3\)</span> and <span class="process-math">\(\lim_{x \to -1} p(x) = 2\)</span>
+</div></li>
+<li id="IDF" data-permid="IDF"><div class="para" id="gKQ" data-permid="gKQ">
+<span class="process-math">\(p(0) = 1\)</span> and <span class="process-math">\(p'(0) = 0\)</span>
+</div></li>
+<li id="oKO" data-permid="oKO"><div class="para" id="MRZ" data-permid="MRZ">
+<span class="process-math">\(\lim_{x \to 1} p(x) = p(1)\)</span> and <span class="process-math">\(p'(1)\)</span> does not exist</div></li>
+</ul>
+</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="xuG" data-permid="xuG"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para logical" id="eAe" data-permid="eAe">
+<div class="para">Let <span class="process-math">\(h(x)\)</span> be a function whose derivative <span class="process-math">\(y= h'(x)\)</span> is given by the graph on the right in <a href="sec-1-7-lim-cont-diff.html#KHn" class="xref" data-knowl="./knowl/xref/F-1-7-Ez3.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.7.11">Figure 1.7.11</a>.</div>
+<ol class="lower-alpha">
+<li id="Mif" data-permid="Mif"><div class="para" id="JXt" data-permid="JXt">Based on the graph of <span class="process-math">\(y = h'(x)\text{,}\)</span> what can you say about the behavior of the function <span class="process-math">\(y = h(x)\text{?}\)</span>
+</div></li>
+<li id="spo" data-permid="spo"><div class="para" id="qeC" data-permid="qeC">At which values of <span class="process-math">\(x\)</span> is <span class="process-math">\(y = h'(x)\)</span> not defined? What behavior does this lead you to expect to see in the graph of <span class="process-math">\(y=h(x)\text{?}\)</span>
+</div></li>
+<li id="Ywx" data-permid="Ywx"><div class="para" id="WlL" data-permid="WlL">Is it possible for <span class="process-math">\(y = h(x)\)</span> to have points where <span class="process-math">\(h\)</span> is not continuous? Explain your answer.</div></li>
+<li id="EDG" data-permid="EDG"><div class="para" id="CsU" data-permid="CsU">On the axes provided at left, sketch at least two distinct graphs that are possible functions <span class="process-math">\(y = h(x)\)</span> that each have a derivative <span class="process-math">\(y = h'(x)\)</span> that matches the provided graph at right. Explain why there are multiple possibilities for <span class="process-math">\(y = h(x)\text{.}\)</span>
+</div></li>
+</ol>
+</div> <figure class="figure figure-like" id="KHn" data-permid="KHn"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="external/images/1_7_Ez3.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.7.11<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(y = h(x)\)</span> and, at right, the graph of <span class="process-math">\(y = h'(x)\text{.}\)</span></figcaption></figure></article><article class="exercise exercise-like" id="dBP" data-permid="dBP"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para logical" id="qOw" data-permid="qOw">
+<div class="para">Consider the function <span class="process-math">\(g(x) = \sqrt{|x|}\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="Jnz" data-permid="Jnz"><div class="para" id="HcN" data-permid="HcN">Use a graph to explain visually why <span class="process-math">\(g\)</span> is not differentiable at <span class="process-math">\(x = 0\text{.}\)</span>
+</div></li>
+<li id="puI" data-permid="puI"><div class="para logical" id="njW" data-permid="njW">
+<div class="para">Use the limit definition of the derivative to show that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+g'(0) = \lim_{h \to 0} \frac{\sqrt{|h|}}{h}\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li id="VBR" data-permid="VBR"><div class="para" id="Trf" data-permid="Trf">Investigate the value of <span class="process-math">\(g'(0)\)</span> by estimating the limit in (b) using small positive and negative values of <span class="process-math">\(h\text{.}\)</span> For instance, you might compute <span class="process-math">\(\frac{\sqrt{|-0.01|}}{0.01}\text{.}\)</span> Be sure to use several different values of <span class="process-math">\(h\)</span> (both positive and negative), including ones closer to 0 than 0.01. What do your results tell you about <span class="process-math">\(g'(0)\text{?}\)</span>
+</div></li>
+<li id="BJa" data-permid="BJa"><div class="para" id="zyo" data-permid="zyo">Use your graph in (a) to sketch an approximate graph of <span class="process-math">\(y = g'(x)\text{.}\)</span>
+</div></li>
+</ol>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-1-6-second-d.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-1-8-tan-line-approx.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="http://gvsu.edu/s/0vK" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

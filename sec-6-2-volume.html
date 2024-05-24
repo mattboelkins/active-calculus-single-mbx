@@ -1,0 +1,1034 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC Using Definite Integrals to Find Volume</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Active Calculus">
+<meta property="book:author" content="Matthew Boelkins">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-dev.uleth.ca/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.33/pretext-webwork/2.18/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="boelkins-ACS" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/ActiveCalculusImage_sm.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root--1-2.html"><span class="title">Active Calculus</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="sec-6-1-area.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-6.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-6-3-mass.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Active Calculus: Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Understanding the Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-vel.html" class="internal"><span class="codenumber">1.1</span> <span class="title">How do we measure velocity?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#iwq" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Position and average velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#ODz" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#uKI" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-vel.html#NIx" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-2-lim.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The notion of limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#BTI" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#iaR" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#Oia" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-lim.html#GGO" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The derivative of a function at a point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#dFt" class="internal"><span class="codenumber">1.3.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#JMC" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#WsC" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The derivative function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#Lgq" class="internal"><span class="codenumber">1.4.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rnz" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rjI" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-5-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#pcN" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#VjW" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#Brf" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5-units.html#tXk" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The second derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#wlN" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#csW" class="internal"><span class="codenumber">1.6.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#IAf" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#oHo" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#DjS" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Limits, Continuity, and Differentiability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#AAh" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Having a limit at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#gHq" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Being continuous at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#MOz" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Being differentiable at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#sVI" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#bFy" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">1.8</span> <span class="title">The Tangent Line Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#LnH" class="internal"><span class="codenumber">1.8.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ruQ" class="internal"><span class="codenumber">1.8.2</span> <span class="title">The local linearization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#XBZ" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ZJh" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Computing Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1-elem-rules.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Elementary derivative rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#yDQ" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Some Key Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#eKZ" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Constant, Power, and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#KSi" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Constant Multiples and Sums of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#qZr" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#QSl" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-2-sin-cos.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The sine and cosine functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#QVP" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#xcY" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#gZy" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-3-prod-quot.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The product and quotient rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#MVQ" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The product rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#tcZ" class="internal"><span class="codenumber">2.3.2</span> <span class="title">The quotient rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#Zki" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Combining rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#Frr" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#ApM" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-4-other-trig.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Derivatives of other trigonometric functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#eiw" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Derivatives of the cotangent, secant, and cosecant functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#KpF" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#ZgR" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-5-chain.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#Utl" class="internal"><span class="codenumber">2.5.1</span> <span class="title">The chain rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#AAu" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Using multiple rules simultaneously</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#gHD" class="internal"><span class="codenumber">2.5.3</span> <span class="title">The composite version of basic function rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#MOM" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-5-chain.html#dJG" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-6-inverse.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#OSu" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Basic facts about inverse functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#uZD" class="internal"><span class="codenumber">2.6.2</span> <span class="title">The derivative of the natural logarithm function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#bgM" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Inverse trigonometric functions and their derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#HnV" class="internal"><span class="codenumber">2.6.4</span> <span class="title">The link between the derivative of a function and the derivative of its inverse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#nve" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-6-inverse.html#YSJ" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-7-implicit.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Derivatives of Functions Given Implicitly</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-7-implicit.html#QWc" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Implicit Differentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-7-implicit.html#xdl" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-7-implicit.html#amx" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-8-LHR.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Using Derivatives to Evaluate Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#SpQ" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Using derivatives to evaluate indeterminate limits of the form <span class="process-math">\(\frac{0}{0}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ywZ" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Limits involving <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#eEi" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-8-LHR.html#qtK" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Using Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-1-tests.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Using derivatives to identify extreme values</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#aiK" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Critical numbers and the first derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#GpT" class="internal"><span class="codenumber">3.1.2</span> <span class="title">The second derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#mxc" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-1-tests.html#RJW" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-2-families.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Using derivatives to describe families of functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2-families.html#YHS" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Describing families of functions in terms of parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2-families.html#EPb" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-2-families.html#mBc" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3-optimization.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Global Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#Hoi" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Global Optimization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#nvr" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Moving toward applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#TCA" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3-optimization.html#GWJ" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-applied-opt.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Applied Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#FNq" class="internal"><span class="codenumber">3.4.1</span> <span class="title">More applied optimization problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#lUz" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#DGE" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-5-rel-rates.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Related Rates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#aqb" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Related Rates Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#Gxk" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#Pzx" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-velocity-distance.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Determining distance traveled from velocity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#EWs" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Area under the graph of the velocity function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#ldB" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Two approaches: area and antidifferentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#RkK" class="internal"><span class="codenumber">4.1.3</span> <span class="title">When velocity is negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#xrT" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#lax" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-Riemann.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Riemann Sums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#jCJ" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Sigma Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#PJS" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Riemann Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#vRb" class="internal"><span class="codenumber">4.2.3</span> <span class="title">When the function is sometimes negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#bYk" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#DGR" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-definite-integral.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#uqj" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The definition of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#axs" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Some properties of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#GEB" class="internal"><span class="codenumber">4.3.3</span> <span class="title">How the definite integral is connected to a function’s average value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#mLK" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#Ucz" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-FTC.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#rJY" class="internal"><span class="codenumber">4.4.1</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#XRh" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Basic antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#DYq" class="internal"><span class="codenumber">4.4.3</span> <span class="title">The total change theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#kfz" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-FTC.html#HHd" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Evaluating Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-1-antid-graphs.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Constructing Accurate Graphs of Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#Sqq" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Constructing the graph of an antiderivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#yxz" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Multiple antiderivatives of a single function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#eEI" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Functions defined by integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#KLR" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#gcJ" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-2-FTC2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The Second Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#RUR" class="internal"><span class="codenumber">5.2.1</span> <span class="title">The Second Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#yca" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Understanding Integral Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#ejj" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Differentiating an Integral Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#Kqs" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#AjV" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-3-substitution.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration by Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#cIr" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Reversing the Chain Rule: First Steps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#IPA" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Reversing the Chain Rule: <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#oWJ" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Evaluating Definite Integrals via <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#VdS" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-3-substitution.html#lDN" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-4-parts.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Integration by Parts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#JdV" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Reversing the Product Rule: Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#ple" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Some Subtleties with Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#Vsn" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Using Integration by Parts Multiple Times</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#Bzw" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Evaluating Definite Integrals Using Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#hGF" class="internal"><span class="codenumber">5.4.5</span> <span class="title">When <span class="process-math">\(u\)</span>-substitution and Integration by Parts Fail to Help</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#NNO" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-4-parts.html#zAo" class="internal"><span class="codenumber">5.4.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-other-opt.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Other Options for Finding Algebraic Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#mET" class="internal"><span class="codenumber">5.5.1</span> <span class="title">The Method of Partial Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#SMc" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Using an Integral Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#yTl" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Using Computer Algebra Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#fau" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#okl" class="internal"><span class="codenumber">5.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-6-num-int.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Numerical Integration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#Nll" class="internal"><span class="codenumber">5.6.1</span> <span class="title">The Trapezoid Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#tsu" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Comparing the Midpoint and Trapezoid Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#ZzD" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Simpson’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#FGM" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Overall observations regarding <span class="process-math">\(L_n\text{,}\)</span> <span class="process-math">\(R_n\text{,}\)</span> <span class="process-math">\(T_n\text{,}\)</span> <span class="process-math">\(M_n\text{,}\)</span> and <span class="process-math">\(S_{2n}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#lNV" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-6-num-int.html#bOP" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Using Definite Integrals</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-1-area.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Using Definite Integrals to Find Area and Length</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#nhJ" class="internal"><span class="codenumber">6.1.1</span> <span class="title">The Area Between Two Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#ToS" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Finding Area with Horizontal Slices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#zwb" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Finding the length of a curve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#fDk" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-1-area.html#lwW" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-6-2-volume.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Using Definite Integrals to Find Volume</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#qqK" class="internal"><span class="codenumber">6.2.1</span> <span class="title">The Volume of a Solid of Revolution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#WxT" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Revolving about the <span class="process-math">\(y\)</span>-axis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#CFc" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Revolving about horizontal and vertical lines other than the coordinate axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#iMl" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-2-volume.html#dLt" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-3-mass.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Density, Mass, and Center of Mass</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#FOd" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Density</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#lVm" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Weighted Averages</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#Scv" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Center of Mass</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#yjE" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-3-mass.html#JLy" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-4-physics.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Physics Applications:  Work, Force, and Pressure</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#kuu" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#QBD" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Work: Pumping Liquid from a Tank</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#wIM" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Force due to Hydrostatic Pressure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#cPV" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-4-physics.html#qhc" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-5-improper.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Improper Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#kIP" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Improper Integrals Involving Unbounded Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#QPY" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Convergence and Divergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#wXh" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Improper Integrals Involving Unbounded Integrands</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#deq" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-5-improper.html#dbM" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-7.html" class="internal"><span class="codenumber">7</span> <span class="title">Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html" class="internal"><span class="codenumber">7.1</span> <span class="title">An Introduction to Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#Quz" class="internal"><span class="codenumber">7.1.1</span> <span class="title">What is a differential equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#wBI" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Differential equations in the world around us</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#cIR" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Solving a differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#IQa" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#jtO" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-2-qualitative.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Qualitative behavior of solutions to DEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#CFp" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Slope fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#iMy" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Equilibrium solutions and stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#OTH" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#ehs" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-3-euler.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Euler’s method</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#MIV" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#sQe" class="internal"><span class="codenumber">7.3.2</span> <span class="title">The error in Euler’s method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#YXn" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-3-euler.html#wdS" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-4-separable.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Separable differential equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-4-separable.html#Gyk" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Solving separable differential equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-4-separable.html#mFt" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-4-separable.html#Gau" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-5-modeling.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Modeling with differential equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-5-modeling.html#Anz" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Developing a differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-5-modeling.html#guI" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-5-modeling.html#ORD" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-6-logistic.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Population Growth and the Logistic Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#ucO" class="internal"><span class="codenumber">7.6.1</span> <span class="title">The earth’s population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#ajX" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Solving the logistic differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#Grg" class="internal"><span class="codenumber">7.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-6-logistic.html#tcv" class="internal"><span class="codenumber">7.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-8.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-1-sequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequences</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-1-sequences.html#ReG" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Sequences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-1-sequences.html#xlP" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-1-sequences.html#dMt" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-2-geometric.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Geometric Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-2-geometric.html#qrk" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-2-geometric.html#Wyt" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-2-geometric.html#gsR" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-3-series.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Series of Real Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#Tio" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Infinite Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#zpx" class="internal"><span class="codenumber">8.3.2</span> <span class="title">The Divergence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#fwG" class="internal"><span class="codenumber">8.3.3</span> <span class="title">The Integral Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#LDP" class="internal"><span class="codenumber">8.3.4</span> <span class="title">The Limit Comparison Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#rKY" class="internal"><span class="codenumber">8.3.5</span> <span class="title">The Ratio Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#XSh" class="internal"><span class="codenumber">8.3.6</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-3-series.html#HXy" class="internal"><span class="codenumber">8.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-4-alternating.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Alternating Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#mUb" class="internal"><span class="codenumber">8.4.1</span> <span class="title">The Alternating Series Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#Tbk" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Estimating Alternating Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#zit" class="internal"><span class="codenumber">8.4.3</span> <span class="title">Absolute and Conditional Convergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#fpC" class="internal"><span class="codenumber">8.4.4</span> <span class="title">Summary of Tests for Convergence of Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#LwL" class="internal"><span class="codenumber">8.4.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-4-alternating.html#Rkg" class="internal"><span class="codenumber">8.4.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-5-taylor.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#Ivb" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#oCk" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Taylor Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#UJt" class="internal"><span class="codenumber">8.5.3</span> <span class="title">The Interval of Convergence of a Taylor Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#AQC" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Error Approximations for Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#gXL" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-5-taylor.html#NyC" class="internal"><span class="codenumber">8.5.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-6-powerseries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Power Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#EnY" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Power Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#kvh" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Manipulating Power Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#QCq" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#BNa" class="internal"><span class="codenumber">8.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="activities-answers.html" class="internal"><span class="codenumber">B</span> <span class="title">Answers to Activities</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="exercises-answers.html" class="internal"><span class="codenumber">C</span> <span class="title">Answers to Selected Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="KjB" data-permid="KjB"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">6.2</span><span class="space"> </span><span class="title">Using Definite Integrals to Find Volume</span>
+</h2>
+<article class="objectives goal-like" id="LYO" data-permid="LYO"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="Jei" data-permid="Jei"><div class="para" id="tVk" data-permid="tVk">How can we use a definite integral to find the volume of a three-dimensional solid of revolution that results from revolving a two-dimensional region about a particular axis?</div></li>
+<li id="plr" data-permid="plr"><div class="para" id="act" data-permid="act">In what circumstances do we integrate with respect to <span class="process-math">\(y\)</span> instead of integrating with respect to <span class="process-math">\(x\text{?}\)</span>
+</div></li>
+<li id="VsA" data-permid="VsA"><div class="para" id="GjC" data-permid="GjC">What adjustments do we need to make if we revolve about a line other than the <span class="process-math">\(x\)</span>- or <span class="process-math">\(y\)</span>-axis?</div></li>
+</ul></article><section class="introduction" id="sfX" data-permid="sfX"><div class="para" id="CjD" data-permid="CjD">Just as we can use definite integrals to add the areas of rectangular slices to find the exact area that lies between two curves, we can also use integrals to find the volume of regions whose cross-sections have a particular shape.</div> <div class="para" id="iqM" data-permid="iqM">In particular, we can determine the volume of solids whose cross-sections are all thin cylinders (or washers) by adding up the volumes of these individual slices. We first consider a familiar shape in <a href="" class="xref" data-knowl="./knowl/xref/PA-6-2.html" title="Preview Activity 6.2.1">Preview Activity 6.2.1</a>: a circular cone.</div> <article class="exploration project-like" id="hIf" data-permid="hIf"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="period">.</span>
+</h3>
+<div class="para" id="pmE" data-permid="pmE">Consider a circular cone of radius 3 and height 5, which we view horizontally as pictured in <a href="" class="xref" data-knowl="./knowl/xref/F-PA-6-2.html" title="Figure 6.2.1">Figure 6.2.1</a>. Our goal in this activity is to use a definite integral to determine the volume of the cone.</div> <figure class="figure figure-like" id="BAW" data-permid="BAW"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/6_2_PA1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.1<span class="period">.</span></span><span class="space"> </span>The circular cone described in <a href="" class="xref" data-knowl="./knowl/xref/PA-6-2.html" title="Preview Activity 6.2.1">Preview Activity 6.2.1</a></figcaption></figure> <div class="para logical" id="VtN" data-permid="VtN"><ol class="lower-alpha">
+<li id="fSS" data-permid="fSS"><div class="para" id="kCL" data-permid="kCL">Find a formula for the linear function <span class="process-math">\(y = f(x)\)</span> that is pictured in <a href="" class="xref" data-knowl="./knowl/xref/F-PA-6-2.html" title="Figure 6.2.1">Figure 6.2.1</a>.</div></li>
+<li id="Mab" data-permid="Mab"><div class="para" id="QJU" data-permid="QJU">For the representative slice of thickness <span class="process-math">\(\Delta x\)</span> that is located horizontally at a location <span class="process-math">\(x\)</span> (somewhere between <span class="process-math">\(x = 0\)</span> and <span class="process-math">\(x = 5\)</span>), what is the radius of the representative slice? Note that the radius depends on the value of <span class="process-math">\(x\text{.}\)</span>
+</div></li>
+<li id="shk" data-permid="shk"><div class="para" id="wRd" data-permid="wRd">What is the volume of the representative slice you found in (b)?</div></li>
+<li id="Yot" data-permid="Yot"><div class="para" id="cYm" data-permid="cYm">What definite integral will sum the volumes of the thin slices across the full horizontal span of the cone? What is the exact value of this definite integral?</div></li>
+<li id="EvC" data-permid="EvC"><div class="para" id="Jfv" data-permid="Jfv">Compare the result of your work in (d) to the volume of the cone that comes from using the formula <span class="process-math">\(V_{\text{cone} } = \frac{1}{3} \pi r^2 h\text{.}\)</span>
+</div></li>
+</ol></div></article></section><section class="subsection" id="qqK" data-permid="qqK"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.1</span><span class="space"> </span><span class="title">The Volume of a Solid of Revolution</span>
+</h3>
+<div class="para" id="OxV" data-permid="OxV">A solid of revolution is a three dimensional solid that can be generated by revolving one or more curves around a fixed axis. For example, the circular cone in <a href="" class="xref" data-knowl="./knowl/xref/F-PA-6-2.html" title="Figure 6.2.1">Figure 6.2.1</a> is the solid of revolution generated by revolving the portion of the line <span class="process-math">\(y = 3 - \frac{3}{5}x\)</span> from <span class="process-math">\(x = 0\)</span> to <span class="process-math">\(x = 5\)</span> about the <span class="process-math">\(x\)</span>-axis. Notice that if we slice a solid of revolution perpendicular to the axis of revolution, the resulting cross-section is a circle.</div>
+<div class="para" id="uFe" data-permid="uFe">We first consider solids whose slices are thin cylinders. Recall that the volume of a cylinder is given by <span class="process-math">\(V = \pi r^2 h\text{.}\)</span>
+</div>
+<article class="example example-like" id="bhM" data-permid="bhM"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h4>
+<div class="para" id="dGT" data-permid="dGT">Find the volume of the solid of revolution generated when the region <span class="process-math">\(R\)</span> bounded by <span class="process-math">\(y = 4-x^2\)</span> and the <span class="process-math">\(x\)</span>-axis is revolved about the <span class="process-math">\(x\)</span>-axis.</div>
+<div class="solutions"><details id="Yng" data-permid="Yng" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like">
+<div class="para" id="eMm" data-permid="eMm">First, we observe that <span class="process-math">\(y = 4-x^2\)</span> intersects the <span class="process-math">\(x\)</span>-axis at the points <span class="process-math">\((-2,0)\)</span> and <span class="process-math">\((2,0)\text{.}\)</span> When we revolve the region <span class="process-math">\(R\)</span> about the <span class="process-math">\(x\)</span>-axis, we get the three-dimensional solid pictured in <a href="" class="xref" data-knowl="./knowl/xref/F-6-2-Ex1.html" title="Figure 6.2.3">Figure 6.2.3</a>.</div> <figure class="figure figure-like" id="DoW" data-permid="DoW"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/6_2_Ex1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.3<span class="period">.</span></span><span class="space"> </span>The solid of revolution in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-Disks.html" title="Example 6.2.2">Example 6.2.2</a>.</figcaption></figure> <div class="para logical" id="KTv" data-permid="KTv">
+<div class="para">We slice the solid into vertical slices of thickness <span class="process-math">\(\Delta x\)</span> between <span class="process-math">\(x = -2\)</span> and <span class="process-math">\(x = 2\text{.}\)</span> A representative slice is a cylinder of height <span class="process-math">\(\Delta x\)</span> and radius <span class="process-math">\(4-x^2\text{.}\)</span> Hence, the volume of the slice is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{\text{slice} } = \pi (4-x^2)^2 \Delta x\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="raE" data-permid="raE">
+<div class="para">Using a definite integral to sum the volumes of the representative slices, it follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_{-2}^{2} \pi (4-x^2)^2 \, dx\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="XhN" data-permid="XhN">It is straightforward to evaluate the integral and find that the volume is <span class="process-math">\(V = \frac{512}{15}\pi\text{.}\)</span>
+</div>
+</div></details></div></article><div class="para" id="aMn" data-permid="aMn">For a solid such as the one in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-Disks.html" title="Example 6.2.2">Example 6.2.2</a>, where each slice is a cylindrical disk, we first find the volume of a typical slice (noting particularly how this volume depends on <span class="process-math">\(x\)</span>), and then integrate over the range of <span class="process-math">\(x\)</span>-values that bound the solid. Often, we will be content with simply finding the integral that represents the volume; if we desire a numeric value for the integral, we typically use a calculator or computer algebra system to find that value.</div>
+<div class="para" id="GTw" data-permid="GTw">This method for finding the volume of a solid of revolution is often called the <em class="emphasis">disk method</em>. </div>
+<article class="assemblage assemblage-like" id="OTu" data-permid="OTu"><h4 class="heading"><span class="title">The Disk Method.</span></h4>
+<div class="para logical" id="naF" data-permid="naF">
+<div class="para">If <span class="process-math">\(y = r(x)\)</span> is a nonnegative continuous function on <span class="process-math">\([a,b]\text{,}\)</span> then the volume of the solid of revolution generated by revolving the curve about the <span class="process-math">\(x\)</span>-axis over this interval is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_a^b \pi r(x)^2 \, dx\text{.}
+\end{equation*}
+</div>
+</div></article><div class="para" id="ThO" data-permid="ThO">A different type of solid can emerge when two curves are involved, as we see in the following example.</div>
+<article class="example example-like" id="HoV" data-permid="HoV"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
+</h4>
+<div class="para" id="JOc" data-permid="JOc">Find the volume of the solid of revolution generated when the finite region <span class="process-math">\(R\)</span> that lies between <span class="process-math">\(y = 4-x^2\)</span> and <span class="process-math">\(y = x+2\)</span> is revolved about the <span class="process-math">\(x\)</span>-axis.</div>
+<div class="solutions"><details id="Eup" data-permid="Eup" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like">
+<div class="para logical" id="jwf" data-permid="jwf">
+<div class="para">First, we must determine where the curves <span class="process-math">\(y = 4-x^2\)</span> and <span class="process-math">\(y = x+2\)</span> intersect. Substituting the expression for <span class="process-math">\(y\)</span> from the second equation into the first equation, we find that <span class="process-math">\(x + 2 = 4-x^2\text{.}\)</span> Rearranging, it follows that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+x^2 + x - 2 = 0\text{,}
+\end{equation*}
+</div>
+<div class="para">and the solutions to this equation are <span class="process-math">\(x = -2\)</span> and <span class="process-math">\(x = 1\text{.}\)</span> The curves therefore cross at <span class="process-math">\((-2,0)\)</span> and <span class="process-math">\((1,3)\text{.}\)</span>
+</div>
+</div> <div class="para" id="PDo" data-permid="PDo">When we revolve the region <span class="process-math">\(R\)</span> about the <span class="process-math">\(x\)</span>-axis, we get the three-dimensional solid pictured at left in <a href="" class="xref" data-knowl="./knowl/xref/F-6-2-Ex2.html" title="Figure 6.2.5">Figure 6.2.5</a>.</div> <figure class="figure figure-like" id="Unh" data-permid="Unh"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/images/6_2_Ex2_left.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/images/6_2_Ex2_right.svg" role="img" class="contained"></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.5<span class="period">.</span></span><span class="space"> </span>At left, the solid of revolution in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-Washers.html" title="Example 6.2.4">Example 6.2.4</a>.  At right, a typical slice with inner radius <span class="process-math">\(r(x)\)</span> and outer radius <span class="process-math">\(R(x)\text{.}\)</span></figcaption></figure> <div class="para" id="vKx" data-permid="vKx">Immediately we see a major difference between the solid in this example and the one in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-Disks.html" title="Example 6.2.2">Example 6.2.2</a>: here, the three-dimensional solid of revolution isn’t “solid” because it has open space in its center along the axis of revolution. If we slice the solid perpendicular to the axis of revolution, we observe that the resulting slice is not a solid disk, but rather a <em class="emphasis">washer</em>, as pictured at right in <a href="" class="xref" data-knowl="./knowl/xref/F-6-2-Ex2.html" title="Figure 6.2.5">Figure 6.2.5</a>. At a given location <span class="process-math">\(x\)</span> between <span class="process-math">\(x = -2\)</span> and <span class="process-math">\(x = 1\text{,}\)</span> the small radius <span class="process-math">\(r(x)\)</span> of the inner circle is determined by the curve <span class="process-math">\(y = x+2\text{,}\)</span> so <span class="process-math">\(r(x) = x+2\text{.}\)</span> Similarly, the big radius <span class="process-math">\(R(x)\)</span> comes from the function <span class="process-math">\(y = 4-x^2\text{,}\)</span> and thus <span class="process-math">\(R(x) = 4-x^2\text{.}\)</span>
+</div> <div class="para logical" id="bRG" data-permid="bRG">
+<div class="para">To find the volume of a representative slice, we compute the volume of the outer disk and subtract the volume of the inner disk. Since</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\pi R(x)^2 \Delta x - \pi r(x)^2 \Delta x = \pi [ R(x)^2 - r(x)^2] \Delta x\text{,}
+\end{equation*}
+</div>
+<div class="para">it follows that the volume of a typical slice is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{\text{slice} } = \pi [ (4-x^2)^2 - (x+2)^2 ] \Delta x\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="HYP" data-permid="HYP">
+<div class="para">Using a definite integral to sum the volumes of the respective slices across the integral, we find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_{-2}^1 \pi[ (4-x^2)^2 - (x+2)^2 ] \, dx\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="ofY" data-permid="ofY">Evaluating the integral, we find that the volume of the solid of revolution is <span class="process-math">\(V = \frac{108}{5}\pi\text{.}\)</span>
+</div>
+</div></details></div></article><div class="para" id="zoX" data-permid="zoX">This method for finding the volume of a solid of revolution generated by two curves is often called the <em class="emphasis">washer method</em>. </div>
+<article class="assemblage assemblage-like" id="vaD" data-permid="vaD"><h4 class="heading"><span class="title">The Washer Method.</span></h4>
+<div class="para logical" id="fwg" data-permid="fwg">
+<div class="para">If <span class="process-math">\(y = R(x)\)</span> and <span class="process-math">\(y = r(x)\)</span> are nonnegative continuous functions on <span class="process-math">\([a,b]\)</span> that satisfy <span class="process-math">\(R(x) \ge r(x)\)</span> for all <span class="process-math">\(x\)</span> in <span class="process-math">\([a,b]\text{,}\)</span> then the volume of the solid of revolution generated by revolving the region between them about the <span class="process-math">\(x\)</span>-axis over this interval is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_a^b \pi [R(x)^2 - r(x)^2] \, dx\text{.}
+\end{equation*}
+</div>
+</div></article><article class="activity project-like" id="ilR" data-permid="ilR"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="YSf" data-permid="YSf">
+<div class="para">In each of the following questions, draw a careful, labeled sketch of the region described, as well as the resulting solid that results from revolving the region about the stated axis. In addition, draw a representative slice and state the volume of that slice, along with a definite integral whose value is the volume of the entire solid. It is not necessary to evaluate the integrals you find.</div>
+<ol class="lower-alpha">
+<li id="uVI" data-permid="uVI"><div class="para" id="NJg" data-permid="NJg">The region <span class="process-math">\(S\)</span> bounded by the <span class="process-math">\(x\)</span>-axis, the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> and the line <span class="process-math">\(x = 4\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="bcR" data-permid="bcR"><div class="para" id="tQp" data-permid="tQp">The region <span class="process-math">\(S\)</span> bounded by the <span class="process-math">\(y\)</span>-axis, the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> and the line <span class="process-math">\(y = 2\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="Hka" data-permid="Hka"><div class="para" id="ZXy" data-permid="ZXy">The finite region <span class="process-math">\(S\)</span> bounded by the curves <span class="process-math">\(y = \sqrt{x}\)</span> and <span class="process-math">\(y = x^3\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="nrj" data-permid="nrj"><div class="para" id="GeH" data-permid="GeH">The finite region <span class="process-math">\(S\)</span> bounded by the curves <span class="process-math">\(y = 2x^2 + 1\)</span> and <span class="process-math">\(y = x^2 + 4\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="Tys" data-permid="Tys"><div class="para" id="mlQ" data-permid="mlQ">The region <span class="process-math">\(S\)</span> bounded by the <span class="process-math">\(y\)</span>-axis, the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> and the line <span class="process-math">\(y = 2\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(y\)</span>-axis. How is this problem different from the one posed in part (b)?</div></li>
+</ol>
+</div></article></section><section class="subsection" id="WxT" data-permid="WxT"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.2</span><span class="space"> </span><span class="title">Revolving about the <span class="process-math">\(y\)</span>-axis</span>
+</h3>
+<div class="para" id="LDp" data-permid="LDp">When we revolve a given region about the <span class="process-math">\(y\)</span>-axis, the representative slices now have thickness <span class="process-math">\(\Delta y\text{,}\)</span> which means that we must integrate with respect to <span class="process-math">\(y\text{.}\)</span>
+</div>
+<article class="example example-like" id="TDn" data-permid="TDn"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="pVl" data-permid="pVl">Find the volume of the solid of revolution generated when the region <span class="process-math">\(R\)</span> that lies between <span class="process-math">\(y = \sqrt{x}\)</span> and <span class="process-math">\(y = x^4\)</span> is revolved about the <span class="process-math">\(y\)</span>-axis.</div>
+<div class="solutions"><details id="kBy" data-permid="kBy" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like">
+<div class="para" id="Auq" data-permid="Auq">These two curves intersect when <span class="process-math">\(x = 1\text{,}\)</span> hence at the point <span class="process-math">\((1,1)\text{.}\)</span> When we revolve the region <span class="process-math">\(R\)</span> about the <span class="process-math">\(y\)</span>-axis, we get the three-dimensional solid pictured at left in <a href="" class="xref" data-knowl="./knowl/xref/F-6-2-Ex3.html" title="Figure 6.2.7">Figure 6.2.7</a>.</div> <figure class="figure figure-like" id="YXa" data-permid="YXa"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:50%;"><img src="external/images/6_2_Ex3_left.svg" role="img" class="contained"></div>
+<div class="sbspanel top" style="width:50%;"><img src="external/images/6_2_Ex3_right.svg" role="img" class="contained"></div>
+</div></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.7<span class="period">.</span></span><span class="space"> </span>At left, the solid of revolution in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-AboutY.html" title="Example 6.2.6">Example 6.2.6</a>.  At right, a typical slice with inner radius <span class="process-math">\(r(y)\)</span> and outer radius <span class="process-math">\(R(y)\text{.}\)</span></figcaption></figure> <div class="para logical" id="gBz" data-permid="gBz">
+<div class="para">Note that the slices are cylindrical washers only if taken perpendicular to the <span class="process-math">\(y\)</span>-axis. We slice the solid horizontally, starting at <span class="process-math">\(y = 0\)</span> and proceeding up to <span class="process-math">\(y = 1\text{.}\)</span> The thickness of a representative slice is <span class="process-math">\(\Delta y\text{,}\)</span> so we must express the integrand in terms of <span class="process-math">\(y\text{.}\)</span> The inner radius is determined by the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> so we solve for <span class="process-math">\(x\)</span> and get <span class="process-math">\(x = y^2 = r(y)\text{.}\)</span> In the same way, we solve the curve <span class="process-math">\(y = x^4\)</span> (which governs the outer radius) for <span class="process-math">\(x\)</span> in terms of <span class="process-math">\(y\text{,}\)</span> and hence <span class="process-math">\(x = \sqrt[4]{y}\text{.}\)</span> Therefore, the volume of a typical slice is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{\text{slice} } = \pi [R(y)^2 - r(y)^2] = \pi[(\sqrt[4]{y})^2 - (y^2)^2] \Delta y\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="MII" data-permid="MII">
+<div class="para">We use a definite integral to sum the volumes of all the slices from <span class="process-math">\(y = 0\)</span> to <span class="process-math">\(y = 1\text{.}\)</span> The total volume is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_{y=0}^{y=1} \pi \left[ (\sqrt[4]{y})^2 - (y^2)^2 \right] \, dy\text{.}
+\end{equation*}
+</div>
+</div> <div class="para" id="sPR" data-permid="sPR">It is straightforward to evaluate the integral and find that <span class="process-math">\(V = \frac{7}{15} \pi\text{.}\)</span>
+</div>
+</div></details></div></article><article class="activity project-like" id="yOD" data-permid="yOD"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="JnI" data-permid="JnI">
+<div class="para">In each of the following questions, draw a careful, labeled sketch of the region described, as well as the resulting solid that results from revolving the region about the stated axis. In addition, draw a representative slice and state the volume of that slice, along with a definite integral whose value is the volume of the entire solid. It is not necessary to evaluate the integrals you find.</div>
+<ol class="lower-alpha">
+<li id="frl" data-permid="frl"><div class="para" id="yeJ" data-permid="yeJ">The region <span class="process-math">\(S\)</span> bounded by the <span class="process-math">\(y\)</span>-axis, the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> and the line <span class="process-math">\(y = 2\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(y\)</span>-axis.</div></li>
+<li id="Lyu" data-permid="Lyu"><div class="para" id="elS" data-permid="elS">The region <span class="process-math">\(S\)</span> bounded by the <span class="process-math">\(x\)</span>-axis, the curve <span class="process-math">\(y = \sqrt{x}\text{,}\)</span> and the line <span class="process-math">\(x = 4\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(y\)</span>-axis.</div></li>
+<li id="rFD" data-permid="rFD"><div class="para" id="Ktb" data-permid="Ktb">The finite region <span class="process-math">\(S\)</span> in the first quadrant bounded by the curves <span class="process-math">\(y = 2x\)</span> and <span class="process-math">\(y = x^3\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="XMM" data-permid="XMM"><div class="para" id="qAk" data-permid="qAk">The finite region <span class="process-math">\(S\)</span> in the first quadrant bounded by the curves <span class="process-math">\(y = 2x\)</span> and <span class="process-math">\(y = x^3\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(y\)</span>-axis.</div></li>
+<li id="DTV" data-permid="DTV"><div class="para" id="WHt" data-permid="WHt">The finite region <span class="process-math">\(S\)</span> bounded by the curves <span class="process-math">\(x = (y-1)^2\)</span> and <span class="process-math">\(y = x-1\text{;}\)</span> revolve <span class="process-math">\(S\)</span> about the <span class="process-math">\(y\)</span>-axis</div></li>
+</ol>
+</div></article></section><section class="subsection" id="CFc" data-permid="CFc"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.3</span><span class="space"> </span><span class="title">Revolving about horizontal and vertical lines other than the coordinate axes</span>
+</h3>
+<div class="para" id="rKy" data-permid="rKy">It is possible to revolve a region around any horizontal or vertical line. Doing so adjusts the radii of the cylinders or washers involved by a constant value. A careful, well-labeled plot of the solid of revolution will usually reveal how the different axis of revolution affects the definite integral.</div>
+<article class="example example-like" id="fRF" data-permid="fRF"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">6.2.8</span><span class="period">.</span>
+</h4>
+<div class="para" id="Wcu" data-permid="Wcu">Find the volume of the solid of revolution generated when the finite region <span class="process-math">\(S\)</span> that lies between <span class="process-math">\(y = x^2\)</span> and <span class="process-math">\(y = x\)</span> is revolved about the line <span class="process-math">\(y = -1\text{.}\)</span>
+</div>
+<div class="solutions"><details id="QIH" data-permid="QIH" class="solution solution-like born-hidden-knowl"><summary><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like">
+<div class="para" id="Fej" data-permid="Fej">Graphing the region between the two curves in the first quadrant between their points of intersection (<span class="process-math">\((0,0)\)</span> and <span class="process-math">\((1,1)\)</span>) and then revolving the region about the line <span class="process-math">\(y = -1\text{,}\)</span> we see the solid shown in <a href="" class="xref" data-knowl="./knowl/xref/F-6-2-Ex4.html" title="Figure 6.2.9">Figure 6.2.9</a>. Each slice of the solid perpendicular to the axis of revolution is a washer, and the radii of each washer are governed by the curves <span class="process-math">\(y = x^2\)</span> and <span class="process-math">\(y = x\text{.}\)</span> But we also see that there is one added change: the axis of revolution adds a fixed length to each radius. The inner radius of a typical slice, <span class="process-math">\(r(x)\text{,}\)</span> is given by <span class="process-math">\(r(x) = x^2 + 1\text{,}\)</span> while the outer radius is <span class="process-math">\(R(x) = x+1\text{.}\)</span>
+</div> <figure class="figure figure-like" id="xzK" data-permid="xzK"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/6_2_Ex4.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">6.2.9<span class="period">.</span></span><span class="space"> </span>The solid of revolution described in <a href="" class="xref" data-knowl="./knowl/xref/Ex-6-2-AboutNotY.html" title="Example 6.2.8">Example 6.2.8</a>.</figcaption></figure> <div class="para logical" id="lls" data-permid="lls">
+<div class="para">Therefore, the volume of a typical slice is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V_{\text{slice} } = \pi[ R(x)^2 - r(x)^2 ] \Delta x = \pi \left[ (x+1)^2 - (x^2 + 1)^2 \right] \Delta x\text{.}
+\end{equation*}
+</div>
+</div> <div class="para logical" id="RsB" data-permid="RsB">
+<div class="para">Finally, we integrate to find the total volume, and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+V = \int_0^1  \pi \left[ (x+1)^2 - (x^2 + 1)^2 \right] \, dx = \frac{7}{15} \pi\text{.}
+\end{equation*}
+</div>
+</div>
+</div></details></div></article><article class="activity project-like" id="FXD" data-permid="FXD"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="cLa" data-permid="cLa">
+<div class="para">In each of the following questions, draw a careful, labeled sketch of the region described, as well as the resulting solid that results from revolving the region about the stated axis. In addition, draw a representative slice and state the volume of that slice, along with a definite integral whose value is the volume of the entire solid. It is not necessary to evaluate the integrals you find. For each prompt, use the finite region <span class="process-math">\(S\)</span> in the first quadrant bounded by the curves <span class="process-math">\(y = 2x\)</span> and <span class="process-math">\(y = x^3\text{.}\)</span>
+</div>
+<ol class="lower-alpha cols2">
+<li id="vTX" data-permid="vTX"><div class="para" id="qeL" data-permid="qeL">Revolve <span class="process-math">\(S\)</span> about the line <span class="process-math">\(y = -2\text{.}\)</span>
+</div></li>
+<li id="cbg" data-permid="cbg"><div class="para" id="WlU" data-permid="WlU">Revolve <span class="process-math">\(S\)</span> about the line <span class="process-math">\(y = 4\text{.}\)</span>
+</div></li>
+<li id="Iip" data-permid="Iip"><div class="para" id="Ctd" data-permid="Ctd">Revolve <span class="process-math">\(S\)</span> about the line <span class="process-math">\(x=-1\text{.}\)</span>
+</div></li>
+<li id="opy" data-permid="opy"><div class="para" id="iAm" data-permid="iAm">Revolve <span class="process-math">\(S\)</span> about the line <span class="process-math">\(x = 5\text{.}\)</span>
+</div></li>
+</ol>
+</div></article></section><section class="subsection" id="iMl" data-permid="iMl"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">6.2.4</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="XRH" data-permid="XRH"><ul class="disc">
+<li id="BzJ" data-permid="BzJ"><div class="para" id="mqL" data-permid="mqL">We can use a definite integral to find the volume of a three-dimensional solid of revolution that results from revolving a two-dimensional region about a particular axis by taking slices perpendicular to the axis of revolution which will then be circular disks or washers.</div></li>
+<li id="hGS" data-permid="hGS"><div class="para" id="SxU" data-permid="SxU">If we revolve about a vertical line and slice perpendicular to that line, then our slices are horizontal and of thickness <span class="process-math">\(\Delta y\text{.}\)</span> This leads us to integrate with respect to <span class="process-math">\(y\text{,}\)</span> as opposed to with respect to <span class="process-math">\(x\)</span> when we slice a solid vertically.</div></li>
+<li id="NOb" data-permid="NOb"><div class="para" id="yFd" data-permid="yFd">If we revolve about a line other than the <span class="process-math">\(x\)</span>- or <span class="process-math">\(y\)</span>-axis, we need to carefully account for the shift that occurs in the radius of a typical slice. Normally, this shift involves taking a sum or difference of the function along with the constant connected to the equation for the horizontal or vertical line; a well-labeled diagram is usually the best way to decide the new expression for the radius.</div></li>
+</ul></div></section><section class="exercises" id="dLt" data-permid="dLt"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">6.2.5</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="qgP" data-permid="qgP"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from one function about the <span class="process-math">\(x\)</span>-axis.</span>
+</h4>
+<div id="webwork-164" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="164" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/3.1HW_prob7.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-164')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-164-1-1-1">
+<div class="para">Let</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = -4x^{2}-9x-11
+\end{equation*}
+</div>
+<div class="para">Use the second derivative test to find any local maxima and minima.</div>
+</div> <div class="para" id="extracted-webwork-164-1-1-2">First, find the critical point.  Enter the x-value below. <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-164-1-1-3">Then find the value of the second derivative at that x-values. <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div> <div class="para" id="extracted-webwork-164-1-1-4">If the function has a local maximum at that value, enter MAX.  If it has a local minimum, enter MIN. <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="WnY" data-permid="WnY"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from one function about the <span class="process-math">\(y\)</span>-axis.</span>
+</h4>
+<div id="webwork-165" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="165" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap4Sec1/Q21.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-165')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-165-1-1-1">Find and classify the critical points of<span class="process-math">\(f(x)=4 x^{7}(7 - x)^6\)</span> as local maxima and minima.</div> <div class="para" id="extracted-webwork-165-1-1-2">Critical points: <span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span>
+</div> <div class="para" id="extracted-webwork-165-1-1-3">Classifications: <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span>
+</div> <div class="para" id="extracted-webwork-165-1-1-4"><em class="emphasis">(Enter your critical points and classifications as comma-separated lists, and enter the types in the same order as your critical points.  Note that you must enter something in both blanks for either to be evaluated.  For the types, enter <em class="alert">min</em>, <em class="alert">max</em>, or <em class="alert">neither</em>.</em></div>
+</div>
+</div></article><article class="exercise exercise-like" id="Cvh" data-permid="Cvh"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from two functions about the <span class="process-math">\(x\)</span>-axis.</span>
+</h4>
+<div id="webwork-166" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="166" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/3.2Preview_prob1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-166')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-166-1-1-1">Let <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> and <span class="process-math">\(k\)</span> be arbitrary real numbers with <span class="process-math">\(a\neq 0\text{,}\)</span> and let <span class="process-math">\(f\)</span> be the function given by the rule <span class="process-math">\(f(x)=a(x-h)^2+k\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-166-1-1-2">Which of the following statements are true about <span class="process-math">\(f\text{?}\)</span> Select all that apply.</div> <div class="para logical" id="extracted-webwork-166-1-1-3"><ol class="upper-alpha">
+<li id="extracted-webwork-166-1-1-3-1-1"><div class="para" id="extracted-webwork-166-1-1-3-1-1-1">If <span class="process-math">\(a&gt;0\text{,}\)</span> then <span class="process-math">\(f\)</span> has a global minimum.</div></li>
+<li id="extracted-webwork-166-1-1-3-1-2"><div class="para" id="extracted-webwork-166-1-1-3-1-2-1">An extreme value occurs at the point <span class="process-math">\((h,k)\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-166-1-1-3-1-3"><div class="para" id="extracted-webwork-166-1-1-3-1-3-1">The maximum value of <span class="process-math">\(f(x)\)</span> is <span class="process-math">\(h\text{.}\)</span>
+</div></li>
+<li id="extracted-webwork-166-1-1-3-1-4"><div class="para" id="extracted-webwork-166-1-1-3-1-4-1">The graph of <span class="process-math">\(y=f(x)\)</span> is a parabola.</div></li>
+<li id="extracted-webwork-166-1-1-3-1-5"><div class="para" id="extracted-webwork-166-1-1-3-1-5-1">The graph of <span class="process-math">\(y=f(x)\)</span> is a line.</div></li>
+<li id="extracted-webwork-166-1-1-3-1-6"><div class="para" id="extracted-webwork-166-1-1-3-1-6-1">If <span class="process-math">\(a&gt;0\text{,}\)</span> then <span class="process-math">\(f\)</span> has a global maximum.</div></li>
+<li id="extracted-webwork-166-1-1-3-1-7"><div class="para" id="extracted-webwork-166-1-1-3-1-7-1">None of the above</div></li>
+</ol></div> <div class="para" id="extracted-webwork-166-1-1-4">Next we use some calculus to develop familiar ideas from a different perspective. To start, treat <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> and <span class="process-math">\(k\)</span> as constants and compute <span class="process-math">\(f'(x)\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-166-1-1-5">
+<span class="process-math">\(f'(x) =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div> <div class="para" id="extracted-webwork-166-1-1-6">Find a critical value of <span class="process-math">\(f\text{.}\)</span> (This will depend on at least one of <span class="process-math">\(a\text{,}\)</span> <span class="process-math">\(h\text{,}\)</span> and <span class="process-math">\(k\text{.}\)</span>)</div> <div class="para" id="extracted-webwork-166-1-1-7">Critical value = <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div> <div class="para" id="extracted-webwork-166-1-1-8">Assume that <span class="process-math">\(a\lt 0\text{.}\)</span> Make a derivative sign chart for <span class="process-math">\(f\text{.}\)</span> Based on this information, classify the critical value of <span class="process-math">\(f\)</span> as a maximum or minimum."</div> <div class="para logical" id="extracted-webwork-166-1-1-9"><ul class="disc">
+<li id="extracted-webwork-166-1-1-9-1-1"><div class="para" id="extracted-webwork-166-1-1-9-1-1-1">
+<em class="alert">A</em>. maximum</div></li>
+<li id="extracted-webwork-166-1-1-9-1-2"><div class="para" id="extracted-webwork-166-1-1-9-1-2-1">
+<em class="alert">B</em>. neither</div></li>
+<li id="extracted-webwork-166-1-1-9-1-3"><div class="para" id="extracted-webwork-166-1-1-9-1-3-1">
+<em class="alert">C</em>. minimum</div></li>
+</ul></div>
+</div>
+</div></article><article class="exercise exercise-like" id="iCq" data-permid="iCq"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from two functions about a horizontal line.</span>
+</h4>
+<div id="webwork-167" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="167" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Valdosta/APEX_Calculus/3.5/APEX_3.5_26.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-167')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-167-1-1-1">
+<div class="para">A function with parameters <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> is given. Describe the critical points and possible points of inflection of <span class="process-math">\(f\)</span> in terms of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span> Assume <span class="process-math">\(a, b &gt; 0\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \dfrac{a}{x^2 + b^2}
+\end{equation*}
+</div>
+<div class="para">Critical point: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div>
+</div> <div class="para" id="extracted-webwork-167-1-1-2">Possible points of inflection: (two answers)</div> <div class="para" id="extracted-webwork-167-1-1-3">
+<span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> (smaller value)</div> <div class="para" id="extracted-webwork-167-1-1-4">
+<span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> (larger value)</div>
+</div>
+</div></article><article class="exercise exercise-like" id="OJz" data-permid="OJz"><h4 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from two functions about a different horizontal line.</span>
+</h4>
+<div id="webwork-168" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="168" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Valdosta/APEX_Calculus/3.5/APEX_3.5_28.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-168')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-168-1-1-1">
+<div class="para">A function with parameters <span class="process-math">\(a\)</span> and <span class="process-math">\(b\)</span> is given. Describe the critical points and possible points of inflection of <span class="process-math">\(f\)</span> in terms of <span class="process-math">\(a\)</span> and <span class="process-math">\(b\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = (x - a)(x - b)
+\end{equation*}
+</div>
+<div class="para">Critical point: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span>
+</div>
+</div> <div class="para" id="extracted-webwork-168-1-1-2">Possible point of inflection: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> (enter <em class="alert">DNE</em> if none exist)</div>
+</div>
+</div></article><article class="exercise exercise-like" id="uQI" data-permid="uQI"><h4 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Solid of revolution from two functions about a vertical line.</span>
+</h4>
+<div id="webwork-169" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="169" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap4Sec2/Q17.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-169')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-169-1-1-1">Let <span class="process-math">\(p(x)=x^2(a - x)\text{,}\)</span> where <span class="process-math">\(a\)</span> is constant and <span class="process-math">\(a&gt;0\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-169-1-1-2">Find the local maxima and minima of <span class="process-math">\(p\text{.}\)</span>
+</div> <div class="para" id="extracted-webwork-169-1-1-3">
+<em class="emphasis">(Enter your maxima and minima as comma-separated xvalue,classification pairs.  For example, if you found that</em> <span class="process-math">\(x = -2\)</span> <em class="emphasis">was a local minimum and</em> <span class="process-math">\(x = 3\)</span> <em class="emphasis">was a local maximum, you should enter</em> <em class="alert">(-2,min), (3,max)</em>. <em class="emphasis">If there were no maximum, you <em class="alert">must</em> drop the parentheses and enter</em> <em class="alert">-2,min</em><em class="emphasis">.)</em>
+</div> <div class="para" id="extracted-webwork-169-1-1-4">maxima and minima: <span class="fillin underline" role="img" aria-label="45-character blank" style="width: 20.4545454545455em;"></span>
+</div> <div class="para" id="extracted-webwork-169-1-1-5">What effect does increasing the value of <span class="process-math">\(a\)</span> have on the <span class="process-math">\(x\)</span>-position of the maximum(s) you found? (Enter <em class="alert">left</em>, <em class="alert">none</em> or <em class="alert">right</em> if it moves left, has no effect, or moves right.) <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-169-1-1-6">What effect does increasing the value of <span class="process-math">\(a\)</span> have on the <span class="process-math">\(x\)</span>-position of the minimum(s) you found? (Enter <em class="alert">left</em>, <em class="alert">none</em> or <em class="alert">right</em> if it moves left, has no effect, or moves right.) <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-169-1-1-7">What effect does increasing the value of <span class="process-math">\(a\)</span> have on the <span class="process-math">\(y\)</span>-coordinate of the maximum(s) you found? (Enter <em class="alert">up</em>, <em class="alert">none</em> or <em class="alert">down</em> if it moves up, has no effect, or moves down.) <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-169-1-1-8">What effect does increasing the value of <span class="process-math">\(a\)</span> have on the <span class="process-math">\(y\)</span>-coordinate of the minimum(s) you found? (Enter <em class="alert">up</em>, <em class="alert">none</em> or <em class="alert">down</em> if it moves up, has no effect, or moves down.) <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="aXR" data-permid="aXR"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para logical" id="NSB" data-permid="NSB">
+<div class="para">Consider the curve <span class="process-math">\(f(x) = 3 \cos(\frac{x^3}{4})\)</span> and the portion of its graph that lies in the first quadrant between the <span class="process-math">\(y\)</span>-axis and the first positive value of <span class="process-math">\(x\)</span> for which <span class="process-math">\(f(x) = 0\text{.}\)</span> Let <span class="process-math">\(R\)</span> denote the region bounded by this portion of <span class="process-math">\(f\text{,}\)</span> the <span class="process-math">\(x\)</span>-axis, and the <span class="process-math">\(y\)</span>-axis.</div>
+<ol class="lower-alpha">
+<li id="hwX" data-permid="hwX"><div class="para" id="fml" data-permid="fml">Set up a definite integral whose value is the exact arc length of <span class="process-math">\(f\)</span> that lies along the upper boundary of <span class="process-math">\(R\text{.}\)</span> Use technology appropriately to evaluate the integral you find.</div></li>
+<li id="NEg" data-permid="NEg"><div class="para" id="Ltu" data-permid="Ltu">Set up a definite integral whose value is the exact area of <span class="process-math">\(R\text{.}\)</span> Use technology appropriately to evaluate the integral you find.</div></li>
+<li id="tLp" data-permid="tLp"><div class="para" id="rAD" data-permid="rAD">Suppose that the region <span class="process-math">\(R\)</span> is revolved around the <span class="process-math">\(x\)</span>-axis. Set up a definite integral whose value is the exact volume of the solid of revolution that is generated. Use technology appropriately to evaluate the integral you find.</div></li>
+<li id="ZSy" data-permid="ZSy"><div class="para" id="XHM" data-permid="XHM">Suppose instead that <span class="process-math">\(R\)</span> is revolved around the <span class="process-math">\(y\)</span>-axis. If possible, set up an integral expression whose value is the exact volume of the solid of revolution and evaluate the integral using appropriate technology. If not possible, explain why.</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="Hfa" data-permid="Hfa"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para logical" id="tZK" data-permid="tZK">
+<div class="para">Consider the curves given by <span class="process-math">\(y = \sin(x)\)</span> and <span class="process-math">\(y = \cos(x)\text{.}\)</span> For each of the following problems, you should include a sketch of the region/solid being considered, as well as a labeled representative slice.</div>
+<ol class="lower-alpha">
+<li id="Dfb" data-permid="Dfb"><div class="para" id="hby" data-permid="hby">Sketch the region <span class="process-math">\(R\)</span> bounded by the <span class="process-math">\(y\)</span>-axis and the curves <span class="process-math">\(y = \sin(x)\)</span> and <span class="process-math">\(y = \cos(x)\)</span> up to the first positive value of <span class="process-math">\(x\)</span> at which they intersect. What is the exact intersection point of the curves?</div></li>
+<li id="jmk" data-permid="jmk"><div class="para" id="NiH" data-permid="NiH">Set up a definite integral whose value is the exact area of <span class="process-math">\(R\text{.}\)</span>
+</div></li>
+<li id="Ptt" data-permid="Ptt"><div class="para" id="tpQ" data-permid="tpQ">Set up a definite integral whose value is the exact volume of the solid of revolution generated by revolving <span class="process-math">\(R\)</span> about the <span class="process-math">\(x\)</span>-axis.</div></li>
+<li id="vAC" data-permid="vAC"><div class="para" id="ZwZ" data-permid="ZwZ">Set up a definite integral whose value is the exact volume of the solid of revolution generated by revolving <span class="process-math">\(R\)</span> about the <span class="process-math">\(y\)</span>-axis.</div></li>
+<li id="bHL" data-permid="bHL"><div class="para" id="FEi" data-permid="FEi">Set up a definite integral whose value is the exact volume of the solid of revolution generated by revolving <span class="process-math">\(R\)</span> about the line <span class="process-math">\(y = 2\text{.}\)</span>
+</div></li>
+<li id="HOU" data-permid="HOU"><div class="para" id="lLr" data-permid="lLr">Set up a definite integral whose value is the exact volume of the solid of revolution generated by revolving <span class="process-math">\(R\)</span> about the line <span class="process-math">\(x = -1\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="nmj" data-permid="nmj"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para logical" id="agT" data-permid="agT">
+<div class="para">Consider the finite region <span class="process-math">\(R\)</span> that is bounded by the curves <span class="process-math">\(y = 1+\frac{1}{2}(x-2)^2\text{,}\)</span> <span class="process-math">\(y=\frac{1}{2}x^2\text{,}\)</span> and <span class="process-math">\(x = 0\text{.}\)</span>
+</div>
+<ol class="lower-alpha">
+<li id="JEh" data-permid="JEh"><div class="para" id="Htv" data-permid="Htv">Determine a definite integral whose value is the area of the region enclosed by the two curves.</div></li>
+<li id="pLq" data-permid="pLq"><div class="para" id="nAE" data-permid="nAE">Find an expression involving one or more definite integrals whose value is the volume of the solid of revolution generated by revolving the region <span class="process-math">\(R\)</span> about the line <span class="process-math">\(y = -1\text{.}\)</span>
+</div></li>
+<li id="VSz" data-permid="VSz"><div class="para" id="THN" data-permid="THN">Determine an expression involving one or more definite integrals whose value is the volume of the solid of revolution generated by revolving the region <span class="process-math">\(R\)</span> about the <span class="process-math">\(y\)</span>-axis.</div></li>
+<li id="BZI" data-permid="BZI"><div class="para" id="zOW" data-permid="zOW">Find an expression involving one or more definite integrals whose value is the perimeter of the region <span class="process-math">\(R\text{.}\)</span>
+</div></li>
+</ol>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="sec-6-1-area.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-6-3-mass.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="http://gvsu.edu/s/0vK" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

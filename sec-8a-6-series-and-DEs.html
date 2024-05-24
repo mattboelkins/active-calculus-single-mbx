@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC Using Series to Solve Differential Equations</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Active Calculus">
+<meta property="book:author" content="Matthew Boelkins">
+<script>var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore|ignore-math",
+    processHtmlClass: "process-math",
+    renderActions: {
+        findScript: [10, function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        }, '']
+    },
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+  startup: {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+},
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-ptx.aimath.org/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.13/pretext-webwork/2.17/pretext-webwork.js"></script><script src="https://webwork-ptx.aimath.org/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.13/pretext.js"></script><script>miniversion=0.674</script><script src="https://pretextbook.org/js/0.13/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.4/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="boelkins-ACS" class="pretext-book ignore-math has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href="https://activecalculus.org" target="_blank"><img src="external/images/ActiveCalculusImage_sm.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="book-1.html"><span class="title">Active Calculus</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+<div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+</div></div>
+<nav id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3">
+<a class="index-button toolbar-item button" href="index-1.html" title="Index">Index</a><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="sec-8a-5-finding-using-taylor-series.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="C-8a.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a></span>
+</div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="sec-8a-5-finding-using-taylor-series.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="C-8a.html" title="Up">Up</a><a class="next-button button toolbar-item" href="backmatter.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter">
+<a href="frontmatter.html" data-scroll="yaN" class="internal"><span class="title">Front Matter</span></a><ul>
+<li><a href="colophon-1.html" data-scroll="colophon-1" class="internal">Colophon</a></li>
+<li><a href="acknowledgement-1.html" data-scroll="acknowledgement-1" class="internal">Acknowledgements</a></li>
+<li><a href="preface-1.html" data-scroll="ehW" class="internal">Contributors</a></li>
+<li><a href="preface-2.html" data-scroll="Kpf" class="internal">Active Calculus: Our Goals</a></li>
+<li><a href="preface-3.html" data-scroll="qwo" class="internal">Features of the Text</a></li>
+<li><a href="preface-for-students.html" data-scroll="lZk" class="internal">Students!  Read this!</a></li>
+<li><a href="preface-for-instructors.html" data-scroll="Sgt" class="internal">Instructors!  Read this!</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-1.html" data-scroll="UOk" class="internal"><span class="codenumber">1</span> <span class="title">Understanding the Derivative</span></a><ul>
+<li><a href="sec-1-1-vel.html" data-scroll="Cph" class="internal">How do we measure velocity?</a></li>
+<li><a href="sec-1-2-lim.html" data-scroll="VMz" class="internal">The notion of limit</a></li>
+<li><a href="sec-1-3-derivative-pt.html" data-scroll="xyk" class="internal">The derivative of a function at a point</a></li>
+<li><a href="sec-1-4-derivative-fxn.html" data-scroll="eZh" class="internal">The derivative function</a></li>
+<li><a href="sec-1-5-units.html" data-scroll="IVE" class="internal">Interpreting, estimating, and using the derivative</a></li>
+<li><a href="sec-1-6-second-d.html" data-scroll="QeE" class="internal">The second derivative</a></li>
+<li><a href="sec-1-7-lim-cont-diff.html" data-scroll="UsY" class="internal">Limits, Continuity, and Differentiability</a></li>
+<li><a href="sec-1-8-tan-line-approx.html" data-scroll="fgy" class="internal">The Tangent Line Approximation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-2.html" data-scroll="AVt" class="internal"><span class="codenumber">2</span> <span class="title">Computing Derivatives</span></a><ul>
+<li><a href="sec-2-1-elem-rules.html" data-scroll="SwH" class="internal">Elementary derivative rules</a></li>
+<li><a href="sec-2-2-sin-cos.html" data-scroll="kOG" class="internal">The sine and cosine functions</a></li>
+<li><a href="sec-2-3-prod-quot.html" data-scroll="gOH" class="internal">The product and quotient rules</a></li>
+<li><a href="sec-2-4-other-trig.html" data-scroll="ybn" class="internal">Derivatives of other trigonometric functions</a></li>
+<li><a href="sec-2-5-chain.html" data-scroll="omc" class="internal">The chain rule</a></li>
+<li><a href="sec-2-6-inverse.html" data-scroll="iLl" class="internal">Derivatives of Inverse Functions</a></li>
+<li><a href="sec-2-7-implicit.html" data-scroll="kOT" class="internal">Derivatives of Functions Given Implicitly</a></li>
+<li><a href="sec-2-8-LHR.html" data-scroll="miH" class="internal">Using Derivatives to Evaluate Limits</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-3.html" data-scroll="hcC" class="internal"><span class="codenumber">3</span> <span class="title">Using Derivatives</span></a><ul>
+<li><a href="sec-3-1-tests.html" data-scroll="ubB" class="internal">Using derivatives to identify extreme values</a></li>
+<li><a href="sec-3-2-families.html" data-scroll="sAJ" class="internal">Using derivatives to describe families of functions</a></li>
+<li><a href="sec-3-3-optimization.html" data-scroll="bgZ" class="internal">Global Optimization</a></li>
+<li><a href="sec-3-4-applied-opt.html" data-scroll="ZGh" class="internal">Applied Optimization</a></li>
+<li><a href="sec-3-5-rel-rates.html" data-scroll="uiS" class="internal">Related Rates</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-4.html" data-scroll="NjL" class="internal"><span class="codenumber">4</span> <span class="title">The Definite Integral</span></a><ul>
+<li><a href="sec-4-1-velocity-distance.html" data-scroll="YPj" class="internal">Determining distance traveled from velocity</a></li>
+<li><a href="sec-4-2-Riemann.html" data-scroll="DvA" class="internal">Riemann Sums</a></li>
+<li><a href="sec-4-3-definite-integral.html" data-scroll="Oja" class="internal">The Definite Integral</a></li>
+<li><a href="sec-4-4-FTC.html" data-scroll="LCP" class="internal">The Fundamental Theorem of Calculus</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-5.html" data-scroll="tqU" class="internal"><span class="codenumber">5</span> <span class="title">Evaluating Integrals</span></a><ul>
+<li><a href="sec-5-1-antid-graphs.html" data-scroll="mjh" class="internal">Constructing Accurate Graphs of Antiderivatives</a></li>
+<li><a href="sec-5-2-FTC2.html" data-scroll="lNI" class="internal">The Second Fundamental Theorem of Calculus</a></li>
+<li><a href="sec-5-3-substitution.html" data-scroll="wBi" class="internal">Integration by Substitution</a></li>
+<li><a href="sec-5-4-parts.html" data-scroll="cWM" class="internal">Integration by Parts</a></li>
+<li><a href="sec-5-5-other-opt.html" data-scroll="GxK" class="internal">Other Options for Finding Algebraic Antiderivatives</a></li>
+<li><a href="sec-5-6-num-int.html" data-scroll="sec-5-6-num-int" class="internal">Numerical Integration</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-6.html" data-scroll="Zyd" class="internal"><span class="codenumber">6</span> <span class="title">Using Definite Integrals</span></a><ul>
+<li><a href="sec-6-1-area.html" data-scroll="HaA" class="internal">Using Definite Integrals to Find Area and Length</a></li>
+<li><a href="sec-6-2-volume.html" data-scroll="KjB" class="internal">Using Definite Integrals to Find Volume</a></li>
+<li><a href="sec-6-3-mass.html" data-scroll="ZGU" class="internal">Density, Mass, and Center of Mass</a></li>
+<li><a href="sec-6-4-physics.html" data-scroll="Enl" class="internal">Physics Applications:  Work, Force, and Pressure</a></li>
+<li><a href="sec-6-5-improper.html" data-scroll="EBG" class="internal">Improper Integrals</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-7.html" data-scroll="FFm" class="internal"><span class="codenumber">7</span> <span class="title">Differential Equations</span></a><ul>
+<li><a href="sec-7-1-diff-eq-intro.html" data-scroll="knq" class="internal">An Introduction to Differential Equations</a></li>
+<li><a href="sec-7-2-qualitative.html" data-scroll="Wyg" class="internal">Qualitative behavior of solutions to DEs</a></li>
+<li><a href="sec-7-3-euler.html" data-scroll="gBM" class="internal">Euler's method</a></li>
+<li><a href="sec-7-4-separable.html" data-scroll="arb" class="internal">Separable differential equations</a></li>
+<li><a href="sec-7-5-modeling.html" data-scroll="Ugq" class="internal">Modeling with differential equations</a></li>
+<li><a href="sec-7-6-logistic.html" data-scroll="NVF" class="internal">Population Growth and the Logistic Equation</a></li>
+</ul>
+</li>
+<li class="link">
+<a href="C-8a.html" data-scroll="C-8a" class="internal"><span class="codenumber">8</span> <span class="title">Taylor Polynomials and Taylor Series</span></a><ul>
+<li><a href="sec-8a-1-linear-poly.html" data-scroll="sec-8a-1-linear-poly" class="internal">Approximating <span class="process-math">\(f(x) = e^x\)</span></a></li>
+<li><a href="sec-8a-2-taylor-poly.html" data-scroll="sec-8a-2-taylor-poly" class="internal">Taylor Polynomials</a></li>
+<li><a href="sec-8a-3-geometric.html" data-scroll="sec-8a-3-geometric" class="internal">Geometric Sums</a></li>
+<li><a href="sec-8a-4-taylor-series.html" data-scroll="sec-8a-4-taylor-series" class="internal">Taylor Series</a></li>
+<li><a href="sec-8a-5-finding-using-taylor-series.html" data-scroll="sec-8a-5-finding-using-taylor-series" class="internal">Finding and Using Taylor Series</a></li>
+<li><a href="sec-8a-6-series-and-DEs.html" data-scroll="sec-8a-6-series-and-DEs" class="active">Using Series to Solve Differential Equations</a></li>
+</ul>
+</li>
+<li class="link backmatter"><a href="backmatter.html" data-scroll="gsI" class="internal"><span class="title">Back Matter</span></a></li>
+<li class="link"><a href="integral-table.html" data-scroll="Alz" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></li>
+<li class="link"><a href="activities-answers.html" data-scroll="MzR" class="internal"><span class="codenumber">B</span> <span class="title">Answers to Activities</span></a></li>
+<li class="link"><a href="exercises-answers.html" data-scroll="sHa" class="internal"><span class="codenumber">C</span> <span class="title">Answers to Selected Exercises</span></a></li>
+<li class="link"><a href="index-1.html" data-scroll="index-1" class="internal"><span class="title">Index</span></a></li>
+<li class="link"><a href="colophon-2.html" data-scroll="colophon-2" class="internal"><span class="title">Colophon</span></a></li>
+</ul></nav><div class="extras"><nav><a class="feedback-link" href="http://gvsu.edu/s/0vK" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section class="section" id="sec-8a-6-series-and-DEs"><h2 class="heading hide-type">
+<span class="type">Section</span> <span class="codenumber">8.6</span> <span class="title">Using Series to Solve Differential Equations</span>
+</h2>
+<article class="objectives goal-like" id="objectives-48"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="li-5407"><p id="p-9323">How can power series be used to find solutions to familiar differential equations?</p></li>
+<li id="li-5408"><p id="p-9324">In what ways do series solutions to differential equations align with solutions we can find without using series?</p></li>
+<li id="li-5409"><p id="p-9325">What role do series solutions play in differential equations that can't be solved by other approaches?</p></li>
+</ul></article><section class="introduction" id="introduction-49"><p id="p-9326">In our work in <a href="C-7.html" class="internal" title="Chapter 7: Differential Equations">Chapter 7</a>, we learned that the natural exponential function, <span class="process-math">\(e^x\text{,}\)</span> plays a key role in the solution of several important types of differential equations.  In our more recent studies in <a href="C-8a.html" class="internal" title="Chapter 8: Taylor Polynomials and Taylor Series">Chapter 8</a>, we've learned that <span class="process-math">\(e^x\)</span> can be represented as a Taylor series in the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/C-7.html ./knowl/C-8a.html">
+\begin{equation*}
+e^x = c_0 + c_1 x + c_2 x^2 + \cdots + c_n x^n + \cdots = \sum_{k=0}^{\infty} c_k x^k\text{.}
+\end{equation*}
+</div>
+<p class="continuation">For <span class="process-math">\(f(x) = e^x\text{,}\)</span> we know <span class="process-math">\(f^{(k)}(x) = e^x\)</span> for every natural number <span class="process-math">\(k\text{,}\)</span> from which it follows that <span class="process-math">\(f^{(k)}(0) = 1\)</span> for every <span class="process-math">\(k\text{.}\)</span>  This fact enabled us to determine the values of each coefficient <span class="process-math">\(c_k\)</span> for the Taylor series expansion of <span class="process-math">\(f(x) = e^x\text{,}\)</span> and hence establish that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/C-7.html ./knowl/C-8a.html">
+\begin{equation*}
+e^x = 1 + x + \frac{1}{2!}x^2 + \cdots + \frac{1}{n!}x^n + \cdots = \sum_{k=0}^{\infty} \frac{1}{k!} x^k\text{,}
+\end{equation*}
+</div>
+<p class="continuation">which is valid for every real number <span class="process-math">\(x\text{.}\)</span></p>
+<p id="p-9327">In <a href="" class="xref" data-knowl="./knowl/PA-8a-6.html" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, we explore a different approach to finding the series representation of <span class="process-math">\(f(x) = e^x\text{.}\)</span></p>
+<article class="exploration project-like" id="PA-8a-6"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="period">.</span>
+</h3>
+<p id="p-9328">Consider the initial value problem given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = y, \ y(0) = 1\text{.}
+\end{equation*}
+</div>
+<ol id="p-9329" class="lower-alpha">
+<li id="li-5410">
+<p id="p-9330">To begin, let's assume that <span class="process-math">\(y\)</span> is a function with a power series representation that is centered at <span class="process-math">\(a = 0\text{,}\)</span> so we can write</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/T-PS-diff-int.html ./knowl/EQ-PA-8a-6-1-y.html" id="EQ-PA-8a-6-1-y">
+\begin{equation}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{.}\tag{8.6.1}
+\end{equation}
+</div>
+<p class="continuation">Use the <a href="" class="xref" data-knowl="./knowl/T-PS-diff-int.html" title="Assemblage: The Power Series Differentiation and Integration Theorem">Power Series Differentiation Theorem </a> to differentiate the right side of <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y.html" title="Equation 8.6.1">Equation (8.6.1)</a>.  Thus, express <span class="process-math">\(y'\)</span> as a power series; show at least the first four nonzero terms of that series.</p>
+</li>
+<li id="li-5411">
+<p id="p-9331">An important fact about polynomials is that the only way two polynomials can be equal to one another is if they have the exact same coefficients for each power of <span class="process-math">\(x\text{.}\)</span>  For example, if we know that <span class="process-math">\(a_0 + a_1 x + a_2 x^2 = 3 - 2x + 5x^2\text{,}\)</span> then it follows that <span class="process-math">\(a_0 = 3\text{,}\)</span> <span class="process-math">\(a_1 = -2\text{,}\)</span> and <span class="process-math">\(a_2 = 5\text{.}\)</span></p>
+<p id="p-9332">This fact about polynomials extends to power series: the only way that two power series can be equal is for them to have identical coefficients.  In (a), you found that <span class="process-math">\(y' = c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots + nc_n x^{n-1} + \cdots\text{.}\)</span>  Using the power series representation of <span class="process-math">\(y\)</span> found in <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y.html" title="Equation 8.6.1">Equation (8.6.1)</a>, together with the condition from the initial value problem that <span class="process-math">\(y' = y\text{,}\)</span> it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/EQ-PA-8a-6-1-y.html ./knowl/EQ-PA-8a-6-1-y-yprime.html" id="EQ-PA-8a-6-1-y-yprime">
+\begin{equation}
+c_1 + 2c_2 x + 3c_3 x^2 + \cdots = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + \cdots\tag{8.6.2}
+\end{equation}
+</div>
+<p class="continuation">What does <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y-yprime.html" title="Equation 8.6.2">Equation (8.6.2)</a> imply about the relationship between <span class="process-math">\(c_0\)</span> and <span class="process-math">\(c_1\text{?}\)</span></p>
+</li>
+<li id="li-5412"><p id="p-9333">Note that the initial value problem statement tells us that <span class="process-math">\(y(0) = 1\text{.}\)</span>  Using <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y.html" title="Equation 8.6.1">Equation (8.6.1)</a> determine the value of <span class="process-math">\(c_0\text{,}\)</span> and hence find the value of <span class="process-math">\(c_1\text{.}\)</span></p></li>
+<li id="li-5413"><p id="p-9334">Now return to <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y-yprime.html" title="Equation 8.6.2">Equation (8.6.2)</a>.  What can we conclude about the relationship between <span class="process-math">\(c_1\)</span> and <span class="process-math">\(c_2\)</span> based on the “<span class="process-math">\(x\)</span>” terms on each side of the equation?  Using this relationship and the value you found for <span class="process-math">\(c_1\)</span> in (c), determine the numerical value of <span class="process-math">\(c_2\text{.}\)</span></p></li>
+<li id="li-5414"><p id="p-9335">Finally, reason similarly to find <span class="process-math">\(c_3\text{,}\)</span> <span class="process-math">\(c_4\text{,}\)</span> and <span class="process-math">\(c_5\)</span> by equating the coefficients of <span class="process-math">\(x^2\text{,}\)</span> <span class="process-math">\(x^3\text{,}\)</span> and <span class="process-math">\(x^4\text{,}\)</span> respectively, in <a href="" class="xref" data-knowl="./knowl/EQ-PA-8a-6-1-y-yprime.html" title="Equation 8.6.2">Equation (8.6.2)</a>.  What do you find?  Why is this result not surprising?</p></li>
+</ol></article></section><section class="subsection" id="subsection-161"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.6.1</span> <span class="title">Using power series to find solutions to initial value problems</span>
+</h3>
+<p id="p-9336">In <a href="" class="xref" data-knowl="./knowl/PA-8a-6.html" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, we investigated the initial value problem given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/PA-8a-6.html">
+\begin{equation*}
+y' = y, \ y(0) = 1\text{.}
+\end{equation*}
+</div>
+<p class="continuation">By assuming that the solution function <span class="process-math">\(y\)</span> had a power series representation, we were able to write that</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/PA-8a-6.html">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">and by finding <span class="process-math">\(y'\)</span> and setting <span class="process-math">\(y' = y\text{,}\)</span> see that the equation</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/PA-8a-6.html">
+\begin{equation*}
+c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots
+\end{equation*}
+</div>
+<p class="continuation">must hold.  This led us to conclude that <span class="process-math">\(c_1 = c_0\text{,}\)</span> <span class="process-math">\(2c_2 = c_1\text{,}\)</span> <span class="process-math">\(3c_3 = c_2\text{,}\)</span> and <span class="process-math">\(4c_4 = c_3\)</span> by equating like coefficients.  Since <span class="process-math">\(y(0) = 1\)</span> is given in the IVP and <span class="process-math">\(y(0) = c_0\)</span> from the series representation, it follows that <span class="process-math">\(c_0 = 1\text{,}\)</span> and from there that <span class="process-math">\(c_1 = 1\text{,}\)</span> <span class="process-math">\(c_2 = \frac{1}{2}\text{,}\)</span> <span class="process-math">\(c_3 = \frac{1}{3 \cdot 2}\text{,}\)</span> and <span class="process-math">\(c_4 = \frac{1}{4 \cdot 3 \cdot 2}\text{.}\)</span></p>
+<p id="p-9337">This of course suggests the pattern that <span class="process-math">\(c_n = \frac{1}{n!}\text{,}\)</span> and hence that the solution to the initial value problem is</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots + \frac{1}{n!}x^n + \cdots\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Remember, we found this representation of <span class="process-math">\(y\)</span> by solving the IVP</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = y, \ y(0) = 1\text{,}
+\end{equation*}
+</div>
+<p class="continuation">which states that “<span class="process-math">\(y\)</span> is a function whose derivative is itself and that satisfies <span class="process-math">\(y(0) = 1\)</span>”: this is precisely the function <span class="process-math">\(y = e^x\text{,}\)</span> so our approach here has established the power series representation of <span class="process-math">\(f(x) = e^x\)</span> from a different line of reasoning than Taylor series.  Indeed, we've found that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+e^x = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots + \frac{1}{n!}x^n + \cdots\text{.}
+\end{equation*}
+</div>
+<p id="p-9338">This approach can be used to solve a select class of other initial value problems.  The key idea is to let <span class="process-math">\(y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{,}\)</span> find the corresponding expression for <span class="process-math">\(y'\)</span> (and possibly <span class="process-math">\(y''\)</span> and other higher derivatives if the differential equation has higher order), and then subsitute these series expresssions into the differential equation to determine relationships that must hold among the unknown coefficients, <span class="process-math">\(c_i\text{.}\)</span>  From there, using the initial condition(s), we can determine the numerical value of each <span class="process-math">\(c_i\text{.}\)</span>  We demonstrate this approach in the following example.</p>
+<article class="example example-like" id="ex-8a-6-LFO"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="period">.</span>
+</h4>Find a power series representation for the solution to the IVP given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = y-x, \ y(0) = -1\text{.}
+\end{equation*}
+</div>
+<div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-514" id="solution-514"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-514"><div class="solution solution-like">
+<p id="p-9339">To begin, we assume that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">from which it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots \text{.}
+\end{equation*}
+</div>
+<p class="continuation">Setting <span class="process-math">\(y' = y - x\text{,}\)</span> we have</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-244">
+\begin{align*}
+c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots =\mathstrut \amp (c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots) - x\\
+=\mathstrut \amp c_0 + (c_1 - 1) x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots
+\end{align*}
+</div>
+<p class="continuation">Equating like coefficients, it follows that</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-245">
+\begin{align*}
+c_1 =\mathstrut \amp c_0\\
+2c_2 =\mathstrut \amp c_1 - 1\\
+3c_3 =\mathstrut \amp c_2\\
+4c_4 =\mathstrut \amp c_3\\
+\vdots\mathstrut \amp 
+\end{align*}
+</div>
+<p class="continuation">We can see a pattern that will continue:  <span class="process-math">\(5c_5 = c_4\text{,}\)</span> <span class="process-math">\(6c_6 = c_5\text{,}\)</span> and so on.  Further, we observe that by the given initial condition, <span class="process-math">\(y(0) = -1\text{,}\)</span> we can find the value of <span class="process-math">\(c_0\)</span> and this will then determine the value of the other constants.  In particular, since</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">it follows <span class="process-math">\(y(0) = c_0\text{,}\)</span> so <span class="process-math">\(c_0 = -1\text{.}\)</span>  From that, we have <span class="process-math">\(c_1 = c_0 = -1\)</span> as well.  Next, since <span class="process-math">\(2c_2 = c_1 - 1\text{,}\)</span> <span class="process-math">\(2c_2 = -2\text{,}\)</span> so <span class="process-math">\(c_2 = -1\text{.}\)</span>  With <span class="process-math">\(3c_3 = c_2\text{,}\)</span> we now know <span class="process-math">\(c_3 = -\frac{1}{3}\text{,}\)</span> and using the equation involving <span class="process-math">\(c_4\)</span> we see that <span class="process-math">\(c_4 = -\frac{1}{3 \cdot 4}\text{.}\)</span>  Similar reasoning shows that <span class="process-math">\(c_5 = -\frac{1}{3 \cdot 4 \cdot 5}\)</span> and <span class="process-math">\(c_6 = -\frac{1}{3 \cdot 4 \cdot 5 \cdot 6}\text{.}\)</span></p>
+<p id="p-9340">Thus, we have found the first several terms of the power series expansion for the function <span class="process-math">\(y\)</span> that is the solution to the given IVP.  In particular,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = -1 - x - x^2 - \frac{1}{3}x^3 - \frac{1}{3 \cdot 4}x^4 - \frac{1}{3 \cdot 4 \cdot 5}x^5 - \frac{1}{3 \cdot 4 \cdot 5 \cdot 6}x^6 - \cdots
+\end{equation*}
+</div>
+</div></div>
+</div></article><p id="p-9341">The IVP in <a href="" class="xref" data-knowl="./knowl/ex-8a-6-LFO.html" title="Example 8.6.1">Example 8.6.1</a> can also be solved without using a series approach, and the solution turns out to be <span class="process-math">\(y = 1 + x - 2e^x\text{.}\)</span>  It is straightforward to verify this directly by subsituting <span class="process-math">\(y\)</span> and <span class="process-math">\(y'\)</span> into the differential equation to confirm that <span class="process-math">\(y' = y - x\text{,}\)</span> as well as that <span class="process-math">\(y'(0) = -1\text{.}\)</span>  We note further that if we use the Taylor series for <span class="process-math">\(e^x\text{,}\)</span> we also have</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/ex-8a-6-LFO.html" id="md-246">
+\begin{align*}
+y =\mathstrut \amp 1 + x - 2e^x\\
+=\mathstrut \amp 1 + x - 2(1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \frac{1}{4!}x^4 + \cdots)\\
+=\mathstrut \amp 1 + x - 2 - 2x - x^2 - \frac{1}{3}x^3 - \frac{1}{4\cdot 3}x^4 - \cdots\\
+=\mathstrut \amp -1 - x - x^2 - \frac{1}{3}x^3 - \frac{1}{4\cdot 3}x^4 - \cdots
+\end{align*}
+</div>
+<p class="continuation">which is precisely the solution we found in the example.</p>
+<article class="activity project-like" id="act-8a-6-1"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="period">.</span>
+</h4>
+<p id="p-9342">For each of the following initial value problems, find at least the first four nonzero terms of a power series solution to the IVP.</p>
+<ol id="p-9343" class="lower-alpha">
+<li id="li-5415"><p id="p-9344"><span class="process-math">\(\displaystyle y' = y - 4, \ y(0) = 0\)</span></p></li>
+<li id="li-5416"><p id="p-9345"><span class="process-math">\(\displaystyle y' = -2y, \ y(0) = -1\)</span></p></li>
+<li id="li-5417"><p id="p-9346"><span class="process-math">\(\displaystyle y' = y + 2x + x^2, \ y(0) = 3\)</span></p></li>
+</ol></article></section><section class="subsection" id="subsection-162"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.6.2</span> <span class="title">Using power series to solve higher order initial value problems: constant coefficients</span>
+</h3>
+<p id="p-9349">Initial value problems of the form</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+my'' + by' + ky = 0, \ y(0) = c_1, \ y'(0) = c_2
+\end{equation*}
+</div>
+<p class="continuation">find important applications in physics, especially in spring-mass systems; the solution <span class="process-math">\(y\)</span> to the IVP models a mass <span class="process-math">\(m\)</span> that hangs from a spring with spring constant <span class="process-math">\(k\text{,}\)</span> where the damping constant is <span class="process-math">\(b\)</span> and the mass has an initial displacement of <span class="process-math">\(c_1\)</span> units from equilibrium and an initial velocity of <span class="process-math">\(c_2\text{.}\)</span>  While an in-depth development of solutions to these IVPs is normally studied in a full course on differential equations, we can use power series solutions to understand some of the important basic cases.</p>
+<p id="p-9350">We start with the simplest possible second-order IVP,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' = y, \ y(0) = 1, \ y'(0) = 1\text{.}
+\end{equation*}
+</div>
+<p class="continuation">While we know that the solution to this IVP is <span class="process-math">\(y = e^x\text{,}\)</span> it's instructive to see how the series solution approach confirms this.   In the same way that we did with first-order equations, we let</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">so</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots + nc_n x^{n-1} + \cdots\text{,}
+\end{equation*}
+</div>
+<p class="continuation">and now further,</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' = 2c_2 + 3 \cdot 2 c_3 x + 4 \cdot 3 c_4 x^2 + \cdots + n (n-1) c_n x^{n-2} + \cdots\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Setting <span class="process-math">\(y'' = y\text{,}\)</span> we see that</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+2c_2 + 3 \cdot 2 c_3 x + 4 \cdot 3 c_4 x^2 + 5 \cdot 4 c_5 x^3 + \cdots = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots \text{.}
+\end{equation*}
+</div>
+<p class="continuation">Equating like coefficients,</p>
+<div class="displaymath process-math" data-contains-math-knowls="" id="md-247">
+\begin{align*}
+2c_2 =\mathstrut \amp c_0\\
+3 \cdot 2 c_3 =\mathstrut \amp c_1\\
+4 \cdot 3 c_4 =\mathstrut \amp c_2\\
+5 \cdot 4 c_5 =\mathstrut \amp c_3
+\end{align*}
+</div>
+<p class="continuation">and so on.  We see from this chain of equalities that the even-indexed constants <span class="process-math">\(c_i\)</span> depend on <span class="process-math">\(c_0\text{,}\)</span> while the odd-indexed constants depend on <span class="process-math">\(c_1\text{.}\)</span>  In the original IVP statement, we were given that <span class="process-math">\(y(0) = 1\)</span> and <span class="process-math">\(y'(0) = 1\text{,}\)</span> so this implies that <span class="process-math">\(c_0 = 1\)</span> and <span class="process-math">\(c_1 = 1\)</span> from the power series expansions of <span class="process-math">\(y\)</span> and <span class="process-math">\(y''\text{.}\)</span></p>
+<p id="p-9351">Using all of our work so far, we now see that <span class="process-math">\(2c_2 = c_0 = 1\text{,}\)</span> so <span class="process-math">\(c_2 = \frac{1}{2}\text{;}\)</span> next, we have that <span class="process-math">\(3 \cdot 2 c_3 = c_1 = 1\text{,}\)</span> so <span class="process-math">\(c_3 = \frac{1}{3 \cdot 2}\text{;}\)</span> similarly, <span class="process-math">\(4 \cdot 3 c_4 = c_2 = \frac{1}{2}\text{,}\)</span> so <span class="process-math">\(c_4 = \frac{1}{4 \cdot 3 \cdot 2}\text{;}\)</span> and further, <span class="process-math">\(5 \cdot 4 c_5 = c_3 = \frac{1}{3 \cdot 2}\text{,}\)</span> so <span class="process-math">\(c_5 = \frac{1}{5 \cdot 4 \cdot 3 \cdot 2}\text{.}\)</span>  We see the pattern that <span class="process-math">\(c_k = \frac{1}{k!}\text{,}\)</span> which of course aligns with the fact that <span class="process-math">\(y = e^x\)</span> is the solution to the original IVP.  In the next activity, we explore several other second-order IVPs using a similar approach.</p>
+<article class="activity project-like" id="act-8a-6-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="period">.</span>
+</h4>
+<p id="p-9352">For each of the following initial value problems, find at least the first four nonzero terms of a power series solution to the IVP.</p>
+<ol id="p-9353" class="lower-alpha">
+<li id="li-5419"><p id="p-9354"><span class="process-math">\(\displaystyle y'' = -y, \ y(0) = 0, \ y'(0) = 1\)</span></p></li>
+<li id="li-5420"><p id="p-9355"><span class="process-math">\(\displaystyle y'' = -y, \ y(0) = 1, \ y'(0) = 0\)</span></p></li>
+<li id="li-5421"><p id="p-9356">Why do your results in (a) and (b) make sense in light of familiar functions that satisfy each IVP?</p></li>
+<li id="li-5422"><p id="p-9357"><span class="process-math">\(\displaystyle y'' = y + x, \ y(0) = -2, \ y'(0) = 1\)</span></p></li>
+</ol></article><p id="p-9360">In the IVPs we considered in <a href="" class="xref" data-knowl="./knowl/act-8a-6-2.html" title="Activity 8.6.3">Activity 8.6.3</a>, the respective differential equations each only involved <span class="process-math">\(y''\)</span> and <span class="process-math">\(y\text{.}\)</span>  The situation is slightly more complicated when the second order differential equation with constant coefficients</p>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/act-8a-6-2.html">
+\begin{equation*}
+my'' + by' + ky = 0
+\end{equation*}
+</div>
+<p class="continuation">has all nonzero coefficients.  We demonstrate how to solve such an equation using series in the following example.</p>
+<article class="example example-like" id="ex-8a-6-LSO"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="period">.</span>
+</h4>Use power series to solve the IVP given by<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' - 2y' - 3y = 0, \ y(0) = 4, \ y'(0) = 0\text{.}
+\end{equation*}
+</div>Show at least the first 5 nonzero terms of the solution <span class="process-math">\(y\text{.}\)</span><div class="solutions">
+<a href="" data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-517" id="solution-517"><span class="type">Solution</span><span class="period">.</span></a><div class="hidden-content tex2jax_ignore" id="hk-solution-517"><div class="solution solution-like">We begin in the familiar way by letting<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{,}
+\end{equation*}
+</div>so<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = c_1 + 2c_2 x + 3c_3 x^2 + 4c_4 x^3 + \cdots + nc_n x^{n-1} + \cdots\text{,}
+\end{equation*}
+</div>and<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' = 2c_2 + 3 \cdot 2 c_3 x + 4 \cdot 3 c_4 x^2 + \cdots + n (n-1) c_n x^{n-2} + \cdots\text{.}
+\end{equation*}
+</div>Slightly rewriting the differential equation, we know that <span class="process-math">\(y\)</span> has to satisfy the equation <span class="process-math">\(y'' = 2y' + 3y\text{.}\)</span>  Based on this form, we observe that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+2y' = 2c_1 + 4 c_2 x + 6 c_3 x^2 + 8 c_4 x^3 + \cdots + 2nc_n x^{n-1} + \cdots
+\end{equation*}
+</div>and<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+3y = 3c_0 + 3c_1 x + 3c_2 x^2 + 3c_3 x^3 + 3c_4 x^4 + \cdots + 3c_n x^n + \cdots\text{.}
+\end{equation*}
+</div>Substituting the series expressions for <span class="process-math">\(y''\text{,}\)</span> <span class="process-math">\(2y'\text{,}\)</span> and <span class="process-math">\(3y\)</span> in the equation <span class="process-math">\(y'' = 2y' + 3y\text{,}\)</span> we see that<div class="displaymath process-math" data-contains-math-knowls="" id="md-248">
+\begin{align*}
+2c_2 + 6 c_3 x + 12 c_4 x^2 + 20 c_5 x^3 + \cdots =\mathstrut \amp (2c_1 + 4 c_2 x + 6 c_3 x^2 + 8 c_4 x^3 + \cdots)\\
++\mathstrut \amp  (3c_0 + 3c_1 x + 3c_2 x^2 + 3c_3 x^3 + \cdots)
+\end{align*}
+</div>From this last equation, we can determine the relationships that exist among the constants <span class="process-math">\(c_i\text{.}\)</span>  Equating the constant terms on boths sides of the equation, we have<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+2c_2 = 2c_1 + 3c_0\text{.}
+\end{equation*}
+</div>From the linear terms, we see<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+6c_3 = 4c_2 + 3c_1\text{,}
+\end{equation*}
+</div>and the quadratic terms imply<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+12c_4 = 6c_3 + 3c_2\text{,}
+\end{equation*}
+</div>and further from the cubic terms that<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+20c_5 = 8c_4 + 3c_3\text{.}
+\end{equation*}
+</div>If we solve these equations for <span class="process-math">\(c_2\text{,}\)</span> <span class="process-math">\(c_3\text{,}\)</span> and so on, we have<div class="displaymath process-math" data-contains-math-knowls="" id="md-249">
+\begin{gather*}
+c_2 = \frac{2c_1 + 3c_0}{2}\\
+c_3 = \frac{4c_2 + 3c_1}{6}\\
+c_4 = \frac{6c_3 + 3c_2}{12}\\
+c_5 = \frac{8c_4 + 3c_3}{20}
+\end{gather*}
+</div>Using the initial conditions that <span class="process-math">\(y(0) = 4\)</span> and <span class="process-math">\(y'(0) = 0\text{,}\)</span> it follows from the series expansions for <span class="process-math">\(y\)</span> and <span class="process-math">\(y'\)</span> that <span class="process-math">\(c_0 = 4\)</span> and <span class="process-math">\(c_1 = 0\text{,}\)</span> so<div class="displaymath process-math" data-contains-math-knowls="" id="md-250">
+\begin{gather*}
+c_2 = \frac{2 \cdot 0 + 3 \cdot 4}{2} = 6\\
+c_3 = \frac{4 \cdot 6 + 3 \cdot 0}{6} = 4\\
+c_4 = \frac{6 \cdot 4 + 3 \cdot 6}{12} = \frac{7}{2}\\
+c_5 = \frac{8 \cdot \frac{7}{2} + 3 \cdot 4}{20} = 2\text{.}
+\end{gather*}
+</div>Thus, the solution to the IVP is<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = 4 + 6x^2 + 4x^3 + \frac{7}{2}x^4 + 2x^5 + \cdots\text{.}
+\end{equation*}
+</div>
+</div></div>
+</div></article></section><section class="subsection" id="subsection-163"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.6.3</span> <span class="title">Solving initial value problems with non-constant coeffiecients</span>
+</h3>
+<p id="p-9361">For differential equations such as <span class="process-math">\(y' - 4y = 0\)</span> or <span class="process-math">\(y'' - 2y' - 3y = 0\)</span> that we considered in the previous section, there are well-established methods for solving these equations that don't involve using power series.  But for other important differential equations, such as Airy's equation that arises in the theory of rainbows, non-constant coefficients pose a different challenge and require us to use power series in order to find a solution.  Airy's equation is given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' - xy = 0\text{,}
+\end{equation*}
+</div>
+<p class="continuation">and the presence of the “<span class="process-math">\(x\)</span>” that multiplies the unknown function <span class="process-math">\(y\)</span> makes this equation harder to solve than one like <span class="process-math">\(y'' - 4y = 0\text{.}\)</span>  Power series enable us to handle this challenge when other approaches studied in a course on differential equations fail.  We explore a similar first-order equation in the following activity, and then move on to solve Airy's equation, given certain initial conditions.</p>
+<article class="activity project-like" id="act-8a-6-3"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.4</span><span class="period">.</span>
+</h4>
+<p id="p-9362">We solve two different initial value problems using power series.</p>
+<ol id="p-9363" class="lower-alpha">
+<li id="li-5424">
+<p id="p-9364">Consider the IVP given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y' = 2xy, \ y(0) = 1\text{.}
+\end{equation*}
+</div>
+<ol id="p-9365" class="lower-roman"><li id="li-5425">
+<p id="p-9366">Let <span class="process-math">\(y\)</span> be given by the power series</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots\text{.}
+\end{equation*}
+</div>
+<p class="continuation">Find expressions for both <span class="process-math">\(y'\)</span> and <span class="process-math">\(2xy\text{.}\)</span></p>
+</li></ol>
+</li>
+<li id="li-5426">
+<p id="p-9367">Consider Airy's equation with initial conditions given by</p>
+<div class="displaymath process-math" data-contains-math-knowls="">
+\begin{equation*}
+y'' - xy = 0, \ y(0) = 1, \ y'(0) = 0\text{.}
+\end{equation*}
+</div>
+</li>
+</ol></article></section><section class="subsection" id="subsection-164"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.6.4</span> <span class="title">Using power series to solve higher order initial value problems: non-constant coefficients</span>
+</h3></section><section class="subsection" id="subsection-165"><h3 class="heading hide-type">
+<span class="type">Subsection</span> <span class="codenumber">8.6.5</span> <span class="title">Summary</span>
+</h3>
+<ul id="p-9370" class="disc">
+<li id="li-5428"><p id="p-9371">Through</p></li>
+<li id="li-5429"><p id="p-9372">The Power Series</p></li>
+<li id="li-5430"><p id="p-9373">An</p></li>
+</ul></section><section class="exercises" id="ez-8a-6"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber">8.6.6</span> <span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="ez-8a-6-1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
+<p id="p-9374">In this exercise</p>
+<ol id="p-9375" class="lower-alpha"><li id="li-5431"><p id="p-9376">Use</p></li></ol></article></section></section></div></main>
+</div>
+</body>
+</html>

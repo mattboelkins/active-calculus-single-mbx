@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head xmlns:og="http://ogp.me/ns#" xmlns:book="https://ogp.me/ns/book#">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>AC Sequences</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta property="og:type" content="book">
+<meta property="book:title" content="Active Calculus">
+<meta property="book:author" content="Matthew Boelkins">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "https://pretextbook.org/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="https://webwork-dev.uleth.ca/webwork2_files/js/apps/MathView/mathview.css" rel="stylesheet">
+<script src="https://pretextbook.org/js/0.33/pretext-webwork/2.18/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script async="" src="https://cse.google.com/cse.js?cx=015103900096539427448:ngwuia10qci"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="https://pretextbook.org/js/0.33/pretext_search.js"></script><link href="https://pretextbook.org/css/0.83/pretext_search.css" rel="stylesheet" type="text/css">
+<script>js_version = 0.33</script><script src="https://pretextbook.org/js/lib/jquery.min.js"></script><script src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script src="https://pretextbook.org/js/0.33/pretext.js"></script><script>miniversion=0.1</script><script src="https://pretextbook.org/js/0.33/pretext_add_on.js?x=1"></script><script src="https://pretextbook.org/js/0.33/user_preferences.js"></script><script src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
+</script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&amp;family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&amp;family=Tinos:ital,wght@0,400;0,700;1,400;1,700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.cdnfonts.com/css/dejavu-serif" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wdth,wght@8..144,50..150,100..900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&amp;display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+<link href="https://pretextbook.org/css/0.83/pretext.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/shell_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/banner_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/toc_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/style_default.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="https://pretextbook.org/css/0.83/setcolors.css" rel="stylesheet" type="text/css">
+</head>
+<body id="boelkins-ACS" class="pretext book ignore-math">
+<a class="assistive" href="#ptx-content">Skip to main content</a><header id="ptx-masthead" class="ptx-masthead"><div class="ptx-banner">
+<a id="logo-link" class="logo-link" target="_blank" href="https://activecalculus.org"><img src="external/images/ActiveCalculusImage_sm.jpg" alt="Logo image"></a><div class="title-container">
+<h1 class="heading"><a href="root--1-2.html"><span class="title">Active Calculus</span></a></h1>
+<p class="byline">Matthew Boelkins</p>
+</div>
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><a class="index-button button" href="backmatter-5.html" title="Index"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span><span class="name">Index</span></a><div class="searchwrapper" role="search"><div class="gcse-search"></div></div>
+<div class="searchbox">
+<div class="searchwidget"><button id="searchbutton" class="searchbutton button" type="button" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button></div>
+<div id="searchresultsplaceholder" class="searchresultsplaceholder" style="display: none">
+<div class="search-results-controls">
+<input aria-label="Search term" id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search term"><button title="Close search" id="closesearchresults" class="closesearchresults"><span class="material-symbols-outlined">close</span></button>
+</div>
+<h2 class="search-results-heading">Search Results: </h2>
+<div id="searchempty" class="searchempty"><span>No results.</span></div>
+<ol id="searchresults" class="searchresults"></ol>
+</div>
+</div>
+<span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="C-8.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="C-8.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-8-2-geometric.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span></nav><div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div class="ptx-page">
+<div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural contains-active toc-item-list">
+<li class="toc-item toc-frontmatter">
+<div class="toc-title-box"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="frontmatter-2.html" class="internal"><span class="title">Colophon</span></a></div></li>
+<li class="toc-item toc-acknowledgement"><div class="toc-title-box"><a href="frontmatter-3.html" class="internal"><span class="title">Acknowledgements</span></a></div></li>
+<li class="toc-item toc-preface">
+<div class="toc-title-box"><a href="frontmatter-4.html" class="internal"><span class="title">Contributors</span></a></div>
+<ul class="structural toc-item-list"><li class="toc-item toc-contributors"><div class="toc-title-box"><a href="frontmatter-4.html#frontmatter-4-4" class="internal"><span class="title"></span></a></div></li></ul>
+</li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-5.html" class="internal"><span class="title">Active Calculus: Our Goals</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="frontmatter-6.html" class="internal"><span class="title">Features of the Text</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-students.html" class="internal"><span class="title">Students!  Read this!</span></a></div></li>
+<li class="toc-item toc-preface"><div class="toc-title-box"><a href="preface-for-instructors.html" class="internal"><span class="title">Instructors!  Read this!</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-1.html" class="internal"><span class="codenumber">1</span> <span class="title">Understanding the Derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-1-vel.html" class="internal"><span class="codenumber">1.1</span> <span class="title">How do we measure velocity?</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#iwq" class="internal"><span class="codenumber">1.1.1</span> <span class="title">Position and average velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#ODz" class="internal"><span class="codenumber">1.1.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-1-vel.html#uKI" class="internal"><span class="codenumber">1.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-1-vel.html#NIx" class="internal"><span class="codenumber">1.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-2-lim.html" class="internal"><span class="codenumber">1.2</span> <span class="title">The notion of limit</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#BTI" class="internal"><span class="codenumber">1.2.1</span> <span class="title">The Notion of Limit</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#iaR" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Instantaneous Velocity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-2-lim.html#Oia" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-2-lim.html#GGO" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-3-derivative-pt.html" class="internal"><span class="codenumber">1.3</span> <span class="title">The derivative of a function at a point</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#dFt" class="internal"><span class="codenumber">1.3.1</span> <span class="title">The Derivative of a Function at a Point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#JMC" class="internal"><span class="codenumber">1.3.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-3-derivative-pt.html#WsC" class="internal"><span class="codenumber">1.3.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html" class="internal"><span class="codenumber">1.4</span> <span class="title">The derivative function</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#Lgq" class="internal"><span class="codenumber">1.4.1</span> <span class="title">How the derivative is itself a function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rnz" class="internal"><span class="codenumber">1.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-4-derivative-fxn.html#rjI" class="internal"><span class="codenumber">1.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-5-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#pcN" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#VjW" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5-units.html#Brf" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5-units.html#tXk" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-6-second-d.html" class="internal"><span class="codenumber">1.6</span> <span class="title">The second derivative</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#wlN" class="internal"><span class="codenumber">1.6.1</span> <span class="title">Increasing or decreasing</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#csW" class="internal"><span class="codenumber">1.6.2</span> <span class="title">The Second Derivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#IAf" class="internal"><span class="codenumber">1.6.3</span> <span class="title">Concavity</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-6-second-d.html#oHo" class="internal"><span class="codenumber">1.6.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-6-second-d.html#DjS" class="internal"><span class="codenumber">1.6.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html" class="internal"><span class="codenumber">1.7</span> <span class="title">Limits, Continuity, and Differentiability</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#AAh" class="internal"><span class="codenumber">1.7.1</span> <span class="title">Having a limit at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#gHq" class="internal"><span class="codenumber">1.7.2</span> <span class="title">Being continuous at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#MOz" class="internal"><span class="codenumber">1.7.3</span> <span class="title">Being differentiable at a point</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#sVI" class="internal"><span class="codenumber">1.7.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-7-lim-cont-diff.html#bFy" class="internal"><span class="codenumber">1.7.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html" class="internal"><span class="codenumber">1.8</span> <span class="title">The Tangent Line Approximation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#LnH" class="internal"><span class="codenumber">1.8.1</span> <span class="title">The tangent line</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ruQ" class="internal"><span class="codenumber">1.8.2</span> <span class="title">The local linearization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#XBZ" class="internal"><span class="codenumber">1.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-8-tan-line-approx.html#ZJh" class="internal"><span class="codenumber">1.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-2.html" class="internal"><span class="codenumber">2</span> <span class="title">Computing Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-1-elem-rules.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Elementary derivative rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#yDQ" class="internal"><span class="codenumber">2.1.1</span> <span class="title">Some Key Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#eKZ" class="internal"><span class="codenumber">2.1.2</span> <span class="title">Constant, Power, and Exponential Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#KSi" class="internal"><span class="codenumber">2.1.3</span> <span class="title">Constant Multiples and Sums of Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#qZr" class="internal"><span class="codenumber">2.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-1-elem-rules.html#QSl" class="internal"><span class="codenumber">2.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-2-sin-cos.html" class="internal"><span class="codenumber">2.2</span> <span class="title">The sine and cosine functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#QVP" class="internal"><span class="codenumber">2.2.1</span> <span class="title">The sine and cosine functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#xcY" class="internal"><span class="codenumber">2.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-2-sin-cos.html#gZy" class="internal"><span class="codenumber">2.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-3-prod-quot.html" class="internal"><span class="codenumber">2.3</span> <span class="title">The product and quotient rules</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#MVQ" class="internal"><span class="codenumber">2.3.1</span> <span class="title">The product rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#tcZ" class="internal"><span class="codenumber">2.3.2</span> <span class="title">The quotient rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#Zki" class="internal"><span class="codenumber">2.3.3</span> <span class="title">Combining rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#Frr" class="internal"><span class="codenumber">2.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-3-prod-quot.html#ApM" class="internal"><span class="codenumber">2.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-4-other-trig.html" class="internal"><span class="codenumber">2.4</span> <span class="title">Derivatives of other trigonometric functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#eiw" class="internal"><span class="codenumber">2.4.1</span> <span class="title">Derivatives of the cotangent, secant, and cosecant functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#KpF" class="internal"><span class="codenumber">2.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-4-other-trig.html#ZgR" class="internal"><span class="codenumber">2.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-5-chain.html" class="internal"><span class="codenumber">2.5</span> <span class="title">The chain rule</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#Utl" class="internal"><span class="codenumber">2.5.1</span> <span class="title">The chain rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#AAu" class="internal"><span class="codenumber">2.5.2</span> <span class="title">Using multiple rules simultaneously</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#gHD" class="internal"><span class="codenumber">2.5.3</span> <span class="title">The composite version of basic function rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-5-chain.html#MOM" class="internal"><span class="codenumber">2.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-5-chain.html#dJG" class="internal"><span class="codenumber">2.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-6-inverse.html" class="internal"><span class="codenumber">2.6</span> <span class="title">Derivatives of Inverse Functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#OSu" class="internal"><span class="codenumber">2.6.1</span> <span class="title">Basic facts about inverse functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#uZD" class="internal"><span class="codenumber">2.6.2</span> <span class="title">The derivative of the natural logarithm function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#bgM" class="internal"><span class="codenumber">2.6.3</span> <span class="title">Inverse trigonometric functions and their derivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#HnV" class="internal"><span class="codenumber">2.6.4</span> <span class="title">The link between the derivative of a function and the derivative of its inverse</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-6-inverse.html#nve" class="internal"><span class="codenumber">2.6.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-6-inverse.html#YSJ" class="internal"><span class="codenumber">2.6.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-7-implicit.html" class="internal"><span class="codenumber">2.7</span> <span class="title">Derivatives of Functions Given Implicitly</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-7-implicit.html#QWc" class="internal"><span class="codenumber">2.7.1</span> <span class="title">Implicit Differentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-7-implicit.html#xdl" class="internal"><span class="codenumber">2.7.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-7-implicit.html#amx" class="internal"><span class="codenumber">2.7.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-2-8-LHR.html" class="internal"><span class="codenumber">2.8</span> <span class="title">Using Derivatives to Evaluate Limits</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#SpQ" class="internal"><span class="codenumber">2.8.1</span> <span class="title">Using derivatives to evaluate indeterminate limits of the form <span class="process-math">\(\frac{0}{0}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#ywZ" class="internal"><span class="codenumber">2.8.2</span> <span class="title">Limits involving <span class="process-math">\(\infty\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-2-8-LHR.html#eEi" class="internal"><span class="codenumber">2.8.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-2-8-LHR.html#qtK" class="internal"><span class="codenumber">2.8.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-3.html" class="internal"><span class="codenumber">3</span> <span class="title">Using Derivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-1-tests.html" class="internal"><span class="codenumber">3.1</span> <span class="title">Using derivatives to identify extreme values</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#aiK" class="internal"><span class="codenumber">3.1.1</span> <span class="title">Critical numbers and the first derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#GpT" class="internal"><span class="codenumber">3.1.2</span> <span class="title">The second derivative test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-1-tests.html#mxc" class="internal"><span class="codenumber">3.1.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-1-tests.html#RJW" class="internal"><span class="codenumber">3.1.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-2-families.html" class="internal"><span class="codenumber">3.2</span> <span class="title">Using derivatives to describe families of functions</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2-families.html#YHS" class="internal"><span class="codenumber">3.2.1</span> <span class="title">Describing families of functions in terms of parameters</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-2-families.html#EPb" class="internal"><span class="codenumber">3.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-2-families.html#mBc" class="internal"><span class="codenumber">3.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-3-optimization.html" class="internal"><span class="codenumber">3.3</span> <span class="title">Global Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#Hoi" class="internal"><span class="codenumber">3.3.1</span> <span class="title">Global Optimization</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#nvr" class="internal"><span class="codenumber">3.3.2</span> <span class="title">Moving toward applications</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-3-optimization.html#TCA" class="internal"><span class="codenumber">3.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-3-optimization.html#GWJ" class="internal"><span class="codenumber">3.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-4-applied-opt.html" class="internal"><span class="codenumber">3.4</span> <span class="title">Applied Optimization</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#FNq" class="internal"><span class="codenumber">3.4.1</span> <span class="title">More applied optimization problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#lUz" class="internal"><span class="codenumber">3.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-4-applied-opt.html#DGE" class="internal"><span class="codenumber">3.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-3-5-rel-rates.html" class="internal"><span class="codenumber">3.5</span> <span class="title">Related Rates</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#aqb" class="internal"><span class="codenumber">3.5.1</span> <span class="title">Related Rates Problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#Gxk" class="internal"><span class="codenumber">3.5.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-3-5-rel-rates.html#Pzx" class="internal"><span class="codenumber">3.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-4.html" class="internal"><span class="codenumber">4</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-1-velocity-distance.html" class="internal"><span class="codenumber">4.1</span> <span class="title">Determining distance traveled from velocity</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#EWs" class="internal"><span class="codenumber">4.1.1</span> <span class="title">Area under the graph of the velocity function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#ldB" class="internal"><span class="codenumber">4.1.2</span> <span class="title">Two approaches: area and antidifferentiation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#RkK" class="internal"><span class="codenumber">4.1.3</span> <span class="title">When velocity is negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#xrT" class="internal"><span class="codenumber">4.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-1-velocity-distance.html#lax" class="internal"><span class="codenumber">4.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-2-Riemann.html" class="internal"><span class="codenumber">4.2</span> <span class="title">Riemann Sums</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#jCJ" class="internal"><span class="codenumber">4.2.1</span> <span class="title">Sigma Notation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#PJS" class="internal"><span class="codenumber">4.2.2</span> <span class="title">Riemann Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#vRb" class="internal"><span class="codenumber">4.2.3</span> <span class="title">When the function is sometimes negative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#bYk" class="internal"><span class="codenumber">4.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-2-Riemann.html#DGR" class="internal"><span class="codenumber">4.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-3-definite-integral.html" class="internal"><span class="codenumber">4.3</span> <span class="title">The Definite Integral</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#uqj" class="internal"><span class="codenumber">4.3.1</span> <span class="title">The definition of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#axs" class="internal"><span class="codenumber">4.3.2</span> <span class="title">Some properties of the definite integral</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#GEB" class="internal"><span class="codenumber">4.3.3</span> <span class="title">How the definite integral is connected to a function’s average value</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#mLK" class="internal"><span class="codenumber">4.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-3-definite-integral.html#Ucz" class="internal"><span class="codenumber">4.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-4-4-FTC.html" class="internal"><span class="codenumber">4.4</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#rJY" class="internal"><span class="codenumber">4.4.1</span> <span class="title">The Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#XRh" class="internal"><span class="codenumber">4.4.2</span> <span class="title">Basic antiderivatives</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#DYq" class="internal"><span class="codenumber">4.4.3</span> <span class="title">The total change theorem</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-4-4-FTC.html#kfz" class="internal"><span class="codenumber">4.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-4-4-FTC.html#HHd" class="internal"><span class="codenumber">4.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-5.html" class="internal"><span class="codenumber">5</span> <span class="title">Evaluating Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-1-antid-graphs.html" class="internal"><span class="codenumber">5.1</span> <span class="title">Constructing Accurate Graphs of Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#Sqq" class="internal"><span class="codenumber">5.1.1</span> <span class="title">Constructing the graph of an antiderivative</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#yxz" class="internal"><span class="codenumber">5.1.2</span> <span class="title">Multiple antiderivatives of a single function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#eEI" class="internal"><span class="codenumber">5.1.3</span> <span class="title">Functions defined by integrals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#KLR" class="internal"><span class="codenumber">5.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-1-antid-graphs.html#gcJ" class="internal"><span class="codenumber">5.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-2-FTC2.html" class="internal"><span class="codenumber">5.2</span> <span class="title">The Second Fundamental Theorem of Calculus</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#RUR" class="internal"><span class="codenumber">5.2.1</span> <span class="title">The Second Fundamental Theorem of Calculus</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#yca" class="internal"><span class="codenumber">5.2.2</span> <span class="title">Understanding Integral Functions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#ejj" class="internal"><span class="codenumber">5.2.3</span> <span class="title">Differentiating an Integral Function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#Kqs" class="internal"><span class="codenumber">5.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-2-FTC2.html#AjV" class="internal"><span class="codenumber">5.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-3-substitution.html" class="internal"><span class="codenumber">5.3</span> <span class="title">Integration by Substitution</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#cIr" class="internal"><span class="codenumber">5.3.1</span> <span class="title">Reversing the Chain Rule: First Steps</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#IPA" class="internal"><span class="codenumber">5.3.2</span> <span class="title">Reversing the Chain Rule: <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#oWJ" class="internal"><span class="codenumber">5.3.3</span> <span class="title">Evaluating Definite Integrals via <span class="process-math">\(u\)</span>-substitution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-3-substitution.html#VdS" class="internal"><span class="codenumber">5.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-3-substitution.html#lDN" class="internal"><span class="codenumber">5.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-4-parts.html" class="internal"><span class="codenumber">5.4</span> <span class="title">Integration by Parts</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#JdV" class="internal"><span class="codenumber">5.4.1</span> <span class="title">Reversing the Product Rule: Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#ple" class="internal"><span class="codenumber">5.4.2</span> <span class="title">Some Subtleties with Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#Vsn" class="internal"><span class="codenumber">5.4.3</span> <span class="title">Using Integration by Parts Multiple Times</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#Bzw" class="internal"><span class="codenumber">5.4.4</span> <span class="title">Evaluating Definite Integrals Using Integration by Parts</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#hGF" class="internal"><span class="codenumber">5.4.5</span> <span class="title">When <span class="process-math">\(u\)</span>-substitution and Integration by Parts Fail to Help</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-4-parts.html#NNO" class="internal"><span class="codenumber">5.4.6</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-4-parts.html#zAo" class="internal"><span class="codenumber">5.4.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-5-other-opt.html" class="internal"><span class="codenumber">5.5</span> <span class="title">Other Options for Finding Algebraic Antiderivatives</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#mET" class="internal"><span class="codenumber">5.5.1</span> <span class="title">The Method of Partial Fractions</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#SMc" class="internal"><span class="codenumber">5.5.2</span> <span class="title">Using an Integral Table</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#yTl" class="internal"><span class="codenumber">5.5.3</span> <span class="title">Using Computer Algebra Systems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#fau" class="internal"><span class="codenumber">5.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-5-other-opt.html#okl" class="internal"><span class="codenumber">5.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-5-6-num-int.html" class="internal"><span class="codenumber">5.6</span> <span class="title">Numerical Integration</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#Nll" class="internal"><span class="codenumber">5.6.1</span> <span class="title">The Trapezoid Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#tsu" class="internal"><span class="codenumber">5.6.2</span> <span class="title">Comparing the Midpoint and Trapezoid Rules</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#ZzD" class="internal"><span class="codenumber">5.6.3</span> <span class="title">Simpson’s Rule</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#FGM" class="internal"><span class="codenumber">5.6.4</span> <span class="title">Overall observations regarding <span class="process-math">\(L_n\text{,}\)</span> <span class="process-math">\(R_n\text{,}\)</span> <span class="process-math">\(T_n\text{,}\)</span> <span class="process-math">\(M_n\text{,}\)</span> and <span class="process-math">\(S_{2n}\text{.}\)</span></span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-5-6-num-int.html#lNV" class="internal"><span class="codenumber">5.6.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-5-6-num-int.html#bOP" class="internal"><span class="codenumber">5.6.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-6.html" class="internal"><span class="codenumber">6</span> <span class="title">Using Definite Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-1-area.html" class="internal"><span class="codenumber">6.1</span> <span class="title">Using Definite Integrals to Find Area and Length</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#nhJ" class="internal"><span class="codenumber">6.1.1</span> <span class="title">The Area Between Two Curves</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#ToS" class="internal"><span class="codenumber">6.1.2</span> <span class="title">Finding Area with Horizontal Slices</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#zwb" class="internal"><span class="codenumber">6.1.3</span> <span class="title">Finding the length of a curve</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-1-area.html#fDk" class="internal"><span class="codenumber">6.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-1-area.html#lwW" class="internal"><span class="codenumber">6.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-2-volume.html" class="internal"><span class="codenumber">6.2</span> <span class="title">Using Definite Integrals to Find Volume</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#qqK" class="internal"><span class="codenumber">6.2.1</span> <span class="title">The Volume of a Solid of Revolution</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#WxT" class="internal"><span class="codenumber">6.2.2</span> <span class="title">Revolving about the <span class="process-math">\(y\)</span>-axis</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#CFc" class="internal"><span class="codenumber">6.2.3</span> <span class="title">Revolving about horizontal and vertical lines other than the coordinate axes</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-2-volume.html#iMl" class="internal"><span class="codenumber">6.2.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-2-volume.html#dLt" class="internal"><span class="codenumber">6.2.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-3-mass.html" class="internal"><span class="codenumber">6.3</span> <span class="title">Density, Mass, and Center of Mass</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#FOd" class="internal"><span class="codenumber">6.3.1</span> <span class="title">Density</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#lVm" class="internal"><span class="codenumber">6.3.2</span> <span class="title">Weighted Averages</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#Scv" class="internal"><span class="codenumber">6.3.3</span> <span class="title">Center of Mass</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-3-mass.html#yjE" class="internal"><span class="codenumber">6.3.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-3-mass.html#JLy" class="internal"><span class="codenumber">6.3.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-4-physics.html" class="internal"><span class="codenumber">6.4</span> <span class="title">Physics Applications:  Work, Force, and Pressure</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#kuu" class="internal"><span class="codenumber">6.4.1</span> <span class="title">Work</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#QBD" class="internal"><span class="codenumber">6.4.2</span> <span class="title">Work: Pumping Liquid from a Tank</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#wIM" class="internal"><span class="codenumber">6.4.3</span> <span class="title">Force due to Hydrostatic Pressure</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-4-physics.html#cPV" class="internal"><span class="codenumber">6.4.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-4-physics.html#qhc" class="internal"><span class="codenumber">6.4.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-6-5-improper.html" class="internal"><span class="codenumber">6.5</span> <span class="title">Improper Integrals</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#kIP" class="internal"><span class="codenumber">6.5.1</span> <span class="title">Improper Integrals Involving Unbounded Intervals</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#QPY" class="internal"><span class="codenumber">6.5.2</span> <span class="title">Convergence and Divergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#wXh" class="internal"><span class="codenumber">6.5.3</span> <span class="title">Improper Integrals Involving Unbounded Integrands</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-6-5-improper.html#deq" class="internal"><span class="codenumber">6.5.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-6-5-improper.html#dbM" class="internal"><span class="codenumber">6.5.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter">
+<div class="toc-title-box"><a href="C-7.html" class="internal"><span class="codenumber">7</span> <span class="title">Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html" class="internal"><span class="codenumber">7.1</span> <span class="title">An Introduction to Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#Quz" class="internal"><span class="codenumber">7.1.1</span> <span class="title">What is a differential equation?</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#wBI" class="internal"><span class="codenumber">7.1.2</span> <span class="title">Differential equations in the world around us</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#cIR" class="internal"><span class="codenumber">7.1.3</span> <span class="title">Solving a differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#IQa" class="internal"><span class="codenumber">7.1.4</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-1-diff-eq-intro.html#jtO" class="internal"><span class="codenumber">7.1.5</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-2-qualitative.html" class="internal"><span class="codenumber">7.2</span> <span class="title">Qualitative behavior of solutions to DEs</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#CFp" class="internal"><span class="codenumber">7.2.1</span> <span class="title">Slope fields</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#iMy" class="internal"><span class="codenumber">7.2.2</span> <span class="title">Equilibrium solutions and stability</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#OTH" class="internal"><span class="codenumber">7.2.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-2-qualitative.html#ehs" class="internal"><span class="codenumber">7.2.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-3-euler.html" class="internal"><span class="codenumber">7.3</span> <span class="title">Euler’s method</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#MIV" class="internal"><span class="codenumber">7.3.1</span> <span class="title">Euler’s Method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#sQe" class="internal"><span class="codenumber">7.3.2</span> <span class="title">The error in Euler’s method</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-3-euler.html#YXn" class="internal"><span class="codenumber">7.3.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-3-euler.html#wdS" class="internal"><span class="codenumber">7.3.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-4-separable.html" class="internal"><span class="codenumber">7.4</span> <span class="title">Separable differential equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-4-separable.html#Gyk" class="internal"><span class="codenumber">7.4.1</span> <span class="title">Solving separable differential equations</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-4-separable.html#mFt" class="internal"><span class="codenumber">7.4.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-4-separable.html#Gau" class="internal"><span class="codenumber">7.4.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-5-modeling.html" class="internal"><span class="codenumber">7.5</span> <span class="title">Modeling with differential equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-5-modeling.html#Anz" class="internal"><span class="codenumber">7.5.1</span> <span class="title">Developing a differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-5-modeling.html#guI" class="internal"><span class="codenumber">7.5.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-5-modeling.html#ORD" class="internal"><span class="codenumber">7.5.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-7-6-logistic.html" class="internal"><span class="codenumber">7.6</span> <span class="title">Population Growth and the Logistic Equation</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#ucO" class="internal"><span class="codenumber">7.6.1</span> <span class="title">The earth’s population</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#ajX" class="internal"><span class="codenumber">7.6.2</span> <span class="title">Solving the logistic differential equation</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-7-6-logistic.html#Grg" class="internal"><span class="codenumber">7.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-7-6-logistic.html#tcv" class="internal"><span class="codenumber">7.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-chapter contains-active">
+<div class="toc-title-box"><a href="C-8.html" class="internal"><span class="codenumber">8</span> <span class="title">Sequences and Series</span></a></div>
+<ul class="structural toc-item-list contains-active">
+<li class="toc-item toc-section active">
+<div class="toc-title-box"><a href="sec-8-1-sequences.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Sequences</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-1-sequences.html#ReG" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Sequences</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-1-sequences.html#xlP" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-1-sequences.html#dMt" class="internal"><span class="codenumber">8.1.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-2-geometric.html" class="internal"><span class="codenumber">8.2</span> <span class="title">Geometric Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-2-geometric.html#qrk" class="internal"><span class="codenumber">8.2.1</span> <span class="title">Geometric Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-2-geometric.html#Wyt" class="internal"><span class="codenumber">8.2.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-2-geometric.html#gsR" class="internal"><span class="codenumber">8.2.3</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-3-series.html" class="internal"><span class="codenumber">8.3</span> <span class="title">Series of Real Numbers</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#Tio" class="internal"><span class="codenumber">8.3.1</span> <span class="title">Infinite Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#zpx" class="internal"><span class="codenumber">8.3.2</span> <span class="title">The Divergence Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#fwG" class="internal"><span class="codenumber">8.3.3</span> <span class="title">The Integral Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#LDP" class="internal"><span class="codenumber">8.3.4</span> <span class="title">The Limit Comparison Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#rKY" class="internal"><span class="codenumber">8.3.5</span> <span class="title">The Ratio Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-3-series.html#XSh" class="internal"><span class="codenumber">8.3.6</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-3-series.html#HXy" class="internal"><span class="codenumber">8.3.7</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-4-alternating.html" class="internal"><span class="codenumber">8.4</span> <span class="title">Alternating Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#mUb" class="internal"><span class="codenumber">8.4.1</span> <span class="title">The Alternating Series Test</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#Tbk" class="internal"><span class="codenumber">8.4.2</span> <span class="title">Estimating Alternating Sums</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#zit" class="internal"><span class="codenumber">8.4.3</span> <span class="title">Absolute and Conditional Convergence</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#fpC" class="internal"><span class="codenumber">8.4.4</span> <span class="title">Summary of Tests for Convergence of Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-4-alternating.html#LwL" class="internal"><span class="codenumber">8.4.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-4-alternating.html#Rkg" class="internal"><span class="codenumber">8.4.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-5-taylor.html" class="internal"><span class="codenumber">8.5</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#Ivb" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#oCk" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Taylor Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#UJt" class="internal"><span class="codenumber">8.5.3</span> <span class="title">The Interval of Convergence of a Taylor Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#AQC" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Error Approximations for Taylor Polynomials</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-5-taylor.html#gXL" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-5-taylor.html#NyC" class="internal"><span class="codenumber">8.5.6</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8-6-powerseries.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Power Series</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#EnY" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Power Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#kvh" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Manipulating Power Series</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#QCq" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8-6-powerseries.html#BNa" class="internal"><span class="codenumber">8.6.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toc-item toc-backmatter">
+<div class="toc-title-box"><a href="backmatter.html" class="internal"><span class="title">Back Matter</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-appendix"><div class="toc-title-box"><a href="integral-table.html" class="internal"><span class="codenumber">A</span> <span class="title">A Short Table of Integrals</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="activities-answers.html" class="internal"><span class="codenumber">B</span> <span class="title">Answers to Activities</span></a></div></li>
+<li class="toc-item toc-solutions"><div class="toc-title-box"><a href="exercises-answers.html" class="internal"><span class="codenumber">C</span> <span class="title">Answers to Selected Exercises</span></a></div></li>
+<li class="toc-item toc-index"><div class="toc-title-box"><a href="backmatter-5.html" class="internal"><span class="title">Index</span></a></div></li>
+<li class="toc-item toc-colophon"><div class="toc-title-box"><a href="backmatter-6.html" class="internal"><span class="title">Colophon</span></a></div></li>
+</ul>
+</li>
+</ul></nav></div>
+<main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="kXx" data-permid="kXx"><h2 class="heading hide-type">
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Sequences</span>
+</h2>
+<article class="objectives goal-like" id="pHq" data-permid="pHq"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
+<ul class="disc">
+<li id="urj" data-permid="urj"><div class="para" id="fil" data-permid="fil">What is a sequence?</div></li>
+<li id="ays" data-permid="ays"><div class="para" id="Lpu" data-permid="Lpu">What does it mean for a sequence to converge?</div></li>
+<li id="GFB" data-permid="GFB"><div class="para" id="rwD" data-permid="rwD">What does it mean for a sequence to diverge?</div></li>
+</ul></article><section class="introduction" id="BVI" data-permid="BVI"><div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;">
+<div class="sbspanel top" style="width:47%;"><div class="para" id="cnF" data-permid="cnF">We encounter sequences every day. Your monthly utility payments, the annual interest you earn on investments, the amount you spend on groceries each week; all are examples of sequences. Other sequences with which you may be familiar include the Fibonacci sequence  <span class="process-math">\(1, 1, 2, 3, 5, 8, \ldots \text{,}\)</span> where each term is the sum of the two preceding terms, and the triangular numbers  <span class="process-math">\(1, 3, 6, 10, 15, 21, 28, 36, 45, 55, \ldots \text{,}\)</span> the number of vertices in the triangles shown in <a href="" class="xref" data-knowl="./knowl/xref/F-8-1-Triangular-numbers.html" title="Figure 8.1.1">Figure 8.1.1</a>.</div></div>
+<div class="sbspanel top" style="width:47%;"><figure class="figure figure-like" id="IuO" data-permid="IuO"><img src="external/images/8_1_Triangular_Numbers.svg" role="img" class="contained"><figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.1<span class="period">.</span></span><span class="space"> </span>Triangular numbers</figcaption></figure></div>
+</div></div> <div class="para" id="oBX" data-permid="oBX">Sequences of integers are of such interest to mathematicians and others that they have a journal<a class="xref" id="sec-8-1-sequences-3-2-1" href="" data-knowl="./knowl/fn/sec-8-1-sequences-3-2-1.html" title="Footnote 8.1.1"><sup> 1 </sup></a> devoted to them and an on-line encyclopedia<a class="xref" id="sec-8-1-sequences-3-2-2" href="" data-knowl="./knowl/fn/sec-8-1-sequences-3-2-2.html" title="Footnote 8.1.2"><sup> 2 </sup></a> that catalogs a huge number of integer sequences and their connections. Sequences are also used in digital recordings and images.</div> <div class="para" id="UJg" data-permid="UJg">Our studies in calculus have dealt with continuous functions. Sequences model <em class="emphasis">discrete</em> instead of continuous information. We will study ways to represent and work with discrete information in this chapter as we investigate <em class="emphasis">sequences</em> and <em class="emphasis">series</em>, and ultimately see key connections between the discrete and continuous.</div> <article class="exploration project-like" id="XLQ" data-permid="XLQ"><h3 class="heading">
+<span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
+</h3>
+<div class="para logical" id="mUO" data-permid="mUO">
+<div class="para">Suppose you receive <span class="process-math">\(\dollar5000\)</span> through an inheritance. You decide to invest this money into a fund that pays <span class="process-math">\(8\%\)</span> annually, compounded monthly. That means that each month your investment earns <span class="process-math">\(\frac{0.08}{12} \cdot P\)</span> additional dollars, where <span class="process-math">\(P\)</span> is your principal balance at the start of the month. So in the first month your investment earns</div>
+<div class="displaymath process-math">
+\begin{equation*}
+5000 \left(\frac{0.08}{12}\right)
+\end{equation*}
+</div>
+<div class="para">or <span class="process-math">\(\dollar33.33\text{.}\)</span> If you reinvest this money, you will then have <span class="process-math">\(\dollar5033.33\)</span> in your account at the end of the first month. From this point on, assume that you reinvest all of the interest you earn.</div>
+</div> <div class="para logical" id="TbX" data-permid="TbX"><ol class="lower-alpha">
+<li id="pPu" data-permid="pPu"><div class="para" id="Ose" data-permid="Ose">How much interest will you earn in the second month? How much money will you have in your account at the end of the second month?</div></li>
+<li id="VWD" data-permid="VWD">
+<div class="para" id="uzn" data-permid="uzn">Complete <a href="" class="xref" data-knowl="./knowl/xref/T-PA-8-1-Interest.html" title="Table 8.1.2: Interest">Table 8.1.2</a> to determine the interest earned and total amount of money in this investment each month for one year.</div>
+<figure class="table table-like" id="Lxy" data-permid="Lxy"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.2<span class="period">.</span></span><span class="space"> </span>Interest</figcaption><div class="tabular-box natural-width"><table class="tabular" id="rEH">
+<tr>
+<td class="c t b1 r0 l0 t1 lines">Month</td>
+<td class="c t b1 r0 l0 t1 lines">Interest<br>earned</td>
+<td class="c t b1 r0 l0 t1 lines">Total amount<br>of money<br>in the account</td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(0\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(\dollar0.00\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(\dollar5000.00\)</span></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(1\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(\dollar33.33\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(\dollar5033.33\)</span></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(2\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(3\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(4\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(5\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(6\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(7\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(8\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(9\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(10\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(11\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+<tr>
+<td class="r m b1 r0 l0 t0 lines"><span class="process-math">\(12\)</span></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+<td class="r m b1 r0 l0 t0 lines"></td>
+</tr>
+</table></div></figure>
+</li>
+<li id="CdM" data-permid="CdM"><div class="para logical" id="aGw" data-permid="aGw">
+<div class="para">As we will see later, the amount of money <span class="process-math">\(P_n\)</span> in the account after month <span class="process-math">\(n\)</span> is given by</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/T-PA-8-1-Interest.html">
+\begin{equation*}
+P_n = 5000\left(1+\frac{0.08}{12}\right)^{n}\text{.}
+\end{equation*}
+</div>
+<div class="para">Use this formula to check your calculations in <a href="" class="xref" data-knowl="./knowl/xref/T-PA-8-1-Interest.html" title="Table 8.1.2: Interest">Table 8.1.2</a>. Then find the amount of money in the account after 5 years.</div>
+</div></li>
+<li id="ikV" data-permid="ikV"><div class="para" id="GNF" data-permid="GNF">How many years will it be before the account has doubled in value to $10000?</div></li>
+</ol></div></article></section><section class="subsection" id="ReG" data-permid="ReG"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="space"> </span><span class="title">Sequences</span>
+</h3>
+<div class="para logical" id="AQp" data-permid="AQp">
+<div class="para">As <a href="" class="xref" data-knowl="./knowl/xref/PA-8-1.html" title="Preview Activity 8.1.1">Preview Activity 8.1.1</a> illustrates, many discrete phenomena can be represented as lists of numbers (like the amount of money in an account over a period of months). We call any such list a <em class="emphasis">sequence</em>. A sequence is nothing more than list of terms in some order. We often list the entries of the sequence with subscripts,</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8-1.html">
+\begin{equation*}
+s_1, s_2, \ldots, s_n \ldots\text{,}
+\end{equation*}
+</div>
+<div class="para">where the subscript denotes the position of the entry in the sequence.</div>
+</div>
+<article class="definition definition-like" id="dsY" data-permid="dsY"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="PZn" data-permid="PZn">A sequence is a list of terms <span class="process-math">\(s_1, s_2, s_3, \ldots\)</span> in a specified order.</div></article><div class="para" id="gXy" data-permid="gXy">We can think of a sequence as a function <span class="process-math">\(f\)</span> whose domain is the set of positive integers where <span class="process-math">\(f(n) = s_n\)</span> for each positive integer <span class="process-math">\(n\text{.}\)</span> This alternative view will be be useful in many situations.</div>
+<div class="para logical" id="NeH" data-permid="NeH">
+<div class="para">We often denote the sequence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+s_1, s_2, s_3, \ldots
+\end{equation*}
+</div>
+<div class="para">by <span class="process-math">\(\{s_n\}\text{.}\)</span> The value <span class="process-math">\(s_n\)</span> (alternatively <span class="process-math">\(s(n)\)</span>) is called the <span class="process-math">\(n\)</span>th <em class="emphasis">term</em>  in the sequence. If the terms are all 0 after some fixed value of <span class="process-math">\(n\text{,}\)</span> we say the sequence is finite. Otherwise the sequence is infinite. With infinite sequences, we are often interested in their end behavior and the idea of <em class="emphasis">convergent</em> sequences.</div>
+</div>
+<article class="activity project-like" id="SIu" data-permid="SIu"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="BKj" data-permid="BKj"><ol class="lower-alpha">
+<li id="IEO" data-permid="IEO"><div class="para logical" id="emS" data-permid="emS">
+<div class="para">Let <span class="process-math">\(s_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(1, 2, 3, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(s_n\)</span> and use appropriate technological tools to draw a graph of entries in this sequence by plotting points of the form <span class="process-math">\((n,s_n)\)</span> for some values of <span class="process-math">\(n\text{.}\)</span> Most graphing calculators can plot sequences; directions follow for the TI-84.</div>
+<ul class="disc">
+<li id="kce" data-permid="kce"><div class="para" id="dhz" data-permid="dhz">In the <code class="code-inline tex2jax_ignore">MODE</code>menu, highlight <code class="code-inline tex2jax_ignore">SEQ</code>in the <code class="code-inline tex2jax_ignore">FUNC</code>line and press <code class="code-inline tex2jax_ignore">ENTER</code>.</div></li>
+<li id="Qjn" data-permid="Qjn"><div class="para" id="Kub" data-permid="Kub">In the <code class="code-inline tex2jax_ignore">Y=</code>menu, you will now see lines to enter sequences. Enter a value for <code class="code-inline tex2jax_ignore">nMin</code> (where the sequence starts), a function for <code class="code-inline tex2jax_ignore">u(n)</code> (the <span class="process-math">\(n\)</span>th term in the sequence), and the value of <code class="code-inline tex2jax_ignore">u(nMin)</code>.</div></li>
+<li id="wqw" data-permid="wqw"><div class="para" id="qBk" data-permid="qBk">Set your window coordinates (this involves choosing limits for <span class="process-math">\(n\)</span> as well as the window coordinates <code class="code-inline tex2jax_ignore">XMin</code>, <code class="code-inline tex2jax_ignore">XMax</code>, <code class="code-inline tex2jax_ignore">YMin</code>, and <code class="code-inline tex2jax_ignore">YMax</code>.</div></li>
+<li id="cxF" data-permid="cxF"><div class="para" id="WIt" data-permid="WIt">The <code class="code-inline tex2jax_ignore">GRAPH</code>key will draw a plot of your sequence.</div></li>
+</ul>
+<div class="para">Using your knowledge of limits of continuous functions as <span class="process-math">\(x \to \infty\text{,}\)</span> decide if this sequence <span class="process-math">\(\{s_n\}\)</span> has a limit as <span class="process-math">\(n \to \infty\text{.}\)</span> Explain your reasoning.</div>
+</div></li>
+<li id="oLX" data-permid="oLX"><div class="para" id="CPC" data-permid="CPC">Let <span class="process-math">\(s_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(1, \frac{1}{2}, \frac{1}{3}, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(s_n\text{.}\)</span> Draw a graph of some points in this sequence. Using your knowledge of limits of continuous functions as <span class="process-math">\(x \to \infty\text{,}\)</span> decide if this sequence <span class="process-math">\(\{s_n\}\)</span> has a limit as <span class="process-math">\(n \to \infty\text{.}\)</span> Explain your reasoning.</div></li>
+<li id="UTg" data-permid="UTg"><div class="para" id="iWL" data-permid="iWL">Let <span class="process-math">\(s_n\)</span> be the <span class="process-math">\(n\)</span>th term in the sequence <span class="process-math">\(2, \frac{3}{2}, \frac{4}{3}, \frac{5}{4}, \ldots\text{.}\)</span> Find a formula for <span class="process-math">\(s_n\text{.}\)</span> Using your knowledge of limits of continuous functions as <span class="process-math">\(x \to \infty\text{,}\)</span> decide if this sequence <span class="process-math">\(\{s_n\}\)</span> has a limit as <span class="process-math">\(n \to \infty\text{.}\)</span> Explain your reasoning.</div></li>
+</ol></div></article><div class="para" id="tlQ" data-permid="tlQ">Next we formalize the ideas from <a href="" class="xref" data-knowl="./knowl/xref/act-8-1-1.html" title="Activity 8.1.2">Activity 8.1.2</a>.</div>
+<article class="activity project-like" id="Cud" data-permid="Cud"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="WmU" data-permid="WmU"><ol class="lower-alpha">
+<li id="Dzw" data-permid="Dzw"><div class="para" id="gLZ" data-permid="gLZ">Recall our earlier work with limits involving infinity in <a href="sec-2-8-LHR.html" class="internal" title="Section 2.8: Using Derivatives to Evaluate Limits">Section 2.8</a>. State clearly what it means for a continuous function <span class="process-math">\(f\)</span> to have a limit <span class="process-math">\(L\)</span> as <span class="process-math">\(x \to \infty\text{.}\)</span>
+</div></li>
+<li id="jGF" data-permid="jGF"><div class="para" id="MTi" data-permid="MTi">Given that an infinite sequence of real numbers is a function from the integers to the real numbers, apply the idea from part (a) to explain what you think it means for a sequence <span class="process-math">\(\{s_n\}\)</span> to have a limit as <span class="process-math">\(n \to \infty\text{.}\)</span>
+</div></li>
+<li id="PNO" data-permid="PNO"><div class="para" id="tar" data-permid="tar">Based on your response to the part (b), decide if the sequence <span class="process-math">\(\left\{ \frac{1+n}{2+n}\right\}\)</span> has a limit as <span class="process-math">\(n \to \infty\text{.}\)</span> If so, what is the limit? If not, why not?</div></li>
+</ol></div></article><div class="para" id="ZsZ" data-permid="ZsZ">In <a href="" class="xref" data-knowl="./knowl/xref/act-8-1-1.html" title="Activity 8.1.2">Activities 8.1.2</a> and <a href="" class="xref" data-knowl="./knowl/xref/act-8-1-2.html" title="Activity 8.1.3">8.1.3</a> we investigated a sequence <span class="process-math">\(\{s_n\}\)</span> that has a limit as <span class="process-math">\(n\)</span> goes to infinity. More formally, we make the following definition.</div>
+<article class="definition definition-like" id="JAh" data-permid="JAh"><h4 class="heading">
+<span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.1.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="wgw" data-permid="wgw">
+<div class="para">A sequence <span class="process-math">\(\{ s_n \}\)</span> <dfn class="terminology">converges</dfn>  or is a <dfn class="terminology">convergent sequence</dfn>  provided that there is a number <span class="process-math">\(L\)</span> such that we can make <span class="process-math">\(s_n\)</span> as close to <span class="process-math">\(L\)</span> as we want by taking <span class="process-math">\(n\)</span> sufficiently large. In this situation, we call <span class="process-math">\(L\)</span> the <em class="emphasis">limit</em> of the convergent sequence and write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\lim_{n \to \infty} s_n = L\text{.}
+\end{equation*}
+</div>
+<div class="para">If the sequence <span class="process-math">\(\{s_n\}\)</span> does not converge, we say that the sequence <span class="process-math">\(\{s_n\}\)</span> <dfn class="terminology">diverges</dfn>. </div>
+</div></article><div class="para" id="FAi" data-permid="FAi">The idea of sequence having a limit as <span class="process-math">\(n \to \infty\)</span> is the same as the idea of a continuous function having a limit as <span class="process-math">\(x \to \infty\text{.}\)</span> The only difference is that sequences are discrete instead of continuous.</div>
+<article class="activity project-like" id="MxJ" data-permid="MxJ"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.4</span><span class="period">.</span>
+</h4>
+<div class="para logical" id="bGH" data-permid="bGH">
+<div class="para">Use graphical and/or algebraic methods to determine whether each of the following sequences converges or diverges.</div>
+<ol class="lower-alpha">
+<li id="zzx" data-permid="zzx"><div class="para" id="VhB" data-permid="VhB"><span class="process-math">\(\displaystyle \left\{\frac{1+2n}{3n-2}\right\}\)</span></div></li>
+<li id="fGG" data-permid="fGG"><div class="para" id="BoK" data-permid="BoK"><span class="process-math">\(\displaystyle \left\{\frac{5+3^n}{10+2^n}\right\}\)</span></div></li>
+<li id="LNP" data-permid="LNP"><div class="para" id="hvT" data-permid="hvT">
+<span class="process-math">\(\left\{\frac{10^n}{n!}\right\}\)</span> (where <span class="process-math">\(!\)</span> is the <em class="emphasis">factorial</em> symbol and <span class="process-math">\(n! = n(n-1)(n-2) \cdots (2)(1)\)</span> for any positive integer <span class="process-math">\(n\)</span> (as convention we define <span class="process-math">\(0!\)</span> to be 1)).</div></li>
+</ol>
+</div></article></section><section class="subsection" id="xlP" data-permid="xlP"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="lHr" data-permid="lHr"><ul class="disc">
+<li id="mMK" data-permid="mMK"><div class="para" id="XDM" data-permid="XDM">A sequence is a list of objects in a specified order. We will typically work with sequences of real numbers. We can think of a sequence as a function from the positive integers to the set of real numbers.</div></li>
+<li id="STT" data-permid="STT"><div class="para" id="DKV" data-permid="DKV">A sequence <span class="process-math">\(\{s_n\}\)</span> of real numbers converges to a number <span class="process-math">\(L\)</span> if we can make every value of <span class="process-math">\(s_k\)</span> for <span class="process-math">\(k \ge n\)</span> as close as we want to <span class="process-math">\(L\)</span> by choosing <span class="process-math">\(n\)</span> sufficiently large.</div></li>
+<li id="zbc" data-permid="zbc"><div class="para" id="jSe" data-permid="jSe">A sequence diverges if it does not converge.</div></li>
+</ul></div></section><section class="exercises" id="dMt" data-permid="dMt"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.1.3</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise exercise-like" id="dTx" data-permid="dTx"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Limits of five sequences.</span>
+</h4>
+<div id="webwork-208" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="208" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/4.2HW_prob1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-208')">Activate</button></div>
+<div class="problem-contents">
+<div class="para logical" id="extracted-webwork-208-1-1-1">
+<div class="para">In this problem, use the general expressions for left and right sums,</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{left-hand sum} = f(t_0)\Delta t + f(t_1)\Delta t + \cdots + 
+f(t_{n-1})\Delta t
+\end{equation*}
+</div>
+<div class="para">and</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\mbox{right-hand sum} = f(t_1)\Delta t + f(t_2)\Delta t + \cdots + 
+f(t_{n})\Delta t,
+\end{equation*}
+</div>
+<div class="para">and the following table:</div>
+</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c t b1 r1 l1 t3 lines"><span class="process-math">\(t\)</span></td>
+<td class="c t b1 r1 l0 t3 lines">0</td>
+<td class="c t b1 r1 l0 t3 lines">2</td>
+<td class="c t b1 r1 l0 t3 lines">4</td>
+<td class="c t b1 r1 l0 t3 lines">6</td>
+<td class="c t b1 r1 l0 t3 lines">8</td>
+</tr>
+<tr>
+<td class="c t b3 r1 l1 t0 lines"><span class="process-math">\(f(t)\)</span></td>
+<td class="c t b3 r1 l0 t0 lines">36</td>
+<td class="c t b3 r1 l0 t0 lines">34</td>
+<td class="c t b3 r1 l0 t0 lines">31</td>
+<td class="c t b3 r1 l0 t0 lines">30</td>
+<td class="c t b3 r1 l0 t0 lines">28</td>
+</tr>
+</table></div> <div class="para" id="extracted-webwork-208-1-1-3">
+<em class="alert">A.</em> If we use <span class="process-math">\(n = 4\)</span> subdivisions, fill in the values:</div> <div class="para" id="extracted-webwork-208-1-1-4">
+<span class="process-math">\(\Delta t =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-5">
+<span class="process-math">\(t_0 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_1 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_2 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_3 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_4 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-6">
+<span class="process-math">\(f(t_0) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_1) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_2) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_3) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_4) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-7">
+<em class="alert">B.</em> Find the left and right sums using <span class="process-math">\(n = 4\)</span>
+</div> <div class="para" id="extracted-webwork-208-1-1-8">left sum = <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-9">right sum = <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-10">
+<em class="alert">C.</em> If we use <span class="process-math">\(n = 2\)</span> subdivisions, fill in the values:</div> <div class="para" id="extracted-webwork-208-1-1-11">
+<span class="process-math">\(\Delta t =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-12">
+<span class="process-math">\(t_0 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_1 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(t_2 =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-13">
+<span class="process-math">\(f(t_0) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_1) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>; <span class="process-math">\(f(t_2) =\)</span> <span class="fillin underline" role="img" aria-label="5-character blank" style="width: 2.272727272727273em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-14">
+<em class="alert">D.</em> Find the left and right sums using <span class="process-math">\(n = 2\)</span>
+</div> <div class="para" id="extracted-webwork-208-1-1-15">left sum = <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div> <div class="para" id="extracted-webwork-208-1-1-16">right sum = <span class="fillin underline" role="img" aria-label="35-character blank" style="width: 15.9090909090909em;"></span>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="KaG" data-permid="KaG"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Formula for a sequence, given first terms.</span>
+</h4>
+<div id="webwork-209" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="209" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap5Sec2/Q19.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-209')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-209-1-1-1">On a sketch of <span class="process-math">\(y = e^{x}\text{,}\)</span> represent the left Riemann sum with <span class="process-math">\(n = 2\)</span> approximating <span class="process-math">\(\int_{2}^{3}\,e^{x}\,dx\text{.}\)</span>  Write out the terms of the sum, but do not evaluate it:</div> <div class="para" id="extracted-webwork-209-1-1-2">Sum = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para" id="extracted-webwork-209-1-1-3">On another sketch, represent the right Riemann sum with <span class="process-math">\(n = 2\)</span> approximating <span class="process-math">\(\int_{2}^{3}\,e^{x}\,dx\text{.}\)</span>  Write out the terms of the sum, but do not evaluate it:</div> <div class="para" id="extracted-webwork-209-1-1-4">Sum = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span>
+</div> <div class="para logical" id="extracted-webwork-209-1-1-5">
+<div class="para">Which sum is an overestimate?</div>
+<ul class="circle">
+<li id="extracted-webwork-209-1-1-5-1-1"><div class="para" id="extracted-webwork-209-1-1-5-1-1-1">the right Riemann sum</div></li>
+<li id="extracted-webwork-209-1-1-5-1-2"><div class="para" id="extracted-webwork-209-1-1-5-1-2-1">the left Riemann sum</div></li>
+<li id="extracted-webwork-209-1-1-5-1-3"><div class="para" id="extracted-webwork-209-1-1-5-1-3-1">neither sum</div></li>
+</ul>
+</div> <div class="para logical" id="extracted-webwork-209-1-1-6">
+<div class="para">Which sum is an underestimate?</div>
+<ul class="circle">
+<li id="extracted-webwork-209-1-1-6-1-1"><div class="para" id="extracted-webwork-209-1-1-6-1-1-1">the left Riemann sum</div></li>
+<li id="extracted-webwork-209-1-1-6-1-2"><div class="para" id="extracted-webwork-209-1-1-6-1-2-1">the right Riemann sum</div></li>
+<li id="extracted-webwork-209-1-1-6-1-3"><div class="para" id="extracted-webwork-209-1-1-6-1-3-1">neither sum</div></li>
+</ul>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="qhP" data-permid="qhP"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Divergent or convergent sequences.</span>
+</h4>
+<div id="webwork-210" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="210" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/4.2HW_prob6.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-210')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-210-1-1-1">Suppose <span class="process-math">\(\displaystyle f(x) = \frac{13}{x}\)</span>
+</div> <div class="image-box" style="width: 41%; margin-left: 29.5%; margin-right: 29.5%;"><img src="generated/webwork/images/webwork-210-image-1.png" class="contained"></div> <div class="para logical" id="extracted-webwork-210-1-1-3">
+<div class="para">(a) The rectangles in the graph on above illustrate a left endpoint Riemann sum for <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\(2 \leq x \leq 4\text{.}\)</span>  The value of this left endpoint Riemann sum is <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and it is an</div>
+<ul class="square">
+<li id="extracted-webwork-210-1-1-3-4-1"><div class="para" id="extracted-webwork-210-1-1-3-4-1-1">overestimate of</div></li>
+<li id="extracted-webwork-210-1-1-3-4-2"><div class="para" id="extracted-webwork-210-1-1-3-4-2-1">equal to</div></li>
+<li id="extracted-webwork-210-1-1-3-4-3"><div class="para" id="extracted-webwork-210-1-1-3-4-3-1">underestimate of</div></li>
+<li id="extracted-webwork-210-1-1-3-4-4"><div class="para" id="extracted-webwork-210-1-1-3-4-4-1">there is ambiguity</div></li>
+</ul>
+<div class="para">the area of the region enclosed by <span class="process-math">\(\displaystyle y = f(x)\text{,}\)</span> the x-axis, and the vertical lines <span class="process-math">\(x = 2\)</span> and <span class="process-math">\(x = 4\text{.}\)</span>
+</div>
+</div> <div class="image-box" style="width: 41%; margin-left: 29.5%; margin-right: 29.5%;"><img src="generated/webwork/images/webwork-210-image-2.png" class="contained"></div> <div class="para logical" id="extracted-webwork-210-1-1-5">
+<div class="para">(b) The rectangles in the graph above illustrate a right endpoint Riemann sum for <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\(2 \leq x \leq 4\text{.}\)</span>  The value of this right endpoint Riemann sum is <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span>, and it is an</div>
+<ul class="square">
+<li id="extracted-webwork-210-1-1-5-4-1"><div class="para" id="extracted-webwork-210-1-1-5-4-1-1">overestimate of</div></li>
+<li id="extracted-webwork-210-1-1-5-4-2"><div class="para" id="extracted-webwork-210-1-1-5-4-2-1">equal to</div></li>
+<li id="extracted-webwork-210-1-1-5-4-3"><div class="para" id="extracted-webwork-210-1-1-5-4-3-1">underestimate of</div></li>
+<li id="extracted-webwork-210-1-1-5-4-4"><div class="para" id="extracted-webwork-210-1-1-5-4-4-1">there is ambiguity</div></li>
+</ul>
+<div class="para">the area of the region enclosed by <span class="process-math">\(\displaystyle y = f(x)\text{,}\)</span> the x-axis, and the vertical lines <span class="process-math">\(x = 2\)</span> and <span class="process-math">\(x = 4\text{.}\)</span>
+</div>
+</div>
+</div>
+</div></article><article class="exercise exercise-like" id="WoY" data-permid="WoY"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Terms of a sequence from sampling a signal.</span>
+</h4>
+<div id="webwork-211" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="211" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/4.2HW_prob7.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-211')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-211-1-1-1">The rate (in liters per minute) at which water drains from a tank is recorded at half-minute intervals. Use the average of the left- and right-endpoint approximations to estimate the total amount of water drained during the first 3 min.</div> <div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="c t b1 r1 l1 t3 lines">
+<span class="process-math">\(t\)</span>  min</td>
+<td class="c t b1 r1 l0 t3 lines">0</td>
+<td class="c t b1 r1 l0 t3 lines">0.5</td>
+<td class="c t b1 r1 l0 t3 lines">1</td>
+<td class="c t b1 r1 l0 t3 lines">1.5</td>
+<td class="c t b1 r1 l0 t3 lines">2</td>
+<td class="c t b1 r1 l0 t3 lines">2.5</td>
+<td class="c t b1 r1 l0 t3 lines">3</td>
+</tr>
+<tr>
+<td class="c t b3 r1 l1 t0 lines">rate in l/min</td>
+<td class="c t b3 r1 l0 t0 lines">48</td>
+<td class="c t b3 r1 l0 t0 lines">46</td>
+<td class="c t b3 r1 l0 t0 lines">44</td>
+<td class="c t b3 r1 l0 t0 lines">42</td>
+<td class="c t b3 r1 l0 t0 lines">40</td>
+<td class="c t b3 r1 l0 t0 lines">38</td>
+<td class="c t b3 r1 l0 t0 lines">36</td>
+</tr>
+</table></div> <div class="para" id="extracted-webwork-211-1-1-3">Answer: <span class="fillin underline" role="img" aria-label="8-character blank" style="width: 3.636363636363636em;"></span> liters.</div>
+</div>
+</div></article><article class="exercise exercise-like" id="Cwh" data-permid="Cwh"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="para logical" id="Gpc" data-permid="Gpc">
+<div class="para">Finding limits of convergent sequences can be a challenge. However, there is a useful tool we can adapt from our study of limits of continuous functions at infinity to use to find limits of sequences. We illustrate in this exercise with the example of the sequence</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{\ln(n)}{n}\text{.}
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li id="tMp" data-permid="tMp"><div class="para" id="Luu" data-permid="Luu">Calculate the first 10 terms of this sequence. Based on these calculations, do you think the sequence converges or diverges? Why?</div></li>
+<li id="ZTy" data-permid="ZTy"><div class="para logical" id="rBD" data-permid="rBD">
+<div class="para">For this sequence, there is a corresponding continuous function <span class="process-math">\(f\)</span> defined by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{\ln(x)}{x}\text{.}
+\end{equation*}
+</div>
+<div class="para">Draw the graph of <span class="process-math">\(f(x)\)</span> on the interval <span class="process-math">\([0,10]\)</span> and then plot the entries of the sequence on the graph. What conclusion do you think we can draw about the sequence <span class="process-math">\(\left\{\frac{\ln(n)}{n}\right\}\)</span> if <span class="process-math">\(\lim_{x \to \infty} f(x) = L\text{?}\)</span> Explain.</div>
+</div></li>
+<li id="GaH" data-permid="GaH"><div class="para" id="XIM" data-permid="XIM">Note that <span class="process-math">\(f(x)\)</span> has the indeterminate form <span class="process-math">\(\frac{\infty}{\infty}\)</span> as <span class="process-math">\(x\)</span> goes to infinity. What idea from differential calculus can we use to calculate <span class="process-math">\(\lim_{x \to \infty} f(x)\text{?}\)</span> Use this method to find <span class="process-math">\(\lim_{x \to \infty} f(x)\text{.}\)</span> What, then, is <span class="process-math">\(\lim_{n \to \infty} \frac{\ln(n)}{n}\text{?}\)</span>
+</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="iDq" data-permid="iDq"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="para logical" id="mwl" data-permid="mwl">
+<div class="para">We return to the example begun in <a href="" class="xref" data-knowl="./knowl/xref/PA-8-1.html" title="Preview Activity 8.1.1">Preview Activity 8.1.1</a> to see how to derive the formula for the amount of money in an account at a given time. We do this in a general setting. Suppose you invest <span class="process-math">\(P\)</span> dollars (called the <em class="emphasis">principal</em>) in an account paying <span class="process-math">\(r\%\)</span> interest compounded monthly. In the first month you will receive <span class="process-math">\(\frac{r}{12}\)</span> (here <span class="process-math">\(r\)</span> is in decimal form; e.g., if we have <span class="process-math">\(8\%\)</span> interest, we write <span class="process-math">\(\frac{0.08}{12}\)</span>) of the principal <span class="process-math">\(P\)</span> in interest, so you earn</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8-1.html">
+\begin{equation*}
+P\left(\frac{r}{12}\right)
+\end{equation*}
+</div>
+<div class="para">dollars in interest. Assume that you reinvest all interest. Then at the end of the first month your account will contain the original principal <span class="process-math">\(P\)</span> plus the interest, or a total of</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8-1.html">
+\begin{equation*}
+P_1 = P + P\left(\frac{r}{12}\right) = P\left( 1 + \frac{r}{12}\right)
+\end{equation*}
+</div>
+<div class="para">dollars.</div>
+<ol class="lower-alpha">
+<li id="WYS" data-permid="WYS"><div class="para logical" id="oGX" data-permid="oGX">
+<div class="para">Given that your principal is now <span class="process-math">\(P_1\)</span> dollars, how much interest will you earn in the second month? If <span class="process-math">\(P_2\)</span> is the total amount of money in your account at the end of the second month, explain why</div>
+<div class="displaymath process-math">
+\begin{equation*}
+P_2 = P_1\left( 1 + \frac{r}{12}\right) = P\left( 1 + \frac{r}{12}\right)^2\text{.}
+\end{equation*}
+</div>
+</div></li>
+<li id="Dgb" data-permid="Dgb"><div class="para" id="UOg" data-permid="UOg">Find a formula for <span class="process-math">\(P_3\text{,}\)</span> the total amount of money in the account at the end of the third month in terms of the original investment <span class="process-math">\(P\text{.}\)</span>
+</div></li>
+<li id="jnk" data-permid="jnk"><div class="para" id="AVp" data-permid="AVp">There is a pattern to these calculations. Let <span class="process-math">\(P_n\)</span> the total amount of money in the account at the end of the third month in terms of the original investment <span class="process-math">\(P\text{.}\)</span> Find a formula for <span class="process-math">\(P_n\text{.}\)</span>
+</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="OKz" data-permid="OKz"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="para" id="SDu" data-permid="SDu">Sequences have many applications in mathematics and the sciences. In a recent paper<a class="xref" id="ez-8-1-7-1-1-1" href="" data-knowl="./knowl/fn/ez-8-1-7-1-1-1.html" title="Footnote 8.1.3"><sup> 3 </sup></a> the authors write</div> <blockquote class="blockquote" id="LPT" data-permid="LPT"><div class="para" id="ahT" data-permid="ahT">The incretin hormone glucagon-like peptide-1 (GLP-1) is capable of ameliorating glucose-dependent insulin secretion in subjects with diabetes. However, its very short half-life (1.5-5 min) in plasma represents a major limitation for its use in the clinical setting.</div></blockquote> <div class="para logical" id="yKD" data-permid="yKD">
+<div class="para">The half-life of GLP-1 is the time it takes for half of the hormone to decay in its medium. For this exercise, assume the half-life of GLP-1 is 5 minutes. So if <span class="process-math">\(A\)</span> is the amount of GLP-1 in plasma at some time <span class="process-math">\(t\text{,}\)</span> then only <span class="process-math">\(\frac{A}{2}\)</span> of the hormone will be present after <span class="process-math">\(t+5\)</span> minutes. Suppose <span class="process-math">\(A_0 = 100\)</span> grams of the hormone are initially present in plasma.</div>
+<ol class="lower-alpha">
+<li id="Alv" data-permid="Alv"><div class="para" id="RTA" data-permid="RTA">Let <span class="process-math">\(A_1\)</span> be the amount of GLP-1 present after 5 minutes. Find the value of <span class="process-math">\(A_1\text{.}\)</span>
+</div></li>
+<li id="gsE" data-permid="gsE"><div class="para" id="yaJ" data-permid="yaJ">Let <span class="process-math">\(A_2\)</span> be the amount of GLP-1 present after 10 minutes. Find the value of <span class="process-math">\(A_2\text{.}\)</span>
+</div></li>
+<li id="MzN" data-permid="MzN"><div class="para" id="ehS" data-permid="ehS">Let <span class="process-math">\(A_3\)</span> be the amount of GLP-1 present after 15 minutes. Find the value of <span class="process-math">\(A_3\text{.}\)</span>
+</div></li>
+<li id="sGW" data-permid="sGW"><div class="para" id="Kpb" data-permid="Kpb">Let <span class="process-math">\(A_4\)</span> be the amount of GLP-1 present after 20 minutes. Find the value of <span class="process-math">\(A_4\text{.}\)</span>
+</div></li>
+<li id="YOf" data-permid="YOf"><div class="para" id="qwk" data-permid="qwk">Let <span class="process-math">\(A_n\)</span> be the amount of GLP-1 present after <span class="process-math">\(5n\)</span> minutes. Find a formula for <span class="process-math">\(A_n\text{.}\)</span>
+</div></li>
+<li id="EVo" data-permid="EVo"><div class="para" id="WDt" data-permid="WDt">Does the sequence <span class="process-math">\(\{A_n\}\)</span> converge or diverge? If the sequence converges, find its limit and explain why this value makes sense in the context of this problem.</div></li>
+<li id="lcx" data-permid="lcx"><div class="para" id="CKC" data-permid="CKC">Determine the number of minutes it takes until the amount of GLP-1 in plasma is 1 gram.</div></li>
+</ol>
+</div></article><article class="exercise exercise-like" id="uRI" data-permid="uRI"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="para" id="eRM" data-permid="eRM">Continuous data is the basis for analog information, like music stored on old cassette tapes or vinyl records. A digital signal like on a CD or MP3 file is obtained by sampling an analog signal at some regular time interval and storing that information. For example, the sampling rate of a compact disk is 44,100 samples per second. So a digital recording is only an approximation of the actual analog information. Digital information can be manipulated in many useful ways that allow for, among other things, noisy signals to be cleaned up and large collections of information to be compressed and stored in much smaller space. While we won’t investigate these techniques in this chapter, this exercise is intended to give an idea of the importance of discrete (digital) techniques.</div> <div class="para" id="KYV" data-permid="KYV">Let <span class="process-math">\(f\)</span> be the continuous function defined by <span class="process-math">\(f(x) = \sin(4x)\)</span> on the interval <span class="process-math">\([0,10]\text{.}\)</span> A graph of <span class="process-math">\(f\)</span> is shown in <a href="" class="xref" data-knowl="./knowl/xref/F-8-1-PA1.html" title="Figure 8.1.5">Figure 8.1.5</a>.</div> <figure class="figure figure-like" id="Xnn" data-permid="Xnn"><div class="image-box" style="width: 73%; margin-left: 13.5%; margin-right: 13.5%;"><img src="external/images/8_1_Exercise_1.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.1.5<span class="period">.</span></span><span class="space"> </span>The graph of <span class="process-math">\(f(x) = \sin(4x)\)</span> on the interval <span class="process-math">\([0,10]\)</span></figcaption></figure> <div class="para logical" id="rge" data-permid="rge">
+<div class="para">We approximate <span class="process-math">\(f\)</span> by <em class="emphasis">sampling</em>, that is by partitioning the interval <span class="process-math">\([0,10]\)</span> into uniform subintervals and recording the values of <span class="process-math">\(f\)</span> at the endpoints.</div>
+<ol class="lower-alpha">
+<li id="ihR" data-permid="ihR"><div class="para" id="zPW" data-permid="zPW">Ineffective sampling can lead to several problems in reproducing the original signal. As an example, partition the interval <span class="process-math">\([0,10]\)</span> into 8 equal length subintervals and create a list of points (the <em class="emphasis">sample</em>) using the endpoints of each subinterval. Plot your sample on graph of <span class="process-math">\(f\)</span> in Figure <a href="" class="xref" data-knowl="./knowl/xref/F-8-1-PA1.html" title="Figure 8.1.5">Figure 8.1.5</a>. What can you say about the period of your sample as compared to the period of the original function?</div></li>
+<li id="Opa" data-permid="Opa"><div class="para" id="fXf" data-permid="fXf">The sampling rate is the number of samples of a signal taken per second. As the part (a) illustrates, sampling at too small a rate can cause serious problems with reproducing the original signal (this problem of inefficient sampling leading to an inaccurate approximation is called <em class="emphasis">aliasing</em>). There is an elegant theorem called the Nyquist-Shannon Sampling Theorem that says that human perception is limited, which allows that replacement of a continuous signal with a digital one without any perceived loss of information. This theorem also provides the <em class="emphasis">lowest</em> rate at which a signal can be sampled (called the Nyquist rate) without such a loss of information. The theorem states that we should sample at double the maximum desired frequency so that every cycle of the original signal will be sampled at at least two points. Recall that the frequency of a sinusoidal function is the reciprocal of the period. Identify the frequency of the function <span class="process-math">\(f\)</span> and determine the number of partitions of the interval <span class="process-math">\([0,10]\)</span> that give us the Nyquist rate.</div></li>
+<li id="uwj" data-permid="uwj"><div class="para" id="Meo" data-permid="Meo">Humans cannot typically pick up signals above 20 kHz. Explain why, then, that information on a compact disk is sampled at 44,100 Hz.</div></li>
+</ol>
+</div></article></section></section></div>
+<div class="ptx-content-footer">
+<a class="previous-button button" href="C-8.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-8-2-geometric.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+</div></main>
+</div>
+<div id="ptx-page-footer" class="ptx-page-footer">
+<a class="feedback-link" href="http://gvsu.edu/s/0vK" target="_blank">Feedback</a><a class="pretext-link" href="https://pretextbook.org" title="PreTeXt"><div class="logo"><svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="338 3000 8772 6866"><g style="stroke-width:.025in; stroke:black; fill:none"><polyline points="472,3590 472,9732 " style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round; "></polyline><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,9448 A 4660 4660  0  0  1  8598  9259"></path><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4488,9685 A 4228 4228  0  0  0   472  9732"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:butt;" d="M 4724,3590 A 4241 4241  0  0  1  8598  3496"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,3496  A 4241 4241  0  0  1  4724  3590"></path><path style="stroke:#000000;stroke-width:126;stroke-linecap:round;" d="M 850,9259  A 4507 4507  0  0  1  4724  9448"></path><polyline points="5385,4299 4062,8125" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8598,3496 8598,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="850,3496 850,9259" style="stroke:#000000;stroke-width:126; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="4960,9685 4488,9685" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="3070,4582 1889,6141 3070,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="6418,4582 7600,6141 6418,7700" style="stroke:#000000;stroke-width:300; stroke-linejoin:miter; stroke-linecap:round;"></polyline><polyline points="8976,3590 8976,9732" style="stroke:#000000;stroke-width:174; stroke-linejoin:miter; stroke-linecap:round;"></polyline><path style="stroke:#000000;stroke-width:174;stroke-linecap:butt;" d="M 4960,9685 A 4228 4228  0  0  1  8976  9732"></path></g></svg></div></a><a class="runestone-link" href="https://runestone.academy" title="Runestone Academy"><img class="logo" src="https://runestone.academy/runestone/static/images/RAIcon_cropped.png"></a><a class="mathjax-link" href="https://www.mathjax.org" title="MathJax"><img class="logo" src="https://www.mathjax.org/badge/badge-square-2.png"></a>
+</div>
+</body>
+</html>

@@ -1,0 +1,2119 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-representations>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-17" ww-id="webwork-17">
+    <static seed="17" source="Library/Michigan/Chap2Sec3/Q09.pg">
+      <statement><p>Consider the function <m>f(x)</m> shown in the graph below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="41%" pi:generated="webwork/images/webwork-17-image-1.png"/>
+<p><em>(Note that you can click on the graph to get a larger version of
+it, and that it may be useful to print that larger version to be able to
+work with it by hand.)</em></p>
+<p>Carefully sketch the derivative function of the given function (you
+will want to estimate values on the derivative function at different
+<m>x</m> values as you do this).  Use your derivative function graph to
+estimate the following values on the derivative function.</p>
+<tabular top="medium" bottom="medium" left="medium" right="medium">
+<row>
+<cell>at <m>x =</m></cell>
+<cell>-3</cell>
+<cell>-1</cell>
+<cell>1</cell>
+<cell>3</cell>
+</row>
+<row>
+<cell>the derivative is</cell>
+<cell><fillin name="AnSwEr0001" characters="5"/></cell>
+<cell><fillin name="AnSwEr0002" characters="5"/></cell>
+<cell><fillin name="AnSwEr0003" characters="5"/></cell>
+<cell><fillin name="AnSwEr0004" characters="5"/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
+      <solution><m>x</m>, we estimate the derivative by estimating the 
+slope (=rise/run) from the graph.  This allows us to both sketch the
+graph of the derivative and estimate the derivatives that are requested.
+The derivative (in red) is shown with the original function (in blue)
+below.
+
+
+
+
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="33%" pi:generated="webwork/images/webwork-17-image-2.png"/>
+
+
+
+
+From the graph and our calculations, it appears that
+
+
+
+<m>f'(-3) \approx 2</m>, 
+
+
+<m>f'(-1) \approx 0</m>, 
+
+
+<m>f'(1) \approx 1</m>, and 
+
+
+<m>f'(3) \approx -2</m>. 
+
+
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q09.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q09.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-18" ww-id="webwork-18">
+    <static seed="18" source="Library/Michigan/Chap2Sec3/Q15.pg">
+      <statement><p>Find a formula for the derivative of the function
+<m>g(x) = 5x^{2}-7</m> using difference quotients:</p>
+<p><m>g'(x) = \lim\limits_{h\to0}\, [(</m> <fillin name="AnSwEr0001" characters="35"/> <m>) / h]</m></p>
+<p><m>\qquad =</m> <fillin name="AnSwEr0002" characters="35"/>.</p>
+<p><em>(In the first answer blank, fill in the numerator of the
+difference quotient you use to evaluate the derivative.  In the second,
+fill out the derivative you obtain after completing the limit calculation.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>5\mathopen{}\left(x+h\right)^{2}-7-\left(5x^{2}-7\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>5\cdot 2x</m>
+        </p>
+      </answer>
+      <solution><me>g'(x) = \lim_{h \to 0} \frac{g(x+h)-g(x)}{h} = 
+    \lim_{h \to 0} \frac{5\mathopen{}\left(x+h\right)^{2}-7-\left(5x^{2}-7\right)}{h}</me>
+<me>= \lim_{h \to 0} \frac{5(x^2+2xh+h^2)-7-5 x^2+7}{h} = 
+    \lim_{h \to 0} \frac{10 xh+2 h^2}{h}</me>
+<me>= \lim_{h \to 0}(10 x+2h) = 10 x.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-19" ww-id="webwork-19">
+    <static seed="19" source="Library/Michigan/Chap2Sec3/Q31.pg">
+      <statement><p>For the function <m>f(x)</m> shown in the graph below, sketch a graph of
+the derivative.  You will then be picking which of the following is the
+correct derivative graph, but should be sure to first sketch the
+derivative yourself.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="41%" pi:generated="webwork/images/webwork-19-image-1.png"/>
+<p>Which of the following graphs is the derivative of <m>f(x)</m>?
+<var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>1</p>
+</li>
+<li>
+<p>2</p>
+</li>
+<li>
+<p>3</p>
+</li>
+<li>
+<p>4</p>
+</li>
+<li>
+<p>5</p>
+</li>
+<li>
+<p>6</p>
+</li>
+<li>
+<p>7</p>
+</li>
+<li>
+<p>8</p>
+</li>
+</var></p>
+<p><em>(Click on a graph to enlarge it.)</em></p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" top="medium" bottom="medium" left="medium" right="medium">
+<row>
+<cell><alert>1.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-2.png"/></cell>
+<cell><alert>2.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-3.png"/></cell>
+<cell><alert>3.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-4.png"/></cell>
+<cell><alert>4.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-5.png"/></cell>
+</row>
+<row>
+<cell><alert>5.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-6.png"/></cell>
+<cell><alert>6.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-7.png"/></cell>
+<cell><alert>7.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-8.png"/></cell>
+<cell><alert>8.</alert><image width="16%" pi:generated="webwork/images/webwork-19-image-9.png"/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>\text{6}</m>
+        </p>
+      </answer>
+      <solution><m>x</m>, we know that the derivative is negative where
+<m>f(x)</m> is decreasing and positive where it is increasing.  Applying
+this to <m>f(x)</m>, we see that the derivative must be
+
+
+
+
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="33%" pi:generated="webwork/images/webwork-19-image-7.png"/>
+
+
+
+
+which is answer 6.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q31.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q31.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-20" ww-id="webwork-20">
+    <static seed="20" source="Library/Michigan/Chap2Sec3/Q33.pg">
+      <statement><p>The graph of a function <m>f</m> is shown below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="66%" pi:generated="webwork/images/webwork-20-image-1.png"/>
+<p>At which of the labeled  <m>x</m>-values is</p>
+<p><m>f(x)</m> least?  <m>x =</m> <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>x1</p>
+</li>
+<li>
+<p>x2</p>
+</li>
+<li>
+<p>x3</p>
+</li>
+<li>
+<p>x4</p>
+</li>
+<li>
+<p>x5</p>
+</li>
+<li>
+<p>x6</p>
+</li>
+</var></p>
+<p><m>f(x)</m> greatest?  <m>x =</m> <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>x1</p>
+</li>
+<li>
+<p>x2</p>
+</li>
+<li>
+<p>x3</p>
+</li>
+<li>
+<p>x4</p>
+</li>
+<li>
+<p>x5</p>
+</li>
+<li>
+<p>x6</p>
+</li>
+</var></p>
+<p><m>f'(x)</m> least?  <m>x =</m> <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>x1</p>
+</li>
+<li>
+<p>x2</p>
+</li>
+<li>
+<p>x3</p>
+</li>
+<li>
+<p>x4</p>
+</li>
+<li>
+<p>x5</p>
+</li>
+<li>
+<p>x6</p>
+</li>
+</var></p>
+<p><m>f'(x)</m> greatest?  <m>x =</m> <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>x1</p>
+</li>
+<li>
+<p>x2</p>
+</li>
+<li>
+<p>x3</p>
+</li>
+<li>
+<p>x4</p>
+</li>
+<li>
+<p>x5</p>
+</li>
+<li>
+<p>x6</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{x3}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x6}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x6}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x5}</m>
+        </p>
+      </answer>
+      <solution><m>f(x)</m> are those locations where the
+vertical coordinate on the graph is the smallest and largest, which are 
+x3 and x6, respectively.  The smallest and largest values of the
+derivative <m>f'(x)</m> are where the slope of the function is smallest and
+largest, which are x6 and x5.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q33.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q33.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-21" ww-id="webwork-21">
+    <static seed="21" source="Library/ASU-topics/setDerivativeFunction/prob7.pg">
+      <statement><p>Let <me>f(x) = \frac{1}{x+2}</me></p>
+<p>Find</p>
+<p>(i) <m>f'(-3)</m> <fillin name="AnSwEr0001" characters="30"/></p>
+<p>(ii) <m>f'(-1)</m> <fillin name="AnSwEr0002" characters="30"/></p>
+<p>(iii) <m>f'(0)</m> <fillin name="AnSwEr0003" characters="30"/></p>
+<p>(iv) <m>f'(2)</m> <fillin name="AnSwEr0004" characters="30"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-1}{4}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-1}{16}</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/ASU-topics/setDerivativeFunction/prob7.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/ASU-topics/setDerivativeFunction/prob7.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-22" ww-id="webwork-22">
+    <static seed="22" source="Library/Michigan/Chap2Sec4/Q01.pg">
+      <statement><p>The temperature, <m>H</m>, in degrees Celsius, of a cup of coffee
+placed on the kitchen counter is given by <m>H = f(t)</m>, where
+<m>t</m> is in minutes since the coffee was put on the counter.</p>
+<p><alert>(a)</alert>
+Is <m>f'(t)</m> positive or negative?
+<var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><em>(Be sure that you are able to give a reason for your
+answer.)</em></p>
+<p><alert>(b)</alert>
+What are the units of <m>f'(20)</m>?
+<fillin name="AnSwEr0002" characters="15"/> <url href="/pg_files/helpFiles/Units.html">help (units)</url></p>
+<p>Suppose that <m>|f'(20)| = 1.8</m> and <m>f(20) = 64</m>.  Fill in the
+blanks (including units where needed) and select the appropriate terms
+to complete the following statement about the temperature of the coffee
+in this case.</p>
+<p>At <fillin name="AnSwEr0003" characters="5"/> minutes after the coffee was put on the counter,
+its <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>derivative</p>
+</li>
+<li>
+<p>temperature</p>
+</li>
+<li>
+<p>change in temperature</p>
+</li>
+</var> is <fillin name="AnSwEr0005" characters="10"/> and will <var form="popup" name="AnSwEr0006">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>increase</p>
+</li>
+<li>
+<p>decrease</p>
+</li>
+</var>
+by about <fillin name="AnSwEr0007" characters="10"/> in the next 15 seconds.</p>
+<p><alert>Note: If you are using MathQuill click the textbox (Tt) button before entering an answer that contains units.</alert></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\text{degC/min}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>20</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{temperature}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>64\ {\rm degC}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{decrease}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.45\ {\rm degC}</m>
+        </p>
+      </answer>
+      <solution><alert>(a)</alert>
+As the cup of coffee cools, the temperature decreases, so
+<m>f'(t)</m> is negative.
+
+
+
+
+<alert>(b)</alert>
+Since <m>f'(t) = dH/dt</m>, the units are degrees Celsius per
+minute (degC/min).  The quantity <m>f'(20)</m> represents the rate
+at which the coffee is cooling, in degrees per minute, 20 minutes
+after the cup is put on the counter.  Thus we can complete the statement:
+
+
+
+At 20 minutes after the coffee was put on the counter, its temperature
+is 64 degC and will decrease by about 0.45 degC in the next 15
+seconds.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec4/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec4/Q01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-23" ww-id="webwork-23">
+    <static seed="23" source="Library/Michigan/Chap2Sec4/Q03.pg">
+      <statement><p>The cost, <m>C</m> (in dollars) to produce <m>g</m> gallons of ice cream can
+be expressed as <m>C = f(g)</m>.</p>
+<p><alert>(a)</alert>
+In the expression <m>f(200) = 225</m>,</p>
+<p>what are the units of 200? <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>dollars</p>
+</li>
+<li>
+<p>gallons</p>
+</li>
+<li>
+<p>dollars*gallons</p>
+</li>
+<li>
+<p>dollars/gallon</p>
+</li>
+<li>
+<p>gallons/dollar</p>
+</li>
+</var></p>
+<p>what are the units of 225? <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>dollars</p>
+</li>
+<li>
+<p>gallons</p>
+</li>
+<li>
+<p>dollars*gallons</p>
+</li>
+<li>
+<p>dollars/gallon</p>
+</li>
+<li>
+<p>gallons/dollar</p>
+</li>
+</var></p>
+<p><alert>(b)</alert>
+In the expression <m>f'(200) = 1.4</m>,</p>
+<p>what are the units of 200? <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>dollars</p>
+</li>
+<li>
+<p>gallons</p>
+</li>
+<li>
+<p>dollars*gallons</p>
+</li>
+<li>
+<p>dollars/gallon</p>
+</li>
+<li>
+<p>gallons/dollar</p>
+</li>
+</var></p>
+<p>what are the units of 1.4? <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>dollars</p>
+</li>
+<li>
+<p>gallons</p>
+</li>
+<li>
+<p>dollars*gallons</p>
+</li>
+<li>
+<p>dollars/gallon</p>
+</li>
+<li>
+<p>gallons/dollar</p>
+</li>
+</var></p>
+<p><em>(Be sure that you can carefully put into words the
+meanings of each of these statement in terms of ice cream and
+money.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{gallons}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{dollars}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{gallons}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\text{dollars/gallon}}</m>
+        </p>
+      </answer>
+      <solution><alert>(a)</alert>
+The statement <m>f(200) = 225</m> means that it costs 225 dollars to
+produce 200 gallons of ice cream.
+
+
+
+
+<alert>(b)</alert>
+The statement <m>f'(200) = 1.4</m> means that when the number of
+gallons produced is 200, costs are increasing by 1.4 dollars/gallon
+In other words, it costs about 1.4 dollars to produce the
+201st gallon of ice cream.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec4/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec4/Q03.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-24" ww-id="webwork-24">
+    <static seed="24" source="Library/Michigan/Chap2Sec4/Q11.pg">
+      <statement><p>A laboratory study investigating the relationship between
+diet and weight in adult humans found that the weight of a subject,
+<m>W</m>, in pounds, was a function, <m>W=f(c)</m>, of the
+average number of Calories, <m>c</m>, consumed by the subject in a day.</p>
+<p><alert>(a)</alert>
+In the statement <m>f(1800) = 160</m></p>
+<p>what are the units of 1800? <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p>what are the units of 160? <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p><em>(Think about what this statement means in terms of the
+weight of the subject and the number of calories that the subject
+consumes.)</em></p>
+<p><alert>(b)</alert>
+In the statement <m>f'(2000)=0</m>,</p>
+<p>what are the units of 2000? <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p>what are the units of 0? <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p><em>(Think about what this statement means in terms of the
+weight of the subject and the number of calories that the subject
+consumes.)</em></p>
+<p><alert>(c)</alert>
+In the statement <m>f^{-1}(168) = 2400</m>,</p>
+<p>what are the units of 168? <var form="popup" name="AnSwEr0005">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p>what are the units of 2400? <var form="popup" name="AnSwEr0006">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p><em>(Think about what this statement means in terms of the
+weight of the subject and the number of calories that the subject
+consumes.)</em></p>
+<p><alert>(d)</alert>
+What are the units of <m>f'(c)=dW/dc</m>?  <var form="popup" name="AnSwEr0007">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>lb</p>
+</li>
+<li>
+<p>cal</p>
+</li>
+<li>
+<p>day</p>
+</li>
+<li>
+<p>lb/cal</p>
+</li>
+<li>
+<p>cal/lb</p>
+</li>
+<li>
+<p>cal/day</p>
+</li>
+<li>
+<p>lb/day</p>
+</li>
+<li>
+<p>day/lb</p>
+</li>
+<li>
+<p>day/cal</p>
+</li>
+</var></p>
+<p><alert>(e)</alert>
+Suppose that Sam reads about <m>f'</m> in this study and draws the
+following conclusion: If Sam increases his average calorie intake
+from 2800 to 2830 calories per day, then his weight will increase by
+approximately 0.6 pounds.</p>
+<p>Fill in the blanks below so that the equation supports his conclusion.</p>
+<p><m>f'\Big(</m> <fillin name="AnSwEr0008" characters="25"/> <m>\Big)=</m> <fillin name="AnSwEr0009" characters="25"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{cal}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{lb}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{cal}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\text{lb/cal}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{lb}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{cal}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\text{lb/cal}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2800</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.02</m>
+        </p>
+      </answer>
+      <solution><m>W=f(c)</m> where <m>W</m> is weight in pounds and <m>c</m>
+is the number of Calories consumed per day:
+
+
+
+<alert>(a)</alert>
+<m>f(1800) = 160</m> means that consuming 1800 cal each day results in a
+weight of 160 lb (the units of 1800 are cal, and 160 lb).
+
+
+
+<alert>(b)</alert>
+<m>f'(2000)=0</m> means that consuming 2000 cal each day causes neither
+weight gain nor loss (the units of the 2000 are cal, and 0 lb/cal).
+
+
+
+<alert>(c)</alert>
+<m>f^{-1}(168)=2400</m> means that a weight of 168 lb is caused by a
+consumption of 2400 cal each day (the units of 168 are lb, and 2400 cal).
+
+
+
+<alert>(d)</alert>
+The units of <m>dW/dc</m> are lb/cal
+
+
+
+<alert>(e)</alert>
+Based on Sam's conclusion,  <m>f'(2800)</m> should equal
+<m>\frac{\Delta W}{\Delta c} = \frac{0.6}{30} = 0.02</m>.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec4/Q11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec4/Q11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-25" ww-id="webwork-25">
+    <static seed="25" source="Library/UVA-Stew5e/setUVA-Stew5e-C02S07-TansVelsRates/2-7-20.pg">
+      <statement><p>The displacement (in meters) of a particle moving in a straight line is given by
+<me>s = t^2 - 8 t + 15,</me>
+where <m>t</m> is measured in seconds.</p>
+<p>(A)</p>
+<p>(i) Find the average velocity over the time interval [3,4].</p>
+<p>Average Velocity = <fillin name="AnSwEr0001" characters="20"/> meters per second.</p>
+<p>(ii) Find the average velocity over the time interval [3.5,4].</p>
+<p>Average Velocity = <fillin name="AnSwEr0002" characters="20"/> meters per second.</p>
+<p>(iii) Find the average velocity over the time interval [4,5].</p>
+<p>Average Velocity = <fillin name="AnSwEr0003" characters="20"/> meters per second.</p>
+<p>(iv) Find the average velocity over the time interval [4,4.5].</p>
+<p>Average Velocity = <fillin name="AnSwEr0004" characters="20"/> meters per second.</p>
+<p>(B) Find the instantaneous velocity when <m>t=4</m>.</p>
+<p>Instantaneous velocity = <fillin name="AnSwEr0005" characters="20"/> meters per second.</p>
+</statement>
+      <answer>
+        <p>
+          <m>-1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-0.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/UVA-Stew5e/setUVA-Stew5e-C02S07-TansVelsRates/2-7-20.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/UVA-Stew5e/setUVA-Stew5e-C02S07-TansVelsRates/2-7-20.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-26" ww-id="webwork-26">
+    <static seed="26" source="Library/Michigan/Chap2Sec5/Q01.pg">
+      <statement><p>Consider the function <m>f(x)</m> graphed below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="50%" pi:generated="webwork/images/webwork-26-image-1.png"/>
+<p>For this function, are the following nonzero quantities positive or
+negative?</p>
+<p><m>f(0.5)</m> is <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><m>f'(0.5)</m> is <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><m>f''(0.5)</m> is <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><em>(Because this is a multiple choice problem, it will not
+show which parts of the problem are correct or incorrect when you
+submit it.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <solution><m>x</m>-axis at <m>x=0.5</m>,
+the value of <m>f(0.5)</m> is positive.
+
+
+
+
+Since <m>f(x)</m> is decreasing at <m>x = 0.5</m>,
+the value of <m>f'(0.5)</m> is negative.
+
+
+
+
+Since <m>f(x)</m> is concave down at <m>x = 0.5</m>, 
+the value of <m>f''(0.5)</m> is negative.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec5/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec5/Q01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-27" ww-id="webwork-27">
+    <static seed="27" source="Library/Michigan/Chap2Sec5/Q03.pg">
+      <statement><p>At exactly two of the labeled points in the figure below, which shows
+a function <m>f</m>, the derivative <m>f'</m> is zero; the second derivative
+<m>f''</m> is not zero at any of the labeled points.  Select the correct
+signs for each of <m>f</m>, <m>f'</m> and <m>f''</m> at each marked point.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="41%" pi:generated="webwork/images/webwork-27-image-1.png"/>
+<tabular top="medium" bottom="medium" left="medium" right="medium">
+<row>
+<cell>Point</cell>
+<cell>A</cell>
+<cell>B</cell>
+<cell>C</cell>
+<cell>D</cell>
+<cell>E</cell>
+</row>
+<row>
+<cell><m>f</m></cell>
+<cell><var form="popup" name="AnSwEr0001">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0002">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0003">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0004">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0005">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+</row>
+<row>
+<cell><m>f'</m></cell>
+<cell><var form="popup" name="AnSwEr0006">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0007">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0008">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0009">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0010">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+</row>
+<row>
+<cell><m>f''</m></cell>
+<cell><var form="popup" name="AnSwEr0011">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0012">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0013">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0014">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+<cell><var form="popup" name="AnSwEr0015">
+<li>
+?
+</li>
+<li>
+positive
+</li>
+<li>
+zero
+</li>
+<li>
+negative
+</li>
+</var></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>\text{zero}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{zero}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{zero}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{zero}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <solution><m>f</m> is
+positive, negative, or zero by whether the point is plotted above,
+below, or on the <m>x</m>-axis.  The sign of <m>f'</m> is determined by
+the slope of the function at the point: if the function is increasing,
+then <m>f'&gt;0</m>; if it is decreasing, <m>f'\lt 0</m>, and if it is neither
+increasing nor decreasing, then <m>f'=0</m>.  Similarly, the sign of
+<m>f''</m> is determined by the concavity of the function: if the function
+is concave up, then <m>f''&gt;0</m>, if it is concave down, <m>f''\lt 0</m>.  This
+gives the table
+
+
+
+
+<tabular top="medium" bottom="medium" left="medium" right="medium">
+
+<row>
+<cell>Point</cell>
+<cell>A</cell>
+<cell>B</cell>
+<cell>C</cell>
+<cell>D</cell>
+<cell>E</cell>
+</row>
+
+<row>
+<cell><m>f</m></cell>
+<cell>zero</cell>
+<cell>negative</cell>
+<cell>zero</cell>
+<cell>positive</cell>
+<cell>positive</cell>
+</row>
+
+<row>
+<cell><m>f'</m></cell>
+<cell>negative</cell>
+<cell>zero</cell>
+<cell>positive</cell>
+<cell>zero</cell>
+<cell>negative</cell>
+</row>
+
+<row>
+<cell><m>f''</m></cell>
+<cell>positive</cell>
+<cell>positive</cell>
+<cell>positive</cell>
+<cell>negative</cell>
+<cell>negative</cell>
+</row>
+
+
+</tabular>
+
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec5/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec5/Q03.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-28" ww-id="webwork-28">
+    <static seed="28" source="Library/Michigan/Chap2Sec5/Q15.pg">
+      <statement><p>Suppose that an accelerating car goes from 
+0 mph to 55.9 mph in five seconds.  Its
+velocity is given in the following table, converted from 
+miles per hour to feet per second, so that all time 
+measurements are in seconds.  (Note: 1 mph is 22/15 ft/sec.)
+Find the average acceleration of the car over each of the first two
+seconds.</p>
+<tabular top="medium" bottom="medium" left="medium" right="medium">
+<row>
+<cell><m>t</m> (s)</cell>
+<cell>0</cell>
+<cell>1</cell>
+<cell>2</cell>
+<cell>3</cell>
+<cell>4</cell>
+<cell>5</cell>
+</row>
+<row>
+<cell><m>v(t)</m> (ft/s)</cell>
+<cell>0.00</cell>
+<cell>27.95</cell>
+<cell>48.45</cell>
+<cell>63.36</cell>
+<cell>74.55</cell>
+<cell>82.00</cell>
+</row>
+</tabular>
+<p>average acceleration over the first second = <fillin name="AnSwEr0001" characters="35"/> 
+<url href="/pg_files/helpFiles/Units.html">help (units)</url></p>
+<p>average acceleration over the second second = <fillin name="AnSwEr0002" characters="35"/>
+<url href="/pg_files/helpFiles/Units.html">help (units)</url></p>
+</statement>
+      <answer>
+        <p>
+          <m>27.95\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s^{2}}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>20.5\ {\textstyle\frac{\rm\mathstrut ft}{\rm\mathstrut s^{2}}}</m>
+        </p>
+      </answer>
+      <solution><m>{}^2</m>.
+<me>\mbox{average acceleration for } 0\le t\le 1 =
+\frac{\mbox{Change in velocity}}{\mbox{Change in time}},</me>
+so, reading the velocities from the table, we have
+<me>\frac{v(1) - v(0)}{1} = 27.95 - 0.00 = 27.95 \mbox{ ft/s}{}^2.</me>
+Similarly, 
+<me>\mbox{avg accel for } 1\le t\le 2 = 
+\frac{v(2) - v(1)}{2-1} = 48.45 - 27.95 = 20.5 \mbox{ ft/s}{}^2.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec5/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec5/Q15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-29" ww-id="webwork-29">
+    <static seed="29" source="Library/Michigan/Chap2Sec5/Q16.pg">
+      <statement><p>Let <m>P(t)</m> represent the price of a share of stock of a corporation
+at time <m>t</m>.  What does each of the following statements tell us
+about the signs of the first and second derivatives of <m>P(t)</m>?</p>
+<p><alert>(a)</alert>
+The price of the stock is rising faster and faster.</p>
+<p>The first derivative of <m>P(t)</m> is <var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>zero</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p>The second derivative of <m>P(t)</m> is <var form="popup" name="AnSwEr0002">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>zero</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><alert>(b)</alert>
+The price of the stock is close to bottoming out.</p>
+<p>The first derivative of <m>P(t)</m> is <var form="popup" name="AnSwEr0003">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>zero</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p>The second derivative of <m>P(t)</m> is <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>zero</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{positive}</m>
+        </p>
+      </answer>
+      <solution><alert>(a)</alert>
+This indicates that <m>P'(t)</m> is positive and
+<m>P''(t)</m> is positive.
+
+
+
+<alert>(b)</alert>
+This indicates that <m>P'(t)</m> is negative and
+<m>P''(t)</m> is positive.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec5/Q16.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec5/Q16.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-30" ww-id="webwork-30">
+    <static seed="30" source="Library/Michigan/Chap2Sec5/Q21.pg">
+      <statement><p>The graph of <m>f'</m> (<alert>not</alert> <m>f</m>) is given below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="50%" pi:generated="webwork/images/webwork-30-image-1.png"/>
+<p><em>(Note that this is a graph of <m>f'</m>, not a graph of <m>f</m>.)</em></p>
+<p>At which of the marked values of <m>x</m> is</p>
+<p><alert>A.</alert>
+<m>f(x)</m> greatest?  <m>x =</m> <fillin name="AnSwEr0001" characters="8"/></p>
+<p><alert>B.</alert>
+<m>f(x)</m> least? <m>x =</m> <fillin name="AnSwEr0002" characters="8"/></p>
+<p><alert>C.</alert>
+<m>f'(x)</m> greatest? <m>x =</m> <fillin name="AnSwEr0003" characters="8"/></p>
+<p><alert>D.</alert>
+<m>f'(x)</m> least? <m>x =</m> <fillin name="AnSwEr0004" characters="8"/></p>
+<p><alert>E.</alert>
+<m>f''(x)</m> greatest? <m>x =</m> <fillin name="AnSwEr0005" characters="8"/></p>
+<p><alert>F.</alert>
+<m>f''(x)</m> least? <m>x =</m> <fillin name="AnSwEr0006" characters="8"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{x6}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x1}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x4}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x2}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x3}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{x1}</m>
+        </p>
+      </answer>
+      <solution><alert>A,B.</alert>
+Since <m>f'</m> is everywhere positive, <m>f</m> is everywhere increasing.
+Hence the greatest value of <m>f</m> is at x6 and the least value
+of <m>f</m> is at x1.
+
+
+
+
+
+<alert>C,D.</alert>
+Directly from the graph, we see that <m>f'</m>
+is greatest at x4 and least at x2.
+
+
+
+
+
+<alert>E,F.</alert>
+Since <m>f''</m> gives the
+slope of the graph of <m>f'</m>, <m>f''</m> is greatest where <m>f'</m> is
+rising most rapidly, namely at x3, and <m>f''</m> is least where
+<m>f'</m> is falling most rapidly, namely at x1.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec5/Q21.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec5/Q21.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-31" ww-id="webwork-31">
+    <static seed="31" source="Library/Michigan/Chap1Sec8/Q01.pg">
+      <statement><p>Use the figure below, which gives a graph of the function <m>f(x)</m>,
+to give values for the indicated limits.  If a limit does not exist,
+enter <em><alert>none</alert></em>.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="41%" pi:generated="webwork/images/webwork-31-image-1.png"/>
+<p><alert>(a)</alert>
+<m>\lim\limits_{x \rightarrow -1} f(x)</m> = <fillin name="AnSwEr0001" characters="15"/> <url href="/pg_files/helpFiles/Entering-Limits.html">help (limits)</url></p>
+<p><alert>(b)</alert>
+<m>\lim\limits_{x \rightarrow 0} f(x)</m> = <fillin name="AnSwEr0002" characters="15"/></p>
+<p><alert>(c)</alert>
+<m>\lim\limits_{x \rightarrow 1} f(x)</m> = <fillin name="AnSwEr0003" characters="15"/></p>
+<p><alert>(d)</alert>
+<m>\lim\limits_{x \rightarrow 4} f(x)</m> = <fillin name="AnSwEr0004" characters="15"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-6</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-7</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{none}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>17</m>
+        </p>
+      </answer>
+      <solution><alert>(a)</alert>
+As <m>x</m> approaches <m>-1</m> from either side, the values of
+<m>f(x)</m> get closer and closer to <m>-6</m>, so the limit appears
+to be about <m>-6</m>.
+
+
+
+
+<alert>(b)</alert>
+As <m>x</m> approaches 0 from either side, the values of <m>f(x)</m> get
+closer and closer to <m>-7</m>.  (Recall that to find a limit, we are
+interested in what happens to the function near <m>x</m> but not at <m>x</m>.)
+The limit appears to be about <m>-7</m>.
+
+
+
+
+<alert>(c)</alert>
+As <m>x</m> approaches 1 from either side, the values of <m>f(x)</m> get
+closer and closer to <m>-6</m> on one side of <m>x = 1</m> and get
+closer and closer to <m>8</m> on the other side of <m>x = 1</m>.
+Thus the limit does not exist.
+
+
+
+
+<alert>(d)</alert>
+As <m>x</m> approaches 4 from either side, the values of <m>f(x)</m> get
+closer and closer to 17.  (Again, recall that we don't care what
+happens right at <m>x = 4</m>.)  The limit appears to be about 17.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap1Sec8/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap1Sec8/Q01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32" source="Library/Michigan/Chap1Sec8/Q21.pg">
+      <statement><p>For the function
+<me>f(x) = \begin{cases} 2 x - 4, \amp  0\le x \lt  4\\ -2, \amp  x = 4\\ x^2 - 8 x + 20, \amp  4 \lt  x \end{cases}</me>
+use algebra to find each of the following limits:</p>
+<p><m>\lim\limits_{x\to 4^{+}}\, f(x) =</m> <fillin name="AnSwEr0001" characters="15"/></p>
+<p><m>\lim\limits_{x\to 4^{-}}\, f(x) =</m> <fillin name="AnSwEr0002" characters="15"/></p>
+<p><m>\lim\limits_{x\to 4}\, f(x) =</m> <fillin name="AnSwEr0003" characters="15"/></p>
+<p><em>(For each, enter <alert>DNE</alert> if the limit does not
+exist.)</em></p>
+<p>Sketch a graph of <m>f(x)</m> to confirm your answers.</p>
+</statement>
+      <answer>
+        <p>
+          <m>2\cdot 4-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2\cdot 4-4</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2\cdot 4-4</m>
+        </p>
+      </answer>
+      <solution><m>f(x)</m> is shown below.
+
+
+
+
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="33%" pi:generated="webwork/images/webwork-32-image-1.png"/>
+
+
+
+
+From this, and from the given formula for <m>f(x)</m>, we can see that
+
+
+
+<m>\lim\limits_{x\to 4^{+}}\, f(x) = 4</m>, and
+
+
+
+<m>\lim\limits_{x\to 4^{-}}\, f(x) = 4</m>.
+
+
+
+These are the same value, so we know that the limit must exist:
+<m>\lim\limits_{x\to 4}\, f(x) = 4</m>.
+
+
+
+Note, however, that <m>f(x)</m> is not continuous at <m>x=4</m> since
+<m>f(4)=-2 \ne 4</m>.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap1Sec8/Q21.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap1Sec8/Q21.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-33" ww-id="webwork-33">
+    <static seed="33" source="Library/Michigan/Chap2Sec6/Q02.pg">
+      <statement><p>Consider the function graphed below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="50%" pi:generated="webwork/images/webwork-33-image-1.png"/>
+<p>At what <m>x</m>-values does the function appear to not be continuous?
+<m>x =</m> <fillin name="AnSwEr0001" characters="10"/></p>
+<p>At what <m>x</m>-values does the function appear to not be differentiable?
+<m>x =</m> <fillin name="AnSwEr0002" characters="10"/></p>
+<p><em>(Enter <alert>none</alert> if there are no <m>x</m>-values that
+apply; enter <m>x</m>-values as a comma-separated list, e.g.,
+<alert>1,3,5</alert>.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2, 3, 4, 6</m>
+        </p>
+      </answer>
+      <solution><m>x</m>-values shown except for <m>x=3</m>.
+
+
+
+
+The function appears to be non-differentiable at the <m>x</m>-values
+<m>x=2,3,4,6</m>.  (Recall that a function is non-differentiable where it
+has breaks, sharp corners or vertical tangents.)
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec6/Q02.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec6/Q02.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-34" ww-id="webwork-34">
+    <static seed="34" source="Library/Michigan/Chap1Sec7/Q17.pg">
+      <statement><p>Find <m>k</m> so that the following function is continuous:
+<me>f(x) = \begin{cases} 
+kx \amp       \hbox{if}\quad  0\le x \lt  4 \\
+4 x^2 \amp   \hbox{if}\quad  4\le x.
+\end{cases}</me>
+<m>k =</m> <fillin name="AnSwEr0001" characters="35"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>4\cdot 4</m>
+        </p>
+      </answer>
+      <solution><m>k</m>, the function is continuous at every point except
+<m>x=4</m>.  We choose <m>k</m> to make the function continuous at <m>x=4</m>.
+
+
+
+
+Since <m>4 x^2</m> takes the value <m>4(4^2)=64</m> at <m>x=4</m>, we
+choose <m>k</m> so that <m>kx</m> goes through the point <m>(4,64)</m>.
+Thus <m>k=16</m>.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap1Sec7/Q17.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap1Sec7/Q17.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-35" ww-id="webwork-35">
+    <static seed="35" source="Library/270/setDerivatives9Approximations/s2_9_19.pg">
+      <statement><p>Use linear approximation to approximate
+<m>\sqrt {81.4}</m> as follows.</p>
+<p>Let <m>f(x) = \sqrt x</m>. The equation of the tangent line to <m>f(x)</m> at <m>x = 81</m> can be written in the form <m>y = mx+b</m>. Compute <m>m</m> and <m>b</m>.</p>
+<p><m>m=</m> <fillin name="AnSwEr0001" characters="20"/></p>
+<p><m>b=</m> <fillin name="AnSwEr0002" characters="20"/></p>
+<p>Using this find the approximation for <m>\sqrt {81.4}</m>.</p>
+<p>Answer: <fillin name="AnSwEr0003" characters="20"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.0555555555555556</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9.02222222222222</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/270/setDerivatives9Approximations/s2_9_19.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/270/setDerivatives9Approximations/s2_9_19.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-36" ww-id="webwork-36">
+    <static seed="36" source="Library/Michigan/Chap3Sec9/Q11.pg">
+      <statement><p>The figure below shows <m>f(x)</m> and its local linearization at
+<m>x=a</m>, <m>y = 4 x - 4</m>.  (The local linearization is shown in
+blue.)</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" width="33%" pi:generated="webwork/images/webwork-36-image-1.png"/>
+<p>What is the value of <m>a</m>?</p>
+<p><m>a =</m> <fillin name="AnSwEr0001" characters="15"/></p>
+<p>What is the value of <m>f(a)</m>?</p>
+<p><m>f(a) =</m> <fillin name="AnSwEr0002" characters="15"/></p>
+<p>Use the linearization to approximate the value of <m>f(5.2)</m>.</p>
+<p><m>f(5.2) =</m> <fillin name="AnSwEr0003" characters="15"/></p>
+<p>Is the approximation an under- or overestimate?</p>
+<p><fillin name="AnSwEr0004" characters="15"/> (Enter <alert>under</alert> or <alert>over</alert>.)</p>
+</statement>
+      <answer>
+        <p>
+          <m>5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>16</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>16.8</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{under}</m>
+        </p>
+      </answer>
+      <solution><m>x=5</m>, we have <m>a=5</m>.  Since the
+point with <m>x=5</m> lies on both the line and the curve, we have
+<me>f(a) = f(5) = 4(5) - 4 = 16.</me>
+The approximation is an underestimate because the line lies under the
+curve.  Since the linear function approximates <m>f(x)</m>, we have
+<me>f(5.2) \approx 4(5.2) - 4 = 16.8.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap3Sec9/Q11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap3Sec9/Q11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-37" ww-id="webwork-37">
+    <static seed="37" source="Library/Michigan/Chap2Sec2/Q11.pg">
+      <statement><p>Suppose that <m>f(x)</m> is a function with <m>f(90) = 40</m> and 
+<m>f'(90) = 2</m>.  Estimate <m>f(94.5)</m>.</p>
+<p><m>f(94.5) \approx</m> <fillin name="AnSwEr0001" characters="35"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>49</m>
+        </p>
+      </answer>
+      <solution><m>f(90) = 40</m> and <m>f'(90) = 2</m> tell us
+that at <m>x = 90</m>, the value of the function is 40 and the
+function is increasing at a rate of 2 units for a unit
+increase in <m>x</m>.  Since we increase <m>x</m> by 4.5 units in going from
+90 to 94.5, the value of the function goes up by approximately
+<m>4.5 \cdot 2 = 9</m> units, so
+<me>f(94.5) \approx 40 + 4.5 \cdot 2 = 40 + 9 = 49.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec2/Q11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec2/Q11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="18" xml:id="extracted-webwork-38" ww-id="webwork-38">
+    <static seed="38" source="Library/Michigan/Chap2Sec4/Q01.pg">
+      <statement><p>The temperature, <m>H</m>, in degrees Celsius, of a cup of coffee
+placed on the kitchen counter is given by <m>H = f(t)</m>, where
+<m>t</m> is in minutes since the coffee was put on the counter.</p>
+<p><alert>(a)</alert>
+Is <m>f'(t)</m> positive or negative?
+<var form="popup" name="AnSwEr0001">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>positive</p>
+</li>
+<li>
+<p>negative</p>
+</li>
+</var></p>
+<p><em>(Be sure that you are able to give a reason for your
+answer.)</em></p>
+<p><alert>(b)</alert>
+What are the units of <m>f'(10)</m>?
+<fillin name="AnSwEr0002" characters="15"/> <url href="/pg_files/helpFiles/Units.html">help (units)</url></p>
+<p>Suppose that <m>|f'(10)| = 1.2</m> and <m>f(10) = 77</m>.  Fill in the
+blanks (including units where needed) and select the appropriate terms
+to complete the following statement about the temperature of the coffee
+in this case.</p>
+<p>At <fillin name="AnSwEr0003" characters="5"/> minutes after the coffee was put on the counter,
+its <var form="popup" name="AnSwEr0004">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>derivative</p>
+</li>
+<li>
+<p>temperature</p>
+</li>
+<li>
+<p>change in temperature</p>
+</li>
+</var> is <fillin name="AnSwEr0005" characters="10"/> and will <var form="popup" name="AnSwEr0006">
+<li>
+<p>?</p>
+</li>
+<li>
+<p>increase</p>
+</li>
+<li>
+<p>decrease</p>
+</li>
+</var>
+by about <fillin name="AnSwEr0007" characters="10"/> in the next 60 seconds.</p>
+<p><alert>Note: If you are using MathQuill click the textbox (Tt) button before entering an answer that contains units.</alert></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{negative}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\text{degC/min}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>10</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{temperature}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>77\ {\rm degC}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{decrease}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.2\ {\rm degC}</m>
+        </p>
+      </answer>
+      <solution><alert>(a)</alert>
+As the cup of coffee cools, the temperature decreases, so
+<m>f'(t)</m> is negative.
+
+
+
+
+<alert>(b)</alert>
+Since <m>f'(t) = dH/dt</m>, the units are degrees Celsius per
+minute (degC/min).  The quantity <m>f'(10)</m> represents the rate
+at which the coffee is cooling, in degrees per minute, 10 minutes
+after the cup is put on the counter.  Thus we can complete the statement:
+
+
+
+At 10 minutes after the coffee was put on the counter, its temperature
+is 77 degC and will decrease by about 1.2 degC in the next 60
+seconds.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec4/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" course-password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec4/Q01.pg"/>
+  </webwork-reps>
+</webwork-representations>
