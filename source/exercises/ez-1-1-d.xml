@@ -12,14 +12,52 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-1-d" permid="NIx">
+<exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-1-D">
 
 <exercise xml:id="ez-1-1-doenet-1">
-     <interactive xml:id="doenet-interactive-exercise-TBD" doenet="yes">
-      <xi:include href="./doenet/ez-1-1-doenet-1.xml" parse="text"/>
+  <title>Finding the average velocity of a moving object from a table</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-1" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-1.xml" parse="text"/>
+      </slate>   
     </interactive>  
 </exercise> 
 
+<exercise xml:id="ez-1-1-doenet-2">
+  <title>Finding the average velocity of a falling object from a graph</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-2" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-2.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-1-doenet-4">
+  <title>Average rates of change for a quadratic function</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-4" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-4.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-1-doenet-3">
+  <title>Interpreting average rates of change</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-3" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-3.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-1-doenet-5">
+  <title>Computing average rates of change for a piecewise function</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-5" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-5.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
 
   <exercise xml:id="ez-1-1-Bungee" permid="AvQ">
     <statement>
