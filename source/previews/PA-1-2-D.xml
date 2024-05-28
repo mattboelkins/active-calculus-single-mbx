@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-2-D">
 
-    <interactive xml:id="doenet-interactive-PA-1-2-d" platform="doenetml">
+    <interactive xml:id="doenet-interactive-PA-1-2-D" platform="doenetml">
       <slate surface="doenetml">
         <xi:include href="./PA-1-2-doenet.xml" parse="text"/>
       </slate>  

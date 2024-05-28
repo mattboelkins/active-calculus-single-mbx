@@ -12,11 +12,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-3-D">
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-4-D">
 
-    <interactive xml:id="doenet-interactive-PA-1-3-D" platform="doenetml">
+    <interactive xml:id="doenet-interactive-PA-1-4-D" platform="doenetml">
       <slate surface="doenetml">
-        <xi:include href="./PA-1-3-doenet.xml" parse="text"/>
+        <xi:include href="./PA-1-4-doenet.xml" parse="text"/>
       </slate>  
     </interactive>
 

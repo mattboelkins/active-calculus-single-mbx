@@ -75,7 +75,7 @@
       <answer  allowedErrorInNumbers="0.01" allowedErrorIsAbsolute="true">
           (0-$$h(0))/(sqrt($a/4.9)) 
       </answer>
-      <math>(0-$$h(0))/(sqrt($a/4.9)) </math>
+<!--      <math>(0-$$h(0))/(sqrt($a/4.9)) </math> -->
 
 <!--      <math>($$h(2*$b)-$$h($b))/($b) </math> -->
 
