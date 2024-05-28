@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link href="_static/pretext/css/pretext.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/shell_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/banner_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/navbar_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/toc_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/knowls_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/style_default.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/colors_blue_grey.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/setcolors.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/doenet-standalone-test@0.6.0/dist/doenet-standalone.min.js"></script><script>function onLoad() {window.renderDoenetToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="boelkins-ACS"><div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">
+        <!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<setup>
+<function name="f">
+    4x - x^2
+  </function>
+<function name="fp">
+    4 - 2x
+  </function>
+</setup>
+
+  <p>
+    Consider the function <m>f(x) = 4x - x^2</m>.  We are going to use the limit definition of <m>f'(a)</m> to find several different values of the derivative function and explore patterns that we find.
+
+    <ol marker="a.">
+      <li>
+        <p>
+          Recall that the limit definition of <m>f'(1)</m> is
+          <me> f'(1) = \lim_{h \to 0} \frac{f(1+h)-f(1)}{h} </me>
+          and thus we need to determine an expression for <m>f(1+h)</m>, as well as for <m>f(1+h) - f(1)</m>.
+        </p>
+
+        <p>Using the given formula <m>f(x) = 4x - x^2</m>, 
+      which of the following is the simplest possible expression for <m>f(1+h)</m>?</p>
+            <answer>
+              <choiceInput>
+                <choice><m>f(1+h) = 4(1+h)-(1+h)^2 </m></choice>
+                <choice><m>f(1+h)= 3 + 4h - h^2</m>  </choice>
+                <choice><m>f(1+h) = 3 + 6h + h^2 </m> </choice> 
+                <choice credit="1"><m>f(1+h) = 3 + 2h - h^2 </m></choice>   
+              </choiceInput>
+            </answer>    
+      <p>In addition, which of the following is the simplest possible expression for <m>f(1+h) - f(1)</m>?</p>
+            <answer>
+              <choiceInput>
+                <choice><m>f(1+h) - f(1) = 4(1+h)-(1+h)^2 - 3 </m></choice>
+                <choice><m>f(1+h) - f(1) = 4h - h^2</m>  </choice>
+                <choice><m>f(1+h) - f(1) = 6h + h^2 </m> </choice> 
+                <choice credit="1"><m>f(1+h) - f(1) = 2h - h^2 </m></choice>   
+              </choiceInput>
+            </answer>   
+      </li>
+      <li> Next, apply the limit definition of the derivative by substituting the simplest possible expression for <m>f(1+h)-f(1)</m> in the space provided:
+        <p><m>f'(1)= \displaystyle \lim_{h \to 0} \frac{f(1+h)-f(1)}{h} = \lim_{h \to 0} </m> <mathInput name="dq_x1" prefill="/h"></mathInput>
+      <answer><award><when>$dq_x1 = 
+        ($$f(1+h) - $$f(1))/h
+      </when></award></answer></p>
+
+        <p>By factoring the numerator and simplifying, we see that</p>
+        <p>  <m>f'(1)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x1"></mathInput>
+      <answer><award><when>$simp_x1 = 
+        ($$f(1+h) - $$f(1))/h
+      </when></award></answer></p>
+
+        <p>Finally, evaluate the limit by letting <m>h \to 0</m> to determine the value of <m>f'(1)</m>:</p>
+        <p><m>f'(1) = </m> <answer>$$fp(1)</answer></p>
+      </li>
+
+      <li>
+        <p>Do similar work using the limit definition of the derivative to determine the values of (i) <m>f'(2)</m>, (ii) <m>f'(3)</m>, and (iii)  <m>f'(4)</m>.</p>
+        <ol marker="i">
+          <li> 
+            <p>By the limit definition of the derivative,</p>
+
+            <p><m>f'(2)= \displaystyle \lim_{h \to 0} \frac{f(2+h)-f(2)}{h} = \displaystyle \lim_{h \to 0} </m> <mathInput name="dq_x2" prefill="/h"></mathInput>
+              <answer>
+                <award><when>
+                  $dq_x2 = ($$f(2+h) - $$f(2))/h
+                </when></award>
+              </answer>
+            </p>
+
+            <p>Factoring the numerator and simplifying, we see that</p>
+            <p>  
+              <m>f'(2)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x2"></mathInput>
+                <answer><award><when>
+                  $simp_x2 = ($$f(2+h) - $$f(2))/h
+                </when></award>
+              </answer>
+            </p>
+
+            <p>Evaluating the limit by letting <m>h \to 0</m>, we find</p>
+            <p><m>f'(2) = </m> <answer>$$fp(2)</answer></p>
+          </li>
+          
+          <li>  
+
+              <p>Again, by the limit definition of the derivative,</p>
+
+              <p><m>f'(3)= \displaystyle \lim_{h \to 0} \frac{f(3+h)-f(3)}{h} = \displaystyle \lim_{h \to 0}  </m> <mathInput name="dq_x3" prefill="/h"></mathInput>
+                <answer><award><when>$dq_x3 = 
+                  ($$f(3+h) - $$f(3))/h
+                </when></award></answer></p>
+
+              <p>Factoring the numerator and simplifying, we see that</p>
+              <p>  <m>f'(3)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x3"></mathInput>
+                <answer><award><when>$simp_x3 = 
+                  ($$f(3+h) - $$f(3))/h
+                </when></award></answer></p>
+
+              <p>Evaluating the limit by letting <m>h \to 0</m>, we find</p>
+              <p><m>f'(3) = </m> <answer>$$fp(3)</answer></p>
+          </li>
+          <li>  
+              <p>Finally, by the limit definition of the derivative,</p>
+
+              <p><m>f'(4)= \displaystyle \lim_{h \to 0} \frac{f(4+h)-f(4)}{h} = \displaystyle \lim_{h \to 0} </m> <mathInput name="dq_x4" prefill="/h"></mathInput>
+            <answer><award><when>$dq_x4 = 
+              ($$f(4+h) - $$f(4))/h
+            </when></award></answer></p>
+
+              <p>Factoring the numerator and simplifying, we see that</p>
+              <p>  <m>f'(4)= \displaystyle \lim_{h \to 0} </m> <mathInput name="simp_x4"></mathInput>
+            <answer><award><when>$simp_x4 = 
+              ($$f(4+h) - $$f(4))/h
+            </when></award></answer></p>
+
+              <p>Evaluating the limit by letting <m>h \to 0</m>, we find</p>
+              <p><m>f'(4) = </m> <answer>$$fp(4)</answer></p>         
+          </li>
+        </ol>
+      </li>
+        
+      <li>
+        <p>
+          Observe that the work to find <m>f'(a)</m> is the same,
+          regardless of the value of <m>a</m>.
+          Based on your work in (a),
+          what do you conjecture is the value of <m>f'(5)</m>?
+          How about <m>f'(6)</m>? (Note:
+          you should <em>not</em>
+          use the limit definition of the derivative to find either value.)
+        </p>
+
+
+        <p><m>f'(5) = </m> <answer>$$fp(5)</answer></p>        
+        <p><m>f'(6) = </m> <answer>$$fp(6)</answer></p>
+        
+      </li>
+
+      <li>
+        <p>
+          Conjecture a formula for <m>f'(a)</m> that depends only on the value <m>a</m>.
+          That is,
+          in the same way that we have a formula for <m>f(x)</m> (recall <m>f(x) = 4x - x^2</m>),
+          see if you can use your work above to guess a formula for <m>f'(a)</m> in terms of <m>a</m>.
+        </p>
+
+        <p><m>f'(a) = </m> <answer>$$fp(a)</answer></p>      
+
+                
+      </li>
+    </ol>
+  </p>
+      </script>
+</div></div></body>
+</html>
