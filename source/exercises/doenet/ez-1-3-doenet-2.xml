@@ -32,7 +32,7 @@
 </setup>
 
   <p>Let <m>r</m> and <m>s</m> be functions whose values are given by the following table.</p>
-   <p>Note that <m>a = $a</m> and <m>b = $b</m>. </p>
+   <!--  <p>Note that <m>a = $a</m> and <m>b = $b</m>. </p> -->
     <table>
       <title>Select values of the functions <m>r</m> and <m>s</m> and their derivatives.</title>
       <tabular bottom="minor" top="minor">
