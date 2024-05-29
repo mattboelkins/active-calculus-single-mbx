@@ -114,102 +114,76 @@ window.MathJax = {
 <!-- **********************************************************************-->
 
 <!--
-<section name = "exercise-1-3-d-2"><title>Title here</title>
+<section name = "exercise-1-3-d-6"><title>Title here</title>
   <statement>
 -->
 
 <setup>
 
-  <selectFromSequence assignNames="a" from="-4" to="4" step="1" numToSelect="1"/>
-  <selectFromSequence assignNames="b" from="1" to="4" step="1" numToSelect="1"/>  
-
-  <math name="ABSb"><abs>$b</abs></math>
+  <selectFromSequence assignNames="k" from="1" to="4" step="1" numToSelect="1"/>
   
-  <function name="r" symbolic="false">-$a/(x^2 + 1)</function>
-  <derivative name="rP" symbolic="false">$r</derivative>  
-  <function name="s" symbolic="false">0.25*$b*cos(x/($a^2+1))</function>  
-  <derivative name="sP" symbolic="false">$s</derivative>   
+  <function name="f" symbolic="false">1.25^x</function>
+  <derivative name="fP" symbolic="false">$f</derivative>  
+
+  <function name="g" symbolic="false">10 - 1.25^x</function>
+  <derivative name="gP" symbolic="false">$g</derivative>  
+
+  <function name="p" symbolic="false">10 - 9*0.75^x</function>
+  <derivative name="pP" symbolic="false">$p</derivative>  
+
+  <function name="q" symbolic="false">1 + 8.5*0.75^x</function>
+  <derivative name="qP" symbolic="false">$p</derivative> 
+
+  <label name="gLabel" anchor="(-3,$$g(-3)-0.25)"><m>y = g(x)</m></label>
+  <label name="LLabel" anchor="(-3,$$L(-3)+0.25)"><m>y = L(x)</m></label>
   
 </setup>
 
-  <p>Let <m>r</m> and <m>s</m> be functions whose values are given by the following table.</p>
-   <!--  <p>Note that <m>a = $a</m> and <m>b = $b</m>. </p> -->
-    <table>
-      <title>Select values of the functions <m>r</m> and <m>s</m> and their derivatives.</title>
-      <tabular bottom="minor" top="minor">
-        <row bottom="minor">
-          <cell><m>x</m></cell>
-          <cell><math>$a</math></cell>
-          <cell><math simplify>$a+0.25*$ABSb</math></cell>
-          <cell><math simplify>$a+0.5*$ABSb</math></cell>
-          <cell><math simplify>$a+0.75*$ABSb</math></cell> 
-          <cell><math simplify>$a+1*$ABSb</math></cell>             
-        </row>
-        <row>
-          <cell><m>r(x)</m></cell>
-          <cell><math displayDecimals="4">$$r($a)</math></cell>
-          <cell><math displayDecimals="4">$$r($a+0.25*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$r($a+0.5*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$r($a+0.75*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$r($a+$ABSb)</math></cell>
-        </row>
-        <row>
-          <cell><m>s(x)</m></cell>
-          <cell><math displayDecimals="4">$$s($a)</math></cell>
-          <cell><math displayDecimals="4">$$s($a+0.25*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$s($a+0.5*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$s($a+0.75*$ABSb)</math></cell>
-          <cell><math displayDecimals="4">$$s($a+$ABSb)</math></cell>
-        </row>
-      </tabular>
-    </table> 
-   
-<!--   <p>Note that <m>r(x) = <math>$r</math> </m>, <m>r'(x) = <math> $rP</math></m>, <m>s(x) = <math>$s</math></m>, <m>s'(x) = <math>$sP</math></m>.</p> -->
-   
-   <p>Estimate each of the following values of <m>r'(x)</m> and <m>s'(x)</m>. </p>
-   <ol>
-    <li>
-      <p> <m>r'(<math simplify>$a+0.25*$ABSb</math>) \approx </m>
-      <setup>  
-        <math simplify name="d1">($$r($a+0.5*$ABSb)-$$r($a + 0.25*$ABSb))/(0.25*$ABSb) </math>
-        <math simplify name="d2">($$r($a+0.25*$ABSb)-$$r($a))/(0.25*$ABSb) </math>  
-        <math simplify name="d3">($$r($a+0.5*$ABSb)-$$r($a))/(0.5*$ABSb) </math>  
-      </setup>  
-        <answer><mathInput name="ans1"/>
-          <award allowedErrorInNumbers="0.05"> 
-            <when>
-              $ans1 = $d1 or $ans1 = $d2 or $ans1 = $d3
-            </when>
-          </award>
-        </answer>
-        <!--
-        <math> ($$r($a+0.5*$ABSb)-$$r($a + 0.25*$ABSb))/(0.25*$ABSb) , ($$r($a+0.25*$ABSb)-$$r(1*$a))/(0.25*$ABSb),  ($$r($a+0.5*$ABSb)-$$r($a))/(0.5*$ABSb) </math>
-        -->
-      </p>
-    </li> 
-     
-    <li>
-      <p> <m>s'(<math simplify>$a+0.75*$ABSb</math>) \approx </m>     
-      <setup>  
-        <math simplify name="e1">($$s($a+1*$ABSb)-$$s($a + 0.75*$ABSb))/(0.25*$ABSb) </math>
-        <math simplify name="e2">($$s($a+0.75*$ABSb)-$$s($a+0.5*$ABSb))/(0.25*$ABSb) </math>  
-        <math simplify name="e3">($$s($a+1*$ABSb)-$$s($a+0.5*$ABSb))/(0.5*$ABSb) </math>  
-      </setup>  
-        <answer><mathInput name="ans2"/>
-          <award allowedErrorInNumbers="0.05"> 
-            <when>
-              $ans2 = $e1 or $ans2 = $e2 or $ans2 = $e3
-            </when>
-          </award>
-        </answer>
-      </p>
-    </li>
-  </ol>       
-        <!--
-        <math> ($$s($a+0.75*$ABSb)-$$s($a+0.5*$ABSb))/(0.25*$ABSb) </math>
+<p>Let <m>y = f(x)</m> be the function whose graph is shown below.</p>
 
-        <math> ($$s($a+0.75*$ABSb)-$$s($a + 0.5*$ABSb))/(0.25*$ABSb),  ($$s($a+0.5*$ABSb)-$$s($a+0.25*$ABSb))/(0.25*$ABSb), ($$s($a+0.75*$ABSb)-$$s($a+0.25*$ABSb))/(0.5*$ABSb) </math>  
-        -->
+<conditionalContent>
+  <case condition="$k = 1">
+    <figure>
+      <graph xmin="0" xmax="10" ymin="-2" ymax="10" size="medium" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="false"> $f
+      </graph>
+      <caption>Plot of <m>y = f(x)</m></caption>
+    </figure>    
+  </case>
+  <case condition="$k = 2">
+      <figure>
+      <graph xmin="0" xmax="10" ymin="-2" ymax="10" size="medium" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="false"> $g
+      </graph>
+      <caption>Plot of <m>y = f(x)</m></caption>
+    </figure>    
+  </case>
+  <case condition="$k = 3">
+       <figure>
+      <graph xmin="0" xmax="10" ymin="-2" ymax="10" size="medium" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="false"> $p
+      </graph>
+      <caption>Plot of <m>y = f(x)</m></caption>
+    </figure>   
+  </case>  
+  <case condition="$k = 4">
+      <figure>
+      <graph xmin="0" xmax="10" ymin="-2" ymax="10" size="medium" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="false"> $q
+      </graph>
+      <caption>Plot of <m>y = f(x)</m></caption>
+    </figure>    
+  </case>    
+</conditionalContent> 
+
+
+<!--  <p><m>a = $a</m>, <m>b = $b</m>, and <m>c = $c</m>, so <m>g(x) = $$g(x)</m> and <m>L(x) = $$L(x)</m>, plus <m>A = $A</m> and <m>B = $B</m></p> -->
+
+
+
+  <p>Use the given information to complete the following sentence. </p>  
+  <p>At the point where <m>a = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $c
+        </award></answer>, we know that <m>g(a) = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$g($c)
+        </award></answer> and <m>g'(a) = </m><answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$gP($c)
+        </award></answer>.</p>
+   
+
 
       </script>
 </div></div></body>
