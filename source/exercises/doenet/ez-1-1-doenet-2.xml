@@ -18,7 +18,7 @@
 -->
 
   <setup>
-    <math name="a"><selectFromSequence from="12" to="20" step="1"/></math>
+    <math name="a"><selectFromSequence from="12" to="18" step="1"/></math>
     <math name="b"><selectFromSequence from="0.25" to="0.75" step="0.25"/></math>
     <math name="c"><selectFromSequence from="1" to="3" step="1"/></math>
     <function name="h" symbolic="true" domain="[0,$lands]">

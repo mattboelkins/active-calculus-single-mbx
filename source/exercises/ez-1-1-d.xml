@@ -59,6 +59,15 @@
     </interactive>  
 </exercise> 
 
+<exercise xml:id="ez-1-1-doenet-6">
+  <title>Estimating the instantaneous velocity of a moving object</title>
+     <interactive xml:id="doenet-interactive-exercise-1-1-6" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-1-doenet-6.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
   <exercise xml:id="ez-1-1-Bungee" permid="AvQ">
     <statement>
       <p permid="bci">

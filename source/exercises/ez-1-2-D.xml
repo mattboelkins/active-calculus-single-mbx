@@ -32,6 +32,15 @@
     </interactive>  
 </exercise> 
 
+<exercise xml:id="ez-1-2-doenet-5">
+  <title>Estimating a limit to estimate instantaneous velocity</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-5" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-2-doenet-5.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
   <exercise xml:id="ez-1-2-Rational" permid="oau">
     <statement>
       <p permid="ZPL">
