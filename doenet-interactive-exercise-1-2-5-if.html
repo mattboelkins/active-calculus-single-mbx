@@ -114,87 +114,52 @@ window.MathJax = {
 <!-- **********************************************************************-->
 
 <!--
-<section name = "exercise-1-1-d-2"><title>Title here</title>
+<section name = "exercise-1-3-d-5"><title>Title here</title>
   <statement>
 -->
 
-  <setup>
-    <math name="a"><selectFromSequence from="12" to="18" step="1"/></math>
-    <math name="b"><selectFromSequence from="0.25" to="0.75" step="0.25"/></math>
-    <math name="c"><selectFromSequence from="1" to="3" step="1"/></math>
-    <function name="h" symbolic="true" domain="[0,$lands]">
-      <label>h</label>
-      -4.9x^2 + $a
-    </function>   
-    <math name="lands" simplify>sqrt($a/4.9)</math>
-    <point name="A" styleNumber="2" coords="(0,$$h(0))" showCoordsWhenDragging="false"> 
-      <constraints>      
-        <constrainTo>$h</constrainTo>  
-      </constraints>
-      <label><m>$A.coords</m></label>
-    </point>
-    <point name="B" styleNumber="2" coords="(1,$$h(1))" showCoordsWhenDragging="false"> 
-      <constraints>      
-        <constrainTo>$h</constrainTo>  
-      </constraints>
-      <label><m>$B.coords</m></label>
-    </point>    
-  </setup>
-  <p>
-    A ball is dropped from a window.  The ball's height (in meters) at time <m>t</m> (in seconds) is given by  the function <m>h(t)</m>, whose graph is shown below.  <!-- <math>$$h(t)</math> -->
-  </p>
+<setup>
 
-    <figure>
-      <graph xmin="-1" xmax="3" ymin="-2" ymax="20" size="medium" grid="false" showNavigation="false"> $h $A $B  </graph>
-      <caption>Plot of <m>y = h(t)</m>, which measures the height in meters of the falling ball at time <m>t</m> in seconds.</caption>
-    </figure>
+  <selectFromSequence assignNames="k" from="1.5" to="2.5" step="0.25" numToSelect="1"/>  
+  <selectFromSequence assignNames="m" from="2" to="5" step="1" numToSelect="1"/>    
+  <selectFromSequence assignNames="n" from="3" to="7" step="1" numToSelect="1"/> 
+  
+  <math name="z" simplify>$n-2</math>
 
-  <ol marker="a">
-    <li>
-      <p> What are the units on the average velocity of the ball? </p>
-        <answer>
-          <choiceInput name="choice1" inline>
-            <choice>meters per hour</choice>
-            <choice>meters</choice>
-            <choice>feet per second</choice>
-            <choice credit="1">meters per second</choice>
-            <choice>feet</choice>  
-          </choiceInput>            
-        </answer>
-    </li>    
-    <li>
-      <p>Note that by dragging points <m>A</m> and <m>B</m> on the graph, you can see the approximate coordinates of each point.  Find the average velocity of the ball on the interval <m><math simplify>$b</math> \le t \le <math simplify>2*$b</math>.</m> </p>
-      <answer  allowedErrorInNumbers="0.1" allowedErrorIsAbsolute="true">
-          ($$h(2*$b)-$$h($b))/($b) 
-      </answer>
-
-<!--      <math>($$h(2*$b)-$$h($b))/($b) </math> -->
-
-    </li>
-    <li>
-      <p>Find the average velocity of the ball on the interval from the time the ball is dropped to the time the ball lands. </p>
-      <answer  allowedErrorInNumbers="0.01" allowedErrorIsAbsolute="true">
-          (0-$$h(0))/(sqrt($a/4.9)) 
-      </answer>
-<!--      <math>(0-$$h(0))/(sqrt($a/4.9)) </math> -->
-
-<!--      <math>($$h(2*$b)-$$h($b))/($b) </math> -->
-
-    </li>
-
-  </ol>
-
-<!--
-  <hint>
-    Don't forget to include units!
-  </hint>
--->
+  <function name="s" symbolic="true">$m * $k^x</function>
+  <derivative name="sP" symbolic="true">$s</derivative>  
 
 
-<!--
-  </statement>
-</section>
--->
+</setup>
+
+  <p>Recall that for a moving object with position function <m>s(t)</m>, the object's instantaneous velocity at <m>t=a</m> is <me> \displaystyle IV_{t=a} = \lim_{h \to 0} AV_{[a,a+h]} = \lim_{h \to 0} \frac{s(a+h)-s(a)}{h}.</me> </p>
+
+<p>Suppose that <m>s(t) = <math simplify>$$s(t)</math></m> tells us the position (in feet) away from <m>s = 0</m> of an object moving along a straight line at time <m>t</m> (in minutes).</p>
+
+<ol marker="a.">
+  <li>
+    <p>Use the formula for <m>s(t)</m> to state an algebraic expression for <m>AV_{[$z,$z+h]}</m>.</p>
+    <p><m>AV_{[$z,$z+h]} = </m><answer><award>($$s($z+h)-$$s($z))/h </award></answer> </p>
+  </li>
+  <li>
+    <p>Use your expression from (a) to determine the following two average velocities.  Report your answer to at least 4 decimal places of accuracy. </p>
+      <ul>
+        <li>
+          <p><m>AV_{<math displayDigits="5" simplify>[$z,$z+0.001]</math>} = </m><answer allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><award> ($$s($z+0.001)-$$s($z))/0.001</award></answer></p>
+        </li>  
+        <li>
+          <p><m>AV_{<math displayDigits="5" simplify>[$z-0.001,$z]</math>} = </m><answer allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><award> ($$s($z)-$$s($z-0.001))/0.001</award></answer></p>
+        </li>
+      </ul>    
+  </li>
+  <li>
+        <p>Based on these average velocities in (b), an estimate of the object's instantenous velocity at <m>t = <math simplify>$z</math></m> is </p>
+        <p><m> \displaystyle IV_{t=$z} = \lim_{h \to 0} AV_{[$z,$z+h]} \approx </m><answer allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><award> ($$s($z+0.001)-$$s($z-0.001))/0.002</award></answer>.  </p>
+  </li>
+</ol>
+    
+
+
       </script>
 </div></div></body>
 </html>
