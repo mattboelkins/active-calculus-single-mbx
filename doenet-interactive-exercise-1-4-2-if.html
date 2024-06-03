@@ -113,61 +113,150 @@ window.MathJax = {
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<!-- Author: Christina Safranski                                           -->
+<!--************************************************************
+Author: Duane Nykamp
+Reviewed/Remixed by: Doenet team
+About the problem: Estimate the derivative at specific regions within a piecewise linear function. Then, sketch the graph of the derivative of the piecewise linear function.
+This problem is not randomized.
+*************************************************************--> 
 
-<!--
-<section name = "exercise-1-1-d-1"><title>Title here</title>
-  <statement>
--->
+<!-- <title>Sketch the derivative of piecewise linear, worksheet</title> -->
 
- <setup>
-<!--   <selectFromSequence assignNames="a b c" from="1" to="4" step="1" numToSelect="3"/>
-  <selectFromSequence name="a" from="5" to="10" exclude="0 $b"/> -->
-  <selectFromSequence name="a" from="5" to="10"/>
-  <selectFromSequence name="b" from="1" to="2"/>
-  <selectFromSequence name="c" from="3" to="4"/>
-  <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
-  <selectFromSequence name="m" from="2" to="4"/>
+<setup>
 
-  <function name="quad">$a-x^2 </function>
-  <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>
-  <number name="yminim"><min>$$quad(-3) $$line($b)</min>-1</number>
-  <number name="ymaxim"><max>$$quad(0) $$line(5)</max>+1</number>
+<function name='g1' variables='x'>-x</function>
+<function name='g2' variables='x'>x</function>
+<function name='g3' variables='x'>6-2*x</function>
+
+<math name='m1'>0.5</math>
+<math name='m2'>-1.5</math>
+<math name='m3'>3</math>
+  
+<math fixed name='x1'>-3</math>
+<math fixed name='x2'> 0</math>
+<math fixed name='x3'> 3</math>
+<math fixed name='x4'> 6</math>
+  
 </setup>
 
-<graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0)">$quad</function>
-  <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0,$b]">$quad</function>
-  <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
-  <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b,$c)">$line</function>
-  <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
-  <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c,5)">$line</function>
+
+Consider the graph of the piecewise linear function  <m>f(x)</m> given below that is defined for <m>-3 \le x \le 6</m>.
+
+<graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
+  <xlabel><m>x</m></xlabel>
+  <ylabel><m>y</m></ylabel>
+  <polyline name="polyline1" fixed vertices="(-3,1) (0,2.5) (3,-2) (6,7)" />
+  <point styleNumber="5" showCoordsWhenDragging="true" draggable="true">(0,0)
+  <constraints><constrainTo>$polyline1</constrainTo></constraints>
+</point>
+
 </graph>
 
-<p> 
-  Use the graph to determine the following limits. If the limit does not exist, enter <em>DNE</em>.
-  <ol marker="a.">
-    <li>
-      <m>\displaystyle\lim_{x \to -$b} f(x)=</m>
-  <answer name="ans1">$$quad(-$b)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to 0} f(x)=</m>
-  <answer name="ans2">$$quad(0)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $b} f(x)=</m>
-  <answer name="ans3">DNE</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $c} f(x)=</m>
-  <answer name="ans4">$$line($c)</answer>
-    </li>
-  </ol>
-</p>
+<ol marker="a.">
+
+  <li>
+    <p> What is the value of <m>f'(x)</m> for any value of <m>x</m> that satisfies <m>-3 \lt x \lt 0</m>? 
+      <answer>
+        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m1              </award>
+      </answer>
+    </p>
+  </li>
+  <li>
+    <p>What is the value of <m>f'(x)</m> for any value of <m>x</m> that satisfies <m>0 \lt x \lt 3</m>? 
+      <answer>
+        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m2              </award>
+      </answer>
+    </p>
+  </li>
+  <li>
+    <p>What is the value of <m>f'(x)</m> for any value of <m>x</m> that satisfies <m>3 \lt x \lt 6</m>? 
+      <answer>
+        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m3              </award>
+      </answer>
+    </p>
+  </li>
+  <li>
+    <p>Recall that anywhere the function <m>f(x)</m> has a sharp corner <m>f'(x)</m> is undefined.  At what value(s) of <m>x</m> for <m>-3 \lt x \lt 6</m> is  <m>f'(x)</m> undefined?  If there is more than one value, enter a list of numbers separated by commas.
+      <answer unorderedCompare>0,3</answer>
+    </p>
+  </li>  
+
+  <li>
+Sketch the derivative of <m>f</m>.  Drag the points so that each <copy prop="styleDescription" source="derivSeg1" /> line segment corresponds to the corresponding segment of the original function.
+
+
+
+<graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
+  <xlabel><m>x</m></xlabel>
+  <ylabel><m>y</m></ylabel>
+<copy source='polyline1' />
+
+<point stylenumber='2' name='p1' x="$x1" y="2">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<point stylenumber='2' name='p2' x="$x2" y="3">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<linesegment name="derivSeg1" stylenumber='2' endpoints="$p1 $p2" />
+
+
+
+<point stylenumber='2' name='p3' x="$x2" y="-1">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<point stylenumber='2' name='p4' x="$x3" y="1">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<linesegment stylenumber='2' endpoints="$p3 $p4" />
+
+
+<point stylenumber='2' name='p5' x="$x3" y="6">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<point stylenumber='2' name='p6' x="$x4" y="5">
+<constraints><constrainToGrid dy="0.5"/></constraints></point>
+
+<linesegment stylenumber='2' endpoints="$p5 $p6" />
+
+</graph>
+
+<answer>
+<award matchPartial><when>
+<boolean><copy source="p1" prop="y" /> = $m1 and
+<copy source="p2" prop="y" /> = $m1</boolean>
+  and
+<boolean><copy source="p3" prop="y" /> = $m2 and
+<copy source="p4" prop="y" /> = $m2</boolean>
+  and
+<boolean><copy source="p5" prop="y" /> = $m3 and
+<copy source="p6" prop="y" /> = $m3</boolean>
+</when></award>
+</answer>
+
+    <!--
+<hint>
+  <p>For each segment of the function, is the slope constant or does it change? 
+  <answer weight="0"><choiceinput inline>
+    <choice credit="1">constant</choice>
+    <choice>changing</choice>
+  </choiceinput></answer>
+  Therefore, each segment that you draw should be
+    <answer weight="0"><choiceinput inline>
+    <choice credit="1">constant</choice>
+    <choice>changing</choice>
+  </choiceinput></answer>.
+  </p>
+</hint>
+  -->
+
+</li>
+
+
+</ol>
+
+
+
+
       </script>
 </div></div></body>
 </html>

@@ -113,61 +113,82 @@ window.MathJax = {
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<!-- Author: Christina Safranski                                           -->
+<!--************************************************************
+Author: Duane Nykamp
+Reviewed/Remixed by: Doenet team
+https://www.doenet.org/portfolioviewer/_QRYcb0PKVmJPC8elhUrGF
+Remixed again by: Matt Boelkins
+About the problem: Interactively sketch the derivative of a cubic function.
+This problem is not randomized.
+*************************************************************--> 
 
-<!--
-<section name = "exercise-1-1-d-1"><title>Title here</title>
-  <statement>
--->
 
- <setup>
-<!--   <selectFromSequence assignNames="a b c" from="1" to="4" step="1" numToSelect="3"/>
-  <selectFromSequence name="a" from="5" to="10" exclude="0 $b"/> -->
-  <selectFromSequence name="a" from="5" to="10"/>
-  <selectFromSequence name="b" from="1" to="2"/>
-  <selectFromSequence name="c" from="3" to="4"/>
-  <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
-  <selectFromSequence name="m" from="2" to="4"/>
+<setup>
 
-  <function name="quad">$a-x^2 </function>
-  <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>
-  <number name="yminim"><min>$$quad(-3) $$line($b)</min>-1</number>
-  <number name="ymaxim"><max>$$quad(0) $$line(5)</max>+1</number>
+<function name='f' variables='x'>x-x^3/27</function>
+<math name='one' simplify='full' >1</math>
+<math name='thezeros' simplify='full'  unordered='true'>-3,3</math>
+<math name='zero' simplify='full' >0</math>
+
+<label name="fLabel" anchor="(4,$$f(4)-0.8)"><m>y = f(x)</m></label>
+  
 </setup>
 
-<graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0)">$quad</function>
-  <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0,$b]">$quad</function>
-  <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
-  <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b,$c)">$line</function>
-  <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
-  <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c,5)">$line</function>
+
+
+<p>Consider the function <m>y = f(x)</m> given in the graph below. 
+ Our goal in this exercise is to sketch an accurate graph of the derivative function, <m>y = f'(x)</m>.</p>
+
+
+<graph size="large" aspectRatio="2" xmin="-5.5" xmax='5.5' ymin='-3' ymax='3' grid showNavigation="false">
+  $f $fLabel
+
+  <point name="p1" stylenumber="2" x="-2" y='2'>
+    <constraints><attractToGrid /></constraints>
+        <label><m>A</m></label>
+  </point>
+
+  <point name="p2" stylenumber="2" x="0" y='2'>
+    <constraints><attractToGrid /></constraints>
+         <label><m>B</m></label>
+  </point>
+
+  <point name="p3" stylenumber="2" x="2" y='2'>
+    <constraints><attractToGrid /></constraints>
+         <label><m>C</m></label>
+  </point>
+
+  <parabola through="$p1 $p2 $p3" stylenumber="2"/>
+
 </graph>
 
-<p> 
-  Use the graph to determine the following limits. If the limit does not exist, enter <em>DNE</em>.
-  <ol marker="a.">
-    <li>
-      <m>\displaystyle\lim_{x \to -$b} f(x)=</m>
-  <answer name="ans1">$$quad(-$b)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to 0} f(x)=</m>
-  <answer name="ans2">$$quad(0)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $b} f(x)=</m>
-  <answer name="ans3">DNE</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $c} f(x)=</m>
-  <answer name="ans4">$$line($c)</answer>
-    </li>
-  </ol>
-</p>
+<ol marker="a.">
+  <li>
+    <p>At what value(s) of <m>x</m> is <m>f'(x) = 0</m>?  If there is more than one such value, enter your values as a list of numbers separated by commas.
+    <answer>
+      <award unorderedCompare>-3,3</award>
+    </answer>
+    </p>  
+  </li>
+  <li>
+    <p>The location <m>x</m> where <m>f'(x)</m> achieves its largest positive value is
+    <answer>
+      <award>0</award>
+    </answer>.
+      The value of <m>f'(x)</m> at this location <m>x</m> is
+    <answer>
+      <award>1</award>
+    </answer>.      
+    </p>
+  </li>
+  <li>
+    <p>The points <m>A</m>, <m>B</m>, and <m>C</m> are draggable.  Click and drag to move <m>A</m> and <m>C</m> so that they represent points on <m>y = f'(x)</m> where <m>f'(x) = 0</m>, and then move <m>B</m> so that it represents the point where the value of <m>y = f'(x)</m> achieves its largest positive value.
+<answer>
+<award matchPartial unorderedCompare><when>($p1,$p2,$p3) = (<point>(-3,0)</point>, <point>(0,1)</point>, <point>(3,0)</point>)</when></award>
+</answer>
+    </p>
+  </li>
+</ol> 
       </script>
 </div></div></body>
 </html>

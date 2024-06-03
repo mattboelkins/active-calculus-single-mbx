@@ -120,53 +120,58 @@ window.MathJax = {
   <statement>
 -->
 
- <setup>
-<!--   <selectFromSequence assignNames="a b c" from="1" to="4" step="1" numToSelect="3"/>
-  <selectFromSequence name="a" from="5" to="10" exclude="0 $b"/> -->
-  <selectFromSequence name="a" from="5" to="10"/>
-  <selectFromSequence name="b" from="1" to="2"/>
-  <selectFromSequence name="c" from="3" to="4"/>
-  <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
-  <selectFromSequence name="m" from="2" to="4"/>
-
-  <function name="quad">$a-x^2 </function>
-  <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>
-  <number name="yminim"><min>$$quad(-3) $$line($b)</min>-1</number>
-  <number name="ymaxim"><max>$$quad(0) $$line(5)</max>+1</number>
+<setup>
+  <selectFromSequence name="a" from="2" to="6"/>
+  <function name="f" >($a^x-1)/x</function>
+  
 </setup>
-
-<graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0)">$quad</function>
-  <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0,$b]">$quad</function>
-  <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
-  <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b,$c)">$line</function>
-  <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
-  <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c,5)">$line</function>
-</graph>
-
 <p> 
-  Use the graph to determine the following limits. If the limit does not exist, enter <em>DNE</em>.
-  <ol marker="a.">
-    <li>
-      <m>\displaystyle\lim_{x \to -$b} f(x)=</m>
-  <answer name="ans1">$$quad(-$b)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to 0} f(x)=</m>
-  <answer name="ans2">$$quad(0)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $b} f(x)=</m>
-  <answer name="ans3">DNE</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $c} f(x)=</m>
-  <answer name="ans4">$$line($c)</answer>
-    </li>
-  </ol>
+  Notice that if we try to calculate <m>\displaystyle\lim_{x\to 0} \frac{$a^x-1}{x}</m> we get <m>\frac{0}{0}</m>, which is not an answer and always means we need to do more work.</p>
+<p>
+  However, none of our usual algebraic techniques apply here.
+</p>
+<p>
+  Fill in the following table of values to see how the function is behaving for some values near <m>x=0</m>. Enter your answers as decimals, with at least 4 places after the decimal point.
+</p>
+<tabular top="minor" bottom="minor" left="minor" right="minor">
+    <row header>
+      <cell><m>x=</m></cell>
+      <cell><m>\frac{$a^x-1}{x}\approx</m></cell>
+    </row>
+   <row>
+      <cell><m>-0.1</m></cell>
+     <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(-0.1)</number></answer></cell>
+   </row>
+  <row>
+      <cell><m>-0.01</m></cell>
+    <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(-0.01)</number></answer></cell>
+  </row>
+  <row>
+      <cell><m>-0.001</m></cell>
+     <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(-0.001)</number></answer></cell>
+  </row>
+  <row>
+      <cell><m>0</m></cell>
+     <cell><mathInput disabled>$limans</mathInput></cell>
+  </row>
+  <row>
+      <cell><m>0.001</m></cell>
+    <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(0.001)</number></answer></cell>
+  </row>
+    <row>
+      <cell><m>0.01</m></cell>
+    <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(0.01)</number></answer></cell>
+    </row>
+    <row>
+      <cell><m>0.1</m></cell>
+      <cell><answer symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>$$f(0.1)</number></answer></cell>
+    </row>
+  </tabular>
+<p>
+ Using the table of values to guide you, what do you expect is the value of the limit as <m>x\to 0</m>?  
+</p>
+<p>
+  <m>\displaystyle\lim_{x\to 0} \frac{$a^x-1}{x}</m>= <answer name="limans" symbolicEquality allowedErrorInNumbers="0.0001" allowedErrorIsAbsolute><number>ln($a)</number></answer>
 </p>
       </script>
 </div></div></body>
