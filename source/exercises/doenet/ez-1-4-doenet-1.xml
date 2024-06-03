@@ -1,0 +1,90 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!--************************************************************
+Author: Duane Nykamp
+Reviewed/Remixed by: Doenet team
+https://www.doenet.org/portfolioviewer/_QRYcb0PKVmJPC8elhUrGF
+Remixed again by: Matt Boelkins
+About the problem: Interactively sketch the derivative of a cubic function.
+This problem is not randomized.
+*************************************************************--> 
+
+
+<setup>
+
+<function name='f' variables='x'>x-x^3/27</function>
+<math name='one' simplify='full' >1</math>
+<math name='thezeros' simplify='full'  unordered='true'>-3,3</math>
+<math name='zero' simplify='full' >0</math>
+
+<label name="fLabel" anchor="(4,$$f(4)-0.8)"><m>y = f(x)</m></label>
+  
+</setup>
+
+
+
+<p>Consider the function <m>y = f(x)</m> given in the graph below. 
+ Our goal in this exercise is to sketch an accurate graph of the derivative function, <m>y = f'(x)</m>.</p>
+
+
+<graph size="large" aspectRatio="2" xmin="-5.5" xmax='5.5' ymin='-3' ymax='3' grid showNavigation="false">
+  $f $fLabel
+
+  <point name="p1" stylenumber="2" x="-2" y='2'>
+    <constraints><attractToGrid /></constraints>
+        <label><m>A</m></label>
+  </point>
+
+  <point name="p2" stylenumber="2" x="0" y='2'>
+    <constraints><attractToGrid /></constraints>
+         <label><m>B</m></label>
+  </point>
+
+  <point name="p3" stylenumber="2" x="2" y='2'>
+    <constraints><attractToGrid /></constraints>
+         <label><m>C</m></label>
+  </point>
+
+  <parabola through="$p1 $p2 $p3" stylenumber="2"/>
+
+</graph>
+
+<ol marker="a.">
+  <li>
+    <p>At what value(s) of <m>x</m> is <m>f'(x) = 0</m>?  If there is more than one such value, enter your values as a list of numbers separated by commas.
+    <answer>
+      <award unorderedCompare>-3,3</award>
+    </answer>
+    </p>  
+  </li>
+  <li>
+    <p>The location <m>x</m> where <m>f'(x)</m> achieves its largest positive value is
+    <answer>
+      <award>0</award>
+    </answer>.
+      The value of <m>f'(x)</m> at this location <m>x</m> is
+    <answer>
+      <award>1</award>
+    </answer>.      
+    </p>
+  </li>
+  <li>
+    <p>The points <m>A</m>, <m>B</m>, and <m>C</m> are draggable.  Click and drag to move <m>A</m> and <m>C</m> so that they represent points on <m>y = f'(x)</m> where <m>f'(x) = 0</m>, and then move <m>B</m> so that it represents the point where the value of <m>y = f'(x)</m> achieves its largest positive value.
+<answer>
+<award matchPartial unorderedCompare><when>($p1,$p2,$p3) = (<point>(-3,0)</point>, <point>(0,1)</point>, <point>(3,0)</point>)</when></award>
+</answer>
+    </p>
+  </li>
+</ol> 
