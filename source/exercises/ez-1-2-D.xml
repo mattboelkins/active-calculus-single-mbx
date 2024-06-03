@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-2">
 
 <exercise xml:id="ez-1-2-doenet-1">
@@ -23,8 +24,17 @@
     </interactive>  
 </exercise> 
 
+<exercise xml:id="ez-1-2-doenet-5">
+  <title>Estimating a limit to estimate instantaneous velocity</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-5" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-2-doenet-5.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
 <exercise xml:id="ez-1-2-doenet-4">
-  <title>Evaluating a limit algebraically</title>
+  <title>Evaluating limits algebraically</title>
      <interactive xml:id="doenet-interactive-exercise-1-2-4" platform="doenetml">
       <slate surface="doenetml">
         <xi:include href="./doenet/ez-1-2-doenet-4.xml" parse="text"/>
@@ -32,11 +42,20 @@
     </interactive>  
 </exercise> 
 
-<exercise xml:id="ez-1-2-doenet-5">
-  <title>Estimating a limit to estimate instantaneous velocity</title>
-     <interactive xml:id="doenet-interactive-exercise-1-2-5" platform="doenetml">
+<exercise xml:id="ez-1-2-doenet-6">
+  <title>Evaluating more complicated limits algebraically</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-6" platform="doenetml">
       <slate surface="doenetml">
-        <xi:include href="./doenet/ez-1-2-doenet-5.xml" parse="text"/>
+        <xi:include href="./doenet/ez-1-2-doenet-6.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-2-doenet-7">
+  <title>A limit we can't evaluate algebraically</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-7" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-2-doenet-7.xml" parse="text"/>
       </slate>   
     </interactive>  
 </exercise> 

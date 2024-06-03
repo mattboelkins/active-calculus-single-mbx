@@ -20,51 +20,39 @@
 -->
 
 <setup>
-  <selectFromSequence assignNames="a b" from="-10" to="10" exclude="0" numToSelect="2"/>
+  <selectFromSequence assignNames="a b c" from="-8" to="8" exclude="0" numToSelect="3"/>
   <number name="asq">$a^2</number>
-  <number name="a2">2*$a</number>
-  <number name="ans1">$a2/$b</number>
-  <math name="num1" >x^2-$asq</math>
-  <math name="denom1" expand>$b(x-$a)</math>
+  <number name="ans1">2*$a*$b/$c</number>
+  <math name="num1" >($b x+$a)^2-$asq</math>
+  <math name="denom1" expand>$c x</math>
 </setup>
 
-<p> 
-  Evaluate the following limits. If the limit does not exist, enter <em>DNE</em>.
-</p>
+    <p>
+      Evaluate the following limits. If the limit does not exist, enter <em>DNE</em>.
+    </p>
 
 <ol marker="a.">
   <li>
     <p>
-      <m>\displaystyle\lim_{x\to $a} \frac{$num1}{$denom1}</m>= <answer>$ans1</answer>
+      <m>\displaystyle\lim_{x\to 0} \frac{$num1}{$denom1}</m>= <answer>$ans1</answer>
     </p>
   </li>
 
 <setup>
   <selectFromSequence name="aa" from="2" to="5" />
-  <selectFromSequence name="bb" from="6" to="10" />  
+  <selectFromSequence name="bb" from="1" to="4" />  
 
   <number name="bMa">$bb - $aa</number>
-  <number name="ab">$aa*$bb</number>  
-  <number name="result">$aa+$bb</number>    
-  <math name="num2">x^2 + $bMa x - $ab</math>
-  <math name="denom2">x-$aa</math>
+  <number name="ab">$aa*$bb</number> 
+  <number name="cc">$bb^2-$aa</number>
+  <number name="result">2*$bb</number>    
+  <math name="denom2">sqrt(x+$cc)-$bb</math>
+  <math name="num2">x-$aa</math>
 </setup>
 
   <li>
-    <p> 
+    <p>
       <m>\displaystyle\lim_{x\to $aa} \frac{$num2}{$denom2}</m> = <answer name="ans2">$result</answer>
     </p>
-  </li>
-    
-<setup>
-  <selectFromSequence name="c" from="-3" to="3" exclude="$a"/>
-  <function name="partc">$num2/$denom1</function>
-</setup>
-
-  <li>
-    <p>  
-      <m>\displaystyle\lim_{x\to $c} \frac{$num2}{$denom1}</m> = <answer name="ans3">$$partc($c)</answer>
-    </p>
-  </li>
-
+  </li>  
 </ol>
