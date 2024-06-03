@@ -235,9 +235,9 @@ var ptx_lunr_docs = [
   "body": "   What is the mathematical notion of limit and what role do limits play in the study of functions?    What is the meaning of the notation ?    How do we go about determining the value of the limit of a function at a point?    How do we manipulate average velocity to compute instantaneous velocity?    "
 },
 {
-  "id": "PA-1-2-D",
+  "id": "PA-1-2-d",
   "level": "2",
-  "url": "sec-1-2-lim.html#PA-1-2-D",
+  "url": "sec-1-2-lim.html#PA-1-2-d",
   "type": "Preview Activity",
   "number": "1.2.1",
   "title": "",
