@@ -115,61 +115,99 @@ window.MathJax = {
 
 <!-- Author: Christina Safranski                                           -->
 
-<!--
-<section name = "exercise-1-1-d-1"><title>Title here</title>
-  <statement>
--->
+<setup>
+  <selectFromSequence name="c" from="1" to="4"/>
 
- <setup>
-<!--   <selectFromSequence assignNames="a b c" from="1" to="4" step="1" numToSelect="3"/>
-  <selectFromSequence name="a" from="5" to="10" exclude="0 $b"/> -->
-  <selectFromSequence name="a" from="5" to="10"/>
-  <selectFromSequence name="b" from="1" to="2"/>
-  <selectFromSequence name="c" from="3" to="4"/>
-  <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
-  <selectFromSequence name="m" from="2" to="4"/>
+  <math name="k">0.15</math>
+  
+  <function name="line"> x+1</function>
+  <function name="line2">x</function>
 
-  <math name="k">0.08</math>
+  <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function> $line </function>
+    <text anchor="(1,-.5)">
+    a
+  </text>
+  </graph>
 
-  <function name="quad">$a-x^2 </function>
-  <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>
-  <number name="yminim"><min>$$quad(-3) $$line($b)</min>-1</number>
-  <number name="ymaxim"><max>$$quad(0) $$line(5)</max>+1</number>
+ 
+  <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,1-$k)"> $line </function>
+    <function domain="[1+$k,2.5)"> $line </function>
+    <endpoint open draggable="false">(1, $$line(1))</endpoint>
+    <text anchor="(1,-.5)">
+    a
+    </text>
+  </graph>
+
+  <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,-1-$k)"> $line </function>
+    <function domain="[-1+$k,2.5)"> $line </function>
+    <endpoint open draggable="false">(-1, $$line(-1))</endpoint>
+    <text anchor="(-1,-.5)">
+    a
+    </text>
+    
+  </graph>
+
+  
+  <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,1-$k)"> $line </function>
+    <function domain="[1+$k,2.5)"> $line2 </function>
+    <endpoint open draggable="false">(1, $$line(1))</endpoint>
+    <endpoint draggable="false">(1, $$line2(1))</endpoint>
+    <text anchor="(1,-.5)">
+    a
+    </text>
+  </graph>
+
+
+<select assignNames="(graphA correctA) (graphB correctB) (graphC correctC) (graphD correctD)" numToSelect="4">
+  <option>$graph1 <boolean>0</boolean></option>
+  <option>$graph2 <boolean>1</boolean></option>
+  <option>$graph3 <boolean>0</boolean></option>
+  <option>$graph4 <boolean>0</boolean></option>
+<!--   <option>$graph5 <boolean>0</boolean></option> -->
+</select>
+
+<booleanList name="bools">$correctA $correctB $correctC $correctD</booleanList>
+  
+<mathList name="correctLabels">
+<map name="correctMap">
+  <template>
+    <conditionalContent>
+      <case condition="$bools.booleans[$i]">$letter</case>
+      <else></else>
+    </conditionalContent>
+  </template>
+  <sources alias="letter" indexAlias="i"><sequence from="A" to="D" type="letters"/></sources>
+</map>
+</mathList>
+
+<boolean name="checkLists" unorderedCompare>$correctLabels = $mi1</boolean>
+<!--   Should it be $mL?  Or could we remove the part that makes $mi1 into a list below? -->
+
 </setup>
+<!-- testing -->
+<!-- <p>correctLabels = $correctLabels</p> -->
+<!-- <p>checkLists = $checkLists</p> -->
+<!-- /testing -->
 
-<graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0-$k)">$quad</function>
-  <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0+$k,$b]">$quad</function>
-  <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
-  <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b+$k,$c-$k)">$line</function>
-  <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
-  <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c+$k,5)">$line</function>
-</graph>
+ <p>Consider the function <m>\displaystyle f(x) = \frac{(x+b)(x-a)}{x-a}</m>, where <m>a</m> and <m>b</m> are fixed numbers.  In addition, suppose that <m>\displaystyle \lim_{x\to a} \frac{(x+b)(x-a)}{x-a}= $c </m>. Which of the graphs below could be the graph of <m>f(x)</m>? Enter the letters corresponding to each such graph, separated by commas. <mathInput name="mi1"/></p>
+<setup><mathList name="mL">$mi1</mathList></setup>
+ <answer>
+    <award>
+      <when>$checkLists</when>
+    </award>
+  </answer>
 
-<p> 
-  Use the graph to determine the following limits. If the limit does not exist, enter <em>DNE</em>.
-  <ol marker="a.">
-    <li>
-      <m>\displaystyle\lim_{x \to -$b} f(x)=</m>
-  <answer name="ans1">$$quad(-$b)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to 0} f(x)=</m>
-  <answer name="ans2">$$quad(0)</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $b} f(x)=</m>
-  <answer name="ans3">DNE</answer>
-    </li>
-    <li>
-      <m>\displaystyle\lim_{x \to $c} f(x)=</m>
-  <answer name="ans4">$$line($c)</answer>
-    </li>
-  </ol>
-</p>
+<sideBySide>
+   <figure suppressFigureNameInCaption>$graphA <caption>A</caption></figure>
+   <figure suppressFigureNameInCaption>$graphB<caption>B</caption></figure>
+      <figure suppressFigureNameInCaption>$graphC<caption>C</caption></figure>
+  <figure suppressFigureNameInCaption>$graphD<caption>D</caption></figure>
+</sideBySide>
+
       </script>
 </div></div></body>
 </html>
