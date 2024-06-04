@@ -91,7 +91,7 @@
     </p>
 
     <p permid="tTK">
-      In <xref ref="PA-1-2">Preview Activity</xref>,
+      In <xref ref="PA-1-2-d">Preview Activity</xref>,
       we saw that 
       as <m>x</m> gets closer and closer
       (but not equal)
@@ -165,7 +165,7 @@
       For any function <m>f</m>,
       there are typically three ways to answer the question
       <q>does <m>f</m> have a limit at <m>x = a</m>, and if so,
-      what is the limit?</q> The first is to reason graphically as we have just done with the example from <xref ref="PA-1-2">Preview Activity</xref>.
+      what is the limit?</q> The first is to reason graphically as we have just done with the example from <xref ref="PA-1-2-d">Preview Activity</xref>.
       If we have a formula for <m>f(x)</m>,
       there are two additional possibilities:
 

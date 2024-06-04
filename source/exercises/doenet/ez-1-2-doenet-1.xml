@@ -28,6 +28,8 @@
   <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
   <selectFromSequence name="m" from="2" to="4"/>
 
+  <math name="k">0.08</math>
+
   <function name="quad">$a-x^2 </function>
   <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>
   <number name="yminim"><min>$$quad(-3) $$line($b)</min>-1</number>
@@ -35,15 +37,15 @@
 </setup>
 
 <graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0)">$quad</function>
+  <function domain="[-3,0-$k)">$quad</function>
   <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0,$b]">$quad</function>
+  <function domain="(0+$k,$b]">$quad</function>
   <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
   <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b,$c)">$line</function>
+  <function domain="($b+$k,$c-$k)">$line</function>
   <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
   <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c,5)">$line</function>
+  <function domain="($c+$k,5)">$line</function>
 </graph>
 
 <p> 

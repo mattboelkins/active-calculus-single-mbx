@@ -1,0 +1,108 @@
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- Author: Christina Safranski                                           -->
+
+<setup>
+  <selectFromSequence name="c" from="1" to="4"/>
+
+  <math name="k">0.15</math>
+  
+  <function name="line"> x+1</function>
+  <function name="line2">x</function>
+
+  <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function> $line </function>
+    <text anchor="(1,-.5)">
+    a
+  </text>
+  </graph>
+
+ 
+  <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,1-$k)"> $line </function>
+    <function domain="[1+$k,2.5)"> $line </function>
+    <endpoint open draggable="false">(1, $$line(1))</endpoint>
+    <text anchor="(1,-.5)">
+    a
+    </text>
+  </graph>
+
+  <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,-1-$k)"> $line </function>
+    <function domain="[-1+$k,2.5)"> $line </function>
+    <endpoint open draggable="false">(-1, $$line(-1))</endpoint>
+    <text anchor="(-1,-.5)">
+    a
+    </text>
+    
+  </graph>
+
+  
+  <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <function domain="[-2.5,1-$k)"> $line </function>
+    <function domain="[1+$k,2.5)"> $line2 </function>
+    <endpoint open draggable="false">(1, $$line(1))</endpoint>
+    <endpoint draggable="false">(1, $$line2(1))</endpoint>
+    <text anchor="(1,-.5)">
+    a
+    </text>
+  </graph>
+
+
+<select assignNames="(graphA correctA) (graphB correctB) (graphC correctC) (graphD correctD)" numToSelect="4">
+  <option>$graph1 <boolean>0</boolean></option>
+  <option>$graph2 <boolean>1</boolean></option>
+  <option>$graph3 <boolean>0</boolean></option>
+  <option>$graph4 <boolean>0</boolean></option>
+<!--   <option>$graph5 <boolean>0</boolean></option> -->
+</select>
+
+<booleanList name="bools">$correctA $correctB $correctC $correctD</booleanList>
+  
+<mathList name="correctLabels">
+<map name="correctMap">
+  <template>
+    <conditionalContent>
+      <case condition="$bools.booleans[$i]">$letter</case>
+      <else></else>
+    </conditionalContent>
+  </template>
+  <sources alias="letter" indexAlias="i"><sequence from="A" to="D" type="letters"/></sources>
+</map>
+</mathList>
+
+<boolean name="checkLists" unorderedCompare>$correctLabels = $mi1</boolean>
+<!--   Should it be $mL?  Or could we remove the part that makes $mi1 into a list below? -->
+
+</setup>
+<!-- testing -->
+<!-- <p>correctLabels = $correctLabels</p> -->
+<!-- <p>checkLists = $checkLists</p> -->
+<!-- /testing -->
+
+ <p>Consider the function <m>\displaystyle f(x) = \frac{(x+b)(x-a)}{x-a}</m>, where <m>a</m> and <m>b</m> are fixed numbers.  In addition, suppose that <m>\displaystyle \lim_{x\to a} \frac{(x+b)(x-a)}{x-a}= $c </m>. Which of the graphs below could be the graph of <m>f(x)</m>? Enter the letters corresponding to each such graph, separated by commas. <mathInput name="mi1"/></p>
+<setup><mathList name="mL">$mi1</mathList></setup>
+ <answer>
+    <award>
+      <when>$checkLists</when>
+    </award>
+  </answer>
+
+<sideBySide>
+   <figure suppressFigureNameInCaption>$graphA <caption>A</caption></figure>
+   <figure suppressFigureNameInCaption>$graphB<caption>B</caption></figure>
+      <figure suppressFigureNameInCaption>$graphC<caption>C</caption></figure>
+  <figure suppressFigureNameInCaption>$graphD<caption>D</caption></figure>
+</sideBySide>

@@ -24,6 +24,24 @@
     </interactive>  
 </exercise> 
 
+<exercise xml:id="ez-1-2-doenet-2">
+  <title>Comparing possible function behavior near a single point</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-2" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-2-doenet-2.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-2-doenet-3">
+  <title>Understanding a limit of a rational function</title>
+     <interactive xml:id="doenet-interactive-exercise-1-2-3" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-2-doenet-3.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
 <exercise xml:id="ez-1-2-doenet-5">
   <title>Estimating a limit to estimate instantaneous velocity</title>
      <interactive xml:id="doenet-interactive-exercise-1-2-5" platform="doenetml">

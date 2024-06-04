@@ -67,7 +67,7 @@
   <subsection permid="Lgq">
     <title>How the derivative is itself a function</title>
     <p permid="aZi">
-      In your work in <xref ref="PA-1-4">Preview Activity</xref> with <m>f(x) = 4x - x^2</m>,
+      In your work in <xref ref="PA-1-4-D">Preview Activity</xref> with <m>f(x) = 4x - x^2</m>,
       you may have found several patterns.
       One comes from observing that <m>f'(0) = 4</m>,
       <m>f'(1) = 2</m>, <m>f'(2) = 0</m>, and <m>f'(3) = -2</m>.

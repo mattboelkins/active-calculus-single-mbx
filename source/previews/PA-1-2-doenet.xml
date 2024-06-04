@@ -18,15 +18,16 @@
 <statement>
 --> 
 
-    <setup>
+  <setup>
     <text name="blank"/>
+    <math name ="c">0.07</math>
     <piecewiseFunction name="g" symbolic="false" simplify="numberspreserveorder">
-    <function domain="[-2.35,0)">4-x^2</function>
+      <function domain="[-2.35,-$c)">4-x^2</function>
       <function domain="[0,0]">1</function>
-    <function domain="(0,1]">4-x^2</function>
-    <function domain="(1,2)">3-x</function>
-    <function domain="(2,3.5]">3-x</function>
-  </piecewiseFunction>
+      <function domain="($c,1]">4-x^2</function>
+      <function domain="(1+$c,2-$c)">3-x</function>
+      <function domain="(2+$c,3.5]">3-x</function>
+    </piecewiseFunction>
     <number valueOnNaN="200" name="gofti" displayDecimals="6">$$g($ti)</number>
       <boolean name="badness">$gofti=200</boolean>
   </setup>
