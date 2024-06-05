@@ -14,6 +14,16 @@
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-4-D">
 
+<exercise xml:id="ez-1-4-doenet-0">
+  <title>Applying the limit definition of the derivative to find the derivative function</title>
+     <interactive xml:id="doenet-interactive-exercise-1-4-0" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-4-doenet-0.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+
 <exercise xml:id="ez-1-4-doenet-1">
   <title>Sketching the graph of a function's derivative</title>
      <interactive xml:id="doenet-interactive-exercise-1-4-1" platform="doenetml">
@@ -24,10 +34,28 @@
 </exercise> 
 
 <exercise xml:id="ez-1-4-doenet-2">
-  <title>Sketching the graph of a function's derivative</title>
+  <title>Sketching the graph of a piecewise function's derivative</title>
      <interactive xml:id="doenet-interactive-exercise-1-4-2" platform="doenetml">
       <slate surface="doenetml">
         <xi:include href="./doenet/ez-1-4-doenet-2.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-4-doenet-3">
+  <title>Determining the sign of a function and its derivative from its graph</title>
+     <interactive xml:id="doenet-interactive-exercise-1-4-3" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-4-doenet-3.xml" parse="text"/>
+      </slate>   
+    </interactive>  
+</exercise> 
+
+<exercise xml:id="ez-1-4-doenet-4">
+  <title>Comparing the values of a function and its derivative from its graph</title>
+     <interactive xml:id="doenet-interactive-exercise-1-4-4" platform="doenetml">
+      <slate surface="doenetml">
+        <xi:include href="./doenet/ez-1-4-doenet-4.xml" parse="text"/>
       </slate>   
     </interactive>  
 </exercise> 

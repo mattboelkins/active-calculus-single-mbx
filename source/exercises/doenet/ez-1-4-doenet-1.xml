@@ -81,7 +81,7 @@ This problem is not randomized.
     </p>
   </li>
   <li>
-    <p>The points <m>A</m>, <m>B</m>, and <m>C</m> are draggable; we want the curve that passes through them to represent the graph of <m>y = f'(x)</m>.  Move <m>A</m> and <m>C</m> so that they represent the points on <m>y = f'(x)</m> where <m>f'(x) = 0</m>, and then move <m>B</m> so that it represents the point where the value of <m>y = f'(x)</m> achieves its largest positive value.  ß
+    <p>The points <m>A</m>, <m>B</m>, and <m>C</m> are draggable; we want the curve that passes through them to represent the graph of <m>y = f'(x)</m>.  Move <m>A</m> and <m>C</m> so that they represent the points on <m>y = f'(x)</m> where <m>f'(x) = 0</m>, and then move <m>B</m> so that it represents the point where the value of <m>y = f'(x)</m> achieves its largest positive value.  
     <answer>
       <award matchPartial unorderedCompare><when>($p1,$p2,$p3) = (<point>(-3,0)</point>, <point>(0,1)</point>, <point>(3,0)</point>)</when></award>
     </answer>

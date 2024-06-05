@@ -36,7 +36,7 @@ This problem is not randomized.
 <math fixed name='x3'> 3</math>
 <math fixed name='x4'> 6</math>
 
-<label name="fLabel" anchor="(5,$$f(5)-1)"><m>y = f(x)</m></label>
+<label name="fLabel" anchor="(5.75,2.75)"><m>y = f(x)</m></label>
   
 </setup>
 
@@ -44,13 +44,13 @@ This problem is not randomized.
 Consider the graph of the piecewise linear function  <m>f(x)</m> given below that is defined for <m>-3 \le x \le 6</m>.
 
 <graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
+  $fLabel
   <xlabel><m>x</m></xlabel>
   <ylabel><m>y</m></ylabel>
   <polyline name="polyline1" fixed vertices="(-3,1) (0,2.5) (3,-2) (6,7)" />
   <point styleNumber="5" showCoordsWhenDragging="true" draggable="true">(0,0)
-  <constraints><constrainTo>$polyline1</constrainTo></constraints>
-</point>
-
+    <constraints><constrainTo>$polyline1</constrainTo></constraints>
+  </point>
 </graph>
 
 <ol marker="a.">
@@ -90,35 +90,39 @@ Consider the graph of the piecewise linear function  <m>f(x)</m> given below tha
 <graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
   <xlabel><m>x</m></xlabel>
   <ylabel><m>y</m></ylabel>
-<copy source='polyline1' />
+  <copy source='polyline1' />
 
-<point stylenumber='2' name='p1' x="$x1" y="2">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
+  <point stylenumber='2' name='p1' x="$x1" y="2">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
+  <point stylenumber='2' name='p2' x="$x2" y="3">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
 
-<point stylenumber='2' name='p2' x="$x2" y="3">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
-
-<linesegment name="derivSeg1" stylenumber='2' endpoints="$p1 $p2" />
-
-
-
-<point stylenumber='2' name='p3' x="$x2" y="-1">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
-
-<point stylenumber='2' name='p4' x="$x3" y="1">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
-
-<linesegment stylenumber='2' endpoints="$p3 $p4" />
+  <linesegment name="derivSeg1" stylenumber='2' endpoints="$p1 $p2" />
 
 
-<point stylenumber='2' name='p5' x="$x3" y="6">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
 
-<point stylenumber='2' name='p6' x="$x4" y="5">
-<constraints><constrainToGrid dy="0.5"/></constraints></point>
+  <point stylenumber='2' name='p3' x="$x2" y="-1">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
+  <point stylenumber='2' name='p4' x="$x3" y="1">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
 
-<linesegment stylenumber='2' endpoints="$p5 $p6" />
+  <linesegment stylenumber='2' endpoints="$p3 $p4" />
 
+
+  <point stylenumber='2' name='p5' x="$x3" y="6">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
+
+  <point stylenumber='2' name='p6' x="$x4" y="5">
+    <constraints><constrainToGrid dy="0.5"/></constraints>
+  </point>
+
+  <linesegment stylenumber='2' endpoints="$p5 $p6" />
+  $fLabel
 </graph>
 
 <answer>
