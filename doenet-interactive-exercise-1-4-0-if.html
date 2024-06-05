@@ -116,153 +116,118 @@ window.MathJax = {
 <!--************************************************************
 Author: Duane Nykamp
 Reviewed/Remixed by: Doenet team
-About the problem: Estimate the derivative at specific regions within a piecewise linear function. Then, sketch the graph of the derivative of the piecewise linear function.
+https://www.doenet.org/portfolioviewer/_QRYcb0PKVmJPC8elhUrGF
+Remixed again by: Matt Boelkins
+About the problem: Interactively sketch the derivative of a cubic function.
 This problem is not randomized.
 *************************************************************--> 
 
-<!-- <title>Sketch the derivative of piecewise linear, worksheet</title> -->
+
+<!--************************************************************
+Author: Duane Nykamp
+Reviewed/Remixed by: Doenet team
+About the problem: Guided activity to determine the derivative of a linear function from the definition of the derivative.
+This activity is not randomized.
+
+
+*************************************************************--> 
 
 <setup>
 
-<function name='g1' variables='x'>-x</function>
-<function name='g2' variables='x'>x</function>
-<function name='g3' variables='x'>6-2*x</function>
+  <selectFromSequence assignNames="m" from="2" to="6" step="1" numToSelect="1"/>
+  <math name="b" simplify> 2*$m - 1</math> 
+<function name='f' variables='x' symbolic>$m x+$b</function>
+<math name='f_x_plus_h' simplify='full' >$$f(x+h)</math>
+<math name='numerator' simplify='full' >$$f(x+h)-$$f(x)</math>
+<math name='fprime'>$m</math>
 
-<math name='m1'>0.5</math>
-<math name='m2'>-1.5</math>
-<math name='m3'>3</math>
-  
-<math fixed name='x1'>-3</math>
-<math fixed name='x2'> 0</math>
-<math fixed name='x3'> 3</math>
-<math fixed name='x4'> 6</math>
 
-<label name="fLabel" anchor="(5.75,2.75)"><m>y = f(x)</m></label>
-  
 </setup>
 
 
-Consider the graph of the piecewise linear function  <m>f(x)</m> given below that is defined for <m>-3 \le x \le 6</m>.
-
-<graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
-  $fLabel
-  <xlabel><m>x</m></xlabel>
-  <ylabel><m>y</m></ylabel>
-  <polyline name="polyline1" fixed vertices="(-3,1) (0,2.5) (3,-2) (6,7)" />
-  <point styleNumber="5" showCoordsWhenDragging="true" draggable="true">(0,0)
-    <constraints><constrainTo>$polyline1</constrainTo></constraints>
-  </point>
-</graph>
-
-<ol marker="a.">
-
-  <li>
-    <p> What is the value of <m>f'(x)</m> for any value of <m>x</m> that lies in the interval <m>-3 \lt x \lt 0</m>? 
-      <answer>
-        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m1              </award>
-      </answer>
-    </p>
-  </li>
-  <li>
-    <p>What is the value of <m>f'(x)</m> for any value of <m>x</m> that lies in the interval <m>0 \lt x \lt 3</m>? 
-      <answer>
-        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m2              </award>
-      </answer>
-    </p>
-  </li>
-  <li>
-    <p>What is the value of <m>f'(x)</m> for any value of <m>x</m> that lies in the interval <m>3 \lt x \lt 6</m>? 
-      <answer>
-        <award symbolicEquality='true' simplifyOnCompare='numbers' allowedErrorInNumbers='0.1' allowedErrorIsAbsolute="true">$m3              </award>
-      </answer>
-    </p>
-  </li>
-  <li>
-    <p>Recall that anywhere the function <m>f(x)</m> has a sharp corner <m>f'(x)</m> is undefined.  At what value(s) of <m>x</m> in the interval <m>-3 \lt x \lt 6</m> is  <m>f'(x)</m> undefined?  If there is more than one value, enter a list of numbers separated by commas.
-      <answer unorderedCompare>0,3</answer>
-    </p>
-  </li>  
-
-  <li>
-    <p> Just as <m>y = f(x)</m> is a piecewise function, so is <m>y = f'(x)</m>.  Sketch the graph of <m>y = f'(x)</m> in the following way:  drag the endpoints of each line segment in the figure below so that the line segment is the graph of <m>y = f'(x)</m> on that interval.  (<alert>Note:</alert> Technically, each of the square endpoints of these line segments should be open circles to reflection that <m>y = f'(x)</m> is undefined at those <m>x</m>-values, as we found in (d).)</p>
+The limit definition of the derivative states that
+<me>f'(x)=\lim_{h \rightarrow 0} \frac{f(x+h) - f(x)}{h} .</me>
+We will use this definition to compute the derivative of the linear function
+<me>f(x)= <copy prop="formula" source="f" />.</me>
 
 
-
-<graph xmin='-3.5' xmax='7' ymin='-3' ymax='8' showNavigation="false" grid>
-  <xlabel><m>x</m></xlabel>
-  <ylabel><m>y</m></ylabel>
-  <copy source='polyline1' />
-
-  <point stylenumber='2' name='p1' x="$x1" y="2">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-  <point stylenumber='2' name='p2' x="$x2" y="3">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-
-  <linesegment name="derivSeg1" stylenumber='2' endpoints="$p1 $p2" />
-
-
-
-  <point stylenumber='2' name='p3' x="$x2" y="-1">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-  <point stylenumber='2' name='p4' x="$x3" y="1">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-
-  <linesegment stylenumber='2' endpoints="$p3 $p4" />
-
-
-  <point stylenumber='2' name='p5' x="$x3" y="6">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-
-  <point stylenumber='2' name='p6' x="$x4" y="5">
-    <constraints><constrainToGrid dy="0.5"/></constraints>
-  </point>
-
-  <linesegment stylenumber='2' endpoints="$p5 $p6" />
-  $fLabel
-</graph>
-
+<p>Since
+<m>f(x+h) =</m> 
 <answer>
-<award matchPartial><when>
-<boolean><copy source="p1" prop="y" /> = $m1 and
-<copy source="p2" prop="y" /> = $m1</boolean>
-  and
-<boolean><copy source="p3" prop="y" /> = $m2 and
-<copy source="p4" prop="y" /> = $m2</boolean>
-  and
-<boolean><copy source="p5" prop="y" /> = $m3 and
-<copy source="p6" prop="y" /> = $m3</boolean>
-</when></award>
+<award>$f_x_plus_h </award>
+</answer>
+ and <m>f(x) =</m> 
+<answer>
+<award>$f </award>
+</answer>
+,
+</p>
+<p>
+
+we can plug this results into the derivative definition:
+</p>
+<p>
+
+<m>\displaystyle f'(x) = \lim_{h \to 0} [f(x+h)-f(x)]/h</m>
+</p>
+<p>
+
+<m>\displaystyle = \lim_{h \to 0} \biggl[</m>
+  <mathinput name="mi1" />
+<m> - \biggl(</m>
+  <mathinput name="mi2" />
+<m>\biggr)\biggr]\Big/h</m></p>
+
+  <answer matchPartial>
+  <award sourcesAreResponses="mi1 mi2">
+    <when>$mi1 = $f_x_plus_h and $mi2 = $f</when>
+  </award>
 </answer>
 
-    <!--
-<hint>
-  <p>For each segment of the function, is the slope constant or does it change? 
-  <answer weight="0"><choiceinput inline>
-    <choice credit="1">constant</choice>
-    <choice>changing</choice>
-  </choiceinput></answer>
-  Therefore, each segment that you draw should be
-    <answer weight="0"><choiceinput inline>
-    <choice credit="1">constant</choice>
-    <choice>changing</choice>
-  </choiceinput></answer>.
-  </p>
-</hint>
-  -->
+  
+<p>Next, we simplify the numerator and then perform the division by <m>h</m>:
+</p>
+<p>
 
-</li>
+<m>\displaystyle f'(x) =\lim_{h \to 0} \biggl[</m> 
+  <mathinput name="mi3" />
+<m>\biggr]\Big/h</m>
+</p>
+<p>
+<m>\displaystyle =\lim_{h \to 0}</m> 
+  <mathinput name="mi4" />
+</p>
 
+<answer matchPartial>
+<award sourcesAreResponses="mi3 mi4">
+  <when>$mi3=$numerator and $mi4 = $fprime</when>
+</award>
+</answer>
+  
 
-</ol>
+<p>We still have a limit in terms of <m>h</m>.  However, the expression in the limit 
+<answer inline='true'>
+<choiceinput>
+<choice credit='1'>does not</choice>
+<choice>does</choice>
+</choiceinput>
+</answer>
+ depend on <m>h</m>.  Therefore, the limit as <m>h</m> goes to zero of this expression is 
+<answer inline='true'>
+<choiceinput>
+<choice credit='1'>the same as</choice>
+<choice>different from</choice>
+</choiceinput>
+</answer>
+ the expression itself.  We can conclude that the derivative <m>f'(x)</m> is
+</p>
+<p>
 
-
-
-
+<m>f'(x)=</m> 
+<answer>
+<award symbolicEquality='true'>$fprime </award>
+</answer>
+.</p>
       </script>
 </div></div></body>
 </html>

@@ -113,82 +113,81 @@ window.MathJax = {
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<!--************************************************************
-Author: Duane Nykamp
-Reviewed/Remixed by: Doenet team
-https://www.doenet.org/portfolioviewer/_QRYcb0PKVmJPC8elhUrGF
-Remixed again by: Matt Boelkins
-About the problem: Interactively sketch the derivative of a cubic function.
-This problem is not randomized.
-*************************************************************--> 
-
+<!--
+<section name = "exercise-1-4-d-3"><title>Title here</title>
+  <statement>
+-->
 
 <setup>
 
-<function name='f' variables='x'>x-x^3/27</function>
-<math name='one' simplify='full' >1</math>
-<math name='thezeros' simplify='full'  unordered='true'>-3,3</math>
-<math name='zero' simplify='full' >0</math>
+  <selectFromSequence assignNames="a" from="2" to="5" step="1" numToSelect="1"/>
+  <selectFromSequence assignNames="r1" from="3.5" to="4.5" step="0.5" numToSelect="1"/>  
+  <selectFromSequence assignNames="r2" from="0" to="1" step="0.5" numToSelect="1"/>    
+  <selectFromSequence assignNames="r3" from="3.5" to="4.5" step="0.5" numToSelect="1"/> 
+  
+  <function name="g" symbolic="false">$a/100 * (x + $r1) * (x + $r2)^2 * (x - $r3)</function>
+  <function name="mg" symbolic="false">-1*$a/100 * (x + $r1) * (x + $r2)^2 * (x - $r3)</function>
+  <derivative name="gP" symbolic="false">$g</derivative>  
+  <derivative name="mgP" symbolic="false">$mg</derivative>    
+  <derivative name="gPP" symbolic="false">$gP</derivative>   
+  <derivative name="mgPP" symbolic="false">$mgP</derivative>     
+  <function name="L" symbolic="false" styleNumber="3" labelPosition="lowerRight">$$gP($A.x)(x-$A.x) + $$g($A.x)</function>  
+    <point name="A" styleNumber="2" coords="(1,$$g(1))" showCoordsWhenDragging="false" draggable="true" labelPosition="upperRight"> 
+      <label><m>A</m></label>
+      <constraints>
+          <attractToGrid dx="0.5"/>
+            <constrainTo>$g</constrainTo>
+      </constraints>      
+    </point> 
 
-<label name="fLabel" anchor="(4,$$f(4)-0.8)"><m>y = f(x)</m></label>
+  <label name="gLabel" anchor="(-3,$$g(-3)-0.5)"><m>y = g(x)</m></label>
+<!--  <label name="LLabel" anchor="(-3,$$L(-3)+0.25)"><m>y = L(x)</m></label> -->
+
+  <graph name="graph1" xmin="-5" xmax="5" ymin="-5" ymax="4" size="small" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="true"> $gP
+  </graph>
+  
+  <graph name="graph2" xmin="-5" xmax="5" ymin="-5" ymax="4" size="small" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="true"> $mgPP
+  </graph>
+
+  <graph name="graph3" xmin="-5" xmax="5" ymin="-5" ymax="4" size="small" grid="false" showNavigation="false" displayXAxis="true" displayYAxis="true"> $mgP
+  </graph>
   
 </setup>
 
+  <p>Let <m>g</m> be the function given by the graph below and consider its tangent line at the point <m>A</m>, which you can adjust by dragging <m>A</m>.</p>
 
+<!--  <p><m>a = $a</m>, <m>b = $b</m>, and <m>c = $c</m>, so <m>g(x) = $$g(x)</m> and <m>L(x) = $$L(x)</m>, plus <m>A = $A</m> and <m>B = $B</m></p> -->
 
-<p>Consider the function <m>y = f(x)</m> given in the graph below. 
- Our goal in this exercise is to sketch an accurate graph of the derivative function, <m>y = f'(x)</m>.</p>
+    <figure>
+      <graph xmin="-5" xmax="5" ymin="-5" ymax="4" size="medium" grid="true" showNavigation="false" displayXAxis="true" displayYAxis="true"> $g $L $A $gLabel
+      </graph>
+      <caption>Plot of <m>y = g(x)</m> and its tangent line at the point <m>A</m></caption>
+    </figure>
 
-
-<graph size="large" aspectRatio="2" xmin="-5.5" xmax='5.5' ymin='-3' ymax='3' grid showNavigation="false">
-  $f $fLabel
-
-  <point name="p1" stylenumber="2" x="-2" y='2'>
-    <constraints><attractToGrid /></constraints>
-        <label><m>A</m></label>
-  </point>
-
-  <point name="p2" stylenumber="2" x="0" y='2'>
-    <constraints><attractToGrid /></constraints>
-         <label><m>B</m></label>
-  </point>
-
-  <point name="p3" stylenumber="2" x="2" y='2'>
-    <constraints><attractToGrid /></constraints>
-         <label><m>C</m></label>
-  </point>
-
-  <parabola through="$p1 $p2 $p3" stylenumber="2"/>
-
-</graph>
-
-<ol marker="a.">
+ <ol marker="a.">
   <li>
-    <p>At what value(s) of <m>x</m> is <m>f'(x) = 0</m>?  If there is more than one such value, enter your values as a list of numbers separated by commas.
-    <answer>
-      <award unorderedCompare>-3,3</award>
-    </answer>
-    </p>  
-  </li>
+    <p>On the interval <m>-5 \lt x \lt 5</m>, at how many distinct <m>x</m>-values is <m>g(x) = 0</m>? <answer>3</answer></p>
+  </li>  
   <li>
-    <p>The location <m>x</m> where <m>f'(x)</m> achieves its largest positive value is
-    <answer>
-      <award>0</award>
-    </answer>.
-      The value of <m>f'(x)</m> at this location <m>x</m> is
-    <answer>
-      <award>1</award>
-    </answer>.      
-    </p>
-  </li>
+    <p>On the interval <m>-5 \lt x \lt 5</m>, how many times does  <m>g(x)</m> change sign as we follow the curve from left to right? <answer>2</answer></p>
+  </li> 
+  <li> 
+    <p>On the interval <m>-5 \lt x \lt 5</m>, at how many distinct <m>x</m>-values is <m>g'(x) = 0</m>? <answer>3</answer></p>
+  </li>  
   <li>
-    <p>The points <m>A</m>, <m>B</m>, and <m>C</m> are draggable; we want the curve that passes through them to represent the graph of <m>y = f'(x)</m>.  Move <m>A</m> and <m>C</m> so that they represent the points on <m>y = f'(x)</m> where <m>f'(x) = 0</m>, and then move <m>B</m> so that it represents the point where the value of <m>y = f'(x)</m> achieves its largest positive value.  
-    <answer>
-      <award matchPartial unorderedCompare><when>($p1,$p2,$p3) = (<point>(-3,0)</point>, <point>(0,1)</point>, <point>(3,0)</point>)</when></award>
-    </answer>
-    </p>
-  </li>
-</ol> 
+    <p>On the interval <m>-5 \lt x \lt 5</m>, how many times does  <m>g'(x)</m> change sign as we follow the curve from left to right? <answer>3</answer></p>
+  </li>   
+  <li>
+    <p>Which of the following graphs could be the graph of <m>y = g'(x)?</m>.  Enter the letter corresponding to each possible graph of <m>g'(x)</m>, separated by commas. <answer>C</answer> </p>
+    <sideBySide>
+   <figure suppressFigureNameInCaption>$graph2 <caption>A</caption></figure>
+   <figure suppressFigureNameInCaption>$graph3<caption>B</caption></figure>
+      <figure suppressFigureNameInCaption>$graph1<caption>C</caption></figure>
+</sideBySide>
+  </li> 
+ </ol>  
+
+
       </script>
 </div></div></body>
 </html>
