@@ -17,7 +17,7 @@
 <setup>
   <selectFromSequence name="c" from="1" to="4"/>
 
-  <math name="k">0.15</math>
+  <math name="k">0</math>
   
   <function name="line"> x+1</function>
   <function name="line2">x</function>

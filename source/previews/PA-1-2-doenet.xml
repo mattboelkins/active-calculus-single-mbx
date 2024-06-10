@@ -20,7 +20,7 @@
 
   <setup>
     <text name="blank"/>
-    <math name ="c">0.07</math>
+    <math name ="c">0</math>
     <piecewiseFunction name="g" symbolic="false" simplify="numberspreserveorder">
       <function domain="[-2.35,-$c)">4-x^2</function>
       <function domain="[0,0]">1</function>

@@ -28,7 +28,7 @@
   <selectFromSequence name="upordown" from="-1" to="1" exclude="0"/>
   <selectFromSequence name="m" from="2" to="4"/>
 
-  <math name="k">0.08</math>
+  <math name="k">0</math>
 
   <function name="quad">$a-x^2 </function>
   <function name="line"> $m*(x-$b)+$$quad($c)+$upordown</function>

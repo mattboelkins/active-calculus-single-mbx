@@ -27,7 +27,7 @@ Make last exercise a "choose your own adventure", where student answers which th
   <function name="line"> $m*x+$b</function>
   <function name="line2">$m(x-$a)+$$line($a)+$upordown</function>
 
-  <math name="c">0.15</math>
+  <math name="c">0</math>
   
   <graph name="graph1" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
     <function> $line </function>
