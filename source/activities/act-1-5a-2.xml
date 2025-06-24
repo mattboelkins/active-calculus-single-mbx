@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2019                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<!-- significant changes to include realistic data were made in 2025 -->
+
+<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-1-5a-2">
+  <statement>
+    <p>
+      A potato is placed in an oven whose temperature is 350 degrees Fahrenheit,
+      and the potato's temperature <m>F</m>
+      (in degrees Fahrenheit)
+      is recorded in the following table.
+      Time <m>t</m> is measured in minutes.<fn>Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.</fn>
+    </p>
+
+    <table>
+      <title>Potato temperature data in degrees Fahrenheit.</title>
+      <tabular bottom="minor" top="minor">
+        <row bottom="medium">
+          <cell><m>t</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>10</m></cell>
+          <cell><m>20</m></cell>
+          <cell><m>30</m></cell>
+          <cell><m>40</m></cell>
+          <cell><m>50</m></cell>
+          <cell><m>60</m></cell>
+        </row>
+        <row>
+          <cell><m>F(t)</m></cell>
+          <cell><m>65</m></cell>
+          <cell><m>94.7</m></cell>
+          <cell><m>141.7</m></cell>
+          <cell><m>167.6</m></cell>
+          <cell><m>182.4</m></cell>
+          <cell><m>197.9</m></cell>
+          <cell><m>209.3</m></cell>
+        </row>
+      </tabular>
+
+    </table>
+
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 20</m>.
+            Include units on your answer.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 40</m>.
+            Include units on your answer.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Without doing any calculation,
+            which do you expect to be greater:
+            <m>F'(50)</m> or <m>F'(60)</m>?
+            Why?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Suppose we know that
+            <m>F(46) = 192.5</m> and <m>F'(46) = 1.39</m>.
+            What are the units on these two quantities?
+            What do you expect the temperature of the potato to be when <m>t = 47</m>? when <m>t = 48</m>?
+            Why?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <m>[0,60]</m>,
+            as well as the behavior of the instantaneous rate of change of the temperature of the potato on the same time interval.
+          </p>
+        </li>
+      </ol>
+
+    </p>
+  </statement>
+
+
+
+  <hint>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Think about quantities such as <m>\frac{F(30)-F(20)}{30-20}</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            See the note in (a).
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Is <m>F</m> changing faster at <m>t = 50</m> or at <m>t = 60</m>?
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Remember that the units on <m>F'</m> will be
+            <q>degrees Fahrenheit per minute.</q>
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Be careful to distinguish between the temperature,
+            <m>F</m>,
+            and the rate of change of temperature,
+            <m>F'</m>, in your commentary.
+          </p>
+        </li>
+      </ol>
+    </p>
+  </hint>
+
+  <answer>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            <me>
+              F'(20) \approx \frac{F(30)-F(10)}{30-10} = \frac{167.6-94.7}{20} = 3.645
+            </me>
+            degrees per minute.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            <me>
+              F'(40) \approx \frac{F(50)-F(30)}{50-30} = \frac{197.9-167.6}{20} = 1.515
+            </me>
+            degrees per minute.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We expect <m>F'(50) \gt F'(60)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Because at time <m>t = 46</m> the potato's temperature is increasing at 1.3941 degrees per minute,
+            we expect that at <m>t = 47</m>,
+            the temperature will be about 1.3941 degrees greater than at <m>t = 46</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            We might say that overall <q>the temperature of the potato is increasing,
+            but at a decreasing rate.</q>
+          </p>
+        </li>
+      </ol>
+    </p>
+
+  </answer>
+  <solution>
+    <p>
+      <ol marker="a.">
+        <li>
+          <p>
+            Using the central difference, we find that
+            <me>
+              F'(20) \approx \frac{F(30)-F(10)}{30-10} = \frac{167.6-94.7}{20} = 3.645
+            </me>
+            degrees per minute.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Using the central difference, we find that
+            <me>
+              F'(40) \approx \frac{F(50)-F(30)}{50-30} = \frac{197.9-167.6}{20} = 1.515
+            </me>
+            degrees per minute.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            As time goes on,
+            we see that it’s usually the case that the amount of increase in the potato's temperature gets less and less,
+            thus we expect the value of <m>F'(t)</m> to get smaller and smaller as time goes on.
+            We therefore expect <m>F'(50) \gt F'(60)</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            The value <m>F(46) = 192.5</m> is the temperature of the potato in degrees Fahrenheit at time 46,
+            while <m>F'(46) = 1.3941</m> measures the instantaneous rate of change of the potato's temperature with 
+            respect to time at the instant <m>t = 46</m>,
+            and its units are degrees per minute.
+            Because at time <m>t = 46</m> the potato's temperature is increasing at 1.3941 degrees per minute,
+            we expect that at <m>t = 47</m>,
+            the temperature will be about 1.3941 degrees greater than at <m>t = 46</m>,
+            or in other words <m>F(47) \approx 192.5 + 1.3941 = 193.8941</m>.
+            Similarly, at <m>t = 48</m>,
+            two minutes have elapsed from <m>t = 48</m>,
+            so we expect an increase of <m>2 \cdot 1.3941</m> degrees:
+            <m>F(48) \approx 192.5 + 2 \cdot 1.3941 = 195.2882</m>.
+          </p>
+        </li>
+
+        <li>
+          <p>
+            Throughout the time interval <m>[0,60]</m>,
+            the temperature <m>F</m> of the potato is increasing.
+            But as time goes on,
+            the rate at which the temperature is rising appears to be decreasing.
+            That is,
+            while the values of <m>F</m> continue to get larger as time progresses,
+            the values of <m>F'</m> are generally getting smaller
+            (while still remaining positive).
+            We thus might say that overall <q>the temperature of the potato is increasing,
+            but at a decreasing rate.</q>
+          </p>
+        </li>
+      </ol>
+    </p>
+  </solution>
+</activity>
+

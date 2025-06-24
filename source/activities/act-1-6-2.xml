@@ -20,10 +20,10 @@
       (in degrees Fahrenheit)
       at various points in time is taken and recorded in the following table.
       Time <m>t</m> is measured in minutes.
-      In <xref ref="act-1-5-1">Activity</xref>,
-      we computed approximations to <m>F'(30)</m> and <m>F'(60)</m> using central differences.
-      Those values are provided in the second table below,
-      along with several others computed in the same way.
+      In <xref ref="act-1-5a-2">Activity</xref>,
+      we computed approximations to <m>F'(20)</m> and <m>F'(40)</m> using central differences.
+      ***Those values are provided in the second table below,
+      along with several others computed in the same way.****
     </p>
 
     <sidebyside widths="47% 47%" margins="0%" permid="RrX">
