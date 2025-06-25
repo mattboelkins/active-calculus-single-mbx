@@ -17,45 +17,31 @@
 
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-1-5a-1">
   <statement>
-     <p> In each of the following contexts, explain the meaning of the given derivative values in two ways.  First, write 
-        a sentence that explicitly describes what we know the instantaneous rate of change of the given function
-        at a particular instant, with units.  
-        Then, write a second sentence that explains the amount of change we expect in the function value if the
-        input variable changes by one unit at the known instant.  
-        Compare the sentence structure and discussion of units in <xref ref="Ex-1-5a-1-pop-growth">Example</xref> and 
-        <xref ref="Ex-1-5a-2-time-speed">Example</xref>.
+     <p> In each of the following contexts, explain the meaning of the given derivative values in two ways.  First, write a sentence that explicitly describes what we know the instantaneous rate of change of the given function at a particular instant, with units.  Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  Compare the sentence structure and discussion of units in <xref ref="Ex-1-5a-1-pop-growth">Example</xref> and <xref ref="Ex-1-5a-2-time-speed">Example</xref>.
      </p>
     <p>
       <ol marker="a.">
         <li>
           <p>
-		    Suppose that <m>V(m)</m> measures the value of a car (in dollars) after the car has been driven <m>m</m> miles.  
-        Explain the meaning of the statement <q><m>V’(10250) = -0.89</m></q> by writing two sentences in the structure 
-        described above.  
+            Suppose that <m>V(m)</m> measures the value of a car (in dollars) after the car has been driven <m>m</m> miles.  Explain the meaning of the statement <q><m>V'(10250) = -0.89</m></q> by writing two sentences in the structure described above.  
           </p>
         </li>
 
         <li>
           <p>
-		Suppose that <m>W(h)</m> measures the amount of water (in liters) in a tank that is filled with water that is 
-        <m>h</m> meters deep.  Explain the meaning of the statement <q><m>W’(0.75) = 3.43</m></q> by writing 
-        two sentences in the structure described above.
+            Suppose that <m>W(h)</m> measures the amount of water (in liters) in a tank that is filled with water that is <m>h</m> meters deep.  Explain the meaning of the statement <q><m>W'(0.75) = 3.43</m></q> by writing two sentences in the structure described above.
           </p>
         </li>
 
         <li>
           <p>
-		Suppose that <m>S(t)</m> measures the temperature of a can of soda (in degrees Celcius) in a refrigerator at time <m>t</m> 
-        in minutes.  Explain the meaning of the statement <q><m>S’(20) = -0.527</m></q> by writing two sentences in 
-        the structure described above.
+            Suppose that <m>S(t)</m> measures the temperature of a can of soda (in degrees Celcius) in a refrigerator at time <m>t</m> in minutes.  Explain the meaning of the statement <q><m>S'(20) = -0.527</m></q> by writing two sentences in the structure described above.
           </p>
         </li>
 
         <li>
           <p>
-		Suppose that <m>C(s)</m> measures the rate at which a person burns calories (in calories per hour) when riding a bike 
-        at a speed of <m>s</m> kilometers per hour.  Explain the meaning of the statement <q><m>C’(19) = 52.1</m></q> 
-        by writing two sentences in the structure described above.
+            Suppose that <m>C(s)</m> measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of <m>s</m> kilometers per hour.  Explain the meaning of the statement <q><m>C'(19) = 52.1</m></q> by writing two sentences in the structure described above.
           </p>
         </li>
 
