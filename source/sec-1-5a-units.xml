@@ -209,34 +209,79 @@
 
     <xi:include href="./activities/act-1-5a-2.xml" />
 
-    <xi:include href="./activities/act-1-5-3.xml" />
-
     <p>
       In <xref ref="sec-1-4-derivative-fxn">Section</xref>, we learned how use to the graph of a given function <m>f</m> to plot the graph of its derivative, <m>f'</m>.
-      It is important to remember that when we do so, the scale and the units on the vertical axis often have to change to represent <m>f'</m>. For example, suppose that <m>P(t) = 212-148e^{-0.05t}</m> tells us the temperature in degrees Fahrenheit of a potato in an oven at time <m>t</m> in minutes. In <xref ref="F-1-5-PPprime">Figure</xref>,
-      we sketch the graph of <m>P</m> on the left and the graph of <m>P'</m> on the right.
+      It is important to remember that when we do so, the scale and the units on the vertical axis often have to change to represent <m>f'</m>. For example, suppose that <m>P(t) = 212-148e^{-0.05t}</m> tells us the temperature in degrees Fahrenheit of a potato in an oven at time <m>t</m> in minutes. In <xref ref="Fig-1-5a-P">Figure</xref>,
+      we sketch the graph of <m>P</m>, and in <xref ref="Fig-1-5a-PPrime">Figure</xref> the graph of <m>P'</m>.
     </p>
 
-<!-- original image -->
+<!-- original image 
 
     <figure xml:id="F-1-5-PPprime">
       <caption>Plot of <m>P(t) = 400-330e^{-0.03t}</m> at left, and its derivative <m>P'(t)</m> at right.</caption>
       <image width="100%" source="images/1_5_PPprimeplot" />
     </figure>
+--> 
 
-<!-- sample prefigure image from preview -->
-        <figure xml:id="Fig-PA-1-5a-axes-repeated">
-            <caption>Axes for plotting <m>T(s)</m>.</caption>
+    <sidebyside widths="45% 45%">
+        <figure xml:id="Fig-1-5a-P">
+            <caption>Plot of the temperature function, <m>P(t) = 212-148e^{-0.05t}</m>.</caption>
                 <image width="60%">
-                    <prefigure label="PA-1-5a" xmlns="https://prefigure.org">
-                        <diagram dimensions="(300,300)" margins="5">
-                            <coordinates bbox="(-5,-0.8,85,8.5)">
-                                <grid-axes xlabel="s" ylabel="T"/>
-                            </coordinates>
-                        </diagram>
+                    <prefigure label="Fig-1-5a-P-1" xmlns="https://prefigure.org">
+                      <diagram dimensions="(300,300)" margins="25">
+                        <definition>f(x)=212-148*exp(-0.05*x)</definition>
+                        <coordinates bbox="(-5,-25,88,345)">
+                          <axes/> 
+                          <label anchor="(2,322)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>^\circ \mbox{F}</m>
+                          </label>
+                          <label anchor="(78,25)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>\mbox{min}</m>
+                          </label>    
+                          <label anchor="(50,225)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>y=P(t)</m>
+                          </label>  
+                          <graph function="f"/>
+                        </coordinates>
+                      </diagram>
                     </prefigure>
                 </image>
-        </figure>  
+        </figure> 
+
+        <figure xml:id="Fig-1-5a-PPrime">
+            <caption>Plot of the temperature function's derivative, <m>P'(t)</m>.</caption>
+                <image width="60%">
+                    <prefigure label="PA-1-5a-PPrime-1" xmlns="https://prefigure.org">
+                      <diagram dimensions="(300,300)" margins="25">
+                        <definition>f(x)=148*0.05*exp(-0.05*x)</definition>
+                        <definition>a = 1</definition>
+                        <coordinates bbox="(-5,-0.75,88,10.9)">
+                          <axes/> 
+                          <label anchor="(2,10)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>^\circ \mbox{F/min}</m>
+                          </label>
+                          <label anchor="(78,0.9)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>\mbox{min}</m>
+                          </label>    
+                          <label anchor="(40,2.1)" alignment="e" justify="left"
+                          clear-background="yes">
+                            <m>y=P'(t)</m>
+                          </label>  
+                          <graph function="f"/>
+                        </coordinates>
+                      </diagram>
+                    </prefigure>
+                </image>
+        </figure>         
+    </sidebyside>
+
+<!-- sample prefigure image from preview -->
+ 
 
     <p>
       Notice that the vertical scales are different in size
@@ -244,6 +289,9 @@
       as the units of <m>P</m> are
       <degree />F, while those of <m>P'</m> are <degree />F/min.
     </p>
+
+    <xi:include href="./activities/act-1-5-3.xml" />
+
   </subsection>
 
   <subsection>
