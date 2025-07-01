@@ -217,7 +217,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section">
 <div class="toc-title-box"><a href="sec-1-5a-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
 <ul class="structural toc-item-list">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#SS-1-5a-units-fprime" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-5" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5a-units.html#ez-1-5" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
@@ -1076,7 +1076,7 @@ F'(40) \approx \frac{F(50)-F(30)}{50-30} = \frac{197.9-167.6}{20} = 1.515
 <div class="autopermalink" data-description="Item d"><a href="#act-1-5a-2-3-1-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li>
-<div class="para">We might say that overall “the temperature of the potato is increasing, but at a decreasing rate.”<div class="autopermalink" data-description="Paragraph"><a href="#act-1-5a-2-3-1-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">We might say that on the interval <span class="process-math">\([10,40]\)</span> “the temperature of the potato is increasing, but at a decreasing rate.”<div class="autopermalink" data-description="Paragraph"><a href="#act-1-5a-2-3-1-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item e"><a href="#act-1-5a-2-3-1-1-5" title="Copy heading and permalink for Item e">🔗</a></div>
 </li>
@@ -1220,12 +1220,12 @@ F'(40) \approx \frac{F(50)-F(30)}{50-30} = \frac{197.9-167.6}{20} = 1.515
 </li>
 <li>
 <div class="para">
-<span class="process-math">\(F''(30) \approx -0.119\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-1-6-2-3-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(F''(30) \approx -0.0516\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-1-6-2-3-1-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item b"><a href="#act-1-6-2-3-1-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li>
-<div class="para">At the moment <span class="process-math">\(t = 30\text{,}\)</span> the temperature of the potato is 251 degrees; its temperature is rising at a rate of 3.85 degrees per minute; and the rate at which the temperature is rising is <em class="emphasis">falling</em> at a rate of 0.119 degrees per minute per minute.<div class="autopermalink" data-description="Paragraph"><a href="#act-1-6-2-3-1-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">At the moment <span class="process-math">\(t = 30\text{,}\)</span> the temperature of the potato is <span class="process-math">\(167.6\)</span> degrees; its temperature is rising at an instaneous rate of <span class="process-math">\(2.605\)</span> degrees Fahrenheit per minute; and the rate at which the temperature is rising is <em class="emphasis">falling</em> at a rate of <span class="process-math">\(0.0516\)</span> degrees Fahrenheit per minute per minute.  Over the minute from <span class="process-math">\(t = 30\)</span> to <span class="process-math">\(t = 31\text{,}\)</span> we expect the temperature of the potato to rise about <span class="process-math">\(2.605\)</span> degrees Fahrenheit and for the rate at which its temperature is increasing to drop by about <span class="process-math">\(0.0516\)</span> degrees Fahrenheit per minute.  We expect that <span class="process-math">\(F(31) \approx 169.7\)</span> degrees Fahrenheit, and <span class="process-math">\(F'(31) \approx 2.01343\)</span> degrees Fahrenheit per minute.<div class="autopermalink" data-description="Paragraph"><a href="#act-1-6-2-3-1-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item c"><a href="#act-1-6-2-3-1-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
 </li>
@@ -1493,6 +1493,18 @@ g'(0) =\mathstrut \amp  \lim_{h \to 0} \frac{g(0+h)-g(0)}{h}\\
 <div class="autopermalink" data-description="Paragraph"><a href="#act-1-8-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 1.8.3.1"><a href="#act-1-8-2-3" title="Copy heading and permalink for Answer 1.8.3.1">🔗</a></div>
+</div></details></div></article><article class="project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.8.4</span><span class="period">.</span>
+</h4>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical">
+<ol class="lower-alpha ol-marker-1" id="act-1-8-3-3-1-1"><li>
+<div class="para"><div class="autopermalink" data-description="Paragraph"><a href="#act-1-8-3-3-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Item a"><a href="#act-1-8-3-3-1-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-1-8-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 1.8.4.1"><a href="#act-1-8-3-3" title="Copy heading and permalink for Answer 1.8.4.1">🔗</a></div>
 </div></details></div></article><h3 class="heading hide-type" title="Subsection 2.1.2: Constant, Power, and Exponential Functions">
 <span class="codenumber">2</span><span class="space"> </span><span class="title">Computing Derivatives</span><br><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Elementary derivative rules</span><br><span class="codenumber">2.1.2</span><span class="space"> </span><span class="title">Constant, Power, and Exponential Functions</span>
 </h3>

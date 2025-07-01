@@ -217,7 +217,7 @@ eBookConfig.enable_chatcodes =  false;
 <li class="toc-item toc-section contains-active">
 <div class="toc-title-box"><a href="sec-1-5a-units.html" class="internal"><span class="codenumber">1.5</span> <span class="title">Interpreting, estimating, and using the derivative</span></a></div>
 <ul class="structural toc-item-list active">
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-4" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#SS-1-5a-units-fprime" class="internal"><span class="codenumber">1.5.1</span> <span class="title">Units of the derivative function</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-5" class="internal"><span class="codenumber">1.5.2</span> <span class="title">Toward more accurate derivative estimates</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-1-5a-units.html#sec-1-5a-units-6" class="internal"><span class="codenumber">1.5.3</span> <span class="title">Summary</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-1-5a-units.html#ez-1-5" class="internal"><span class="codenumber">1.5.4</span> <span class="title">Exercises</span></a></div></li>
@@ -753,10 +753,10 @@ eBookConfig.enable_chatcodes =  false;
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#PA-1-5a-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Preview Activity 1.5.1"><a href="#PA-1-5a" title="Copy heading and permalink for Preview Activity 1.5.1">🔗</a></div></article></section><section class="subsection" id="sec-1-5a-units-4"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Preview Activity 1.5.1"><a href="#PA-1-5a" title="Copy heading and permalink for Preview Activity 1.5.1">🔗</a></div></article></section><section class="subsection" id="SS-1-5a-units-fprime"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.1</span><span class="space"> </span><span class="title">Units of the derivative function</span>
 </h3>
-<div class="para logical" id="sec-1-5a-units-4-2">
+<div class="para logical" id="SS-1-5a-units-fprime-2">
 <div class="para">We know that the derivative of the function <span class="process-math">\(f\)</span> at a fixed value <span class="process-math">\(x\)</span> is given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -765,9 +765,9 @@ f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\text{,}
 </div>
 <div class="para">and that this value has several different interpretations.  For instance, if we set <span class="process-math">\(x = a\text{,}\)</span> <span class="process-math">\(f'(a)\)</span> is the slope of the tangent line to the graph of <span class="process-math">\(y = f(x)\)</span> at the point <span class="process-math">\((a,f(a))\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SS-1-5a-units-fprime-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-1-5a-units-4-3">
+<div class="para logical" id="SS-1-5a-units-fprime-3">
 <div class="para">We sometimes write <span class="process-math">\(\frac{df}{dx}\)</span> or <span class="process-math">\(\frac{dy}{dx}\)</span> instead of <span class="process-math">\(f'(x)\text{,}\)</span> and these alternate notations emphasize the meaning of the derivative as <em class="emphasis">the instantaneous rate of change of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\)</span></em>.  To understand the units on the derivative function, we use the fact that the instantaneous rate of change is the limit of the average rate of change.  Recall that the average rate of change of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([a,a+h]\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -782,9 +782,9 @@ AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}\text{,}
 </div>
 <div class="para">Note particularly that <span class="process-math">\(h = (a+h) - a\text{,}\)</span> so <span class="process-math">\(h\)</span> is precisely the change in <span class="process-math">\(x\text{.}\)</span>  It follows that the units on the average rate of change are: units of <span class="process-math">\(f\)</span> per unit of <span class="process-math">\(x\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-4-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SS-1-5a-units-fprime-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-1-5a-units-4-4">
+<div class="para logical" id="SS-1-5a-units-fprime-4">
 <div class="para">Thus, when we take the limit of the average rate of change as <span class="process-math">\(h\)</span> goes to zero, the derivative</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -793,7 +793,7 @@ f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}
 </div>
 <div class="para">has the same units: units of <span class="process-math">\(f\)</span> per unit of <span class="process-math">\(x\text{.}\)</span> Said slightly differently, the units on the derivative function are “units of output per unit of input” for the variables of the original function, <span class="process-math">\(f\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-4-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#SS-1-5a-units-fprime-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="Ex-1-5a-1-pop-growth"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span><span class="space"> </span><span class="title">Population growth.</span>
@@ -835,7 +835,7 @@ T'(60) = -0.0139\text{?}
 </h4>
 <div class="para" id="note-sec-1-5a-units-1">It is usually best <em class="emphasis">not</em> to simplify complicated units on a rate of change, but rather to leave their form as “(units of output) per (unit of input)”.<div class="autopermalink" data-description="Paragraph"><a href="#note-sec-1-5a-units-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Note 1.5.4"><a href="#note-sec-1-5a-units" title="Copy heading and permalink for Note 1.5.4">🔗</a></div></article><div class="para" id="sec-1-5a-units-4-8">The units on <span class="process-math">\(T'(60)\)</span> in <a href="sec-1-5a-units.html#Ex-1-5a-2-time-speed" class="xref" data-knowl="./knowl/xref/Ex-1-5a-2-time-speed.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.3: Time as a function of speed">Example 1.5.3</a> are “hours per (mile per hour)”, since the number of hours it takes to drive 50 miles depends on the speed (in miles per hour) at which we travel.  If we tried to simplify those units, we lose the meaning inherent to the context of the value of <span class="process-math">\(T'(60)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-4-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Note 1.5.4"><a href="#note-sec-1-5a-units" title="Copy heading and permalink for Note 1.5.4">🔗</a></div></article><div class="para" id="SS-1-5a-units-fprime-8">The units on <span class="process-math">\(T'(60)\)</span> in <a href="sec-1-5a-units.html#Ex-1-5a-2-time-speed" class="xref" data-knowl="./knowl/xref/Ex-1-5a-2-time-speed.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.3: Time as a function of speed">Example 1.5.3</a> are “hours per (mile per hour)”, since the number of hours it takes to drive 50 miles depends on the speed (in miles per hour) at which we travel.  If we tried to simplify those units, we lose the meaning inherent to the context of the value of <span class="process-math">\(T'(60)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#SS-1-5a-units-fprime-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-1-5a-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="period">.</span>
@@ -912,7 +912,7 @@ C'(19) = 52.1
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-1-5a-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Activity 1.5.2"><a href="#act-1-5a-1" title="Copy heading and permalink for Activity 1.5.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.5.1: Units of the derivative function"><a href="#sec-1-5a-units-4" title="Copy heading and permalink for Subsection 1.5.1: Units of the derivative function">🔗</a></div></section><section class="subsection" id="sec-1-5a-units-5"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Activity 1.5.2"><a href="#act-1-5a-1" title="Copy heading and permalink for Activity 1.5.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 1.5.1: Units of the derivative function"><a href="#SS-1-5a-units-fprime" title="Copy heading and permalink for Subsection 1.5.1: Units of the derivative function">🔗</a></div></section><section class="subsection" id="sec-1-5a-units-5"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">1.5.2</span><span class="space"> </span><span class="title">Toward more accurate derivative estimates</span>
 </h3>
 <div class="para" id="sec-1-5a-units-5-2">Recall that to estimate the value of <span class="process-math">\(f'(a)\)</span> at a given value of <span class="process-math">\(x = a\text{,}\)</span> we can compute a <em class="emphasis">difference quotient</em>  <span class="process-math">\(\frac{f(a+h)-f(a)}{h}\)</span> with a relatively small value of <span class="process-math">\(h\text{.}\)</span>  We usually use both positive and negative values of <span class="process-math">\(h\)</span> in order to account for the behavior of the function on both sides of the point of interest. In the setting where we have limited data, we introduce the notion of a <em class="emphasis">central difference</em> for estimating the value of <span class="process-math">\(f'(a)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -956,25 +956,25 @@ f'(2) \approx \frac{0.75 + 0.375}{2} = 0.5625\text{.}
 </div>
 <div class="autopermalink" data-description="Solution 1.5.5.1"><a href="#Ex-1-5-1-central-difference-2" title="Copy heading and permalink for Solution 1.5.5.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 1.5.5"><a href="#Ex-1-5-1-central-difference" title="Copy heading and permalink for Example 1.5.5">🔗</a></div></article><div class="para" id="sec-1-5a-units-5-4">When we have two function values for <span class="process-math">\(f\)</span> at equally spaced locations on opposite sides of <span class="process-math">\(x=a\text{,}\)</span> the approach of averaging the two estimates — results in the best possible estimate we can find for <span class="process-math">\(f'(a)\)</span> using the two known function values.<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 1.5.5"><a href="#Ex-1-5-1-central-difference" title="Copy heading and permalink for Example 1.5.5">🔗</a></div></article><div class="para" id="sec-1-5a-units-5-4">When we have two function values for <span class="process-math">\(f\)</span> at equally spaced locations on opposite sides of <span class="process-math">\(x=a\text{,}\)</span> the approach of averaging the two estimates — as we did in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a> — results in the best possible estimate we can find for <span class="process-math">\(f'(a)\)</span> using the two known function values.<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-1-5a-units-5-5">
-<div class="para">To see why, let’s think about how we look both “backward” and “forward” from <span class="process-math">\(x=a\text{,}\)</span> like we did for the specific data in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a>. Using a <em class="emphasis">backward difference</em>,  one estimate for <span class="process-math">\(f'(a)\)</span> is</div>
+<div class="para">To see why, let’s think about how we look both “backward” and “forward” from <span class="process-math">\(x=a\text{,}\)</span> like we did for the specific data in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a>. Using a <em class="emphasis">backward difference</em>, <span class="process-math">\(BD\text{,}\)</span>  one estimate for <span class="process-math">\(f'(a)\)</span> is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html">
 \begin{equation*}
 BD = \frac{f(a)-f(a-h)}{a - (a-h)} = \frac{f(a)-f(a-h)}{h}\text{.}
 \end{equation*}
 </div>
-<div class="para">When we instead use a <em class="emphasis">forward difference</em>,  we now get the estimate</div>
+<div class="para">When we instead use a <em class="emphasis">forward difference</em>, <span class="process-math">\(FD\text{,}\)</span>  we now get the estimate</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html">
 \begin{equation*}
 FD = \frac{f(a+h)-f(a)}{a+h - (a)} = \frac{f(a+h)-f(a)}{h}\text{.}
 \end{equation*}
 </div>
 <div class="para">Because these two estimates take into account the function’s behavior on both sides of <span class="process-math">\(x=a\text{,}\)</span> it makes sense to average them to include the most possible information for an even better estimate for the value of <span class="process-math">\(f'(a)\text{.}\)</span>  Doing so, we find that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html" id="sec-1-5a-units-5-5-14">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html" id="sec-1-5a-units-5-5-16">
 \begin{align*}
-\frac{BD + MD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} \\
+\frac{BD + FD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} \\
 \amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}\\
 \amp= \frac{f(a+h)-f(a-h)}{2h}
 \end{align*}
@@ -994,7 +994,17 @@ f'(a) \approx \frac{f(a+h) - f(a-h)}{2h}\text{.}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#def-1-5-central-difference-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 1.5.6"><a href="#def-1-5-central-difference" title="Copy heading and permalink for Definition 1.5.6">🔗</a></div></article><div class="para" id="sec-1-5a-units-5-7">The central difference can also be interpreted as a slope.  In <a href="sec-1-5a-units.html#F-1-5a-central-diff" class="xref" data-knowl="./knowl/xref/F-1-5a-central-diff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.5.7">Figure 1.5.7</a>, we see a function that passes through the three data points given in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a>: <span class="process-math">\((1,2.5)\text{,}\)</span> <span class="process-math">\((2,3.25)\text{,}\)</span> and <span class="process-math">\((3,3.265)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 1.5.6"><a href="#def-1-5-central-difference" title="Copy heading and permalink for Definition 1.5.6">🔗</a></div></article><div class="para logical" id="sec-1-5a-units-5-7">
+<div class="para">Observe that the central difference is the average rate of change of <span class="process-math">\(f\)</span> on <span class="process-math">\([a-h,a+h]\text{,}\)</span>
+</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-1-5a-central-diff.html ./knowl/xref/Ex-1-5-1-central-difference.html">
+\begin{equation*}
+AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}\text{.}
+\end{equation*}
+</div>
+<div class="para">The central difference can also be interpreted as a slope.  In <a href="sec-1-5a-units.html#F-1-5a-central-diff" class="xref" data-knowl="./knowl/xref/F-1-5a-central-diff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.5.7">Figure 1.5.7</a>, we see a function that passes through the three data points given in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a>: <span class="process-math">\((1,2.5)\text{,}\)</span> <span class="process-math">\((2,3.25)\text{,}\)</span> and <span class="process-math">\((3,3.265)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="F-1-5a-central-diff"><div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="generated/prefigure/Fig-1-5a-CD.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.7<span class="period">.</span></span><span class="space"> </span>Plot of a function <span class="process-math">\(f\)</span> that satisfies the data in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a>.<div class="autopermalink" data-description="Figure 1.5.7"><a href="#F-1-5a-central-diff" title="Copy heading and permalink for Figure 1.5.7">🔗</a></div></figcaption></figure><div class="para" id="sec-1-5a-units-5-9">The top line in <a href="sec-1-5a-units.html#F-1-5a-central-diff" class="xref" data-knowl="./knowl/xref/F-1-5a-central-diff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.5.7">Figure 1.5.7</a> is the tangent line to the curve at <span class="process-math">\((2,f(2))\text{;}\)</span> for the function shown, the slope of that tangent line turns out to be <span class="process-math">\(f'(2) = 0.5199\text{.}\)</span>  We found in <a href="sec-1-5a-units.html#Ex-1-5-1-central-difference" class="xref" data-knowl="./knowl/xref/Ex-1-5-1-central-difference.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 1.5.5">Example 1.5.5</a> that the central difference approximation is <span class="process-math">\(0.5625\text{,}\)</span> which is the slope of the secant line through the points <span class="process-math">\((1,f(1))\)</span> and <span class="process-math">\((3,f(3))\)</span> in <a href="sec-1-5a-units.html#F-1-5a-central-diff" class="xref" data-knowl="./knowl/xref/F-1-5a-central-diff.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 1.5.7">Figure 1.5.7</a>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-1-5a-units-5-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1003,7 +1013,7 @@ f'(a) \approx \frac{f(a+h) - f(a-h)}{2h}\text{.}
 <div class="para">In general, the central difference</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\frac{f(a+h) - f(a-h)}{2h}
+AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}
 \end{equation*}
 </div>
 <div class="para">is the slope of the secant line between the points <span class="process-math">\((a-h,f(a-h))\)</span> and <span class="process-math">\((a+h,f(a+h))\text{.}\)</span>
@@ -1058,7 +1068,7 @@ f'(a) \approx \frac{f(a+h) - f(a-h)}{2h}\text{.}
 <div class="autopermalink" data-description="Item d"><a href="#act-1-5a-2-1-3-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="act-1-5a-2-1-3-1-5">
-<div class="para" id="act-1-5a-2-1-3-1-5-1">Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <span class="process-math">\([0,60]\text{,}\)</span> as well as the behavior of the instantaneous rate of change of the potato’s temperature on the same time interval.<div class="autopermalink" data-description="Paragraph"><a href="#act-1-5a-2-1-3-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-1-5a-2-1-3-1-5-1">Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <span class="process-math">\([10,40]\text{,}\)</span> as well as the behavior of the instantaneous rate of change of the potato’s temperature on the same time interval.<div class="autopermalink" data-description="Paragraph"><a href="#act-1-5a-2-1-3-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item e"><a href="#act-1-5a-2-1-3-1-5" title="Copy heading and permalink for Item e">🔗</a></div>
 </li>
