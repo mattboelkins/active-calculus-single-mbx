@@ -52,13 +52,13 @@
       <ol marker="a.">
         <li>
           <p>
-            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 20</m>.  Include units on your answer.
+            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at <m>t= 20</m>.  Include units on your answer.
           </p>
         </li>
 
         <li>
           <p>
-            Use a central difference to estimate the instantaneous rate of change of the temperature of the potato at <m>t= 40</m>. Include units on your answer.
+            Use a central difference to estimate the instantaneous rate of change of the potato's temperature at <m>t= 40</m>. Include units on your answer.
           </p>
         </li>
 
@@ -71,13 +71,13 @@
 
         <li>
           <p>
-            Suppose we know that <m>F(46) = 192.5</m> and <m>F'(46) = 1.39</m>. What are the units on these two quantities? What do you expect the temperature of the potato to be when <m>t = 47</m>? when <m>t = 48</m>? Why?
+            Suppose we know that <m>F(46) = 192.5</m> and <m>F'(46) = 1.39</m>. What are the respective units on these two quantities? What do you expect the temperature of the potato to be when <m>t = 47</m>? when <m>t = 48</m>? Why?
           </p>
         </li>
 
         <li>
           <p>
-            Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <m>[0,60]</m>, as well as the behavior of the instantaneous rate of change of the temperature of the potato on the same time interval.
+            Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <m>[0,60]</m>, as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.
           </p>
         </li>
       </ol>

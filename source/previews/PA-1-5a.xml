@@ -14,13 +14,23 @@
 <!-- **********************************************************************-->
 
 <!-- this preview activity was completely rewritten in 2025 -->
-<!-- see if Chrissy will write a WeBWorK version -->
+
 
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a">
   <p>
-    The time, <m>T</m> (measured in hours), it takes to drive 50 miles along State Highway 46 depends on the constant rate, 
-    <m>s</m> (measured in miles per hour) at which you are driving.  Since distance = rate <m>\cdot</m> travel time, 
-    we know that <m>T(s) = \frac{50}{s}</m>. 
+    Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
+    <m>s</m> (measured in miles per hour) at which you are driving.  Since 
+    <me>
+      \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
+    </me>,
+    it follows that 
+    <me>
+      \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
+    </me>,
+    and thus we know that <m>T(s) = \frac{50}{s}</m>.  
+  </p>
+  <p>  
+    For instance, observe that <m>T(75) = \frac{50}{75} = \frac{2}{3}</m>, so it takes <m>\frac{2}{3}</m> of an hour to drive <m>50</m> miles at <m>75</m> miles per hour, and the point <m>(75, \frac{2}{3})</m> lies on the graph of <m>T(s)</m>.
   </p>
 
 
@@ -28,9 +38,7 @@
   <ol marker="a.">
     <li>
 	<p>
-	  Plot the graph of <m>T(s) = \frac{50}{s}</m> on the axes provided in <xref ref="Fig-PA-1-5a-axes">Figure</xref>, 
-      labeling 3 points of your choice.  
-      Write a sentence to explain why the shape of the graph makes sense.
+	  Plot the graph of <m>T(s) = \frac{50}{s}</m> on the axes provided in <xref ref="Fig-PA-1-5a-axes">Figure</xref>.  Include the point <m>(75, \frac{2}{3})</m>, and plot and label 2 additional points of your choice.  Write a sentence to explain why the shape of the graph makes sense.
 	</p>
         <figure xml:id="Fig-PA-1-5a-axes">
             <caption>Axes for plotting <m>T(s)</m>.</caption>

@@ -56,7 +56,8 @@
       In this section, we investigate several functions with contextual physical meaning and consider how the units on the independent variable, dependent variable, and the derivative function add to our understanding.
     </p>
 
-    <xi:include href="./previews/PA-1-5a.xml" />  
+    <xi:include href="./previews/PA-1-5a.xml" /> 
+    <!-- need a WeBWorK version for Runestone -->     
   </introduction>
 
   <xi:include href="./proteus/proteus-1-5.xml" />
@@ -73,12 +74,19 @@
 
     <p>
       We sometimes write <m>\frac{df}{dx}</m> or <m>\frac{dy}{dx}</m> instead of <m>f'(x)</m>,
-      and these alternate notations help us see the units and meaning of the derivative as
+      and these alternate notations emphasize the meaning of the derivative as
       <em>the instantaneous rate of change of <m>f</m> with respect to <m>x</m></em>.
           <idx><h>instantaneous rate of change</h></idx>
-      The units on the average rate of change of <m>f</m> on the interval <m>AV_{[a,a+h]}</m>,
+      To understand the units on the derivative function, we use the fact that the instantaneous rate of change is the limit of the average rate of change.  Recall that the average rate of change of <m>f</m> on the interval <m>[a,a+h]</m> is
       <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}</me>, 
-      are <q>units of <m>f</m> per unit of <m>x</m>,</q> and when we take the limit of the average rate of change as <m>h</m> goes to zero, the derivative 
+      which is the quotient 
+      <me>
+        \frac{\mbox{change in } f}{\mbox{change in } x}
+      </me>. 
+      Note particularly that <m>h = (a+h) - a</m>, so <m>h</m> is precisely the change in <m>x</m>.  It follows that the units on the average rate of change are: units of <m>f</m> per unit of <m>x</m>.  
+    </p>
+    <p>  
+      Thus, when we take the limit of the average rate of change as <m>h</m> goes to zero, the derivative 
       <me>f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me> 
       has the same units: units of <m>f</m> per unit of <m>x</m>.
 
@@ -88,12 +96,14 @@
     <example xml:id="Ex-1-5a-1-pop-growth">
 	    <title>Population growth</title>
 	    <statement>
-	      <p> Suppose that the function <m>y = P(t)</m> measures the population of a city (in thousands) at the start of year <m>t</m> (where <m>t = 0</m> corresponds to 2010 AD). What does <q><m>P'(2) = 21.37</m></q> mean in context?
+	      <p> Suppose that the function <m>y = P(t)</m> measures the population of a city (in thousands) at the start of year <m>t</m> (where <m>t = 0</m> corresponds to the year 2020). What does 
+          <me>P'(2) = 21.37</me> 
+        mean in context?
  	      </p>
       </statement>
       <solution>
         <p>
-        The value <m>P'(2) = 21.37</m> tells us that the instantaneous rate of change of the city's population with respect to time at the start of 2012 is <m>21.37</m> thousand people per year, since <m>P</m> is measured in thousands of people and <m>t</m> is measured in years.  In addition, because the derivative value tells us how fast the population is changing, we can also infer about how much the population will change:  we expect that in the year from 2012 to 2013, about <m>21,370</m> people will be added to the city's population.
+        The value <m>P'(2) = 21.37</m> tells us that the instantaneous rate of change of the city's population with respect to time at the start of 2022 is <m>21.37</m> thousand people per year, since <m>P</m> is measured in thousands of people and <m>t</m> is measured in years.  In addition, because the derivative value tells us how fast the population is changing, we can also infer about how much the population will change:  we expect that in the year from 2022 to 2023, about <m>21,370</m> people will be added to the city's population.
         </p>
       </solution>
     </example>
@@ -102,19 +112,26 @@
       <title>Time as a function of speed</title>
       <statement>
         <p> 
-        Consider the function <m>T(s) = \frac{50}{s}</m> from <xref ref="PA-1-5a">Preview Activity</xref>, whose output tells us the amount of time (in hours) it takes to drive 50 miles at <m>s</m> miles per hour.  What is the meaning of <q><m>T'(60) = -0.0139</m></q>?
+        Consider the function <m>T(s) = \frac{50}{s}</m> from <xref ref="PA-1-5a">Preview Activity</xref>, whose output tells us the amount of time (in hours) it takes to drive 50 miles at <m>s</m> miles per hour.  What is the meaning of 
+        <me>
+          T'(60) = -0.0139
+        </me>?
         </p>
       </statement>
       <solution>
         <p>
-          The value <m>T'(60) = -0.0139</m> means that the instantaneous rate of change of <m>T</m> at the instant <m>s = 60</m> is <m>-0.0139</m> hours per (mile per hour).  This also tells us about how much the function value will change if we change the speed at which we drive:  if we are driving at a speed of <m>60</m> miles per hour and we increase our speed by one mile per hour, we expect the time it takes us to drive 50 miles to drop by about <m>0.0139</m> hours.  Similarly, if we increase our speed by two miles per hour, 
+          The value <m>T'(60) = -0.0139</m> means that the instantaneous rate of change of travel time, <m>T</m>, when <m>s = 60</m> is <m>-0.0139</m> hours per (mile per hour).  This also tells us about how much the function value will change if we change the speed at which we drive:  if we are driving at a speed of <m>60</m> miles per hour and we increase our speed by one mile per hour, we expect the time it takes us to drive 50 miles to drop by about <m>0.0139</m> hours.  Similarly, if we increase our speed by two miles per hour, 
           we'd expect the time it takes us to drive 50 miles to drop by about <m>2 \cdot 0.0139 = 0.0278</m> hours.
         </p>
       </solution>
         </example>
-
+      <note xml:id="note-sec-1-5a-units">
         <p>
-          Note particularly that the units on <m>T'(60)</m> in <xref ref="Ex-1-5a-2-time-speed">Example</xref> are <q>hours per (mile per hour)</q>, since the number of hours it takes to drive 50 miles depends on the speed (in miles per hour) at which we travel.  It is usually best <em>not</em> to simplify complicated units on a rate of change, but rather to leave their form as <q>(units of output) per (unit of input)</q>.
+          It is usually best <em>not</em> to simplify complicated units on a rate of change, but rather to leave their form as <q>(units of output) per (unit of input)</q>.
+        </p>
+      </note>
+        <p>
+          The units on <m>T'(60)</m> in <xref ref="Ex-1-5a-2-time-speed">Example</xref> are <q>hours per (mile per hour)</q>, since the number of hours it takes to drive 50 miles depends on the speed (in miles per hour) at which we travel.  If we tried to simplify those units, we lose the meaning inherent to the context of the value of <m>T'(60)</m>.
         </p>
    <xi:include href="./activities/act-1-5a-1.xml" />  
   </subsection>
@@ -123,10 +140,10 @@
     <title>Toward more accurate derivative estimates</title>
     <p>
       Recall that to estimate the value of <m>f'(a)</m> at a given value of <m>x = a</m>,
-      we calculate a <em>difference quotient</em>
+      we can compute a <em>difference quotient</em>
           <idx><h>difference quotient</h></idx>
-      <m>\frac{f(a+h)-f(a)}{h}</m> with a relatively small value of <m>h</m>.  We usually use both positive and negative values of <m>h</m> in order to account for the behavior of the function on both sides of the point of interest. To that end, we introduce the notion of a
-      <em>central difference</em> and its role in estimating derivatives.
+      <m>\frac{f(a+h)-f(a)}{h}</m> with a relatively small value of <m>h</m>.  We usually use both positive and negative values of <m>h</m> in order to account for the behavior of the function on both sides of the point of interest. In the setting where we have limited data, we introduce the notion of a
+      <em>central difference</em> for estimating the value of <m>f'(a)</m>.
     </p>
 
     <example xml:id="Ex-1-5-1-central-difference">
@@ -137,7 +154,10 @@
       </statement>
       <solution>
         <p>
-          We know that <m>f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}</m>. But since we don't have a graph or a formula for the function, we can neither sketch a tangent line nor evaluate the limit algebraically. We can't even use smaller and smaller values of <m>h</m> to estimate the limit. Instead, we have just two choices: using <m>h = -1</m> or <m>h = 1</m>, depending on which point we pair with <m>(2,3.25)</m>.
+          We know that <m>f'(2) = \lim_{h \to 0} \frac{f(2+h) - f(2)}{h}</m>. But since we don't have a graph or a formula for the function, we can neither sketch a tangent line nor evaluate the limit algebraically, nor can we use smaller and smaller values of <m>h</m> to estimate the limit. 
+        </p>
+        <p>  
+          Instead, we have just two choices: using <m>h = -1</m> or <m>h = 1</m>, depending on which point we pair with <m>(2,3.25)</m>.
         </p>
 
         <p>
@@ -164,48 +184,87 @@
     </example>
 
     <p>
-      The intuitive approach to average the two estimates found in <xref ref="Ex-1-5-1-central-difference">Example</xref> is in fact the best possible estimate we can find for the derivative value when we have two function values for <m>f</m> on opposite sides of the point of interest where the <m>x</m>-values of are equidistant on either side.
+      When we have two function values for <m>f</m> at equally spaced locations on opposite sides of <m>x=a</m>, the approach of averaging the two estimates <mdash> as we did in <xref ref="Ex-1-5-1-central-difference">Example</xref> </mdash> results in the best possible estimate we can find for <m>f'(a)</m> using the two known function values.
     </p>
 
-    <figure xml:id="F-1-5-Ex1">
-      <caption>At left, the graph of <m>y = f(x)</m> along with the secant line through <m>(1,2.5)</m> and <m>(2,3.25)</m>, the secant line through <m>(2, 3.25)</m> and <m>(3,3.625)</m>, as well as the tangent line.  At right, the same graph along with the secant line through <m>(1,2.5)</m> and <m>(3,3.625)</m>, plus the tangent line.</caption>
-      <image width="100%" source="images/1_5_Ex1" />
-    </figure>
-
     <p>
-      To see why, we think about the diagram in <xref ref="F-1-5-Ex1">Figure</xref>, for which the function shown satisfies the given conditions in <xref ref="Ex-1-5-1-central-difference">Example</xref>.
-      On the left, we see the two secant lines with slopes that come from computing the
-      <em>backward difference</em>
+      To see why, let's think about how we look both <q>backward</q> and <q>forward</q> from <m>x=a</m>, like we did for the specific data in <xref ref="Ex-1-5-1-central-difference">Example</xref>.
+      Using a
+      <em>backward difference</em>,
           <idx><h>backward difference</h></idx>
-      <m>\frac{f(1)-f(2)}{1-2} = 0.75</m> and the
-      <em>forward difference</em>
-          <idx><h>forward difference</h></idx>
-      <m>\frac{f(3)-f(2)}{3-2} = 0.375</m>.
-      Note how the first value overestimates the slope of the tangent line at <m>(2,f(2))</m>,
-      while the second value underestimates <m>f'(2)</m>.  On the right, we see the secant line whose slope is given by the
-      <em>central difference</em>
-          <idx><h>central difference</h></idx>
+      one estimate for <m>f'(a)</m> is     
       <me>
-        \frac{f(3)-f(1)}{3-1} = \frac{3.625-2.5}{2} = \frac{1.125}{2} = 0.5625
+        BD = \frac{f(a)-f(a-h)}{a - (a-h)} = \frac{f(a)-f(a-h)}{h}
+      </me>. 
+      When we instead use a
+      <em>forward difference</em>,
+          <idx><h>forward difference</h></idx>
+      we now get the estimate
+      <me>
+        FD = \frac{f(a+h)-f(a)}{a+h - (a)} = \frac{f(a+h)-f(a)}{h}
       </me>.
-    </p>
-
-    <p>
-      Note that this central difference has the same value as the average of the forward and backward differences (and it is straightforward to explain why this always holds). The central difference yields a very good approximation to the derivative's value, because it yields a line closer to being parallel to the tangent line.
+      Because these two estimates take into account the function's behavior on both sides of <m>x=a</m>, it makes sense to average them to include the most possible information for an even better estimate for the value of <m>f'(a)</m>.  Doing so, we find that
+      <md>
+        <mrow> \frac{BD + MD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} </mrow>
+        <mrow> \amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}</mrow>
+        <mrow> \amp= \frac{f(a+h)-f(a-h)}{2h}</mrow>
+      </md>
+      We naturally call the resulting estimate a <em>central difference</em>.
     </p>
 
     <definition xml:id="def-1-5-central-difference">
+      <idx><h>central difference</h></idx>
       <statement>
         <p>
-          The <term>central difference approximation</term> of the value of the first derivative is given by
+          For a given value of <m>h</m>, the <term>central difference approximation</term> of <m>f'(a)</m> is given by
           <me>
             f'(a) \approx \frac{f(a+h) - f(a-h)}{2h}
           </me>.
-          The quantity <m>\frac{f(a+h) - f(a-h)}{2h}</m> measures the slope of the secant line to <m>y = f(x)</m> through the points
-          <m>(a-h, f(a-h))</m> and <m>(a+h, f(a+h))</m>.
         </p>
       </statement> 
     </definition>   
+
+    <p>
+      The central difference can also be interpreted as a slope.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
+    </p>
+
+    <figure xml:id="F-1-5a-central-diff">
+      <caption>Plot of a function <m>f</m> that satisfies the data in <xref ref="Ex-1-5-1-central-difference">Example</xref>.</caption>
+        <image width="60%">
+          <prefigure label="Fig-1-5a-CD" xmlns="https://prefigure.org">
+            <diagram dimensions="(300,300)" margins="5">
+              <definition>f(x) = 4-3*(0.5)^x</definition>
+              <definition>a = 1</definition>
+              <definition>b = 2</definition>
+              <definition>c = 3</definition>
+              <definition>L(x) = f(a) + (f(c)-f(a))/(c-a)*(x-a) </definition>  
+              <coordinates bbox="(-0.5,-0.5,4,4)">
+                <axes xlabel="x" ylabel="y"/>
+                <graph function="f"/>
+                <graph function="L" stroke="green"/>    
+                <tangent-line function="f" point="b"/>
+                <point p="(a,f(a))" alignment="ne">
+                </point>
+                <point p="(b,f(b))" alignment="ne">
+                </point>
+                <point p="(c,f(c))" alignment="ne">
+                </point>    
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+    </figure> 
+    
+    <p>
+      The top line in <xref ref="F-1-5a-central-diff">Figure</xref> is the tangent line to the curve at <m>(2,f(2))</m>; for the function shown, the slope of that tangent line turns out to be <m>f'(2) = 0.5199</m>.  We found in <xref ref="Ex-1-5-1-central-difference">Example</xref> that the central difference approximation is <m>0.5625</m>, which is the slope of the secant line through the points <m>(1,f(1))</m> and <m>(3,f(3))</m> in <xref ref="F-1-5a-central-diff">Figure</xref>.  
+    </p>
+    <p>  
+      In general, the central difference 
+      <me>
+        \frac{f(a+h) - f(a-h)}{2h}
+      </me>
+      is the slope of the secant line between the points <m>(a-h,f(a-h))</m> and <m>(a+h,f(a+h))</m>.
+    </p>
 
     <xi:include href="./activities/act-1-5a-2.xml" />
 
