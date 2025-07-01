@@ -150,90 +150,46 @@
       </p>
       <table permid="NuP">
         <title>Temperature data for the potato.</title>
-        <tabular bottom="minor" top="minor" permid="tBY">
-          <row bottom="medium">
-            <cell>
-              <m>t</m>
-            </cell>
-            <cell>
-              <m>F(t)</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>0</m>
-            </cell>
-            <cell>
-              <m>70</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>15</m>
-            </cell>
-            <cell>
-              <m>180.5</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>30</m>
-            </cell>
-            <cell>
-              <m>251</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>45</m>
-            </cell>
-            <cell>
-              <m>296</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>60</m>
-            </cell>
-            <cell>
-              <m>324.5</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>75</m>
-            </cell>
-            <cell>
-              <m>342.8</m>
-            </cell>
-          </row>
-          <row>
-            <cell>
-              <m>90</m>
-            </cell>
-            <cell>
-              <m>354.5</m>
-            </cell>
-          </row>
-        </tabular>
+      <tabular bottom="minor" top="minor">
+        <row bottom="medium">
+          <cell><m>t</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>10</m></cell>
+          <cell><m>20</m></cell>
+          <cell><m>30</m></cell>
+          <cell><m>40</m></cell>
+          <cell><m>50</m></cell>
+          <cell><m>60</m></cell>
+        </row>
+        <row>
+          <cell><m>F(t)</m></cell>
+          <cell><m>65</m></cell>
+          <cell><m>94.7</m></cell>
+          <cell><m>141.7</m></cell>
+          <cell><m>167.6</m></cell>
+          <cell><m>182.4</m></cell>
+          <cell><m>197.9</m></cell>
+          <cell><m>209.3</m></cell>
+        </row>
+      </tabular>
       </table>
       <p permid="IKW">
         <ol marker="a." permid="ryq">
           <li permid="FBV">
             <p permid="Xka">
-              Use a central difference to estimate <m>F'(60)</m>.
+              Use a central difference to estimate <m>F'(30)</m>.
               Use this estimate as needed in subsequent questions.
             </p>
           </li>
           <li permid="lJe">
             <p permid="Drj">
               Find the local linearization <m>y = L(t)</m> to the function
-              <m>y = F(t)</m> at the point where <m>a = 60</m>.
+              <m>y = F(t)</m> at the point where <m>a = 30</m>.
             </p>
           </li>
           <li permid="RQn">
             <p permid="jys">
-              Determine an estimate for <m>F(63)</m> by employing the local linearization.
+              Determine an estimate for <m>F(33)</m> by employing the local linearization.
             </p>
           </li>
           <li permid="xXw">
@@ -251,19 +207,19 @@
           <li permid="eeF">
             <p permid="vMK">
               <m>
-              F'(60)\approx 1.56
+              F'(30)\approx 2.065
               </m>
               degrees per minute.
             </p>
           </li>
           <li permid="KlO">
             <p permid="bTT">
-              <m>L(t) \approx 1.56(t-60)+324.5</m>.
+              <m>L(t) \approx 2.065(t-30) + 167.6</m>.
             </p>
           </li>
           <li permid="qsX">
             <p permid="Ibc">
-              <m>F(63)\approx L(63)\approx = 329.18</m> degrees F.
+              <m>F(33) \approx L(63) = 173.795</m> degrees F.
             </p>
           </li>
           <li permid="WAg">
@@ -279,30 +235,30 @@
         <ol marker="a." permid="usW">
           <li permid="CHp">
             <p permid="Upu">
-              The central difference approximation with <m>h=15</m> gives
+              The central difference approximation with <m>h=10</m> gives
               <me permid="Bgx">
-                F'(60)\approx \frac{F(75)-F(45)}{30}=\frac{342.8-296}{30}=1.56
+                F'(30) \approx \frac{F(40)-F(20)}{20} = \frac{182.4-141.1}{20} = 2.065
               </me>
               degrees per minute.
             </p>
           </li>
           <li permid="iOy">
             <p permid="AwD">
-              The local linearization at <m>a=60</m> is <m>L(t)=F'(60)(t-60)+F(60)\approx 1.56(t-60)+324.5</m>.
+              The local linearization at <m>a=30</m> is <m>L(t) = F'(30)(t-30)+F(30) = L(t) \approx 2.065(t-30) + 167.6</m>.
             </p>
           </li>
           <li permid="OVH">
             <p permid="gDM">
               Using the linearization from (b),
-              <m>F(63)\approx L(63)\approx 1.56(3)+324.5=329.18</m> degrees F.
+              <m>F(33) \approx L(33) \approx 2.065(3) + 167.6 = 173.795</m> degrees F.
             </p>
           </li>
           <li permid="vcQ">
             <p permid="MKV">
-              Since the values of <m>F(t)</m> given in the table appear to be increasing at a decreasing rate,
-              it follows that the graph of <m>F</m> is concave down.
-              This implies that near <m>t=60</m>,
-              the graph of <m>L(t)</m> (the tangent line to <m>F</m> at <m>t=60)</m> lies above the graph of <m>F</m>.
+              Since the values of <m>F(t)</m> given in the table appear to be increasing at a decreasing rate near <m>t = 30</m>,
+              it follows that the graph of <m>F</m> is concave down near <m>t = 30</m>.
+              This implies that  
+              the graph of <m>L(t)</m> (the tangent line to <m>F</m> at <m>t = 30)</m> lies above the graph of <m>F</m>.
               Therefore, the approximation given in part (c) is probably an overestimate.
             </p>
           </li>

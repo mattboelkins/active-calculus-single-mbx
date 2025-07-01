@@ -77,7 +77,7 @@
 
         <li>
           <p>
-            Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <m>[0,60]</m>, as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.
+            Write a couple of careful sentences that describe the behavior of the temperature of the potato on the time interval <m>[10,40]</m>, as well as the behavior of the instantaneous rate of change of the potato's temperature on the same time interval.
           </p>
         </li>
       </ol>
@@ -162,7 +162,7 @@
 
         <li>
           <p>
-            We might say that overall <q>the temperature of the potato is increasing,
+            We might say that on the interval <m>[10,40]</m> <q>the temperature of the potato is increasing,
             but at a decreasing rate.</q>
           </p>
         </li>
@@ -209,7 +209,7 @@
 
         <li>
           <p>
-            Throughout the time interval <m>[0,60]</m>, the temperature <m>F</m> of the potato is increasing.  But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of <m>F</m> continue to get larger as time progresses, the values of <m>F'</m> are generally getting smaller (while still remaining positive).  We thus might say that overall <q>the temperature of the potato is increasing, but at a decreasing rate.</q>
+            Throughout the time interval <m>[10,40]</m>, the temperature <m>F</m> of the potato is increasing.  But as time goes on, the rate at which the temperature is rising appears to be decreasing. That is, while the values of <m>F</m> continue to get larger as time progresses, the values of <m>F'</m> seem to be getting smaller (while still remaining positive).  We thus might say that on the interval <m>[10,40]</m> <q>the temperature of the potato is increasing, but at a decreasing rate.</q>
           </p>
         </li>
       </ol>

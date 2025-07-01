@@ -62,7 +62,7 @@
 
   <xi:include href="./proteus/proteus-1-5.xml" />
 
-  <subsection>
+  <subsection xml:id="SS-1-5a-units-fprime">
     <title>Units of the derivative function</title>
     <p>
       We know that the derivative of the function <m>f</m> at a fixed value <m>x</m> is given by
@@ -184,20 +184,20 @@
     </example>
 
     <p>
-      When we have two function values for <m>f</m> at equally spaced locations on opposite sides of <m>x=a</m>, the approach of averaging the two estimates <mdash> as we did in <xref ref="Ex-1-5-1-central-difference">Example</xref> </mdash> results in the best possible estimate we can find for <m>f'(a)</m> using the two known function values.
+      When we have two function values for <m>f</m> at equally spaced locations on opposite sides of <m>x=a</m>, the approach of averaging the two estimates <mdash/> as we did in <xref ref="Ex-1-5-1-central-difference">Example</xref> <mdash/> results in the best possible estimate we can find for <m>f'(a)</m> using the two known function values.
     </p>
 
     <p>
       To see why, let's think about how we look both <q>backward</q> and <q>forward</q> from <m>x=a</m>, like we did for the specific data in <xref ref="Ex-1-5-1-central-difference">Example</xref>.
       Using a
-      <em>backward difference</em>,
+      <em>backward difference</em>, <m>BD</m>,
           <idx><h>backward difference</h></idx>
       one estimate for <m>f'(a)</m> is     
       <me>
         BD = \frac{f(a)-f(a-h)}{a - (a-h)} = \frac{f(a)-f(a-h)}{h}
       </me>. 
       When we instead use a
-      <em>forward difference</em>,
+      <em>forward difference</em>, <m>FD</m>,
           <idx><h>forward difference</h></idx>
       we now get the estimate
       <me>
@@ -205,7 +205,7 @@
       </me>.
       Because these two estimates take into account the function's behavior on both sides of <m>x=a</m>, it makes sense to average them to include the most possible information for an even better estimate for the value of <m>f'(a)</m>.  Doing so, we find that
       <md>
-        <mrow> \frac{BD + MD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} </mrow>
+        <mrow> \frac{BD + FD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} </mrow>
         <mrow> \amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}</mrow>
         <mrow> \amp= \frac{f(a+h)-f(a-h)}{2h}</mrow>
       </md>
@@ -225,7 +225,10 @@
     </definition>   
 
     <p>
-      The central difference can also be interpreted as a slope.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
+      Observe that the central difference is the average rate of change of <m>f</m> on <m>[a-h,a+h]</m>, 
+      <me>
+        AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}
+      </me>. The central difference can also be interpreted as a slope.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
     </p>
 
     <figure xml:id="F-1-5a-central-diff">
@@ -261,7 +264,7 @@
     <p>  
       In general, the central difference 
       <me>
-        \frac{f(a+h) - f(a-h)}{2h}
+        AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}
       </me>
       is the slope of the secant line between the points <m>(a-h,f(a-h))</m> and <m>(a+h,f(a+h))</m>.
     </p>

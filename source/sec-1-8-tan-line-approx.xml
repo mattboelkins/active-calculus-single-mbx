@@ -244,16 +244,14 @@
 
     <p permid="wOD">
       The idea that a differentiable function looks linear and can be well-approximated by a linear function is an important one that finds wide application in calculus.
-      For example,
-      by approximating a function with its local linearization,
+      For example, by approximating a function with its local linearization,
       it is possible to develop an effective algorithm to estimate the zeroes of a function.
       Local linearity also helps us to make further sense of certain challenging limits.
       For instance, we have seen that the limit
       <me permid="tTX">
         \lim_{x \to 0} \frac{\sin(x)}{x}
       </me>
-      is indeterminate,
-      because both its numerator and denominator tend to 0.
+      is indeterminate, because both its numerator and denominator tend to 0.
       While there is no algebra that we can do to simplify <m>\frac{\sin(x)}{x}</m>,
       it is straightforward to show that the linearization of
       <m>f(x) = \sin(x)</m> at the point <m>(0,0)</m> is given by <m>L(x) = x</m>.
@@ -267,6 +265,13 @@
         \lim_{x \to 0} \frac{\sin(x)}{x} = 1
       </me>.
     </p>
+
+    <p>
+      Another important question <mdash>one that we study in depth in second semester calculus</mdash> regards how accurate the tangent line approximation remains as we move away from the point of tangency.  We explore some related ideas in the next activity.
+    </p>
+  
+      <xi:include href="./activities/act-1-8-3.xml" />  
+
   </subsection>
 
   <subsection permid="XBZ">

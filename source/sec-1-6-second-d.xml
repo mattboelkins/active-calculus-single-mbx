@@ -114,18 +114,18 @@
       Here we define these terms more formally.
     </p>
 
-    <definition permid="UOx">
+    <definition xml:id="D-1-6-incr-decr" permid="UOx">
       <statement>
         <p permid="fXw">
           Given a function <m>f(x)</m> defined on the interval <m>(a,b)</m>,
           we say that <term><m>f</m> is increasing on <m>(a,b)</m></term>
-          provided that for all <m>x</m>,
-          <m>y</m> in the interval <m>(a,b)</m>,
-          if <m>x \lt y</m>, then <m>f(x) \lt f(y)</m>.
+          provided that for all <m>x_1</m>,
+          <m>x_2</m> in the interval <m>(a,b)</m>,
+          if <m>x_1 \lt x_2</m>, then <m>f(x_1) \lt f(x_2)</m>.
           Similarly, we say that <term><m>f</m> is decreasing on <m>(a,b)</m></term>
-          provided that for all <m>x</m>,
-          <m>y</m> in the interval <m>(a,b)</m>,
-          if <m>x \lt y</m>, then <m>f(x) \gt f(y)</m>.
+          provided that for all <m>x_1</m>,
+          <m>x_2</m> in the interval <m>(a,b)</m>,
+          if <m>x_1 \lt x_2</m>, then <m>f(x_1) \gt f(x_2)</m>.
         </p>
       </statement>
     </definition>
@@ -263,7 +263,7 @@
       describes how numbers lie on a number line:
       <m>x \gt y</m> provided that <m>x</m> lies to the right of <m>y</m>.
       So of course, <m>-100</m> is less than <m>-2</m>.
-      Informally, it might be helpful to say that
+      Informally, it can be helpful to say that
       <q><m>-100</m> is more negative than <m>-2</m>.</q>
       When a function's values are negative,
       and those values get more negative as the input increases,
@@ -371,6 +371,16 @@
 
     <xi:include href="./activities/act-1-6-2.xml" />
 
+  <p>
+    In <xref ref="SS-1-5a-units-fprime">Subsection</xref>, we learned that for a given function <m>f(x)</m>, the units on the first derivative function, <m>f'(x)</m> are <q>units of <m>f</m> per unit of <m>x</m></q>.  Because <m>f''(x) = [f'(x)]'</m>, it follows that the units on <m>f''(x)</m> are <q>units of <m>f'</m> per unit of <m>x</m></q>.  In other words, the units on <m>f''(x)</m> are:
+    <blockquote>
+      <p>
+        (units of <m>f</m> per unit of <m>x</m>) per unit of <m>x</m>.
+      </p>
+    </blockquote>
+    As we observed in <xref ref="note-sec-1-5a-units">Note</xref>, it's best <em>not</em> to simplify the units.  For example, in <xref ref="act-1-6-1">Activity</xref>, where <m>s(t)</m> represents the position of a car driving on a straight road, with <m>t</m> measured in minutes and <m>s(t)</m> in thousands of feet, the units on <m>s'(t)</m> are thousands of feet per minute, which represents the car's instantaneous velocity at time <m>t</m>.  In addition, the units on <m>s''(t)</m> are thousands of feet per minute per minute, which represents the car's acceleration at time <m>t</m>.  Notice that a <q>square minute</q> is not a meaningful quantity when thinking about motion, so it's much better to use <q>per minute per minute</q>.  A similar observation holds from <xref ref="act-1-6-2">Activity</xref>, where <m>F(t)</m> represents the temperature of a potato in degrees Fahrenheit at time <m>t</m> in minutes; in that setting, the units on <m>F''(t)</m> are <q>degrees Fahrenheit per minute per minute</q>, as the second derivative measures the instantaneous rate of change of the first derivative.
+  </p>
+
     <xi:include href="./activities/act-1-6-3.xml" />
   </subsection>
 
@@ -399,7 +409,9 @@
             A differentiable function is concave up whenever its first derivative is increasing
             (or equivalently whenever its second derivative is positive),
             and concave down whenever its first derivative is decreasing
-            (or equivalently whenever its second derivative is negative).
+            (or equivalently whenever its second derivative is negative).  When a differentiable function is concave up on an interval,
+            its tangent line always lies below the curve; when a differentiable function is concave down on an interval,
+            its tangent line always lies above the curve.
             Examples of functions that are everywhere concave up are <m>y = x^2</m> and <m>y = e^x</m>;
             examples of functions that are everywhere concave down are <m>y = -x^2</m> and <m>y = -e^x</m>.
           </p>
@@ -409,7 +421,8 @@
           <p permid="zQn">
             The units on the second derivative are
             <q>units of output per unit of input per unit of input.</q>
-            They tell us how the value of the derivative function is changing in response to changes in the input.
+            Is is best not to try to simplify these units, as the second derivative's units and value 
+            tell us how the value of the derivative function is changing in response to changes in the input.
             In other words,
             the second derivative tells us the rate of change of the rate of change of the original function.
           </p>
