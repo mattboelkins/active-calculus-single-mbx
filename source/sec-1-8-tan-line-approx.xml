@@ -267,7 +267,7 @@
     </p>
 
     <p>
-      Another important question <mdash>one that we study in depth in second semester calculus</mdash> regards how accurate the tangent line approximation remains as we move away from the point of tangency.  We explore some related ideas in the next activity.
+      Another important question <mdash/> one that we study in depth in second semester calculus <mdash/> regards how accurate the tangent line approximation remains as we move away from the point of tangency.  We explore some related ideas in the next activity.
     </p>
   
       <xi:include href="./activities/act-1-8-3.xml" />  
