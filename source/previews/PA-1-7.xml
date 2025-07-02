@@ -16,9 +16,11 @@
   <p permid="HLu">
     A function <m>f</m> is given by the graph in <xref ref="F-1-7-PA1">Figure</xref>.
     Use the graph to answer each of the following questions.
-    Note: to the right of <m>x = 2</m>,
+  </p>
+  <p>  
+    <term>Note</term>: to the right of <m>x = 2</m>,
     the graph of <m>f</m> is exhibiting infinite oscillatory behavior similar to the function
-    <m>\sin(\frac{\pi}{x})</m> that we encountered in the key example early in <xref ref="sec-1-2-lim">Section</xref>.  Assume that <m>f(2) = -2.5</m>.
+    <m>\sin(\frac{\pi}{x})</m> that we encountered in part (b) of <xref ref="Ex-1-2-Limits">Example</xref>.  Assume that <m>f(2) = -2.5</m>.
   </p>
 
   <p permid="nSD">
@@ -27,7 +29,7 @@
         <p permid="PpT">
           For each of the values <m>a = -3, -2, -1, 0, 1, 2, 3</m>,
           determine whether or not <m>\lim_{x \to a} f(x)</m> exists.
-          If the function has a limit <m>L</m> at a given point,
+          If the function has a limit <m>L</m> at a given <m>x</m>-value,
           state the value of the limit using the notation <m>\lim_{x \to a} f(x) = L</m>.
           If the function does not have a limit at a given point,
           write a sentence to explain why.
@@ -37,7 +39,7 @@
       <li permid="DbB">
         <p permid="vxc">
           For each of the values of <m>a</m> from part (a) where <m>f</m> has a limit,
-          determine the value of <m>f(a)</m> at each such point.
+          determine the value of <m>f(a)</m> at each such point, or explain why <m>f(a)</m> is undefined.
           In addition, for each such <m>a</m> value,
           does <m>f(a)</m> have the same value as <m>\lim_{x \to a} f(x)</m>?
         </p>

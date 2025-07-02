@@ -269,12 +269,14 @@
               Determine <m>C'(0)</m> and <m>C'(3)</m>.
             </p>
           </li>
+<!-- 
           <li permid="dvl">
             <p permid="MbB">
               Find a value of <m>x</m> for which <m>C'(x)</m> does not exist.
               Explain your thinking.
             </p>
-          </li>
+          </li>           
+-->        
           <li permid="JCu">
             <p permid="siK">
               Let <m>Y(x) = q(q(x))</m> and <m>Z(x) = q(p(x))</m>.
@@ -292,6 +294,7 @@
               <m>C'(0) = 0</m> and <m>C'(3) = -\frac{1}{2}</m>.
             </p>
           </li>
+<!-- as Mike Shulman pointed out in Issue #257, this reasoning isn't valid; it seemed easier to just omit the question
           <li permid="VQM">
             <p permid="Exc">
               Consider <m>C'(1)</m>.
@@ -301,6 +304,7 @@
               This means that <m>C'(1)</m> does not exist either.
             </p>
           </li>
+-->
           <li permid="BXV">
             <p permid="kEl">
               Since <m>Y(x) = q(q(x))</m>,
@@ -333,6 +337,8 @@
               so <m>C'(3) = p'(0) \cdot q'(3) = \frac{1}{2} \cdot (-1) = -\frac{1}{2}</m>.
             </p>
           </li>
+          
+<!-- as Mike Shulman pointed out in Issue #257, this reasoning isn't valid; it seemed easier to just omit the question
           <li permid="Omn">
             <p permid="wSD">
               Consider <m>C'(1)</m>.
@@ -341,7 +347,9 @@
               but we know that <m>q'(1)</m> does not exist since <m>q</m> has a corner point at <m>x = 1</m>.
               This means that <m>C'(1)</m> does not exist either.
             </p>
-          </li>
+          </li>          
+-->
+
           <li permid="utw">
             <p permid="cZM">
               Since <m>Y(x) = q(q(x))</m>,
