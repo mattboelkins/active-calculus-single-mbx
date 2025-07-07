@@ -78,12 +78,16 @@
       <em>the instantaneous rate of change of <m>f</m> with respect to <m>x</m></em>.
           <idx><h>instantaneous rate of change</h></idx>
       To understand the units on the derivative function, we use the fact that the instantaneous rate of change is the limit of the average rate of change.  Recall that the average rate of change of <m>f</m> on the interval <m>[a,a+h]</m> is
-      <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}</me>, 
+      <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{(a+h) - a}</me>, 
       which is the quotient 
       <me>
         \frac{\mbox{change in } f}{\mbox{change in } x}
       </me>. 
-      Note particularly that <m>h = (a+h) - a</m>, so <m>h</m> is precisely the change in <m>x</m>.  It follows that the units on the average rate of change are: units of <m>f</m> per unit of <m>x</m>.  
+      It follows that the units on the average rate of change are: 
+      <blockquote>
+        units of <m>f</m> per unit of <m>x</m>.
+      </blockquote>  
+      Note that since <m>(a+h) - a = h</m>, we often write <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}</me>.    
     </p>
     <p>  
       Thus, when we take the limit of the average rate of change as <m>h</m> goes to zero, the derivative 
@@ -201,13 +205,14 @@
           <idx><h>forward difference</h></idx>
       we now get the estimate
       <me>
-        FD = \frac{f(a+h)-f(a)}{a+h - (a)} = \frac{f(a+h)-f(a)}{h}
+        FD = \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}
       </me>.
       Because these two estimates take into account the function's behavior on both sides of <m>x=a</m>, it makes sense to average them to include the most possible information for an even better estimate for the value of <m>f'(a)</m>.  Doing so, we find that
       <md>
-        <mrow> \frac{BD + FD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} </mrow>
-        <mrow> \amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}</mrow>
-        <mrow> \amp= \frac{f(a+h)-f(a-h)}{2h}</mrow>
+        <mrow> \frac{BD + FD}{2} \amp= \frac{1}{2}(BD + FD) </mrow>
+        <mrow>                   \amp= \frac{1}{2} \left(\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h} \right) </mrow>
+        <mrow>                   \amp= \frac{1}{2} \left(\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h} \right) </mrow>
+        <mrow>                   \amp= \frac{f(a+h)-f(a-h)}{2h}</mrow>
       </md>
       We naturally call the resulting estimate a <em>central difference</em>.
     </p>

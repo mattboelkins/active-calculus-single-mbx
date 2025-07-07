@@ -132,16 +132,14 @@
       <idx><h>L'Hôpital's rule</h></idx>
 
       <p permid="uxa">
-        Let <m>f</m> and <m>g</m> be differentiable at <m>x=a</m>,
+        Let <m>f</m> and <m>g</m> be differentiable on an open interval that includes <m>x=a</m>,
         and suppose that <m>f(a) = g(a) = 0</m> and that <m>g'(a) \neq 0</m>.
         Then <m>\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{f'(a)}{g'(a)}</m>.
       </p>
     </assemblage>
 
     <p permid="aEj">
-      In practice,
-      we typically work with a slightly more general version of L'Hôpital's Rule,
-      which states that (under the identical assumptions as the boxed rule above and the extra assumption that <m>g'</m> is continuous at <m>x=a</m>)
+      In practice, we typically work with a slightly more general version of L'Hôpital's Rule, which states that (under the identical assumptions as the boxed rule above and the extra assumption that <m>g'</m> is continuous at <m>x=a</m>)
       <me permid="bod">
         \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
       </me>,
