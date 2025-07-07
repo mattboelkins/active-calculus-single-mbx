@@ -731,7 +731,7 @@ eBookConfig.enable_chatcodes =  false;
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">1.5.1<span class="period">.</span></span><span class="space"> </span>Axes for plotting <span class="process-math">\(T(s)\text{.}\)</span><div class="autopermalink" data-description="Figure 1.5.1"><a href="#Fig-PA-1-5a-axes" title="Copy heading and permalink for Figure 1.5.1">🔗</a></div></figcaption></figure><div class="autopermalink" data-description="Item a"><a href="#PA-1-5a-3-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="PA-1-5a-3-1-2">
-<div class="para" id="PA-1-5a-3-1-2-1">What is the value of <span class="process-math">\(T(60)\text{?}\)</span> Include units on your answer. Write a sentence to explain the meaning of this value in context?<div class="autopermalink" data-description="Paragraph"><a href="#PA-1-5a-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PA-1-5a-3-1-2-1">What is the value of <span class="process-math">\(T(60)\text{?}\)</span> Include units on your answer. Write a sentence to explain the meaning of this value in context.<div class="autopermalink" data-description="Paragraph"><a href="#PA-1-5a-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item b"><a href="#PA-1-5a-3-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
 </li>
@@ -771,7 +771,7 @@ f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}\text{,}
 <div class="para">We sometimes write <span class="process-math">\(\frac{df}{dx}\)</span> or <span class="process-math">\(\frac{dy}{dx}\)</span> instead of <span class="process-math">\(f'(x)\text{,}\)</span> and these alternate notations emphasize the meaning of the derivative as <em class="emphasis">the instantaneous rate of change of <span class="process-math">\(f\)</span> with respect to <span class="process-math">\(x\)</span></em>.  To understand the units on the derivative function, we use the fact that the instantaneous rate of change is the limit of the average rate of change.  Recall that the average rate of change of <span class="process-math">\(f\)</span> on the interval <span class="process-math">\([a,a+h]\)</span> is</div>
 <div class="displaymath process-math">
 \begin{equation*}
-AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}\text{,}
+AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{(a+h) - a}\text{,}
 \end{equation*}
 </div>
 <div class="para">which is the quotient</div>
@@ -780,7 +780,13 @@ AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}\text{,}
 \frac{\mbox{change in } f}{\mbox{change in } x}\text{.}
 \end{equation*}
 </div>
-<div class="para">Note particularly that <span class="process-math">\(h = (a+h) - a\text{,}\)</span> so <span class="process-math">\(h\)</span> is precisely the change in <span class="process-math">\(x\text{.}\)</span>  It follows that the units on the average rate of change are: units of <span class="process-math">\(f\)</span> per unit of <span class="process-math">\(x\text{.}\)</span>
+<div class="para">It follows that the units on the average rate of change are: <blockquote class="blockquote" id="SS-1-5a-units-fprime-3-10">
+<span class="process-math">\(f\)</span><span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Quotation"><a href="#SS-1-5a-units-fprime-3-10" title="Copy heading and permalink for Quotation">🔗</a></div>
+</blockquote> Note that since <span class="process-math">\((a+h) - a = h\text{,}\)</span> we often write</div>
+<div class="displaymath process-math">
+\begin{equation*}
+AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}\text{.}
+\end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#SS-1-5a-units-fprime-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -968,14 +974,15 @@ BD = \frac{f(a)-f(a-h)}{a - (a-h)} = \frac{f(a)-f(a-h)}{h}\text{.}
 <div class="para">When we instead use a <em class="emphasis">forward difference</em>, <span class="process-math">\(FD\text{,}\)</span>  we now get the estimate</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html">
 \begin{equation*}
-FD = \frac{f(a+h)-f(a)}{a+h - (a)} = \frac{f(a+h)-f(a)}{h}\text{.}
+FD = \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}\text{.}
 \end{equation*}
 </div>
 <div class="para">Because these two estimates take into account the function’s behavior on both sides of <span class="process-math">\(x=a\text{,}\)</span> it makes sense to average them to include the most possible information for an even better estimate for the value of <span class="process-math">\(f'(a)\text{.}\)</span>  Doing so, we find that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html" id="sec-1-5a-units-5-5-16">
 \begin{align*}
-\frac{BD + FD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} \\
-\amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}\\
+\frac{BD + FD}{2} \amp= \frac{1}{2}(BD + FD) \\
+\amp= \frac{1}{2} \left(\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h} \right) \\
+\amp= \frac{1}{2} \left(\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h} \right) \\
 \amp= \frac{f(a+h)-f(a-h)}{2h}
 \end{align*}
 </div>

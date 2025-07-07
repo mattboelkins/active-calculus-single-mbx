@@ -29,14 +29,15 @@ BD = \frac{f(a)-f(a-h)}{a - (a-h)} = \frac{f(a)-f(a-h)}{h}\text{.}
 <div class="para">When we instead use a <em class="emphasis">forward difference</em>, <span class="process-math">\(FD\text{,}\)</span>  we now get the estimate</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html">
 \begin{equation*}
-FD = \frac{f(a+h)-f(a)}{a+h - (a)} = \frac{f(a+h)-f(a)}{h}\text{.}
+FD = \frac{f(a+h)-f(a)}{(a+h) - a} = \frac{f(a+h)-f(a)}{h}\text{.}
 \end{equation*}
 </div>
 <div class="para">Because these two estimates take into account the function’s behavior on both sides of <span class="process-math">\(x=a\text{,}\)</span> it makes sense to average them to include the most possible information for an even better estimate for the value of <span class="process-math">\(f'(a)\text{.}\)</span>  Doing so, we find that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-1-5-1-central-difference.html">
 \begin{align*}
-\frac{BD + FD}{2} \amp= \frac{\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h}}{2} \\
-\amp= \frac{\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h}}{2}\\
+\frac{BD + FD}{2} \amp= \frac{1}{2}(BD + FD) \\
+\amp= \frac{1}{2} \left(\frac{f(a)-f(a-h)}{h} + \frac{f(a+h)-f(a)}{h} \right) \\
+\amp= \frac{1}{2} \left(\frac{f(a)-f(a-h) + f(a+h)-f(a)}{h} \right) \\
 \amp= \frac{f(a+h)-f(a-h)}{2h}
 \end{align*}
 </div>
