@@ -428,7 +428,7 @@
                 By developing a carefully labeled first derivative sign chart,
                 decide whether <m>g</m> has as a local maximum,
                 local minimum,
-                or neither at each critical number.  <term>Note</term>: observe that <m>g'(x)</m> can change sign at the vertical asymptote of <m>g(x)</m>.
+                or neither at each critical number.  <alert>Note</alert>: observe that <m>g'(x)</m> can change sign at the vertical asymptote of <m>g(x)</m>.
               </p>
             </li>
 

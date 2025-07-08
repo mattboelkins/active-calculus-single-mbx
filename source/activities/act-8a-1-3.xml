@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -21,26 +21,30 @@
 			<ol marker="a.">
 		      <li>
 		        <p>
-		          In <xref ref="PA-8a-1">Preview Activity</xref>, we built a spreadsheet that computed the differences between <m>f(x)</m> and <m>T_1(x)</m> for <m>x</m>-values between <m>-1</m> and <m>1</m>, spaced <m>0.1</m> units apart.  Your spreadsheet started like the one shown in the table in <xref ref="PA-8a-1">Preview Activity</xref>.
+		          In <xref ref="PA-8a-1">Preview Activity</xref>, we built a spreadsheet that computed the differences between <m>f(x)</m> and <m>T_1(x)</m> for <m>x</m>-values between <m>-1</m> and <m>1</m>, spaced <m>0.1</m> units apart.  Your spreadsheet started like the one shown in <xref ref="T-8a-1-PA-linear-approx">Table</xref> in the Preview Activity.
 		        </p>	
 		        
 		        <p>
-		        	Next, we build an updated version of this spreadsheet that computes similar differences between <m>f</m> and the three higher degree approximations we have found.  In particular, we now want to have columns for <m>\Delta x</m>, <m>x</m>, <m>f(x)</m>, <m>T_1(x)</m>, <m>T_2(x)</m>, <m>T_3(x)</m>, and <m>T_4(x)</m>, plus the absolute differences <m>|f(x) - T_1(x)|</m>, <m>|f(x) - T_2(x)|</m>, <m>|f(x) - T_3(x)|</m>, and <m>|f(x) - T_4(x)|</m>.  <alert>Hint:</alert> when building your entries, note that you can think of <m>T_2(x)</m> as <m>T_2(x) = T_1(x) + \frac{1}{2}x^2</m>, and similarly view <m>T_3(x)</m> as <q><m>T_2(x)</m> plus one more term</q>.  
+		        	Next, we build an updated version of this spreadsheet that computes similar differences between <m>f</m> and the three higher degree approximations we have found.  In particular, we now want to have the same first four columns for <m>\Delta x</m>, <m>x</m>, <m>f(x)</m>, and <m>T_1(x)</m>, but now also with columns for <m>T_2(x)</m>, <m>T_3(x)</m>, and <m>T_4(x)</m>, plus columns for the absolute differences <m>|f(x) - T_1(x)|</m>, <m>|f(x) - T_2(x)|</m>, <m>|f(x) - T_3(x)|</m>, and <m>|f(x) - T_4(x)|</m>.  
 		        </p>
 
+				<p>
+					<alert>Hint:</alert> when building your entries, note that you can think of <m>T_2(x)</m> as <m>T_2(x) = T_1(x) + \frac{1}{2}x^2</m>, and similarly view <m>T_3(x)</m> as <q><m>T_2(x)</m> plus one more term</q>.  
+				</p>
+
 		        <p>
-		        	 Include at least <m>5</m> digits of accuracy beyond the decimal.  The first seven columns of your spreadsheet might start like this:		
+		        	 Include at least <m>5</m> digits of accuracy beyond the decimal point.  The first seven columns of your spreadsheet might start like this:		
 		          <table xml:id="T-8a-1-act-3-approx">
 		            <title>Comparing <m>f(x) = e^x</m> and its degree <m>1</m>, <m>2</m>, <m>3</m>, <m>4</m> and approximations near <m>a = 0</m>.</title>
 		              <tabular top="minor" bottom="minor">
 		                <row left="minor">
-		                  <cell right="minor"><m>\Delta x</m></cell>
-		                  <cell right="minor"><m>x</m></cell>
-		                  <cell right="minor"><m>f(x)</m></cell>
-		                  <cell right="minor"><m>T_1(x)</m></cell>
-		                  <cell right="minor"><m>T_2(x)</m></cell>
-		                  <cell right="minor"><m>T_3(x)</m></cell>
-		                  <cell right="minor"><m>T_4(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>\Delta x</m></cell>
+		                  <cell right="minor" halign="center"><m>x</m></cell>
+		                  <cell right="minor" halign="center"><m>f(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_1(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_2(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_3(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_4(x)</m></cell>
 		                </row>
 		                <row left="minor">
 		                  <cell right="minor"><m>0.1</m></cell>
@@ -69,22 +73,22 @@
 		            <title>The absolute error between <m>f(x) = e^x</m> and its degree <m>1</m>, <m>2</m>, <m>3</m>, and <m>4</m> approximations at <m>x=-1</m> and <m>x=-0.9</m>.</title>
 		              <tabular top="minor" bottom="minor">
 		                <row left="minor">
-		                  <cell right="minor"><m>|f(x)-T_1(x)|</m></cell>
-		                  <cell right="minor"><m>|f(x)-T_2(x)|</m></cell>
-		                  <cell right="minor"><m>|f(x)-T_3(x)|</m></cell>
-		                  <cell right="minor"><m>|f(x)-T_4(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_1(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_2(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_3(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_4(x)|</m></cell>
 		                </row>
 		                <row left="minor">
-		                  <cell right="minor"><m>0.36787</m></cell>
-		                  <cell right="minor"><m>0.13212</m></cell>
-		                  <cell right="minor"><m>0.03454</m></cell>
-		                  <cell right="minor"><m>0.00712</m></cell>
+		                  <cell right="minor" halign="center"><m>0.36787</m></cell>
+		                  <cell right="minor" halign="center"><m>0.13212</m></cell>
+		                  <cell right="minor" halign="center"><m>0.03454</m></cell>
+		                  <cell right="minor" halign="center"><m>0.00712</m></cell>
 		                </row>
 		                <row left="minor">
-		                  <cell right="minor"><m>0.30657</m></cell>
-		                  <cell right="minor"><m>0.09843</m></cell>
-		                  <cell right="minor"><m>0.02307</m></cell>
-		                  <cell right="minor"><m>0.00426</m></cell>
+		                  <cell right="minor" halign="center"><m>0.30657</m></cell>
+		                  <cell right="minor" halign="center"><m>0.09843</m></cell>
+		                  <cell right="minor" halign="center"><m>0.02307</m></cell>
+		                  <cell right="minor" halign="center"><m>0.00426</m></cell>
 		                </row>
 		              </tabular>
 		            </table>

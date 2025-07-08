@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -18,7 +18,7 @@
     Use the graph to answer each of the following questions.
   </p>
   <p>  
-    <term>Note</term>: to the right of <m>x = 2</m>,
+    <alert>Note</alert>: to the right of <m>x = 2</m>,
     the graph of <m>f</m> is exhibiting infinite oscillatory behavior similar to the function
     <m>\sin(\frac{\pi}{x})</m> that we encountered in part (b) of <xref ref="Ex-1-2-Limits">Example</xref>.  Assume that <m>f(2) = -2.5</m>.
   </p>

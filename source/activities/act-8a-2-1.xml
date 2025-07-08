@@ -27,60 +27,47 @@
 		          <table xml:id="T-8a-2-act-1-cosine">
 		            <title>Finding the derivatives of <m>f(x) = \cos(x)</m> at <m>a = 0</m>.</title>
 		              <tabular top="none" bottom="none">
-		                <row>
-		                  <cell halign="right"><m>f(x) =</m></cell>
-		                  <cell><m>\cos(x)</m></cell>
-		                  <cell halign="right"><m>f(0) =</m></cell>
-		                  <cell><m>\cos(0) = 1</m></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f'(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f'(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f''(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f''(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f'''(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f'''(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(4)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(4)}(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(5)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(5)}(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(6)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(6)}(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(7)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(7)}(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(8)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(8)}(0) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
+						<row>
+							<cell>
+								<md>
+									<mrow>k \amp= 0 </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+								</md>
+							</cell>
+							<cell>
+								<md>
+									<mrow>f(x) \amp= \cos(x) </mrow>
+									<mrow>f'(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f''(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f'''(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(4)}(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(5)}(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(6)}(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(7)}(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(8)}(x) \amp= <fillin characters="5" /> </mrow>
+								</md>
+							</cell>
+							<cell>
+								<md>
+									<mrow>f(0) \amp= \cos(0) = 1 </mrow>
+									<mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f''(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f'''(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(4)}(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(5)}(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(6)}(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(7)}(0) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(8)}(0) \amp= <fillin characters="5" /> </mrow>
+								</md>
+							</cell>
+						</row>
 		              </tabular>
 		            </table>		
                 </li>
@@ -110,12 +97,12 @@
 		            <title>Comparing <m>f(x) = \cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> approximations near <m>a = 0</m>.</title>
 		              <tabular top="minor" bottom="minor">
 		                <row left="minor">
-		                  <cell right="minor"><m>\Delta x</m></cell>
-		                  <cell right="minor"><m>x</m></cell>
-		                  <cell right="minor"><m>f(x)</m></cell>
-		                  <cell right="minor"><m>T_2(x)</m></cell>
-		                  <cell right="minor"><m>T_4(x)</m></cell>
-		                  <cell right="minor"><m>T_6(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>\Delta x</m></cell>
+		                  <cell right="minor" halign="center"><m>x</m></cell>
+		                  <cell right="minor" halign="center"><m>f(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_2(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_4(x)</m></cell>
+		                  <cell right="minor" halign="center"><m>T_6(x)</m></cell>
 		                </row>
 		                <row left="minor">
 		                  <cell right="minor"><m>0.2</m></cell>
@@ -143,19 +130,19 @@
 		            <title>The absolute error between <m>f(x) = \cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> approximations.</title>
 		              <tabular top="minor" bottom="minor">
 		                <row left="minor">
-		                  <cell right="minor"><m>|f(x)-T_2(x)|</m></cell>
-		                  <cell right="minor"><m>|f(x)-T_4(x)|</m></cell>
-		                  <cell right="minor"><m>|f(x)-T_6(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_2(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_4(x)|</m></cell>
+		                  <cell right="minor" halign="center"><m>|f(x)-T_6(x)|</m></cell>
 		                </row>
 		                <row left="minor">
-		                  <cell right="minor"><m>0.58385</m></cell>
-		                  <cell right="minor"><m>0.08281</m></cell>
-		                  <cell right="minor"><m>0.00608</m></cell>
+		                  <cell right="minor" halign="center"><m>0.58385</m></cell>
+		                  <cell right="minor" halign="center"><m>0.08281</m></cell>
+		                  <cell right="minor" halign="center"><m>0.00608</m></cell>
 		                </row>
 		                <row left="minor">
-		                  <cell right="minor"><m>0.39280</m></cell>
-		                  <cell right="minor"><m>0.04460</m></cell>
-		                  <cell right="minor"><m>0.00263</m></cell>
+		                  <cell right="minor" halign="center"><m>0.39280</m></cell>
+		                  <cell right="minor" halign="center"><m>0.04460</m></cell>
+		                  <cell right="minor" halign="center"><m>0.00263</m></cell>
 		                </row>
 		              </tabular>
 		            </table>        
@@ -163,7 +150,7 @@
                 </li>		
                 <li>
                 	<p>
-                		For about what interval of <m>x</m>-values is it true that <m>|f(x) - T_2(x)| \lt 0.1</m>?  How does the interval of <m>x</m>-values change if we instead consider where <m>|f(x) - T_4(x)| \lt 0.1</m>? <m>|f(x) - T_6(x)| \lt 0.1</m>? 
+                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_2(x)| \lt 0.1</m>?  How does the interval of <m>x</m>-values change if we instead consider where <m>|f(x) - T_4(x)| \lt 0.1</m>? where <m>|f(x) - T_6(x)| \lt 0.1</m>? 
                 	</p>
                 </li>    
 			</ol>

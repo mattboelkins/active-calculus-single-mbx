@@ -15,7 +15,7 @@
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-1-2">
 	<statement>
 		<p>
-			Let <m>f(x)=e^x</m> and <m>T_3(x) = k_0 + k_1 x + k_2 x^2 + k_3 x^3</m>.  
+			Let <m>f(x)=e^x</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m>.  
 		</p>
 		<p>
 			<ol marker="a.">
@@ -27,59 +27,32 @@
 						<title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m> and their derivatives.</title>
 							<tabular top="none" bottom="none">
 								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3(x)=</m></cell>
-									<cell><m>k_0 + k_1 x + k_2 x^2 + k_3 x^3</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'(x)=</m></cell>
-									<cell><m>k_1 + 2 k_2 x + 3 k_3 x^2</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3''(x)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'''(x)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-
-								<row>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3(0)=</m></cell>
-									<cell><m>k_0</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'(0)=</m></cell>
-									<cell><m>k_1</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3''(0)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'''(0)=</m></cell>
-									<cell><fillin /></cell>
+								<cell halign="center">
+									<md>
+										<mrow> f(x) \amp= e^x </mrow>
+										<mrow> f'(x) \amp= e^x  </mrow>
+										<mrow> f''(x) \amp= e^x  </mrow>
+										<mrow> f'''(x) \amp= e^x  </mrow>
+										<mrow> \amp </mrow>
+										<mrow> f(0) \amp= 1  </mrow>
+										<mrow> f'(0) \amp= 1  </mrow>
+										<mrow> f''(0) \amp= 1  </mrow>
+										<mrow> f'''(0) \amp= 1  </mrow>
+									</md>
+								</cell>  
+								<cell halign="center">
+									<md>
+										<mrow> T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
+										<mrow> T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
+										<mrow> T_3''(x) \amp= <fillin characters="5" /> </mrow>
+										<mrow> T_3'''(x) \amp= <fillin characters="5" /> </mrow>
+										<mrow> \amp </mrow>
+										<mrow> T_3(0) \amp= c_0 </mrow>
+										<mrow> T_3'(0) \amp= c_1 </mrow>
+										<mrow> T_3''(0) \amp= <fillin characters="5" /> </mrow>
+										<mrow> T_3'''(0) \amp= <fillin characters="5" /> </mrow>
+									</md>
+								</cell>
 								</row>
 							</tabular>
 						</table>
@@ -87,13 +60,13 @@
 				</li>
 				<li>
 					<p>
-						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  What does our work in <xref ref="T-act-8a-1-2">Table</xref> tell us about the values of <m>k_0</m>, <m>k_1</m>, <m>k_2</m>, and <m>k_3</m>?
+						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  What does our work in <xref ref="T-act-8a-1-2">Table</xref> tell us about the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>?
 
 					</p>
 				</li>
 				<li>
 					<p>
-						Having now determined the numerical values of <m>k_0</m>, <m>k_1</m>, <m>k_2</m>, and <m>k_3</m>, plot the function <m>T_3(x) = k_0 + k_1 x + k_2 x^2 + k_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in <xref ref="F-8a-1-act-2">Figure</xref>.  What do you notice?  For about which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
+						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>, plot the function <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in <xref ref="F-8a-1-act-2">Figure</xref>.  What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
 
 						<figure xml:id="F-8a-1-act-2">
 							<caption>The function <m>f(x)=e^x</m>, its tangent line <m>T_1(x)=1+x</m>, and the quadratic approximation <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.</caption>
@@ -127,25 +100,25 @@
 									<cell halign="right"><m>f(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3(x)=</m></cell>
-									<cell><m>k_0 + k_1 x + k_2 x^2 + k_3 x^3</m></cell>
+									<cell><m>c_0 + c_1 x + c_2 x^2 + c_3 x^3</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3'(x)=</m></cell>
-									<cell><m>k_1 + 2 k_2 x + 3 k_3 x^2</m></cell>
+									<cell><m>c_1 + 2 c_2 x + 3 c_3 x^2</m></cell>
 								</row>                
 								<row>
 									<cell halign="right"><m>f''(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3''(x)=</m></cell>
-									<cell><m>2 k_2 + 3 \cdot 2 k_3 x</m></cell>
+									<cell><m>2 c_2 + 3 \cdot 2 c_3 x</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'''(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3'''(x)=</m></cell>
-									<cell><m>3 \cdot 2 k_3</m></cell>
+									<cell><m>3 \cdot 2 c_3</m></cell>
 								</row>
 
 								<row>
@@ -158,25 +131,25 @@
 									<cell halign="right"><m>f(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3(0)=</m></cell>
-									<cell><m>k_0</m></cell>
+									<cell><m>c_0</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3'(0)=</m></cell>
-									<cell><m>k_1</m></cell>
+									<cell><m>c_1</m></cell>
 								</row>                
 								<row>
 									<cell halign="right"><m>f''(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3''(0)=</m></cell>
-									<cell><m>2k_2</m></cell>
+									<cell><m>2c_2</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'''(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3'''(0)=</m></cell>
-									<cell><m>6k_3</m></cell>
+									<cell><m>6c_3</m></cell>
 								</row>
 							</tabular>
 						</table>
@@ -184,7 +157,7 @@
 				</li>
 				<li>
 					<p>
-						<m>k_0 = 1</m>; <m>k_1 = 1</m>; <m>k_2 = \frac{1}{2}</m>; <m>k_3 = \frac{1}{6}</m>.
+						<m>c_0 = 1</m>; <m>c_1 = 1</m>; <m>c_2 = \frac{1}{2}</m>; <m>c_3 = \frac{1}{6}</m>.
 					</p>
 				</li>
 				<li>
@@ -204,7 +177,7 @@
 		<solution>
 
 		<p>
-			Let <m>f(x)=e^x</m> and <m>T_3(x) = k_0 + k_1 x + k_2 x^2 + k_3 x^3</m>.  
+			Let <m>f(x)=e^x</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m>.  
 		</p>
 		<p>
 			<ol marker="a.">
@@ -217,25 +190,25 @@
 									<cell halign="right"><m>f(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3(x)=</m></cell>
-									<cell><m>k_0 + k_1 x + k_2 x^2 + k_3 x^3</m></cell>
+									<cell><m>c_0 + c_1 x + c_2 x^2 + c_3 x^3</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3'(x)=</m></cell>
-									<cell><m>k_1 + 2 k_2 x + 3 k_3 x^2</m></cell>
+									<cell><m>c_1 + 2 c_2 x + 3 c_3 x^2</m></cell>
 								</row>                
 								<row>
 									<cell halign="right"><m>f''(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3''(x)=</m></cell>
-									<cell><m>2 k_2 + 3 \cdot 2 k_3 x</m></cell>
+									<cell><m>2 c_2 + 3 \cdot 2 c_3 x</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'''(x)=</m></cell>
 									<cell><m>e^x</m></cell>
 									<cell halign="right"><m>T_3'''(x)=</m></cell>
-									<cell><m>3 \cdot 2 k_3</m></cell>
+									<cell><m>3 \cdot 2 c_3</m></cell>
 								</row>
 
 								<row>
@@ -248,25 +221,25 @@
 									<cell halign="right"><m>f(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3(0)=</m></cell>
-									<cell><m>k_0</m></cell>
+									<cell><m>c_0</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3'(0)=</m></cell>
-									<cell><m>k_1</m></cell>
+									<cell><m>c_1</m></cell>
 								</row>                
 								<row>
 									<cell halign="right"><m>f''(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3''(0)=</m></cell>
-									<cell><m>2k_2</m></cell>
+									<cell><m>2c_2</m></cell>
 								</row>
 								<row>
 									<cell halign="right"><m>f'''(0)=</m></cell>
 									<cell><m>1</m></cell>
 									<cell halign="right"><m>T_3'''(0)=</m></cell>
-									<cell><m>6k_3</m></cell>
+									<cell><m>6c_3</m></cell>
 								</row>
 							</tabular>
 						</table>
@@ -274,7 +247,7 @@
 				</li>
 				<li>
 					<p>
-						Since <m>T_3(0) = f(0)</m>, this means <m>k_0 = 1</m>.  Next, <m>T_3'(0) = f'(0)</m> tells us that <m>k_1 = 1</m>.  Using <m>T_3''(0) = f''(0)</m>, <m>2k_2 = 1</m> so that <m>k_2 = \frac{1}{2}</m>.  And finally, the last condition is <m>T_3'''(0) = f'''(0)</m>, which implies that <m>6k_3 = 1</m>, so <m>k_3 = \frac{1}{6}</m>.
+						Since <m>T_3(0) = f(0)</m>, this means <m>c_0 = 1</m>.  Next, <m>T_3'(0) = f'(0)</m> tells us that <m>c_1 = 1</m>.  Using <m>T_3''(0) = f''(0)</m>, <m>2c_2 = 1</m> so that <m>c_2 = \frac{1}{2}</m>.  And finally, the last condition is <m>T_3'''(0) = f'''(0)</m>, which implies that <m>6c_3 = 1</m>, so <m>c_3 = \frac{1}{6}</m>.
 					</p>
 				</li>
 				<li>

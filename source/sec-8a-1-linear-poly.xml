@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -62,7 +62,7 @@
     </p>
 
     <p>
-      While we have usually used the notation <q><m>L(x)</m></q> for the tangent line, in what follows we will instead write <q><m>T_1(x)</m></q>, and think of this as <q>the degree <m>1</m> approximation</q>.  In a similar way, we will write <m>T_2(x)</m> for the quadratic approximation.
+      While we have usually used the notation <q><m>L(x)</m></q> for the tangent line, in what follows we will instead write <q><m>T_1(x)</m></q>, and think of this as <q>the degree <m>1</m> approximation</q>.  In a similar way, we will write <q><m>T_2(x)</m></q> for the quadratic approximation.
     </p>
 
     <p>
@@ -74,13 +74,13 @@
     </p>
 
     <p>
-      To generate a quadratic function that approximates <m>f</m> near <m>a = 0</m>, we choose to have this quadratic function not only share the same function value and derivative value as <m>f</m> at <m>a=0</m>, but also the same second<fn>Here we are implicitly assuming that the function <m>f(x)</m> has a second derivative at <m>a=0</m>.</fn> derivative value at <m>a=0</m>, in order to match the concavity or curvature of <m>f</m>.  In other words, we are adding a term to the linear approximation that gives the same amount of curvature as the function <m>f</m>. 
+      To generate a quadratic function that approximates <m>f</m> near <m>a = 0</m>, we choose to have this quadratic function not only share the same function value and derivative value as <m>f</m> at <m>a=0</m>, but also the same second derivative value<fn>Here we are implicitly assuming that the function <m>f(x)</m> has a second derivative at <m>a=0</m>, which is a property that holds for <m>f(x) = e^x</m>.</fn> at <m>a=0</m>, in order to match the concavity or curvature of <m>f</m>.  In other words, we are adding a term to the linear approximation that gives the same amount of curvature as the function <m>f</m>. 
     </p>
 
     <p>
       We can state these requirements more formally as follows:  we seek a function <m>T_2(x)</m> of the form
       <me>
-        T_2(x) = c_0 + c_1 x + c_2 x^2
+        T_2(x) = b_0 + b_1 x + b_2 x^2
       </me>
       that satisfies 
       <ul>
@@ -103,7 +103,7 @@
     </p>
 
     <p>
-      In <xref ref="act-8a-1-1">Activity</xref>, we explore how these three requirements determine <m>c_0</m>, <m>c_1</m>, and <m>c_2</m> in <m>T_2(x)</m> for the function <m>f(x) = e^x</m>.
+      In <xref ref="act-8a-1-1">Activity</xref>, we explore how these three requirements determine <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> in <m>T_2(x)</m> for the function <m>f(x) = e^x</m>.
     </p>
 
     <xi:include href="./activities/act-8a-1-1.xml" />
@@ -124,7 +124,7 @@
     <p>
       To investigate, we seek a degree <m>3</m> polynomial <m>T_3(x)</m> of the form
       <me>
-        T_3(x) = k_0 + k_1 x + k_2 x^2 + k_3 x^3
+        T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3
       </me>
       that satisfies 
       <ul>
@@ -135,22 +135,23 @@
         </li>
         <li>
           <p>
-            <m>T_3'''(0) = f'''(0)</m>, so <m>T_3</m> and <m>f</m> share the same third<fn>Here we are assuming that the original function <m>f</m> has a third derivative at <m>a = 0</m>.</fn> derivative value at <m>a = 0</m>.
+            <m>T_3'''(0) = f'''(0)</m>, so <m>T_3</m> and <m>f</m> share the same third derivative value<fn>Here we are assuming that the original function <m>f</m> has a third derivative at <m>a = 0</m>, which is valid since <m>f'''(x) = e^x</m>.</fn> at <m>a = 0</m>.
           </p>
         </li>
       </ul>
+      We are using the unknown constants <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m> for <m>T_3(x)</m> instead of the constants <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> that we considered for <m>T_2(x)</m> since we don't yet know whether the first three values of <m>c_i</m> will be the same as those of <m>b_i</m> or not.
     </p>
 
     <p>
       Like in our work with <m>T_2</m>, we observe that since <m>T_3</m> is a polynomial, its derivatives are straightforward to compute.  For instance, 
-        <me>T_3'(x) = k_1 + 2k_2 x + 3k_3 x^2.</me>
-      We continue our investigation of this new approximation of <m>f(x) = e^x</m> in <xref ref="act-8a-1-2">Activity</xref>, where we work to determine the values of <m>k_0</m>, <m>k_1</m>, <m>k_2</m>, and <m>k_3</m> plus explore how well <m>T_3(x)</m> approximates <m>f(x)</m> near <m>a = 0</m>.
+        <me>T_3'(x) = c_1 + 2c_2 x + 3c_3 x^2.</me>
+      We continue our investigation of this new approximation of <m>f(x) = e^x</m> in <xref ref="act-8a-1-2">Activity</xref>, where we work to determine the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m> plus explore how well <m>T_3(x)</m> approximates <m>f(x)</m> near <m>a = 0</m>.
     </p>  
 
     <xi:include href="./activities/act-8a-1-2.xml" />
 
     <p>
-      Like in the quadratic case, we'll call<fn>See <xref ref="def-Taylor-poly-0">Definition</xref> for the formal definition of a Taylor polynomial centered at <m>a = 0</m>.</fn> the cubic polynomial <m>T_3(x)</m> the <q>degree 3 Taylor polynomial of <m>f</m> centered at <m>a=0</m></q>.  
+      As in the quadratic case, we'll call the cubic polynomial <m>T_3(x)</m> the <q>degree 3 Taylor polynomial of <m>f</m> centered at <m>a=0</m></q>.  See <xref ref="def-Taylor-poly-0">Definition</xref> for the formal definition of a degree <m>n</m> Taylor polynomial centered at <m>a = 0</m>.
     </p>
 
   </subsection>
@@ -200,7 +201,7 @@
       <ul>
       <li>
         <p>
-          For the function <m>f(x) = e^x</m>, which bends considerably as we move away from <m>a = 0</m> (especially for <m>x > 0</m>), the tangent line is not a very good approximation for <m>x</m>-values that satisfy <m>|x| > 0.5</m>.  For example, <m>|f(0.5) - e^{0.5}| \approx 0.148721</m>, so the linear approximation has an absolute error of more than <m>0.1</m> at <m>x = 0.5</m>.
+          For the function <m>f(x) = e^x</m>, which bends considerably as we move away from <m>a = 0</m> (especially for <m>x > 0</m>), the tangent line, <m>T_1(x)</m>, is not a very good approximation for <m>x</m>-values that satisfy <m>|x| > 0.5</m>.  For example, <m>|T_1(0.5) - e^{0.5}| \approx 0.148721</m>, so the linear approximation has an absolute error of more than <m>0.1</m> at <m>x = 0.5</m>.
         </p>
       </li>
       <li>

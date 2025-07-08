@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-2-3">
 	<statement>
 		<p>
@@ -30,42 +31,41 @@
 		          <table xml:id="T-8a-2-act-3-log">
 		            <title>Finding the derivatives of <m>f(x) = \ln(x)</m> at <m>a = 2</m>.</title>
 		              <tabular top="none" bottom="none">
-		                <row>
-		                  <cell halign="right"><m>f(x) =</m></cell>
-		                  <cell><m>\ln(x)</m></cell>
-		                  <cell halign="right"><m>f(2) =</m></cell>
-		                  <cell><m>\ln(2)</m></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f'(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f'(2) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f''(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f''(2) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f'''(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f'''(2) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
-		                <row>
-		                  <cell halign="right"><m>f^{(4)}(x) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                  <cell halign="right"><m>f^{(4)}(2) = </m></cell>
-		                  <cell><fillin></fillin></cell>
-		                </row>
+						<row>
+							<cell>
+								<md>
+									<mrow>k \amp= 0 </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+									<mrow>k \amp= <fillin characters="2" /> </mrow>
+								</md>
+							</cell>
+							<cell>
+								<md>
+									<mrow>f(x) \amp= \ln(x) </mrow>
+									<mrow>f'(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f''(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f'''(x) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(4)}(x) \amp= <fillin characters="5" /> </mrow>
+								</md>
+							</cell>
+							<cell>
+								<md>
+									<mrow>f(2) \amp= \ln(2) </mrow>
+									<mrow>f'(2) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f''(2) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f'''(2) \amp= <fillin characters="5" /> </mrow>
+									<mrow>f^{(4)}(2) \amp= <fillin characters="5" /> </mrow>
+								</md>
+							</cell>
+						</row>
 		              </tabular>
 		            </table>		
                 </li>
                 <li>
                 	<p>
-                		Use your work in (a) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(a)}{k!}</m> to determine <m>T_4(x) = c_0 + c_1 (x-2) + c_2 (x-2)^2 + c_3(x-2)^3 + c_4(x-2)^4</m>.
+                		Use your work in (a) along with the fact that the coefficients of the Taylor polynomial are given by <m>c_k = \frac{f^{(k)}(a)}{k!}</m> to determine <m>T_4(x) = c_0 + c_1 (x-2) + c_2 (x-2)^2 + c_3(x-2)^3 + c_4(x-2)^4</m>.
                 	</p>
                 </li>
                 <li>
@@ -88,7 +88,7 @@
                 	</p>		
 
                 	<p>	
-                		For about what interval of <m>x</m>-values is it true that <m>|f(x) - T_5(x)| \lt 0.1</m>?  What about <m>|f(x) - T_6(x)| \lt 0.1</m>?  How is this different from what we observed with the Taylor approximations centered at <m>a = 1</m> in <xref ref="act-8a-2-2">Activity</xref>?  How is it similar? 
+                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_5(x)| \lt 0.1</m>?  What about <m>|f(x) - T_6(x)| \lt 0.1</m>?  How is this different from what we observed with the Taylor approximations centered at <m>a = 1</m> in <xref ref="act-8a-2-2">Activity</xref>?  How is it similar? 
                 	</p>
                 </li>    
 			</ol>
