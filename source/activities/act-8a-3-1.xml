@@ -18,12 +18,12 @@
       Let <m>a = 1</m> and <m>r = \frac{2}{5}</m> be real numbers
       and consider the corresponding finite geometric series
       <men xml:id="eq-act-8a-3-1">
-        S_n = 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1}
+        S_n = 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n}
       </men>.
     </p>
 
     <p>
-      Our goal in this activity is to find a shortcut formula for <m>S_n</m> that can be written as a single fraction that does not involve a sum of <m>n</m> terms.
+      Our goal in this activity is to find a shortcut formula for <m>S_n</m> that can be written as a single fraction that does not involve a sum of <m>n + 1</m> terms.
     </p>
 
     <p>
@@ -56,7 +56,7 @@
           <p>
             How would your work above change if instead of the original geometric sum <m>S_n</m>, we considered the situation with <m>a = 7</m>,
             <me>
-              S_n = 7 + 7 \cdot \frac{2}{5} + 7 \cdot \left(\frac{2}{5}\right)^2 + \cdots + 7 \cdot \left(\frac{2}{5}\right)^{n-1}
+              S_n = 7 + 7 \cdot \frac{2}{5} + 7 \cdot \left(\frac{2}{5}\right)^2 + \cdots + 7 \cdot \left(\frac{2}{5}\right)^{n}
             </me>?
           </p>
         </li>
@@ -70,13 +70,13 @@
       <ol marker="a.">
         <li>
           <p>
-            Note that <m>\frac{2}{5} \cdot \left( \frac{2}{5} \right^{n-1} = \left( \frac{2}{5} \right^{n} </m>.
+            Note that <m>\frac{2}{5} \cdot \left( \frac{2}{5} \right^{n} = \left( \frac{2}{5} \right^{n+1} </m>.
           </p>
         </li>
 
         <li>
           <p>
-            Observe that <m>\frac{2}{5} \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1} \right) = \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n}</m>.
+            Observe that <m>\frac{2}{5} \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n} \right) = \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n+1}</m>.
           </p>
         </li>
 
@@ -100,25 +100,25 @@
       <ol marker="a.">
         <li>
           <p>
-            <m>\frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^n  </m>.
+            <m>\frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n+1}  </m>.
           </p>
         </li>
 
         <li>
           <p>
-            The key observation is that <m>1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1} - \frac{2}{5} - \left(\frac{2}{5}\right)^2 - \left(\frac{2}{5}\right)^3 - \cdots - \left(\frac{2}{5}\right)^n = 1 -  \left(\frac{2}{5}\right)^n</m>,
+            The key observation is that <m>1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n} - \frac{2}{5} - \left(\frac{2}{5}\right)^2 - \left(\frac{2}{5}\right)^3 - \cdots - \left(\frac{2}{5}\right)^{n+1} = 1 -  \left(\frac{2}{5}\right)^{n+1}</m>.
           </p>
         </li>
 
         <li>
           <p>
-            <m>S_n = \frac{1 -  \left(\frac{2}{5}\right)^n}{\frac{3}{5}}</m>
+            <m>S_n = \frac{1 -  \left(\frac{2}{5}\right)^{n+1}}{\frac{3}{5}}</m>
           </p>
         </li>
 
         <li>
           <p>
-            <m>S_n = \frac{7 -  7 \cdot \left(\frac{2}{5}\right)^n}{\frac{3}{5}}</m>
+            <m>S_n = \frac{7 -  7 \cdot \left(\frac{2}{5}\right)^{n+1}}{\frac{3}{5}}</m>
           </p>
         </li>
       </ol>
@@ -132,11 +132,11 @@
               <p>
                 We see that
                 <me>
-                  \frac{2}{5} \cdot S_n = \frac{2}{5} \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1} \right) 
+                  \frac{2}{5} \cdot S_n = \frac{2}{5} \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n} \right) 
                 </me>,
                 or
                 <men xml:id="eq-act-8a-3-1-soln">
-                  \frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^n 
+                  \frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n+1} 
                 </men>.
               </p>
         </li> 
@@ -145,13 +145,13 @@
             Next, we use <xref ref="eq-act-8a-3-1-soln">Equation</xref> in the expression <m>S_n - \frac{2}{5} \cdot S_n</m> to find that
             <md>
               <mrow>
-                S_n - \frac{2}{5} \cdot S_n =\mathstrut \amp \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1} \right) - \left(\frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^n \right)
+                S_n - \frac{2}{5} \cdot S_n \amp= \left( 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n} \right) - \left(\frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n+1} \right)
               </mrow>
               <mrow>
-                =\mathstrut \amp 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n-1} - \frac{2}{5} - \left(\frac{2}{5}\right)^2 - \left(\frac{2}{5}\right)^3 - \cdots - \left(\frac{2}{5}\right)^n 
+                \amp= 1 + \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \cdots + \left(\frac{2}{5}\right)^{n} - \frac{2}{5} - \left(\frac{2}{5}\right)^2 - \left(\frac{2}{5}\right)^3 - \cdots - \left(\frac{2}{5}\right)^{n+1} 
               </mrow>
               <mrow>
-                =\mathstrut \amp 1 -  \left(\frac{2}{5}\right)^n
+                \amp= 1 -  \left(\frac{2}{5}\right)^{n+1}
               </mrow>.
             </md>
           </p>
@@ -161,11 +161,11 @@
           <p>
             Using the fact that <m>S_n - \frac{2}{5} \cdot S_n = \frac{3}{5} \cdot S_n</m>, we see that 
             <me>
-              \frac{3}{5} \cdot S_n = 1 -  \left(\frac{2}{5}\right)^n
+              \frac{3}{5} \cdot S_n = 1 -  \left(\frac{2}{5}\right)^{n+1}
             </me>
             so 
             <me>
-              S_n = \frac{1 -  \left(\frac{2}{5}\right)^n}{\frac{3}{5}}
+              S_n = \frac{1 -  \left(\frac{2}{5}\right)^{n+1}}{\frac{3}{5}}
             </me>.
           </p>
         </li>
@@ -174,11 +174,11 @@
           <p>
             If instead of the original geometric sum <m>S_n</m>, we had <m>a = 7</m> and
             <me>
-              S_n = 7 + 7 \cdot \frac{2}{5} + 7 \cdot \left(\frac{2}{5}\right)^2 + \cdots + 7 \cdot \left(\frac{2}{5}\right)^{n-1}
+              S_n = 7 + 7 \cdot \frac{2}{5} + 7 \cdot \left(\frac{2}{5}\right)^2 + \cdots + 7 \cdot \left(\frac{2}{5}\right)^{n}
             </me>,
             the only thing that would change is that our shortcut formula for <m>S_n</m> would be multiplied by <m>7</m>:
             <me>
-              S_n = \frac{7 -  7 \cdot \left(\frac{2}{5}\right)^n}{\frac{3}{5}}
+              S_n = \frac{7 -  7 \cdot \left(\frac{2}{5}\right)^{n+1}}{\frac{3}{5}}
             </me>
           </p>
         </li>

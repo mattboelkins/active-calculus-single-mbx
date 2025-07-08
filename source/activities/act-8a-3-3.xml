@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,10 +12,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-3-3">
   <statement>
     <p>
-      Consider the function <m>f(x) = \frac{1}{1-x}</m>.  Find the degree <m>n</m> Taylor polynomial approximation centered at <m>a = 0</m> for <m>f</m>.
+      Consider the function <m>f(x) = \frac{1}{1-x}</m>.  Our overall goal is to find the degree <m>n</m> Taylor polynomial approximation centered at <m>a = 0</m> for <m>f</m>.
     </p>
 
     <p>
@@ -33,28 +34,16 @@
                 <title>Finding the derivatives of <m>f(x) = \frac{1}{1-x}</m>.</title>
                   <tabular top="none" bottom="none">
                     <row>
-                      <cell halign="right"><m>f(x) =</m></cell>
-                      <cell><m>\frac{1}{1-x} = (1-x)^{-1}</m></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f'(x) =</m></cell>
-                      <cell><m>(-1)(1-x)^{-2}(-1)</m></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f''(x) = </m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f'''(x) = </m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f^{(4)}(x) = </m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f^{(5)}(x) = </m></cell>
-                      <cell></cell>
+                      <cell>
+                        <md>
+                          <mrow>f(x) \amp= \frac{1}{1-x} = (1-x)^{-1}</mrow>
+                          <mrow>f'(x) \amp= (-1)(1-x)^{-2}(-1)</mrow>
+                          <mrow>f''(x) \amp= <fillin characters="10" /> </mrow>
+                          <mrow>f'''(x) \amp= <fillin characters="10" /> </mrow>
+                          <mrow>f^{(4)}(x) \amp= <fillin characters="10" /> </mrow>
+                          <mrow>f^{(5)}(x) \amp= <fillin characters="10" /> </mrow>
+                        </md>
+                      </cell>
                     </row>
                   </tabular>
                 </table>  
@@ -67,44 +56,39 @@
               <table xml:id="T-8a-3-act-3-geom-2">
                 <title>Finding the Taylor polynomial coefficients <m>c_k</m>.</title>
                   <tabular top="none" bottom="none">
-                    <row>
-                      <cell halign="right"><m>f(0) =</m></cell>
-                      <cell><m>\frac{1}{1-0} = 1</m></cell>
-                      <cell halign="right"><m>c_0 =</m></cell>
-                      <cell><m>f(0) = 1</m></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f'(0) =</m></cell>
-                      <cell><m>(-1)(1-0)^{-2}(-1) = 1</m></cell>
-                      <cell halign="right"><m>c_1 =</m></cell>
-                      <cell><m>\frac{f'(0)}{1!} = \frac{1}{1!} = 1</m></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f''(0) = </m></cell>
-                      <cell></cell>
-                      <cell halign="right"><m>c_2 =</m></cell>
-                      <cell><m>\frac{f''(0)}{2!} = </m></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f'''(0) = </m></cell>
-                      <cell></cell>
-                      <cell halign="right"><m>c_3 = </m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f^{(4)}(0) = </m></cell>
-                      <cell></cell>
-                      <cell halign="right"><m>c_4 =</m></cell>
-                      <cell></cell>
-                    </row>
-                    <row>
-                      <cell halign="right"><m>f^{(5)}(0) = </m></cell>
-                      <cell></cell>
-                      <cell halign="right"><m>c_5 =</m></cell>
-                      <cell></cell>
-                    </row>
+                    <row valign="center">
+                      <cell><m>k = 0</m></cell>
+                      <cell><m>f(0) = \frac{1}{1-0} = 1</m></cell>
+                      <cell><m>c_0 = f(0) = 1</m></cell>
+                    </row>  
+                    <row valign="center">
+                      <cell><m>k = 1</m></cell>
+                      <cell><m>f'(0) =  (-1)(1-0)^{-2}(-1) = 1</m></cell>
+                      <cell><m>c_1 = \frac{f'(0)}{1!} = \frac{1}{1!} = 1</m></cell>
+                    </row>  
+                    <row valign="center">
+                      <cell><m>k = <fillin characters="1" /> </m></cell>
+                      <cell><m>f''(0) = <fillin characters="5" /> </m></cell>
+                      <cell><m>c_2 = \frac{f''(0)}{2!} = <fillin characters="5" /> </m></cell>
+                    </row>  
+                    <row valign="center">
+                      <cell><m>k = <fillin characters="1" /> </m></cell>
+                      <cell><m>f'''(0) = <fillin characters="5" /> </m></cell>
+                      <cell><m>c_3 = <fillin characters="9" /> </m></cell>
+                    </row>  
+                    <row valign="center">
+                      <cell><m>k = <fillin characters="1" /> </m></cell>
+                      <cell><m>f^{(4)}(0) = <fillin characters="5" /> </m></cell>
+                      <cell><m>c_4 = <fillin characters="9" /> </m></cell>
+                    </row> 
+                    <row valign="center">
+                      <cell><m>k = <fillin characters="1" /> </m></cell>
+                      <cell><m>f^{(5)}(0) = <fillin characters="5" /> </m></cell>
+                      <cell><m>c_5 = <fillin characters="9" /> </m></cell>
+                    </row> 
                   </tabular>
-                </table>  
+              </table>
+
 
         </li>
         <li>
@@ -119,7 +103,7 @@
         </li>  
         <li>
           <p>
-            What is the Taylor series centered at <m>a = 0</m> for <m>f(x) = \frac{1}{1-x}</m>?  (As we will see in the next section, the <q>Taylor series</q> of a function is the infinite series that results by simply extending the Taylor polynomials indefinitely.)
+            As we will see in <xref ref="sec-8a-4-taylor-series">Section</xref>, the <q>Taylor series</q> of a function is the infinite series that results by simply extending the Taylor polynomials indefinitely. What is the Taylor series centered at <m>a = 0</m> for <m>f(x) = \frac{1}{1-x}</m>?  
           </p>
         </li>
       </ol>
