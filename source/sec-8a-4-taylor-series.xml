@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-4-taylor-series">
   <title>Taylor Series</title>
   <objectives>
@@ -41,15 +42,15 @@
       <me>
         T_n(x) = 1 + x + x^2 + x^3 + \cdots + x^n
       </me>.
-      Moreover, we saw that it is natural to extend the degree <m>n</m> Taylor polynomial to an infinite Taylor <em>series</em><fn>We will formally define the Taylor series of a function <m>f</m> in <xref ref="D-8a-4-Taylor-series">Definition</xref>.</fn>; for <m>f(x) = \frac{1}{1-x}</m>, the corresponding Taylor series is
+      Moreover, we saw that it is natural to extend the degree <m>n</m> Taylor polynomial to an infinite Taylor <em>series</em> (which will be formally defined in <xref ref="D-8a-4-Taylor-series">Definition</xref>). For <m>f(x) = \frac{1}{1-x}</m>, its corresponding Taylor series is
       <me>
         T(x) = 1 + x + x^2 + x^3 + \cdots x^n + \cdots
       </me>.
       Because <m>T(x)</m> is an infinite geometric series with <m>a = 1</m> and <m>r = x</m>, whenever <m>|r| = |x| \lt 1</m>, the series converges and by <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref> its sum is
       <men xml:id="Eq-8a-4-f-equals-Tf">
-        T(x) = 1 + x + x^2 + x^3 + \cdots x^n + \cdots = \frac{1}{1-x} = f(x)
+        T(x) = 1 + x + x^2 + x^3 + \cdots x^n + \cdots = \frac{1}{1-x} 
       </men>.
-      Remarkably, this shows that the original function, <m>f(x) = \frac{1}{1-x}</m>, is <em>equal to its Taylor series</em> for all values of <m>x</m> that satisfy <m>|x| \lt 1</m>.  So, not only do Taylor polynomials provide increasingly better approximations to a function as the degree <m>n</m> increases, but it appears that if we let <m>n</m> increase without bound we arrive at a new representation of the original function through its Taylor series<fn>This new representation may only be valid for a limited set of <m>x</m>-values, such as <m>|x| \lt 1</m> in the case of <m>f(x) = \frac{1}{1-x}</m>.</fn>.
+      Remarkably, this shows that the original function, <m>f(x) = \frac{1}{1-x}</m>, is <em>equal to its Taylor series</em> for all values of <m>x</m> that satisfy <m>|x| \lt 1</m>.  So, not only do Taylor polynomials provide increasingly better approximations to a function as the degree <m>n</m> increases, but it appears that if we let <m>n</m> increase without bound we arrive at a new representation of the original function through its Taylor series.  We note that this new representation may only be valid for a limited set of <m>x</m>-values, such as <m>|x| \lt 1</m> in the case of <m>f(x) = \frac{1}{1-x}</m>.
     </p>
 
     <p>
@@ -64,7 +65,11 @@
   <subsection>
     <title>Taylor series and the Ratio Test</title>
     <p>
-      From our work in <xref ref="act-8a-3-3">Activity</xref> and <xref ref="PA-8a-4">Preview Activity</xref>, we have seen two examples where the Taylor polynomials of a given function lead to a corresponding infinite Taylor series that is actually equal to the original function itself.  This suggests that Taylor series are important because they give rise to a polynomial-like representation of a non-polynomial function.  We are now ready to formally define the Taylor series of a function and then introduce a tool for determining where the Taylor series converges.
+      From our work in <xref ref="act-8a-3-3">Activity</xref> and <xref ref="PA-8a-4">Preview Activity</xref>, we have seen two examples where the Taylor polynomials of a given function lead to a corresponding infinite Taylor series that is actually equal to the original function itself.  This suggests that one reason Taylor series are important is that they give rise to polynomial-like representations of non-polynomial functions.  
+    </p>
+
+    <p>
+      Next we formally define the Taylor series of a function and introduce a tool for determining where its Taylor series converges.
     </p>
 
     <definition xml:id="D-8a-4-Taylor-series">
@@ -90,7 +95,7 @@
       </p>
 
       <p>
-        From <xref ref="act-8a-3-3">Activity</xref>
+        From <xref ref="act-8a-3-3">Activity</xref>,
         we know the <m>n</m>th order Taylor polynomial centered at <m>0</m> for the function <m>f(x) = \frac{1}{1-x}</m> is
         <me>
           T_n(x) = 1 + x + x^2 + \cdots + x^n
@@ -106,7 +111,7 @@
         which shows that the Taylor series is equal to the original function <m>f(x)</m> for this set of <m>x</m> values.
       </p>
       <p>  
-        It turns out that while most Taylor series are not geometric series, we can compare any Taylor series to a geometric series in order to determine an interval of <m>x</m>-values for which the Taylor series converges.  To see how we approach this issue, we consider a particular function for which we know its Taylor polynomials and determine the <m>x</m>-values for which its Taylor series should converge.
+        It turns out that while most Taylor series are not geometric series, we can compare any Taylor series to a geometric series in order to determine an interval of <m>x</m>-values for which the Taylor series converges.  To see how to approach this issue, we consider a particular function for which we know its Taylor polynomials and determine the <m>x</m>-values for which its Taylor series should converge.
       </p>
   
       <p>
@@ -119,15 +124,15 @@
             <mrow>T_f(x) =\mathstrut \amp \sum_{k=1}^{\infty} (-1)^{k-1}\frac{1}{k}x^k</mrow>
             <mrow> =\mathstrut \amp x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots</mrow>
           </md>.
-          Unlike the Taylor series for the function <m>\frac{1}{1-x}</m>, the Taylor series for <m>f(x) = \ln(1+x)</m> turns out to not be geometric, so we introduce some new ideas to think about the <m>x</m>-values for which we expect the series to converge.
+          Unlike the Taylor series for the function <m>\frac{1}{1-x}</m>, the Taylor series for <m>f(x) = \ln(1+x)</m> turns out to not be geometric since there is not a common ratio between the terms, so we introduce some new ideas to think about the <m>x</m>-values for which we expect the series to converge.
         </p>
 
         <p>
-          For a series to be geometric, it must have a constant ratio between the terms.  In <m>T_f(x)</m>, the general <m>n</m>th term is 
+          For a series to be geometric, we must be able to construct the next term in the series by multiplying the prior term by a constant ratio.  In <m>T_f(x)</m>, the general <m>n</m>th term is 
           <me>
             a_n(x) = (-1)^{n-1}\frac{1}{n}x^n 
           </me>
-          so the <m>(n+1)</m>st term is
+          and the <m>(n+1)</m>st term is
           <me>
             a_{n+1}(x) = (-1)^{n}\frac{1}{n+1}x^{n+1} 
           </me>.
@@ -159,7 +164,10 @@
           <me>
             r_n(x) \approx -x
           </me>.
-          This suggests that the series <m>T_f(x)</m> converges for <m>|r_n(x)| \approx |-x| = |x| \lt 1</m>, since the series is very close to being geometric with a common ratio <m>-x</m>.  Graphical evidence supports the conclusion that for <m>|x| \lt 1</m>, the series <m>T_f(x)</m> converges in the same way that a geometric one would, and also that the interval of convergence is <m>-1 \lt x \lt 1</m>.  In <xref ref="F-8a-4-ln-10-20">Figure</xref>, we plot <m>f(x) = \ln(1+x)</m>, <m>T_{10}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{10}x^{10}</m>, and <m>T_{20}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{20}x^{20}</m>.
+          This suggests that the series <m>T_f(x)</m> converges for <m>|r_n(x)| \approx |-x| = |x| \lt 1</m>, since the series is very close to being geometric with a common ratio <m>-x</m>.  
+        </p>
+        <p>  
+          Graphical evidence supports the conclusion that for <m>|x| \lt 1</m>, the series <m>T_f(x)</m> converges in the same way that a geometric one would, and also that the interval of convergence is <m>-1 \lt x \lt 1</m>.  In <xref ref="F-8a-4-ln-10-20">Figure</xref>, we plot <m>f(x) = \ln(1+x)</m>, <m>T_{10}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{10}x^{10}</m>, and <m>T_{20}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{20}x^{20}</m>.
         </p>
 
         <figure xml:id="F-8a-4-ln-10-20">
@@ -245,20 +253,26 @@
     </title>
 
     <p>
-      So far, we have established that the Taylor series of two important functions, <m>\frac{1}{1-x}</m> and <m>\ln(1+x)</m>, converge on an interval of <m>x</m>-values and on that interval converge to the respective functions.  In particular,
+      So far, we have established that the Taylor series of two important functions, <m>\frac{1}{1-x}</m> and <m>\ln(1+x)</m>, converge on an interval of <m>x</m>-values and on that interval converge to the respective functions.  For these functions,
       <ul>
         <li>
           <p>
-            If <m>|x| \lt 1</m>, then <m>\frac{1}{1-x} = \sum_{k=0}^{\infty} x^k = 1 + x + x^2 + x^3 + \cdots</m>;
+            if <m>|x| \lt 1</m>, then 
+            <me>
+              \frac{1}{1-x} = \sum_{k=0}^{\infty} x^k = 1 + x + x^2 + x^3 + \cdots
+            </me>
           </p>
         </li>
         <li>
           <p>
-            If <m>|x| \lt 1</m>, then<fn>It turns out that this representation is also valid when <m>x = 1</m> because the series <m>1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots</m> converges, and does so to the exact value <m>\ln(2)</m>.</fn> <m>\ln(1+x) = \sum_{k=1}^{\infty} (-1)^{n-1} \cdot \frac{1}{n} \cdot x^n =  x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots</m>.
+            if <m>|x| \lt 1</m>, then<fn>It turns out that this representation is also valid when <m>x = 1</m> because the series <m>1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots</m> converges, and does so to the exact value <m>\ln(2)</m>.</fn> 
+            <me>
+              \ln(1+x) = \sum_{k=1}^{\infty} (-1)^{n-1} \cdot \frac{1}{n} \cdot x^n =  x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots
+            </me>.
           </p>
         </li>
       </ul>
-      Three other important functions that we have studied <mdash/> <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m> <mdash/> have similar representations, and so we build on our work with their respective Taylor polynomials in <xref ref="sec-8a-1-linear-poly">Section</xref> and <xref ref="sec-8a-2-taylor-poly">Section</xref> in order to investigate and understand their Taylor series.
+      Three other important functions that we have studied <mdash/> <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m> <mdash/> have similar representations, and so we build on our work from <xref ref="sec-8a-1-linear-poly">Section</xref> and <xref ref="sec-8a-2-taylor-poly">Section</xref> with their respective Taylor polynomials in order to investigate and understand their Taylor series.
     </p>
 
     <p>
@@ -303,7 +317,7 @@
             </me>
             we see that
             <mdn>
-              <mrow number="no">T_f(x) =\mathstrut \amp x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7 + \cdots + (-1)^{n} \frac{1}{(2n+1)!} x^{2n+1} + \cdots</mrow>
+              <mrow number="no">T_f(x) =\mathstrut \amp x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots + (-1)^{n} \frac{1}{(2n+1)!} x^{2n+1} + \cdots</mrow>
               <mrow xml:id="Eq-8a-4-sine"> =\mathstrut \amp \sum_{k=0}^{\infty} (-1)^{k} \frac{1}{(2k+1)!}x^{2k+1}</mrow>.
             </mdn>
           </p>
@@ -349,26 +363,45 @@
             The Ratio Test tells us that for any <m>x</m> for which <m>|r(x)| \lt 1</m>, the series <m>T_f(x)</m> converges.  Here, since <m>r(x) = 0</m> for every value of <m>x</m>, this means that <m>T_f(x)</m> converges for every real number <m>x</m>.
           </p>
           <p>
-            Finally, we investigate whether the Taylor series appears to converge to <m>f(x) = \sin(x)</m> or not.  In <xref ref="F-8a-4-T159">Figure</xref>, we see the Taylor polynomials of degree <m>1</m>, <m>5</m>, and <m>9</m>, and the significant improvement of the approximation as the degree increases.  
+            Finally, we investigate whether the Taylor series appears to converge to <m>f(x) = \sin(x)</m> or not.  In <xref ref="F-8a-4-T159">Figure</xref>, we see the Taylor polynomials of degree <m>5</m> and <m>9</m>, and the significant improvement of the approximation as the degree increases.  
           </p>
 
           <figure xml:id="F-8a-4-T159">
-            <caption>Left to right, the degree <m>1</m>, <m>5</m>, and <m>9</m> Taylor polynomials centered at <m>x = 0</m> for <m>f(x) = \sin(x)</m>, each plotted along with the sine function.</caption>
-              <sidebyside widths="30% 30% 30%" margins="auto">
-                <image source="images/8_5_Taylor1" />
-                <image source="images/8_5_Taylor5" />
-                <image source="images/8_5_Taylor9" />
-              </sidebyside>
+            <caption>The degree <m>5</m> and <m>9</m> Taylor polynomials centered at <m>x = 0</m> for <m>f(x) = \sin(x)</m>, along with the sine function.</caption>
+            <image width="80%">
+              <prefigure label="Fig-8a-4-T159" xmlns="https://prefigure.org">
+                <diagram dimensions="(300,150)" margins="5">
+                  <definition>f(x) = sin(x)</definition>
+                  <definition>p(x) = x - 1/6*x^3 </definition>  
+                  <definition>q(x) = x - 1/6*x^3 + 1/(5*4*3*2)*x^5 - 1/(7*6*5*4*3*2)*x^7 + 1/(9*8*7*6*5*4*3*2)*x^9</definition>  
+                  <coordinates bbox="(-6,-3,6,3)">
+                    <axes xlabel="x" ylabel="y"/>
+                    <graph function="f"/>
+                    <graph function="p" stroke="red" />   
+                    <graph function="q" stroke="magenta" />  
+                    <label anchor="(-5,f(-5))" alignment="n" scale="0.8">
+                      <m>\sin(x) </m>
+                    </label>  
+                    <label anchor="(-3,p(-3))" alignment="e" scale="0.8">
+                      <m>P_5(x) </m>
+                    </label> 
+                    <label anchor="(5.35,q(5.35))" alignment="w" scale="0.8">
+                      <m>P_9(x) </m>
+                    </label>          
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>  
           </figure>    
 
           <p>
-            In particular, for the degree <m>9</m> approximation, we see that <m>T_9(x)</m> and <m>f(x) = \sin(x)</m> are almost indistinguishable on <m>-4 \lt x \lt 4</m>, which is much wider than the interval <m>-2 \lt x \lt 2</m> on which the <m>T_5(x)</m> approximation is accurate.  Increasing the degree of the approximation appears to widen the interval on which the approximation is accurate and seems to do so without bound, which suggests that the Taylor series of <m>f(x) = \sin(x)</m> in fact converges to <m>f(x) = \sin(x)</m>.
+            For the degree <m>9</m> approximation, we see that <m>T_9(x)</m> and <m>f(x) = \sin(x)</m> are almost indistinguishable on <m>-4 \lt x \lt 4</m>, which is much wider than the interval <m>-2 \lt x \lt 2</m> on which the <m>T_5(x)</m> approximation is accurate.  Experimenting with even higher degree Taylor polynomials shows that increasing the degree of the approximation appears to widen the interval on which the approximation is accurate and seems to do so without bound, which suggests that the Taylor series of <m>f(x) = \sin(x)</m> in fact converges to <m>f(x) = \sin(x)</m>.
           </p>    
       </solution>
     </example>
 
     <p>
-      In <xref ref="Ex-8a-4-sine">Example</xref>, we found that the Taylor series for the sine function appears to converge to the sine function, and to do so for every real number <m>x</m>.  This result can be proven formally using a famous theorem called the Lagrange Error Bound<fn>The Lagrange Error Bound states: Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
+      In <xref ref="Ex-8a-4-sine">Example</xref>, we found that the Taylor series for the sine function appears to converge to the sine function, and to do so for every real number <m>x</m>.  This result can be proven formally using a famous theorem called the Lagrange Error Bound, which we will study in **Section 8.6**.  <fn>The Lagrange Error Bound states: Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
         Suppose that <m>M</m> is a positive real number such that
         <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
         If <m>P_n(x)</m> is the <m>n</m>th order Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
@@ -399,7 +432,10 @@
     </p>  
 
     <p>
-      A function such as <m>f(x) = \sin(x)</m> that is infinitely differentiable and has a convergent power series that converges on some interval to the function itself is said to be <term>analytic</term>.  Analytic functions are amazing and among the nicest functions in all of mathematics:  they are completely determined by what happens at a single point.  Almost all functions are not analytic.  For example, if a function  measures your location as a function of time on a highway, that function cannot be analytic, since what happens at 12:01 is independent of what happens at 12:00 due to other circumstances such as traffic or construction.  At the same time, the mathematical universe is better to us than we deserve in that many of the most interesting functions are analytic, including those we've mentioned (<m>\frac{1}{1-x}</m>, <m>\ln(1+x)</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m>) and most of those represented by buttons on a calculator.
+      A function such as <m>f(x) = \sin(x)</m> that is infinitely differentiable and has a power series that converges on some interval to the function itself is said to be <term>analytic</term>.  Analytic functions are amazing and among the nicest functions in all of mathematics:  they are completely determined by what happens at a single point.  
+    </p>
+    <p>  
+      Almost all functions are not analytic.  For example, if a function  measures your location as a function of time on a highway, that function cannot be analytic, since what happens at 12:01 is independent of what happens at 12:00 due to other circumstances such as traffic or construction.  At the same time, the mathematical universe is better to us than we deserve in that many of the most interesting functions are analytic, including those we've mentioned (<m>\frac{1}{1-x}</m>, <m>\ln(1+x)</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m>) and most of those represented by buttons on a calculator.
     </p>
 
     <p>
@@ -427,34 +463,34 @@
       <p>
       <table xml:id="T-8a-4-big-5">
             <title>Taylor series and the <m>x</m>-values where they converge for <m>5</m> important functions.</title>
-              <tabular top="minor" bottom="minor">
-                <row>
-                  <cell halign="right">function <m>f(x)</m></cell>
+              <tabular>
+                <row bottom="minor">
+                  <cell halign="center"> <m>f(x)</m></cell>
                   <cell>Taylor series, <m>T_f</m>, centered at <m>0</m></cell>
                   <cell><m>f(x) = T_f(x)</m></cell>
                 </row>
                 <row>
-                  <cell halign="right"><m>\frac{1}{1-x}=</m></cell>
+                  <cell halign="center"><m>\frac{1}{1-x}</m></cell>
                   <cell><m>\sum_{k=0}^{\infty} x^k = 1 + x + x^2 + x^3 + \cdots</m></cell>
                   <cell>if <m>|x| \lt 1</m></cell>
                 </row>
                 <row>
-                  <cell halign="right"><m>\ln(1+x)=</m></cell>
+                  <cell halign="center"><m>\ln(1+x)</m></cell>
                   <cell><m>\sum_{k=1}^{\infty} (-1)^{k-1} \frac{x^k}{k}  = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots</m></cell>
                   <cell>if <m>|x| \lt 1</m></cell>
                 </row>
                 <row>
-                  <cell halign="right"><m>\sin(x)=</m></cell>
+                  <cell halign="center"><m>\sin(x)</m></cell>
                   <cell><m>\sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots</m></cell>
                   <cell>for all real <m>x</m></cell>
                 </row>
                 <row>
-                  <cell halign="right"><m>\cos(x)=</m></cell>
+                  <cell halign="center"><m>\cos(x)</m></cell>
                   <cell><m>\sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k}}{(2k)!} = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \cdots</m></cell>
                   <cell>for all real <m>x</m></cell>
                 </row>
                 <row>
-                  <cell halign="right"><m>e^x=</m></cell>
+                  <cell halign="center"><m>e^x</m></cell>
                   <cell><m>\sum_{k=0}^{\infty} \frac{x^k}{k!} = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots</m></cell>
                   <cell>for all real <m>x</m></cell>
                 </row>
