@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.8.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -610,7 +610,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="C-8a.html" class="internal"><span class="codenumber">8</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Extending local linearization</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-4" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Finding a quadratic approximation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-5" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Over and over again</span></a></div></li>
@@ -652,9 +652,26 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-4" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Using substitution and algebra to find new Taylor series expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-5" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Differentiating and integrating Taylor series</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-7" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Summary</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">NEED TITLE - quantifying accuracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Using Series to Solve Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-4" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Using power series to find solutions to initial value problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-5" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Using power series to solve higher order initial value problems: constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-6" class="internal"><span class="codenumber">8.7.3</span> <span class="title">Solving initial value problems with non-constant coeffiecients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-7" class="internal"><span class="codenumber">8.7.4</span> <span class="title">Using power series to solve higher order initial value problems: non-constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-8" class="internal"><span class="codenumber">8.7.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#ez-8a-6" class="internal"><span class="codenumber">8.7.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -5697,14 +5714,14 @@ F \approx 1123.2
 </div>
 <div class="autopermalink" data-description="Answer 7.6.4.7.1"><a href="#ez-7-6-7-2" title="Copy heading and permalink for Answer 7.6.4.7.1">🔗</a></div>
 </div></details></div></article><h3 class="heading hide-type" title="Exercises 8.1.5">
-<span class="codenumber">8</span><span class="space"> </span><span class="title">Taylor Polynomials and Taylor Series</span><br><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span><br><span class="codenumber">8.1.5</span><span class="space"> </span><span class="title">Exercises</span>
+<span class="codenumber">8</span><span class="space"> </span><span class="title">Taylor Polynomials and Taylor Series</span><br><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Extending local linearization</span><br><span class="codenumber">8.1.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise-like"><h4 class="heading"><span class="codenumber">8.1.5.3<span class="period">.</span></span></h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical">
 <ol class="lower-alpha ol-marker-1" id="ez-8a-1-1-2-1-1">
 <li>
-<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.23<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and its first two derivatives, plus their values at <span class="process-math">\(a=0\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.23: Formulas and values for f(x) and its first two derivatives, plus their values at a=0"><a href="#T-ez-8a-1-1-formulas-values-ans" title="Copy heading and permalink for Table 8.1.23: Formulas and values for f(x) and its first two derivatives, plus their values at a=0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.20<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and its first two derivatives, plus their values at <span class="process-math">\(a=0\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.20: Formulas and values for f(x) and its first two derivatives, plus their values at a=0"><a href="#T-ez-8a-1-1-formulas-values-ans" title="Copy heading and permalink for Table 8.1.20: Formulas and values for f(x) and its first two derivatives, plus their values at a=0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\)</span></td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{3}x^3 + \frac{1}{4}x^2 - 2x - 1\)</span></td>
@@ -5743,7 +5760,7 @@ F \approx 1123.2
 <div class="autopermalink" data-description="Item 8.1.5.3.c"><a href="#ez-8a-1-1-2-1-1-3" title="Copy heading and permalink for Item 8.1.5.3.c">🔗</a></div>
 </li>
 <li>
-<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.24<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_2(x)\)</span> and their first two derivatives.<div class="autopermalink" data-description="Table 8.1.24: Formulas and values for f(x) and T_2(x) and their first two derivatives."><a href="#T-ez-8a-1-1-updated-ans" title="Copy heading and permalink for Table 8.1.24: Formulas and values for f(x) and T_2(x) and their first two derivatives.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.21<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_2(x)\)</span> and their first two derivatives.<div class="autopermalink" data-description="Table 8.1.21: Formulas and values for f(x) and T_2(x) and their first two derivatives."><a href="#T-ez-8a-1-1-updated-ans" title="Copy heading and permalink for Table 8.1.21: Formulas and values for f(x) and T_2(x) and their first two derivatives.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\)</span></td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{3}x^3 + \frac{1}{4}x^2 - 2x - 1\)</span></td>
@@ -5805,7 +5822,7 @@ F \approx 1123.2
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha lower-alpha-level-1" id="ez-8a-1-4-2-1">
 <li>
-<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.28<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_3(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.28: Formulas and values for f(x) and T_3(x)"><a href="#T-ez-8a-1-2-ans" title="Copy heading and permalink for Table 8.1.28: Formulas and values for f(x) and T_3(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.25<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_3(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.25: Formulas and values for f(x) and T_3(x)"><a href="#T-ez-8a-1-2-ans" title="Copy heading and permalink for Table 8.1.25: Formulas and values for f(x) and T_3(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\)</span></td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(\frac{1}{3}x^3 + \frac{1}{4}x^2 - 2x - 1\)</span></td>
@@ -6253,10 +6270,10 @@ T_1(x) =\mathstrut \amp 2 - 3x\text{.}
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-4-9-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Answer 8.4.4.9.1"><a href="#ez-8a-4-9-2" title="Copy heading and permalink for Answer 8.4.4.9.1">🔗</a></div>
-</div></details></div></article><h3 class="heading hide-type" title="Exercises 8.5.5">
-<span class="codenumber">8.5</span><span class="space"> </span><span class="title">Finding and Using Taylor Series</span><br><span class="codenumber">8.5.5</span><span class="space"> </span><span class="title">Exercises</span>
+</div></details></div></article><h3 class="heading hide-type" title="Exercises 8.5.4">
+<span class="codenumber">8.5</span><span class="space"> </span><span class="title">Finding and Using Taylor Series</span><br><span class="codenumber">8.5.4</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
-<article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.5.7<span class="period">.</span></span></h4>
+<article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.4.7<span class="period">.</span></span></h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-1" id="ez-8a-5-1-2-1">
 <li>
@@ -6264,69 +6281,69 @@ T_1(x) =\mathstrut \amp 2 - 3x\text{.}
 <span class="process-math">\(C(x) = x - \frac{1}{5 \cdot 2!}x^5 + \frac{1}{9 \cdot 4!}x^9 - \frac{1}{13 \cdot 6!}t^{13} + \cdots
 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.a"><a href="#ez-8a-5-1-2-1-1" title="Copy heading and permalink for Item 8.5.5.7.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.a"><a href="#ez-8a-5-1-2-1-1" title="Copy heading and permalink for Item 8.5.4.7.a">🔗</a></div>
 </li>
 <li>
 <div class="para">For all real numbers <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.b"><a href="#ez-8a-5-1-2-1-2" title="Copy heading and permalink for Item 8.5.5.7.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.b"><a href="#ez-8a-5-1-2-1-2" title="Copy heading and permalink for Item 8.5.4.7.b">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(C(0.5) \approx \frac{1}{2} - \frac{1}{5 \cdot 2! \cdot 2^5} = \frac{159}{320} = 0.496875
 \text{,}\)</span> which is accurate to within <span class="process-math">\(\frac{1}{9 \cdot 4! \cdot 2^9} = \frac{1}{110592} = 0.00000904 \ldots\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.c"><a href="#ez-8a-5-1-2-1-3" title="Copy heading and permalink for Item 8.5.5.7.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.c"><a href="#ez-8a-5-1-2-1-3" title="Copy heading and permalink for Item 8.5.4.7.c">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(S(x) = \frac{1}{3}x^3 - \frac{7 \cdot 3!}x^7 + \frac{1}{11 \cdot 5!}x^{11} - \cdots
 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.d"><a href="#ez-8a-5-1-2-1-4" title="Copy heading and permalink for Item 8.5.5.7.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.d"><a href="#ez-8a-5-1-2-1-4" title="Copy heading and permalink for Item 8.5.4.7.d">🔗</a></div>
 </li>
 <li>
 <div class="para">For all real numbers <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.e"><a href="#ez-8a-5-1-2-1-5" title="Copy heading and permalink for Item 8.5.5.7.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.e"><a href="#ez-8a-5-1-2-1-5" title="Copy heading and permalink for Item 8.5.4.7.e">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(S(0.8) \approx \frac{1}{3} \left( \frac{4}{5} \right)^3 - \frac{1}{7 \cdot 3!} \left( \frac{4}{5} \right)^7 = \frac{271808}{1640625} = 0.16567 \ldots
 \text{,}\)</span> which is accurate to within <span class="process-math">\(\frac{1}{11 \cdot 5!} \left( \frac{4}{5} \right)^{11} = 0.00006507 \ldots\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-2-1-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.7.f"><a href="#ez-8a-5-1-2-1-6" title="Copy heading and permalink for Item 8.5.5.7.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.f"><a href="#ez-8a-5-1-2-1-6" title="Copy heading and permalink for Item 8.5.4.7.f">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Answer 8.5.5.7.1"><a href="#ez-8a-5-1-2" title="Copy heading and permalink for Answer 8.5.5.7.1">🔗</a></div>
-</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.5.8<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Answer 8.5.4.7.1"><a href="#ez-8a-5-1-2" title="Copy heading and permalink for Answer 8.5.4.7.1">🔗</a></div>
+</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.4.8<span class="period">.</span></span></h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-1" id="ez-8a-5-2-2-1">
 <li>
 <div class="para">
 <span class="process-math">\(a_0 = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.8.a"><a href="#ez-8a-5-2-2-1-1" title="Copy heading and permalink for Item 8.5.5.8.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.8.a"><a href="#ez-8a-5-2-2-1-1" title="Copy heading and permalink for Item 8.5.4.8.a">🔗</a></div>
 </li>
 <li>
 <div class="para">Both series expanstions for <span class="process-math">\(e^x\)</span> have “<span class="process-math">\(1\)</span>” as their constant term, and thus <span class="process-math">\(a_1 = a_0 = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.8.b"><a href="#ez-8a-5-2-2-1-2" title="Copy heading and permalink for Item 8.5.5.8.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.8.b"><a href="#ez-8a-5-2-2-1-2" title="Copy heading and permalink for Item 8.5.4.8.b">🔗</a></div>
 </li>
 <li>
 <div class="para">By equating the coefficients of the linear terms <span class="process-math">\(a_1 x\)</span> and <span class="process-math">\(2a_2 x\text{,}\)</span> it follows <span class="process-math">\(a_1 = 2a_2\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.8.c"><a href="#ez-8a-5-2-2-1-3" title="Copy heading and permalink for Item 8.5.5.8.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.8.c"><a href="#ez-8a-5-2-2-1-3" title="Copy heading and permalink for Item 8.5.4.8.c">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(a_3 = \frac{1}{3}a_2 = \frac{1}{3 \cdot 2} = \frac{1}{3!}\text{,}\)</span>  <span class="process-math">\(a_4 = \frac{1}{4}a_3 = \frac{1}{4 \cdot 3!} = \frac{1}{4!}\text{,}\)</span> and <span class="process-math">\(a_5 = \frac{1}{5}a_4 = \frac{1}{5 \cdot 4!} = \frac{1}{5!}\text{;}\)</span> so in general, <span class="process-math">\(a_k = \frac{1}{k!}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.8.d"><a href="#ez-8a-5-2-2-1-4" title="Copy heading and permalink for Item 8.5.5.8.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.8.d"><a href="#ez-8a-5-2-2-1-4" title="Copy heading and permalink for Item 8.5.4.8.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Answer 8.5.5.8.1"><a href="#ez-8a-5-2-2" title="Copy heading and permalink for Answer 8.5.5.8.1">🔗</a></div>
-</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.5.9<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Answer 8.5.4.8.1"><a href="#ez-8a-5-2-2" title="Copy heading and permalink for Answer 8.5.4.8.1">🔗</a></div>
+</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.4.9<span class="period">.</span></span></h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-1" id="ez-8a-5-3-2-1">
 <li>
@@ -6334,38 +6351,51 @@ T_1(x) =\mathstrut \amp 2 - 3x\text{.}
 <span class="process-math">\(\int_0^1 \frac{4}{1+x^2} \, dx = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \cdots
 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.9.a"><a href="#ez-8a-5-3-2-1-1" title="Copy heading and permalink for Item 8.5.5.9.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.9.a"><a href="#ez-8a-5-3-2-1-1" title="Copy heading and permalink for Item 8.5.4.9.a">🔗</a></div>
 </li>
 <li>
 <div class="para">It would take <span class="process-math">\(n = 200\)</span> terms in the sum to get an approximation within <span class="process-math">\(0.01\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.9.b"><a href="#ez-8a-5-3-2-1-2" title="Copy heading and permalink for Item 8.5.5.9.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.9.b"><a href="#ez-8a-5-3-2-1-2" title="Copy heading and permalink for Item 8.5.4.9.b">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(\int_0^1 \frac{4}{1+x^2} \, dx = \left. 4 \arctan(x) \right|_0^1 = \pi
 \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.9.c"><a href="#ez-8a-5-3-2-1-3" title="Copy heading and permalink for Item 8.5.5.9.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.9.c"><a href="#ez-8a-5-3-2-1-3" title="Copy heading and permalink for Item 8.5.4.9.c">🔗</a></div>
 </li>
 <li>
 <div class="para">
 <span class="process-math">\(\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \cdots\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.5.9.d"><a href="#ez-8a-5-3-2-1-4" title="Copy heading and permalink for Item 8.5.5.9.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.9.d"><a href="#ez-8a-5-3-2-1-4" title="Copy heading and permalink for Item 8.5.4.9.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Answer 8.5.5.9.1"><a href="#ez-8a-5-3-2" title="Copy heading and permalink for Answer 8.5.5.9.1">🔗</a></div>
-</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.5.10<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Answer 8.5.4.9.1"><a href="#ez-8a-5-3-2" title="Copy heading and permalink for Answer 8.5.4.9.1">🔗</a></div>
+</div></details></div></article><article class="exercise-like"><h4 class="heading"><span class="codenumber">8.5.4.10<span class="period">.</span></span></h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <div class="para logical">
 <ol class="lower-alpha ol-marker-1" id="ez-8a-5-4-2-1-1"><li>
 <div class="para"><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-4-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
-<div class="autopermalink" data-description="Item 8.5.5.10.a"><a href="#ez-8a-5-4-2-1-1-1" title="Copy heading and permalink for Item 8.5.5.10.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.10.a"><a href="#ez-8a-5-4-2-1-1-1" title="Copy heading and permalink for Item 8.5.4.10.a">🔗</a></div>
 </li></ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Answer 8.5.5.10.1"><a href="#ez-8a-5-4-2" title="Copy heading and permalink for Answer 8.5.5.10.1">🔗</a></div>
+<div class="autopermalink" data-description="Answer 8.5.4.10.1"><a href="#ez-8a-5-4-2" title="Copy heading and permalink for Answer 8.5.4.10.1">🔗</a></div>
+</div></details></div></article><h3 class="heading hide-type" title="Exercises 8.7.6">
+<span class="codenumber">8.7</span><span class="space"> </span><span class="title">Using Series to Solve Differential Equations</span><br><span class="codenumber">8.7.6</span><span class="space"> </span><span class="title">Exercises</span>
+</h3>
+<article class="exercise-like"><h4 class="heading"><span class="codenumber">8.7.6.1<span class="period">.</span></span></h4>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
+<div class="para logical">
+<ol class="lower-alpha ol-marker-1" id="ez-8a-6-1-2-1-1"><li>
+<div class="para"><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-6-1-2-1-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
+<div class="autopermalink" data-description="Item 8.7.6.1.a"><a href="#ez-8a-6-1-2-1-1-1" title="Copy heading and permalink for Item 8.7.6.1.a">🔗</a></div>
+</li></ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-6-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Answer 8.7.6.1.1"><a href="#ez-8a-6-1-2" title="Copy heading and permalink for Answer 8.7.6.1.1">🔗</a></div>
 </div></details></div></article><div class="autopermalink" data-description="Appendix C: Answers to Selected Exercises"><a href="#exercises-answers" title="Copy heading and permalink for Appendix C: Answers to Selected Exercises">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="activities-answers.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>

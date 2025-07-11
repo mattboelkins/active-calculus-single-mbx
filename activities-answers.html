@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.8.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -610,7 +610,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="C-8a.html" class="internal"><span class="codenumber">8</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Extending local linearization</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-4" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Finding a quadratic approximation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-5" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Over and over again</span></a></div></li>
@@ -652,9 +652,26 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-4" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Using substitution and algebra to find new Taylor series expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-5" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Differentiating and integrating Taylor series</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-7" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Summary</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">NEED TITLE - quantifying accuracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Using Series to Solve Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-4" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Using power series to find solutions to initial value problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-5" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Using power series to solve higher order initial value problems: constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-6" class="internal"><span class="codenumber">8.7.3</span> <span class="title">Solving initial value problems with non-constant coeffiecients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-7" class="internal"><span class="codenumber">8.7.4</span> <span class="title">Using power series to solve higher order initial value problems: non-constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-8" class="internal"><span class="codenumber">8.7.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#ez-8a-6" class="internal"><span class="codenumber">8.7.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -5910,7 +5927,7 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 </div>
 <div class="autopermalink" data-description="Answer 7.6.3.1"><a href="#act-7-6-2-3" title="Copy heading and permalink for Answer 7.6.3.1">🔗</a></div>
 </div></details></div></article><h3 class="heading hide-type" title="Subsection 8.1.1: Finding a quadratic approximation">
-<span class="codenumber">8</span><span class="space"> </span><span class="title">Taylor Polynomials and Taylor Series</span><br><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span><br><span class="codenumber">8.1.1</span><span class="space"> </span><span class="title">Finding a quadratic approximation</span>
+<span class="codenumber">8</span><span class="space"> </span><span class="title">Taylor Polynomials and Taylor Series</span><br><span class="codenumber">8.1</span><span class="space"> </span><span class="title">Extending local linearization</span><br><span class="codenumber">8.1.1</span><span class="space"> </span><span class="title">Finding a quadratic approximation</span>
 </h3>
 <article class="project-like"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
@@ -5932,7 +5949,7 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 </li>
 <li>
 <div class="para">
-<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.6<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_2(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.6: Formulas and values for f(x) and T_2(x)"><a href="#T-act-8a-1-1-ans" title="Copy heading and permalink for Table 8.1.6: Formulas and values for f(x) and T_2(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.4<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_2(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.4: Formulas and values for f(x) and T_2(x)"><a href="#T-act-8a-1-1-ans" title="Copy heading and permalink for Table 8.1.4: Formulas and values for f(x) and T_2(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\)</span></td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^x\)</span></td>
@@ -6011,7 +6028,7 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 <ol class="lower-alpha ol-marker-1" id="act-8a-1-2-3-1-1">
 <li>
 <div class="para">
-<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.11<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_3(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.11: Formulas and values for f(x) and T_3(x)"><a href="#T-act-8a-1-2-ans" title="Copy heading and permalink for Table 8.1.11: Formulas and values for f(x) and T_3(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.8<span class="period">.</span></span><span class="space"> </span>Formulas and values for <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_3(x)\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.8: Formulas and values for f(x) and T_3(x)"><a href="#T-act-8a-1-2-ans" title="Copy heading and permalink for Table 8.1.8: Formulas and values for f(x) and T_3(x)">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="r m b0 r0 l0 t0 lines"><span class="process-math">\(f(x)=\)</span></td>
 <td class="l m b0 r0 l0 t0 lines"><span class="process-math">\(e^x\)</span></td>
@@ -6101,7 +6118,7 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
 <ol class="lower-alpha ol-marker-1" id="act-8a-1-3-3-1">
 <li>
-<div class="para">The first seven columns and eleven rows of the spreadsheet are: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.16<span class="period">.</span></span><span class="space"> </span>Comparing <span class="process-math">\(f(x) = e^x\)</span> and its degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(4\)</span> and approximations near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.16: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0"><a href="#T-8a-1-act-3-approx-ans" title="Copy heading and permalink for Table 8.1.16: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">The first seven columns and eleven rows of the spreadsheet are: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.13<span class="period">.</span></span><span class="space"> </span>Comparing <span class="process-math">\(f(x) = e^x\)</span> and its degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> <span class="process-math">\(4\)</span> and approximations near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.13: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0"><a href="#T-8a-1-act-3-approx-ans" title="Copy heading and permalink for Table 8.1.13: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(\Delta x\)</span></td>
 <td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(x\)</span></td>
@@ -6212,7 +6229,7 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 </tr>
 </table></div></figure><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-1-3-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">The next four columns and four rows of the spreadsheet are: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.17<span class="period">.</span></span><span class="space"> </span>The absolute error between <span class="process-math">\(f(x) = e^x\)</span> and its degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> and <span class="process-math">\(4\)</span> approximations at <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=-0.9\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.17: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9"><a href="#T-8a-1-act-3-approx-2-ans" title="Copy heading and permalink for Table 8.1.17: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">The next four columns and four rows of the spreadsheet are: <figure class="table table-like"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.1.14<span class="period">.</span></span><span class="space"> </span>The absolute error between <span class="process-math">\(f(x) = e^x\)</span> and its degree <span class="process-math">\(1\text{,}\)</span> <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(3\text{,}\)</span> and <span class="process-math">\(4\)</span> approximations at <span class="process-math">\(x=-1\)</span> and <span class="process-math">\(x=-0.9\text{.}\)</span><div class="autopermalink" data-description="Table 8.1.14: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9"><a href="#T-8a-1-act-3-approx-2-ans" title="Copy heading and permalink for Table 8.1.14: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(|f(x)-T_1(x)|\)</span></td>
 <td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(|f(x)-T_2(x)|\)</span></td>
@@ -7044,32 +7061,32 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 </li>
 </ol>
 <div class="autopermalink" data-description="Answer 8.5.4.1"><a href="#act-8a-5-3-3" title="Copy heading and permalink for Answer 8.5.4.1">🔗</a></div>
-</div></details></div></article><h3 class="heading hide-type" title="Subsection 8.5.3: Alternating series of real numbers">
-<span class="codenumber">8.5.3</span><span class="space"> </span><span class="title">Alternating series of real numbers</span>
+</div></details></div></article><h3 class="heading hide-type" title="Subsection 8.6.1: Alternating series of real numbers">
+<span class="codenumber">8.6</span><span class="space"> </span><span class="title">NEED TITLE - quantifying accuracy</span><br><span class="codenumber">8.6.1</span><span class="space"> </span><span class="title">Alternating series of real numbers</span>
 </h3>
 <article class="project-like"><h4 class="heading">
-<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.5</span><span class="period">.</span>
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="period">.</span>
 </h4>
 <div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content">
-<ol class="lower-alpha ol-marker-1" id="act-8a-5-4-3-1">
+<ol class="lower-alpha ol-marker-1" id="act-8a-5x-1-3-1">
 <li>
 <div class="para">
 <span class="process-math">\(\sin(1) \approx 1 - \frac{1}{3!} + \frac{1}{5!} - \frac{1}{7!} = \frac{4241}{5040} = 0.8414682539682539\ldots
-\text{,}\)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{9!} \approx 0.00000276\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-4-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+\text{,}\)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{9!} \approx 0.00000276\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item a"><a href="#act-8a-5-4-3-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+<div class="autopermalink" data-description="Item a"><a href="#act-8a-5x-1-3-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li>
 <div class="para">
-<span class="process-math">\(\int_0^1 e^{-x^2} \, dx \approx 1 - \frac{1}{3} + \frac{1}{5 \cdot 2!} - \frac{1}{7 \cdot 3!} + \frac{1}{9 \cdot 4!} - \frac{1}{11 \cdot 5!} + \frac{1}{13 \cdot 6!} = \frac{1614779}{2162160} = 0.7468360343\ldots\)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{15 \cdot 7!} = \frac{1}{756600} \approx 0.0000132\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-4-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\int_0^1 e^{-x^2} \, dx \approx 1 - \frac{1}{3} + \frac{1}{5 \cdot 2!} - \frac{1}{7 \cdot 3!} + \frac{1}{9 \cdot 4!} - \frac{1}{11 \cdot 5!} + \frac{1}{13 \cdot 6!} = \frac{1614779}{2162160} = 0.7468360343\ldots\)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{15 \cdot 7!} = \frac{1}{756600} \approx 0.0000132\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-3-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item b"><a href="#act-8a-5-4-3-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+<div class="autopermalink" data-description="Item b"><a href="#act-8a-5x-1-3-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
 </li>
 <li>
 <div class="para">
-<span class="process-math">\(\int_0^1 \cos(x^2) \, dx \approx 1 - \frac{1}{5 \cdot 2!} + \frac{1}{9 \cdot 4!} - \frac{1}{13 \cdot 6!} = \frac{25399}{28080} = 0.904522792022792022792\ldots  \)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{15 \cdot 8!} = \frac{1}{604800} = 0.0000016534 \ldots \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-4-3-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<span class="process-math">\(\int_0^1 \cos(x^2) \, dx \approx 1 - \frac{1}{5 \cdot 2!} + \frac{1}{9 \cdot 4!} - \frac{1}{13 \cdot 6!} = \frac{25399}{28080} = 0.904522792022792022792\ldots  \)</span> and this approximation has error at most <span class="process-math">\(\frac{1}{15 \cdot 8!} = \frac{1}{604800} = 0.0000016534 \ldots \text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-3-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item c"><a href="#act-8a-5-4-3-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+<div class="autopermalink" data-description="Item c"><a href="#act-8a-5x-1-3-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li>
 <div class="para logical">
@@ -7081,13 +7098,31 @@ y_5 = \Delta t \cdot f(t_0) + \Delta t f(t_1) + \Delta t f(t_2) + \Delta t f(t_3
 </div>
 <div class="para">converges by the Alternating Series Theorem, and its exact sum is <span class="process-math">\(\ln(2)\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-4-3-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-3-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item d"><a href="#act-8a-5-4-3-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
+<div class="autopermalink" data-description="Item d"><a href="#act-8a-5x-1-3-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Answer 8.5.5.1"><a href="#act-8a-5-4-3" title="Copy heading and permalink for Answer 8.5.5.1">🔗</a></div>
-</div></details></div></article><div class="autopermalink" data-description="Appendix B: Answers to Activities"><a href="#activities-answers" title="Copy heading and permalink for Appendix B: Answers to Activities">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Answer 8.6.1.1"><a href="#act-8a-5x-1-3" title="Copy heading and permalink for Answer 8.6.1.1">🔗</a></div>
+</div></details></div></article><h3 class="heading hide-type" title="Subsection 8.7.1: Using power series to find solutions to initial value problems">
+<span class="codenumber">8.7</span><span class="space"> </span><span class="title">Using Series to Solve Differential Equations</span><br><span class="codenumber">8.7.1</span><span class="space"> </span><span class="title">Using power series to find solutions to initial value problems</span>
+</h3>
+<article class="project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.2</span><span class="period">.</span>
+</h4>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="autopermalink" data-description="Answer 8.7.2.1"><a href="#act-8a-6-1-3" title="Copy heading and permalink for Answer 8.7.2.1">🔗</a></div></div></details></div></article><h3 class="heading hide-type" title="Subsection 8.7.2: Using power series to solve higher order initial value problems: constant coefficients">
+<span class="codenumber">8.7.2</span><span class="space"> </span><span class="title">Using power series to solve higher order initial value problems: constant coefficients</span>
+</h3>
+<article class="project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.3</span><span class="period">.</span>
+</h4>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="autopermalink" data-description="Answer 8.7.3.1"><a href="#act-8a-6-2-3" title="Copy heading and permalink for Answer 8.7.3.1">🔗</a></div></div></details></div></article><h3 class="heading hide-type" title="Subsection 8.7.3: Solving initial value problems with non-constant coeffiecients">
+<span class="codenumber">8.7.3</span><span class="space"> </span><span class="title">Solving initial value problems with non-constant coeffiecients</span>
+</h3>
+<article class="project-like"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.7.4</span><span class="period">.</span>
+</h4>
+<div class="solutions"><details class="answer solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Answer</span><span class="period">.</span></summary><div class="answer solution-like knowl__content"><div class="autopermalink" data-description="Answer 8.7.4.1"><a href="#act-8a-6-3-3" title="Copy heading and permalink for Answer 8.7.4.1">🔗</a></div></div></details></div></article><div class="autopermalink" data-description="Appendix B: Answers to Activities"><a href="#activities-answers" title="Copy heading and permalink for Appendix B: Answers to Activities">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="integral-table.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="exercises-answers.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

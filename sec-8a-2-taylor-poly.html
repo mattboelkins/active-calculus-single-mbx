@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.8.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -610,7 +610,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="C-8a.html" class="internal"><span class="codenumber">8</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
 <ul class="structural toc-item-list contains-active">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Extending local linearization</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-4" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Finding a quadratic approximation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-5" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Over and over again</span></a></div></li>
@@ -652,9 +652,26 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-4" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Using substitution and algebra to find new Taylor series expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-5" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Differentiating and integrating Taylor series</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-7" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Summary</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">NEED TITLE - quantifying accuracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Using Series to Solve Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-4" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Using power series to find solutions to initial value problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-5" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Using power series to solve higher order initial value problems: constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-6" class="internal"><span class="codenumber">8.7.3</span> <span class="title">Solving initial value problems with non-constant coeffiecients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-7" class="internal"><span class="codenumber">8.7.4</span> <span class="title">Using power series to solve higher order initial value problems: non-constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-8" class="internal"><span class="codenumber">8.7.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#ez-8a-6" class="internal"><span class="codenumber">8.7.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
@@ -815,7 +832,7 @@ T_3'''(0) \amp= 6 c_3
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.2.1</span><span class="space"> </span><span class="title">Taylor polynomials</span>
 </h3>
 <div class="para logical" id="sec-8a-2-taylor-poly-4-2">
-<div class="para">In our work so far in <a href="C-8a.html" class="internal" title="Chapter 8: Taylor Polynomials and Taylor Series">Chapter 8</a>, we have found several different approximations of two important functions: <span class="process-math">\(e^x\)</span> and <span class="process-math">\(\sin(x)\text{.}\)</span>  In <a href="sec-8a-1-linear-poly.html" class="internal" title="Section 8.1: Approximating f(x) = e^x">Section 8.1</a>, we saw that near <span class="process-math">\(a = 0\)</span>
+<div class="para">In our work so far in <a href="C-8a.html" class="internal" title="Chapter 8: Taylor Polynomials and Taylor Series">Chapter 8</a>, we have found several different approximations of two important functions: <span class="process-math">\(e^x\)</span> and <span class="process-math">\(\sin(x)\text{.}\)</span>  In <a href="sec-8a-1-linear-poly.html" class="internal" title="Section 8.1: Extending local linearization">Section 8.1</a>, we saw that near <span class="process-math">\(a = 0\)</span>
 </div>
 <ul class="disc" id="sec-8a-2-taylor-poly-4-2-6">
 <li id="sec-8a-2-taylor-poly-4-2-6-1">
@@ -1149,7 +1166,7 @@ f^{(8)}(0) \amp= \fillinmath{XXXXX}
 <div class="autopermalink" data-description="Item d"><a href="#act-8a-2-1-1-2-4" title="Copy heading and permalink for Item d">🔗</a></div>
 </li>
 <li id="act-8a-2-1-1-2-5">
-<div class="para" id="act-8a-2-1-1-2-5-1">Build a spreadsheet similar to the one in <a href="sec-8a-1-linear-poly.html#T-8a-1-act-3-approx" class="xref" data-knowl="./knowl/xref/T-8a-1-act-3-approx.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.1.14: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0">Table 8.1.14</a> and <a href="sec-8a-1-linear-poly.html#T-8a-1-act-3-approx-2" class="xref" data-knowl="./knowl/xref/T-8a-1-act-3-approx-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.1.15: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9">Table 8.1.15</a> from <a href="sec-8a-1-linear-poly.html#act-8a-1-3" class="xref" data-knowl="./knowl/xref/act-8a-1-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.4">Activity 8.1.4</a>, but do so using <span class="process-math">\(\Delta x = 0.2\text{,}\)</span> a start value of <span class="process-math">\(x = -2\text{,}\)</span> and the functions <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> <span class="process-math">\(T_2(x)\text{,}\)</span> <span class="process-math">\(T_4(x)\text{,}\)</span> and <span class="process-math">\(T_6(x)\text{.}\)</span>  The first six columns of your spreadsheet should begin as shown in <a href="sec-8a-2-taylor-poly.html#T-8a-2-act-1-spreadsheet-6" class="xref" data-knowl="./knowl/xref/T-8a-2-act-1-spreadsheet-6.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0">Table 8.2.13</a>, <figure class="table table-like" id="T-8a-2-act-1-spreadsheet-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.2.13<span class="period">.</span></span><span class="space"> </span>Comparing <span class="process-math">\(f(x) = \cos(x)\)</span> and its degree <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(4\text{,}\)</span> and <span class="process-math">\(6\)</span> approximations near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0"><a href="#T-8a-2-act-1-spreadsheet-6" title="Copy heading and permalink for Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para" id="act-8a-2-1-1-2-5-1">Build a spreadsheet similar to the one in <a href="sec-8a-1-linear-poly.html#T-8a-1-act-3-approx" class="xref" data-knowl="./knowl/xref/T-8a-1-act-3-approx.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.1.11: Comparing f(x) = e^x and its degree 1 2 3 4 and approximations near a = 0">Table 8.1.11</a> and <a href="sec-8a-1-linear-poly.html#T-8a-1-act-3-approx-2" class="xref" data-knowl="./knowl/xref/T-8a-1-act-3-approx-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.1.12: The absolute error between f(x) = e^x and its degree 1 2 3 and 4 approximations at x=-1 and x=-0.9">Table 8.1.12</a> from <a href="sec-8a-1-linear-poly.html#act-8a-1-3" class="xref" data-knowl="./knowl/xref/act-8a-1-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.4">Activity 8.1.4</a>, but do so using <span class="process-math">\(\Delta x = 0.2\text{,}\)</span> a start value of <span class="process-math">\(x = -2\text{,}\)</span> and the functions <span class="process-math">\(f(x) = \cos(x)\text{,}\)</span> <span class="process-math">\(T_2(x)\text{,}\)</span> <span class="process-math">\(T_4(x)\text{,}\)</span> and <span class="process-math">\(T_6(x)\text{.}\)</span>  The first six columns of your spreadsheet should begin as shown in <a href="sec-8a-2-taylor-poly.html#T-8a-2-act-1-spreadsheet-6" class="xref" data-knowl="./knowl/xref/T-8a-2-act-1-spreadsheet-6.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0">Table 8.2.13</a>, <figure class="table table-like" id="T-8a-2-act-1-spreadsheet-6"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.2.13<span class="period">.</span></span><span class="space"> </span>Comparing <span class="process-math">\(f(x) = \cos(x)\)</span> and its degree <span class="process-math">\(2\text{,}\)</span> <span class="process-math">\(4\text{,}\)</span> and <span class="process-math">\(6\)</span> approximations near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0"><a href="#T-8a-2-act-1-spreadsheet-6" title="Copy heading and permalink for Table 8.2.13: Comparing f(x) = \cos(x) and its degree 2 4 and 6 approximations near a = 0">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r1 l1 t1 lines"><span class="process-math">\(\Delta x\)</span></td>
 <td class="c m b1 r1 l0 t1 lines"><span class="process-math">\(x\)</span></td>
@@ -1221,7 +1238,7 @@ T_6(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 \text{,}
 \sin(x) \approx T_7(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7\text{,}
 \end{equation*}
 </div>
-<div class="para">the degree <span class="process-math">\(7\)</span> Taylor approximation of the sine function at <span class="process-math">\(a = 0\text{.}\)</span>  Furthermore, as we saw in <a href="sec-8a-1-linear-poly.html" class="internal" title="Section 8.1: Approximating f(x) = e^x">Section 8.1</a>, the degree <span class="process-math">\(4\)</span> Taylor approximation of <span class="process-math">\(e^x\)</span> provides us with the estimate</div>
+<div class="para">the degree <span class="process-math">\(7\)</span> Taylor approximation of the sine function at <span class="process-math">\(a = 0\text{.}\)</span>  Furthermore, as we saw in <a href="sec-8a-1-linear-poly.html" class="internal" title="Section 8.1: Extending local linearization">Section 8.1</a>, the degree <span class="process-math">\(4\)</span> Taylor approximation of <span class="process-math">\(e^x\)</span> provides us with the estimate</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-8a-2-1.html ./knowl/xref/PA-8a-2.html ./knowl/xref/sec-8a-1-linear-poly.html">
 \begin{equation*}
 e^x \approx T_4(x) = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \frac{1}{4!}x^4\text{.}

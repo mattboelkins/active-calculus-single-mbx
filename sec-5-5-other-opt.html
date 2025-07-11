@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.8.4';
+eBookConfig.runestone_version = '7.8.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.962d00926ef9460e.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.2e7f40e86ae7d163.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.a99e275a1e410b98.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.58623b9a3097f5e4.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.5bdeacdba067a0e3.css">
 <script src="_static/pretext/js/pretext-webwork/2.19/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -610,7 +610,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="C-8a.html" class="internal"><span class="codenumber">8</span> <span class="title">Taylor Polynomials and Taylor Series</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Approximating <span class="process-math">\(f(x) = e^x\)</span></span></a></div>
+<div class="toc-title-box"><a href="sec-8a-1-linear-poly.html" class="internal"><span class="codenumber">8.1</span> <span class="title">Extending local linearization</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-4" class="internal"><span class="codenumber">8.1.1</span> <span class="title">Finding a quadratic approximation</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-1-linear-poly.html#sec-8a-1-linear-poly-5" class="internal"><span class="codenumber">8.1.2</span> <span class="title">Over and over again</span></a></div></li>
@@ -652,9 +652,26 @@ eBookConfig.enable_chatcodes =  false;
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-4" class="internal"><span class="codenumber">8.5.1</span> <span class="title">Using substitution and algebra to find new Taylor series expressions</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-5" class="internal"><span class="codenumber">8.5.2</span> <span class="title">Differentiating and integrating Taylor series</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-7" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Summary</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.5</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#sec-8a-5-finding-using-taylor-series-6" class="internal"><span class="codenumber">8.5.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5" class="internal"><span class="codenumber">8.5.4</span> <span class="title">Exercises</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">NEED TITLE - quantifying accuracy</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
+</ul>
+</li>
+<li class="toc-item toc-section">
+<div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html" class="internal"><span class="codenumber">8.7</span> <span class="title">Using Series to Solve Differential Equations</span></a></div>
+<ul class="structural toc-item-list">
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-4" class="internal"><span class="codenumber">8.7.1</span> <span class="title">Using power series to find solutions to initial value problems</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-5" class="internal"><span class="codenumber">8.7.2</span> <span class="title">Using power series to solve higher order initial value problems: constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-6" class="internal"><span class="codenumber">8.7.3</span> <span class="title">Solving initial value problems with non-constant coeffiecients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-7" class="internal"><span class="codenumber">8.7.4</span> <span class="title">Using power series to solve higher order initial value problems: non-constant coefficients</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#sec-8a-6-series-and-DEs-8" class="internal"><span class="codenumber">8.7.5</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-6-series-and-DEs.html#ez-8a-6" class="internal"><span class="codenumber">8.7.6</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 </ul>
