@@ -53,8 +53,8 @@
 					<p>
 						<md>
 							<mrow> f(0) \amp= <fillin characters="3"/> \amp T_2(0) \amp= b_0 </mrow>
-							<mrow> f'(x) \amp= <fillin characters="3"/> \amp T_2'(x) \amp= <fillin characters="3"/> </mrow>
-							<mrow> f''(x) \amp= <fillin characters="3"/> \amp T_2''(x) \amp= <fillin characters="3"/> </mrow>
+							<mrow> f'(0) \amp= <fillin characters="3"/> \amp T_2'(0) \amp= <fillin characters="3"/> </mrow>
+							<mrow> f''(0) \amp= <fillin characters="3"/> \amp T_2''(0) \amp= <fillin characters="3"/> </mrow>
 						</md>
 
 					</p>
@@ -66,10 +66,14 @@
 					<p>	
 						What does <m>T_2(0) = f(0)</m> tell us the value of <m>b_0</m> is? What does <m>T_2'(0) = f'(0)</m> tell us the value of <m>b_1</m> is? What condition can you use to find the value of <m>b_2</m>, and what is its value?  
 					</p>
+
+					<p>
+						Summarize your work by stating the formula you've determined for <m>T_2(x)</m>.
+					</p>
 				</li>
 				<li>
 					<p>
-						Having now determined the numerical values of <m>b_0</m>, <m>b_1</m>, and <m>b_2</m>, use appropriate computational technology to plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in the same window shown in <xref ref="F-8a-1-act-1">Figure</xref>.  
+						Use appropriate computational technology to plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in the same window shown in <xref ref="F-8a-1-act-1">Figure</xref>.  
 
 						<figure xml:id="F-8a-1-act-1">
 							<caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
