@@ -12,8 +12,11 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-1-linear-poly">
-  <title>Approximating <m>f(x) = e^x</m></title>
+
+  <title>Extending local linearization</title>
+
   <objectives>
     <ul>
       <li>
@@ -45,7 +48,7 @@
     </p>
 
     <p>
-      In this section, we focus on the function <m>f(x) = e^x</m> and investigate how we can approximate its value near <m>a = 0</m> using other basic functions.
+      In this section, we use the function <m>f(x) = e^x</m> as a case study investigate how we can use other basic functions to better approximate the value of <m>f(x)</m> near <m>a = 0</m>.
     </p>
 
     <xi:include href="./previews/PA-8a-1-WW.xml" />
@@ -58,7 +61,7 @@
     <!-- think carefully about indexing -->
 
     <p>
-      In <xref ref="PA-8a-1">Preview Activity</xref>, we found that the error in the tangent line approximation of <m>f(x) = e^x</m> at <m>a = 0</m> grows significantly as we consider <m>x</m>-values further and further from <m>0</m>.  This is due to the fact that the tangent line is straight while the function <m>f(x) = e^x</m> has some curvature.  So, we are going to try to find a quadratic approximation whose curvature matches that of <m>f(x) = e^x</m> at the point of tangency.
+      In <xref ref="PA-8a-1">Preview Activity</xref>, we found that the error in the tangent line approximation of <m>f(x) = e^x</m> at <m>a = 0</m> grows significantly as we consider <m>x</m>-values further and further from <m>0</m>.  This is due to the fact that the tangent line is straight while the function <m>f(x) = e^x</m> has some curvature.  To hopefully improve the approximation, we are going to try to find a quadratic function whose curvature matches that of <m>f(x) = e^x</m> at the point of tangency.
     </p>
 
     <p>
@@ -74,7 +77,7 @@
     </p>
 
     <p>
-      To generate a quadratic function that approximates <m>f</m> near <m>a = 0</m>, we choose to have this quadratic function not only share the same function value and derivative value as <m>f</m> at <m>a=0</m>, but also the same second derivative value<fn>Here we are implicitly assuming that the function <m>f(x)</m> has a second derivative at <m>a=0</m>, which is a property that holds for <m>f(x) = e^x</m>.</fn> at <m>a=0</m>, in order to match the concavity or curvature of <m>f</m>.  In other words, we are adding a term to the linear approximation that gives the same amount of curvature as the function <m>f</m>. 
+      To generate a quadratic function that approximates <m>f</m> near <m>a = 0</m>, we choose to have this quadratic function not only share the same function value and derivative value as <m>f</m> at <m>a=0</m>, but also the same second derivative value<fn>Here we are implicitly assuming that the function <m>f(x)</m> has a second derivative at <m>a=0</m>, which is a property that holds for <m>f(x) = e^x</m>.</fn> at <m>a=0</m> in order to match the concavity or curvature of <m>f</m>.  In other words, we are adding a term to the linear approximation that gives the same amount of curvature as the function <m>f</m>. 
     </p>
 
     <p>
@@ -108,9 +111,11 @@
 
     <xi:include href="./activities/act-8a-1-1.xml" />
 
+    <!--
     <p>
       While we will develop this idea more formally in <xref ref="sec-8a-2-taylor-poly">Section</xref>, the polynomial <m>T_2(x)</m> that we found in <xref ref="act-8a-1-1">Activity</xref> is called the <q>degree 2 Taylor polynomial of <m>f</m> centered at <m>a=0</m></q>.
     </p>
+    -->
 
   </subsection>
 
@@ -130,12 +135,16 @@
       <ul>
         <li>
           <p>
-            <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, and <m>T_3''(0) = f''(0)</m> so that <m>T_3</m> and <m>f</m> share the same function value, first derivative value, and second derivative value at <m>a = 0</m>; plus the additional condition that
+            the same conditions we imposed on <m>T_2(x)</m>: 
+            <me>T_3(0) = f(0), T_3'(0) = f'(0), \mbox{ and } T_3''(0) = f''(0)</me> 
+            so that <m>T_3</m> and <m>f</m> share the same function value, first derivative value, and second derivative value at <m>a = 0</m>,
           </p>
         </li>
         <li>
           <p>
-            <m>T_3'''(0) = f'''(0)</m>, so <m>T_3</m> and <m>f</m> share the same third derivative value<fn>Here we are assuming that the original function <m>f</m> has a third derivative at <m>a = 0</m>, which is valid since <m>f'''(x) = e^x</m>.</fn> at <m>a = 0</m>.
+            plus we add the additional condition that 
+            <me>T_3'''(0) = f'''(0)</me>, 
+            so <m>T_3</m> and <m>f</m> share the same third derivative value<fn>Here we are assuming that the original function <m>f</m> has a third derivative at <m>a = 0</m>, which is valid since <m>f'''(x) = e^x</m>.</fn> at <m>a = 0</m>.
           </p>
         </li>
       </ul>
@@ -150,48 +159,49 @@
 
     <xi:include href="./activities/act-8a-1-2.xml" />
 
+<!--
     <p>
       As in the quadratic case, we'll call the cubic polynomial <m>T_3(x)</m> the <q>degree 3 Taylor polynomial of <m>f</m> centered at <m>a=0</m></q>.  See <xref ref="def-Taylor-poly-0">Definition</xref> for the formal definition of a degree <m>n</m> Taylor polynomial centered at <m>a = 0</m>.
     </p>
-
+-->
+    
   </subsection>
 
   <subsection>
     <title>As the degree of the approximation increases</title>
     <p>
-      Our work so far suggests that, given the function <m>f(x)=e^x</m>, we can find a degree <m>n</m> polynomial approximation, <m>T_n</m>, that satisfies 
-      <me>T_n(0) = f(0), T_n'(0) = f'(0), T_n''(0) = f_n''(0), \ldots, T_n^{(n)}(0) = f^{(n)}(0)</me>.  Moreover, since it appears that increasing the degree <m>n</m> improves the accuracy of the approximation, we now want to investigate further what happens as <m>n</m> increases.
+      Our work so far with the case study function <m>f(x) = e^x</m> suggests that as we find degree <m>n</m> polynomial approximations, <m>T_n</m>, that satisfy 
+      <me>T_n(0) = f(0), T_n'(0) = f'(0), T_n''(0) = f_n''(0), \ldots, T_n^{(n)}(0) = f^{(n)}(0)</me>, increasing the value of <m>n</m> improves the accuracy of the approximation.
     </p>
 
 
     <p>
-      So far, we have found the following approximations for <m>f(x) = e^x</m> near <m>a = 0</m>:
-      <ul>
-        <li>
-          <p>
-            <m>T_1(x) = 1 + x</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>T_3(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>T_4(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3 + \frac{1}{24}x^4</m>
-          </p>
-        </li>
-      </ul>
-      In <xref ref="sec-8a-2-taylor-poly">Section</xref>, we will develop a general approach to finding the coefficient of <m>x^n</m> in the degree <m>n</m> approximation; for now, we will use the <m>4</m> functions above and study further how the accuracy of the approximation changes with the degree.
+      In the next activity, we introduce the idea of the <term>error</term> of a polynomial approximation and investigate explicitly how the error varies for approximations of <m>f(x) = e^x</m> as we vary <m>n</m> and vary <m>x</m>.
     </p>
 
     <xi:include href="./activities/act-8a-1-3.xml" />
+
+    <p>
+      One important application of our work so far is that these polynomial approximations provide a way to approximate values of the function <m>f(x) = e^x</m>.  For example, since we've shown that 
+      <me>
+        e^x \approx 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3 + \frac{1}{24}x^4
+      </me>,
+      it follows that
+      <me>
+        e^{\frac{1}{2}} \approx 1 + \frac{1}{2} + \frac{1}{2}\left( \frac{1}{2} \right)^2 + \frac{1}{6}\left( \frac{1}{2} \right)^3  + \frac{1}{24}\left( \frac{1}{2} \right)^4 = \frac{211}{128} = 1.6484375
+      </me>.
+      In fact, this approach through polynomial approximation is how computers determine the value of <m>e^{\frac{1}{2}}</m>, which is approximately <m>1.64872127</m>, to whatever accuracy is needed: by using even better polynomial approximations than the degree-<m>4</m> one that we found, computers are able to generate the approximate value <m>1.64872127</m> simply by the basic computations of addition and multiplication with enough terms.
+    </p>
+      
+
+    <p>
+      Throughout this section, we have focused on <m>f(x) = e^x</m>.  One of the characteristics that makes <m>f(x) = e^x</m> special is the fact that its derivative is itself; indeed, <m>f^{(n)}(x) = e^x</m> for every natural number <m>n</m>, which in turn implies that <m>f^{(n)}(0) = 1</m> for every value of <m>n</m>.  This will ultimately help to find patterns in the coefficients of the degree <m>n</m> polynomial approximation, <m>T_n(x)</m>, and be able to easily write down a formula for any value of <m>n</m>.  
+    </p>
+
+    <p>  
+      It is natural to think that we can find similar approximations of other functions, especially ones such as <m>\sin(x)</m> and <m>\cos(x)</m> that also exhibit repeating patterns in their derivatives.  In <xref ref="sec-8a-2-taylor-poly">Section</xref>, we will develop a general approach to finding the coefficient of <m>x^n</m> in the degree <m>n</m> approximation of any function with <m>n</m> derivatives and learn how to find a general expression for the degree <m>n</m> approximation.
+    </p>
+
 
   </subsection>
 

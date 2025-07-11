@@ -81,7 +81,7 @@
       </li>
       <li>
         <p>
-          Notice that the curvature in <m>f(x) = e^x</m> is what makes the linear approximation <m>L(x)</m> lose accuracy.  What kind of simple function might do a better job approximating <m>e^x</m> than a linear one?
+          Notice that the curvature in <m>f(x) = e^x</m> is what makes the linear approximation <m>L(x)</m> lose accuracy.  What kind of simple (non-exponential) function might do a better job approximating <m>e^x</m> than a linear one?
         </p>
       </li>     
     </ol>

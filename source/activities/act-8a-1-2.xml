@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-1-2">
 	<statement>
 		<p>
@@ -21,63 +22,43 @@
 			<ol marker="a.">
 				<li>
 					<p>
-						By computing the second and third derivatives of <m>T_3(x)</m> and evaluating <m>T_3</m> and its derivatives at <m>a = 0</m>, fill in the blank entries in <xref ref="T-act-8a-1-2">Table</xref>.
+						By computing the third derivative of <m>f(x)</m> and the second and third derivatives of <m>T_3(x)</m> and evaluating the relevant functions at <m>x = 0</m>, fill in the blanks below.
 
-						<table xml:id="T-act-8a-1-2">
-						<title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m> and their derivatives.</title>
-							<tabular top="none" bottom="none">
-								<row>
-								<cell halign="center">
-									<md>
-										<mrow> f(x) \amp= e^x </mrow>
-										<mrow> f'(x) \amp= e^x  </mrow>
-										<mrow> f''(x) \amp= e^x  </mrow>
-										<mrow> f'''(x) \amp= e^x  </mrow>
-										<mrow> \amp </mrow>
-										<mrow> f(0) \amp= 1  </mrow>
-										<mrow> f'(0) \amp= 1  </mrow>
-										<mrow> f''(0) \amp= 1  </mrow>
-										<mrow> f'''(0) \amp= 1  </mrow>
-									</md>
-								</cell>  
-								<cell halign="center">
-									<md>
-										<mrow> T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
-										<mrow> T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
-										<mrow> T_3''(x) \amp= <fillin characters="5" /> </mrow>
-										<mrow> T_3'''(x) \amp= <fillin characters="5" /> </mrow>
-										<mrow> \amp </mrow>
-										<mrow> T_3(0) \amp= c_0 </mrow>
-										<mrow> T_3'(0) \amp= c_1 </mrow>
-										<mrow> T_3''(0) \amp= <fillin characters="5" /> </mrow>
-										<mrow> T_3'''(0) \amp= <fillin characters="5" /> </mrow>
-									</md>
-								</cell>
-								</row>
-							</tabular>
-						</table>
+						<md>
+							<mrow> f(x) \amp= e^x \amp T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3 </mrow>
+							<mrow> f'(x) \amp= e^x \amp T_3'(x) \amp= c_1 + 2c_2 x + 3c_3 x^2 </mrow>
+							<mrow> f''(x) \amp= e^x \amp T_3''(x) \amp= <fillin characters="5" /> </mrow>
+							<mrow> f'''(x) \amp= <fillin characters="3" /> \amp T_3'''(x) \amp= <fillin characters="5" /> </mrow>
+							<mrow> \amp </mrow>
+							<mrow> f(0) \amp= 1 \amp T_3(0) \amp= c_0  </mrow>
+							<mrow> f'(0) \amp= 1 \amp T_3'(0) \amp= c_1  </mrow>
+							<mrow> f''(0) \amp= 1 \amp T_3''(0) \amp= <fillin characters="3" /> </mrow>
+							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= <fillin characters="3" /> </mrow>
+						</md>
 					</p>
 				</li>
 				<li>
 					<p>
-						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  What does our work in <xref ref="T-act-8a-1-2">Table</xref> tell us about the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>?
+						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  What does our work in the preceding question tell us about the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>?
 
 					</p>
 				</li>
 				<li>
 					<p>
-						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>, plot the function <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in <xref ref="F-8a-1-act-2">Figure</xref>.  What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
+						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>, use appropriate comptuational technology to plot the function <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in the same window as shown in <xref ref="F-8a-1-act-2">Figure</xref>.  
 
 						<figure xml:id="F-8a-1-act-2">
 							<caption>The function <m>f(x)=e^x</m>, its tangent line <m>T_1(x)=1+x</m>, and the quadratic approximation <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.</caption>
 							<image width="50%" source="images/8a_1_act_2" />
 						</figure>
+
+						What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
 					</p>		
 				</li>
 				<li>
 					<p>
-						What if we wanted a fourth degree polynomial approximation to <m>f(x) = e^x</m> near <m>a = 0</m>?  Based on the patterns you've observed in <m>T_1</m>, <m>T_2</m>, and <m>T_3</m>, conjecture values for the constants <m>w_0, \ldots, w_4</m> for a function <m>T_4</m> of the form
-						<me>T_4(x) = w_0 + w_1 x + w_2 x^2 + w_3 x^3 + w_4 x^4</me>
+						What if we wanted a fourth degree polynomial approximation to <m>f(x) = e^x</m> near <m>a = 0</m>?  Based on the patterns you've observed in <m>T_1</m>, <m>T_2</m>, and <m>T_3</m>, conjecture values for the constants <m>d_0, \ldots, d_4</m> for a function <m>T_4</m> of the form
+						<me>T_4(x) = d_0 + d_1 x + d_2 x^2 + d_3 x^3 + d_4 x^4</me>
 						that satisfies <m>T_4(0) = f(0)</m>, <m>T_4'(0) = f'(0)</m>, <m>\ldots</m>, <m>T_4^{(4)}(0) = f^{(4)}(0)</m>.  Add this function <m>T_4</m> to your earlier work in <xref ref="F-8a-1-act-2">Figure</xref>.  What do you notice?
 					</p>
 				</li>

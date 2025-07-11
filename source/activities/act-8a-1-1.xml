@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-1-1">
 	<statement>
 		<p>
@@ -35,75 +36,47 @@
 				</li>
 				<li>
 					<p>
-						Enter the formulas you've determined for <m>f(x)</m>, <m>f'(x)</m>, <m>f''(x)</m>, <m>T_2(x)</m>, <m>T_2'(x)</m>, and <m>T_2''(x)</m> in <xref ref="T-act-8a-1-1-formulas">Table</xref>.
+						Enter the formulas you've determined for <m>f'(x)</m>, <m>f''(x)</m>, and <m>T_2''(x)</m> to fill in the blanks below.
+					</p>		
+					<p>
+						<md>
+							<mrow> f(x) \amp= e^x \amp T_2(x) \amp= b_0 + b_1 x + b_2 x^2 </mrow>
+							<mrow> f'(x) \amp= <fillin characters="3"/> \amp T_2'(x) \amp= b_1 + 2 b_2 x </mrow>
+							<mrow> f''(x) \amp= <fillin characters="3"/> \amp T_2''(x) \amp= <fillin characters="3"/> </mrow>
+						</md>
+					</p>
+				</li>
+				<li>
+					<p>
+						Next, observe that since <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>, it follows that <m>T_2(0) = b_0</m>.  Reason similarly to determine the values of <m>T_2'(0)</m> and <m>T_2''(0)</m>, as well as those of <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter these values appropriately in the blanks below.
+					</p>		
+					<p>
+						<md>
+							<mrow> f(0) \amp= <fillin characters="3"/> \amp T_2(0) \amp= b_0 </mrow>
+							<mrow> f'(x) \amp= <fillin characters="3"/> \amp T_2'(x) \amp= <fillin characters="3"/> </mrow>
+							<mrow> f''(x) \amp= <fillin characters="3"/> \amp T_2''(x) \amp= <fillin characters="3"/> </mrow>
+						</md>
 
-						<table xml:id="T-act-8a-1-1-formulas">
-						<title>Formulas for <m>f(x)</m> and <m>T_2(x)</m> and their derivatives.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2(x)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2'(x)=</m></cell>
-									<cell><fillin /></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2''(x)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-							</tabular>
-						</table>
 					</p>
 				</li>
 				<li>
 					<p>
-						Next, observe that since <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>, it follows that <m>T_2(0) = b_0</m>.  Reason similarly to determine the values of <m>T_2'(0)</m> and <m>T_2''(0)</m>, as well as those of <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter these 6 values appropriately in <xref ref="T-act-8a-1-1-values">Table</xref>.
-
-						<table xml:id="T-act-8a-1-1-values">
-						<title>Values of <m>f(x)</m> and <m>T_2(x)</m> and their derivatives at <m>x = 0</m>.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2(0)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2'(0)=</m></cell>
-									<cell><fillin /></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><fillin /></cell>
-									<cell halign="right"><m>T_2''(0)=</m></cell>
-									<cell><fillin /></cell>
-								</row>
-							</tabular>
-						</table>
+						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  
+					</p>
+					<p>	
+						What does <m>T_2(0) = f(0)</m> tell us the value of <m>b_0</m> is? What does <m>T_2'(0) = f'(0)</m> tell us the value of <m>b_1</m> is? What condition can you use to find the value of <m>b_2</m>, and what is its value?  
 					</p>
 				</li>
 				<li>
 					<p>
-						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  What does <m>T_2(0) = f(0)</m> tell us about the value of <m>b_0</m>? What does <m>T_2'(0) = f'(0)</m> tell us about <m>b_1</m>? How can we also find <m>b_2</m>?  
-					</p>
-				</li>
-				<li>
-					<p>
-						Having now determined the numerical values of <m>b_0</m>, <m>b_1</m>, and <m>b_2</m>, plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in <xref ref="F-8a-1-act-1">Figure</xref>.  What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
+						Having now determined the numerical values of <m>b_0</m>, <m>b_1</m>, and <m>b_2</m>, use appropriate computational technology to plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in the same window shown in <xref ref="F-8a-1-act-1">Figure</xref>.  
 
 						<figure xml:id="F-8a-1-act-1">
 							<caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
 							<image width="50%" source="images/8a_1_act_1" />
 						</figure>
+
+						What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
 					</p>		
 				</li>
 			</ol>
