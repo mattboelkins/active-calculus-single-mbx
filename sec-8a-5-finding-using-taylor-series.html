@@ -657,10 +657,11 @@ eBookConfig.enable_chatcodes =  false;
 </ul>
 </li>
 <li class="toc-item toc-section">
-<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">NEED TITLE - quantifying accuracy</span></a></div>
+<div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Quantifying the accuracy of approximations that use Taylor polynomials</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#ez-8a-5x" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -698,12 +699,12 @@ eBookConfig.enable_chatcodes =  false;
 <div class="autopermalink" data-description="Objective"><a href="#sec-8a-5-finding-using-taylor-series-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 <li id="sec-8a-5-finding-using-taylor-series-2-1-2">
-<div class="para" id="sec-8a-5-finding-using-taylor-series-2-1-2-1">Can we differentiate or integrate a Taylor series similar to how we differentiate or integrate a polynomial?  If so, how does doing so affect the values of <span class="process-math">\(x\)</span> for which the Taylor series converges?<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-5-finding-using-taylor-series-2-1-2-1">Can we differentiate or integrate a Taylor series in the same way that we differentiate or integrate a polynomial?  If so, how does doing so affect the values of <span class="process-math">\(x\)</span> for which the Taylor series converges?<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Objective"><a href="#sec-8a-5-finding-using-taylor-series-2-1-2" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Motivating Questions 8.5"><a href="#sec-8a-5-finding-using-taylor-series-2" title="Copy heading and permalink for Motivating Questions 8.5">🔗</a></div></article><section class="introduction" id="sec-8a-5-finding-using-taylor-series-3"><div class="para" id="sec-8a-5-finding-using-taylor-series-3-1">So far, we have focused our attention on a collection of five basic functions functions — <span class="process-math">\(\frac{1}{1-x}\text{,}\)</span> <span class="process-math">\(\ln(1+x)\text{,}\)</span> <span class="process-math">\(\sin(x)\text{,}\)</span> <span class="process-math">\(\cos(x)\text{,}\)</span> and <span class="process-math">\(e^x\)</span> — and their Taylor series centered at <span class="process-math">\(a = 0\text{.}\)</span>  One of the reasons we were able to find these Taylor series is the patterns that arise in the derivatives of each of these functions.  While we can always use <a href="sec-8a-4-taylor-series.html#D-8a-4-Taylor-series" class="xref" data-knowl="./knowl/xref/D-8a-4-Taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.4.1">Definition 8.4.1</a> to find the first few terms of the Taylor series, for most functions it is challenging to find a pattern among the various derivatives that allows us to state the general <span class="process-math">\(n\)</span>th term of the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Motivating Questions 8.5"><a href="#sec-8a-5-finding-using-taylor-series-2" title="Copy heading and permalink for Motivating Questions 8.5">🔗</a></div></article><section class="introduction" id="sec-8a-5-finding-using-taylor-series-3"><div class="para" id="sec-8a-5-finding-using-taylor-series-3-1">So far, we have focused our attention on a collection of five basic functions functions — <span class="process-math">\(\frac{1}{1-x}\text{,}\)</span> <span class="process-math">\(\ln(1+x)\text{,}\)</span> <span class="process-math">\(\sin(x)\text{,}\)</span> <span class="process-math">\(\cos(x)\text{,}\)</span> and <span class="process-math">\(e^x\)</span> — and their Taylor series centered at <span class="process-math">\(a = 0\text{.}\)</span>  One of the reasons we were able to find these Taylor series is the patterns that arise in the derivatives of each of these functions.  While we can always use <a href="sec-8a-4-taylor-series.html#D-8a-4-Taylor-series" class="xref" data-knowl="./knowl/xref/D-8a-4-Taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.4.1">Definition 8.4.1</a> to find the first few terms of the Taylor series, for most functions it is much morechallenging to find a pattern among the various derivatives that allows us to state the general <span class="process-math">\(n\)</span>th term of the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-8a-5-finding-using-taylor-series-3-2">In <a href="sec-8a-5-finding-using-taylor-series.html#PA-8a-5" class="xref" data-knowl="./knowl/xref/PA-8a-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.5.1">Preview Activity 8.5.1</a>, we explore this issue and investigate a different approach to finding the Taylor series of a given function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -815,9 +816,9 @@ g(x) = x^4 \cos(x^3) = x^4 - \frac{1}{2!}x^{10} + \frac{1}{4!}x^{16} - \cdots + 
 </div>
 <div class="autopermalink" data-description="Solution 8.5.1.1"><a href="#ex-8a-5-cosx3-2" title="Copy heading and permalink for Solution 8.5.1.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 8.5.1"><a href="#ex-8a-5-cosx3" title="Copy heading and permalink for Example 8.5.1">🔗</a></div></article><div class="para" id="sec-8a-5-finding-using-taylor-series-4-4">Because the approaches in <a href="sec-8a-5-finding-using-taylor-series.html#PA-8a-5" class="xref" data-knowl="./knowl/xref/PA-8a-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.5.1">Preview Activity 8.5.1</a> and <a href="sec-8a-5-finding-using-taylor-series.html#ex-8a-5-cosx3" class="xref" data-knowl="./knowl/xref/ex-8a-5-cosx3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.5.1">Example 8.5.1</a> each require us to use a known Taylor series, we restate the Taylor series we’ve established so far for <span class="process-math">\(5\)</span> important functions in <a href="sec-8a-5-finding-using-taylor-series.html#T-8a-5-big-5-redux" class="xref" data-knowl="./knowl/xref/T-8a-5-big-5-redux.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.5.2: Taylor series and the x-values where they converge for 5 important functions.">Table 8.5.2</a>. <article class="assemblage assemblage-like" id="sec-8a-5-finding-using-taylor-series-4-4-5"><h4 class="heading"><span class="title">Important Taylor series representations.</span></h4>
+<div class="autopermalink" data-description="Example 8.5.1"><a href="#ex-8a-5-cosx3" title="Copy heading and permalink for Example 8.5.1">🔗</a></div></article><div class="para" id="sec-8a-5-finding-using-taylor-series-4-4">Because the approaches in <a href="sec-8a-5-finding-using-taylor-series.html#PA-8a-5" class="xref" data-knowl="./knowl/xref/PA-8a-5.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.5.1">Preview Activity 8.5.1</a> and <a href="sec-8a-5-finding-using-taylor-series.html#ex-8a-5-cosx3" class="xref" data-knowl="./knowl/xref/ex-8a-5-cosx3.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 8.5.1">Example 8.5.1</a> each require us to use a known Taylor series, we restate the Taylor series we’ve established so far for <span class="process-math">\(5\)</span> important functions in <a href="sec-8a-5-finding-using-taylor-series.html#T-8a-5-big-5-redux" class="xref" data-knowl="./knowl/xref/T-8a-5-big-5-redux.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.5.2: Taylor series and the open intervals of x-values where they converge for 5 important functions.">Table 8.5.2</a>. <article class="assemblage assemblage-like" id="sec-8a-5-finding-using-taylor-series-4-4-5"><h4 class="heading"><span class="title">Important Taylor series representations.</span></h4>
 <div class="para" id="sec-8a-5-finding-using-taylor-series-4-4-5-2">
-<figure class="table table-like" id="T-8a-5-big-5-redux"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.5.2<span class="period">.</span></span><span class="space"> </span>Taylor series and the <span class="process-math">\(x\)</span>-values where they converge for <span class="process-math">\(5\)</span> important functions.<div class="autopermalink" data-description="Table 8.5.2: Taylor series and the x-values where they converge for 5 important functions."><a href="#T-8a-5-big-5-redux" title="Copy heading and permalink for Table 8.5.2: Taylor series and the x-values where they converge for 5 important functions.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<figure class="table table-like" id="T-8a-5-big-5-redux"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.5.2<span class="period">.</span></span><span class="space"> </span>Taylor series and the open intervals of <span class="process-math">\(x\)</span>-values where they converge for <span class="process-math">\(5\)</span> important functions.<div class="autopermalink" data-description="Table 8.5.2: Taylor series and the open intervals of x-values where they converge for 5 important functions."><a href="#T-8a-5-big-5-redux" title="Copy heading and permalink for Table 8.5.2: Taylor series and the open intervals of x-values where they converge for 5 important functions.">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t0 lines"><span class="process-math">\(f(x)\)</span></td>
 <td class="l m b1 r0 l0 t0 lines">Taylor series, <span class="process-math">\(T_f\text{,}\)</span> centered at <span class="process-math">\(0\)</span>
@@ -947,11 +948,11 @@ F(x) = \frac{1}{3}x^3 - \frac{1}{7 \cdot 3!} x^7 + \frac{1}{11 \cdot 5!}x^{11} +
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-8a-5-finding-using-taylor-series-5-5">While it is natural to wonder how integrating a Taylor series might change the values of <span class="process-math">\(x\)</span> for which the series converges, it turns out that integrating a Taylor series has almost no effect<details class="ptx-footnote" aria-live="polite" id="sec-8a-5-finding-using-taylor-series-5-5-2"><summary class="ptx-footnote__number" title="Footnote 8.5.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-8a-5-finding-using-taylor-series-5-5-2">It is possible for the convergence status at the endpoints of the interval to change, but we are normally not concerned with those specific <span class="process-math">\(x\)</span>-values.</div></details> on where the series converges (nor does differentiating such a series).  This fact is stated formally in a result called The Power Series Differentiation and Integration Theorem.  A <dfn class="terminology">power series</dfn> is any series of the form <span class="process-math">\(f(x) = \sum_{k=0}^{\infty} c_k (x-a)^k\text{;}\)</span> every Taylor series is a power series, and a famous result called Borel’s Theorem tells us that every power series is in fact the Taylor series of a related function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-5-finding-using-taylor-series-5-5">It turns out that integrating a Taylor series has no effect on the open<details class="ptx-footnote" aria-live="polite" id="sec-8a-5-finding-using-taylor-series-5-5-1"><summary class="ptx-footnote__number" title="Footnote 8.5.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-8a-5-finding-using-taylor-series-5-5-1">It is possible for the convergence status at the endpoints of the interval to change, but we are normally not concerned with those specific <span class="process-math">\(x\)</span>-values.</div></details> interval of convergence of a Taylor series, nor does differentiating such a series.  This fact is stated formally in a result called The Power Series Differentiation and Integration Theorem.  A <dfn class="terminology">power series</dfn> is any series of the form <span class="process-math">\(f(x) = \sum_{k=0}^{\infty} c_k (x-a)^k\text{;}\)</span> every Taylor series is a power series, and a famous result called Borel’s Theorem tells us that every power series is in fact the Taylor series of a related function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="assemblage assemblage-like" id="T-PS-diff-int"><h4 class="heading"><span class="title">The Power Series Differentiation and Integration Theorem.</span></h4>
 <div class="para logical" id="T-PS-diff-int-2">
-<div class="para">If <span class="process-math">\(f(x) = \sum_{k=0}^{\infty} c_k (x-a)^k\)</span> converges for <span class="process-math">\(|x-a| \lt R\)</span> for a positive real number <span class="process-math">\(R\text{,}\)</span> then</div>
+<div class="para">If <span class="process-math">\(f(x) = \sum_{k=0}^{\infty} c_k (x-a)^k\)</span> converges on the open interval <span class="process-math">\(|x-a| \lt R\)</span> for a positive real number <span class="process-math">\(R\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 f'(x) = \sum_{k=1}^{\infty} k \cdot c_k (x-a)^{k-1}
@@ -963,11 +964,11 @@ f'(x) = \sum_{k=1}^{\infty} k \cdot c_k (x-a)^{k-1}
 \int f(x) \, dx = C + \sum_{k=0}^{\infty} \frac{c_k}{k+1} (x-a)^{k+1}
 \end{equation*}
 </div>
-<div class="para">and both of these series converge if <span class="process-math">\(|x-a| \lt R\text{.}\)</span>
+<div class="para">and both of these series converge on the same open interval, <span class="process-math">\(|x-a| \lt R\text{.}\)</span>
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#T-PS-diff-int-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: The Power Series Differentiation and Integration Theorem"><a href="#T-PS-diff-int" title="Copy heading and permalink for Assemblage: The Power Series Differentiation and Integration Theorem">🔗</a></div></article><div class="para" id="sec-8a-5-finding-using-taylor-series-5-7">Stated more informally, the Power Series Differentiation and Integration Theorem tells us that when it comes to differentiating or integrating a Taylor series, we can do so just as if they were finite polynomials:  we can differentiate or integrate the Taylor series term-wise following the Power Rule for differentiating or integrating <span class="process-math">\(x^n\text{.}\)</span>  Moreover, doing so doesn’t change the open interval on which the Taylor series converges<details class="ptx-footnote" aria-live="polite" id="sec-8a-5-finding-using-taylor-series-5-7-2"><summary class="ptx-footnote__number" title="Footnote 8.5.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec-8a-5-finding-using-taylor-series-5-7-2">Differentiating or integrating can change the convergence status at the endpoints of the interval, but we again will not concern ourselves with that issue in this course.</div></details>.  Since polynomials are the easiest of all functions to differentiate and integrate, we can now find many more Taylor series of interesting functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: The Power Series Differentiation and Integration Theorem"><a href="#T-PS-diff-int" title="Copy heading and permalink for Assemblage: The Power Series Differentiation and Integration Theorem">🔗</a></div></article><div class="para" id="sec-8a-5-finding-using-taylor-series-5-7">This result shows that differentiating or integrating a power series has no effect on radius of convergence of the power series.  Stated more informally, the Power Series Differentiation and Integration Theorem tells us that when it comes to differentiating or integrating a Taylor series, we can do so just as if they were finite polynomials:  we can differentiate or integrate the Taylor series term-wise following the Power Rule for differentiating or integrating <span class="process-math">\(x^n\text{.}\)</span>  Moreover, doing so doesn’t change the open interval on which the Taylor series converges<details class="ptx-footnote" aria-live="polite" id="sec-8a-5-finding-using-taylor-series-5-7-2"><summary class="ptx-footnote__number" title="Footnote 8.5.2"><sup> 2 </sup></summary><div class="ptx-footnote__contents" id="sec-8a-5-finding-using-taylor-series-5-7-2">Differentiating or integrating can change the convergence status at the endpoints of the interval, but we again will not concern ourselves with that issue .</div></details>.  Since polynomials are the easiest of all functions to differentiate and integrate, we can now find many more Taylor series of interesting functions.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-8a-5-2"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.3</span><span class="period">.</span>
@@ -999,7 +1000,7 @@ f(x) = \frac{1}{1+x^2}\text{.}
 </li>
 <li id="act-8a-5-2-1-2-1-1-2-3">
 <div class="para logical" id="act-8a-5-2-1-2-1-1-2-3-1">
-<div class="para">Explain why we can think of <span class="process-math">\(g(x)\)</span> as being given by</div>
+<div class="para">Explain why we can think of <span class="process-math">\(g(x) = \arctan(x)\)</span> as being given by</div>
 <div class="displaymath process-math">
 \begin{equation*}
 g(x) = \int_0^x f(u) \, du\text{.}
@@ -1012,7 +1013,7 @@ g(x) = \int_0^x f(u) \, du\text{.}
 <div class="autopermalink" data-description="Item a.iii"><a href="#act-8a-5-2-1-2-1-1-2-3" title="Copy heading and permalink for Item a.iii">🔗</a></div>
 </li>
 <li id="act-8a-5-2-1-2-1-1-2-4">
-<div class="para" id="act-8a-5-2-1-2-1-1-2-4-1">For what interval of <span class="process-math">\(x\)</span>-values is the Taylor series for <span class="process-math">\(g(x) = \arctan(x)\)</span> guaranteed to converge?<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-2-1-2-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-5-2-1-2-1-1-2-4-1">For what open interval of <span class="process-math">\(x\)</span>-values is the Taylor series for <span class="process-math">\(g(x) = \arctan(x)\)</span> guaranteed to converge?<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-2-1-2-1-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item a.iv"><a href="#act-8a-5-2-1-2-1-1-2-4" title="Copy heading and permalink for Item a.iv">🔗</a></div>
 </li>
@@ -1020,7 +1021,7 @@ g(x) = \int_0^x f(u) \, du\text{.}
 <div class="autopermalink" data-description="Item a"><a href="#act-8a-5-2-1-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
 </li>
 <li id="act-8a-5-2-1-2-1-2">
-<div class="para" id="act-8a-5-2-1-2-1-2-1">In <a href="sec-8a-4-taylor-series.html" class="internal" title="Section 8.4: Taylor Series">Section 8.4</a>, we used <a href="sec-8a-4-taylor-series.html#D-8a-4-Taylor-series" class="xref" data-knowl="./knowl/xref/D-8a-4-Taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.4.1">Definition 8.4.1</a> to find the Taylor series expansion for <span class="process-math">\(h(x) = \ln(1+x)\text{.}\)</span>  Here we use substitution and integration to develop the Taylor series of <span class="process-math">\(h(x)\)</span> in a different way.<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-5-2-1-2-1-2-1">In <a href="sec-8a-4-taylor-series.html" class="internal" title="Section 8.4: Taylor Series">Section 8.4</a>, we used <a href="sec-8a-4-taylor-series.html#D-8a-4-Taylor-series" class="xref" data-knowl="./knowl/xref/D-8a-4-Taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.4.1">Definition 8.4.1</a> to find the Taylor series expansion for <span class="process-math">\(h(x) = \ln(1+x)\text{.}\)</span>  In the prompts that follow, we instead use substitution and integration to develop the Taylor series of <span class="process-math">\(h(x)\)</span> in a different way.<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <ol class="lower-roman ol-marker-4" id="act-8a-5-2-1-2-1-2-2">
 <li id="act-8a-5-2-1-2-1-2-2-1">
@@ -1057,12 +1058,13 @@ g(x) = \int_0^x f(u) \, du\text{.}
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.5.4</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="act-8a-5-3-1-1">
-<div class="para">In this activity we will determine the Taylor series expansion for the famous <em class="emphasis">error function</em>,</div>
+<div class="para">In this activity we will determine the Taylor series expansion for the well-known <em class="emphasis">error function</em>,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\erf(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\text{.}
+\erf(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt\text{,}
 \end{equation*}
 </div>
+<div class="para">that arises in probability theory and other important applications.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="act-8a-5-3-1-2">
 <ol class="lower-alpha ol-marker-1" id="act-8a-5-3-1-2-1">
@@ -1082,7 +1084,7 @@ g(x) = \int_0^x f(u) \, du\text{.}
 <div class="autopermalink" data-description="Item c"><a href="#act-8a-5-3-1-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
 </li>
 <li id="act-8a-5-3-1-2-1-4">
-<div class="para" id="act-8a-5-3-1-2-1-4-1">For what interval of <span class="process-math">\(x\)</span>-values will the Taylor series for <span class="process-math">\(\erf(x)\)</span> converge?  Why?<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-3-1-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-5-3-1-2-1-4-1">For what open interval of <span class="process-math">\(x\)</span>-values will the Taylor series for <span class="process-math">\(\erf(x)\)</span> converge?  Why?<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-3-1-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Item d"><a href="#act-8a-5-3-1-2-1-4" title="Copy heading and permalink for Item d">🔗</a></div>
 </li>
@@ -1095,13 +1097,13 @@ g(x) = \int_0^x f(u) \, du\text{.}
 <div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5-3-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Activity 8.5.4"><a href="#act-8a-5-3" title="Copy heading and permalink for Activity 8.5.4">🔗</a></div></article><div class="para logical" id="sec-8a-5-finding-using-taylor-series-5-10">
-<div class="para">Near the end of <a href="sec-8a-4-taylor-series.html" class="internal" title="Section 8.4: Taylor Series">Section 8.4</a>, we noted the important big-picture perspective that for familiar basic functions that are infinitely differentiable, such as <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> not only can we find the function’s Taylor series and determine the <span class="process-math">\(x\)</span>-values for which the Taylor series converges, but <em class="emphasis">the Taylor series converges to the function itself</em>.  Furthermore, we noted that these representations play a key role in how computers provide decimal approximations to quantities such as <span class="process-math">\(\sin(1)\text{,}\)</span> which can be represented as</div>
+<div class="para">Near the end of <a href="sec-8a-4-taylor-series.html" class="internal" title="Section 8.4: Taylor Series">Section 8.4</a>, we noted the important big-picture perspective that for familiar basic functions that are infinitely differentiable, such as <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> not only can we find the function’s Taylor series and determine the open interval of <span class="process-math">\(x\)</span>-values for which the Taylor series converges, but <em class="emphasis">the Taylor series converges to the function itself</em>.  Furthermore, we noted that these representations play a key role in how computers provide decimal approximations to quantities such as <span class="process-math">\(\sin(1)\text{,}\)</span> which can be represented as</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-8a-4-taylor-series.html ./knowl/xref/sec-8a-5x-accuracy-of-approx.html">
 \begin{equation*}
 \sin(1) = 1 - \frac{1}{3!} + \frac{1}{5!} - \frac{1}{7!} + \cdots\text{.}
 \end{equation*}
 </div>
-<div class="para">Our most recent work with Taylor series shows that the news is better still:  now we can easily represent even more complicated functions with Taylor series, such as <span class="process-math">\(f(x) = e^{-x^2}\)</span> and <span class="process-math">\(g(x) = \sin(x^2)\text{,}\)</span> and determine their antiderivatives using their infinite Taylor series and treating that representation just like a polynomial.  In the the upcoming <a href="sec-8a-5x-accuracy-of-approx.html" class="internal" title="Section 8.6: NEED TITLE - quantifying accuracy">Section 8.6</a>, we investigate further how certain infinite series of numbers can not only be easily and accurately approximated using partial sums that result from evaluating Taylor series, but also quantify how much error is present in such a partial sum approximation.</div>
+<div class="para">Our most recent work with Taylor series shows that the news is better still:  now we can easily represent even more complicated functions with Taylor series, such as <span class="process-math">\(f(x) = e^{-x^2}\)</span> and <span class="process-math">\(g(x) = \sin(x^2)\text{,}\)</span> and determine their antiderivatives using their infinite Taylor series and treating that representation just like a polynomial.  In <a href="sec-8a-5x-accuracy-of-approx.html" class="internal" title="Section 8.6: Quantifying the accuracy of approximations that use Taylor polynomials">Section 8.6</a>, we investigate further how certain infinite series of numbers can not only be easily and accurately approximated using partial sums that result from evaluating Taylor series, but also quantify how much error is present in such a partial sum approximation.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5-finding-using-taylor-series-5-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 8.5.2: Differentiating and integrating Taylor series"><a href="#sec-8a-5-finding-using-taylor-series-5" title="Copy heading and permalink for Subsection 8.5.2: Differentiating and integrating Taylor series">🔗</a></div></section><section class="subsection" id="sec-8a-5-finding-using-taylor-series-6"><h3 class="heading hide-type">
@@ -1270,30 +1272,7 @@ f(x) = \int x \cdot \ln(1+x)\ dx
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.5.4.4"><a href="#Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027" title="Copy heading and permalink for Exercise 8.5.4.4">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_8"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div id="webwork-337" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="337" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-337')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-337-1-1-1">For the following alternating series,<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-337-1-1-2">
-<span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n = 0.45 - \frac{(0.45)^3}{3!} + \frac{(0.45)^5}{5!} -
-\frac{(0.45)^7}{7!} + ...\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-337-1-1-3">how many terms do you have to compute in order for your approximation (your partial sum) to be within 0.0000001 from the convergent value of that series?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.5.4.5"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_8" title="Copy heading and permalink for Exercise 8.5.4.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_10"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div id="webwork-338" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="338" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-338')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-338-1-1-1">For the following alternating series,<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-338-1-1-2">
-<span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n = 1 - \frac{1}{10} + \frac{1}{100} - \frac{1}{1000} + ...\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-338-1-1-3">how many terms do you have to go for your approximation (your partial sum) to be within 1e-05 from the convergent value of that series?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.5.4.6"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_10" title="Copy heading and permalink for Exercise 8.5.4.6">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-1"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.5.4.4"><a href="#Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027" title="Copy heading and permalink for Exercise 8.5.4.4">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-1"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
 <div class="para logical" id="ez-8a-5-1-1-1">
 <div class="para">In this exercise we find the Taylor series representation for two famous functions, the Fresnel integral functions</div>
 <div class="displaymath process-math">
@@ -1314,37 +1293,37 @@ S(x) = \int_0^x \sin(t^2) \, dt\text{.}
 <li id="ez-8a-5-1-1-2-1-1">
 <div class="para" id="ez-8a-5-1-1-2-1-1-1">Use the Taylor series for <span class="process-math">\(\cos(x)\)</span> to find the Taylor series for <span class="process-math">\(\cos(t^2)\)</span> and hence write <span class="process-math">\(C(x)\)</span> as a Taylor series.<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.a"><a href="#ez-8a-5-1-1-2-1-1" title="Copy heading and permalink for Item 8.5.4.7.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.a"><a href="#ez-8a-5-1-1-2-1-1" title="Copy heading and permalink for Item 8.5.4.5.a">🔗</a></div>
 </li>
 <li id="ez-8a-5-1-1-2-1-2">
 <div class="para" id="ez-8a-5-1-1-2-1-2-1">For what interval of <span class="process-math">\(x\)</span>-values will the Taylor series for <span class="process-math">\(C(x)\)</span> converge?  Why?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.b"><a href="#ez-8a-5-1-1-2-1-2" title="Copy heading and permalink for Item 8.5.4.7.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.b"><a href="#ez-8a-5-1-1-2-1-2" title="Copy heading and permalink for Item 8.5.4.5.b">🔗</a></div>
 </li>
 <li id="ez-8a-5-1-1-2-1-3">
 <div class="para" id="ez-8a-5-1-1-2-1-3-1">Apply your result from (a) to estimate <span class="process-math">\(C(0.5)\)</span> to within <span class="process-math">\(0.001\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.c"><a href="#ez-8a-5-1-1-2-1-3" title="Copy heading and permalink for Item 8.5.4.7.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.c"><a href="#ez-8a-5-1-1-2-1-3" title="Copy heading and permalink for Item 8.5.4.5.c">🔗</a></div>
 </li>
 <li id="ez-8a-5-1-1-2-1-4">
 <div class="para" id="ez-8a-5-1-1-2-1-4-1">Similarly, use the Taylor series for <span class="process-math">\(\sin(x)\)</span> to find the Taylor series for <span class="process-math">\(\sin(t^2)\)</span> and hence write <span class="process-math">\(S(x)\)</span> as a Taylor series.<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.d"><a href="#ez-8a-5-1-1-2-1-4" title="Copy heading and permalink for Item 8.5.4.7.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.d"><a href="#ez-8a-5-1-1-2-1-4" title="Copy heading and permalink for Item 8.5.4.5.d">🔗</a></div>
 </li>
 <li id="ez-8a-5-1-1-2-1-5">
 <div class="para" id="ez-8a-5-1-1-2-1-5-1">For what interval of <span class="process-math">\(x\)</span>-values will the Taylor series for <span class="process-math">\(S(x)\)</span> converge?  Why?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-5-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.e"><a href="#ez-8a-5-1-1-2-1-5" title="Copy heading and permalink for Item 8.5.4.7.e">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.e"><a href="#ez-8a-5-1-1-2-1-5" title="Copy heading and permalink for Item 8.5.4.5.e">🔗</a></div>
 </li>
 <li id="ez-8a-5-1-1-2-1-6">
 <div class="para" id="ez-8a-5-1-1-2-1-6-1">Apply your result from (d) to estimate <span class="process-math">\(S(0.8)\)</span> to within <span class="process-math">\(0.001\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2-1-6-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.7.f"><a href="#ez-8a-5-1-1-2-1-6" title="Copy heading and permalink for Item 8.5.4.7.f">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.5.f"><a href="#ez-8a-5-1-1-2-1-6" title="Copy heading and permalink for Item 8.5.4.5.f">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.5.4.7"><a href="#ez-8a-5-1" title="Copy heading and permalink for Exercise 8.5.4.7">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-2"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.5.4.5"><a href="#ez-8a-5-1" title="Copy heading and permalink for Exercise 8.5.4.5">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-2"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
 <div class="para" id="ez-8a-5-2-1-1">The fact that we can differentiate or integrate a Taylor series reveals other important ways we can think about functions such as <span class="process-math">\(e^x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <ol class="lower-alpha ol-marker-1" id="ez-8a-5-2-1-2">
 <li id="ez-8a-5-2-1-2-1">
@@ -1359,73 +1338,25 @@ e^x = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n + \cdots\text{.}\tag{8.
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.8.a"><a href="#ez-8a-5-2-1-2-1" title="Copy heading and permalink for Item 8.5.4.8.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.6.a"><a href="#ez-8a-5-2-1-2-1" title="Copy heading and permalink for Item 8.5.4.6.a">🔗</a></div>
 </li>
 <li id="ez-8a-5-2-1-2-2">
 <div class="para" id="ez-8a-5-2-1-2-2-1">Take the derivative of both sides of <a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5-2-exp" class="xref" data-knowl="./knowl/xref/ez-8a-5-2-exp.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.5.5">Equation (8.5.5)</a> and call your resulting equation for <span class="process-math">\(e^x\)</span> “Equation 2”.  Why do <a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5-2-exp" class="xref" data-knowl="./knowl/xref/ez-8a-5-2-exp.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.5.5">Equation (8.5.5)</a> and Equation 2 together tell us that <span class="process-math">\(a_1 = a_0\text{?}\)</span>  Combine this observation with your conclusion in (b) and note that you now know the numerical value of both <span class="process-math">\(a_0\)</span> and <span class="process-math">\(a_1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.8.b"><a href="#ez-8a-5-2-1-2-2" title="Copy heading and permalink for Item 8.5.4.8.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.6.b"><a href="#ez-8a-5-2-1-2-2" title="Copy heading and permalink for Item 8.5.4.6.b">🔗</a></div>
 </li>
 <li id="ez-8a-5-2-1-2-3">
 <div class="para" id="ez-8a-5-2-1-2-3-1">Why do <a href="sec-8a-5-finding-using-taylor-series.html#ez-8a-5-2-exp" class="xref" data-knowl="./knowl/xref/ez-8a-5-2-exp.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.5.5">Equation (8.5.5)</a> and Equation 2 together tell us that <span class="process-math">\(a_2 = \frac{1}{2}a_1\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.8.c"><a href="#ez-8a-5-2-1-2-3" title="Copy heading and permalink for Item 8.5.4.8.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.6.c"><a href="#ez-8a-5-2-1-2-3" title="Copy heading and permalink for Item 8.5.4.6.c">🔗</a></div>
 </li>
 <li id="ez-8a-5-2-1-2-4">
 <div class="para" id="ez-8a-5-2-1-2-4-1">Continue reasoning similarly to find the value of <span class="process-math">\(a_3\text{,}\)</span> <span class="process-math">\(a_4\text{,}\)</span> and <span class="process-math">\(a_5\text{.}\)</span>  What do you observe?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-2-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.8.d"><a href="#ez-8a-5-2-1-2-4" title="Copy heading and permalink for Item 8.5.4.8.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.6.d"><a href="#ez-8a-5-2-1-2-4" title="Copy heading and permalink for Item 8.5.4.6.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 8.5.4.8"><a href="#ez-8a-5-2" title="Copy heading and permalink for Exercise 8.5.4.8">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-3"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para logical" id="ez-8a-5-3-1-1">
-<div class="para">In this exercise we consider the definite integral</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^1 \frac{4}{1+x^2} \, dx
-\end{equation*}
-</div>
-<div class="para">from two different perspectives.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <ol class="lower-alpha ol-marker-1" id="ez-8a-5-3-1-2">
-<li id="ez-8a-5-3-1-2-1">
-<div class="para logical" id="ez-8a-5-3-1-2-1-1">
-<div class="para">First, find the Taylor series for <span class="process-math">\(\frac{4}{1+x^2}\)</span> and use it to evaluate</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^1 \frac{4}{1+x^2} \, dx
-\end{equation*}
-</div>
-<div class="para">as an infinite series of real numbers.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 8.5.4.9.a"><a href="#ez-8a-5-3-1-2-1" title="Copy heading and permalink for Item 8.5.4.9.a">🔗</a></div>
-</li>
-<li id="ez-8a-5-3-1-2-2">
-<div class="para" id="ez-8a-5-3-1-2-2-1">Observe that your result in (a) is an alternating series.  Estimate the value of that alternating series to within 0.01.  How many terms of the series are needed to do so?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 8.5.4.9.b"><a href="#ez-8a-5-3-1-2-2" title="Copy heading and permalink for Item 8.5.4.9.b">🔗</a></div>
-</li>
-<li id="ez-8a-5-3-1-2-3">
-<div class="para logical" id="ez-8a-5-3-1-2-3-1">
-<div class="para">Recall that <span class="process-math">\(\frac{d}{dx}[\arctan(x)] = \frac{1}{1+x^2}\text{.}\)</span>  Use this fact and the First Fundamental Theorem of Calculus to evaluate</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\int_0^1 \frac{4}{1+x^2} \, dx
-\end{equation*}
-</div>
-<div class="para">exactly.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 8.5.4.9.c"><a href="#ez-8a-5-3-1-2-3" title="Copy heading and permalink for Item 8.5.4.9.c">🔗</a></div>
-</li>
-<li id="ez-8a-5-3-1-2-4">
-<div class="para" id="ez-8a-5-3-1-2-4-1">How are your results in (a) and (c) connected?  What famous number can we now estimate using an alternating series?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-3-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 8.5.4.9.d"><a href="#ez-8a-5-3-1-2-4" title="Copy heading and permalink for Item 8.5.4.9.d">🔗</a></div>
-</li>
-</ol>
-<div class="autopermalink" data-description="Exercise 8.5.4.9"><a href="#ez-8a-5-3" title="Copy heading and permalink for Exercise 8.5.4.9">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-4"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.5.4.6"><a href="#ez-8a-5-2" title="Copy heading and permalink for Exercise 8.5.4.6">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5-4"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
 <div class="para" id="ez-8a-5-4-1-1">Taylor series also provide an alternate way to evaluate indeterminate limits.<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <ol class="lower-alpha ol-marker-1" id="ez-8a-5-4-1-2">
 <li id="ez-8a-5-4-1-2-1">
@@ -1439,7 +1370,7 @@ e^x = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n + \cdots\text{.}\tag{8.
 <div class="para">Compare your result to what follows from L’Hôpital’s Rule (see <a href="sec-2-8-LHR.html" class="internal" title="Section 2.8: Using Derivatives to Evaluate Limits">Section 2.8</a> as needed).</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-4-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.10.a"><a href="#ez-8a-5-4-1-2-1" title="Copy heading and permalink for Item 8.5.4.10.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.a"><a href="#ez-8a-5-4-1-2-1" title="Copy heading and permalink for Item 8.5.4.7.a">🔗</a></div>
 </li>
 <li id="ez-8a-5-4-1-2-2">
 <div class="para logical" id="ez-8a-5-4-1-2-2-1">
@@ -1452,10 +1383,10 @@ e^x = a_0 + a_1 x + a_2 x^2 + a_3 x^3 + \cdots + a_n x^n + \cdots\text{.}\tag{8.
 <div class="para">Find the Taylor series representations for <span class="process-math">\(f(x) = e^x - 1 - x\)</span> and <span class="process-math">\(g(x) = \cos(2x)-1\)</span> and use them to evaluate the given limit.  How does your result compare to using L’Hôpital’s Rule?</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5-4-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.5.4.10.b"><a href="#ez-8a-5-4-1-2-2" title="Copy heading and permalink for Item 8.5.4.10.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.5.4.7.b"><a href="#ez-8a-5-4-1-2-2" title="Copy heading and permalink for Item 8.5.4.7.b">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 8.5.4.10"><a href="#ez-8a-5-4" title="Copy heading and permalink for Exercise 8.5.4.10">🔗</a></div></article><div class="autopermalink" data-description="Exercises 8.5.4"><a href="#ez-8a-5" title="Copy heading and permalink for Exercises 8.5.4">🔗</a></div></section><div class="autopermalink" data-description="Section 8.5: Finding and Using Taylor Series"><a href="#sec-8a-5-finding-using-taylor-series" title="Copy heading and permalink for Section 8.5: Finding and Using Taylor Series">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 8.5.4.7"><a href="#ez-8a-5-4" title="Copy heading and permalink for Exercise 8.5.4.7">🔗</a></div></article><div class="autopermalink" data-description="Exercises 8.5.4"><a href="#ez-8a-5" title="Copy heading and permalink for Exercises 8.5.4">🔗</a></div></section><div class="autopermalink" data-description="Section 8.5: Finding and Using Taylor Series"><a href="#sec-8a-5-finding-using-taylor-series" title="Copy heading and permalink for Section 8.5: Finding and Using Taylor Series">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-8a-4-taylor-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-8a-5x-accuracy-of-approx.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
