@@ -24,7 +24,7 @@
       </li>
       <li>
         <p>
-          What does it mean for an infinite Taylor series to converge to a finite sum, and how can we determine <m>x</m>-values for which the series converges?
+          What does it mean for an infinite Taylor series to converge to a finite sum, and how can we determine for which <m>x</m>-values the series converges?
         </p>
       </li>
       <li>
@@ -128,11 +128,11 @@
         </p>
 
         <p>
-          For a series to be geometric, we must be able to construct the next term in the series by multiplying the prior term by a constant ratio.  In <m>T_f(x)</m>, the general <m>n</m>th term is 
+          For a series to be geometric, we must be able to construct the next term in the series by multiplying the prior term by a constant ratio.  In <m>T_f(x)</m>, the general <m>n^{\mbox{th}}</m> term is 
           <me>
             a_n(x) = (-1)^{n-1}\frac{1}{n}x^n 
           </me>
-          and the <m>(n+1)</m>st term is
+          and the <m>(n+1)^{\mbox{st}}</m> term is
           <me>
             a_{n+1}(x) = (-1)^{n}\frac{1}{n+1}x^{n+1} 
           </me>.
@@ -199,9 +199,9 @@
     <title>The Ratio Test</title>
       <p>
         Consider an infinite series of the form <m>T(x) = \sum_{k=0}^{\infty} c_k (x-a)^k</m>, where <m>a</m> is any real number.  Let <m>r_n(x) = \frac{c_{n+1} (x-a)^{n+1}}{c_n (x-a)^n}</m> and 
-        <me>
+        <men xml:id="E-8a-4-ratio-test-limit">
           r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} \frac{c_{n+1} (x-a)^{n+1}}{c_n (x-a)^n}
-        </me>.
+        </men>.
         Then,
         <ul>
           <li>
@@ -224,11 +224,31 @@
     </assemblage>
 
     <p>
-      In essence, the Ratio Test is a way to find <m>x</m> values for which <m>T(x)</m> behaves like a geometric series with ratio <m>r(x)</m> such that <m>|r(x)| \lt 1</m>; for those <m>x</m>-values, the infinite series converges to a finite value<fn>It is possible that the series <m>T(x)</m> also converges when <m>|r(x)| = 1</m>, but in what remains in <xref ref="C-8a">Chapter</xref>, we will not concern ourselves with this minor issue.</fn>.
+      In essence, the Ratio Test is a way to find <m>x</m> values for which <m>T(x)</m> behaves like a geometric series with ratio <m>r(x)</m> such that <m>|r(x)| \lt 1</m>; for those <m>x</m>-values, the infinite series converges to a finite value.  There is a subtle issue that arises for <m>x</m>-values for which <m>|r(x)| = 1</m>: it's possible for the infinite series to either converge or diverge at such <m>x</m>-values, but we will normally not concern ourselves with this issue.
     </p>
 
     <p>
-      In light of the formal statement of the Ratio Test, we now see that in our initial investigation of the Taylor series for <m>f(x) = \ln(1+x)</m>, we applied the Ratio Test to find an interval of <m>x</m>-values for which its Taylor series converges.  In particular, for 
+      Note that we can simplify the result in <xref ref="E-8a-4-ratio-test-limit">Equation</xref> further.  By writing
+      <me>
+        r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} \frac{c_{n+1} (x-a)^{n+1}}{c_n (x-a)^n} = (x-a) \cdot \lim_{n \to \infty} \frac{c_{n+1}}{c_n}
+      </me>,
+      when <m>\lim_{n \to \infty} \frac{c_{n+1}}{c_n}</m> exists, we now see that if 
+      <me>
+        |r(x)| = |(x-a) \lim_{n \to \infty} \frac{c_{n+1}}{c_n}| \lt 1
+      </me>
+      then the Taylor series is guaranteed to converge.  Said differently, if we let <m>R = \lim_{n \to \infty} \frac{c_{n}}{c_{n+1}}</m>, since
+      <me>
+        \frac{1}{\lim_{n \to \infty} \frac{c_{n}}{c_{n+1}}} = \lim_{n \to \infty} \frac{c_{n+1}}{c_{n}}
+      </me>
+      this means that the series converges whenever 
+      <me>
+        |x-a| \lt \lim_{n \to \infty} \frac{c_{n}}{c_{n+1}} = R 
+      </me>.
+      We call <m>R</m> the <term>radius of convergence</term> and say that the set of all <m>x</m>-values such that <m>|x - a| \lt R</m> is the <term>open interval of convergence</term>.  Again, it is possible that the Taylor series may either converge or diverge when <m>|x - a| = R</m>, but we will normally not concern ourself with this issue at the endpoints.
+    </p>
+
+    <p>
+      In light of the formal statement of the Ratio Test, we now see that in our initial investigation of the Taylor series for <m>f(x) = \ln(1+x)</m>, we applied the Ratio Test to find an open interval of <m>x</m>-values for which its Taylor series converges.  In particular, for 
       <me>
         T_f(x) = \sum_{k=1}^{\infty} (-1)^{k-1}\frac{1}{k}x^k
       </me>
@@ -240,7 +260,7 @@
       <me>
         r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{n}{n+1} \cdot x = -x
       </me>.
-      By the Ratio Test, it follows that if <m>|r(x)| = |-x| = x \lt 1</m>, then the series converges, and if <m>|r(x)| = x \gt 1</m>, the series does not converge.  When <m>x = \pm 1</m>, we don't know if the series converges or diverges, but we will normally not be concerned with this <q>endpoint behavior</q>.
+      By the Ratio Test, it follows that if <m>|r(x)| = |-x| = x \lt 1</m>, then the series converges; that is, <m>-1 \lt x \lt 1</m> is the open interval of convergence, and the radius of convergence of this series is <m>R = 1</m>.  We also know that if <m>|r(x)| = x \gt 1</m>, the series does not converge.  When <m>x = \pm 1</m>, we don't know if the series converges or diverges, but we will normally not be concerned with this endpoint behavior because of many subtle and complicated issues that can arise.
     </p>
 
     <xi:include href="./activities/act-8a-4-1.xml" />
@@ -253,7 +273,7 @@
     </title>
 
     <p>
-      So far, we have established that the Taylor series of two important functions, <m>\frac{1}{1-x}</m> and <m>\ln(1+x)</m>, converge on an interval of <m>x</m>-values and on that interval converge to the respective functions.  For these functions,
+      So far, we have established that the Taylor series of two important functions, <m>\frac{1}{1-x}</m> and <m>\ln(1+x)</m>, converge on an open interval of <m>x</m>-values and on that interval converge to the respective functions.  For these functions,
       <ul>
         <li>
           <p>
@@ -265,7 +285,7 @@
         </li>
         <li>
           <p>
-            if <m>|x| \lt 1</m>, then<fn>It turns out that this representation is also valid when <m>x = 1</m> because the series <m>1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots</m> converges, and does so to the exact value <m>\ln(2)</m>.</fn> 
+            if <m>|x| \lt 1</m>, then<fn>It turns out that this representation is also valid when <m>x = 1</m> because the series <m>1 - \frac{1}{2} + \frac{1}{3} - \frac{1}{4} + \cdots</m> converges, and does so to the exact value <m>\ln(2)</m>. This means that while the <em>open</em> interval of convergence is <m>-1 \lt x \lt 1</m> for this series, the complete <em>interval of convergence</em> is actually <m>-1 \lt x \le 1</m>.</fn> 
             <me>
               \ln(1+x) = \sum_{k=1}^{\infty} (-1)^{n-1} \cdot \frac{1}{n} \cdot x^n =  x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots
             </me>.
@@ -303,11 +323,11 @@
             <me>
               f^{(4)}(x) = \sin(x), f^{(5)}(x) = \cos(x), f^{(6)}(x) = -\sin(x), f^{(7)}(x) = -\cos(x)
             </me>.
-            We observe that <m>f^{(4k)}(x) = \sin(x)</m> and <m>f^{(4k+2)}(x) = -\sin(x)</m>  for every natural number <m>k</m>.  This shows that <m>f^{(4k)}(0) = \sin(0) = 0</m> and <m>f^{(4k+2)}(0) = -\sin(0) = 0</m>, from which it follows that every even power of <m>x</m> in the Taylor series of the sine function has a coefficient of <m>0</m>.  
+            More generally, <m>f^{(4k)}(x) = \sin(x)</m> and <m>f^{(4k+2)}(x) = -\sin(x)</m>  for every natural number <m>k</m>.  This shows that <m>f^{(4k)}(0) = \sin(0) = 0</m> and <m>f^{(4k+2)}(0) = -\sin(0) = 0</m>, from which it follows that every even power of <m>x</m> in the Taylor series of the sine function has a coefficient of <m>0</m>.  
           </p>
 
           <p>
-            If we instead consider the odd powers, we can see that since <m>f'(x) = \cos(x)</m>, we also have <m>f^{(5)}(x) = \cos(x)</m>, <m>f^{(9)}(x) = \cos(x)</m>, and so on.  From this, <m>f'(0) = \cos(0) = 1</m>, and similarly, <m>f^{(5)}(0) = 1</m>, <m>f^{(9)}(x) = 1</m>, and indeed <m>f^{(4k+1)}(0) = 1</m> for every nonnegative whole number <m>k</m>.  Finally, since <m>f'''(x) = -\cos(x)</m>, we have <m>f'''(0) = -\cos(0) = -1</m>, and so <m>f'''(0) = -1</m>, <m>f^{(7)}(0) = -1</m>, and thus <m>f^{(4k+3)}(0) = -1</m> for every nonnegative whole number <m>k</m>.
+            For odd values of <m>n</m>, we can see that since <m>f'(x) = \cos(x)</m>, we also have <m>f^{(5)}(x) = \cos(x)</m>, <m>f^{(9)}(x) = \cos(x)</m>, and so on.  From this, <m>f'(0) = \cos(0) = 1</m>, and similarly, <m>f^{(5)}(0) = 1</m>, <m>f^{(9)}(x) = 1</m>, and indeed <m>f^{(4k+1)}(0) = 1</m> for every nonnegative whole number <m>k</m>.  Finally, since <m>f'''(x) = -\cos(x)</m>, we have <m>f'''(0) = -\cos(0) = -1</m>, and so <m>f'''(0) = -1</m>, <m>f^{(7)}(0) = -1</m>, and thus <m>f^{(4k+3)}(0) = -1</m> for every nonnegative whole number <m>k</m>.
           </p>
 
           <p>
@@ -401,17 +421,20 @@
     </example>
 
     <p>
-      In <xref ref="Ex-8a-4-sine">Example</xref>, we found that the Taylor series for the sine function appears to converge to the sine function, and to do so for every real number <m>x</m>.  This result can be proven formally using a famous theorem called the Lagrange Error Bound, which we will study in **Section 8.6**.  <fn>The Lagrange Error Bound states: Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
+      In <xref ref="Ex-8a-4-sine">Example</xref>, we found that the Taylor series for the sine function appears to converge to the sine function, and to do so for every real number <m>x</m>.  This result can be proven formally using a famous theorem called the Lagrange Error Bound, a theorem that quantifies how accurate a Taylor polynomial approximation is on an interval, which we will study in <xref ref="sec-8a-5x-accuracy-of-approx">Section</xref>.  
+      <!-- <fn>The Lagrange Error Bound states: Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
         Suppose that <m>M</m> is a positive real number such that
         <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
         If <m>P_n(x)</m> is the <m>n</m>th order Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
         <m>
           \left|P_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
-        </m>.</fn>, a result that quantifies how accurate a Taylor polynomial approximation is on an interval.  
+        </m>.</fn>
+      -->   
       To summarize, we now know the remarkable result that the sine function is equal to its Taylor series for every value of <m>x</m>, so
       <men xml:id="Eq-8a-4-sine-Taylor">
         \sin(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{1}{(2k+1)!}x^{2k+1} = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots
-      </men>  
+      </men> 
+      
     </p>
 
     <p>
@@ -428,14 +451,14 @@
    <xi:include href="./activities/act-8a-4-2.xml" />
 
     <p>
-      While there is considerable technical detail involved in finding Taylor series and deciding where they converge, it's important not to miss the big picture.  For certain <q>nice</q> functions that are infinitely differentiable, such as <m>f(x) = \ln(1+x)</m> and <m>f(x) = \sin(x)</m>, not only can we find the Taylor series for each and determine the <m>x</m>-values at which the Taylor series converges, but <em>the Taylor series converges to the function itself</em>.  This means that for certain <m>x</m>-values (and sometimes <em>all</em> <m>x</m>-values), we can represent a non-polynomial function as being equal to an infinite polynomial.  
+      While there is considerable technical detail involved in finding Taylor series and deciding where they converge, it's important not to miss the big picture.  For certain <q>nice</q> functions that are infinitely differentiable, such as <m>f(x) = \ln(1+x)</m> and <m>f(x) = \sin(x)</m>, not only can we find the Taylor series for each and determine an open interval of <m>x</m>-values at which the Taylor series converges, but for those values <em>the Taylor series converges to the function itself</em>.  This means that for certain <m>x</m>-values (and sometimes <em>all</em> <m>x</m>-values), we can represent a non-polynomial function as being equal to an infinite polynomial.  
     </p>  
 
     <p>
       A function such as <m>f(x) = \sin(x)</m> that is infinitely differentiable and has a power series that converges on some interval to the function itself is said to be <term>analytic</term>.  Analytic functions are amazing and among the nicest functions in all of mathematics:  they are completely determined by what happens at a single point.  
     </p>
     <p>  
-      Almost all functions are not analytic.  For example, if a function  measures your location as a function of time on a highway, that function cannot be analytic, since what happens at 12:01 is independent of what happens at 12:00 due to other circumstances such as traffic or construction.  At the same time, the mathematical universe is better to us than we deserve in that many of the most interesting functions are analytic, including those we've mentioned (<m>\frac{1}{1-x}</m>, <m>\ln(1+x)</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m>) and most of those represented by buttons on a calculator.
+      Almost all functions are not analytic.  For example, if a function  measures your location as a function of time on a highway, that function cannot be analytic, since what happens at 12:01 is independent of what happens at 12:00 due to other circumstances such as traffic or construction.  At the same time, the mathematical universe is better to us than we deserve in that many important, common functions are analytic, including several we've mentioned (<m>\frac{1}{1-x}</m>, <m>\ln(1+x)</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m>) and most of those represented by buttons on a calculator.
     </p>
 
     <p>
@@ -444,7 +467,7 @@
         e^x = \sum_{k=0}^\infty \frac{1}{k!}x^k = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots + \frac{1}{n!}x^n + \cdots
       </me>,
       and this equation is true for every possible value of <m>x</m>.
-      This equation is completely determined by the values of <m>f(x) = e^x</m> and its derivatives only at the value <m>a = 0</m>!  When we use a computational device like <em>Desmos</em> or a calculator and enter <m>e^2</m>, this is how the device finds the decimal representation of the number.  Since
+      This equation is completely determined by the values of <m>f(x) = e^x</m> and its derivatives only at the value <m>a = 0</m>.   When we use a computational device like <em>Desmos</em> or a calculator and enter <m>e^2</m>, this is how the device finds the decimal representation of the number.  Since
       <me>
         e^2 = 1 + 2 + \frac{1}{2!}2^2 + \frac{1}{3!}2^3 + \cdots + \frac{1}{n!}2^n + \cdots
       </me>
@@ -462,7 +485,7 @@
       <title>Important Taylor series representations</title>
       <p>
       <table xml:id="T-8a-4-big-5">
-            <title>Taylor series and the <m>x</m>-values where they converge for <m>5</m> important functions.</title>
+            <title>Taylor series and the open intervals of <m>x</m>-values where they converge for <m>5</m> important functions.</title>
               <tabular>
                 <row bottom="minor">
                   <cell halign="center"> <m>f(x)</m></cell>
@@ -516,7 +539,7 @@
       </li>
       <li>
         <p>
-          We know that an infinite geometric series converges whenever its common ratio, <m>r</m>, satisfies <m>|r| \lt 1</m>.  The Ratio Test enables us to consider a Taylor series and determine an interval of <m>x</m>-values on which the series converges, essentially by comparing the Taylor series to a geometric series.  By letting <m>r_n(x)</m> be the ratio of consecutive terms in the series and taking the limit 
+          We know that an infinite geometric series converges whenever its common ratio, <m>r</m>, satisfies <m>|r| \lt 1</m>.  The Ratio Test enables us to consider a Taylor series and determine an open interval of <m>x</m>-values on which the series converges, essentially by comparing the Taylor series to a geometric series.  By letting <m>r_n(x)</m> be the ratio of consecutive terms in the series and taking the limit 
           <me>
             r(x) = \lim_{n \to \infty} r_n(x)
           </me>,
@@ -525,7 +548,7 @@
       </li>
       <li>
         <p>
-          We have found the Taylor series for five important functions, determined an interval of <m>x</m>-values on which each converges, and seen the striking result that where each Taylor series converges, it converges to original function <m>f(x)</m> that we used to generate the Taylor series.  These results are summarized in <xref ref="T-8a-4-big-5">Table</xref>.
+          We have found the Taylor series for five important functions, determined an open interval of <m>x</m>-values on which each converges, and seen the striking result that where each Taylor series converges, it converges to original function <m>f(x)</m> that we used to generate the Taylor series.  These results are summarized in <xref ref="T-8a-4-big-5">Table</xref>.
         </p>
       </li>
     </ul>
