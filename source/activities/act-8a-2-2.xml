@@ -25,43 +25,15 @@
 			<ol marker="a.">
 		      <li>
 		        <p>
-		          Determine <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>, and then compute <m>f'(1)</m>, <m>f''(1)</m>, <m>f'''(1)</m>, and <m>f^{(4)}(1)</m>.  Enter your results in in <xref ref="T-8a-2-act-2-log">Table</xref>.
+		          Determine <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>, and then compute <m>f'(1)</m>, <m>f''(1)</m>, <m>f'''(1)</m>, and <m>f^{(4)}(1)</m>.  Enter your results in the provided blanks below.
 		        </p>	
-
-		          <table xml:id="T-8a-2-act-2-log">
-		            <title>Finding the derivatives of <m>f(x) = \ln(x)</m> at <m>a = 1</m>.</title>
-		              <tabular top="none" bottom="none">
-						<row>
-							<cell>
-								<md>
-									<mrow>k \amp= 0 </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(x) \amp= \ln(x) </mrow>
-									<mrow>f'(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(x) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(1) \amp= \ln(1) = 0 </mrow>
-									<mrow>f'(1) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(1) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(1) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(1) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-						</row>
-		              </tabular>
-		            </table>		
+					<md>
+						<mrow>k \amp= 0 \amp f(x) \amp= \ln(x) \amp f(1) \amp= \ln(1) = 0</mrow>
+						<mrow>k \amp= <fillin characters="2" /> \amp f'(x) \amp= <fillin characters="5" /> \amp f'(1) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= <fillin characters="2" /> \amp f''(x) \amp= <fillin characters="5" /> \amp f''(1) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= <fillin characters="2" /> \amp f'''(x) \amp= <fillin characters="5" /> \amp f'''(1) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= <fillin characters="2" /> f^{(4)}(x) \amp= <fillin characters="5" /> \amp f^{(4)}(1) \amp= <fillin characters="5" />  </mrow>
+					</md>	
                 </li>
                 <li>
                 	<p>
@@ -73,11 +45,12 @@
                 </li>
                 <li>
                 	<p>
-                		In <xref ref="F-8a-2-act-2">Figure</xref>, we see <m>f(x) = \ln(x)</m> and its tangent line, <m>T_1(x) = x - 1</m> plotted on the same axes.  Add <m>T_4(x)</m> to the figure.  What do you notice?
+                		Use appropriate technology to plot we see <m>f(x) = \ln(x)</m>, its tangent line, <m>T_1(x) = x - 1</m>, and <m>T_4(x)</m> in the same window shown in <xref ref="F-8a-2-act-2">Figure</xref>.  
                 		      <figure xml:id="F-8a-2-act-2">
 							    <caption>The function <m>f(x)=\ln(x)</m> and its degree <m>1</m> Taylor approximation  <m>T_1(x) = x-1</m> near the point <m>(1,f(1))</m>.</caption>
 							      <image width="50%" source="images/8a_2_act_2" />
 							  </figure>
+						What do you notice?	  
                 	</p>
                 </li>
                 <li>
@@ -87,7 +60,7 @@
                 </li>		
                 <li>
                 	<p>
-                		Use the pattern you observe in <xref ref="T-8a-2-act-2-log">Table</xref> to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
+                		Use the patterns you observe in your work so far to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
                 	</p>		
 
                 	<p>	

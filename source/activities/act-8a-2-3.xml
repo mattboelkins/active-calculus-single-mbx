@@ -25,43 +25,17 @@
 			<ol marker="a.">
 		      <li>
 		        <p>
-		          Recall <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m> from <xref ref="T-8a-2-act-2-log">Table</xref> in <xref ref="act-8a-2-2">Activity</xref>, and then compute <m>f'(2)</m>, <m>f''(2)</m>, <m>f'''(2)</m>, and <m>f^{(4)}(2)</m>.  Enter your results in in <xref ref="T-8a-2-act-3-log">Table</xref>.
+		          We recall <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m> from our work in <xref ref="act-8a-2-2">Activity</xref>, and then compute <m>f'(2)</m>, <m>f''(2)</m>, <m>f'''(2)</m>, and <m>f^{(4)}(2)</m>.  Enter the updated results in the blanks below.
 		        </p>	
 
-		          <table xml:id="T-8a-2-act-3-log">
-		            <title>Finding the derivatives of <m>f(x) = \ln(x)</m> at <m>a = 2</m>.</title>
-		              <tabular top="none" bottom="none">
-						<row>
-							<cell>
-								<md>
-									<mrow>k \amp= 0 </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(x) \amp= \ln(x) </mrow>
-									<mrow>f'(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(x) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(2) \amp= \ln(2) </mrow>
-									<mrow>f'(2) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(2) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(2) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(2) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-						</row>
-		              </tabular>
-		            </table>		
+					<md>
+						<mrow>k \amp= 0 \amp f(x) \amp= \ln(x) \amp f(2) \amp= <fillin characters="5" /></mrow>
+						<mrow>k \amp= 1 \amp f'(x) \amp= x^{-1} \amp f'(2) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= 2 \amp f''(x) \amp= (-1)x^{-2} \amp f''(2) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= 3 \amp f'''(x) \amp= (-2)(-1)x^{-3}  \amp f'''(2) \amp= <fillin characters="5" /> </mrow>
+						<mrow>k \amp= 4 \amp f^{(4)}(x) \amp= (-3)(-2)(-1)x^{-4}  \amp f^{(4)}(2) \amp= <fillin characters="5" />  </mrow>
+					</md>
+
                 </li>
                 <li>
                 	<p>
@@ -70,25 +44,26 @@
                 </li>
                 <li>
                 	<p>
-                		In <xref ref="F-8a-2-act-3">Figure</xref>, we see <m>f(x) = \ln(x)</m> and its tangent line, <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> plotted on the same axes.  Add <m>T_4(x)</m> to the figure.  What do you notice?
+                		In <xref ref="F-8a-2-act-3">Figure</xref>, we see <m>f(x) = \ln(x)</m> and its tangent line, <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> plotted on the same axes.  Use appropriate technology to plot <m>T_4(x)</m> along with <m>T_1(x)</m> and <m>f(x)</m> in the same window shown in the figure.  
                 		      <figure xml:id="F-8a-2-act-3">
 							    <caption>The function <m>f(x)=\ln(x)</m> and its degree <m>1</m> Taylor approximation  <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> near the point <m>(2,f(2))</m>.</caption>
 							      <image width="50%" source="images/8a_2_act_3" />
 							  </figure>
+						What do you notice?	  
                 	</p>
                 </li>
                 <li>
                 	<p>
-                		 Compute <m>|f(x) - T_4(x)|</m> for several different <m>x</m> values (you might find it helpful to use a slider in <em>Desmos</em>); for approximately what values of <m>x</m> is it true that <m>|f(x) - T_4(x)| \lt 0.1</m>?
+                		 Compute <m>|f(x) - T_4(x)|</m> for several different <m>x</m> values (you might find it helpful to use a slider in <em>Desmos</em> in the variable <m>b</m> to experiment with <m>|f(b) - T_4(b)|</m>); for approximately what values of <m>x</m> is it true that <m>|f(x) - T_4(x)| \lt 0.1</m>?
                 	</p>
                 </li>		
                 <li>
                 	<p>
-                		Use the pattern you observe in <xref ref="T-8a-2-act-3-log">Table</xref> to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
+                		Use the patterns you observe in your work so far to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
                 	</p>		
 
                 	<p>	
-                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_5(x)| \lt 0.1</m>?  What about <m>|f(x) - T_6(x)| \lt 0.1</m>?  How is this different from what we observed with the Taylor approximations centered at <m>a = 1</m> in <xref ref="act-8a-2-2">Activity</xref>?  How is it similar? 
+                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_5(x)| \lt 0.1</m>?  What about <m>|f(x) - T_6(x)| \lt 0.1</m>?  How is this situation different from what we observed with the Taylor approximations centered at <m>a = 1</m> in <xref ref="act-8a-2-2">Activity</xref>?  How is it similar? 
                 	</p>
                 </li>    
 			</ol>

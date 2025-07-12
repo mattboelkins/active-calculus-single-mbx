@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-2-1">
 	<statement>
 		<p>
@@ -21,55 +22,20 @@
 			<ol marker="a.">
 		      <li>
 		        <p>
-		          Determine the first <m>8</m> derivatives of <m>f(x) = \cos(x)</m> and evaluate each at <m>a = 0</m>.  Summarize your work by filling in all the blanks in <xref ref="T-8a-2-act-1-cosine">Table</xref>.
+		          Determine the first <m>8</m> derivatives of <m>f(x) = \cos(x)</m> and evaluate each at <m>a = 0</m>.  Summarize your work by filling in all the blanks below.
 		        </p>	
-
-		          <table xml:id="T-8a-2-act-1-cosine">
-		            <title>Finding the derivatives of <m>f(x) = \cos(x)</m> at <m>a = 0</m>.</title>
-		              <tabular top="none" bottom="none">
-						<row>
-							<cell>
-								<md>
-									<mrow>k \amp= 0 </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-									<mrow>k \amp= <fillin characters="2" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(x) \amp= \cos(x) </mrow>
-									<mrow>f'(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(5)}(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(6)}(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(7)}(x) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(8)}(x) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-							<cell>
-								<md>
-									<mrow>f(0) \amp= \cos(0) = 1 </mrow>
-									<mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f''(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f'''(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(4)}(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(5)}(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(6)}(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(7)}(0) \amp= <fillin characters="5" /> </mrow>
-									<mrow>f^{(8)}(0) \amp= <fillin characters="5" /> </mrow>
-								</md>
-							</cell>
-						</row>
-		              </tabular>
-		            </table>		
+				<md>
+					<mrow>k \amp= 0 \amp f(x) \amp= \cos(x) \amp f(0) \amp= \cos(0) = 1 </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f'(x) \amp= <fillin characters="5" /> \amp f'(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f''(x) \amp= <fillin characters="5" /> \amp f''(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f'''(x) \amp= <fillin characters="5" /> \amp f'''(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f^{(4)}(x) \amp= <fillin characters="5" /> \amp f^{(4)}(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f^{(5)}(x) \amp= <fillin characters="5" /> \amp f^{(5)}(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f^{(6)}(x) \amp= <fillin characters="5" /> \amp f^{(6)}(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f^{(7)}(x) \amp= <fillin characters="5" /> \amp f^{(7)}(0) \amp= <fillin characters="5" /> </mrow>
+					<mrow>k \amp= <fillin characters="2" /> \amp f^{(8)}(x) \amp= <fillin characters="5" /> \amp f^{(8)}(0) \amp= <fillin characters="5" /> </mrow>
+				</md>
+	
                 </li>
                 <li>
                 	<p>
@@ -78,16 +44,17 @@
                 </li>
                 <li>
                 	<p>
-                		Based on the pattern you observe in <xref ref="T-8a-2-act-1-cosine">Table</xref>, what do you expect to be the formula for <m>T_{10}(x)</m>?
+                		Based on the pattern you observe in your work so far, what do you expect to be the formula for <m>T_{10}(x)</m>?
                 	</p>
                 </li>
                 <li>
                 	<p>
-                		In <xref ref="F-8a-2-act-1">Figure</xref>, we see <m>f(x) = \cos(x)</m> and <m>T_2(x)</m> plotted on the same axes.  Add <m>T_4(x)</m> and <m>T_6(x)</m> to the figure by plotting those two functions on along with <m>f(x)</m> and <m>T_2(x)</m>.  What do you notice?
+                		 Use appropriate computing technology to plot <m>T_4(x)</m> and <m>T_6(x)</m> along with <m>f(x) = \cos(x)</m> and <m>T_2(x)</m> in the same window as shown in <xref ref="F-8a-2-act-1">Figure</xref>. 
                 		      <figure xml:id="F-8a-2-act-1">
 							    <caption>The function <m>f(x)=\cos(x)</m> and its degree <m>2</m> Taylor approximation  <m>T_2(x) = 1 - \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.</caption>
 							      <image width="100%" source="images/8a_2_act_1" />
 							  </figure>
+						What do you notice?	  
                 	</p>
                 </li>
                 <li>
@@ -150,7 +117,7 @@
                 </li>		
                 <li>
                 	<p>
-                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_2(x)| \lt 0.1</m>?  How does the interval of <m>x</m>-values change if we instead consider where <m>|f(x) - T_4(x)| \lt 0.1</m>? where <m>|f(x) - T_6(x)| \lt 0.1</m>? 
+                		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_2(x)| \lt 0.1</m>?  How does the interval of <m>x</m>-values change if we instead consider where <m>|f(x) - T_4(x)| \lt 0.1</m>? how about where <m>|f(x) - T_6(x)| \lt 0.1</m>? 
                 	</p>
                 </li>    
 			</ol>

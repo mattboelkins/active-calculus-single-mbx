@@ -15,49 +15,29 @@
 
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-2" component="static">
   <p>
-    Let <m>f(x) = \sin(x)</m> and let <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  Our goal is to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and to study the resulting degree <m>3</m> approximation of the sine function.
+    Let <m>f(x) = \sin(x)</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  We want to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and see how the resulting degree <m>3</m> approximation of the sine function compares to the tangent line approximation.
   </p>
-
 
   <p>
     <ol marker="a.">
       <li>
         <p>
-          As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a = 0</m> are those shown in the following table.  Compute the various derivatives of <m>f(x) = \sin(x)</m> and evaluate them at <m>a = 0</m> accordingly, recording your results in the left side of <xref ref="T-8a-2-PA">Table</xref>.
+          As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a = 0</m> are those shown below.  
+        </p>  
+        <p>
+          Compute the first three derivatives of <m>f(x) = \sin(x)</m> and evaluate them at <m>a = 0</m> accordingly, recording your results in the blanks provided below.
 
-          <table xml:id="T-8a-2-PA">
-            <title>Formulas and values for <m>f(x) = \sin(x)</m> and <m>T_3(x)</m>.</title>
-              <tabular top="none" bottom="none">
-                <row>
-                  <cell halign="center">
-                    <md>
-                      <mrow> f(x) \amp= \sin(x) </mrow>
-                      <mrow> f'(x) \amp= <fillin characters="5" /> </mrow>
-                      <mrow> f''(x) \amp= <fillin characters="5" /> </mrow>
-                      <mrow> f'''(x) \amp= <fillin characters="5" />  </mrow>
-                      <mrow> \amp </mrow>
-                      <mrow> f(0) \amp= <fillin characters="5" />  </mrow>
-                      <mrow> f'(0) \amp= <fillin characters="5" />  </mrow>
-                      <mrow> f''(0) \amp= <fillin characters="5" />  </mrow>
-                      <mrow> f'''(0) \amp= <fillin characters="5" />  </mrow>
-                    </md>
-                  </cell>  
-                  <cell halign="center">
-                    <md>
-                      <mrow> T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
-                      <mrow> T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
-                      <mrow> T_3''(x) \amp= 2 c_2 + 6 c_3 x</mrow>
-                      <mrow> T_3'''(x) \amp= 6 c_3</mrow>
-                      <mrow> \amp </mrow>
-                      <mrow> T_3(0) \amp= c_0 </mrow>
-                      <mrow> T_3'(0) \amp= c_1 </mrow>
-                      <mrow> T_3''(0) \amp= 2 c_2</mrow>
-                      <mrow> T_3'''(0) \amp= 6 c_3</mrow>
-                    </md>
-                  </cell>
-                </row>
-              </tabular>
-            </table>
+						<md>
+							<mrow> f(x) \amp= \sin(x) \amp T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3 </mrow>
+							<mrow> f'(x) \amp= <fillin characters="5" /> \amp T_3'(x) \amp= c_1 + 2c_2 x + 3c_3 x^2 </mrow>
+							<mrow> f''(x) \amp= <fillin characters="5" /> \amp T_3''(x) \amp= 2c_2 + 6c_3x </mrow>
+							<mrow> f'''(x) \amp= <fillin characters="5" /> \amp T_3'''(x) \amp= 6c_3 </mrow>
+							<mrow> \amp </mrow>
+							<mrow> f(0) \amp= <fillin characters="3" /> \amp T_3(0) \amp= c_0  </mrow>
+							<mrow> f'(0) \amp= <fillin characters="3" /> \amp T_3'(0) \amp= c_1  </mrow>
+							<mrow> f''(0) \amp= <fillin characters="3" /> \amp T_3''(0) \amp= 2c_2 </mrow>
+							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= 6c_3 </mrow>
+						</md>          
         </p>
       </li>
       <li>
@@ -67,21 +47,32 @@
       </li>
       <li>
         <p>
-          Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>, as plotted in <xref ref="F-8a-2-PA">Figure</xref>.  On the same axes, plot the cubic approximation <m>T_3(x)</m> you found in (b).  What do you observe about the approximation of <m>f(x)</m> by <m>T_3(x)</m> compared to the approximation of <m>f(x)</m> by <m>T_1(x)</m>?
+          Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>.  Use appropriate computer technology to plot the cubic approximation <m>T_3(x)</m> you found in (b) along with <m>f(x)</m> and <m>T_1(x)</m> in the same window shown in <xref ref="F-8a-2-PA">Figure</xref>. 
         </p>
         <figure xml:id="F-8a-2-PA">
           <caption>The function <m>f(x)=\sin(x)</m> and its tangent line approximation  <m>T_1(x) = x</m> near the point <m>(0,f(0))</m>.</caption>
           <image width="50%" source="images/8a_2_PA" />
         </figure>
-      </li>
-      <li>
         <p>
-          Compute <m>f(1) - T_1(1)</m>.  For what values of <m>x</m> does it appear that <m>|f(x) - T_1(x)| \lt 0.1</m>? 
+           What do you observe about the approximation of <m>f(x)</m> by <m>T_3(x)</m> compared to the approximation of <m>f(x)</m> by <m>T_1(x)</m>?  For example, how do <m>f(1) - T_1(1)</m> and <m>f(1) - T_3(1)</m> compare?
         </p>
       </li>
       <li>
         <p>
-          Compute <m>f(1) - T_3(1)</m>, and compare the result to <m>f(1) - T_1(1)</m>.  For what values of <m>x</m> does it appear that <m>|f(x) - T_3(x)| \lt 0.1</m>?  How much better is the cubic approximation than the linear approximation?
+          In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
+        </p>
+        <p>
+          Fill in the blanks below to determine the next six derivatives of <m>f(x) = \sin(x)</m>, up to <m>f^{(9)}(x)</m>.
+          <md>
+							<mrow> f(x) \amp= \sin(x) \amp f^{(5)}(x) \amp= <fillin characters="5" /> </mrow> 
+              <mrow> f'(x) \amp= \cos(x) \amp f^{(6)}(x) \amp= <fillin characters="5" /> </mrow> 
+              <mrow> f''(x) \amp= -\sin(x) \amp f^{(7)}(x) \amp= <fillin characters="5" /> </mrow> 
+              <mrow> f'''(x) \amp= -\cos(x) \amp f^{(8)}(x) \amp= <fillin characters="5" /> </mrow>
+              <mrow> f^{(4)}(x) \amp= <fillin characters="5" /> \amp f^{(9)}(x) \amp= <fillin characters="5" /> </mrow>
+          </md>    
+        </p>
+        <p>
+          What pattern do you notice in the derivatives of <m>f(x)=\sin(x)</m>?
         </p>
       </li>
       

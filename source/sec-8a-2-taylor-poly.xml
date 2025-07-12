@@ -38,8 +38,7 @@
 
   <introduction>
     <p>
-      In <xref ref="act-8a-1-2">Activity</xref>, we investigated a degree <m>3</m> polynomial approximation <m>T_3(x)</m> to <m>f(x) = e^x</m> near <m>a = 0</m>.  To do so, we chose the conditions <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  Starting with <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and <m>f(x) = e^x</m>, followed by finding the needed derivatives and evaluating them at <m>a = 0</m> led us to the results in <xref ref="T-8a-2-intro">Table</xref>.
-
+      In <xref ref="act-8a-1-2">Activity</xref>, we used <m>f(x) = e^x</m> as a case study to investigate polynomial approximations to <m>f(x)</m> near near <m>a = 0</m>.  For the degree <m>3</m> case, we chose the conditions <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  Starting with <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and <m>f(x) = e^x</m>, we found the first three derivatives of <m>f</m> and <m>T_3</m> and evaluated them at <m>a = 0</m>, which led to the results in <xref ref="T-8a-2-intro">Table</xref>.
 
             <table xml:id="T-8a-2-intro">
             <title>Formulas and values for <m>f(x) = e^x</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and their derivatives.</title>
@@ -77,7 +76,7 @@
     </p>
 
     <p>
-      Equating the function and derivative values of <m>f</m> and <m>T</m> at <m>a = 0</m>, we found that
+      Equating the function and derivative values of <m>f</m> and <m>T</m> at <m>a = 0</m>, it follows
       <me>c_0 = 1, c_1 = 1, 2c_2 = 1, 6c_3 = 1</me>
       and therefore
       <me>c_0 = 1, c_1 = 1, c_2 = \frac{1}{2}, c_3 = \frac{1}{6}</me>
@@ -89,12 +88,18 @@
     </figure>
     </p>
 
+    <!--
     <p>
       More precisely, we might compute that <m>|f(-1.16) - T_3(-1.16)| \approx 0.0608</m> and <m>|f(1.16) - T_3(1.16)| \approx 0.0970</m>, which helps us see the degree <m>3</m> approximation is quite accurate on an interval wider than <m>|x| \lt 1</m>.
     </p>
+    -->
 
     <p>
-      In this section, we will learn how we can more systematically find degree <m>n</m> approximations for functions such as <m>f(x) = e^x</m> that have at least <m>n</m> derivatives, as well as how to center the approximation at a value other than <m>a = 0</m>.
+      One important pattern we observed in our work with <m>f(x) = e^x</m> is that <m>f^{(n)}(0) = 1</m> for every natural number <m>n</m>.  As we will see, this information will ultimately help us find a general formula for <m>c_n</m>, the coefficient of <m>x^n</m> in the general degree <m>n</m> polynomial approximation of <m>f(x) = e^x</m>.
+    </p>
+
+    <p>
+      In this section, we will learn how we can more systematically find degree <m>n</m> approximations for functions that have at least <m>n</m> derivatives, as well as how to center the approximation at a value other than <m>a = 0</m>.
     </p>
 
     <xi:include href="./previews/PA-8a-2-WW.xml" />
@@ -128,7 +133,6 @@
           </p>
         </li>        
       </ul>
-      Moreover, we found that as the degree of the approximation increased, the polynomial approximation got more accurate by being closer to <m>e^x</m> at each fixed value of <m>x</m> as well as on a wider interval.
     </p>
 
     <p>
@@ -148,15 +152,22 @@
     </p>
 
     <p>
-      We can also notice that the linear approximation is embedded within the quadratic approximation, and the quadratic approximation within the cubic one, and so on.  These observations naturally lead us to consider approximations of arbitrary degree <m>n</m> in order to generate more accurate approximations for any function with a sufficient number of derivatives.  We thus define the <term>Taylor polynomial of degree <m>n</m> centered at <m>a = 0</m></term>.
+      We've also observed that as the degree of the approximation increases, the polynomial approximation gets more accurate by being closer to the original function <m>f(x)</m> at each fixed value of <m>x</m> as well as on a wider interval.  To find better and better approximations of any function with a sufficient number of derivatives, we naturally want to find approximations of arbitrary degree <m>n</m>.  We thus define the <term>Taylor polynomial of degree <m>n</m> centered at <m>a = 0</m></term>.
     </p>
 
     <definition xml:id="def-Taylor-poly-0">
       <statement>
-         Let <m>n</m> be a natural number and let <m>f</m> be a function with at least <m>n</m> derivatives at <m>a = 0</m>.  The <term>degree <m>n</m> Taylor polynomial of <m>f</m> centered at <m>a = 0</m></term> is the function
-         <me>T_n(x) = c_0 + c_1x + c_2x^2 + \cdots + c_nx^n</me>
-         that satisfies
-         <m>T_n(0) = f(0)</m>, <m>T_n'(0) = f'(0)</m>, <m>T_n''(0) = f''(0)</m>, <m>\ldots</m>, <m>T_n^{(n)}(0) = f^{(n)}(0)</m>.
+        <p>
+          Let <m>n</m> be a natural number and let <m>f</m> be a function with at least <m>n</m> derivatives at <m>a = 0</m>.  The <term>degree <m>n</m> Taylor polynomial of <m>f</m> centered at <m>a = 0</m></term> is the function
+            <me>
+              T_n(x) = c_0 + c_1x + c_2x^2 + \cdots + c_nx^n
+            </me>
+          that satisfies
+          <me>
+            T_n(0) = f(0), T_n'(0) = f'(0), T_n''(0) = f''(0), \ldots, T_n^{(n)}(0) = f^{(n)}(0)
+          </me>.         
+        </p>
+
       </statement>
     </definition>
 
@@ -179,11 +190,11 @@
                     <md>
                       <mrow>T_n(x) \amp= c_0 + c_1x + c_2x^2 + c_3x^3 + c_4x^4 + \cdots + c_nx^n</mrow>
                       <mrow>T_n'(x) \amp= c_1 + 2c_2x + 3c_3x^2 + 4c_4x^3 + \cdots + nc_nx^{n-1} </mrow>
-                      <mrow>T_n''(x) \amp= 2c_2 + 3 \cdot 2 c_3x + 4 \cdot 3 c_4x^2 + \cdots + n (n-1) c_nx^{n-2} </mrow>
-                      <mrow>T_n'''(x) \amp= 3 \cdot 2 \cdot 1 c_3 + 4 \cdot 3 \cdot 2 c_4x + \cdots + n (n-1) (n-2) c_nx^{n-3} </mrow>
-                      <mrow>T_n^{(4)}(x) \amp= 4 \cdot 3 \cdot 2 \cdot 1 c_4 + \cdots + n (n-1) (n-2) (n-3) c_nx^{n-4} </mrow>
-                      <mrow> \vdots \amp \vdots </mrow>
-                      <mrow>T_n^{(n)}(x) \amp= n (n-1) (n-2) (n-3) \cdots 3 \cdot 2 \cdot 1 c_n</mrow>
+                      <mrow>T_n''(x) \amp= 2c_2 + (3 \cdot 2) c_3x + (4 \cdot 3) c_4x^2 + \cdots + n (n-1) c_nx^{n-2} </mrow>
+                      <mrow>T_n'''(x) \amp= (3 \cdot 2 \cdot 1) c_3 + (4 \cdot 3 \cdot 2) c_4x + \cdots + n (n-1) (n-2) c_nx^{n-3} </mrow>
+                      <mrow>T_n^{(4)}(x) \amp= (4 \cdot 3 \cdot 2 \cdot 1) c_4 + \cdots + n (n-1) (n-2) (n-3) c_nx^{n-4} </mrow>
+                      <mrow>  \amp\vdots </mrow>
+                      <mrow>T_n^{(n)}(x) \amp= \bigl[ n (n-1) (n-2) (n-3) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n</mrow>
                     </md>
                   </cell>
                 </row>
@@ -219,13 +230,13 @@
                 </row> 
                 <row>
                   <cell><m>3</m></cell>
-                  <cell><m>T'''(0) = 3 \cdot 2 \cdot 1 c_3</m></cell>
-                  <cell><m>3 \cdot 2 \cdot 1 c_3 = f'''(0)</m></cell>
+                  <cell><m>T'''(0) = (3 \cdot 2 \cdot 1) c_3</m></cell>
+                  <cell><m>(3 \cdot 2 \cdot 1) c_3 = f'''(0)</m></cell>
                 </row> 
                 <row>
                   <cell><m>4</m></cell>
-                  <cell><m>T^{(4)}(0) = 4 \cdot 3 \cdot 2 \cdot 1 c_4</m></cell>
-                  <cell><m>4 \cdot 3 \cdot 2 \cdot 1 c_4 = f^{(4)}(0)</m></cell>
+                  <cell><m>T^{(4)}(0) = (4 \cdot 3 \cdot 2 \cdot 1) c_4</m></cell>
+                  <cell><m>(4 \cdot 3 \cdot 2 \cdot 1) c_4 = f^{(4)}(0)</m></cell>
                 </row> 
                 <row>
                   <cell halign="center"><m>\vdots</m></cell>
@@ -234,20 +245,20 @@
                 </row>
                 <row>
                   <cell><m>n</m></cell>
-                  <cell><m>T^{(n)}(0) = n (n-1) \cdots 3 \cdot 2 \cdot 1 c_n </m></cell>
-                  <cell><m>n (n-1) \cdots 3 \cdot 2 \cdot 1 c_n = f^{(n)}(0)</m></cell>
+                  <cell><m>T^{(n)}(0) = \bigl[ n (n-1) \cdots 3 \cdot 2 \cdot 1 c_n \bigr] </m></cell>
+                  <cell><m>\bigl[ n (n-1) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n = f^{(n)}(0)</m></cell>
                 </row> 
               </tabular>
             </table>
 
     <p>
-      We see a natural pattern that results from taking the <m>k</m>th derivative of the <m>k</m>th power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>4 \cdot 3 x^2</m>, <m>4 \cdot 3 \cdot 2 x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
+      We see a natural pattern that results from taking the <m>k</m>th derivative of the <m>k</m>th power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>(4 \cdot 3) x^2</m>, <m>(4 \cdot 3 \cdot 2) x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
       <me>
         \frac{d^4}{dx^4}\left[ x^4 \right] = 4 \cdot 3 \cdot 2 \cdot 1 = 4!
       </me>
       From the rightmost column of <xref ref="T-8a-2-Taylor-0">Table</xref>, we now see how the values of <m>c_0, c_1, \ldots, c_n</m> are determined by the values of the various derivatives evaluated at <m>a = 0</m>, each scaled by a corresponding factorial.  In particular, solving each equation in the rightmost column of <xref ref="T-8a-2-Taylor-0">Table</xref> for <m>c_k</m>, we see that
       <me>
-        c_0 = f(0), c_1 = f'(0), c_2 = \frac{f''(0)}{2!}, c_3 = \frac{f'''(0)}{3!}, c_4 = \frac{f^{(4)}(0)}{4!}, \ldots, c_n = \frac{f^{(n)}(0)}{n!}
+        c_0 = f(0), c_1 = f'(0), c_2 = \frac{f''(0)}{2!}, c_3 = \frac{f'''(0)}{3!}, \ldots, c_n = \frac{f^{(n)}(0)}{n!}
       </me>
       This enables us to find the degree <m>n</m> Taylor polynomial for any function <m>f</m> by finding the values of <m>f(0), f'(0), f''(0), \ldots, f^{(n)}(0)</m> and using these numbers to determine <m>c_0, c_1, c_2, \ldots, c_n</m>.  We summarize our recent work as follows.
     </p>
@@ -264,7 +275,7 @@
     </assemblage>
 
     <p>
-      It is important to remember that the Taylor polynomial then provides us with an approximation of <m>f</m> near <m>a = 0</m>.  In particular, 
+      The Taylor polynomial is an approximation of <m>f</m> near <m>a = 0</m>.  In particular, 
       <me>
         f(x) \approx T_n(x) = f(0) + f'(0) x + \frac{f''(0)}{2!} x^2 + \cdots + \frac{f^{(n)}(0)}{n!} x^n
       </me>.
@@ -283,69 +294,73 @@
         </p>
 
           <table xml:id="T-8a-2-Taylor-example">
-            <title>Finding the derivatives of <m>f(x) = \ln(1+x)</m> at <m>a = 0</m>.</title>
+            <title>The derivatives of <m>f(x) = \ln(1+x)</m> at <m>a = 0</m>.</title>
               <tabular top="none" bottom="none">
                 <row>
+                  <cell><m>k = 0</m></cell>
                   <cell><m>f(x) = \ln(1+x)</m></cell>
+                </row>
+                <row>
+                  <cell><m>k = 1</m></cell>
+                  <cell><m>f'(x) = \frac{1}{1+x} = (1+x)^{-1}</m></cell>
+                </row>
+                <row>
+                  <cell><m>k = 2</m></cell>
+                  <cell><m>f''(x) = (-1)(1+x)^{-2}</m></cell>
+                </row>
+                <row>
+                  <cell><m>k = 3</m></cell>
+                  <cell><m>f'''(x) = (-2)(-1)(1+x)^{-3}</m></cell>
+                </row>
+                <row>
+                  <cell><m>k = 4</m></cell>
+                  <cell><m>f^{(4)}(x) = (-3)(-2)(-1)(1+x)^{-4}</m></cell>
+                </row>
+                <row>
+                  <cell><m>k = 5</m></cell>
+                  <cell><m>f^{(5)}(x) = (-4)(-3)(-2)(-1)(1+x)^{-5}</m></cell>
+                </row>
+                <row>
+                  <cell> <mdash /> </cell>
+                  <cell> <mdash /> </cell>
+                </row>
+                <row>
+                  <cell><m>k = 0</m></cell>
                   <cell><m>f(0) = \ln(1) = 0</m></cell>
                 </row>
                 <row>
-                  <cell><m>f'(x) = \frac{1}{1+x} = (1+x)^{-1}</m></cell>
-                  <cell><m>f'(0) = (1){-1} = 1</m></cell>
+                  <cell><m>k = 1</m></cell>
+                  <cell><m>f'(0) = (1)^{-1} = 1</m></cell>
                 </row>
                 <row>
-                  <cell><m>f''(x) = (-1)(1+x)^{-2}</m></cell>
-                  <cell><m>f''(0) = (-1) (1)^{-2} = -1</m></cell>
+                  <cell><m>k = 2</m></cell>
+                  <cell><m>f''(0) = (-1)(1)^{-2} = -1 </m></cell>
                 </row>
                 <row>
-                  <cell><m>f'''(x) = (-2)(-1)(1+x)^{-3}</m></cell>
-                  <cell><m>f'''(0) = (-2)(-1) (1)^{-3} = (-2)(-1)</m></cell>
+                  <cell><m>k = 3</m></cell>
+                  <cell><m>f'''(0) = (-2)(-1)(1)^{-3} = (-2)(-1)</m></cell>
                 </row>
                 <row>
-                  <cell><m>f^{(4)}(x) = (-3)(-2)(-1)(1+x)^{-4}</m></cell>
-                  <cell><m>f^{(4)}(0) = (-3)(-2)(-1)</m></cell>
+                  <cell><m>k = 4</m></cell>
+                  <cell><m>f^{(4)}(0) = (-3)(-2)(-1)(1)^{-4} = (-3)(-2)(-1)</m></cell>
                 </row>
                 <row>
-                  <cell><m>f^{(5)}(x) = (-4)(-3)(-2)(-1)(1+x)^{-5}</m></cell>
-                  <cell><m>f^{(5)}(0) = (-4)(-3)(-2)(-1)</m></cell>
-                </row>
+                  <cell><m>k = 5</m></cell>
+                  <cell><m>f^{(5)}(0) = (-4)(-3)(-2)(-1)(1)^{-5} = (-4)(-3)(-2)(-1)</m></cell>
+                </row>                
               </tabular>
             </table>
 
         <p>
-          When finding the coefficients of a Taylor polynomial, it is often helpful to <em>not</em> combine products such as <m>(-3)(-2)(-1)</m> and <m>(-4)(-3)(-2)(-1)</m> into a single number, in order to better observe patterns; indeed, by not combining the constants that arise in higher derivatives of <m>f(x) = \ln(1+x)</m>, we see patterns of alternating signs and factorials that arise.  From the right column of <xref ref="T-8a-2-Taylor-example">Table</xref> and the fact that <m>c_k = \frac{f^{(k)}(0)}{k!}</m>, we find that
-          <ul>
-            <li>
-              <p>
-                <m>c_0 = f(0) = 0</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>c_1 = f'(0) = 1</m>
-              </p>
-            </li>
-            <li>
-              <p>
-                <m>c_2 = \frac{1}{2!}f''(0) = \frac{-1}{2!} = -\frac{1}{2}</m>
-              </p>
-            </li>            
-            <li>
-              <p>
-                <m>c_3 = \frac{1}{3!}f'''(0) = \frac{(-2)(-1)}{3!} = \frac{1}{3}</m>
-              </p>
-            </li> 
-            <li>
-              <p>
-                <m>c_4 = \frac{1}{4!}f^{(4)}(0) = \frac{(-3)(-2)(-1)}{4!} = -\frac{1}{4}</m>
-              </p>
-            </li> 
-            <li>
-              <p>
-                <m>c_5 = \frac{1}{5!}f^{(5)}(0) = \frac{(-4)(-3)(-2)(-1)}{5!} = \frac{1}{5}</m>
-              </p>
-            </li> 
-          </ul>
+          When finding the coefficients of a Taylor polynomial, it is often helpful to <em>not</em> combine products such as <m>(-3)(-2)(-1)</m> and <m>(-4)(-3)(-2)(-1)</m> into a single number, in order to better observe patterns; indeed, by not combining the constants that arise in higher derivatives of <m>f(x) = \ln(1+x)</m>, we see patterns of alternating signs and factorials that arise.  From the last six rows of <xref ref="T-8a-2-Taylor-example">Table</xref> and the fact that <m>c_k = \frac{f^{(k)}(0)}{k!}</m>, we find that
+          <md>
+            <mrow> c_0 \amp= f(0) = 0 </mrow>
+            <mrow> c_1 \amp= f'(0) = 1 </mrow>
+            <mrow> c_2 \amp= \frac{1}{2!}f''(0) = \frac{-1}{2!} = -\frac{1}{2} </mrow>
+            <mrow> c_3 \amp= \frac{1}{3!}f'''(0) = \frac{(-2)(-1)}{3!} = \frac{1}{3} </mrow>
+            <mrow> c_4 \amp= \frac{1}{4!}f^{(4)}(0) = \frac{(-3)(-2)(-1)}{4!} = -\frac{1}{4} </mrow>
+            <mrow> c_5 \amp= \frac{1}{5!}f^{(5)}(0) = \frac{(-4)(-3)(-2)(-1)}{5!} = \frac{1}{5}</mrow>
+          </md>
           so that the degree <m>5</m> Taylor approximation of <m>f(x) = \ln(1+x)</m> at <m>a = 0</m> is
           <me>
             T_5(x) = 1x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \frac{1}{4}x^4 + \frac{1}{5}x^5
@@ -354,7 +369,7 @@
           <me>
             \ln(1+x) \approx 1x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \frac{1}{4}x^4 + \frac{1}{5}x^5
           </me>,
-          and plotting <m>T_5(x)</m> along with <m>f(x)</m> and <m>T_1(x)</m> in <xref ref="F-8a-2-log-example">Figure</xref>, we see how much better the degree <m>5</m> approximation is than the tangent line approximation.
+          and by plotting <m>T_5(x)</m> along with <m>f(x)</m> and <m>T_1(x)</m> in <xref ref="F-8a-2-log-example">Figure</xref>, we see how much better the degree <m>5</m> approximation is than the tangent line approximation.
         </p>        
       <figure xml:id="F-8a-2-log-example">
         <caption>The function <m>f(x)=\ln(1+x)</m> and its degree <m>5</m> Taylor approximation  <m>T_5(x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \frac{1}{4}x^4 + \frac{1}{5}x^5</m> near the point <m>(0,f(0))</m>, along with <m>T_1(x) = x</m>.</caption>
@@ -364,7 +379,7 @@
     </example>
 
     <p>
-      From our work in <xref ref="Ex-8a-2-Taylor-example">Example</xref>, we can also see a pattern that arises and thus we expect the general degree <m>n</m> Taylor polynomial centered at <m>a = 0</m> for <m>f(x) = \ln(1+x)</m> to be
+      From our work in <xref ref="Ex-8a-2-Taylor-example">Example</xref>, we see the pattern that arises in the various derivatives of <m>f(x) = \ln(1+x)</m>.  We therefore find that the general degree <m>n</m> Taylor polynomial centered at <m>a = 0</m> for <m>f(x) = \ln(1+x)</m> is
       <me>
         T_n(x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n+1}\frac{1}{n}x^n.
       </me>
@@ -374,7 +389,11 @@
     <xi:include href="./activities/act-8a-2-1.xml" />
 
     <p>
-      In <xref ref="act-8a-2-1">Activity</xref>, we found that the degree <m>6</m> Taylor approximation of the cosine function at <m>a = 0</m> is
+      Our work so far with the functions <m>e^x</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>\ln(1+x)</m> has revealed patterns in their derivatives that enable us to find even higher degree Taylor polynomials easily.  Furthermore, these higher degree polynomials provide outstanding approximations that only require the use of addition and multiplication.
+    </p>
+
+    <p>
+      For example, in <xref ref="act-8a-2-1">Activity</xref>, we found that the degree <m>6</m> Taylor approximation of the cosine function at <m>a = 0</m> is
       <me>
         T_6(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 
       </me>,
@@ -382,15 +401,14 @@
       <me>
         \cos(x) \approx 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 
       </me>.
-      We can do similar work to extend what we found in <xref ref="PA-8a-2">Preview Activity</xref> and observe that
+      The pattern of alternating signs and even numbers in the factorials and powers of <m>x</m> lets us see that we could easily write down, say, <m>T_{20}(x)</m>.  We can reason similarly to extend what we found in <xref ref="PA-8a-2">Preview Activity</xref> and observe that
       <me>
         \sin(x) \approx T_7(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \frac{1}{7!}x^7
       </me>,
-      the degree <m>7</m> Taylor approximation of the sine function at <m>a = 0</m>.  Furthermore, as we saw in <xref ref="sec-8a-1-linear-poly">Section</xref>, the degree <m>4</m> Taylor approximation of <m>e^x</m> provides us with the estimate
-      <me>
-        e^x \approx T_4(x) = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \frac{1}{4!}x^4
-      </me>.
-      Thus, we now have higher degree Taylor approximations for <m>e^x</m>, <m>\sin(x)</m>, and <m>\cos(x)</m> that exhibit interesting patterns in their coefficients that we can use to easily find higher degree approximations that are even more accurate.  Indeed, these approximations are what computational devices use to find numerical estimates for quantities such as <m>e^2</m>, <m>\sin(1)</m>, and <m>\cos(1.2)</m>.  For example, 
+      the degree <m>7</m> Taylor approximation of the sine function at <m>a = 0</m>.  
+    </p>
+    <p>  
+      When we ask a computational device to find numerical estimates for quantities such as <m>e^2</m>, <m>\sin(1)</m>, and <m>\cos(1.2)</m>, high degree Taylor polynomials are used to generate the results.  For example, 
       <me>
         \sin(1) \approx T_7(1) = 1 - \frac{1}{3!}1^3 + \frac{1}{5!}1^5 - \frac{1}{7!}1^7 = \frac{4241}{5040} \approx 0.84146825
       </me>
@@ -405,7 +423,7 @@
     </title>
 
     <p>
-      In all of our work so far in <xref ref="C-8a">Chapter</xref>, we have focused on approximating functions such as <m>e^x</m>, <m>\sin(x)</m>, <m>\ln(1+x)</m>, and <m>\cos(x)</m> near <m>a = 0</m>.  But we could instead be interested in the behavior of some function <m>f</m> near <m>a = 5</m>, or be interested in a function <m>f</m> that wasn't even defined at <m>a = 0</m>.  Thus, we next consider how we can generalize our earlier work to Taylor polynomial approximations centered at any value <m>a</m>.
+      In all of our work so far in <xref ref="C-8a">Chapter</xref>, we have focused on approximating functions such as <m>e^x</m>, <m>\sin(x)</m>, <m>\ln(1+x)</m>, and <m>\cos(x)</m> near <m>a = 0</m>.  But we could instead be interested in the behavior of some function <m>f</m> near <m>a = 5</m>, or be interested in a function <m>f</m> that wasn't even defined at <m>a = 0</m>.  Thus, we next generalize our earlier work to Taylor polynomial approximations centered at any value <m>a</m>.
     </p>
 
     <p>
@@ -435,12 +453,17 @@
 
     <definition xml:id="def-Taylor-poly-a">
       <statement>
+        <p>
          Let <m>n</m> be a natural number and let <m>f</m> be a function with at least <m>n</m> derivatives at <m>a</m>.  The <term>degree <m>n</m> Taylor polynomial of <m>f</m> centered at <m>a</m></term> is the function
          <me>
           T_n(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + \cdots + c_n(x-a)^n
-        </me>
+         </me>
          that satisfies
-         <m>T_n(a) = f(a)</m>, <m>T_n'(a) = f'(a)</m>, <m>T_n''(a) = f''(a)</m>, <m>\ldots</m>, <m>T_n^{(n)}(a) = f^{(n)}(a)</m>.
+         <me>
+          T_n(a) = f(a), T_n'(a) = f'(a), T_n''(a) = f''(a), \ldots, T_n^{(n)}(a) = f^{(n)}(a)           
+         </me>. 
+        </p>
+        
       </statement>
     </definition>
 
