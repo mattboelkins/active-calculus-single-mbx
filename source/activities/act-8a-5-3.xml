@@ -15,10 +15,11 @@
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-5-3">
   <statement>
     <p>
-      In this activity we will determine the Taylor series expansion for the famous <em>error function</em>,
+      In this activity we will determine the Taylor series expansion for the well-known <em>error function</em>,
       <me>
         \erf(x) = \frac{2}{\sqrt{\pi}} \int_0^x e^{-t^2} \, dt
-      </me>.
+      </me>,
+      that arises in probability theory and other important applications.
     </p>
 
 
@@ -41,7 +42,7 @@
         </li>
         <li>
           <p>
-            For what interval of <m>x</m>-values will the Taylor series for <m>\erf(x)</m> converge?  Why?
+            For what open interval of <m>x</m>-values will the Taylor series for <m>\erf(x)</m> converge?  Why?
           </p>
         </li>
         <li>

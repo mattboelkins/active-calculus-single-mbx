@@ -42,7 +42,7 @@
             </li>
             <li>
               <p>
-                Explain why we can think of <m>g(x)</m> as being given by 
+                Explain why we can think of <m>g(x) = \arctan(x)</m> as being given by 
                 <me>
                   g(x) = \int_0^x f(u) \, du
                 </me>.  Use this relationship to find a power series expansion for <m>g(x)</m>.  
@@ -50,14 +50,14 @@
             </li>  
             <li>
               <p>
-                For what interval of <m>x</m>-values is the Taylor series for <m>g(x) = \arctan(x)</m> guaranteed to converge?
+                For what open interval of <m>x</m>-values is the Taylor series for <m>g(x) = \arctan(x)</m> guaranteed to converge?
               </p>
             </li>
           </ol>
         </li>
         <li>
           <p>
-            In <xref ref="sec-8a-4-taylor-series">Section</xref>, we used <xref ref="D-8a-4-Taylor-series">Definition</xref> to find the Taylor series expansion for <m>h(x) = \ln(1+x)</m>.  Here we use substitution and integration to develop the Taylor series of <m>h(x)</m> in a different way.
+            In <xref ref="sec-8a-4-taylor-series">Section</xref>, we used <xref ref="D-8a-4-Taylor-series">Definition</xref> to find the Taylor series expansion for <m>h(x) = \ln(1+x)</m>.  In the prompts that follow, we instead use substitution and integration to develop the Taylor series of <m>h(x)</m> in a different way.
           </p>
           <ol marker="i.">
             <li>

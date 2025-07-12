@@ -15,7 +15,7 @@
 
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-5x-accuracy-of-approx">
-  <title>NEED TITLE - quantifying accuracy</title>
+  <title>Quantifying the accuracy of approximations</title>
   <objectives>
     <ul>
       <li>
@@ -271,6 +271,6 @@
     </p>
   </subsection>
 
-<!--  <xi:include href="./exercises/ez-8a-5x.xml" /> -->
+<xi:include href="./exercises/ez-8a-5x.xml" />
 
 </section>

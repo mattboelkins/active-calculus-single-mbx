@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+ 
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-8a-5">
   <exercise label="Library__AlfredUniv__diffeq__series__differentiateseries">
     <webwork source="Library/AlfredUniv/diffeq/series/differentiateseries.pg"/>
@@ -25,12 +26,14 @@
   <exercise label="Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027">
     <webwork source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg"/>
   </exercise>
+<!--
   <exercise label="Library__Rochester__setSeries3Convergent__ur_sr_3_8">
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg"/>
   </exercise>
   <exercise label="Library__Rochester__setSeries3Convergent__ur_sr_3_10">
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </exercise>
+-->  
   <exercise xml:id="ez-8a-5-1">
     <statement>
       <p>
@@ -293,7 +296,7 @@
   </exercise>      
 
 
-
+<!--
   <exercise xml:id="ez-8a-5-3">
       <statement>
         <p>
@@ -335,8 +338,6 @@
           </li>
         </ol>
       </statement>
-
-<!-- %%%%%%%%%%%%%%%%%%%% --> 
 
     <answer>
 
@@ -408,7 +409,7 @@
     </solution>
 
   </exercise>    
-
+-->
 
   <exercise xml:id="ez-8a-5-4">
       <statement>
