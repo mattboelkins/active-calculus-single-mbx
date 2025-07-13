@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-5x" component="static">
+
+    <p>
+        Consider the alternating geometric series 
+        <me>
+            S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots
+        </me>.  
+        We want to explore how the partial sums of the series compare to and approximate the exact sum of the series.
+    </p>
+
+    <p>
+        <ol marker="a.">
+            <li>
+                <p>
+                   Recall that the <m>n</m>th partial sum, <m>S_n</m>, is the sum of the first <m>n</m> terms of the infinite geometric series <m>S</m>.  This means that
+                    <me>
+                        S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}
+                    </me>. 
+                    Use appropriate computational technology to find the exact fractional values of <m>S_3</m>, <m>S_4</m>, <m>\ldots</m>, <m>S_8</m>, and record these values along with their decimal representations in the blank spaces provided below.  Note that <m>S_1 = 1</m> and <m>S_2 = 1 - \frac{4}{5} = \frac{1}{5} = 0.2</m> are provided, and remember that each subsequent partial sum can be found by adding or subtracting one number from the preceding partial sum.     
+                </p>
+                <p>
+                    <md>
+                        <mrow>n \amp= 1 \amp S_1 \amp= 1</mrow>
+                        <mrow>n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2</mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_3 \amp= <fillin characters="9" /> </mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_4 \amp= <fillin characters="9" /> </mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_5 \amp= <fillin characters="9" /> </mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_6 \amp= <fillin characters="9" /> </mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_7 \amp= <fillin characters="9" /> </mrow>
+                        <mrow>n \amp= <fillin characters="1" /> \amp S_8 \amp= <fillin characters="9" /> </mrow>
+                    </md>
+                </p>
+            </li>
+            <li>
+                <p>
+                    For the given infinite geometric series 
+                    <me>
+                        S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k 
+                    </me>
+                    identify the values of <m>a</m> and <m>r</m> and use <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref> to find the exact value of <m>S</m>.  State the sum of the infinite geometric series both as a fraction and as its decimal representation.
+                </p>
+            </li>
+            <li>
+                <p>
+                    In <xref ref="F-PA-8a-5x-partial-sums">Figure</xref>, we now visualize the values of the partial sums we found in part (a) by plotting points of the form <m>(n,S_n)</m>.  For example, since <m>S_1 = 1</m> and <m>S_2 = 0.2</m>, we've plotted the points <m>(1,1)</m> and <m>(2,0.2)</m> in the figure, labeling them <q><m>S_1</m></q> and <q><m>S_2</m></q>, respectively.  Use your results from (a) to plot and label the points for <m>S_3</m>, <m>S_4</m>, <m>\ldots</m>, <m>S_8</m>.
+                </p>
+                <p>
+                    <figure xml:id="F-PA-8a-5x-partial-sums">
+                        <caption>Plotting the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m>.</caption>
+                        <image width="80%">
+                        <prefigure label="Fig-PA-8a-5x-partial-sums" xmlns="https://prefigure.org">  
+                            <diagram dimensions="(300,200)" margins="10">
+                                <definition>a = 3</definition> 
+                                <definition>p = (-0.25, 0.5555555555)</definition> 
+                                <definition>q = (9.5, 0.5555555555)</definition>   
+                                <coordinates bbox="(-1,-0.25,10,1.5)">
+                                    <axes hticks="(0,1,9)" vticks="(0,0.25,1.25)"/>
+                                    <line endpoints="(p, q)" stroke="blue" thickness="1.5" dash="4 4" infinite="no"/>     
+                                    <point p="(1,1)" alignment="n" scale="0.8" size="3.5">
+                                    <m>S_1</m>
+                                    </point>
+                                    <point p="(2,0.2)" alignment="w" scale="0.8" size="3.5">
+                                    <m>S_2</m>
+                                    </point>
+                                </coordinates>
+                            </diagram>
+                        </prefigure>
+                        </image>    
+                    </figure>
+                </p>
+                <p>
+                    What do you think is the equation of the horizontal line shown in the figure?  Why?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Use your results from (a) and (b) to compute <m>S_5 - S</m> and <m>S_6 - S</m>.  What do you notice about these two numerical values?  How are these results related to your plot in part (c)?
+                </p>
+            </li>
+            <li>
+                <p>
+                    Write a careful sentence or two to describe what you observe about the overall pattern of behavior you see in the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m> and their relation to the exact sum <m>S</m> of the given geometric series.
+                </p>
+            </li>
+        </ol>
+    </p>
+
+</exploration>
+
