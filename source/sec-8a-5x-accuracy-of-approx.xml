@@ -104,7 +104,7 @@
     </p>
 
     <p>
-      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \fra{5}{9}</m>.  We found the first several partial sums shown in **TABLE**.  
+      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \fra{5}{9}</m>.  We found the first several partial sums shown in <xref ref="T-8a-5x-ExGeom"/>.  
 
       <table xml:id="T-8a-5x-ExGeom">
         <title>Partial sums of the alternating series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m></title>
@@ -232,73 +232,53 @@
       If we were to compute the partial sums <m>S_n</m> of any alternating series whose terms decrease to zero and plot the points <m>(n,S_n)</m> as we did in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.
     </p>
 
-    <p>  
-      The arguments <xref ref="eq-8a-5x-alt-sum-ex2">Example</xref> can be made for any alternating series whose terms go to zero.  This leads us to state two important results.
-    </p>
-
-    <assemblage>
-      <title>The Alternating Series Test</title>
-      <p>
-        Given an alternating series
-        <me>
-        \sum_{k=0}^{\infty} (-1)^k a_k
-        </me>,
-        if the positive terms <m>a_k</m> decrease to 0 as <m>k \to \infty</m>,
-        then the alternating series converges.
-      </p>
-    </assemblage>
-
-    <p>
-      If we were to compute the partial sums <m>S_n</m> of any alternating series whose terms decrease to zero and plot the points <m>(n,S_n)</m> as we did in <xref ref="F-PA-8a-5x-partial-sums">Figure</xref>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.
-    </p>
-
     <assemblage>
       <title>Alternating Series Estimation Theorem</title>
       <p>
         If the alternating series
         <m>
-        \sum_{k=1}^{\infty} (-1)^{k+1}a_k
+        \sum_{k=0}^{\infty} (-1)^{k}a_k
         </m>
         has positive terms <m>a_k</m> that decrease to zero as <m>k \to \infty</m>, and
         <m>
-        S_n = \sum_{k=1}^{n} (-1)^{k+1}a_k
+        S_n = \sum_{k=0}^{n-1} (-1)^{k}a_k
         </m>
         is the <m>n</m>th partial sum of the alternating series, then
         <me>
-          \left| \sum_{k=1}^{\infty} (-1)^{k+1}a_k - S_n \right| \leq a_{n+1}
+          \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - S_n \right| \leq a_{n}
         </me>.
       </p>
     </assemblage>
 
     <p>
-      Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating series, the absolute error of the approximation is less than the next term in the series.
+      Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating infinite series, the absolute error of the approximation is less than the next term in the series.
     </p>
 
     <example xml:id="Ex-8a-5x-ASET">
       <statement>
         <p>
-          Determine how well the <m>100</m>th partial sum <m>S_{100}</m> of
+          Determine how well the <m>100^{\mbox{th}}</m> partial sum <m>S_{100}</m> of
           <me>
-            \sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}
+            \sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}
           </me>
           approximates the value of the converging alternating series.
         </p>
       </statement>
       <solution>
         <p>
-          If we let <m>S</m> be the value of the series <m>\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}</m>,
+          If we let <m>S</m> be the value of the series <m>\sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}</m>,
           then we know that
           <me>
-            \left| S_{100} - S \right| \lt  a_{101}
+            \left| S_{100} - S \right| \lt  a_{100}
           </me>.
         </p>
 
         <p>
           Now
           <me>
-            a_{101} = \frac{1}{101} \approx 0.0099
+            a_{100} = \frac{1}{101} \approx 0.0099
           </me>,
-          so the 100th partial sum is within 0.0099 of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the difference between <m>S_{100}</m> and <m>S</m> is indeed less than the error bound of <m>0.0099</m> from the Alternating Series Estimation Theorem.
+          so the <m>100^{\mbox{th}}</m> partial sum is within <m>0.0099</m> of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the difference between <m>S_{100}</m> and <m>S</m> is indeed less than the error bound of <m>0.0099</m> from the Alternating Series Estimation Theorem.
         </p>  
       </solution>
     </example>
@@ -307,16 +287,250 @@
 
   </subsection>
 
-  
+  <subsection>
+    <title>The Lagrange Error Bound</title>
+
+    <p>
+      See the following comment in the source for Steve's source on this to modify and update.  There will be exercises that can be used from his Section 8.5 as well in the original source.
+    </p>
+
+<!-- 
+<subsection permid="AQC">
+    <title>Error Approximations for Taylor Polynomials</title>
+    <idx><h>Taylor polynomial</h><h>error</h></idx>
+
+    <p permid="tAy">
+      We now know how to find Taylor polynomials for functions such as <m>\sin(x)</m>,
+      and how to determine the interval of convergence of the corresponding Taylor series.
+      We next develop an error bound that will tell us how well an <m>n</m>th order Taylor polynomial <m>P_n(x)</m> approximates its generating function <m>f(x)</m>.
+      This error bound will also allow us to determine whether a Taylor series on its interval of convergence actually equals the function <m>f</m> from which the Taylor series is derived.
+      Finally, we will be able to use the error bound to determine the order of the Taylor polynomial <m>P_n(x)</m> that we will ensure that <m>P_n(x)</m> approximates <m>f(x)</m> to the desired degree of accuracy.
+    </p>
+
+    <p permid="ZHH">
+      For this argument,
+      we assume throughout that we center our approximations at <m>0</m>
+      (but a similar argument holds for approximations centered at <m>a</m>).
+      We define the exact error, <m>E_n(x)</m>,
+      that results from approximating <m>f(x)</m> with <m>P_n(x)</m> by
+      <me permid="ovg">
+        E_n(x) = f(x) - P_n(x)
+      </me>.
+    </p>
+
+    <p permid="FOQ">
+      We are particularly interested in <m>|E_n(x)|</m>,
+      the distance between <m>P_n</m> and <m>f</m>.
+      Because
+      <me permid="UCp">
+        P^{(k)}_n(0) = f^{(k)}(0)
+      </me>
+      for <m>0 \leq k \leq n</m>, we know that
+      <me permid="AJy">
+        E^{(k)}_n(0) = 0
+      </me>
+      for <m>0 \leq k \leq n</m>.
+      Furthermore,
+      since <m>P_n(x)</m> is a polynomial of degree less than or equal to <m>n</m>,
+      we know that
+      <me permid="gQH">
+        P_n^{(n+1)}(x) = 0
+      </me>.
+    </p>
+
+    <p permid="lVZ">
+      Thus, since <m>E^{(n+1)}_n(x) = f^{(n+1)}(x) - P_n^{(n+1)}(x)</m>,
+      it follows that
+      <me permid="MXQ">
+        E^{(n+1)}_n(x) = f^{(n+1)}(x)
+      </me>
+      for all <m>x</m>.
+    </p>
+
+    <p permid="Sdi">
+      Suppose that we want to approximate <m>f(x)</m> at a number <m>c</m> close to <m>0</m> using <m>P_n(c)</m>.
+      If we assume <m>|f^{(n+1)}(t)|</m> is bounded by some number <m>M</m> on <m>[0, c]</m>, so that
+      <me permid="teZ">
+        \left|f^{(n+1)}(t)\right| \leq M
+      </me>
+      for all <m>0 \leq t \leq c</m>, then we can say that
+      <me permid="Zmi">
+        \left|E^{(n+1)}_n(t)\right| = \left|f^{(n+1)}(t)\right| \leq M
+      </me>
+      for all <m>t</m> between <m>0</m> and <m>c</m>.
+      Equivalently,
+      <men xml:id="E-ErrorIneq" permid="RHJ">
+        -M \leq E^{(n+1)}_n(t) \leq M
+      </men>
+      on <m>[0, c]</m>.
+      Next, we integrate the three terms in <xref ref="E-ErrorIneq">Inequality</xref>
+      from <m>t = 0</m> to <m>t = x</m>, and thus find that
+      <me permid="Ftr">
+        \int_0^x -M \ dt \leq \int_0^x E^{(n+1)}_n(t) \ dt \leq \int_0^x M \ dt
+      </me>
+      for every value of <m>x</m> in <m>[0, c]</m>.
+      Since <m>E^{(n)}_n(0) = 0</m>,
+      the First FTC tells us that
+      <me permid="lAA">
+        -Mx \leq E^{(n)}_n(x) \leq Mx
+      </me>
+      for every <m>x</m> in <m>[0, c]</m>.
+    </p>
+
+    <p permid="ykr">
+      Integrating this last inequality, we obtain
+      <me permid="xOS">
+        \int_0^x -Mt \ dt \leq \int_0^x E^{(n)}_n(t) \ dt \leq \int_0^x Mt \ dt
+      </me>
+      and thus
+      <me permid="dWb">
+        -M\frac{x^2}{2} \leq E^{(n-1)}_n(x) \leq M\frac{x^2}{2}
+      </me>
+      for all <m>x</m> in <m>[0, c]</m>.
+    </p>
+
+    <p permid="erA">
+      Integrating <m>n</m> times, we arrive at
+      <me permid="Kdk">
+        -M\frac{x^{n+1}}{(n+1)!} \leq E_n(x) \leq M\frac{x^{n+1}}{(n+1)!}
+      </me>
+      for all <m>x</m> in <m>[0, c]</m>.
+      This enables us to conclude that
+      <me permid="qkt">
+        \left|E_n(x)\right| \leq M\frac{|x|^{n+1}}{(n+1)!}
+      </me>
+      for all <m>x</m> in <m>[0, c]</m>,
+      and we have found a bound on the approximation's error,
+      <m>E_n</m>.
+    </p>
+
+    <p permid="KyJ">
+      Our work above was based on the approximation centered at <m>a = 0</m>;
+      the argument may be generalized to hold for any value of <m>a</m>,
+      which results in the following theorem.
+    </p>
+
+    <assemblage permid="tmd">
+      <title>The Lagrange Error Bound for <m>P_n(x)</m></title>
+      <idx><h>Lagrange error bound</h></idx>
+
+      <p permid="qFS">
+        Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
+        Suppose that <m>M</m> is a positive real number such that
+        <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
+        If <m>P_n(x)</m> is the <m>n</m>th order Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
+        <me permid="WrC">
+          \left|P_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
+        </me>.
+      </p>
+    </assemblage>
+
+    <p permid="WNb">
+      We can use this error bound to tell us important information about Taylor polynomials and Taylor series,
+      as we see in the following examples and activities.
+    </p>
+
+    <example xml:id="Ex-8-5-3" permid="Kko">
+      <statement>
+        <p permid="ogL">
+          Determine how well the 10th order Taylor polynomial <m>P_{10}(x)</m> for <m>\sin(x)</m>,
+          centered at <m>0</m>, approximates <m>\sin(2)</m>.
+        </p>
+      </statement>
+      <solution permid="vbq">
+        <p permid="rbr">
+          To answer this question we use
+          <m>f(x) = \sin(x)</m>, <m>c = 2</m>, <m>a=0</m>,
+          and <m>n = 10</m> in the Lagrange error bound formula.
+          We also need to find an appropriate value for <m>M</m>.
+          Note that the derivatives of <m>f(x) = \sin(x)</m> are all equal to
+          <m>\pm \sin(x)</m> or <m>\pm \cos(x)</m>.
+          Thus,
+          <me permid="CyL">
+            \left| f^{(n+1)}(x) \right| \leq 1
+          </me>
+          for any <m>n</m> and <m>x</m>.
+          Therefore, we can choose <m>M</m> to be <m>1</m>.
+          Then
+          <me permid="iFU">
+            \left|P_{10}(2) - f(2)\right| \leq (1)\frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797
+          </me>.
+        </p>
+
+        <p permid="XiA">
+          So <m>P_{10}(2)</m> approximates <m>\sin(2)</m> to within at most <m>0.00005130671797</m>.
+          A computer algebra system tells us that
+          <me permid="ONd">
+            P_{10}(2) \approx 0.9093474427 \ \ \text{ and }  \ \ \sin(2) \approx 0.9092974268
+          </me>
+          with an actual difference of about <m>0.0000500159</m>.
+        </p>
+      </solution>
+    </example>
+
+    <xi:include href="./activities/act-8-5-5.xml" />
+
+    <example xml:id="Ex-8-5-4" permid="qrx">
+      <statement>
+        <p permid="UnU">
+          Show that the Taylor series for <m>\sin(x)</m> actually converges to <m>\sin(x)</m> for all <m>x</m>.
+        </p>
+      </statement>
+      <solution permid="biz">
+        <p permid="DpJ">
+          Recall from the previous example that since <m>f(x) = \sin(x)</m>, we know
+          <me permid="uUm">
+            \left| f^{(n+1)}(x) \right| \leq 1
+          </me>
+          for any <m>n</m> and <m>x</m>.
+          This allows us to choose <m>M = 1</m> in the Lagrange error bound formula.
+          Thus,
+          <men xml:id="E-ErrorIneqSine" permid="bbv">
+            |P_n(x) - \sin(x)| \leq \frac{|x|^{n+1}}{(n+1)!}
+          </men>
+          for every <m>x</m>.
+        </p>
+
+        <p permid="jwS">
+          We showed in earlier work that the Taylor series
+          <m>\sum_{k=0}^{\infty} \frac{x^k}{k!}</m> converges for every value of <m>x</m>.
+          Because the terms of any convergent series must approach zero,
+          it follows that
+          <me permid="HiE">
+            \lim_{n \to \infty} \frac{x^{n+1}}{(n+1)!} = 0
+          </me>
+          for every value of <m>x</m>.
+          Thus, taking the limit as
+          <m>n \to \infty</m> in the inequality<nbsp /><xref ref="E-ErrorIneqSine" />, it follows that
+          <me permid="npN">
+            \lim_{n \to \infty} |P_n(x) - \sin(x)| = 0
+          </me>.
+        </p>
+
+        <p permid="PEb">
+          As a result, we can now write
+          <me permid="TwW">
+            \sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^nx^{2n+1}}{(2n+1)!}
+          </me>
+          for every real number <m>x</m>.
+        </p>
+      </solution>
+    </example>
+
+    <xi:include href="./activities/act-8-5-6.xml" />    
+-->    
+
+  </subsection>
+
   <subsection>
     <title>Summary</title>
     <p>
     <ul>
       <li>
         <p>
-          An alternating series is one whose terms alternate in sign, usually represented by <m>\sum_{k=1}^{\infty} (-1)^{k+1}a_k</m> where <m>a_k \gt 0</m> for all values of <m>k</m>.  Any alternating series whose terms <m>a_k</m> approach zero as <m>k \to \infty</m> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,
+          An alternating series is one whose terms alternate in sign, often represented by <m>\sum_{k=0}^{\infty} (-1)^{k}a_k</m> where <m>a_k \gt 0</m> for all values of <m>k</m>.  Any alternating series whose terms <m>a_k</m> approach zero as <m>k \to \infty</m> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,
           <me>
-            \left| \sum_{k=1}^{\infty} (-1)^{k+1}a_k - \left(a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n+1} a_n \right) \right| \lt a_{n+1}
+            \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - \left(a_0 - a_1 + a_2 - a_3 + \cdots + (-1)^{n-1} a_{n-1} \right) \right| \lt a_{n}
           </me>.
         </p>
       </li>
