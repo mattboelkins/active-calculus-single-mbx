@@ -660,8 +660,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Quantifying the accuracy of approximations</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Summary</span></a></div></li>
-<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#ez-8a-5x" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Exercises</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">The Lagrange Error Bound</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-6" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Summary</span></a></div></li>
+<li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#ez-8a-5x" class="internal"><span class="codenumber">8.6.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
 </li>
 <li class="toc-item toc-section">
@@ -858,7 +859,7 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 <div class="autopermalink" data-description="Definition 8.6.2"><a href="#sec-8a-5x-accuracy-of-approx-4-3" title="Copy heading and permalink for Definition 8.6.2">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-4">We will only consider alternating series for which the sequence of positive numbers <span class="process-math">\(a_k\)</span> decreases to <span class="process-math">\(0\text{.}\)</span>  The following example illustrates two general results that hold for any alternating series whose terms <span class="process-math">\(a_k\)</span> decrease to <span class="process-math">\(0\text{.}\)</span>  We use a geometric series so that we can know its exact sum and compare certain computations to that sum.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-5">
-<div class="para">In <a href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x" class="xref" data-knowl="./knowl/xref/PA-8a-5x.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, we investigated the partial sums of the convergent alternating geometric series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\text{,}\)</span> whose sum is <span class="process-math">\(S = \fra{5}{9}\text{.}\)</span>  We found the first several partial sums shown in **TABLE**. <figure class="table table-like" id="T-8a-5x-ExGeom"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.6.3<span class="period">.</span></span><span class="space"> </span>Partial sums of the alternating series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\)</span><div class="autopermalink" data-description="Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k"><a href="#T-8a-5x-ExGeom" title="Copy heading and permalink for Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
+<div class="para">In <a href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x" class="xref" data-knowl="./knowl/xref/PA-8a-5x.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, we investigated the partial sums of the convergent alternating geometric series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\text{,}\)</span> whose sum is <span class="process-math">\(S = \fra{5}{9}\text{.}\)</span>  We found the first several partial sums shown in <a href="sec-8a-5x-accuracy-of-approx.html#T-8a-5x-ExGeom" class="xref" data-knowl="./knowl/xref/T-8a-5x-ExGeom.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k">8.6.3</a>. <figure class="table table-like" id="T-8a-5x-ExGeom"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.6.3<span class="period">.</span></span><span class="space"> </span>Partial sums of the alternating series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\)</span><div class="autopermalink" data-description="Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k"><a href="#T-8a-5x-ExGeom" title="Copy heading and permalink for Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t1 lines"><span class="process-math">\(n\)</span></td>
 <td class="l m b1 r0 l0 t1 lines"><span class="process-math">\(S_n\)</span></td>
@@ -897,19 +898,19 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 </tr>
 </table></div></figure> Plotting these partial sums in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>, we see an important pattern in how the partial sums approach the exact value of the infinite sum. <figure class="figure figure-like" id="F-8a-5x-alt-partial-sums"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/prefigure/Fig-8a-5x-alt-partial-sums.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.6.4<span class="period">.</span></span><span class="space"> </span>Plotting the partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{.}\)</span><div class="autopermalink" data-description="Figure 8.6.4"><a href="#F-8a-5x-alt-partial-sums" title="Copy heading and permalink for Figure 8.6.4">🔗</a></div></figcaption></figure> In both the table and the figure, we see how consecutive partial sums move back and forth above and below the exact sum of the infinite series, <span class="process-math">\(\frac{5}{9}\text{,}\)</span> and moreover how the amount the next partial sum lies above or below <span class="process-math">\(\frac{5}{9}\)</span> is less than the amount by which the previous partial sum deviated.  For instance,</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/T-8a-5x-ExGeom.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
 \begin{equation*}
 |S_5 - \frac{5}{9}| \approx 0.1820,
 \end{equation*}
 </div>
 <div class="para">but</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/T-8a-5x-ExGeom.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
 \begin{equation*}
 |S_6 - \frac{5}{9}| \approx 0.1456\text{.}
 \end{equation*}
 </div>
 <div class="para">Moreover, since <span class="process-math">\(S_6 = S_5 - \left( \frac{4}{5} \right)^5\text{,}\)</span> and <span class="process-math">\(-\left( \frac{4}{5} \right)^5 = -0.32768\)</span> is the last and smallest term (in absolute value) in <span class="process-math">\(S_6\text{,}\)</span> <span class="process-math">\(0.32768\)</span> is the total vertical distance from the point <span class="process-math">\((5, S_5)\)</span> to <span class="process-math">\((6, S_6)\)</span> in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>.  This implies that <span class="process-math">\(0.32768\)</span> is more than the error in comparing <span class="process-math">\(S_5\)</span> and <span class="process-math">\(S\text{.}\)</span>  Said differently, we are guaranteed that</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/T-8a-5x-ExGeom.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
 \begin{equation*}
 |S - S_5| \lt \left( \frac{4}{5} \right)^5
 \end{equation*}
@@ -933,41 +934,26 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 </div>
 <div class="autopermalink" data-description="Assemblage: The Alternating Series Test"><a href="#sec-8a-5x-accuracy-of-approx-4-7" title="Copy heading and permalink for Assemblage: The Alternating Series Test">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-8">If we were to compute the partial sums <span class="process-math">\(S_n\)</span> of any alternating series whose terms decrease to zero and plot the points <span class="process-math">\((n,S_n)\)</span> as we did in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-8a-5x-accuracy-of-approx-4-9">The arguments <a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4-2-6" class="xref" data-knowl="./knowl/xref/eq-8a-5x-alt-sum-ex2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.6.2">Example (8.6.2)</a> can be made for any alternating series whose terms go to zero.  This leads us to state two important results.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-10"><h4 class="heading"><span class="title">The Alternating Series Test.</span></h4>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-10-2">
-<div class="para">Given an alternating series</div>
+<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-9"><h4 class="heading"><span class="title">Alternating Series Estimation Theorem.</span></h4>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-9-2">
+<div class="para">If the alternating series <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^{k}a_k\)</span> has positive terms <span class="process-math">\(a_k\)</span> that decrease to zero as <span class="process-math">\(k \to \infty\text{,}\)</span> and <span class="process-math">\(S_n = \sum_{k=0}^{n-1} (-1)^{k}a_k\)</span> is the <span class="process-math">\(n\)</span>th partial sum of the alternating series, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{k=0}^{\infty} (-1)^k a_k\text{,}
+\left| \sum_{k=0}^{\infty} (-1)^{k}a_k - S_n \right| \leq a_{n}\text{.}
 \end{equation*}
 </div>
-<div class="para">if the positive terms <span class="process-math">\(a_k\)</span> decrease to 0 as <span class="process-math">\(k \to \infty\text{,}\)</span> then the alternating series converges.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-10-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-9-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: The Alternating Series Test"><a href="#sec-8a-5x-accuracy-of-approx-4-10" title="Copy heading and permalink for Assemblage: The Alternating Series Test">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-11">If we were to compute the partial sums <span class="process-math">\(S_n\)</span> of any alternating series whose terms decrease to zero and plot the points <span class="process-math">\((n,S_n)\)</span> as we did in <a href="sec-8a-5x-accuracy-of-approx.html#F-PA-8a-5x-partial-sums" class="xref" data-knowl="./knowl/xref/F-PA-8a-5x-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.1">Figure 8.6.1</a>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-11" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-12"><h4 class="heading"><span class="title">Alternating Series Estimation Theorem.</span></h4>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-12-2">
-<div class="para">If the alternating series <span class="process-math">\(\sum_{k=1}^{\infty} (-1)^{k+1}a_k\)</span> has positive terms <span class="process-math">\(a_k\)</span> that decrease to zero as <span class="process-math">\(k \to \infty\text{,}\)</span> and <span class="process-math">\(S_n = \sum_{k=1}^{n} (-1)^{k+1}a_k\)</span> is the <span class="process-math">\(n\)</span>th partial sum of the alternating series, then</div>
-<div class="displaymath process-math">
-\begin{equation*}
-\left| \sum_{k=1}^{\infty} (-1)^{k+1}a_k - S_n \right| \leq a_{n+1}\text{.}
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-12-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Assemblage: Alternating Series Estimation Theorem"><a href="#sec-8a-5x-accuracy-of-approx-4-12" title="Copy heading and permalink for Assemblage: Alternating Series Estimation Theorem">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-13">Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating series, the absolute error of the approximation is less than the next term in the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-13" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: Alternating Series Estimation Theorem"><a href="#sec-8a-5x-accuracy-of-approx-4-9" title="Copy heading and permalink for Assemblage: Alternating Series Estimation Theorem">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-10">Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating infinite series, the absolute error of the approximation is less than the next term in the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="Ex-8a-5x-ASET"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6.5</span><span class="period">.</span>
 </h4>
 <div class="para logical" id="Ex-8a-5x-ASET-1-1">
-<div class="para">Determine how well the <span class="process-math">\(100\)</span>th partial sum <span class="process-math">\(S_{100}\)</span> of</div>
+<div class="para">Determine how well the <span class="process-math">\(100^{\mbox{th}}\)</span> partial sum <span class="process-math">\(S_{100}\)</span> of</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}
+\sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}
 \end{equation*}
 </div>
 <div class="para">approximates the value of the converging alternating series.</div>
@@ -975,10 +961,10 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 </div>
 <div class="solutions"><details id="Ex-8a-5x-ASET-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical" id="Ex-8a-5x-ASET-2-1">
-<div class="para">If we let <span class="process-math">\(S\)</span> be the value of the series <span class="process-math">\(\sum_{k=1}^{\infty} \frac{(-1)^{k+1}}{k}\text{,}\)</span> then we know that</div>
+<div class="para">If we let <span class="process-math">\(S\)</span> be the value of the series <span class="process-math">\(\sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}\text{,}\)</span> then we know that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left| S_{100} - S \right| \lt  a_{101}\text{.}
+\left| S_{100} - S \right| \lt  a_{100}\text{.}
 \end{equation*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-5x-ASET-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -987,10 +973,10 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 <div class="para">Now</div>
 <div class="displaymath process-math">
 \begin{equation*}
-a_{101} = \frac{1}{101} \approx 0.0099\text{,}
+a_{100} = \frac{1}{101} \approx 0.0099\text{,}
 \end{equation*}
 </div>
-<div class="para">so the 100th partial sum is within 0.0099 of the exact value of the series.  In addition, it turns out that <span class="process-math">\(S_{100} \approx 0.688172\)</span> and <span class="process-math">\(S = \ln(2) \approx 0.69314\text{,}\)</span> so we see that the difference between <span class="process-math">\(S_{100}\)</span> and <span class="process-math">\(S\)</span> is indeed less than the error bound of <span class="process-math">\(0.0099\)</span> from the Alternating Series Estimation Theorem.</div>
+<div class="para">so the <span class="process-math">\(100^{\mbox{th}}\)</span> partial sum is within <span class="process-math">\(0.0099\)</span> of the exact value of the series.  In addition, it turns out that <span class="process-math">\(S_{100} \approx 0.688172\)</span> and <span class="process-math">\(S = \ln(2) \approx 0.69314\text{,}\)</span> so we see that the difference between <span class="process-math">\(S_{100}\)</span> and <span class="process-math">\(S\)</span> is indeed less than the error bound of <span class="process-math">\(0.0099\)</span> from the Alternating Series Estimation Theorem.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-5x-ASET-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 8.6.5.1"><a href="#Ex-8a-5x-ASET-2" title="Copy heading and permalink for Solution 8.6.5.1">🔗</a></div>
@@ -1026,8 +1012,7 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 </li>
 <li id="act-8a-5x-1-1-2-1-4">
 <div class="para logical" id="act-8a-5x-1-1-2-1-4-1">
-<div class="para">Recall that we know if <span class="process-math">\(|x| \lt 1\text{,}\)</span>
-</div>
+<div class="para">Recall we know that if <span class="process-math">\(|x| \lt 1\text{,}\)</span> then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \ln(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1} \frac{1}{n} x^n + \cdots\text{.}
@@ -1042,25 +1027,30 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 <div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Activity 8.6.2"><a href="#act-8a-5x-1" title="Copy heading and permalink for Activity 8.6.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 8.6.1: Alternating series of real numbers"><a href="#sec-8a-5x-accuracy-of-approx-4" title="Copy heading and permalink for Subsection 8.6.1: Alternating series of real numbers">🔗</a></div></section><section class="subsection" id="sec-8a-5x-accuracy-of-approx-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="space"> </span><span class="title">Summary</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="space"> </span><span class="title">The Lagrange Error Bound</span>
 </h3>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-2">
-<ul class="disc" id="sec-8a-5x-accuracy-of-approx-5-2-1"><li id="sec-8a-5x-accuracy-of-approx-5-2-1-1">
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-2-1-1-1">
-<div class="para">An alternating series is one whose terms alternate in sign, usually represented by <span class="process-math">\(\sum_{k=1}^{\infty} (-1)^{k+1}a_k\)</span> where <span class="process-math">\(a_k \gt 0\)</span> for all values of <span class="process-math">\(k\text{.}\)</span>  Any alternating series whose terms <span class="process-math">\(a_k\)</span> approach zero as <span class="process-math">\(k \to \infty\)</span> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,</div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-2">See the following comment in the source for Steve’s source on this to modify and update.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 8.6.2: The Lagrange Error Bound"><a href="#sec-8a-5x-accuracy-of-approx-5" title="Copy heading and permalink for Subsection 8.6.2: The Lagrange Error Bound">🔗</a></div></section><section class="subsection" id="sec-8a-5x-accuracy-of-approx-6"><h3 class="heading hide-type">
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="space"> </span><span class="title">Summary</span>
+</h3>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2">
+<ul class="disc" id="sec-8a-5x-accuracy-of-approx-6-2-1"><li id="sec-8a-5x-accuracy-of-approx-6-2-1-1">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2-1-1-1">
+<div class="para">An alternating series is one whose terms alternate in sign, often represented by <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^{k}a_k\)</span> where <span class="process-math">\(a_k \gt 0\)</span> for all values of <span class="process-math">\(k\text{.}\)</span>  Any alternating series whose terms <span class="process-math">\(a_k\)</span> approach zero as <span class="process-math">\(k \to \infty\)</span> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,</div>
 <div class="displaymath process-math">
 \begin{equation*}
-\left| \sum_{k=1}^{\infty} (-1)^{k+1}a_k - \left(a_1 - a_2 + a_3 - a_4 + \cdots + (-1)^{n+1} a_n \right) \right| \lt a_{n+1}\text{.}
+\left| \sum_{k=0}^{\infty} (-1)^{k}a_k - \left(a_0 - a_1 + a_2 - a_3 + \cdots + (-1)^{n-1} a_{n-1} \right) \right| \lt a_{n}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-5-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li></ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 8.6.2: Summary"><a href="#sec-8a-5x-accuracy-of-approx-5" title="Copy heading and permalink for Subsection 8.6.2: Summary">🔗</a></div></section><section class="exercises" id="ez-8a-5x"><h3 class="heading hide-type">
-<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="space"> </span><span class="title">Exercises</span>
+<div class="autopermalink" data-description="Subsection 8.6.3: Summary"><a href="#sec-8a-5x-accuracy-of-approx-6" title="Copy heading and permalink for Subsection 8.6.3: Summary">🔗</a></div></section><section class="exercises" id="ez-8a-5x"><h3 class="heading hide-type">
+<span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.6.4</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_8"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
 <div id="webwork-337" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="337" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
@@ -1074,7 +1064,7 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.6.3.1"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_8" title="Copy heading and permalink for Exercise 8.6.3.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_10"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.4.1"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_8" title="Copy heading and permalink for Exercise 8.6.4.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_10"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div id="webwork-338" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="338" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-338')">Activate</button></div>
 <div class="problem-contents">
@@ -1085,7 +1075,7 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.6.3.2"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_10" title="Copy heading and permalink for Exercise 8.6.3.2">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5x-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.4.2"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_10" title="Copy heading and permalink for Exercise 8.6.4.2">🔗</a></div></article><article class="exercise exercise-like" id="ez-8a-5x-3"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div class="para logical" id="ez-8a-5x-3-1-1">
 <div class="para">In this exercise we consider the definite integral</div>
 <div class="displaymath process-math">
@@ -1107,12 +1097,12 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 <div class="para">as an infinite series of real numbers.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5x-3-1-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.6.3.3.a"><a href="#ez-8a-5x-3-1-2-1" title="Copy heading and permalink for Item 8.6.3.3.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.6.4.3.a"><a href="#ez-8a-5x-3-1-2-1" title="Copy heading and permalink for Item 8.6.4.3.a">🔗</a></div>
 </li>
 <li id="ez-8a-5x-3-1-2-2">
 <div class="para" id="ez-8a-5x-3-1-2-2-1">Observe that your result in (a) is an alternating series.  Estimate the value of that alternating series to within 0.01.  How many terms of the series are needed to do so?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5x-3-1-2-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.6.3.3.b"><a href="#ez-8a-5x-3-1-2-2" title="Copy heading and permalink for Item 8.6.3.3.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.6.4.3.b"><a href="#ez-8a-5x-3-1-2-2" title="Copy heading and permalink for Item 8.6.4.3.b">🔗</a></div>
 </li>
 <li id="ez-8a-5x-3-1-2-3">
 <div class="para logical" id="ez-8a-5x-3-1-2-3-1">
@@ -1125,15 +1115,15 @@ a_{101} = \frac{1}{101} \approx 0.0099\text{,}
 <div class="para">exactly.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5x-3-1-2-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.6.3.3.c"><a href="#ez-8a-5x-3-1-2-3" title="Copy heading and permalink for Item 8.6.3.3.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.6.4.3.c"><a href="#ez-8a-5x-3-1-2-3" title="Copy heading and permalink for Item 8.6.4.3.c">🔗</a></div>
 </li>
 <li id="ez-8a-5x-3-1-2-4">
 <div class="para" id="ez-8a-5x-3-1-2-4-1">How are your results in (a) and (c) connected?  What famous number can we now estimate using an alternating series?<div class="autopermalink" data-description="Paragraph"><a href="#ez-8a-5x-3-1-2-4-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 8.6.3.3.d"><a href="#ez-8a-5x-3-1-2-4" title="Copy heading and permalink for Item 8.6.3.3.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 8.6.4.3.d"><a href="#ez-8a-5x-3-1-2-4" title="Copy heading and permalink for Item 8.6.4.3.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Exercise 8.6.3.3"><a href="#ez-8a-5x-3" title="Copy heading and permalink for Exercise 8.6.3.3">🔗</a></div></article><div class="autopermalink" data-description="Exercises 8.6.3"><a href="#ez-8a-5x" title="Copy heading and permalink for Exercises 8.6.3">🔗</a></div></section><div class="autopermalink" data-description="Section 8.6: Quantifying the accuracy of approximations"><a href="#sec-8a-5x-accuracy-of-approx" title="Copy heading and permalink for Section 8.6: Quantifying the accuracy of approximations">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 8.6.4.3"><a href="#ez-8a-5x-3" title="Copy heading and permalink for Exercise 8.6.4.3">🔗</a></div></article><div class="autopermalink" data-description="Exercises 8.6.4"><a href="#ez-8a-5x" title="Copy heading and permalink for Exercises 8.6.4">🔗</a></div></section><div class="autopermalink" data-description="Section 8.6: Quantifying the accuracy of approximations"><a href="#sec-8a-5x-accuracy-of-approx" title="Copy heading and permalink for Section 8.6: Quantifying the accuracy of approximations">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-8a-5-finding-using-taylor-series.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-8a-6-series-and-DEs.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
