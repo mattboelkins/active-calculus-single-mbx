@@ -121,8 +121,8 @@
           </me>.
           This pattern thus allows us to see that the Taylor series for <m>f(x)</m>, centered at <m>a = 0</m>, is
           <md>
-            <mrow>T_f(x) =\mathstrut \amp \sum_{k=1}^{\infty} (-1)^{k-1}\frac{1}{k}x^k</mrow>
-            <mrow> =\mathstrut \amp x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots</mrow>
+            <mrow>T_f(x) \amp= \sum_{k=1}^{\infty} (-1)^{k-1}\frac{1}{k}x^k</mrow>
+            <mrow> \amp= x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots</mrow>
           </md>.
           Unlike the Taylor series for the function <m>\frac{1}{1-x}</m>, the Taylor series for <m>f(x) = \ln(1+x)</m> turns out to not be geometric since there is not a common ratio between the terms, so we introduce some new ideas to think about the <m>x</m>-values for which we expect the series to converge.
         </p>

@@ -19,7 +19,7 @@
     <ul>
       <li>
         <p>
-          For an infinite series that converges, how much accuracy do we lose when we truncate the series after a finite number of terms to approximate its value with a finite sum?
+          For an infinite series that converges, how much accuracy do we lose when we truncate the series after a finite number of terms to approximate its value with a finite sum?  Said differently, to get a good approximation with a finite sum, how many terms are enough?
         </p>
       </li>
       <li>
@@ -68,7 +68,7 @@
     </title>
 
     <p>
-      Next we consider the definite integral
+      In several situations we've encountered, series whose terms alternate in sign arise naturally.  For instance, consider the definite integral
       <me>
         \int_0^1 e^{-x^2} \, dx
       </me>,
@@ -87,20 +87,18 @@
       Like the geometric series <m>\sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k </m> that we encountered in <xref ref="PA-8a-5x">Preview Activity</xref>, the infinite series in <xref ref="eq-8a-5x-alt-sum-ex2">Equation</xref> is an example of an <term>alternating series</term> of real numbers.  It turns out to be straightforward to determine whether or not an alternating series converges and to estimate the value of a convergent alternating series. 
     </p>
 
-    <definition>
-      <statement>
-        <p>
-          An alternating series is a series of the form
-          <me>
-            \sum_{k=0}^{\infty} (-1)^k a_k
-          </me>,
-          where <m>a_k \gt 0</m> for each <m>k</m>.
-        </p>
-      </statement>
-    </definition>
-
     <p>
-      We will only consider alternating series for which the sequence of positive numbers <m>a_k</m> decreases to <m>0</m>.  The following example illustrates two general results that hold for any alternating series whose terms <m>a_k</m> decrease to <m>0</m>.  We use a geometric series so that we can know its exact sum and compare certain computations to that sum.
+      <definition>
+        <statement>
+          <p>
+            An <term>alternating series</term> is a series of the form
+            <me>
+              \sum_{k=0}^{\infty} (-1)^k a_k
+            </me>,
+            where <m>a_k \gt 0</m> for each <m>k</m>.
+          </p>
+        </statement>
+    </definition>
     </p>
 
     <p>
@@ -197,7 +195,7 @@
             </prefigure>
           </image>    
         </figure>
-          In both the table and the figure, we see how consecutive partial sums move back and forth above and below the exact sum of the infinite series, <m>\frac{5}{9}</m>, and moreover how the amount the next partial sum lies above or below <m>\frac{5}{9}</m> is less than the amount by which the previous partial sum deviated.  For instance, 
+          In both the table and the figure, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <m>\frac{5}{9}</m>, and moreover how the amount the next partial sum lies above or below <m>\frac{5}{9}</m> is less than the amount by which the previous partial sum deviated.  For instance, 
           <me>
             |S_5 - \frac{5}{9}| \approx 0.1820,
           </me>
@@ -251,7 +249,7 @@
     </assemblage>
 
     <p>
-      Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating infinite series, the absolute error of the approximation is less than the next term in the series.
+      Again, this result simply says: if we use a partial sum to estimate the exact sum of a convergent alternating infinite series, the absolute error of the approximation is less than the next term in the series.
     </p>
 
     <example xml:id="Ex-8a-5x-ASET">
@@ -288,237 +286,116 @@
   </subsection>
 
   <subsection>
-    <title>The Lagrange Error Bound</title>
+    <title>Error Approximations for Taylor Polynomials</title>
 
     <p>
-      See the following comment in the source for Steve's source on this to modify and update.  There will be exercises that can be used from his Section 8.5 as well in the original source.
+      In the same way that the next term in an alternating series reveals the maximum error of a finite approximation, it turns out that a quantity related to the next term in a Taylor series determines the maximum error found in a Taylor polynomial approximation.  This will enable us to know what degree is Taylor polynomial is needed in order to achieve a given accuracy tolerance on a chosen interval. 
     </p>
 
-<!-- 
-<subsection permid="AQC">
-    <title>Error Approximations for Taylor Polynomials</title>
-    <idx><h>Taylor polynomial</h><h>error</h></idx>
-
-    <p permid="tAy">
-      We now know how to find Taylor polynomials for functions such as <m>\sin(x)</m>,
-      and how to determine the interval of convergence of the corresponding Taylor series.
-      We next develop an error bound that will tell us how well an <m>n</m>th order Taylor polynomial <m>P_n(x)</m> approximates its generating function <m>f(x)</m>.
-      This error bound will also allow us to determine whether a Taylor series on its interval of convergence actually equals the function <m>f</m> from which the Taylor series is derived.
-      Finally, we will be able to use the error bound to determine the order of the Taylor polynomial <m>P_n(x)</m> that we will ensure that <m>P_n(x)</m> approximates <m>f(x)</m> to the desired degree of accuracy.
-    </p>
-
-    <p permid="ZHH">
-      For this argument,
-      we assume throughout that we center our approximations at <m>0</m>
-      (but a similar argument holds for approximations centered at <m>a</m>).
-      We define the exact error, <m>E_n(x)</m>,
-      that results from approximating <m>f(x)</m> with <m>P_n(x)</m> by
-      <me permid="ovg">
-        E_n(x) = f(x) - P_n(x)
+    <p>
+      Throughout what follows, we assume that <m>f(x)</m> is a function with at least <m>n+1</m> derivatives at <m>a = 0</m>, and let <m>T_n(x)</m> be the degree <m>n</m> Taylor polynomial of <m>f</m> centered at <m>a = 0</m>.  We define the error function of the degree <m>n</m> approximation, <m>E_n(x)</m>, by
+      <me>
+        E_n(x) = f(x) - T_n(x)
       </me>.
     </p>
 
-    <p permid="FOQ">
-      We are particularly interested in <m>|E_n(x)|</m>,
-      the distance between <m>P_n</m> and <m>f</m>.
-      Because
-      <me permid="UCp">
-        P^{(k)}_n(0) = f^{(k)}(0)
-      </me>
-      for <m>0 \leq k \leq n</m>, we know that
-      <me permid="AJy">
-        E^{(k)}_n(0) = 0
-      </me>
-      for <m>0 \leq k \leq n</m>.
-      Furthermore,
-      since <m>P_n(x)</m> is a polynomial of degree less than or equal to <m>n</m>,
-      we know that
-      <me permid="gQH">
-        P_n^{(n+1)}(x) = 0
-      </me>.
+    <p>
+      Our overall goal is to understand how much error there is in the approximation <m>f(c) \approx T_n(c)</m> for some fixed value of <m>c</m>; in other words, we'd like to know the maximum possible value of <m>E_n(c)</m>.  This leads us to maximize the error function, <m>E_n(x)</m>, on the interval <m>[0,c]</m>.  We observe several important properties of <m>E_n(x)</m>:
+      <ul>
+        <li>
+          <p>
+            <m>E_n(0) = E_n'(0) = E_n''(0) = \cdots = E_n^{(n)}(0) = 0</m>, since <m>E_n(x) = f(x) - T_n(x)</m> and <m>f</m> and <m>T_n</m> share the same function and first <m>n</m> derivative values at <m>a = 0</m>;
+          </p>
+        </li>
+        <li>
+          <p>
+            <m>E^{(n+1)}_n(x) = f^{(n+1)}(x)</m>, since <m>T_n</m> is a degree <m>n</m> polynomial, which means <m>T_n^{(n+1)}(x) = 0</m> for every <m>x</m>;
+          </p>
+        </li>
+        <li>
+          <p>
+            If we assume that <m>|f^{(n+1)}(x)| \leq M</m> for some positive real number <m>M</m> for every <m>x</m> in the interval <m>[0,c]</m>,
+            then 
+            <men xml:id="eq-8a-5x-error-nth-derivative">
+              | E^{(n+1)}_n(x) | \leq M
+            </men>
+            since <m>f^{(n+1)}(x) = E^{(n+1)}_n(x)</m>.
+          </p>
+        </li>
+      </ul>
     </p>
 
-    <p permid="lVZ">
-      Thus, since <m>E^{(n+1)}_n(x) = f^{(n+1)}(x) - P_n^{(n+1)}(x)</m>,
-      it follows that
-      <me permid="MXQ">
-        E^{(n+1)}_n(x) = f^{(n+1)}(x)
+    <p>
+      Taking <xref ref="eq-8a-5x-error-nth-derivative">Inequality</xref>, writing it in the form <m>-M \lt E^{(n+1)}_n(t) \leq M</m>, and integrating all three terms in the inequality from <m>t = 0</m> to <m>t = x</m> and doing so <m>n+1</m> times, it can be shown that
+      <me>
+         -M \frac{x^{n+1}}{(n+1)!} \leq E_n(x) \leq M \frac{x^{n+1}}{(n+1)!}
       </me>
-      for all <m>x</m>.
+      It follows that 
+      <me>
+        | E_n(x) | \leq M \frac{|x|^{n+1}}{(n+1)!} \leq M \frac{|c|^{n+1}}{(n+1)!}
+      </me>
+      since <m>|c|</m> is the maximum value of <m>|x|</m> on the interval <m>0 \leq x \leq c</m>.   
     </p>
 
-    <p permid="Sdi">
-      Suppose that we want to approximate <m>f(x)</m> at a number <m>c</m> close to <m>0</m> using <m>P_n(c)</m>.
-      If we assume <m>|f^{(n+1)}(t)|</m> is bounded by some number <m>M</m> on <m>[0, c]</m>, so that
-      <me permid="teZ">
-        \left|f^{(n+1)}(t)\right| \leq M
-      </me>
-      for all <m>0 \leq t \leq c</m>, then we can say that
-      <me permid="Zmi">
-        \left|E^{(n+1)}_n(t)\right| = \left|f^{(n+1)}(t)\right| \leq M
-      </me>
-      for all <m>t</m> between <m>0</m> and <m>c</m>.
-      Equivalently,
-      <men xml:id="E-ErrorIneq" permid="RHJ">
-        -M \leq E^{(n+1)}_n(t) \leq M
-      </men>
-      on <m>[0, c]</m>.
-      Next, we integrate the three terms in <xref ref="E-ErrorIneq">Inequality</xref>
-      from <m>t = 0</m> to <m>t = x</m>, and thus find that
-      <me permid="Ftr">
-        \int_0^x -M \ dt \leq \int_0^x E^{(n+1)}_n(t) \ dt \leq \int_0^x M \ dt
-      </me>
-      for every value of <m>x</m> in <m>[0, c]</m>.
-      Since <m>E^{(n)}_n(0) = 0</m>,
-      the First FTC tells us that
-      <me permid="lAA">
-        -Mx \leq E^{(n)}_n(x) \leq Mx
-      </me>
-      for every <m>x</m> in <m>[0, c]</m>.
+    <p>
+      A similar argument works for the same result for any real number <m>a</m> and leads to the following result, known as the <term>Lagrange Error Bound</term>.
+    </p>
+    <p>  
+      <assemblage>
+        <title>The Lagrange Error Bound for <m>T_n(x)</m></title>
+        <idx><h>Lagrange error bound</h></idx>
+        <p>
+          Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
+          Suppose that <m>M</m> is a positive real number such that
+          <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
+          If <m>T_n(x)</m> is the degree <m>n</m> Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
+          <me>
+            \left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
+          </me>.
+        </p>
+      </assemblage> 
+    </p>
+    <p>  
+      The Lagrange Error Bound shows that the total error in the degree <m>n</m> Taylor polynomial approximation is determined by the maximum value of the <m>(n+1)^{\mbox{st}}</m> derivative of <m>f</m> on the interval of interest, together with the quantity <m>\frac{|c-a|^{n+1}}{(n+1)!}</m>.  In practice, this provides a straightforward way to find a bound on the maximum error of a polynomial approximation of a non-polynomial function.     
     </p>
 
-    <p permid="ykr">
-      Integrating this last inequality, we obtain
-      <me permid="xOS">
-        \int_0^x -Mt \ dt \leq \int_0^x E^{(n)}_n(t) \ dt \leq \int_0^x Mt \ dt
-      </me>
-      and thus
-      <me permid="dWb">
-        -M\frac{x^2}{2} \leq E^{(n-1)}_n(x) \leq M\frac{x^2}{2}
-      </me>
-      for all <m>x</m> in <m>[0, c]</m>.
-    </p>
-
-    <p permid="erA">
-      Integrating <m>n</m> times, we arrive at
-      <me permid="Kdk">
-        -M\frac{x^{n+1}}{(n+1)!} \leq E_n(x) \leq M\frac{x^{n+1}}{(n+1)!}
-      </me>
-      for all <m>x</m> in <m>[0, c]</m>.
-      This enables us to conclude that
-      <me permid="qkt">
-        \left|E_n(x)\right| \leq M\frac{|x|^{n+1}}{(n+1)!}
-      </me>
-      for all <m>x</m> in <m>[0, c]</m>,
-      and we have found a bound on the approximation's error,
-      <m>E_n</m>.
-    </p>
-
-    <p permid="KyJ">
-      Our work above was based on the approximation centered at <m>a = 0</m>;
-      the argument may be generalized to hold for any value of <m>a</m>,
-      which results in the following theorem.
-    </p>
-
-    <assemblage permid="tmd">
-      <title>The Lagrange Error Bound for <m>P_n(x)</m></title>
-      <idx><h>Lagrange error bound</h></idx>
-
-      <p permid="qFS">
-        Let <m>f</m> be a continuous function with <m>n+1</m> continuous derivatives.
-        Suppose that <m>M</m> is a positive real number such that
-        <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
-        If <m>P_n(x)</m> is the <m>n</m>th order Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
-        <me permid="WrC">
-          \left|P_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
-        </me>.
-      </p>
-    </assemblage>
-
-    <p permid="WNb">
-      We can use this error bound to tell us important information about Taylor polynomials and Taylor series,
-      as we see in the following examples and activities.
-    </p>
-
-    <example xml:id="Ex-8-5-3" permid="Kko">
+    <example xml:id="Ex-8a-5x-1">
       <statement>
-        <p permid="ogL">
-          Determine how well the 10th order Taylor polynomial <m>P_{10}(x)</m> for <m>\sin(x)</m>,
-          centered at <m>0</m>, approximates <m>\sin(2)</m>.
+        <p>
+          Determine the maximum error possible when using the degree <m>10</m> Taylor polynomial centered at <m>a = 0</m>, <m>T_{10}(x)</m>, for <m>\sin(x)</m> to approximate the value of <m>\sin(2)</m>.
         </p>
       </statement>
-      <solution permid="vbq">
-        <p permid="rbr">
-          To answer this question we use
-          <m>f(x) = \sin(x)</m>, <m>c = 2</m>, <m>a=0</m>,
-          and <m>n = 10</m> in the Lagrange error bound formula.
-          We also need to find an appropriate value for <m>M</m>.
-          Note that the derivatives of <m>f(x) = \sin(x)</m> are all equal to
-          <m>\pm \sin(x)</m> or <m>\pm \cos(x)</m>.
-          Thus,
-          <me permid="CyL">
+      <solution>
+        <p>
+          To approximate the value of <m>\sin(2)</m> using the degree <m>10</m> Taylor polynomial,
+          we will use <m>f(x) = \sin(x)</m>, <m>c = 2</m>, <m>a=0</m>,
+          and <m>n = 10</m> in the Lagrange Error Bound formula.
+          We also need to find a value for <m>M</m> so that <m>\left|f^{(11)}(x)\right| \le M</m> on the interval <m>[0,2]</m>.
+          Since the derivatives of <m>f(x) = \sin(x)</m> are all one of
+          <m>\pm \sin(x)</m> or <m>\pm \cos(x)</m>, and the maximum absolute values of these functions on any interval is <m>1</m>, we have
+          <me>
             \left| f^{(n+1)}(x) \right| \leq 1
           </me>
-          for any <m>n</m> and <m>x</m>.
-          Therefore, we can choose <m>M</m> to be <m>1</m>.
-          Then
-          <me permid="iFU">
-            \left|P_{10}(2) - f(2)\right| \leq (1)\frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797
+          for any <m>n</m> and any <m>x</m>.
+          Therefore, we let <m>M = 1</m>.
+          By the Lagrange Error Bound formula, we find that
+          <me>
+            \left|T_{10}(2) - f(2)\right| \leq (1)\frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797
           </me>.
         </p>
 
-        <p permid="XiA">
-          So <m>P_{10}(2)</m> approximates <m>\sin(2)</m> to within at most <m>0.00005130671797</m>.
-          A computer algebra system tells us that
-          <me permid="ONd">
-            P_{10}(2) \approx 0.9093474427 \ \ \text{ and }  \ \ \sin(2) \approx 0.9092974268
+        <p>
+          So <m>T_{10}(2)</m> approximates <m>\sin(2)</m> to within at most <m>0.00005130671797</m>.
+          Using a computer algebra system, we can find that
+          <me>
+            T_{10}(2) \approx 0.9093474427 \ \ \text{ and }  \ \ \sin(2) \approx 0.9092974268
           </me>
-          with an actual difference of about <m>0.0000500159</m>.
+          with an actual difference of about <m>0.0000500159</m>.  Note that the computer algebra system itself is using this same approach (but with more terms) to generate the fact that <m> \sin(2) \approx 0.9092974268</m>.
         </p>
       </solution>
     </example>
 
-    <xi:include href="./activities/act-8-5-5.xml" />
-
-    <example xml:id="Ex-8-5-4" permid="qrx">
-      <statement>
-        <p permid="UnU">
-          Show that the Taylor series for <m>\sin(x)</m> actually converges to <m>\sin(x)</m> for all <m>x</m>.
-        </p>
-      </statement>
-      <solution permid="biz">
-        <p permid="DpJ">
-          Recall from the previous example that since <m>f(x) = \sin(x)</m>, we know
-          <me permid="uUm">
-            \left| f^{(n+1)}(x) \right| \leq 1
-          </me>
-          for any <m>n</m> and <m>x</m>.
-          This allows us to choose <m>M = 1</m> in the Lagrange error bound formula.
-          Thus,
-          <men xml:id="E-ErrorIneqSine" permid="bbv">
-            |P_n(x) - \sin(x)| \leq \frac{|x|^{n+1}}{(n+1)!}
-          </men>
-          for every <m>x</m>.
-        </p>
-
-        <p permid="jwS">
-          We showed in earlier work that the Taylor series
-          <m>\sum_{k=0}^{\infty} \frac{x^k}{k!}</m> converges for every value of <m>x</m>.
-          Because the terms of any convergent series must approach zero,
-          it follows that
-          <me permid="HiE">
-            \lim_{n \to \infty} \frac{x^{n+1}}{(n+1)!} = 0
-          </me>
-          for every value of <m>x</m>.
-          Thus, taking the limit as
-          <m>n \to \infty</m> in the inequality<nbsp /><xref ref="E-ErrorIneqSine" />, it follows that
-          <me permid="npN">
-            \lim_{n \to \infty} |P_n(x) - \sin(x)| = 0
-          </me>.
-        </p>
-
-        <p permid="PEb">
-          As a result, we can now write
-          <me permid="TwW">
-            \sin(x) = \sum_{n=0}^{\infty} \frac{(-1)^nx^{2n+1}}{(2n+1)!}
-          </me>
-          for every real number <m>x</m>.
-        </p>
-      </solution>
-    </example>
-
-    <xi:include href="./activities/act-8-5-6.xml" />    
--->    
+    <xi:include href="./activities/act-8a-5x-2.xml" />
 
   </subsection>
 
@@ -528,10 +405,25 @@
     <ul>
       <li>
         <p>
+          If we approximate an infinite series with one of its partial sums, we can often quantify the maximum error present in the truncated sum.  Two ways the error can be measured are through the Alternating Series Estimation Theorem (if the original series is alternating) and through the Lagrange Error Bound (if the original series can be viewed as a Taylor series).
+        </p>
+      </li>      
+      <li>
+        <p>
           An alternating series is one whose terms alternate in sign, often represented by <m>\sum_{k=0}^{\infty} (-1)^{k}a_k</m> where <m>a_k \gt 0</m> for all values of <m>k</m>.  Any alternating series whose terms <m>a_k</m> approach zero as <m>k \to \infty</m> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,
           <me>
             \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - \left(a_0 - a_1 + a_2 - a_3 + \cdots + (-1)^{n-1} a_{n-1} \right) \right| \lt a_{n}
           </me>.
+        </p>
+      </li>
+      <li>
+        <p>
+            The Lagrange Error Bound quantifies the accuracy when we a Taylor polynomial to approximate a function.
+            Specifically,
+            if <m>T_n(x)</m> is the degree <m>n</m> order Taylor polynomial for <m>f</m> centered at <m>x=a</m> and if <m>\left|f^{(n+1)}(x)\right| \leq M</m> for some real number <m>M</m> on the interval <m>[a, c]</m>, then
+            <me>
+              \left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
+            </me>.
         </p>
       </li>
     </ul>

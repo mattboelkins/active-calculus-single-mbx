@@ -48,7 +48,7 @@
     </p>
 
     <p>
-      In this section, we use the function <m>f(x) = e^x</m> as a case study investigate how we can use other basic functions to better approximate the value of <m>f(x)</m> near <m>a = 0</m>.
+      In this section, we use the function <m>f(x) = e^x</m> as a case study to investigate how we can use other basic functions to better approximate the value of <m>f(x)</m> near <m>a = 0</m>.
     </p>
 
     <xi:include href="./previews/PA-8a-1-WW.xml" />
@@ -81,29 +81,40 @@
     </p>
 
     <p>
-      We can state these requirements more formally as follows:  we seek a function <m>T_2(x)</m> of the form
-      <me>
-        T_2(x) = b_0 + b_1 x + b_2 x^2
-      </me>
-      that satisfies 
-      <ul>
-        <li>
-          <p>
-            <m>T_2(0) = f(0)</m>, so <m>T_2</m> and <m>f</m> share the same height at <m>a = 0</m>;
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>T_2'(0) = f'(0)</m>, so <m>T_2</m> and <m>f</m> share the same slope at <m>a = 0</m>;
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>T_2''(0) = f''(0)</m>, so <m>T_2</m> and <m>f</m> share the same concavity at <m>a = 0</m>.
-          </p>
-        </li>
-      </ul>
+      We can state these requirements more formally as follows.
     </p>
+
+    <p>
+      <assemblage xml:id="assemblage-">
+        <title>The quadratic approximation of <m>f(x) = e^x</m></title>
+        <p>
+          To extend the linear approximation of <m>f(x) = e^x</m> to a quadratic approximation,
+          we seek a function <m>T_2(x)</m> of the form
+          <me>
+            T_2(x) = b_0 + b_1 x + b_2 x^2
+          </me>
+          that satisfies 
+          <ul>
+            <li>
+              <p>
+                <m>T_2(0) = f(0)</m>, so <m>T_2</m> and <m>f</m> share the same height at <m>a = 0</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>T_2'(0) = f'(0)</m>, so <m>T_2</m> and <m>f</m> share the same slope at <m>a = 0</m>;
+              </p>
+            </li>
+            <li>
+              <p>
+                <m>T_2''(0) = f''(0)</m>, so <m>T_2</m> and <m>f</m> share the same concavity at <m>a = 0</m>.
+              </p>
+            </li>
+          </ul>
+        </p>
+      </assemblage>
+    </p>
+        
 
     <p>
       In <xref ref="act-8a-1-1">Activity</xref>, we explore how these three requirements determine <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> in <m>T_2(x)</m> for the function <m>f(x) = e^x</m>.

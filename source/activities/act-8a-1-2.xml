@@ -30,8 +30,8 @@
 							<mrow> f''(x) \amp= e^x \amp T_3''(x) \amp= <fillin characters="5" /> </mrow>
 							<mrow> f'''(x) \amp= <fillin characters="3" /> \amp T_3'''(x) \amp= <fillin characters="5" /> </mrow>
 							<mrow> \amp </mrow>
-							<mrow> f(0) \amp= 1 \amp T_3(0) \amp= c_0  </mrow>
-							<mrow> f'(0) \amp= 1 \amp T_3'(0) \amp= c_1  </mrow>
+							<mrow> f(0) \amp= 1 \amp T_3(0) \amp= <fillin characters="3" />  </mrow>
+							<mrow> f'(0) \amp= 1 \amp T_3'(0) \amp= <fillin characters="3" />  </mrow>
 							<mrow> f''(0) \amp= 1 \amp T_3''(0) \amp= <fillin characters="3" /> </mrow>
 							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= <fillin characters="3" /> </mrow>
 						</md>
