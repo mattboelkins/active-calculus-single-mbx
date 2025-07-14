@@ -660,7 +660,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Quantifying the accuracy of approximations</span></a></div>
 <ul class="structural toc-item-list">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">The Lagrange Error Bound</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Error Approximations for Taylor Polynomials</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-6" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Summary</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#ez-8a-5x" class="internal"><span class="codenumber">8.6.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
@@ -722,7 +722,7 @@ f(x) \approx L(x) = f(a) + f'(a)(x-a),
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-8a-1-linear-poly-3-2">In this section, we use the function <span class="process-math">\(f(x) = e^x\)</span> as a case study investigate how we can use other basic functions to better approximate the value of <span class="process-math">\(f(x)\)</span> near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-1-linear-poly-3-2">In this section, we use the function <span class="process-math">\(f(x) = e^x\)</span> as a case study to investigate how we can use other basic functions to better approximate the value of <span class="process-math">\(f(x)\)</span> near <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-3-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="exploration project-like" id="PA-8a-1"><h3 class="heading">
 <span class="type">Preview Activity</span><span class="space"> </span><span class="codenumber">8.1.1</span><span class="period">.</span>
@@ -812,37 +812,43 @@ T_1(x) = f(0) + f'(0)(x - 0)\text{.}
 <div class="para" id="sec-8a-1-linear-poly-4-5">To generate a quadratic function that approximates <span class="process-math">\(f\)</span> near <span class="process-math">\(a = 0\text{,}\)</span> we choose to have this quadratic function not only share the same function value and derivative value as <span class="process-math">\(f\)</span> at <span class="process-math">\(a=0\text{,}\)</span> but also the same second derivative value<details class="ptx-footnote" aria-live="polite" id="sec-8a-1-linear-poly-4-5-5"><summary class="ptx-footnote__number" title="Footnote 8.1.1"><sup> 1 </sup></summary><div class="ptx-footnote__contents" id="sec-8a-1-linear-poly-4-5-5">Here we are implicitly assuming that the function <span class="process-math">\(f(x)\)</span> has a second derivative at <span class="process-math">\(a=0\text{,}\)</span> which is a property that holds for <span class="process-math">\(f(x) = e^x\text{.}\)</span>
 </div></details> at <span class="process-math">\(a=0\)</span> in order to match the concavity or curvature of <span class="process-math">\(f\text{.}\)</span>  In other words, we are adding a term to the linear approximation that gives the same amount of curvature as the function <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-8a-1-linear-poly-4-6">
-<div class="para">We can state these requirements more formally as follows:  we seek a function <span class="process-math">\(T_2(x)\)</span> of the form</div>
+<div class="para" id="sec-8a-1-linear-poly-4-6">We can state these requirements more formally as follows.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-8a-1-linear-poly-4-7">
+<article class="assemblage assemblage-like" id="assemblage-"><h4 class="heading"><span class="title">The quadratic approximation of <span class="process-math">\(f(x) = e^x\)</span>.</span></h4>
+<div class="para logical" id="assemblage--2">
+<div class="para">To extend the linear approximation of <span class="process-math">\(f(x) = e^x\)</span> to a quadratic approximation, we seek a function <span class="process-math">\(T_2(x)\)</span> of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
 T_2(x) = b_0 + b_1 x + b_2 x^2
 \end{equation*}
 </div>
 <div class="para">that satisfies</div>
-<ul class="disc" id="sec-8a-1-linear-poly-4-6-3">
-<li id="sec-8a-1-linear-poly-4-6-3-1">
-<div class="para" id="sec-8a-1-linear-poly-4-6-3-1-1">
-<span class="process-math">\(T_2(0) = f(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same height at <span class="process-math">\(a = 0\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-6-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="assemblage--2-4">
+<li id="assemblage--2-4-1">
+<div class="para" id="assemblage--2-4-1-1">
+<span class="process-math">\(T_2(0) = f(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same height at <span class="process-math">\(a = 0\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#assemblage--2-4-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-1-linear-poly-4-6-3-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage--2-4-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-8a-1-linear-poly-4-6-3-2">
-<div class="para" id="sec-8a-1-linear-poly-4-6-3-2-1">
-<span class="process-math">\(T_2'(0) = f'(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same slope at <span class="process-math">\(a = 0\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-6-3-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="assemblage--2-4-2">
+<div class="para" id="assemblage--2-4-2-1">
+<span class="process-math">\(T_2'(0) = f'(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same slope at <span class="process-math">\(a = 0\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#assemblage--2-4-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-1-linear-poly-4-6-3-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage--2-4-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-8a-1-linear-poly-4-6-3-3">
-<div class="para" id="sec-8a-1-linear-poly-4-6-3-3-1">
-<span class="process-math">\(T_2''(0) = f''(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same concavity at <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-6-3-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="assemblage--2-4-3">
+<div class="para" id="assemblage--2-4-3-1">
+<span class="process-math">\(T_2''(0) = f''(0)\text{,}\)</span> so <span class="process-math">\(T_2\)</span> and <span class="process-math">\(f\)</span> share the same concavity at <span class="process-math">\(a = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#assemblage--2-4-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-1-linear-poly-4-6-3-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#assemblage--2-4-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#assemblage--2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-8a-1-linear-poly-4-7">In <a href="sec-8a-1-linear-poly.html#act-8a-1-1" class="xref" data-knowl="./knowl/xref/act-8a-1-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.2">Activity 8.1.2</a>, we explore how these three requirements determine <span class="process-math">\(b_0\text{,}\)</span> <span class="process-math">\(b_1\text{,}\)</span> and <span class="process-math">\(b_2\)</span> in <span class="process-math">\(T_2(x)\)</span> for the function <span class="process-math">\(f(x) = e^x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: The quadratic approximation of f(x) = e^x"><a href="#assemblage-" title="Copy heading and permalink for Assemblage: The quadratic approximation of f(x) = e^x">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-8a-1-linear-poly-4-8">In <a href="sec-8a-1-linear-poly.html#act-8a-1-1" class="xref" data-knowl="./knowl/xref/act-8a-1-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.1.2">Activity 8.1.2</a>, we explore how these three requirements determine <span class="process-math">\(b_0\text{,}\)</span> <span class="process-math">\(b_1\text{,}\)</span> and <span class="process-math">\(b_2\)</span> in <span class="process-math">\(T_2(x)\)</span> for the function <span class="process-math">\(f(x) = e^x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-1-linear-poly-4-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="activity project-like" id="act-8a-1-1"><h4 class="heading">
 <span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.1.2</span><span class="period">.</span>
@@ -985,8 +991,8 @@ f'(x) \amp= e^x \amp T_3'(x) \amp= c_1 + 2c_2 x + 3c_3 x^2 \\
 f''(x) \amp= e^x \amp T_3''(x) \amp= \fillinmath{XXXXX} \\
 f'''(x) \amp= \fillinmath{XXX} \amp T_3'''(x) \amp= \fillinmath{XXXXX} \\
 \amp \\
-f(0) \amp= 1 \amp T_3(0) \amp= c_0  \\
-f'(0) \amp= 1 \amp T_3'(0) \amp= c_1  \\
+f(0) \amp= 1 \amp T_3(0) \amp= \fillinmath{XXX}  \\
+f'(0) \amp= 1 \amp T_3'(0) \amp= \fillinmath{XXX}  \\
 f''(0) \amp= 1 \amp T_3''(0) \amp= \fillinmath{XXX} \\
 f'''(0) \amp= \fillinmath{XXX} \amp T_3'''(0) \amp= \fillinmath{XXX} 
 \end{align*}

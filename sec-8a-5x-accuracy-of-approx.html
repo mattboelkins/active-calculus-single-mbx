@@ -660,7 +660,7 @@ eBookConfig.enable_chatcodes =  false;
 <div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html" class="internal"><span class="codenumber">8.6</span> <span class="title">Quantifying the accuracy of approximations</span></a></div>
 <ul class="structural toc-item-list active">
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4" class="internal"><span class="codenumber">8.6.1</span> <span class="title">Alternating series of real numbers</span></a></div></li>
-<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">The Lagrange Error Bound</span></a></div></li>
+<li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-5" class="internal"><span class="codenumber">8.6.2</span> <span class="title">Error Approximations for Taylor Polynomials</span></a></div></li>
 <li class="toc-item toc-subsection"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-6" class="internal"><span class="codenumber">8.6.3</span> <span class="title">Summary</span></a></div></li>
 <li class="toc-item toc-exercises"><div class="toc-title-box"><a href="sec-8a-5x-accuracy-of-approx.html#ez-8a-5x" class="internal"><span class="codenumber">8.6.4</span> <span class="title">Exercises</span></a></div></li>
 </ul>
@@ -695,7 +695,7 @@ eBookConfig.enable_chatcodes =  false;
 <article class="objectives goal-like" id="sec-8a-5x-accuracy-of-approx-2"><h3 class="heading"><span class="type">Motivating Questions</span></h3>
 <ul class="disc" id="sec-8a-5x-accuracy-of-approx-2-1">
 <li id="sec-8a-5x-accuracy-of-approx-2-1-1">
-<div class="para" id="sec-8a-5x-accuracy-of-approx-2-1-1-1">For an infinite series that converges, how much accuracy do we lose when we truncate the series after a finite number of terms to approximate its value with a finite sum?<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-2-1-1-1">For an infinite series that converges, how much accuracy do we lose when we truncate the series after a finite number of terms to approximate its value with a finite sum?  Said differently, to get a good approximation with a finite sum, how many terms are enough?<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Objective"><a href="#sec-8a-5x-accuracy-of-approx-2-1-1" title="Copy heading and permalink for Objective">🔗</a></div>
 </li>
@@ -818,7 +818,7 @@ S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.1</span><span class="space"> </span><span class="title">Alternating series of real numbers</span>
 </h3>
 <div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-2">
-<div class="para">Next we consider the definite integral</div>
+<div class="para">In several situations we’ve encountered, series whose terms alternate in sign arise naturally.  For instance, consider the definite integral</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/eq-8a-5x-alt-sum-ex2.html">
 \begin{equation*}
 \int_0^1 e^{-x^2} \, dx\text{,}
@@ -842,11 +842,12 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 <div class="para">Like the geometric series <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k \)</span> that we encountered in <a href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x" class="xref" data-knowl="./knowl/xref/PA-8a-5x.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, the infinite series in <a href="sec-8a-5x-accuracy-of-approx.html#sec-8a-5x-accuracy-of-approx-4-2-6" class="xref" data-knowl="./knowl/xref/eq-8a-5x-alt-sum-ex2.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.6.2">Equation (8.6.2)</a> is an example of an <dfn class="terminology">alternating series</dfn> of real numbers.  It turns out to be straightforward to determine whether or not an alternating series converges and to estimate the value of a convergent alternating series.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="definition definition-like" id="sec-8a-5x-accuracy-of-approx-4-3"><h4 class="heading">
+<div class="para" id="sec-8a-5x-accuracy-of-approx-4-3">
+<article class="definition definition-like" id="sec-8a-5x-accuracy-of-approx-4-3-1"><h4 class="heading">
 <span class="type">Definition</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="period">.</span>
 </h4>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-3-1-1">
-<div class="para">An alternating series is a series of the form</div>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-3-1-1-1">
+<div class="para">An <dfn class="terminology">alternating series</dfn> is a series of the form</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{k=0}^{\infty} (-1)^k a_k\text{,}
@@ -854,11 +855,11 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 </div>
 <div class="para">where <span class="process-math">\(a_k \gt 0\)</span> for each <span class="process-math">\(k\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-3-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Definition 8.6.2"><a href="#sec-8a-5x-accuracy-of-approx-4-3" title="Copy heading and permalink for Definition 8.6.2">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-4">We will only consider alternating series for which the sequence of positive numbers <span class="process-math">\(a_k\)</span> decreases to <span class="process-math">\(0\text{.}\)</span>  The following example illustrates two general results that hold for any alternating series whose terms <span class="process-math">\(a_k\)</span> decrease to <span class="process-math">\(0\text{.}\)</span>  We use a geometric series so that we can know its exact sum and compare certain computations to that sum.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Definition 8.6.2"><a href="#sec-8a-5x-accuracy-of-approx-4-3-1" title="Copy heading and permalink for Definition 8.6.2">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-5">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-4">
 <div class="para">In <a href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x" class="xref" data-knowl="./knowl/xref/PA-8a-5x.html" data-reveal-label="Reveal" data-close-label="Close" title="Preview Activity 8.6.1">Preview Activity 8.6.1</a>, we investigated the partial sums of the convergent alternating geometric series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\text{,}\)</span> whose sum is <span class="process-math">\(S = \fra{5}{9}\text{.}\)</span>  We found the first several partial sums shown in <a href="sec-8a-5x-accuracy-of-approx.html#T-8a-5x-ExGeom" class="xref" data-knowl="./knowl/xref/T-8a-5x-ExGeom.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k">8.6.3</a>. <figure class="table table-like" id="T-8a-5x-ExGeom"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">8.6.3<span class="period">.</span></span><span class="space"> </span>Partial sums of the alternating series <span class="process-math">\(S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k\)</span><div class="autopermalink" data-description="Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k"><a href="#T-8a-5x-ExGeom" title="Copy heading and permalink for Table 8.6.3: Partial sums of the alternating series S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k">🔗</a></div></figcaption><div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="c m b1 r0 l0 t1 lines"><span class="process-math">\(n\)</span></td>
@@ -897,7 +898,7 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 <td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(\frac{36121}{78125} = 0.4623488\)</span></td>
 </tr>
 </table></div></figure> Plotting these partial sums in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>, we see an important pattern in how the partial sums approach the exact value of the infinite sum. <figure class="figure figure-like" id="F-8a-5x-alt-partial-sums"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/prefigure/Fig-8a-5x-alt-partial-sums.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.6.4<span class="period">.</span></span><span class="space"> </span>Plotting the partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{.}\)</span><div class="autopermalink" data-description="Figure 8.6.4"><a href="#F-8a-5x-alt-partial-sums" title="Copy heading and permalink for Figure 8.6.4">🔗</a></div></figcaption></figure> In both the table and the figure, we see how consecutive partial sums move back and forth above and below the exact sum of the infinite series, <span class="process-math">\(\frac{5}{9}\text{,}\)</span> and moreover how the amount the next partial sum lies above or below <span class="process-math">\(\frac{5}{9}\)</span> is less than the amount by which the previous partial sum deviated.  For instance,</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.6.4<span class="period">.</span></span><span class="space"> </span>Plotting the partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{.}\)</span><div class="autopermalink" data-description="Figure 8.6.4"><a href="#F-8a-5x-alt-partial-sums" title="Copy heading and permalink for Figure 8.6.4">🔗</a></div></figcaption></figure> In both the table and the figure, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <span class="process-math">\(\frac{5}{9}\text{,}\)</span> and moreover how the amount the next partial sum lies above or below <span class="process-math">\(\frac{5}{9}\)</span> is less than the amount by which the previous partial sum deviated.  For instance,</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/PA-8a-5x.html ./knowl/xref/T-8a-5x-ExGeom.html ./knowl/xref/F-8a-5x-alt-partial-sums.html ./knowl/xref/F-8a-5x-alt-partial-sums.html">
 \begin{equation*}
 |S_5 - \frac{5}{9}| \approx 0.1820,
@@ -917,12 +918,12 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 </div>
 <div class="para">so the next term in the sum provides a bound on the error in a given partial sum.  A similar argument can be made for any value of <span class="process-math">\(n\text{.}\)</span>
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-8a-5x-accuracy-of-approx-4-6">A more general version of this argument can be made for any alternating series whose terms go to zero.  This leads us to state two important results.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-4-5">A more general version of this argument can be made for any alternating series whose terms go to zero.  This leads us to state two important results.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-7"><h4 class="heading"><span class="title">The Alternating Series Test.</span></h4>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-7-2">
+<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-6"><h4 class="heading"><span class="title">The Alternating Series Test.</span></h4>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-6-2">
 <div class="para">Given an alternating series</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -930,21 +931,21 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 \end{equation*}
 </div>
 <div class="para">if the positive terms <span class="process-math">\(a_k\)</span> decrease to 0 as <span class="process-math">\(k \to \infty\text{,}\)</span> then the alternating series converges.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-7-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: The Alternating Series Test"><a href="#sec-8a-5x-accuracy-of-approx-4-7" title="Copy heading and permalink for Assemblage: The Alternating Series Test">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-8">If we were to compute the partial sums <span class="process-math">\(S_n\)</span> of any alternating series whose terms decrease to zero and plot the points <span class="process-math">\((n,S_n)\)</span> as we did in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: The Alternating Series Test"><a href="#sec-8a-5x-accuracy-of-approx-4-6" title="Copy heading and permalink for Assemblage: The Alternating Series Test">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-7">If we were to compute the partial sums <span class="process-math">\(S_n\)</span> of any alternating series whose terms decrease to zero and plot the points <span class="process-math">\((n,S_n)\)</span> as we did in <a href="sec-8a-5x-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.4">Figure 8.6.4</a>, we would see a similar picture:  the partial sums alternate above and below the value to which the infinite alternating series converges.  In addition, because the terms go to zero, the amount a given partial sum deviates from the total sum is at most the next term in the series.  This result is formally stated as the Alternating Series Estimation Theorem.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-9"><h4 class="heading"><span class="title">Alternating Series Estimation Theorem.</span></h4>
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-9-2">
+<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-4-8"><h4 class="heading"><span class="title">Alternating Series Estimation Theorem.</span></h4>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-4-8-2">
 <div class="para">If the alternating series <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^{k}a_k\)</span> has positive terms <span class="process-math">\(a_k\)</span> that decrease to zero as <span class="process-math">\(k \to \infty\text{,}\)</span> and <span class="process-math">\(S_n = \sum_{k=0}^{n-1} (-1)^{k}a_k\)</span> is the <span class="process-math">\(n\)</span>th partial sum of the alternating series, then</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - S_n \right| \leq a_{n}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-9-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-8-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: Alternating Series Estimation Theorem"><a href="#sec-8a-5x-accuracy-of-approx-4-9" title="Copy heading and permalink for Assemblage: Alternating Series Estimation Theorem">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-10">Again, this result simply says: if we use a partial sum to estimate the exact sum of an alternating infinite series, the absolute error of the approximation is less than the next term in the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-10" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: Alternating Series Estimation Theorem"><a href="#sec-8a-5x-accuracy-of-approx-4-8" title="Copy heading and permalink for Assemblage: Alternating Series Estimation Theorem">🔗</a></div></article><div class="para" id="sec-8a-5x-accuracy-of-approx-4-9">Again, this result simply says: if we use a partial sum to estimate the exact sum of a convergent alternating infinite series, the absolute error of the approximation is less than the next term in the series.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-4-9" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <article class="example example-like" id="Ex-8a-5x-ASET"><h4 class="heading">
 <span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6.5</span><span class="period">.</span>
@@ -1027,26 +1028,193 @@ a_{100} = \frac{1}{101} \approx 0.0099\text{,}
 <div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Activity 8.6.2"><a href="#act-8a-5x-1" title="Copy heading and permalink for Activity 8.6.2">🔗</a></div></article><div class="autopermalink" data-description="Subsection 8.6.1: Alternating series of real numbers"><a href="#sec-8a-5x-accuracy-of-approx-4" title="Copy heading and permalink for Subsection 8.6.1: Alternating series of real numbers">🔗</a></div></section><section class="subsection" id="sec-8a-5x-accuracy-of-approx-5"><h3 class="heading hide-type">
-<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="space"> </span><span class="title">The Lagrange Error Bound</span>
+<span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.2</span><span class="space"> </span><span class="title">Error Approximations for Taylor Polynomials</span>
 </h3>
-<div class="para" id="sec-8a-5x-accuracy-of-approx-5-2">See the following comment in the source for Steve’s source on this to modify and update.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-2">In the same way that the next term in an alternating series reveals the maximum error of a finite approximation, it turns out that a quantity related to the next term in a Taylor series determines the maximum error found in a Taylor polynomial approximation.  This will enable us to know what degree is Taylor polynomial is needed in order to achieve a given accuracy tolerance on a chosen interval.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Subsection 8.6.2: The Lagrange Error Bound"><a href="#sec-8a-5x-accuracy-of-approx-5" title="Copy heading and permalink for Subsection 8.6.2: The Lagrange Error Bound">🔗</a></div></section><section class="subsection" id="sec-8a-5x-accuracy-of-approx-6"><h3 class="heading hide-type">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-3">
+<div class="para">Throughout what follows, we assume that <span class="process-math">\(f(x)\)</span> is a function with at least <span class="process-math">\(n+1\)</span> derivatives at <span class="process-math">\(a = 0\text{,}\)</span> and let <span class="process-math">\(T_n(x)\)</span> be the degree <span class="process-math">\(n\)</span> Taylor polynomial of <span class="process-math">\(f\)</span> centered at <span class="process-math">\(a = 0\text{.}\)</span>  We define the error function of the degree <span class="process-math">\(n\)</span> approximation, <span class="process-math">\(E_n(x)\text{,}\)</span> by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+E_n(x) = f(x) - T_n(x)\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-4">
+<div class="para">Our overall goal is to understand how much error there is in the approximation <span class="process-math">\(f(c) \approx T_n(c)\)</span> for some fixed value of <span class="process-math">\(c\text{;}\)</span> in other words, we’d like to know the maximum possible value of <span class="process-math">\(E_n(c)\text{.}\)</span>  This leads us to maximize the error function, <span class="process-math">\(E_n(x)\text{,}\)</span> on the interval <span class="process-math">\([0,c]\text{.}\)</span>  We observe several important properties of <span class="process-math">\(E_n(x)\text{:}\)</span>
+</div>
+<ul class="disc" id="sec-8a-5x-accuracy-of-approx-5-4-7">
+<li id="sec-8a-5x-accuracy-of-approx-5-4-7-1">
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-4-7-1-1">
+<span class="process-math">\(E_n(0) = E_n'(0) = E_n''(0) = \cdots = E_n^{(n)}(0) = 0\text{,}\)</span> since <span class="process-math">\(E_n(x) = f(x) - T_n(x)\)</span> and <span class="process-math">\(f\)</span> and <span class="process-math">\(T_n\)</span> share the same function and first <span class="process-math">\(n\)</span> derivative values at <span class="process-math">\(a = 0\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-8a-5x-accuracy-of-approx-5-4-7-2">
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-4-7-2-1">
+<span class="process-math">\(E^{(n+1)}_n(x) = f^{(n+1)}(x)\text{,}\)</span> since <span class="process-math">\(T_n\)</span> is a degree <span class="process-math">\(n\)</span> polynomial, which means <span class="process-math">\(T_n^{(n+1)}(x) = 0\)</span> for every <span class="process-math">\(x\text{;}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-8a-5x-accuracy-of-approx-5-4-7-3">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-4-7-3-1">
+<div class="para">If we assume that <span class="process-math">\(|f^{(n+1)}(x)| \leq M\)</span> for some positive real number <span class="process-math">\(M\)</span> for every <span class="process-math">\(x\)</span> in the interval <span class="process-math">\([0,c]\text{,}\)</span> then</div>
+<div class="displaymath process-math" id="eq-8a-5x-error-nth-derivative">
+\begin{equation}
+| E^{(n+1)}_n(x) | \leq M\tag{8.6.3}
+\end{equation}
+</div>
+<div class="para">since <span class="process-math">\(f^{(n+1)}(x) = E^{(n+1)}_n(x)\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-5-4-7-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-5">
+<div class="para">Taking <a href="sec-8a-5x-accuracy-of-approx.html#eq-8a-5x-error-nth-derivative" class="xref" data-knowl="./knowl/xref/eq-8a-5x-error-nth-derivative.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.6.3">Inequality (8.6.3)</a>, writing it in the form <span class="process-math">\(-M \lt E^{(n+1)}_n(t) \leq M\text{,}\)</span> and integrating all three terms in the inequality from <span class="process-math">\(t = 0\)</span> to <span class="process-math">\(t = x\)</span> and doing so <span class="process-math">\(n+1\)</span> times, it can be shown that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-8a-5x-error-nth-derivative.html">
+\begin{equation*}
+-M \frac{x^{n+1}}{(n+1)!} \leq E_n(x) \leq M \frac{x^{n+1}}{(n+1)!}
+\end{equation*}
+</div>
+<div class="para">It follows that</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-8a-5x-error-nth-derivative.html">
+\begin{equation*}
+| E_n(x) | \leq M \frac{|x|^{n+1}}{(n+1)!} \leq M \frac{|c|^{n+1}}{(n+1)!}
+\end{equation*}
+</div>
+<div class="para">since <span class="process-math">\(|c|\)</span> is the maximum value of <span class="process-math">\(|x|\)</span> on the interval <span class="process-math">\(0 \leq x \leq c\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-6">A similar argument works for the same result for any real number <span class="process-math">\(a\)</span> and leads to the following result, known as the <dfn class="terminology">Lagrange Error Bound</dfn>.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-6" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-7">
+<article class="assemblage assemblage-like" id="sec-8a-5x-accuracy-of-approx-5-7-1"><h4 class="heading"><span class="title">The Lagrange Error Bound for <span class="process-math">\(T_n(x)\)</span>.</span></h4>
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-5-7-1-3">
+<div class="para">Let <span class="process-math">\(f\)</span> be a continuous function with <span class="process-math">\(n+1\)</span> continuous derivatives. Suppose that <span class="process-math">\(M\)</span> is a positive real number such that <span class="process-math">\(\left|f^{(n+1)}(x)\right| \le M\)</span> on the interval <span class="process-math">\([a, c]\text{.}\)</span> If <span class="process-math">\(T_n(x)\)</span> is the degree <span class="process-math">\(n\)</span> Taylor polynomial for <span class="process-math">\(f(x)\)</span> centered at <span class="process-math">\(x=a\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-7-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Assemblage: The Lagrange Error Bound for T_n(x)"><a href="#sec-8a-5x-accuracy-of-approx-5-7-1" title="Copy heading and permalink for Assemblage: The Lagrange Error Bound for T_n(x)">🔗</a></div></article><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-7" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para" id="sec-8a-5x-accuracy-of-approx-5-8">The Lagrange Error Bound shows that the total error in the degree <span class="process-math">\(n\)</span> Taylor polynomial approximation is determined by the maximum value of the <span class="process-math">\((n+1)^{\mbox{st}}\)</span> derivative of <span class="process-math">\(f\)</span> on the interval of interest, together with the quantity <span class="process-math">\(\frac{|c-a|^{n+1}}{(n+1)!}\text{.}\)</span>  In practice, this provides a straightforward way to find a bound on the maximum error of a polynomial approximation of a non-polynomial function.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-5-8" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="example example-like" id="Ex-8a-5x-1"><h4 class="heading">
+<span class="type">Example</span><span class="space"> </span><span class="codenumber">8.6.6</span><span class="period">.</span>
+</h4>
+<div class="para" id="Ex-8a-5x-1-1-1">Determine the maximum error possible when using the degree <span class="process-math">\(10\)</span> Taylor polynomial centered at <span class="process-math">\(a = 0\text{,}\)</span> <span class="process-math">\(T_{10}(x)\text{,}\)</span> for <span class="process-math">\(\sin(x)\)</span> to approximate the value of <span class="process-math">\(\sin(2)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-5x-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="solutions"><details id="Ex-8a-5x-1-2" class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
+<div class="para logical" id="Ex-8a-5x-1-2-1">
+<div class="para">To approximate the value of <span class="process-math">\(\sin(2)\)</span> using the degree <span class="process-math">\(10\)</span> Taylor polynomial, we will use <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> <span class="process-math">\(c = 2\text{,}\)</span> <span class="process-math">\(a=0\text{,}\)</span> and <span class="process-math">\(n = 10\)</span> in the Lagrange Error Bound formula. We also need to find a value for <span class="process-math">\(M\)</span> so that <span class="process-math">\(\left|f^{(11)}(x)\right| \le M\)</span> on the interval <span class="process-math">\([0,2]\text{.}\)</span> Since the derivatives of <span class="process-math">\(f(x) = \sin(x)\)</span> are all one of <span class="process-math">\(\pm \sin(x)\)</span> or <span class="process-math">\(\pm \cos(x)\text{,}\)</span> and the maximum absolute values of these functions on any interval is <span class="process-math">\(1\text{,}\)</span> we have</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left| f^{(n+1)}(x) \right| \leq 1
+\end{equation*}
+</div>
+<div class="para">for any <span class="process-math">\(n\)</span> and any <span class="process-math">\(x\text{.}\)</span> Therefore, we let <span class="process-math">\(M = 1\text{.}\)</span> By the Lagrange Error Bound formula, we find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left|T_{10}(2) - f(2)\right| \leq (1)\frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-5x-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="Ex-8a-5x-1-2-2">
+<div class="para">So <span class="process-math">\(T_{10}(2)\)</span> approximates <span class="process-math">\(\sin(2)\)</span> to within at most <span class="process-math">\(0.00005130671797\text{.}\)</span> Using a computer algebra system, we can find that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+T_{10}(2) \approx 0.9093474427 \ \ \text{ and }  \ \ \sin(2) \approx 0.9092974268
+\end{equation*}
+</div>
+<div class="para">with an actual difference of about <span class="process-math">\(0.0000500159\text{.}\)</span>  Note that the computer algebra system itself is using this same approach (but with more terms) to generate the fact that <span class="process-math">\(\sin(2) \approx 0.9092974268\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-5x-1-2-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Solution 8.6.6.1"><a href="#Ex-8a-5x-1-2" title="Copy heading and permalink for Solution 8.6.6.1">🔗</a></div>
+</div></details></div>
+<div class="autopermalink" data-description="Example 8.6.6"><a href="#Ex-8a-5x-1" title="Copy heading and permalink for Example 8.6.6">🔗</a></div></article><article class="activity project-like" id="act-8a-5x-2"><h4 class="heading">
+<span class="type">Activity</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="period">.</span>
+</h4>
+<div class="para" id="act-8a-5x-2-1-1">In this activity we apply the Lagrange Error Bound to quantify the accuracy of several different approximations.<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="act-8a-5x-2-1-2">
+<ol class="lower-alpha ol-marker-1" id="act-8a-5x-2-1-2-1">
+<li id="act-8a-5x-2-1-2-1-1">
+<div class="para" id="act-8a-5x-2-1-2-1-1-1">Use the degree <span class="process-math">\(10\)</span> Taylor polynomial (centered at <span class="process-math">\(a = 0\)</span>) of <span class="process-math">\(f(x) = e^x\)</span> to estimate the value of <span class="process-math">\(e^2\text{.}\)</span>  What is the maximum error of your estimate, according to the Lagrange Error Bound?  How does this compare to the actual error between <span class="process-math">\(e^2\)</span> and <span class="process-math">\(T_{10}(2)\)</span> as reported by a computer algebra system?<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-2-1-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item a"><a href="#act-8a-5x-2-1-2-1-1" title="Copy heading and permalink for Item a">🔗</a></div>
+</li>
+<li id="act-8a-5x-2-1-2-1-2">
+<div class="para" id="act-8a-5x-2-1-2-1-2-1">Use a degree <span class="process-math">\(n\)</span> Taylor polynomial (centered at <span class="process-math">\(a = 0\)</span>) of <span class="process-math">\(f(x) = \cos(x)\)</span> to estimate the value of <span class="process-math">\(\cos(1)\)</span> within an accuracy of <span class="process-math">\(0.00000001\text{.}\)</span>  According to the Lagrange Error Bound, what value of <span class="process-math">\(n\)</span> is needed to achieve this accuracy?  What is the resulting approximate value of <span class="process-math">\(\cos(1)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-2-1-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item b"><a href="#act-8a-5x-2-1-2-1-2" title="Copy heading and permalink for Item b">🔗</a></div>
+</li>
+<li id="act-8a-5x-2-1-2-1-3">
+<div class="para logical" id="act-8a-5x-2-1-2-1-3-1">
+<div class="para">Recall that for <span class="process-math">\(f(x) = \ln(1+x)\text{,}\)</span> its Taylor series centered at <span class="process-math">\(a = 0\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\ln(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots
+\end{equation*}
+</div>
+<div class="para">and that the <span class="process-math">\(n^{\mbox{th}}\)</span> derivative of <span class="process-math">\(f(x) = \ln(1+x)\)</span> is given by</div>
+<div class="displaymath process-math">
+\begin{equation*}
+f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
+\end{equation*}
+</div>
+<div class="para">If we want to estimate <span class="process-math">\(f(0.5) = \ln(1.5)\)</span> to within an accuracy of <span class="process-math">\(0.0001\text{,}\)</span> what value of <span class="process-math">\(n\)</span> is needed to achieve this accuracy from computing <span class="process-math">\(T_n(0.5)\text{,}\)</span> according to the Lagrange Error Bound?</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-2-1-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item c"><a href="#act-8a-5x-2-1-2-1-3" title="Copy heading and permalink for Item c">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#act-8a-5x-2-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Activity 8.6.3"><a href="#act-8a-5x-2" title="Copy heading and permalink for Activity 8.6.3">🔗</a></div></article><div class="autopermalink" data-description="Subsection 8.6.2: Error Approximations for Taylor Polynomials"><a href="#sec-8a-5x-accuracy-of-approx-5" title="Copy heading and permalink for Subsection 8.6.2: Error Approximations for Taylor Polynomials">🔗</a></div></section><section class="subsection" id="sec-8a-5x-accuracy-of-approx-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">8.6.3</span><span class="space"> </span><span class="title">Summary</span>
 </h3>
 <div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2">
-<ul class="disc" id="sec-8a-5x-accuracy-of-approx-6-2-1"><li id="sec-8a-5x-accuracy-of-approx-6-2-1-1">
-<div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2-1-1-1">
+<ul class="disc" id="sec-8a-5x-accuracy-of-approx-6-2-1">
+<li id="sec-8a-5x-accuracy-of-approx-6-2-1-1">
+<div class="para" id="sec-8a-5x-accuracy-of-approx-6-2-1-1-1">If we approximate an infinite series with one of its partial sums, we can often quantify the maximum error present in the truncated sum.  Two ways the error can be measured are through the Alternating Series Estimation Theorem (if the original series is alternating) and through the Lagrange Error Bound (if the original series can be viewed as a Taylor series).<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-8a-5x-accuracy-of-approx-6-2-1-2">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2-1-2-1">
 <div class="para">An alternating series is one whose terms alternate in sign, often represented by <span class="process-math">\(\sum_{k=0}^{\infty} (-1)^{k}a_k\)</span> where <span class="process-math">\(a_k \gt 0\)</span> for all values of <span class="process-math">\(k\text{.}\)</span>  Any alternating series whose terms <span class="process-math">\(a_k\)</span> approach zero as <span class="process-math">\(k \to \infty\)</span> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - \left(a_0 - a_1 + a_2 - a_3 + \cdots + (-1)^{n-1} a_{n-1} \right) \right| \lt a_{n}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-1" title="Copy heading and permalink for Item">🔗</a></div>
-</li></ul>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-2" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+<li id="sec-8a-5x-accuracy-of-approx-6-2-1-3">
+<div class="para logical" id="sec-8a-5x-accuracy-of-approx-6-2-1-3-1">
+<div class="para">The Lagrange Error Bound quantifies the accuracy when we a Taylor polynomial to approximate a function. Specifically, if <span class="process-math">\(T_n(x)\)</span> is the degree <span class="process-math">\(n\)</span> order Taylor polynomial for <span class="process-math">\(f\)</span> centered at <span class="process-math">\(x=a\)</span> and if <span class="process-math">\(\left|f^{(n+1)}(x)\right| \leq M\)</span> for some real number <span class="process-math">\(M\)</span> on the interval <span class="process-math">\([a, c]\text{,}\)</span> then</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}\text{.}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-5x-accuracy-of-approx-6-2-1-3" title="Copy heading and permalink for Item">🔗</a></div>
+</li>
+</ul>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-5x-accuracy-of-approx-6-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Subsection 8.6.3: Summary"><a href="#sec-8a-5x-accuracy-of-approx-6" title="Copy heading and permalink for Subsection 8.6.3: Summary">🔗</a></div></section><section class="exercises" id="ez-8a-5x"><h3 class="heading hide-type">
