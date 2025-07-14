@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,29 +12,52 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-1-1">
-	<statement>
-		<p>
+ 
+<worksheet label="ws-act-8a-1-1">
+  <activity xml:id="act-8a-1-1">
+    <introduction>
+      <p>
 			Let <m>f(x)=e^x</m> and <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>.  We seek numerical values for the constants <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> so that <m>f(0)=T_2(0)</m>, <m>f'(0)=T_2'(0)</m>, and <m>f''(0)=T_2''(0)</m>.
 		</p>
-		<p>
-			<ol marker="a.">
-				<li>
-				<p>
-					Note that since <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> are constants, if we take the derivative of the quadratic function <m>T_2</m> using the sum and constant multiple rules, it follows that <m>T_2'(x) = b_1 + 2 b_2 x</m>.  
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-0">
+      <statement>
+        <p>
+					Note that since <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> are constants, if we take the derivative of the quadratic function <m>T_2</m> using the sum and constant multiple rules, it follows that <m>T_2'(x) = b_1 + 2 b_2 x</m>.   
 				</p>
-
-				<p>
+        <p>
 					What is <m>T_2''(x)</m>?
 				</p>
-				</li>
-				<li>
-					<p>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>T_2''(x) = 2c_2</m>.
+				</p>
+      </answer>
+      <solution>
+        <p><m>T_2''(x) = 2c_2</m>.
+				</p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-1">
+      <statement>
+        <p>
 						Recall that <m>f(x) = e^x</m>.  Determine <m>f'(x)</m> and <m>f''(x)</m>.
 					</p>
-				</li>
-				<li>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>f'(x) = f''(x)= e^x</m>.  
+					</p>
+      </answer>
+      <solution>
+        <p><m>f'(x) = f''(x)= e^x</m>.  
+					</p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-2">
+      <statement>
 					<p>
 						Enter the formulas you've determined for <m>f'(x)</m>, <m>f''(x)</m>, and <m>T_2''(x)</m> to fill in the blanks below.
 					</p>		
@@ -45,9 +68,210 @@
 							<mrow> f''(x) \amp= <fillin characters="3"/> \amp T_2''(x) \amp= <fillin characters="3"/> </mrow>
 						</md>
 					</p>
-				</li>
-				<li>
-					<p>
+      </statement>
+      <hint/>
+      <answer>
+        <p>
+          <table xml:id="T-act-8a-1-1-ans">
+            <title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m>.</title>
+            <tabular top="none" bottom="none">
+              <row>
+                <cell halign="right">
+                  <m>f(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2(x)=</m>
+                </cell>
+                <cell>
+                  <m>c_0 + c_1 x + c_2 x^2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2'(x)=</m>
+                </cell>
+                <cell>
+                  <m>c_1 + 2c_2 x</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2''(x)=</m>
+                </cell>
+                <cell>
+                  <m>2c_2</m>
+                </cell>
+              </row>
+              <row>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2(0)=</m>
+                </cell>
+                <cell>
+                  <m>c_0</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2'(0)=</m>
+                </cell>
+                <cell>
+                  <m>c_1</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2''(0)=</m>
+                </cell>
+                <cell>
+                  <m>2c_2</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </answer>
+      <solution>
+        <p>
+          <table xml:id="T-act-8a-1-1-soln">
+            <title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m>.</title>
+            <tabular top="none" bottom="none">
+              <row>
+                <cell halign="right">
+                  <m>f(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2(x)=</m>
+                </cell>
+                <cell>
+                  <m>c_0 + c_1 x + c_2 x^2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2'(x)=</m>
+                </cell>
+                <cell>
+                  <m>c_1 + 2c_2 x</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2''(x)=</m>
+                </cell>
+                <cell>
+                  <m>2c_2</m>
+                </cell>
+              </row>
+              <row>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2(0)=</m>
+                </cell>
+                <cell>
+                  <m>c_0</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2'(0)=</m>
+                </cell>
+                <cell>
+                  <m>c_1</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_2''(0)=</m>
+                </cell>
+                <cell>
+                  <m>2c_2</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-3">
+      <statement>
+          <p>
 						Next, observe that since <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>, it follows that <m>T_2(0) = b_0</m>.  Reason similarly to determine the values of <m>T_2'(0)</m> and <m>T_2''(0)</m>, as well as those of <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter these values appropriately in the blanks below.
 					</p>		
 					<p>
@@ -58,213 +282,57 @@
 						</md>
 
 					</p>
-				</li>
-				<li>
-					<p>
-						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  
-					</p>
-					<p>	
-						What does <m>T_2(0) = f(0)</m> tell us the value of <m>b_0</m> is? What does <m>T_2'(0) = f'(0)</m> tell us the value of <m>b_1</m> is? What condition can you use to find the value of <m>b_2</m>, and what is its value?  
-					</p>
-
-					<p>
-						Summarize your work by stating the formula you've determined for <m>T_2(x)</m>.
-					</p>
-				</li>
-				<li>
-					<p>
-						Use appropriate computational technology to plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in the same window shown in <xref ref="F-8a-1-act-1">Figure</xref>.  
-
-						<figure xml:id="F-8a-1-act-1">
-							<caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
-							<image width="50%" source="images/8a_1_act_1" />
-						</figure>
-
-						What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
-					</p>		
-				</li>
-			</ol>
-		</p>
-		</statement>
-		<hint>
-			
-		</hint>
-		<answer>
-
-		<p>
-			<ol marker="a.">
-				<li>
-				<p>
-					<m>T_2''(x) = 2b_2</m>.
-				</p>
-				</li>
-				<li>
-					<p>
-						<m>f'(x) = f''(x)= e^x</m>.  
-					</p>
-				</li>
-				<li>
-					<p>
-						<table xml:id="T-act-8a-1-1-ans">
-						<title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m>.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2(x)=</m></cell>
-									<cell><m>b_0 + b_1 x + b_2 x^2</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2'(x)=</m></cell>
-									<cell><m>b_1 + 2b_2 x</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2''(x)=</m></cell>
-									<cell><m>2b_2</m></cell>
-								</row>
-								<row>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2(0)=</m></cell>
-									<cell><m>b_0</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2'(0)=</m></cell>
-									<cell><m>b_1</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2''(0)=</m></cell>
-									<cell><m>2b_2</m></cell>
-								</row>
-							</tabular>
-						</table>
-					</p>
-				</li>
-				<li>
-					<p>
+      </statement>
+      <hint/>
+      <answer>
+        <p>
 						See the bottom half of the table above.
 					</p>
-				</li>
-				<li>
-					<p>
-						<m>b_0 = 1</m>; <m>b_1 = 1</m>; <m>b_2 = \frac{1}{2}</m>.  So, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
-					</p>
-				</li>
-				<li>
-					<p>
-						<m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line; <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
-					</p>		
-				</li>
-			</ol>
-		</p>
-			
-		</answer>
-		<solution>
-
-		<p>
-			Let <m>f(x)=e^x</m> and <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>.  
-		</p>
-		<p>
-			<ol marker="a.">
-				<li>
-				<p>
-					<m>T_2''(x) = 2b_2</m>.
-				</p>
-				</li>
-				<li>
-					<p>
-						<m>f'(x) = f''(x)= e^x</m>.  
-					</p>
-				</li>
-				<li>
-					<p>
-						<table xml:id="T-act-8a-1-1-soln">
-						<title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m>.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2(x)=</m></cell>
-									<cell><m>b_0 + b_1 x + b_2 x^2</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2'(x)=</m></cell>
-									<cell><m>b_1 + 2b_2 x</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_2''(x)=</m></cell>
-									<cell><m>2b_2</m></cell>
-								</row>
-								<row>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2(0)=</m></cell>
-									<cell><m>b_0</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2'(0)=</m></cell>
-									<cell><m>b_1</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_2''(0)=</m></cell>
-									<cell><m>2b_2</m></cell>
-								</row>
-							</tabular>
-						</table>
-					</p>
-				</li>
-				<li>
-					<p>
+      </answer>
+      <solution>
+        <p>
 						See the bottom half of the table above.
 					</p>
-				</li>
-				<li>
-					<p>
-						The condition that <m>T_2(0) = f(0)</m> tells us <m>b_0 = 1</m>.  Reasoning similarly, <m>T_2'(0) = f'(0)</m> implies <m>b_1 = 1</m>, and <m>T_2''(0) = f''(0)</m> implies <m>2b_2 = 1</m>, so that <m>b_2 = \frac{1}{2}</m>.  Thus, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-4">
+      <statement>
+        <p>
+						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  What does <m>T_2(0) = f(0)</m> tell us about the value of <m>c_0</m>? What does <m>T_2'(0) = f'(0)</m> tell us about <m>c_1</m>? How can we also find <m>c_2</m>?  
 					</p>
-				</li>
-				<li>
-					<p>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>c_0 = 1</m>; <m>c_1 = 1</m>; <m>c_2 = \frac{1}{2}</m>.  So, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
+					</p>
+      </answer>
+      <solution>
+        <p>
+						The condition that <m>T_2(0) = f(0)</m> tells us <m>c_0 = 1</m>.  Reasoning similarly, <m>T_2'(0) = f'(0)</m> implies <m>c_1 = 1</m>, and <m>T_2''(0) = f''(0)</m> implies <m>2c_2 = 1</m>, so that <m>c_2 = \frac{1}{2}</m>.  Thus, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
+					</p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-1-task-5">
+      <statement>
+        <p>
+						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, and <m>c_2</m>, plot the function <m>T_2(x) = c_0 + c_1 x + c_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in <xref ref="F-8a-1-act-1">Figure</xref>.  What do you notice?  For about which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
+
+						<figure xml:id="F-8a-1-act-1"><caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption><image width="50%" source="images/8a_1_act_1"/></figure></p>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line; <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
+					</p>
+      </answer>
+      <solution>
+        <p>
 						Plotting the function <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in <xref ref="F-8a-1-act-1-soln">Figure</xref>, 
 
-						<figure xml:id="F-8a-1-act-1-soln">
-							<caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
-							<image width="50%" source="images/8a_1_act_1_soln" />
-						</figure>
+						<figure xml:id="F-8a-1-act-1-soln"><caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption><image width="50%" source="images/8a_1_act_1_soln"/></figure>
 						we notice that <m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line:  the quadratic approximation is closer to <m>e^x</m> for any value of <m>x</m>, and the approximation holds for a wider interval of values.  For instance, in <xref ref="PA-8a-1">Preview Activity</xref>, we found that <m>|f(x)-T_1(x)| \lt 0.1</m> for approximately <m>-0.5 \lt x \lt 0.4</m>. The quadratica approximation is much better:  we note that <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
-					</p>		
-				</li>
-			</ol>
-		</p>
-			
-		</solution>
-</activity>
-
+					</p>
+      </solution>
+    </task>
+    <hint/>
+  </activity>
+</worksheet>
