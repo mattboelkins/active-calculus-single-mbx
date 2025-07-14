@@ -19,12 +19,12 @@
     <ul>
       <li>
         <p>
-          Can we find higher degree polynomial approximations for functions other than <m>f(x) = e^x</m>?
+          For functions such as <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>\ln(1+x)</m> that, like <m>f(x) = e^x</m>, have <m>n</m> derivatives at <m>a = 0</m> for any choice of <m>n</m>, how can we use patterns in those derivatives to find a general formula for the degree <m>n</m> polynomial approximation to each?
         </p>
       </li>
       <li>  
         <p>
-          How are the coefficients of the polynomial approximation to a function <m>f(x)</m> near <m>a = 0</m> determined by the values of the various derivatives of <m>f</m>, evaluated at <m>a = 0</m>?
+          How are the coefficients of the polynomial approximation to a function <m>f(x)</m> near <m>a = 0</m> completely determined by the values of the various derivatives of <m>f</m>, evaluated at <m>a = 0</m>?
         </p>
       </li>
       <li>  
