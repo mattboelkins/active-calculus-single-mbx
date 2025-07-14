@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2019                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,4 +12,9 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-0-0" />
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-4-taylor-series">
+  <title>Taylor Series</title>
+    <xi:include href="./previews/PA-8a-4.xml"/>
+    <xi:include href="./activities/act-8a-4-1.xml"/>
+    <xi:include href="./activities/act-8a-4-2.xml"/>
+</section>

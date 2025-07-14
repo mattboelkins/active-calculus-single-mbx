@@ -35,7 +35,8 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       In our work in <xref ref="C-7">Chapter</xref>, we learned that the natural exponential function, <m>e^x</m>, plays a key role in the solution of several important types of differential equations.  In our more recent studies in <xref ref="C-8a">Chapter</xref>, we've learned that <m>e^x</m> can be represented as a Taylor series in the form
       <me>
@@ -54,7 +55,7 @@
 
   <xi:include href="./previews/PA-8a-6.xml" /> 
 
-  </introduction>  
+  </subsection>  
 
   <subsection>
     <title>Using power series to find solutions to initial value problems</title>

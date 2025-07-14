@@ -36,7 +36,8 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       In <xref ref="act-8a-1-2">Activity</xref>, we used <m>f(x) = e^x</m> as a case study to investigate polynomial approximations to <m>f(x)</m> near near <m>a = 0</m>.  For the degree <m>3</m> case, we chose the conditions <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  Starting with <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and <m>f(x) = e^x</m>, we found the first three derivatives of <m>f</m> and <m>T_3</m> and evaluated them at <m>a = 0</m>, which led to the results in <xref ref="T-8a-2-intro">Table</xref>.
 
@@ -105,7 +106,7 @@
     <xi:include href="./previews/PA-8a-2-WW.xml" />
     <xi:include href="./previews/PA-8a-2.xml" />
 
-  </introduction>  
+  </subsection>  
 
   <subsection>
     <title>Taylor polynomials</title>

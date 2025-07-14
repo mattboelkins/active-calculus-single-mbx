@@ -31,7 +31,8 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       So far, we have focused our attention on a collection of five basic functions functions <mdash/> <m>\frac{1}{1-x}</m>, <m>\ln(1+x)</m>, <m>\sin(x)</m>, <m>\cos(x)</m>, and <m>e^x</m> <mdash/> and their Taylor series centered at <m>a = 0</m>.  One of the reasons we were able to find these Taylor series is the patterns that arise in the derivatives of each of these functions.  While we can always use <xref ref="D-8a-4-Taylor-series">Definition</xref> to find the first few terms of the Taylor series, for most functions it is much morechallenging to find a pattern among the various derivatives that allows us to state the general <m>n</m>th term of the series.  
     </p>
@@ -43,7 +44,7 @@
   <xi:include href="./previews/PA-8a-5-WW.xml" /> 
   <xi:include href="./previews/PA-8a-5.xml" />
 
-  </introduction>  
+  </subsection>  
 
   <subsection>
     <title>Using substitution and algebra to find new Taylor series expressions</title>

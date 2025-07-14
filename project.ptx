@@ -11,7 +11,8 @@
       source="main.ptx" 
       xsl="acs-html.xsl" 
       publication="publication-proteus.ptx" 
-      platform="runestone" />
+      platform="runestone" 
+    />
     <target
       name="runestone"
       format="html"
@@ -38,20 +39,13 @@
       publication="publication-solutions-8a.ptx"
       xsl="acs-solution-manual.xsl" />
     <target
-      name="solutions-8a" 
-      format="pdf"
-      source="acs-solution-manual-8a.ptx"
-      publication="publication-solutions-8a.ptx"
-      latex-engine="xelatex"
-      xsl="acs-solution-manual.xsl" />
-    <target
       name="workbook14-latex"
       format="latex"
       source="acs-activity-workbook-14.xml" 
       publication="publication-workbook-14.ptx"
       xsl="acs-activity-workbook.xsl" />
     <target
-      name="workbook14"
+      name="workbook14-pdf"
       format="pdf"
       source="acs-activity-workbook-14.xml" 
       publication="publication-workbook-14.ptx"

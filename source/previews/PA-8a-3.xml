@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,23 +12,23 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-3" component="static">
-  <p>
+<worksheet label="ws-PA-8a-3">
+  <exploration xml:id="PA-8a-3" component="static">
+    <introduction>
+      <p>
     Let's explore sums of the form
     <me>
       S_n = 1 + \frac{1}{2} + \left( \frac{1}{2} \right)^2 + \left( \frac{1}{2} \right)^3 + \cdots + \left( \frac{1}{2} \right)^{n-1}
     </me>.
     Observe that we can think of the first term, <m>1</m>, as <m>(\frac{1}{2})^0</m>, and since the powers of <m>\frac{1}{2}</m> include every whole number from <m>0</m> to <m>n-1</m>, there are exactly <m>n</m> terms in the sum given by <m>S_n</m>.
   </p>
-
-
-  <p>
-    <ol marker="a.">
-      <li>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="PA-8a-3-task-0">
+      <statement>
         <p>
           Note that <m>S_1 = 1</m>, <m>S_2 = S_1 + \frac{1}{2} = 1 + \frac{1}{2} = \frac{3}{2}</m>, and <m>S_3 = S_2 + \frac{1}{4} = \frac{3}{2} + \frac{1}{4} = \frac{7}{4}</m>.  Using the fact that each subsequent value of <m>S_n</m> can be computed by adding one additional term to the preceding sum, complete <xref ref="T-8a-3-PA">Table</xref> with the exact (fractional) value of each sum.
-
+        </p>
           <table xml:id="T-8a-3-PA">
             <title>Values of <m>S_n</m> for increasing values of <m>n</m></title>
               <!-- top="minor" bottom="minor" -->
@@ -62,33 +62,54 @@
                   <cell halign="right"><m>S_7 = <fillin characters="3" /> </m></cell>
                 </row>
               </tabular>
-            </table>
-        </p>
-      </li>
-      <li>
+            </table>        
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-3-task-1">
+      <statement>
         <p>
           What do you expect will be the exact fractional value of <m>S_8</m>? <m>S_9</m>?
         </p>
-      </li>
-      <li>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-3-task-2">
+      <statement>
         <p>
           Conjecture a simple formula for <m>S_n</m> that is given by a single fraction where the numerator and/or denominator depend on <m>n</m>.
         </p>
-      </li>
-      <li>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-3-task-3">
+      <statement>
         <p>
           What happens to the value of <m>S_n</m> as <m>n \to \infty</m>?  Why?
         </p>
-      </li>
-      <li>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-3-task-4">
+      <statement>
         <p>
           How do the results change if we instead consider 
           <me>
             S_n = 1 + \frac{1}{4} + \left( \frac{1}{4} \right)^2 + \left( \frac{1}{4} \right)^3 + \cdots + \left( \frac{1}{4} \right)^{n-1}
           </me>?
         </p>
-      </li>
-    </ol>
-  </p>
-</exploration>
-
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+  </exploration>
+</worksheet>

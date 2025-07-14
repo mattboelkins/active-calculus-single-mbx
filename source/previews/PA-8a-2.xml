@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,15 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-2" component="static">
-  <p>
-    Let <m>f(x) = \sin(x)</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  We want to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and see how the resulting degree <m>3</m> approximation of the sine function compares to the tangent line approximation.
+<worksheet label="ws-PA-8a-2">
+  <exploration xml:id="PA-8a-2" component="static">
+    <introduction>
+      <p>
+    Let <m>f(x) = \sin(x)</m> and let <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  Our goal is to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and to study the resulting degree <m>3</m> approximation of the sine function.
   </p>
-
-  <p>
-    <ol marker="a.">
-      <li>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="PA-8a-2-task-0">
+      <statement>
         <p>
           As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a = 0</m> are those shown below.  
         </p>  
@@ -37,15 +38,24 @@
 							<mrow> f'(0) \amp= <fillin characters="3" /> \amp T_3'(0) \amp= c_1  </mrow>
 							<mrow> f''(0) \amp= <fillin characters="3" /> \amp T_3''(0) \amp= 2c_2 </mrow>
 							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= 6c_3 </mrow>
-						</md>          
-        </p>
-      </li>
-      <li>
+						</md> 
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-2-task-1">
+      <statement>
         <p>
           Now, set <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  What are the resulting values of <m>c_0, \ldots, c_3</m>?  What is the resulting formula for <m>T_3(x)</m>?
         </p>
-      </li>
-      <li>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-2-task-2">
+      <statement>
         <p>
           Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>.  Use appropriate computer technology to plot the cubic approximation <m>T_3(x)</m> you found in (b) along with <m>f(x)</m> and <m>T_1(x)</m> in the same window shown in <xref ref="F-8a-2-PA">Figure</xref>. 
         </p>
@@ -53,11 +63,23 @@
           <caption>The function <m>f(x)=\sin(x)</m> and its tangent line approximation  <m>T_1(x) = x</m> near the point <m>(0,f(0))</m>.</caption>
           <image width="50%" source="images/8a_2_PA" />
         </figure>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-2-task-3">
+      <statement>
         <p>
            What do you observe about the approximation of <m>f(x)</m> by <m>T_3(x)</m> compared to the approximation of <m>f(x)</m> by <m>T_1(x)</m>?  For example, how do <m>f(1) - T_1(1)</m> and <m>f(1) - T_3(1)</m> compare?
         </p>
-      </li>
-      <li>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <task workspace="3cm" xml:id="PA-8a-2-task-4">
+      <statement>
         <p>
           In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
         </p>
@@ -74,9 +96,10 @@
         <p>
           What pattern do you notice in the derivatives of <m>f(x)=\sin(x)</m>?
         </p>
-      </li>
-      
-    </ol>
-  </p>
-</exploration>
-
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+  </exploration>
+</worksheet>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2022                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,90 +12,24 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-5-1">
-  <statement>
-    <p>
+<worksheet label="ws-act-8a-5-1">
+  <activity xml:id="act-8a-5-1">
+    <introduction>
+      <p>
       Use known Taylor series and substitution and algebraic techniques to find a Taylor series representation for each of the following functions.  In addition, state the interval of <m>x</m>-values for which you expect each Taylor series to converge.
     </p>
-
-
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-            <m>g(x) = x^3 \sin(x^2)</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>h(x) = e^{-x^4}</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>p(x) = \frac{1}{1+5x}</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>q(x) = x^2\ln(1+x^4)</m>
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>r(x) = \frac{e^{3x}-1}{3x}</m>
-          </p>
-        </li>
-      </ol>
-    </p>
-  </statement>
-
-  <hint>
-    
-  </hint>
-
-  <answer>
-      <ol marker="a.">
-        <li>
-          <p>
-            <m>
-              g(x) = x^3 \sin(x^2) = x^5 - \frac{1}{3!}x^9 + \frac{1}{5!}x^{13} - \cdots
-            </m>; 
-            we expect this series to converge for all real numbers <m>x</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>
-              h(x) = e^{-x^4} = 1 - x^4 + \frac{1}{2!}x^8 - \frac{1}{3!}x^{12} + \cdots
-            </m>;
-            the series converges for all real numbers <m>x</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>
-              p(x) = \frac{1}{1+5x} = 1 - 5x + (-5x)^2 + (-5x)^3 + \cdots = 1 - 5x + 5^2x^2 - 5^3x^3 + \cdots
-            </m>;
-            the series converges for all <m>x</m> such that <m>-\frac{1}{5} \lt x \lt \frac{1}{5}</m>.
-          </p>
-        </li>
-        <li>
-          <p>
-            <m>
-              q(x) = x^2 \ln(1+x^4) = x^6 - \frac{1}{2}x^{10} + \frac{1}{3}x^{14} - \cdots
-            </m>;
-            the series converges when <m>|x| \lt 1</m>.  
-          </p>
-        </li>
-      </ol>    
-  </answer>
-
-  <solution>
-       <p>
-      <ol marker="a.">
-        <li>
-          <p>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="act-8a-5-1-task-0">
+      <statement>
+        <p>
+          <m>g(x) = x^3 \sin(x^2)</m>
+        </p>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution>
+        <p>
             To find the Taylor series for <m>g(x) = x^3 \sin(x^2)</m>, we start with <m>f(x) = \sin(x)</m> and view <m>g(x) = x^3 f(x^2)</m>.  Thus, since 
             <me>
               f(x) = \sin(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots
@@ -110,9 +44,18 @@
             </me>.
             We expect this series to converge for all <m>x</m> since the original series for <m>\sin(x)</m> converges for every <m>x</m>.
           </p>
-        </li>
-        <li>
-          <p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-5-1-task-1">
+      <statement>
+        <p>
+          <m>h(x) = e^{-x^4}</m>
+        </p>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution>
+        <p>
             For <m>h(x) = e^{-x^4}</m>, we start with the series for <m>f(x) = e^x</m> and then substitute <m>-x^2</m> for <m>x</m>.  Doing so,
             <me>
               f(x) = e^x = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots
@@ -123,9 +66,18 @@
             </me>.
             Since the series for <m>e^x</m> converges for all real numbers <m>x</m>, the same will be true when we replace <m>x</m> with <m>-x^2</m>.
           </p>
-        </li>
-        <li>
-          <p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-5-1-task-2">
+      <statement>
+        <p>
+          <m>p(x) = \frac{1}{1+5x}</m>
+        </p>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution>
+        <p>
             Since <m>p(x) = \frac{1}{1+5x}</m> has the same structure as <m>f(x) = \frac{1}{1-x}</m>, we start with the series for <m>f(x)</m>, which converges for <m>-1 \lt x \lt 1</m>.  We will then replace <m>x</m> with <m>-5x</m> since <m>p(x) = f(-5x)</m>.  In particular, since
             <me>
               f(x) = \frac{1}{1-x} = 1 + x + x^2 + x^3 + \cdots
@@ -136,9 +88,18 @@
             </me>
             The series for <m>p(x)</m> is geometric with <m>a = 1</m> and <m>r = -5x</m>, so it converges whenever <m>|-5x| \lt 1</m>, so for all <m>x</m> such that <m>-\frac{1}{5} \lt x \lt \frac{1}{5}</m>.
           </p>
-        </li>
-        <li>
-          <p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-5-1-task-3">
+      <statement>
+        <p>
+          <m>q(x) = x^2\ln(1+x^4)</m>
+        </p>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution>
+        <p>
             For <m>q(x) = x^2 \ln(1+x^4)</m>, we start with the series for <m>f(x) = \ln(1+x)</m> and replace <m>x</m> by <m>x^4</m>.  In particular, since
             <me>
               f(x) = \ln(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots
@@ -153,10 +114,50 @@
             </me>.
             For the series for <m>f(x^4)</m> to converge, we need <m>|x^4| \lt 1</m> since the original series for <m>f(x)</m> converges for <m>|x| \lt 1</m>.  Note that <m>|x^4| \lt 1</m> precisely when <m>|x| \lt 1</m>.  Multiplying by <m>x^2</m> does not affect the values of <m>x</m> for which the series converges.
           </p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-5-1-task-4">
+      <statement>
+        <p>
+          <m>r(x) = \frac{e^{3x}-1}{3x}</m>
+        </p>
+      </statement>
+      <hint/>
+      <answer/>
+      <solution/>
+    </task>
+    <hint/>
+    <answer>
+      <ol marker="a.">
+        <li>
+          <p><m>
+              g(x) = x^3 \sin(x^2) = x^5 - \frac{1}{3!}x^9 + \frac{1}{5!}x^{13} - \cdots
+            </m>; 
+            we expect this series to converge for all real numbers <m>x</m>.
+          </p>
+        </li>
+        <li>
+          <p><m>
+              h(x) = e^{-x^4} = 1 - x^4 + \frac{1}{2!}x^8 - \frac{1}{3!}x^{12} + \cdots
+            </m>;
+            the series converges for all real numbers <m>x</m>.
+          </p>
+        </li>
+        <li>
+          <p><m>
+              p(x) = \frac{1}{1+5x} = 1 - 5x + (-5x)^2 + (-5x)^3 + \cdots = 1 - 5x + 5^2x^2 - 5^3x^3 + \cdots
+            </m>;
+            the series converges for all <m>x</m> such that <m>-\frac{1}{5} \lt x \lt \frac{1}{5}</m>.
+          </p>
+        </li>
+        <li>
+          <p><m>
+              q(x) = x^2 \ln(1+x^4) = x^6 - \frac{1}{2}x^{10} + \frac{1}{3}x^{14} - \cdots
+            </m>;
+            the series converges when <m>|x| \lt 1</m>.  
+          </p>
         </li>
       </ol>
-    </p> 
-  </solution>
-
-</activity>
-
+    </answer>
+  </activity>
+</worksheet>

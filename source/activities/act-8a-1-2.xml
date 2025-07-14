@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,15 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-8a-1-2">
-	<statement>
-		<p>
-			Let <m>f(x)=e^x</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m>.  
+<worksheet label="ws-act-8a-1-2">
+  <activity xml:id="act-8a-1-2">
+    <introduction>
+      <p>
+			Let <m>f(x)=e^x</m> and <m>T_3(x) = k_0 + k_1 x + k_2 x^2 + k_3 x^3</m>.  
 		</p>
-		<p>
-			<ol marker="a.">
-				<li>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="act-8a-1-2-task-0">
+      <statement>
 					<p>
 						By computing the third derivative of <m>f(x)</m> and the second and third derivatives of <m>T_3(x)</m> and evaluating the relevant functions at <m>x = 0</m>, fill in the blanks below.
 
@@ -36,14 +37,283 @@
 							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= <fillin characters="3" /> </mrow>
 						</md>
 					</p>
-				</li>
-				<li>
+      </statement>
+      <hint/>
+      <answer>
+        <p>
+          <table xml:id="T-act-8a-1-2-ans">
+            <title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
+            <tabular top="none" bottom="none">
+              <row>
+                <cell halign="right">
+                  <m>f(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3(x)=</m>
+                </cell>
+                <cell>
+                  <m>k_0 + k_1 x + k_2 x^2 + k_3 x^3</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'(x)=</m>
+                </cell>
+                <cell>
+                  <m>k_1 + 2 k_2 x + 3 k_3 x^2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3''(x)=</m>
+                </cell>
+                <cell>
+                  <m>2 k_2 + 3 \cdot 2 k_3 x</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'''(x)=</m>
+                </cell>
+                <cell>
+                  <m>3 \cdot 2 k_3</m>
+                </cell>
+              </row>
+              <row>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3(0)=</m>
+                </cell>
+                <cell>
+                  <m>k_0</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'(0)=</m>
+                </cell>
+                <cell>
+                  <m>k_1</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3''(0)=</m>
+                </cell>
+                <cell>
+                  <m>2k_2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'''(0)=</m>
+                </cell>
+                <cell>
+                  <m>6k_3</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </answer>
+      <solution>
+        <p>
+          <table xml:id="T-act-8a-1-2-soln">
+            <title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
+            <tabular top="none" bottom="none">
+              <row>
+                <cell halign="right">
+                  <m>f(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3(x)=</m>
+                </cell>
+                <cell>
+                  <m>k_0 + k_1 x + k_2 x^2 + k_3 x^3</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'(x)=</m>
+                </cell>
+                <cell>
+                  <m>k_1 + 2 k_2 x + 3 k_3 x^2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3''(x)=</m>
+                </cell>
+                <cell>
+                  <m>2 k_2 + 3 \cdot 2 k_3 x</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'''(x)=</m>
+                </cell>
+                <cell>
+                  <m>e^x</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'''(x)=</m>
+                </cell>
+                <cell>
+                  <m>3 \cdot 2 k_3</m>
+                </cell>
+              </row>
+              <row>
+                <cell/>
+                <cell/>
+                <cell/>
+                <cell/>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3(0)=</m>
+                </cell>
+                <cell>
+                  <m>k_0</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'(0)=</m>
+                </cell>
+                <cell>
+                  <m>k_1</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3''(0)=</m>
+                </cell>
+                <cell>
+                  <m>2k_2</m>
+                </cell>
+              </row>
+              <row>
+                <cell halign="right">
+                  <m>f'''(0)=</m>
+                </cell>
+                <cell>
+                  <m>1</m>
+                </cell>
+                <cell halign="right">
+                  <m>T_3'''(0)=</m>
+                </cell>
+                <cell>
+                  <m>6k_3</m>
+                </cell>
+              </row>
+            </tabular>
+          </table>
+        </p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-2-task-1">
+      <statement>
 					<p>
 						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  Use the four equations your work in the preceding question to determine the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>.
 
 					</p>
-				</li>
-				<li>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>k_0 = 1</m>; <m>k_1 = 1</m>; <m>k_2 = \frac{1}{2}</m>; <m>k_3 = \frac{1}{6}</m>.
+					</p>
+      </answer>
+      <solution>
+        <p>
+						Since <m>T_3(0) = f(0)</m>, this means <m>k_0 = 1</m>.  Next, <m>T_3'(0) = f'(0)</m> tells us that <m>k_1 = 1</m>.  Using <m>T_3''(0) = f''(0)</m>, <m>2k_2 = 1</m> so that <m>k_2 = \frac{1}{2}</m>.  And finally, the last condition is <m>T_3'''(0) = f'''(0)</m>, which implies that <m>6k_3 = 1</m>, so <m>k_3 = \frac{1}{6}</m>.
+					</p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-2-task-2">
+      <statement>
 					<p>
 						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>, use appropriate comptuational technology to plot the function <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in the same window as shown in <xref ref="F-8a-1-act-2">Figure</xref>.  
 
@@ -53,204 +323,41 @@
 						</figure>
 
 						What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
-					</p>		
-				</li>
-				<li>
+					</p>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>T_3(x)</m> appears to be an even better approximation than <m>T_2(x)</m> near <m>a = 0</m> and that the quality of the approximation extends further; <m>|f(x)-T_3(x)| \lt 0.1</m> for approximately <m>-1.3 \lt x \lt 1.1</m>.  
+					</p>
+      </answer>
+      <solution>
+        <p>
+						We notice that <m>T_3(x)</m> appears to be an even better approximation than <m>T_2(x)</m> near <m>a = 0</m> and that the quality of the approximation extends further.  
+						<figure xml:id="F-8a-1-act-2-soln"><caption>The function <m>f(x)=e^x</m>, its tangent line <m>T_1(x)=1+x</m>, the quadratic approximation <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m>, and the cubic approximation <m>T_3(x)</m> near the point <m>(0,f(0))</m>.</caption><image width="50%" source="images/8a_1_act_2_soln"/></figure>
+						We can see the better approximation by <m>T_3(x)</m> in the figure, and if we do some computations, we can see that for certain <m>x</m> near <m>a = 0</m>, <m>T_3(x)</m> is closer to <m>e^x</m> than <m>T_2(x)</m> and that the set of <m>x</m>-values for which <m>|f(x)-T_3(x)| \lt 0.1</m> is wider than for which <m>|f(x)-T_2(x)| \lt 0.1</m>.  We found in <xref ref="act-8a-1-1">Activity</xref> that <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>; here, <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-1.3 \lt x \lt 1.1</m>.  
+					</p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-8a-1-2-task-3">
+      <statement>
 					<p>
 						What if we wanted a degree-<m>4</m> polynomial approximation to <m>f(x) = e^x</m> near <m>a = 0</m>?  Based on the patterns you've observed in <m>T_1</m>, <m>T_2</m>, and <m>T_3</m>, conjecture values for the constants <m>d_0, \ldots, d_4</m> for a function <m>T_4</m> of the form
 						<me>T_4(x) = d_0 + d_1 x + d_2 x^2 + d_3 x^3 + d_4 x^4</me>
 						that satisfies <m>T_4(0) = f(0)</m>, <m>T_4'(0) = f'(0)</m>, <m>\ldots</m>, <m>T_4^{(4)}(0) = f^{(4)}(0)</m>.  Add this function <m>T_4</m> to your plot in part (c) that includes <m>f(x)</m> and the lower-degree polynomial approximations.  What do you notice?
 					</p>
-				</li>
-			</ol>
-		</p>
-		</statement>
-		<hint>
-			
-		</hint>
-
-		<answer>
-		<p>
-			<ol marker="a.">
-				<li>
-					<p>
-						<table xml:id="T-act-8a-1-2-ans">
-						<title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3(x)=</m></cell>
-									<cell><m>c_0 + c_1 x + c_2 x^2 + c_3 x^3</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'(x)=</m></cell>
-									<cell><m>c_1 + 2 c_2 x + 3 c_3 x^2</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3''(x)=</m></cell>
-									<cell><m>2 c_2 + 3 \cdot 2 c_3 x</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'''(x)=</m></cell>
-									<cell><m>3 \cdot 2 c_3</m></cell>
-								</row>
-
-								<row>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3(0)=</m></cell>
-									<cell><m>c_0</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'(0)=</m></cell>
-									<cell><m>c_1</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3''(0)=</m></cell>
-									<cell><m>2c_2</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'''(0)=</m></cell>
-									<cell><m>6c_3</m></cell>
-								</row>
-							</tabular>
-						</table>
+      </statement>
+      <hint/>
+      <answer>
+        <p><m>T_4(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6} x^3 + \frac{1}{24}x^4</m>; <m>T_4(x)</m> is an even better approximation to <m>f(x) = e^x</m> and on a still wider interval.
 					</p>
-				</li>
-				<li>
-					<p>
-						<m>c_0 = 1</m>; <m>c_1 = 1</m>; <m>c_2 = \frac{1}{2}</m>; <m>c_3 = \frac{1}{6}</m>.
-					</p>
-				</li>
-				<li>
-					<p>
-						<m>T_3(x)</m> appears to be an even better approximation than <m>T_2(x)</m> near <m>a = 0</m> and that the quality of the approximation extends further; <m>|f(x)-T_3(x)| \lt 0.1</m> for approximately <m>-1.3 \lt x \lt 1.1</m>.  
-					</p>		
-				</li>
-				<li>
-					<p>
-						<m>T_4(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6} x^3 + \frac{1}{24}x^4</m>; <m>T_4(x)</m> is an even better approximation to <m>f(x) = e^x</m> and on a still wider interval.
-					</p>
-				</li>
-			</ol>
-		</p>			
-		</answer>
-
-		<solution>
-
-		<p>
-			Let <m>f(x)=e^x</m> and <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m>.  
-		</p>
-		<p>
-			<ol marker="a.">
-				<li>
-					<p>
-						<table xml:id="T-act-8a-1-2-soln">
-						<title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
-							<tabular top="none" bottom="none">
-								<row>
-									<cell halign="right"><m>f(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3(x)=</m></cell>
-									<cell><m>c_0 + c_1 x + c_2 x^2 + c_3 x^3</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'(x)=</m></cell>
-									<cell><m>c_1 + 2 c_2 x + 3 c_3 x^2</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3''(x)=</m></cell>
-									<cell><m>2 c_2 + 3 \cdot 2 c_3 x</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(x)=</m></cell>
-									<cell><m>e^x</m></cell>
-									<cell halign="right"><m>T_3'''(x)=</m></cell>
-									<cell><m>3 \cdot 2 c_3</m></cell>
-								</row>
-
-								<row>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-									<cell></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3(0)=</m></cell>
-									<cell><m>c_0</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'(0)=</m></cell>
-									<cell><m>c_1</m></cell>
-								</row>                
-								<row>
-									<cell halign="right"><m>f''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3''(0)=</m></cell>
-									<cell><m>2c_2</m></cell>
-								</row>
-								<row>
-									<cell halign="right"><m>f'''(0)=</m></cell>
-									<cell><m>1</m></cell>
-									<cell halign="right"><m>T_3'''(0)=</m></cell>
-									<cell><m>6c_3</m></cell>
-								</row>
-							</tabular>
-						</table>
-					</p>
-				</li>
-				<li>
-					<p>
-						Since <m>T_3(0) = f(0)</m>, this means <m>c_0 = 1</m>.  Next, <m>T_3'(0) = f'(0)</m> tells us that <m>c_1 = 1</m>.  Using <m>T_3''(0) = f''(0)</m>, <m>2c_2 = 1</m> so that <m>c_2 = \frac{1}{2}</m>.  And finally, the last condition is <m>T_3'''(0) = f'''(0)</m>, which implies that <m>6c_3 = 1</m>, so <m>c_3 = \frac{1}{6}</m>.
-					</p>
-				</li>
-				<li>
-					<p>
-						We notice that <m>T_3(x)</m> appears to be an even better approximation than <m>T_2(x)</m> near <m>a = 0</m> and that the quality of the approximation extends further.  
-						<figure xml:id="F-8a-1-act-2-soln">
-							<caption>The function <m>f(x)=e^x</m>, its tangent line <m>T_1(x)=1+x</m>, the quadratic approximation <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m>, and the cubic approximation <m>T_3(x)</m> near the point <m>(0,f(0))</m>.</caption>
-							<image width="50%" source="images/8a_1_act_2_soln" />
-						</figure>
-						We can see the better approximation by <m>T_3(x)</m> in the figure, and if we do some computations, we can see that for certain <m>x</m> near <m>a = 0</m>, <m>T_3(x)</m> is closer to <m>e^x</m> than <m>T_2(x)</m> and that the set of <m>x</m>-values for which <m>|f(x)-T_3(x)| \lt 0.1</m> is wider than for which <m>|f(x)-T_2(x)| \lt 0.1</m>.  We found in <xref ref="act-8a-1-1">Activity</xref> that <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>; here, <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-1.3 \lt x \lt 1.1</m>.  
-					</p>		
-				</li>
-				<li>
-					<p>
-						<m>T_4(x)</m> involves the term <m>w_4 x^4</m>.  When we differentiate this function <m>4</m> times, we get <m>4 \cdot 3 \cdot 2 \cdot 1 w_4</m>.  Since <m>f^{(4)}(x) = e^x</m>, <m>f^{(4)}(0) = 1</m>, so <m>4 \cdot 3 \cdot 2 \cdot 1 w_4 = 1</m> and therefore <m>w_4 = \frac{1}{24}</m>.  This means that 
+      </answer>
+      <solution>
+        <p><m>T_4(x)</m> involves the term <m>w_4 x^4</m>.  When we differentiate this function <m>4</m> times, we get <m>4 \cdot 3 \cdot 2 \cdot 1 w_4</m>.  Since <m>f^{(4)}(x) = e^x</m>, <m>f^{(4)}(0) = 1</m>, so <m>4 \cdot 3 \cdot 2 \cdot 1 w_4 = 1</m> and therefore <m>w_4 = \frac{1}{24}</m>.  This means that 
 						<me>T_4(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6} x^3 + \frac{1}{24}x^4</me>.
 						Plotting <m>T_4(x)</m> along with the earlier approximations we see that <m>T_4(x)</m> is an even better approximation to <m>f(x) = e^x</m> and on a still wider interval.
 					</p>
-				</li>
-			</ol>
-		</p>
-			
-		</solution>
-</activity>
-
+      </solution>
+    </task>
+    <hint/>
+  </activity>
+</worksheet>

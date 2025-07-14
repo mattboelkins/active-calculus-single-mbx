@@ -53,7 +53,7 @@
 		\DeclareMathOperator{\arctanh}{arctanh}
                 \DeclareMathOperator{\arcsec}{arcsec}
   </macros>
-  <cross-references text="global" />
+  <cross-references text="type-global" />
   <initialism>AC</initialism>
 
   <document-id component="runestone" edition="2">ac-single</document-id>
@@ -64,6 +64,9 @@
   <rename element="exploration" xml:lang="en-US">Preview Activity</rename>
 
   <rename element="objectives" xml:lang="en-US">Motivating Questions</rename>
+  <!-- PreTeXt doesn't like renaming to whitespace, so using U+3164 (Hangul Filler) -->
+  <!-- here inside the rename element. -->
+  <rename element="worksheet" xml:lang="en-US"> </rename>
   <rename element="inlineexercise" xml:lang="en-US">Question</rename>
 </docinfo>
 

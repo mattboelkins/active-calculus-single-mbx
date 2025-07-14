@@ -1,10 +1,11 @@
 <publication>
   <source webwork-problems="../generated-assets/webwork/webwork-representations.xml">
-    <version include="production"/>
+    <version include="production static ed2"/>
     <directories external="../assets" generated="../generated-assets"
 		 />
   </source>
   <latex sides="two" print="yes" font-size="10" pageref="no">
+    <cover front="images/act-wkbk-cover-2018u-58.pdf" />
     <page>
       <geometry>letterpaper,tmargin=.5in,bmargin=.3in,hmargin=.75in,includeheadfoot</geometry>
     </page>
@@ -15,13 +16,13 @@
     <exercise-divisional statement="no" hint="no" answer="no" solution="no"/>
     <exercise-project statement="yes" hint="no" answer="no" solution="no" />
     <exercise-reading statement="no" hint="no" answer="no" solution="no"/>
-
+    <exercise-worksheet statement="yes" hint="no" answer="no" solution="no" />
   </common>
   <numbering>
-    <divisions chapter-start="5" />
+    <divisions level="2" chapter-start="5" />
   </numbering>
   <webwork server="https://webwork-dev.uleth.ca"
-  course="chrissy-playground" userpassword="anonymous"
+  course="chrissy-playground" password="anonymous"
   user="anonymous"
   task-reveal="all"
 />

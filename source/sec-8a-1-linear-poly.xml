@@ -38,7 +38,9 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
+    
     <p>
       Early in our study of calculus in <xref ref="sec-1-8-tan-line-approx">Section</xref>, we learned that if a function <m>f</m> has a derivative at a fixed value <m>x=a</m>, when we zoom in on its graph near <m>(a,f(a))</m>, the function looks linear.  Indeed, such a function is differentiable, and we know that near a fixed input value <m>a</m>, 
       <me>
@@ -53,7 +55,7 @@
 
     <xi:include href="./previews/PA-8a-1-WW.xml" />
     <xi:include href="./previews/PA-8a-1.xml" />
-  </introduction>
+  </subsection>
 
   <subsection>
     <title>Finding a quadratic approximation</title>

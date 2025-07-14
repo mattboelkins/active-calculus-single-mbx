@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<exercises component="proteus" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="proteus-3-3">
+<title>PROTEUS exercises</title>
+
+<exercise component="proteus" label="proteus-local-global"  xml:id="proteus-local-global" attachment="yes">
+  <statement>
+    <p>
+        For each of the following prompts, sketch a graph of a function that has the stated combination of properties, or explain why such a combination is impossible.
+    </p>
+    <ol>
+        <li>
+            <p>
+                One relative maximum and one relative minimum
+            </p>
+        </li>
+        <li>
+            <p>
+                One relative maximum but no global maximum
+            </p>
+        </li>
+        <li>
+            <p>
+                One global minimum but no relative minimum
+            </p>
+        </li>
+        <li>
+            <p>
+                Two relative maxima but no relative minimum
+            </p>
+        </li>
+        <li>
+            <p>
+                Two relative maxima but no global minimum
+            </p>
+        </li>
+    </ol>
+  </statement>  
+  <response /> 
+</exercise>
+
+</exercises>

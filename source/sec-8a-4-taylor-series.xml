@@ -36,7 +36,8 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       In <xref ref="act-8a-3-3">Activity</xref>, we investigated several Taylor polynomials centered at <m>0</m> for the function <m>f(x) = \frac{1}{1-x}</m> and found that 
       <me>
@@ -60,7 +61,7 @@
     <xi:include href="./previews/PA-8a-4-WW.xml" /> 
     <xi:include href="./previews/PA-8a-4.xml" />
 
-  </introduction>  
+  </subsection>  
 
   <subsection>
     <title>Taylor series and the Ratio Test</title>

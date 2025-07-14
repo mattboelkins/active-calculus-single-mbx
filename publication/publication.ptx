@@ -3,7 +3,7 @@
     <directories external="../assets" generated="../generated-assets-ed1" />
     <version include="ed1 production static" />
   </source>
-  <html>
+  <html favicon="simple">
     <css theme="default-modern" palette="blues" />
     <!-- Examples and exercises are knowlized by default -->
     <!-- We disable this behavior  -->
@@ -21,6 +21,7 @@
     <exercise-divisional statement="yes" hint="no" answer="no" solution="no"/>
     <exercise-inline statement="yes" hint="yes" answer="no" solution="no"/>
     <exercise-project statement="yes" hint="no" answer="no" solution="no" />
+    <exercise-worksheet statement="yes" hint="no" answer="no" solution="no" />
   </common>
   <webwork server="https://webwork-dev.uleth.ca"
            course="chrissy-playground" userpassword="anonymous"

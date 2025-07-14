@@ -13,6 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude" permid="yaN">
+  <xi:include href="./bibinfo.xml" />
   <xi:include href="./titlepage.xml" />
   <xi:include href="./colophon.xml" />
 
