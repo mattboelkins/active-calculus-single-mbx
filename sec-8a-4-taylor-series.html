@@ -1369,7 +1369,7 @@ T_f(x) =\mathstrut \amp \sum_{k=0}^{\infty} \frac{f^{(k)}(a)}{k!}(x-a)^k\\
 <div class="autopermalink" data-description="Definition 8.4.1"><a href="#D-8a-4-Taylor-series" title="Copy heading and permalink for Definition 8.4.1">🔗</a></div></article><div class="para" id="sec-8a-4-taylor-series-4-5">In the special case where <span class="process-math">\(a=0\)</span> in <a href="sec-8a-4-taylor-series.html#D-8a-4-Taylor-series" class="xref" data-knowl="./knowl/xref/D-8a-4-Taylor-series.html" data-reveal-label="Reveal" data-close-label="Close" title="Definition 8.4.1">Definition 8.4.1</a>, the Taylor series is also sometimes called the <dfn class="terminology">Maclaurin series</dfn>  for <span class="process-math">\(f\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para logical" id="sec-8a-4-taylor-series-4-6">
-<div class="para">From <a href="sec-8a-3-geometric.html#act-8a-3-3" class="xref" data-knowl="./knowl/xref/act-8a-3-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.3.4">Activity 8.3.4</a>, we know the <span class="process-math">\(n\)</span>th order Taylor polynomial centered at <span class="process-math">\(0\)</span> for the function <span class="process-math">\(f(x) = \frac{1}{1-x}\)</span> is</div>
+<div class="para">From <a href="sec-8a-3-geometric.html#act-8a-3-3" class="xref" data-knowl="./knowl/xref/act-8a-3-3.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.3.4">Activity 8.3.4</a>, we know the degree <span class="process-math">\(n\)</span> Taylor polynomial centered at <span class="process-math">\(0\)</span> for the function <span class="process-math">\(f(x) = \frac{1}{1-x}\)</span> is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-8a-3-3.html ./knowl/xref/Eq-8a-4-f-equals-Tf.html">
 \begin{equation*}
 T_n(x) = 1 + x + x^2 + \cdots + x^n\text{,}
@@ -1495,11 +1495,13 @@ f(-0.9) - T_{10}(-0.9) \approx -0.183837, f(-0.9) - T_{20}(-0.9) \approx -0.0325
 \ln(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots
 \end{equation*}
 </div>
-<div class="para">for <span class="process-math">\(x\)</span>-values that satisfy <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span>  This result is analogous to <a href="sec-8a-4-taylor-series.html#Eq-8a-4-f-equals-Tf" class="xref" data-knowl="./knowl/xref/Eq-8a-4-f-equals-Tf.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.1">Equation (8.4.1)</a>, but is different in the sense that the Taylor series for <span class="process-math">\(\ln(1+x)\)</span> is not geometric.  We next introduce a more formal way to test “how geometric” a Taylor series is in an effort to understand where the Taylor series is guaranteed to converge.</div>
+<div class="para">for <span class="process-math">\(x\)</span>-values that satisfy <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span>  This result is analogous to <a href="sec-8a-4-taylor-series.html#Eq-8a-4-f-equals-Tf" class="xref" data-knowl="./knowl/xref/Eq-8a-4-f-equals-Tf.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.1">Equation (8.4.1)</a>, but is different in the sense that the Taylor series for <span class="process-math">\(\ln(1+x)\)</span> is not geometric.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-14" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<article class="assemblage assemblage-like" id="sec-8a-4-taylor-series-4-15"><h4 class="heading"><span class="title">The Ratio Test.</span></h4>
-<div class="para logical" id="sec-8a-4-taylor-series-4-15-2">
+<div class="para" id="sec-8a-4-taylor-series-4-15">We next introduce a more formal way to test “how geometric” a Taylor series is in an effort to understand where the Taylor series is guaranteed to converge.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-15" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<article class="assemblage assemblage-like" id="sec-8a-4-taylor-series-4-16"><h4 class="heading"><span class="title">The Ratio Test.</span></h4>
+<div class="para logical" id="sec-8a-4-taylor-series-4-16-2">
 <div class="para">Consider an infinite series of the form <span class="process-math">\(T(x) = \sum_{k=0}^{\infty} c_k (x-a)^k\text{,}\)</span> where <span class="process-math">\(a\)</span> is any real number.  Let <span class="process-math">\(r_n(x) = \frac{c_{n+1} (x-a)^{n+1}}{c_n (x-a)^n}\)</span> and</div>
 <div class="displaymath process-math" id="E-8a-4-ratio-test-limit">
 \begin{equation}
@@ -1507,28 +1509,28 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} \frac{c_{n+1} (x-a)^{n+1
 \end{equation}
 </div>
 <div class="para">Then,</div>
-<ul class="disc" id="sec-8a-4-taylor-series-4-15-2-5">
-<li id="sec-8a-4-taylor-series-4-15-2-5-1">
-<div class="para" id="sec-8a-4-taylor-series-4-15-2-5-1-1">for any real number <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| \lt 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> converges;<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-15-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<ul class="disc" id="sec-8a-4-taylor-series-4-16-2-5">
+<li id="sec-8a-4-taylor-series-4-16-2-5-1">
+<div class="para" id="sec-8a-4-taylor-series-4-16-2-5-1-1">for any real number <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| \lt 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> converges;<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-16-2-5-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-15-2-5-1" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-16-2-5-1" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-8a-4-taylor-series-4-15-2-5-2">
-<div class="para" id="sec-8a-4-taylor-series-4-15-2-5-2-1">for any real number <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| \gt 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> does not converge;<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-15-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-8a-4-taylor-series-4-16-2-5-2">
+<div class="para" id="sec-8a-4-taylor-series-4-16-2-5-2-1">for any real number <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| \gt 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> does not converge;<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-16-2-5-2-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-15-2-5-2" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-16-2-5-2" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
-<li id="sec-8a-4-taylor-series-4-15-2-5-3">
-<div class="para" id="sec-8a-4-taylor-series-4-15-2-5-3-1">and for any <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| = 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> may or may not converge.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-15-2-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="sec-8a-4-taylor-series-4-16-2-5-3">
+<div class="para" id="sec-8a-4-taylor-series-4-16-2-5-3-1">and for any <span class="process-math">\(x\)</span> such that <span class="process-math">\(|r(x)| = 1\text{,}\)</span> the series <span class="process-math">\(T(x)\)</span> may or may not converge.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-16-2-5-3-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-15-2-5-3" title="Copy heading and permalink for Item">🔗</a></div>
+<div class="autopermalink" data-description="Item"><a href="#sec-8a-4-taylor-series-4-16-2-5-3" title="Copy heading and permalink for Item">🔗</a></div>
 </li>
 </ul>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-15-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-16-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Assemblage: The Ratio Test"><a href="#sec-8a-4-taylor-series-4-15" title="Copy heading and permalink for Assemblage: The Ratio Test">🔗</a></div></article><div class="para" id="sec-8a-4-taylor-series-4-16">In essence, the Ratio Test is a way to find <span class="process-math">\(x\)</span> values for which <span class="process-math">\(T(x)\)</span> behaves like a geometric series with ratio <span class="process-math">\(r(x)\)</span> such that <span class="process-math">\(|r(x)| \lt 1\text{;}\)</span> for those <span class="process-math">\(x\)</span>-values, the infinite series converges to a finite value.  There is a subtle issue that arises for <span class="process-math">\(x\)</span>-values for which <span class="process-math">\(|r(x)| = 1\text{:}\)</span> it’s possible for the infinite series to either converge or diverge at such <span class="process-math">\(x\)</span>-values, but we will normally not concern ourselves with this issue.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-16" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Assemblage: The Ratio Test"><a href="#sec-8a-4-taylor-series-4-16" title="Copy heading and permalink for Assemblage: The Ratio Test">🔗</a></div></article><div class="para" id="sec-8a-4-taylor-series-4-17">In essence, the Ratio Test is a way to find <span class="process-math">\(x\)</span> values for which <span class="process-math">\(T(x)\)</span> behaves like a geometric series with ratio <span class="process-math">\(r(x)\)</span> such that <span class="process-math">\(|r(x)| \lt 1\text{;}\)</span> for those <span class="process-math">\(x\)</span>-values, the infinite series converges to a finite value.  There is a subtle issue that arises for <span class="process-math">\(x\)</span>-values for which <span class="process-math">\(|r(x)| = 1\text{:}\)</span> it’s possible for the infinite series to either converge or diverge at such <span class="process-math">\(x\)</span>-values, but we will normally not concern ourselves with this issue.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-17" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-8a-4-taylor-series-4-17">
+<div class="para logical" id="sec-8a-4-taylor-series-4-18">
 <div class="para">Note that we can simplify the result in <a href="sec-8a-4-taylor-series.html#E-8a-4-ratio-test-limit" class="xref" data-knowl="./knowl/xref/E-8a-4-ratio-test-limit.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.2">Equation (8.4.2)</a> further.  By writing</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/E-8a-4-ratio-test-limit.html">
 \begin{equation*}
@@ -1554,9 +1556,9 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} \frac{c_{n+1} (x-a)^{n+1
 \end{equation*}
 </div>
 <div class="para">We call <span class="process-math">\(R\)</span> the <dfn class="terminology">radius of convergence</dfn> and say that the set of all <span class="process-math">\(x\)</span>-values such that <span class="process-math">\(|x - a| \lt R\)</span> is the <dfn class="terminology">open interval of convergence</dfn>.  Again, it is possible that the Taylor series may either converge or diverge when <span class="process-math">\(|x - a| = R\text{,}\)</span> but we will normally not concern ourself with this issue at the endpoints.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-17" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-18" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para logical" id="sec-8a-4-taylor-series-4-18">
+<div class="para logical" id="sec-8a-4-taylor-series-4-19">
 <div class="para">In light of the formal statement of the Ratio Test, we now see that in our initial investigation of the Taylor series for <span class="process-math">\(f(x) = \ln(1+x)\text{,}\)</span> we applied the Ratio Test to find an open interval of <span class="process-math">\(x\)</span>-values for which its Taylor series converges.  In particular, for</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1576,7 +1578,7 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{n}{n+1}
 \end{equation*}
 </div>
 <div class="para">By the Ratio Test, it follows that if <span class="process-math">\(|r(x)| = |-x| = x \lt 1\text{,}\)</span> then the series converges; that is, <span class="process-math">\(-1 \lt x \lt 1\)</span> is the open interval of convergence, and the radius of convergence of this series is <span class="process-math">\(R = 1\text{.}\)</span>  We also know that if <span class="process-math">\(|r(x)| = x \gt 1\text{,}\)</span> the series does not converge.  When <span class="process-math">\(x = \pm 1\text{,}\)</span> we don’t know if the series converges or diverges, but we will normally not be concerned with this endpoint behavior because of many subtle and complicated issues that can arise.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-18" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-8a-4-taylor-series-4-19" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <section class="worksheet" id="ws-act-8a-4-1"><h4 class="heading hide-type">
 <span class="type"> </span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title"> </span><div class="print-links"><a href="ws-act-8a-4-1-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
@@ -1589,8 +1591,8 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{n}{n+1}
 <div class="para">Consider the infinite Taylor series given by</div>
 <div class="displaymath process-math" id="act-8a-4-1-1-1-1">
 \begin{align*}
-T(x) =\mathstrut \amp \sum_{k = 1}^{\infty} \frac{1}{k \cdot 2^k}(x-1)^k\\
-=\mathstrut \amp \frac{1}{1 \cdot 2}(x-1) + \frac{1}{2 \cdot 4}(x-1)^2 + \frac{1}{3 \cdot 8}(x-1)^3 + \cdots + \frac{1}{n \cdot 2^n}(x-1)^n + \cdots\text{.}
+T(x) \amp= \sum_{k = 1}^{\infty} \frac{1}{k \cdot 2^k}(x-1)^k\\
+\amp= \frac{1}{1 \cdot 2}(x-1) + \frac{1}{2 \cdot 4}(x-1)^2 + \frac{1}{3 \cdot 8}(x-1)^3 + \cdots + \frac{1}{n \cdot 2^n}(x-1)^n + \cdots
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1598,7 +1600,7 @@ T(x) =\mathstrut \amp \sum_{k = 1}^{\infty} \frac{1}{k \cdot 2^k}(x-1)^k\\
 <div class="para" id="act-8a-4-1-1-2"><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div></div>
 </div>
 <article class="task exercise-like" id="act-8a-4-1-task-0"><h6 class="heading"><span class="codenumber">(a)</span></h6>
-<div class="para" id="act-8a-4-1-task-0-1-1">As described in the statement of the Ratio Test, let <span class="process-math">\(r_n(x)\)</span> be the ratio of the <span class="process-math">\((n+1)\)</span>st term of <span class="process-math">\(T(x)\)</span> to the <span class="process-math">\(n\)</span>th term of <span class="process-math">\(T(x)\text{.}\)</span>  Find the simplest formula that you can for <span class="process-math">\(r_n(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-task-0-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-4-1-task-0-1-1">As described in the statement of the Ratio Test, let <span class="process-math">\(r_n(x)\)</span> be the ratio of the <span class="process-math">\((n+1)^{\mbox{st}}\)</span> term of <span class="process-math">\(T(x)\)</span> to the <span class="process-math">\(n\)</span>th term of <span class="process-math">\(T(x)\text{.}\)</span>  Find the simplest formula that you can for <span class="process-math">\(r_n(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-task-0-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.2.a"><a href="#act-8a-4-1-task-0" title="Copy heading and permalink for Task 8.4.2.a">🔗</a></div></article><article class="task exercise-like" id="act-8a-4-1-task-1"><h6 class="heading"><span class="codenumber">(b)</span></h6>
@@ -1610,7 +1612,7 @@ T(x) =\mathstrut \amp \sum_{k = 1}^{\infty} \frac{1}{k \cdot 2^k}(x-1)^k\\
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.2.c"><a href="#act-8a-4-1-task-2" title="Copy heading and permalink for Task 8.4.2.c">🔗</a></div></article><article class="task exercise-like" id="act-8a-4-1-task-3"><h6 class="heading"><span class="codenumber">(d)</span></h6>
-<div class="para" id="act-8a-4-1-task-3-1-1">Let <span class="process-math">\(T_{10}(x)\)</span> be the sum of the first <span class="process-math">\(10\)</span> terms of <span class="process-math">\(T(x)\text{,}\)</span> and let <span class="process-math">\(f(x) = \ln(2) - \ln(3-x)\text{.}\)</span>  Plot <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_{10}(x)\)</span> on the same coordinate axes.  What do you notice?  What does this suggest about the series <span class="process-math">\(T(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-task-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-4-1-task-3-1-1">Let <span class="process-math">\(T_{10}(x)\)</span> be the sum of the first <span class="process-math">\(10\)</span> terms of <span class="process-math">\(T(x)\text{,}\)</span> and let <span class="process-math">\(f(x) = \ln(2) - \ln(3-x)\text{.}\)</span>  Plot <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(T_{10}(x)\)</span> on the same coordinate axes in a window centered around <span class="process-math">\(x=1\text{.}\)</span>  What do you notice?  What does this suggest about the series <span class="process-math">\(T(x)\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-1-task-3-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.2.d"><a href="#act-8a-4-1-task-3" title="Copy heading and permalink for Task 8.4.2.d">🔗</a></div></article><div class="autopermalink" data-description="Activity 8.4.2"><a href="#act-8a-4-1" title="Copy heading and permalink for Activity 8.4.2">🔗</a></div></article><div class="autopermalink" data-description="  8.4.2"><a href="#ws-act-8a-4-1" title="Copy heading and permalink for   8.4.2">🔗</a></div></section><div class="autopermalink" data-description="Subsection 8.4.2: Taylor series and the Ratio Test"><a href="#sec-8a-4-taylor-series-4" title="Copy heading and permalink for Subsection 8.4.2: Taylor series and the Ratio Test">🔗</a></div></section><section class="subsection" id="sec-8a-4-taylor-series-5"><h3 class="heading hide-type">
@@ -1653,7 +1655,7 @@ T(x) =\mathstrut \amp \sum_{k = 1}^{\infty} \frac{1}{k \cdot 2^k}(x-1)^k\\
 <div class="para">Following <a href="sec-8a-2-taylor-poly.html#act-8a-2-1" class="xref" data-knowl="./knowl/xref/act-8a-2-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 8.2.2">Activity 8.2.2</a>, we noted some of the higher degree Taylor polynomials centered at <span class="process-math">\(a = 0\)</span> for <span class="process-math">\(\sin(x)\text{,}\)</span> <span class="process-math">\(\cos(x)\text{,}\)</span> and <span class="process-math">\(e^x\text{.}\)</span>  For the sine function, we observed that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-8a-2-1.html">
 \begin{equation*}
-\sin(x) \approx P_7(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!} x^5 - \frac{1}{7!}x^7\text{.}
+\sin(x) \approx T_7(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!} x^5 - \frac{1}{7!}x^7\text{.}
 \end{equation*}
 </div>
 <div class="para">In the next example, we determine the Taylor series of <span class="process-math">\(f(x) = \sin(x)\)</span> and investigate the <span class="process-math">\(x\)</span>-values for which the series converges.</div>
@@ -1818,7 +1820,7 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{1}{(2n+
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.3.b"><a href="#act-8a-4-2-task-1" title="Copy heading and permalink for Task 8.4.3.b">🔗</a></div></article><article class="task exercise-like" id="act-8a-4-2-task-2"><h6 class="heading"><span class="codenumber">(c)</span></h6>
-<div class="para" id="act-8a-4-2-task-2-1-1">Let <span class="process-math">\(r_n(x)\)</span> be the ratio of the <span class="process-math">\((n+1)\)</span>st term to the <span class="process-math">\(n\)</span>th term of <span class="process-math">\(T_f(x)\text{.}\)</span>  Find the simplest expression you can for <span class="process-math">\(r_n(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-2-task-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="act-8a-4-2-task-2-1-1">Let <span class="process-math">\(r_n(x)\)</span> be the ratio of the <span class="process-math">\((n+1)^{\mbox{st}}\)</span> term to the <span class="process-math">\(n\)</span>th term of <span class="process-math">\(T_f(x)\text{.}\)</span>  Find the simplest expression you can for <span class="process-math">\(r_n(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-8a-4-2-task-2-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.3.c"><a href="#act-8a-4-2-task-2" title="Copy heading and permalink for Task 8.4.3.c">🔗</a></div></article><article class="task exercise-like" id="act-8a-4-2-task-3"><h6 class="heading"><span class="codenumber">(d)</span></h6>
@@ -1943,95 +1945,95 @@ r(x) = \lim_{n \to \infty} r_n(x)\text{,}
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.4.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__10_Infinite_Series__10-_7_Taylor_Series__10-_7-_1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div id="webwork-326" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="326" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-326')">Activate</button></div>
+<div id="webwork-328" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="328" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-328')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="extracted-webwork-326-1-1-1">
+<div class="para logical" id="extracted-webwork-328-1-1-1">
 <div class="para">Write out the first four terms of the Maclaurin series of <span class="process-math">\(f(x)\)</span> if</div>
 <div class="displaymath process-math">
 \begin{equation*}
-f(0) = -13, \qquad f'(0) = 8, \qquad f''(0) = 5, \qquad f'''(0) = 11
+f(0) = -6, \qquad f'(0) = -13, \qquad f''(0) = -6, \qquad f'''(0) = 4
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-326-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-326-1-1-2">
-<span class="process-math">\(f(x)\)</span> = <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> <span class="process-math">\(+ \cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-326-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-328-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-328-1-1-2">
+<span class="process-math">\(f(x)\)</span> = <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> <span class="process-math">\(+ \cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-328-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.1"><a href="#Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__10_Infinite_Series__10-_7_Taylor_Series__10-_7-_1" title="Copy heading and permalink for Exercise 8.4.5.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div id="webwork-327" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="327" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-327')">Activate</button></div>
+<div id="webwork-329" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="329" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-329')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-327-1-1-1">Find the first four terms of the Taylor series for the function <span class="process-math">\(\displaystyle \frac{2}{x}\)</span> about the point <span class="process-math">\(a = -2\text{.}\)</span>  (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-327-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-327-1-1-2">
-<span class="process-math">\(\displaystyle \frac{2}{x} =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-327-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-329-1-1-1">Find the first four terms of the Taylor series for the function <span class="process-math">\(\displaystyle \frac{3}{x}\)</span> about the point <span class="process-math">\(a = 3\text{.}\)</span>  (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-329-1-1-2">
+<span class="process-math">\(\displaystyle \frac{3}{x} =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.2"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01" title="Copy heading and permalink for Exercise 8.4.5.2">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div id="webwork-328" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="328" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-328')">Activate</button></div>
+<div id="webwork-330" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="330" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-330')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-328-1-1-1">Find the first five terms of the Taylor series for the function <span class="process-math">\(f(x) = \ln\mathopen{}\left(x\right)\)</span> about the point <span class="process-math">\(a = 4\text{.}\)</span> (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-328-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-328-1-1-2">
-<span class="process-math">\(\ln\mathopen{}\left(x\right) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-328-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-330-1-1-1">Find the first five terms of the Taylor series for the function <span class="process-math">\(f(x) = \ln\mathopen{}\left(x\right)\)</span> about the point <span class="process-math">\(a = 6\text{.}\)</span> (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-330-1-1-2">
+<span class="process-math">\(\ln\mathopen{}\left(x\right) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.3"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04" title="Copy heading and permalink for Exercise 8.4.5.3">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
-<div id="webwork-329" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="329" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-329')">Activate</button></div>
+<div id="webwork-331" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="331" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-331')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-329-1-1-1">Find the first four terms of the Taylor series for the function <span class="process-math">\(3 \cos(x)\)</span> about the point <span class="process-math">\(a = \pi/3\text{.}\)</span>  (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-329-1-1-2">
-<span class="process-math">\(3 \cos(x) =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-331-1-1-1">Find the first four terms of the Taylor series for the function <span class="process-math">\(4 \sin(x)\)</span> about the point <span class="process-math">\(a = \pi/6\text{.}\)</span>  (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-331-1-1-2">
+<span class="process-math">\(4 \sin(x) =\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.4"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02" title="Copy heading and permalink for Exercise 8.4.5.4">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__5e__Chap10Sec2__Q43"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
-<div id="webwork-330" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="330" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/5e/Chap10Sec2/Q43.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-330')">Activate</button></div>
+<div id="webwork-332" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="332" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/5e/Chap10Sec2/Q43.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-332')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-330-1-1-1">For each of the following, solve exactly for the variable <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-330-1-1-2">
-<em class="alert">(a)</em> <span class="process-math">\(x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = 0.6\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-330-1-1-3">
-<span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-330-1-1-4">
-<em class="alert">(b)</em> <span class="process-math">\(1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = 7\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-330-1-1-5">
-<span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-332-1-1-1">For each of the following, solve exactly for the variable <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-332-1-1-2">
+<em class="alert">(a)</em> <span class="process-math">\(1 + 3 x + 9 x^2 + 27 x^3 + \cdots = 5\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-332-1-1-3">
+<span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-332-1-1-4">
+<em class="alert">(b)</em> <span class="process-math">\(x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = 0.9\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-4" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-332-1-1-5">
+<span class="process-math">\(x =\)</span> <span class="fillin underline" role="img" aria-label="25-character blank" style="width: 11.3636363636364em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-5" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.5"><a href="#Library__Michigan__5e__Chap10Sec2__Q43" title="Copy heading and permalink for Exercise 8.4.5.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__Chap10Sec2__Q31"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
-<div id="webwork-331" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="331" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap10Sec2/Q31.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-331')">Activate</button></div>
+<div id="webwork-333" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="333" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap10Sec2/Q31.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-333')">Activate</button></div>
 <div class="problem-contents">
-<div class="para" id="extracted-webwork-331-1-1-1">By recognizing each series below as a Taylor series evaluated at a particular value of <span class="process-math">\(x\text{,}\)</span> find the sum of each convergent series.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-331-1-1-2">
-<em class="alert">A.</em> <span class="process-math">\(2 - {2^3\over 3!} + {2^5\over 5!} - {2^7\over 7!} + \cdots + {(-1)^{n} 2^{2n+1}\over (2n+1)!} + \cdots =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-331-1-1-3">
-<em class="alert">B.</em> <span class="process-math">\(1 - {6^2\over 2!} + {6^4\over 4!} - {6^6\over 6!} + \cdots + {(-1)^{n} 6^{2n}\over (2n)!} + \cdots =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="extracted-webwork-333-1-1-1">By recognizing each series below as a Taylor series evaluated at a particular value of <span class="process-math">\(x\text{,}\)</span> find the sum of each convergent series.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-333-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-333-1-1-2">
+<em class="alert">A.</em> <span class="process-math">\(1 + {1\over 7} + ({1\over 7})^2 + ({1\over 7})^3 + ({1\over 7})^4 + \cdots + ({1\over 7})^n + \cdots =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-333-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-333-1-1-3">
+<em class="alert">B.</em> <span class="process-math">\(1 - {5^2\over 2!} + {5^4\over 4!} - {5^6\over 6!} + \cdots + {(-1)^{n} 5^{2n}\over (2n)!} + \cdots =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-333-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
 <div class="autopermalink" data-description="Exercise 8.4.5.6"><a href="#Library__Michigan__Chap10Sec2__Q31" title="Copy heading and permalink for Exercise 8.4.5.6">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8_4HW_prob7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
-<div id="webwork-332" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="332" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.4HW_prob7.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-332')">Activate</button></div>
+<div id="webwork-334" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="334" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.4HW_prob7.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-334')">Activate</button></div>
 <div class="problem-contents">
-<div class="para logical" id="extracted-webwork-332-1-1-1">
+<div class="para logical" id="extracted-webwork-334-1-1-1">
 <div class="para">Use the ratio test to find the open interval of convergence of</div>
 <div class="displaymath process-math">
 \begin{equation*}
 \sum_{n=1}^\infty\,{n^4\,x^{4 n}\over 2^{4 n}}.
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-332-1-1-2">interval of convergence = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-332-1-1-3">
-<em class="emphasis">(Enter your answer as an interval: thus, if the interval of convergence were <span class="process-math">\(-3 \lt  x\lt  5\text{,}\)</span> you would enter <em class="alert">(-3,5)</em>. Use <em class="alert">Inf</em> for any endpoint at infinity.)</em><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-332-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-334-1-1-1" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-334-1-1-2">interval of convergence = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-334-1-1-2" title="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-334-1-1-3">
+<em class="emphasis">(Enter your answer as an interval: thus, if the interval of convergence were <span class="process-math">\(-3 \lt  x\lt  5\text{,}\)</span> you would enter <em class="alert">(-3,5)</em>. Use <em class="alert">Inf</em> for any endpoint at infinity.)</em><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-334-1-1-3" title="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>
