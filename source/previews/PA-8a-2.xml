@@ -26,8 +26,7 @@
           As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a = 0</m> are those shown below.  
         </p>  
         <p>
-          Compute the first three derivatives of <m>f(x) = \sin(x)</m> and evaluate them at <m>a = 0</m> accordingly, recording your results in the blanks provided below.
-
+            Compute the first three derivatives of <m>f(x) = \sin(x)</m> and evaluate them at <m>a = 0</m> accordingly, recording your results in the blanks provided below.
 						<md>
 							<mrow> f(x) \amp= \sin(x) \amp T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3 </mrow>
 							<mrow> f'(x) \amp= <fillin characters="5" /> \amp T_3'(x) \amp= c_1 + 2c_2 x + 3c_3 x^2 </mrow>
@@ -38,7 +37,9 @@
 							<mrow> f'(0) \amp= <fillin characters="3" /> \amp T_3'(0) \amp= c_1  </mrow>
 							<mrow> f''(0) \amp= <fillin characters="3" /> \amp T_3''(0) \amp= 2c_2 </mrow>
 							<mrow> f'''(0) \amp= <fillin characters="3" /> \amp T_3'''(0) \amp= 6c_3 </mrow>
-						</md> 
+						</md>
+        </p>
+
       </statement>
       <hint/>
       <answer/>

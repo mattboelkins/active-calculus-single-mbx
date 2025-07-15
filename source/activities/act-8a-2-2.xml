@@ -59,7 +59,7 @@
         </li>
         <li>
           <p>
-                		Use the pattern you observe in <xref ref="T-8a-2-act-2-log">Table</xref> to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
+                		Use the patterns you observe in your work in parts (a) and (b) to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  
                 	</p>
           <p>	
                 		For approximately what interval of <m>x</m>-values is it true that <m>|f(x) - T_5(x)| \lt 0.1</m>?  What about <m>|f(x) - T_6(x)| \lt 0.1</m>?  How is this situation different from what we observed with <m>f(x) = \cos(x)</m> in <xref ref="act-8a-2-1">Activity</xref>?

@@ -16,8 +16,8 @@
   <activity xml:id="act-8a-5-2">
     <introduction>
       <p>
-      In this activity we will determine the Taylor series expansion for <m>\arctan(x)</m>, plus we'll explore a different way to find the Taylor series for <m>\ln(1+x)</m>.
-    </p>
+        In this activity we will determine the Taylor series expansion for <m>\arctan(x)</m>, plus we'll explore a different way to find the Taylor series for <m>\ln(1+x)</m>.
+      </p>
       <p/>
     </introduction>
     <task workspace="3cm" xml:id="act-8a-5-2-task-0">

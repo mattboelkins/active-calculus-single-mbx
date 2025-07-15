@@ -47,30 +47,17 @@
                 <row>
                   <cell halign="center">
                     <md>
-                      <mrow> f(x) \amp= e^x </mrow>
-                      <mrow> f'(x) \amp= e^x </mrow>
-                      <mrow> f''(x) \amp= e^x </mrow>
-                      <mrow> f'''(x) \amp= e^x </mrow>
+                      <mrow> f(x) \amp= e^x \amp T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
+                      <mrow> f'(x) \amp= e^x \amp T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
+                      <mrow> f''(x) \amp= e^x \amp T_3''(x) \amp= 2 c_2 + 6 c_3 x</mrow>
+                      <mrow> f'''(x) \amp= e^x \amp T_3'''(x) \amp= 6 c_3</mrow>
                       <mrow> \amp </mrow>
-                      <mrow> f(0) \amp= 1 </mrow>
-                      <mrow> f'(0) \amp= 1 </mrow>
-                      <mrow> f''(0) \amp= 1 </mrow>
-                      <mrow> f'''(0) \amp= 1 </mrow>
+                      <mrow> f(0) \amp= 1 \amp T_3(0) \amp= c_0</mrow>
+                      <mrow> f'(0) \amp= 1 \amp T_3'(0) \amp= c_1 </mrow>
+                      <mrow> f''(0) \amp= 1 \amp T_3''(0) \amp= 2 c_2</mrow>
+                      <mrow> f'''(0) \amp= 1 \amp T_3'''(0) \amp= 6 c_3</mrow>
                     </md>
                   </cell>  
-                  <cell halign="center">
-                    <md>
-                      <mrow> T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
-                      <mrow> T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
-                      <mrow> T_3''(x) \amp= 2 c_2 + 6 c_3 x</mrow>
-                      <mrow> T_3'''(x) \amp= 6 c_3</mrow>
-                      <mrow> \amp </mrow>
-                      <mrow> T_3(0) \amp= c_0 </mrow>
-                      <mrow> T_3'(0) \amp= c_1 </mrow>
-                      <mrow> T_3''(0) \amp= 2 c_2</mrow>
-                      <mrow> T_3'''(0) \amp= 6 c_3</mrow>
-                    </md>
-                  </cell>
                 </row>
               </tabular>
             </table>
@@ -82,12 +69,13 @@
       and therefore
       <me>c_0 = 1, c_1 = 1, c_2 = \frac{1}{2}, c_3 = \frac{1}{6}</me>
       so that <me>T_3(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3</me>.  Moreover, plotting <m>f</m> and <m>T_3</m> near <m>a = 0</m>, we see in <xref ref="F-8a-2-intro">Figure</xref> that the interval of accuracy for a tolerance of <m>0.1</m> is about <m>-1.2 \le x \le 1.2</m>.  
-
+    </p>
+    
       <figure xml:id="F-8a-2-intro">
         <caption>The function <m>f(x)=e^x</m> and its degree <m>3</m> Taylor approximation  <m>T_3(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3</m> near the point <m>(0,f(0))</m>.</caption>
       <image width="50%" source="images/8a_2_intro" />
-    </figure>
-    </p>
+      </figure>
+
 
     <!--
     <p>
@@ -246,7 +234,7 @@
                 </row>
                 <row>
                   <cell><m>n</m></cell>
-                  <cell><m>T^{(n)}(0) = \bigl[ n (n-1) \cdots 3 \cdot 2 \cdot 1 c_n \bigr] </m></cell>
+                  <cell><m>T^{(n)}(0) = \bigl[ n (n-1) \cdots 3 \cdot 2 \cdot 1  \bigr] c_n </m></cell>
                   <cell><m>\bigl[ n (n-1) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n = f^{(n)}(0)</m></cell>
                 </row> 
               </tabular>

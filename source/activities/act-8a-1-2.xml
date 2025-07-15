@@ -316,12 +316,14 @@
       <statement>
 					<p>
 						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>, use appropriate comptuational technology to plot the function <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> along with <m>f(x)=e^x</m>, <m>T_1(x)=1+x</m>, and <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> in the same window as shown in <xref ref="F-8a-1-act-2">Figure</xref>.  
+          </p>
 
 						<figure xml:id="F-8a-1-act-2">
 							<caption>The function <m>f(x)=e^x</m>, its tangent line <m>T_1(x)=1+x</m>, and the quadratic approximation <m>T_2(x) = 1 + x + \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.</caption>
 							<image width="50%" source="images/8a_1_act_2" />
 						</figure>
 
+          <p>  
 						What do you notice?  For approximately which values of <m>x</m> is <m>|f(x)-T_3(x)| \lt 0.1</m>?
 					</p>
       </statement>

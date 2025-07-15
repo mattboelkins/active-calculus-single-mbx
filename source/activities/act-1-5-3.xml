@@ -36,33 +36,14 @@
             Use this information to estimate the instantaneous rate of change of fuel consumption with respect to speed at <m>s = 90</m>.
             Be as accurate as possible,
             use proper notation, and include units on your answer.
-          </p>
-        </li>
+          </p>  
+        </statement>
 
-        <li permid="OZU">
-          <p permid="kHY">
-            By writing a complete sentence, interpret the meaning
-            (in the context of fuel consumption)
-            of <m>f(80) = 0.015</m>.
-          </p>
-        </li>
-
-        <li permid="vhd">
-          <p permid="QPh">
-            Write at least one complete sentence that interprets the meaning of the value of <m>f'(90)</m> that you estimated in (a).
-          </p>
-        </li>
-      </ol>
-    </p>
-  </statement>
-  <hint permid="eiS">
-    <p permid="mxl">
-      <ol marker="a." permid="WEt">
-        <li permid="bom">
-          <p permid="wWq">
-            Try a central difference.
-          </p>
-        </hint>
+        <hint permid="eiS">
+          <p permid="mxl">
+                  Try a central difference.
+                </p>
+              </hint>
         <answer>
           <p><m>f'(90) \approx 0.0006</m> liters per kilometer per kilometer per hour.
           </p>
