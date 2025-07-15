@@ -64,13 +64,13 @@
     </p>
 
     <p>
-      Equating the function and derivative values of <m>f</m> and <m>T</m> at <m>a = 0</m>, it follows
+      Equating the function and derivative values of <m>f</m> and <m>T_3</m> at <m>a = 0</m>, it follows
       <me>c_0 = 1, c_1 = 1, 2c_2 = 1, 6c_3 = 1</me>
       and therefore
       <me>c_0 = 1, c_1 = 1, c_2 = \frac{1}{2}, c_3 = \frac{1}{6}</me>
       so that <me>T_3(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3</me>.  Moreover, plotting <m>f</m> and <m>T_3</m> near <m>a = 0</m>, we see in <xref ref="F-8a-2-intro">Figure</xref> that the interval of accuracy for a tolerance of <m>0.1</m> is about <m>-1.2 \le x \le 1.2</m>.  
     </p>
-    
+
       <figure xml:id="F-8a-2-intro">
         <caption>The function <m>f(x)=e^x</m> and its degree <m>3</m> Taylor approximation  <m>T_3(x) = 1 + x + \frac{1}{2}x^2 + \frac{1}{6}x^3</m> near the point <m>(0,f(0))</m>.</caption>
       <image width="50%" source="images/8a_2_intro" />
@@ -84,7 +84,7 @@
     -->
 
     <p>
-      One important pattern we observed in our work with <m>f(x) = e^x</m> is that <m>f^{(n)}(0) = 1</m> for every natural number <m>n</m>.  As we will see, this information will ultimately help us find a general formula for <m>c_n</m>, the coefficient of <m>x^n</m> in the general degree <m>n</m> polynomial approximation of <m>f(x) = e^x</m>.
+      One important pattern we observed in our work with <m>f(x) = e^x</m> is that for every natural number <m>n</m>, the <m>n^{\mbox{th}}</m> derivative's value at <m>a=0</m> is <m>f^{(n)}(0) = 1</m>.  As we will see, this information will ultimately help us find a general formula for <m>c_n</m>, the coefficient of <m>x^n</m> in the general degree <m>n</m> polynomial approximation of <m>f(x) = e^x</m>.
     </p>
 
     <p>
@@ -184,6 +184,7 @@
                       <mrow>T_n^{(4)}(x) \amp= (4 \cdot 3 \cdot 2 \cdot 1) c_4 + \cdots + n (n-1) (n-2) (n-3) c_nx^{n-4} </mrow>
                       <mrow>  \amp\vdots </mrow>
                       <mrow>T_n^{(n)}(x) \amp= \bigl[ n (n-1) (n-2) (n-3) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n</mrow>
+                      <mrow> \amp </mrow>
                     </md>
                   </cell>
                 </row>
@@ -241,7 +242,7 @@
             </table>
 
     <p>
-      We see a natural pattern that results from taking the <m>k</m>th derivative of the <m>k</m>th power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>(4 \cdot 3) x^2</m>, <m>(4 \cdot 3 \cdot 2) x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
+      We see a natural pattern that results from taking the <m>k^{\mbox{th}}</m> derivative of the <m>k{\mbox{th}}</m> power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>(4 \cdot 3) x^2</m>, <m>(4 \cdot 3 \cdot 2) x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
       <me>
         \frac{d^4}{dx^4}\left[ x^4 \right] = 4 \cdot 3 \cdot 2 \cdot 1 = 4!
       </me>
@@ -382,13 +383,13 @@
     </p>
 
     <p>
-      For example, in <xref ref="act-8a-2-1">Activity</xref>, we found that the degree <m>6</m> Taylor approximation of the cosine function at <m>a = 0</m> is
+      For example, in <xref ref="act-8a-2-1">Activity</xref>, we found that the degree <m>8</m> Taylor approximation of the cosine function at <m>a = 0</m> is
       <me>
-        T_6(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 
+        T_8(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8
       </me>,
       so 
       <me>
-        \cos(x) \approx 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 
+        \cos(x) \approx 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8 
       </me>.
       The pattern of alternating signs and even numbers in the factorials and powers of <m>x</m> lets us see that we could easily write down, say, <m>T_{20}(x)</m>.  We can reason similarly to extend what we found in <xref ref="PA-8a-2">Preview Activity</xref> and observe that
       <me>
@@ -397,11 +398,11 @@
       the degree <m>7</m> Taylor approximation of the sine function at <m>a = 0</m>.  
     </p>
     <p>  
-      When we ask a computational device to find numerical estimates for quantities such as <m>e^2</m>, <m>\sin(1)</m>, and <m>\cos(1.2)</m>, high degree Taylor polynomials are used to generate the results.  For example, 
+      When we ask a computational device to find numerical estimates for quantities such as <m>e^2</m>, <m>\sin(1)</m>, and <m>\cos(1.2)</m>, high degree Taylor polynomials are one approach<fn>For computing values of trigonometric functions, a method known as <url href="https://www.tandfonline.com/doi/abs/10.1080/07468342.2009.11922342" visual="tandfonline.com">CORDIC</url> (that remarkably doesn't even use multiplication) is employed by many calculating devices.</fn> that can be used to generate the results.  For example, 
       <me>
         \sin(1) \approx T_7(1) = 1 - \frac{1}{3!}1^3 + \frac{1}{5!}1^5 - \frac{1}{7!}1^7 = \frac{4241}{5040} \approx 0.84146825
       </me>
-      which is a remarkably accurate estimate of <m>\sin(1) = 0.84147098 \ldots</m>, given that the estimate only involves the sum of four rational numbers.
+       is a remarkably accurate estimate of <m>\sin(1) = 0.84147098 \ldots</m> that only involves the sum of four rational numbers.
     </p>
 
   </subsection>

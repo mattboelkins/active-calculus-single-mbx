@@ -43,8 +43,18 @@
         </li>
         <li>
           <p>
-                		In <xref ref="F-8a-2-act-3">Figure</xref>, we see <m>f(x) = \ln(x)</m> and its tangent line, <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> plotted on the same axes.  Add <m>T_4(x)</m> to the figure.  What do you notice?
-                		      <figure xml:id="F-8a-2-act-3"><caption>The function <m>f(x)=\ln(x)</m> and its degree <m>1</m> Taylor approximation  <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> near the point <m>(2,f(2))</m>.</caption><image width="50%" source="images/8a_2_act_3"/></figure></p>
+                		Use appropriate technology to plot <m>f(x) = \ln(x)</m>, its tangent line, <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m>, and <m>T_4(x)</m> on the same axes in the window shown <xref ref="F-8a-2-act-3">Figure</xref>. 
+          </p>
+                   
+ 		      <figure xml:id="F-8a-2-act-3">
+            <caption>The function <m>f(x)=\ln(x)</m> and its degree <m>1</m> Taylor approximation  <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m> near the point <m>(2,f(2))</m>.
+            </caption>
+            <image width="50%" source="images/8a_2_act_3"/>
+          </figure>
+
+          <p>
+            What do you notice?
+          </p>
         </li>
         <li>
           <p>

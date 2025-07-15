@@ -13,12 +13,326 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-8a-1">
+
+        <exercise xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-quadapprox-cos" label="ex-quadapprox-cos">
+            <webwork xml:id="webwork-quadapprox-cos">                                          
+                <pg-code>
+                Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
+                $f=Fraction(-1,2);
+                $c=Formula("cos(x)");
+                $s=Formula("sin(x)");
+                $T2prime=Formula("b_1+2*b_2*x");
+                $T2doubleprime=Formula("2*b_2");
+                <!-- evaluating formulas is giving me an error, so I'm hardcoding the answers instead until I can figure out why. -->
+                <!-- $const1=$T3prime->eval(x=>"0"); -->
+                <!--$const2=$T3doubleprime->eval(x=>0);
+                $const3=$T3tripleprime->eval(x=>0); -->
+                $const1=Formula("b_1");
+                $const2=Formula("2*b_2");
+                $T2=Formula("1-1/2x^2");
+                Context("LimitedNumeric");
+                </pg-code>
+                <introduction>
+                <p>
+                    Let <m>f(x)=\cos(x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
+                    We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\cos(x)</m> and <m>T_2(x)</m>
+                    have the same height, slope, and concavity at <m>x=0</m>.
+                </p>
+                </introduction>
+
+                <task>
+                <statement>
+                    <p>
+                    Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>\cos(x)</m> and evaluating them at <m>x=0</m> as directed.
+                    </p>
+                    <instruction>Use underscores to enter the coefficients.  For example, to enter <m>b_1</m>, type <q>b_1</q>.</instruction>
+
+                    <tabular top="major">
+                    <col halign="right"/>
+                    <col halign="left" right="minor"/>
+                    <col halign="right"/>
+                    <col halign="left"/>
+                    <row>
+                        <cell><m>f(x)=</m></cell>
+                        <cell><m>\cos(x)</m></cell>
+                        <cell><m>T_2(x)=</m></cell>
+                        <cell><m>b_0+b_1x+b_2x^2</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(x)=</m></cell>
+                        <cell><var name="-$s" width="10"/></cell>
+                        <cell><m>T_2'(x)=</m></cell>
+                        <cell><var name="$T2prime" width="10"/></cell>
+                    </row>                
+                    <row bottom="major">
+                        <cell><m>f''(x)=</m></cell>
+                        <cell><var name="-$c" width="10"/></cell>
+                        <cell><m>T_2''(x)=</m></cell>
+                        <cell><var name="$T2doubleprime" width="10"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(0)=</m></cell>
+                        <cell><var name="1" width="10"/></cell>
+                        <cell><m>T_2(0)=</m></cell>
+                        <cell><m>b_0</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(0)=</m></cell>
+                        <cell><var name="0" width="10"/></cell>
+                        <cell><m>T_2'(0)=</m></cell>
+                        <cell><var name="$const1" width="10"/></cell>
+                    </row>                
+                    <row>
+                        <cell><m>f''(0)=</m></cell>
+                        <cell><var name="-1" width="10"/></cell>
+                        <cell><m>T_2''(0)=</m></cell>
+                        <cell><var name="$const2" width="10"/></cell>
+                    </row>
+                    </tabular>
+                </statement>
+                </task>
+
+                <task>
+                <statement>
+                    <p>Now, since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same height at <m>x=0</m>, set <m>T_2(0)=f(0)</m>.</p>
+                    <p>This implies <m>b_0={}</m><var name="'1'" width="10"/>.</p>
+                    <p>Since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same slope at <m>x=0</m>, set <m>T_2'(0)=f'(0)</m>.</p>
+                    <p>This implies <m>b_1={}</m><var name="'0'" width="10"/>.</p>
+                    <p>Finally, since we want <m>T_2(x)</m> and <m>\cos(x)</m> to have the same concavity at <m>x=0</m>, set <m>T_2''(0)=f''(0)</m>.</p>
+                    <p>This implies <m>b_2={}</m><var name="$f" width="10"/>.</p>
+                    <p>Putting everything together, what is the resulting formula for <m>T_2(x)=b_0+b_1x+b_2x^2</m>?</p>
+                    <p><m>T_2(x)={}</m><var name="$T2" width="20"/></p>
+                </statement>
+
+                </task>
+        
+            </webwork>
+        </exercise>
+
+        <exercise xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-quadapprox-ln1plusx" label="ex-quadapprox-ln1plusx">
+            <webwork xml:id="webwork-quadapprox-ln1plusx">                                          
+                <pg-code>
+                Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
+                $f=Fraction(-1,2);
+                $func=Formula("ln(1+x)");
+                $funcprime=Formula("1/(1+x)");
+                $funcdoubleprime=Formula("-1/(1+x)^2");
+                $T2prime=Formula("b_1+2*b_2*x");
+                $T2doubleprime=Formula("2*b_2");
+                <!-- evaluating formulas is giving me an error, so I'm hardcoding the answers instead until I can figure out why. -->
+                <!-- $const1=$T3prime->eval(x=>"0"); -->
+                <!--$const2=$T3doubleprime->eval(x=>0);
+                $const3=$T3tripleprime->eval(x=>0); -->
+                $const1=Formula("b_1");
+                $const2=Formula("2*b_2");
+                $T2=Formula("x-1/2*x^2");
+                Context("LimitedNumeric");
+                </pg-code>
+                <introduction>
+                <p>
+                    Let <m>f(x)=\ln(1+x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
+                    We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\ln(1+x)</m> and <m>T_2(x)</m>
+                    have the same height, slope, and concavity at <m>x=0</m>.
+                </p>
+                </introduction>
+
+                <task>
+                <statement>
+                    <p>
+                    Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>\ln(1+x)</m> and evaluating them at <m>x=0</m> as directed.
+                    </p>
+                    <instruction>Use underscores to enter the coefficients.  For example, to enter <m>b_1</m>, type <q>b_1</q>.</instruction>
+
+                    <tabular top="major">
+                    <col halign="right"/>
+                    <col halign="left" right="minor"/>
+                    <col halign="right"/>
+                    <col halign="left"/>
+                    <row>
+                        <cell><m>f(x)=</m></cell>
+                        <cell><m>\ln(1+x)</m></cell>
+                        <cell><m>T_2(x)=</m></cell>
+                        <cell><m>b_0+b_1x+b_2x^2</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(x)=</m></cell>
+                        <cell><var name="$funcprime" width="10"/></cell>
+                        <cell><m>T_2'(x)=</m></cell>
+                        <cell><var name="$T2prime" width="10"/></cell>
+                    </row>                
+                    <row bottom="major">
+                        <cell><m>f''(x)=</m></cell>
+                        <cell><var name="$funcdoubleprime" width="10"/></cell>
+                        <cell><m>T_2''(x)=</m></cell>
+                        <cell><var name="$T2doubleprime" width="10"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(0)=</m></cell>
+                        <cell><var name="0" width="10"/></cell>
+                        <cell><m>T_2(0)=</m></cell>
+                        <cell><m>b_0</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(0)=</m></cell>
+                        <cell><var name="1" width="10"/></cell>
+                        <cell><m>T_2'(0)=</m></cell>
+                        <cell><var name="$const1" width="10"/></cell>
+                    </row>                
+                    <row>
+                        <cell><m>f''(0)=</m></cell>
+                        <cell><var name="-1" width="10"/></cell>
+                        <cell><m>T_2''(0)=</m></cell>
+                        <cell><var name="$const2" width="10"/></cell>
+                    </row>
+                    </tabular>
+                </statement>
+                </task>
+
+                <task>
+                <statement>
+                    <p>Now, since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same height at <m>x=0</m>, set <m>T_2(0)=f(0)</m>.</p>
+                    <p>This implies <m>b_0={}</m><var name="'0'" width="10"/>.</p>
+                    <p>Since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same slope at <m>x=0</m>, set <m>T_2'(0)=f'(0)</m>.</p>
+                    <p>This implies <m>b_1={}</m><var name="'1'" width="10"/>.</p>
+                    <p>Finally, since we want <m>T_2(x)</m> and <m>\ln(1+x)</m> to have the same concavity at <m>x=0</m>, set <m>T_2''(0)=f''(0)</m>.</p>
+                    <p>This implies <m>b_2={}</m><var name="$f" width="10"/>.</p>
+                    <p>Putting everything together, what is the resulting formula for <m>T_2(x)=b_0+b_1x+b_2x^2</m>?</p>
+                    <p><m>T_2(x)={}</m><var name="$T2" width="20"/></p>
+                </statement>
+
+                </task>
+        
+            </webwork>
+        </exercise>
+
+        <exercise xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-cubicapprox-sin" label="ex-cubicapprox-sin">
+            <webwork xml:id="webwork-cubicapprox-sin">                                          
+                <pg-code>
+                Context("Fraction")->variables->add(c_0=>"Real", c_1=>"Real", c_2=>"Real", c_3=>"Real");
+                $f=Fraction(-1,6);
+                $s=Formula("sin(x)");
+                $T3prime=Formula("c_1+2*c_2*x+3*c_3 x^2");
+                $T3doubleprime=Formula("2*c_2+6*c_3 x");
+                $T3tripleprime=Formula("6*c_3");
+                <!-- evaluating formulas is giving me an error, so I'm hardcoding the answers instead until I can figure out why. -->
+                <!-- $const1=$T3prime->eval(x=>'0'); -->
+                <!--$const2=$T3doubleprime->eval(x=>0);
+                $const3=$T3tripleprime->eval(x=>0); -->
+                $const1=Formula("c_1");
+                $const2=Formula("2*c_2");
+                $const3=Formula("6*c_3");
+                $c=$s->D('x');
+                $T3=Formula("x-1/6x^3");
+                Context("LimitedNumeric");
+                </pg-code>
+                <introduction>
+                <p>
+                    Let <m>f(x)=\sin(x)</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3</m>.
+                    We find the values of <m>c_0,\ldots,c_3</m> that make the functions <m>\sin(x)</m> and <m>T_3(x)</m>
+                    have the same height, slope, concavity, and third derivative value at <m>x=0</m>.
+                </p>
+                </introduction>
+
+                <task>
+                <statement>
+                    <p>
+                    Complete the table below by computing derivatives of <m>T_3(x)</m> and <m>\sin(x)</m> and evaluating them at <m>x=0</m> as directed.
+                    </p>
+                    <instruction>Use underscores to enter the coefficients.  For example, to enter <m>c_1</m>, type <q>c_1</q>.</instruction>
+
+                    <tabular top="major">
+                    <col halign="right"/>
+                    <col halign="left" right="minor"/>
+                    <col halign="right"/>
+                    <col halign="left"/>
+                    <row>
+                        <cell><m>f(x)=</m></cell>
+                        <cell><m>\sin(x)</m></cell>
+                        <cell><m>T_3(x)=</m></cell>
+                        <cell><m>c_0+c_1x+c_2x^2+c_3x^3</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(x)=</m></cell>
+                        <cell><var name="$c" width="10"/></cell>
+                        <cell><m>T_3'(x)=</m></cell>
+                        <cell><var name="$T3prime" width="10"/></cell>
+                    </row>                
+                    <row>
+                        <cell><m>f''(x)=</m></cell>
+                        <cell><var name="-$s" width="10"/></cell>
+                        <cell><m>T_3''(x)=</m></cell>
+                        <cell><var name="$T3doubleprime" width="10"/></cell>
+                    </row>
+                    <row bottom="major">
+                        <cell><m>f'''(x)=</m></cell>
+                        <cell><var name="-$c" width="10"/></cell>
+                        <cell><m>T_3'''(x)=</m></cell>
+                        <cell><var name="$T3tripleprime" width="10"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>f(0)=</m></cell>
+                        <cell><var name="0" width="10"/></cell>
+                        <cell><m>T_3(0)=</m></cell>
+                        <cell><m>c_0</m></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'(0)=</m></cell>
+                        <cell><var name="1" width="10"/></cell>
+                        <cell><m>T_3'(0)=</m></cell>
+                        <cell><var name="$const1" width="10"/></cell>
+                    </row>                
+                    <row>
+                        <cell><m>f''(0)=</m></cell>
+                        <cell><var name="0" width="10"/></cell>
+                        <cell><m>T_3''(0)=</m></cell>
+                        <cell><var name="$const2" width="10"/></cell>
+                    </row>
+                    <row>
+                        <cell><m>f'''(0)=</m></cell>
+                        <cell><var name="-1" width="10"/></cell>
+                        <cell><m>T_3'''(0)=</m></cell>
+                        <cell><var name="$const3" width="10"/></cell>
+                    </row>
+                    </tabular>
+                </statement>
+                </task>
+
+                <task>
+                <statement>
+                    <p>Now, since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same height at <m>x=0</m>, set <m>T_3(0)=f(0)</m>.</p>
+                    <p>This implies <m>c_0={}</m><var name="'0'" width="10"/>.</p>
+                    <p>Since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same slope at <m>x=0</m>, set <m>T_3'(0)=f'(0)</m>.</p>
+                    <p>This implies <m>c_1={}</m><var name="'1'" width="10"/>.</p>
+                    <p>Since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same concavity at <m>x=0</m>, set <m>T_3''(0)=f''(0)</m>.</p>
+                    <p>This implies <m>c_2={}</m><var name="'0'" width="10"/>.</p>
+                    <p>Finally, since we want <m>T_3(x)</m> and <m>\sin(x)</m> to have the same third derivative value at <m>x=0</m>, set <m>T_3'''(0)=f'''(0)</m>.</p>
+                    <p>This implies <m>c_3={}</m><var name="$f" width="10"/>.</p>
+                    <p>Putting everything together, what is the resulting formula for <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3</m>?</p>
+                    <p><m>T_3(x)={}</m><var name="$T3" width="20"/></p>
+                </statement>
+
+                </task>
+        
+            </webwork>
+        </exercise>
+
   <exercise label="csafranski__8-_1HW_prob1">
+    <introduction>
+      <p>
+        In the following problem, note that <q>second degree Taylor polynomial</q> is
+        the same as the quadratic approximation we've been studying, and we'll see this terminology
+        again in the following section.  
+      </p>
+    </introduction>
     <webwork source="csafranski/8.1HW_prob1.pg"/>
   </exercise>
+
+  <!--
   <exercise label="csafranski__8-_1HW_prob2">
     <webwork source="csafranski/8.1HW_prob2.pg"/>
   </exercise>
+  -->
+  
   <exercise xml:id="ez-8a-1-1">
     <statement>
       <p>

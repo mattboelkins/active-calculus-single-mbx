@@ -32,11 +32,11 @@
       </statement>
       <hint/>
       <answer>
-        <p><m>T_2''(x) = 2c_2</m>.
+        <p><m>T_2''(x) = 2b_2</m>.
 				</p>
       </answer>
       <solution>
-        <p><m>T_2''(x) = 2c_2</m>.
+        <p><m>T_2''(x) = 2b_2</m>.
 				</p>
       </solution>
     </task>
@@ -86,7 +86,7 @@
                   <m>T_2(x)=</m>
                 </cell>
                 <cell>
-                  <m>c_0 + c_1 x + c_2 x^2</m>
+                  <m>b_0 + b_1 x + b_2 x^2</m>
                 </cell>
               </row>
               <row>
@@ -100,7 +100,7 @@
                   <m>T_2'(x)=</m>
                 </cell>
                 <cell>
-                  <m>c_1 + 2c_2 x</m>
+                  <m>b_1 + 2b_2 x</m>
                 </cell>
               </row>
               <row>
@@ -114,7 +114,7 @@
                   <m>T_2''(x)=</m>
                 </cell>
                 <cell>
-                  <m>2c_2</m>
+                  <m>2b_2</m>
                 </cell>
               </row>
               <row>
@@ -134,7 +134,7 @@
                   <m>T_2(0)=</m>
                 </cell>
                 <cell>
-                  <m>c_0</m>
+                  <m>b_0</m>
                 </cell>
               </row>
               <row>
@@ -148,7 +148,7 @@
                   <m>T_2'(0)=</m>
                 </cell>
                 <cell>
-                  <m>c_1</m>
+                  <m>b_1</m>
                 </cell>
               </row>
               <row>
@@ -162,7 +162,7 @@
                   <m>T_2''(0)=</m>
                 </cell>
                 <cell>
-                  <m>2c_2</m>
+                  <m>2b_2</m>
                 </cell>
               </row>
             </tabular>
@@ -185,7 +185,7 @@
                   <m>T_2(x)=</m>
                 </cell>
                 <cell>
-                  <m>c_0 + c_1 x + c_2 x^2</m>
+                  <m>b_0 + b_1 x + b_2 x^2</m>
                 </cell>
               </row>
               <row>
@@ -199,7 +199,7 @@
                   <m>T_2'(x)=</m>
                 </cell>
                 <cell>
-                  <m>c_1 + 2c_2 x</m>
+                  <m>b_1 + 2b_2 x</m>
                 </cell>
               </row>
               <row>
@@ -213,7 +213,7 @@
                   <m>T_2''(x)=</m>
                 </cell>
                 <cell>
-                  <m>2c_2</m>
+                  <m>2b_2</m>
                 </cell>
               </row>
               <row>
@@ -233,7 +233,7 @@
                   <m>T_2(0)=</m>
                 </cell>
                 <cell>
-                  <m>c_0</m>
+                  <m>b_0</m>
                 </cell>
               </row>
               <row>
@@ -247,7 +247,7 @@
                   <m>T_2'(0)=</m>
                 </cell>
                 <cell>
-                  <m>c_1</m>
+                  <m>b_1</m>
                 </cell>
               </row>
               <row>
@@ -261,7 +261,7 @@
                   <m>T_2''(0)=</m>
                 </cell>
                 <cell>
-                  <m>2c_2</m>
+                  <m>2b_2</m>
                 </cell>
               </row>
             </tabular>
@@ -298,39 +298,51 @@
     <task workspace="3cm" xml:id="act-8a-1-1-task-4">
       <statement>
         <p>
-						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  What does <m>T_2(0) = f(0)</m> tell us about the value of <m>c_0</m>? What does <m>T_2'(0) = f'(0)</m> tell us about <m>c_1</m>? How can we also find <m>c_2</m>?  
+						Now, recall that we want the function values, first derivative values, and second derivative values of <m>f</m> and <m>T_2</m> to match at <m>a = 0</m>.  What does <m>T_2(0) = f(0)</m> tell us about the value of <m>b_0</m>, and what is its value? What does <m>T_2'(0) = f'(0)</m> imply the value of <m>b_1</m> is? How can we reason similarly to find <m>b_2</m>?  
 					</p>
       </statement>
       <hint/>
       <answer>
-        <p><m>c_0 = 1</m>; <m>c_1 = 1</m>; <m>c_2 = \frac{1}{2}</m>.  So, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
+        <p><m>b_0 = 1</m>; <m>b_1 = 1</m>; <m>b_2 = \frac{1}{2}</m>.  So, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
 					</p>
       </answer>
       <solution>
         <p>
-						The condition that <m>T_2(0) = f(0)</m> tells us <m>c_0 = 1</m>.  Reasoning similarly, <m>T_2'(0) = f'(0)</m> implies <m>c_1 = 1</m>, and <m>T_2''(0) = f''(0)</m> implies <m>2c_2 = 1</m>, so that <m>c_2 = \frac{1}{2}</m>.  Thus, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
+						The condition that <m>T_2(0) = f(0)</m> tells us <m>b_0 = 1</m>.  Reasoning similarly, <m>T_2'(0) = f'(0)</m> implies <m>b_1 = 1</m>, and <m>T_2''(0) = f''(0)</m> implies <m>2b_2 = 1</m>, so that <m>b_2 = \frac{1}{2}</m>.  Thus, <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m>.
 					</p>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-8a-1-1-task-5">
       <statement>
         <p>
-						Having now determined the numerical values of <m>c_0</m>, <m>c_1</m>, and <m>c_2</m>, plot the function <m>T_2(x) = c_0 + c_1 x + c_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in <xref ref="F-8a-1-act-1">Figure</xref>.  What do you notice?  For about which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
-
-						<figure xml:id="F-8a-1-act-1"><caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption><image width="50%" source="images/8a_1_act_1"/></figure></p>
+						Having now determined the numerical values of <m>b_0</m>, <m>b_1</m>, and <m>b_2</m>, use appropriate computing technology to plot the function <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in the same window as that shown in <xref ref="F-8a-1-act-1">Figure</xref>.  
+        </p>
+        <figure xml:id="F-8a-1-act-1">
+          <caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
+          <image width="50%" source="images/8a_1_act_1"/>
+        </figure>
+        <p>
+          What do you notice?  For about which values of <m>x</m> is <m>|f(x)-T_2(x)| \lt 0.1</m>?
+        </p>
+						
       </statement>
       <hint/>
       <answer>
-        <p><m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line; <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
-					</p>
+        <p>
+          <m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line; <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
+				</p>
       </answer>
       <solution>
         <p>
 						Plotting the function <m>T_2(x) = 1 + x + \frac{1}{2} x^2</m> along with <m>f(x)=e^x</m> and <m>T_1(x)=1+x</m> in <xref ref="F-8a-1-act-1-soln">Figure</xref>, 
-
-						<figure xml:id="F-8a-1-act-1-soln"><caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption><image width="50%" source="images/8a_1_act_1_soln"/></figure>
-						we notice that <m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line:  the quadratic approximation is closer to <m>e^x</m> for any value of <m>x</m>, and the approximation holds for a wider interval of values.  For instance, in <xref ref="PA-8a-1">Preview Activity</xref>, we found that <m>|f(x)-T_1(x)| \lt 0.1</m> for approximately <m>-0.5 \lt x \lt 0.4</m>. The quadratica approximation is much better:  we note that <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>. 
-					</p>
+        </p>
+						<figure xml:id="F-8a-1-act-1-soln">
+              <caption>The function <m>f(x)=e^x</m> and its tangent line <m>T_1(x)=1+x</m> near the point <m>(0,f(0))</m>.</caption>
+              <image width="50%" source="images/8a_1_act_1_soln"/>
+            </figure>
+				<p>
+          we notice that <m>T_2(x)</m> is a better approximation to <m>f(x) = e^x</m> near <m>a = 0</m> than the tangent line:  the quadratic approximation is closer to <m>e^x</m> for any value of <m>x</m>, and the approximation holds for a wider interval of values.  For instance, in <xref ref="PA-8a-1">Preview Activity</xref>, we found that <m>|f(x)-T_1(x)| \lt 0.1</m> for approximately <m>-0.5 \lt x \lt 0.4</m>. The quadratic approximation is much better:  we note that <m>|f(x)-T_2(x)| \lt 0.1</m> for approximately <m>-0.9 \lt x \lt 0.8</m>, and for any <m>x</m>-value in that interval, <m>|f(x)-T_2(x)| \lt |f(x)-T_1(x)|</m>.
+        </p> 
       </solution>
     </task>
     <hint/>

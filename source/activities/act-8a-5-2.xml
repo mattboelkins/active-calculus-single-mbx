@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-8a-5-2">
   <activity xml:id="act-8a-5-2">
     <introduction>
@@ -20,91 +21,188 @@
       </p>
       <p/>
     </introduction>
-    <task workspace="3cm" xml:id="act-8a-5-2-task-0">
-      <statement>
+    <task workspace="1cm" xml:id="act-8a-5-2-task-0">
+      <introduction>
         <p>
-            We begin with the function <m>g(x) = \arctan(x)</m>.  
-          </p>
-      </statement>
-      <hint/>
-      <answer/>
-      <solution>
-        <p>
-            Let <m>g(x) = \arctan(x)</m>.  
-          </p>
-      </solution>
-    </task>
-    <task workspace="3cm" xml:id="act-8a-5-2-task-1">
-      <statement>
-        <p>
-            In <xref ref="sec-8a-4-taylor-series">Section</xref>, we used <xref ref="D-8a-4-Taylor-series">Definition</xref> to find the Taylor series expansion for <m>h(x) = \ln(1+x)</m>.  Here we use substitution and integration to develop the Taylor series of <m>h(x)</m> in a different way.
-          </p>
-      </statement>
-      <hint/>
-      <answer/>
-      <solution>
-        <p>
-            Let <m>h(x) = \ln(1+x)</m>.  We use substitution and integration to develop the Taylor series of <m>h(x)</m> in a different way.
-          </p>
-      </solution>
-    </task>
-    <hint/>
-    <answer>
-      <ol marker="a.">
-        <li>
+           Consider the function <m>g(x) = \arctan(x)</m>.  
+        </p>
+      </introduction>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-01">
+        <statement>
           <p>
-            For <m>g(x) = \arctan(x)</m>:  
+            What is <m>g'(x)</m>?
           </p>
-          <ol marker="i.">
-            <li>
-              <p><m>g'(x) = \frac{1}{1+x^2}</m>.
-              </p>
-            </li>
-            <li>
-              <p><m>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            <m>g'(x) = \frac{1}{1+x^2}</m>
+          </p>
+        </answer>
+        <solution>
+          <p>
+            <m>g'(x) = \frac{1}{1+x^2}</m>
+          </p>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-02">
+        <statement>
+          <p>
+            Recall that in <xref ref="PA-8a-5">Preview Activity</xref>, we found the Taylor series expansion for
+                <me>
+                  f(x) = \frac{1}{1+x^2}
+                </me>.
+            State the Taylor series for <m>f(x)</m> that you found in the preview activity.
+          </p>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            <m>f(x) = g'(x) = \frac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + \cdots</m>
+          </p>
+        </answer>
+        <solution>
+          <p>
+            In the Preview Activity, we found the Taylor series
+                <me>
                   f(x) = g'(x) = \frac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + \cdots
-                </m>.
-              </p>
-            </li>
-            <li>
-              <p>
-                By the Second FTC we have
+                </me>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-03">
+        <statement>
+          <p>
+            Explain why we can think of <m>g(x)</m> as being given by
+                <me>
+                  g(x) = \int_0^x f(u) \, du
+                </me>.  Use this relationship to find a power series expansion for <m>g(x)</m>. 
+          </p>
+        </statement>
+        <answer>
+          <p>
+            By the Second FTC we have
                 <m>
                   g(x) = \int_0^x f(u) \, du
                 </m>; integrating, it follows that  
                 <m> g(x) =  x - \frac{1}{3}x^3 + \frac{1}{5}x^5 - \frac{1}{7}x^7 + \cdots
                 </m>.
-              </p>
-            </li>
-            <li>
-              <p> 
-                The series for <m>g(x)</m> is certain to converge on <m>|x| \lt 1</m>.
-              </p>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <p>
-            For <m>h(x) = \ln(1+x)</m>:
           </p>
-          <ol marker="i.">
-            <li>
-              <p><m>p(u) = \frac{1}{1-u} = 1 + u + u^2 + u^3 + \cdots</m> and this series converges for <m>|u| \lt 1</m>.
-              </p>
-            </li>
-            <li>
-              <p><m>r(x) = \frac{1}{1+x} = p(-x) = 1 - x + x^2 - x^3 + \cdots</m>.
-              </p>
-            </li>
-            <li>
-              <p><m>\ln(1 + x) = x - \frac{1}{2}x^2 + \frac{1}{3} x^3 - \frac{1}{4}x^4 + \cdots
+        </answer>
+        <solution>
+          <p>
+            Since <m>g(x)</m> is an antiderivative of <m>g'(x) = f(x)</m>, by the Second FTC we have
+                <me>
+                  g(x) = \int_0^x f(u) \, du
+                </me>.  
+                Using our work in (b) and integrating, we now have
+                <md>
+                  <mrow> g(x) \amp= \int_0^x f(u) \, du</mrow>
+                  <mrow> \amp= \int_0^x 1 - u^2 + u^4 - u^6 + \cdots</mrow>
+                  <mrow> \amp=  \left. u - \frac{1}{3}u^3 + \frac{1}{5}u^5 - \frac{1}{7}u^7 + \cdots \right|_0^x</mrow>
+                  <mrow> \amp=  x - \frac{1}{3}x^3 + \frac{1}{5}x^5 - \frac{1}{7}x^7 + \cdots </mrow>
+                </md>
+          </p>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-04">
+        <statement>
+          <p>
+            For what interval of <m>x</m>-values is the Taylor series for <m>g(x) = \arctan(x)</m> guaranteed to converge?
+          </p>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            The series for <m>g(x)</m> is certain to converge on <m>|x| \lt 1</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Since <m>f(x) = g'(x) = \frac{1}{1+x^2} = 1 - x^2 + x^4 - x^6 + \cdots</m> is guaranteed to converge for <m>|x| \lt 1</m>, it follows that the series for <m>g(x)</m> is certain to converge on that same interval.
+          </p>
+        </solution>
+      </task>
+
+    </task>
+    <task workspace="1cm" xml:id="act-8a-5-2-task-1">
+      <introduction>
+        <p>
+          In <xref ref="sec-8a-4-taylor-series">Section</xref>, we used <xref ref="D-8a-4-Taylor-series">Definition</xref> to find the Taylor series expansion for <m>h(x) = \ln(1+x)</m>.  Here we use substitution and integration to develop the Taylor series of <m>h(x)</m> in a different way.
+        </p>
+      </introduction>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-11">
+        <statement>
+          <p>
+            State the Taylor series expansion for <m>p(u) = \frac{1}{1-u}</m>.
+          </p>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            <m>p(u) = \frac{1}{1-u} = 1 + u + u^2 + u^3 + \cdots</m> and this series converges for <m>|u| \lt 1</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            We know that <m>p(u) = \frac{1}{1-u} = 1 + u + u^2 + u^3 + \cdots</m> and this series converges for <m>|u| \lt 1</m>.
+          </p>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-8a-5-2-task-12">
+        <statement>
+          <p>
+            Let <m>u = -x</m> and use the series in (i) to find the Taylor series expansion for <m>r(x) = \frac{1}{1+x}</m>.
+          </p>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            <m>r(x) = \frac{1}{1+x} = p(-x) = 1 - x + x^2 - x^3 + \cdots</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Letting <m>u = -x</m>, we have
+                  <me>r(x) = \frac{1}{1+x} = p(-x) = 1 - x + x^2 - x^3 + \cdots</me>.
+          </p>
+        </solution>
+      </task>  
+      <task workspace="3cm" xml:id="act-8a-5-2-task-13">
+        <statement>
+          <p>
+            Recall that
+                <me>
+                  \ln(1 + x) = \int_0^x \frac{1}{1+t} \, dt
+                </me>.
+                Use this result to find the Taylor series for <m>h(x) = \ln(1+x)</m>.
+          </p>
+        </statement>
+        <hint/>
+        <answer>
+          <p>
+            <m>\ln(1 + x) = x - \frac{1}{2}x^2 + \frac{1}{3} x^3 - \frac{1}{4}x^4 + \cdots
                 </m>;
-                and this series is guaranteed to converge on <m>-1 \lt x \lt 1</m>.  
-              </p>
-            </li>
-          </ol>
-        </li>
-      </ol>
-    </answer>
+                and this series is guaranteed to converge on <m>-1 \lt x \lt 1</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Finally, since
+                <me>
+                  \ln(1 + x) = \int_0^x \frac{1}{1+t} \, dt
+                </me>,
+                it follows that
+                <md>
+                  <mrow>\ln(1 + x) \amp= \int_0^x \frac{1}{1+t} \, dt</mrow>
+                  <mrow>    \amp= \int_0^x 1 - t + t^2 - t^3 + \cdots \, dt</mrow>
+                  <mrow>    \amp= \left. t - \frac{1}{2}t^2 + \frac{1}{3} t^3 - \frac{1}{4}t^4 + \cdots \right|_0^x</mrow>
+                  <mrow>    \amp= x - \frac{1}{2}x^2 + \frac{1}{3} x^3 - \frac{1}{4}x^4 + \cdots </mrow>
+                </md>
+                and this series is guaranteed to converge on the same interval as the series we started with (<m>-1 \lt x \lt 1</m>).  This is also the same series we found for <m>h(x) = \ln(1+x)</m> working directly from the definition of a Taylor series.
+          </p>
+        </solution>
+      </task>       
+    </task>
   </activity>
 </worksheet>

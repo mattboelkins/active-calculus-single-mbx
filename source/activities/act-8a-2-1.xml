@@ -307,20 +307,28 @@
     <task workspace="2cm" xml:id="act-8a-2-1-task-1">
       <statement>
         <p>
-          Use your work in (a) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(0)}{k!}</m> to find <m>T_8(x)</m>.
+          Use your work in (a) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(0)}{k!}</m> to find formulas for <m>T_2(x)</m>, <m>T_4(x)</m>, <m>T_6(x)</m>, and <m>T_8(x)</m>.
         </p>
       </statement>
       <answer>
         <p>
-          <m>T_8(x) = 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6 + 0x^7 + \frac{1}{8!}x^8</m>.
+          <md>
+            <mrow>T_2(x) \amp= 1 + 0x - \frac{1}{2!}x^2 </mrow>
+            <mrow>T_4(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 </mrow>
+            <mrow>T_6(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6</mrow>
+            <mrow>T_8(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6 + 0x^7 + \frac{1}{8!}x^8</mrow>
+          </md>
         </p>
       </answer>
       <solution>
         <p>
           Using the results in <xref ref="T-8a-2-act-1-cosine-sol">Table</xref> along with the fact that <m>c_k = \frac{f^{(k)}(0)}{k!}</m>, we find that 
-          <me>
-            T_8(x) = 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6 + 0x^7 + \frac{1}{8!}x^8
-          </me>.
+          <md>
+            <mrow>T_2(x) \amp= 1 + 0x - \frac{1}{2!}x^2 </mrow>
+            <mrow>T_4(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 </mrow>
+            <mrow>T_6(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6</mrow>
+            <mrow>T_8(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 + 0x^5 - \frac{1}{6!}x^6 + 0x^7 + \frac{1}{8!}x^8</mrow>
+          </md>
         </p>
       </solution>
     </task>  
@@ -357,7 +365,7 @@
       </statement>
       <answer>
         <figure xml:id="F-8a-2-act-1-ans">
-          <caption>The function <m>f(x)=\cos(x)</m> and its degree <m>2</m> Taylor approximation  <m>T_2(x) = 1 - \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.
+          <caption>The function <m>f(x)=\cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> Taylor polynomial approximations near the point <m>(0,f(0))</m>.
           </caption>
           <image width="50%" source="images/8a_2_act_1_soln"/>
         </figure>		
@@ -371,7 +379,7 @@
         </p>  
           
         <figure xml:id="F-8a-2-act-1-soln">
-          <caption>The function <m>f(x)=\cos(x)</m> and its degree <m>2</m> Taylor approximation  <m>T_2(x) = 1 - \frac{1}{2}x^2</m> near the point <m>(0,f(0))</m>.</caption>
+          <caption>The function <m>f(x)=\cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> Taylor polynomial approximations near the point <m>(0,f(0))</m>.</caption>
           <image width="50%" source="images/8a_2_act_1_soln"/>
         </figure>
 				<p>		

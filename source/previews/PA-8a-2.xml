@@ -12,13 +12,13 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-PA-8a-2">
   <exploration xml:id="PA-8a-2" component="static">
     <introduction>
       <p>
-    Let <m>f(x) = \sin(x)</m> and let <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  Our goal is to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and to study the resulting degree <m>3</m> approximation of the sine function.
-  </p>
-      <p/>
+        Let <m>f(x) = \sin(x)</m> and let <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  Our goal is to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and to study the resulting degree <m>3</m> approximation of the sine function.
+      </p>
     </introduction>
     <task workspace="3cm" xml:id="PA-8a-2-task-0">
       <statement>
@@ -58,7 +58,7 @@
     <task workspace="3cm" xml:id="PA-8a-2-task-2">
       <statement>
         <p>
-          Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>.  Use appropriate computer technology to plot the cubic approximation <m>T_3(x)</m> you found in (b) along with <m>f(x)</m> and <m>T_1(x)</m> in the same window shown in <xref ref="F-8a-2-PA">Figure</xref>. 
+          Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>.  Use appropriate computing technology to plot the cubic approximation <m>T_3(x)</m> you found in (b) along with <m>f(x)</m> and <m>T_1(x)</m> in the same window shown in <xref ref="F-8a-2-PA">Figure</xref>. 
         </p>
         <figure xml:id="F-8a-2-PA">
           <caption>The function <m>f(x)=\sin(x)</m> and its tangent line approximation  <m>T_1(x) = x</m> near the point <m>(0,f(0))</m>.</caption>
@@ -82,7 +82,7 @@
     <task workspace="3cm" xml:id="PA-8a-2-task-4">
       <statement>
         <p>
-          In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we decided we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
+          In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
         </p>
         <p>
           Fill in the blanks below to determine the next six derivatives of <m>f(x) = \sin(x)</m>, up to <m>f^{(9)}(x)</m>.

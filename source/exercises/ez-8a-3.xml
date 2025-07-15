@@ -36,7 +36,7 @@
       <p>
         In <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref>, we learned that for an infinite geometric series
         <me>
-          S = a + ar + ar^n + \cdots + ar^{n-1} + \cdots
+          S = a + ar + ar^2 + \cdots + ar^{n-1} + \cdots
         </me>,
         if <m>|r| \lt 1</m>, then 
         <me>

@@ -62,7 +62,7 @@
     <task workspace="3cm" xml:id="act-8a-4-2-task-2">
       <statement>
         <p>
-            Let <m>r_n(x)</m> be the ratio of the <m>(n+1)</m>st term to the <m>n</m>th term of <m>T_f(x)</m>.  Find the simplest expression you can for <m>r_n(x)</m>.
+            Let <m>r_n(x)</m> be the ratio of the <m>(n+1)^{\mbox{st}}</m> term to the <m>n</m>th term of <m>T_f(x)</m>.  Find the simplest expression you can for <m>r_n(x)</m>.
           </p>
       </statement>
       <hint/>
