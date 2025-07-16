@@ -3,8 +3,8 @@
   <targets>
     <target name="html2e" format="html" xsl="acs-html.xsl" publication="publication_ed2.ptx" />
     <target name="html1e" format="html" xsl="acs-html.xsl" publication="publication.ptx" />
-    <target name="latex" format="latex" xsl="acs-latex.xsl" publication="publication_ed2.ptx" />
-    <target name="pdf" format="pdf" xsl="acs-latex.xsl" latex-engine="xelatex" publication="publication_ed2.ptx" />
+    <target name="latex" format="latex" xsl="acs-latex.xsl" publication="publication_ed2_print.ptx" />
+    <target name="pdf" format="pdf" xsl="acs-latex.xsl" latex-engine="xelatex" publication="publication_ed2_print.ptx" />
     <target 
       name="proteus" 
       format="html" 

@@ -37,7 +37,7 @@
   <!-- Index follows appendices, preceded only colophon -->
   <xi:include href="app-integral-table.ptx" />
   
-  <solutions xml:id="activities-answers" project="answer" permid="MzR">
+  <solutions xml:id="activities-answers" project="answer" permid="MzR" component="online">
     <title>Answers to Activities</title>
     <introduction permid="YOj">
       <p permid="wlA">
@@ -47,7 +47,7 @@
     </introduction>
   </solutions>
 
-  <solutions xml:id="exercises-answers" divisional="answer" permid="sHa">
+  <solutions xml:id="exercises-answers" divisional="answer" permid="sHa" component="online">
     <title>Answers to Selected Exercises</title>
     <introduction permid="EVs">
       <p permid="csJ">

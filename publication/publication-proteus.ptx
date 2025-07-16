@@ -1,6 +1,6 @@
 <publication>
   <source>
-    <version include="proteus ed2 runestone"/>
+    <version include="proteus ed2 runestone online"/>
     <directories external="../assets" generated="../generated-assets-proteus"
 		 />
   </source>
