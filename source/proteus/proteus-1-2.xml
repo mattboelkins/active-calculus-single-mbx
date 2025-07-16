@@ -53,11 +53,11 @@
   <exercise component="proteus" label="proteus-und-limits-1"  xml:id="proteus-und-limits-1" attachment="yes">
     <statement>
     <p>
-      Focusing on the ant, the <m>x</m>-value that the ant is directly above is the input value to the function, and the <m>y</m>-value at the ant's height (directly across from the ant) is the corresponding output value of the function.  In the figure here, the ant's position corresponds approximately to the point <m>(1.6, f(1.6)) = (1.6, 2.6).</m>
+      Focusing on the ant, the <m>x</m>-value that the ant is directly above is the input value to the function, and the <m>y</m>-value at the ant's height (directly across from the ant) is the corresponding output value of the function.  In the figure here, the current ant's position corresponds approximately to the point <m>(1.6, f(1.6)) = (1.6, 2.6).</m>
     </p>
     
     <p>
-      If the ant is at the point on the graph directly above <m>x=3</m> what is the ant's height?  In other words, what is the corresponding <m>y</m>-value, <m>y = f(3)</m>?
+      If the ant is at the point on the graph directly above <m>x=3</m> what is the ant's height?  In other words, what is the corresponding <m>y</m>-value, <m>y = f(3)</m>?  State your answer in the form <q><m>f(3) = <fillin characters="2" /></m></q>.
     </p>
     </statement>
      <response />
@@ -66,7 +66,7 @@
   <exercise component="proteus" label="proteus-und-limits-2"  xml:id="proteus-und-limits-2" attachment="yes">
     <statement>
     <p>
-      If the ant walks along the curve in such a way that it gets closer and closer to the location where <m> x = 2 </m>, what happens to the <m>y</m>-value that corresponds to the ant's height?  Does it matter if the ant approaches the location where <m> x = 2 </m> from either the left side or the right side of <m> x = 2 </m>?  Discuss what you see on the graph near the point where <m>x = 2</m>.
+      If the ant walks along the curve so that it gets closer and closer to the location where <m> x = 2 </m>, what happens to the <m>y</m>-value that corresponds to the ant's height?  Does it matter if the ant approaches the location where <m> x = 2 </m> from either the left side or the right side of <m> x = 2 </m>?  Discuss what you see on the graph near the point where <m>x = 2</m>.
     </p>
 
     </statement>

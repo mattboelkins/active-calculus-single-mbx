@@ -16,7 +16,9 @@
 <exercises component="proteus" xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="proteus-1-5">
 <title>PROTEUS exercises</title>
 
+<!-- 
 <exercise component="proteus" label="proteus-travel-time"  xml:id="proteus-travel-time" attachment="yes">
+
   <statement>
     <p>
       The time (<m>T</m>, measured in hours) it takes to drive 50 miles along State Highway 46 depends on the constant speed at which you are driving (<m>s</m>, measured in mph). Since 
@@ -58,6 +60,8 @@
   <response /> 
 </exercise>
 
+-->
+
 <exercise component="proteus" label="proteus-wind-turbine"  xml:id="proteus-wind-turbine" attachment="yes">
   <statement>
     <p>
@@ -65,7 +69,7 @@
       <me>
         P(s) = 2.4 s^3.
       </me>
-      Find the average rate of change of <m>P</m> on the interval <m>[20, 22]</m>, <m>AV_{[20, 22]}</m>, and write a sentence in everyday language explaining the meaning of the value <m>AV_{[20, 22]}</m>. Include units in your sentence.
+      Find the average rate of change of <m>P</m> on the interval <m>[20, 22]</m>, <m>AV_{[20, 22]}</m>, and write a sentence that explains the meaning of the value <m>AV_{[20, 22]}</m> to someone not taking calculus. Include units in your sentence.
     </p> 
   </statement>
   <response /> 

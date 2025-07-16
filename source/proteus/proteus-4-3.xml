@@ -5,7 +5,7 @@
 
 <exercise component="proteus" label="proteus-area-reminders"  xml:id="proteus-area-reminders" attachment="yes">
   <statement>
-    Later in this section, we will learn several properties of the definite integral. In preparation for learning those properties, it will be useful to recall similar properties of simple areas.
+    Later in this section, we will learn several properties of the definite integral. In preparation for learning those properties, the following questions prompt you to think about how changing the height or width of a rectangle impacts its area, as well as how joining two rectangles together impacts the total area enclosed.
     <ol>
       <li>
         <p>

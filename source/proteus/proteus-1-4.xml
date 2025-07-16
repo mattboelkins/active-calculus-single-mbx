@@ -19,7 +19,7 @@
 <exercise component="proteus" label="proteus-pos-neg"  xml:id="proteus-pos-neg" attachment="yes">
   <statement>
     <p>
-      In part (a) of <xref ref="PA-1-4" text="type-global"/>, why do we get some positive and some negative values for <m>f'(a)</m>?  
+      In part (a) of <xref ref="PA-1-4" text="type-global"/>, why do you get some positive and some negative values for <m>f'(a)</m>?  
     </p>
   </statement>
   <response />
@@ -34,12 +34,12 @@
       <ol marker="(a)">
         <li>
           <p>
-            In <m>f'(a)</m>, what does <m>a</m> represent? Is <m>a</m> an input? an output? a slope? a height?
+            In <m>f'(a)</m>, what does <m>a</m> represent? Is <m>a</m> an input? an output? a slope? a height? something else?
           </p>
         </li>
         <li>
           <p>
-            What does <m>f'(a)</m> represent? Is <m>f'(a)</m> an input? an output? a slope? a height?
+            What does <m>f'(a)</m> represent? Is <m>f'(a)</m> an input? an output? a slope? a height?  something else?
           </p>
         </li>
         <li>

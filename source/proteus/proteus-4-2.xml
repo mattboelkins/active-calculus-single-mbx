@@ -68,7 +68,7 @@
           </image>
         </figure>
       </sidebyside>
-      Throughout this activity, we'll use four rectangles, each with a width of <m>\Delta t = 2</m> sec, to estimate the area under the velocity function <m>v(t)</m>.
+      Throughout this activity, we'll use three rectangles, each with a width of <m>\Delta t = 4</m> sec, to estimate the area under the velocity function <m>v(t)</m> on the time interval <m>[0,12]</m>.
     </p>
     <ol>
       <li>
@@ -78,7 +78,7 @@
       </li>
       <li>
         <p>
-          Create four rectangles in a consistent way, using the plotted data to provide the heights of each rectangle. Draw the four rectangles on your graph.
+          Create three rectangles in a consistent way, using the plotted data to provide the heights of each rectangle. Draw the three rectangles on your graph.
         </p>
       </li>
       <li>
@@ -88,7 +88,7 @@
       </li>
       <li>
         <p>
-          Add up the areas of each of the four rectangles to produce an estimate for the <em>total</em> area under the velocity function <m>v(t)</m>. Give your answer as a number with units. What does this value represent in the context of the rocket launch?
+          Add up the areas of each of the three rectangles to produce an estimate for the <em>total</em> area under the velocity function <m>v(t)</m> on the interval <m>[0,12]</m>. Give your answer as a single number with units. What does this value represent in the context of the rocket launch?
         </p>
       </li>
       <li>

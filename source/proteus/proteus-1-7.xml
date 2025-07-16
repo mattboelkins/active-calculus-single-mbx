@@ -18,12 +18,9 @@
 <exercise component="proteus" label="proteus-hair-length"  xml:id="proteus-hair-length"  attachment="yes">
   <statement>
     <p>
-      Imagine that you are tracking the length of your hair as it grows. The growth is roughly linear, at a rate of 0.4 mm per day.  If your hair is 267 mm at the start of this tracking experiment, draw a graph of the function <m>L(t)</m> whose output is the length of your hair after <m>t</m> days.
+      Imagine that you are tracking the length of your hair as it grows. Its growth is roughly linear at a rate of 0.4 mm per day.  Suppose your hair is 267 mm at the start of this tracking experiment and that after 16 weeks (112 days), you decide to get a haircut.  The stylist cuts off 50 mm. Let <m>L(t)</m> be the function whose output is the length of your hair after <m>t</m> days.
     </p>
 
-    <p>
-      Now, suppose that after 16 weeks (112 days), you decide to get a haircut.  The stylist cuts off 50 mm.
-    </p>
     <p>
       <ol>
         <li>
@@ -34,6 +31,11 @@
         <li>
           <p>
             How long is your hair when you leave the salon? 
+          </p>
+        </li>
+        <li>
+          <p>
+            Sketch a possible graph of <m>L(t)</m> on the time interval <m>0 \leq t \leq 200</m>.
           </p>
         </li>
         <li>

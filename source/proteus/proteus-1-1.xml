@@ -21,7 +21,7 @@
     <exercise component="proteus" label="proteus-rates-o-change-1"  xml:id="proteus-rates-o-change-1" attachment="yes">
         <statement>
             <p>
-                The population of a city changes over time.
+                The population of a city changes as time goes on.
                     <ol>
                         <li>
                             <p>
@@ -125,7 +125,7 @@
     <exercise component="proteus" label="proteus-example-roc"  xml:id="proteus-example-roc" attachment="yes">
         <statement>
             <p>
-                Give your own example of a quantity that changes over time, the units of the independent and dependent variables, and units of the rate of change.
+                Give your own example of a quantity that changes in response to another quantity, the units of the independent and dependent variables, and units of the rate of change.
             </p>
         </statement>
         <response />
