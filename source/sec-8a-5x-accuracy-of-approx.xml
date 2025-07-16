@@ -102,7 +102,7 @@
     </p>
 
     <p>
-      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \fra{5}{9}</m>.  We found the first several partial sums shown in <xref ref="T-8a-5x-ExGeom"/>.  
+      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \frac{5}{9}</m>.  We found the first several partial sums shown in <xref ref="T-8a-5x-ExGeom"/>.  
 
       <table xml:id="T-8a-5x-ExGeom">
         <title>Partial sums of the alternating series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m></title>

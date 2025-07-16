@@ -568,42 +568,27 @@
         <ol  marker="a.">
           <li>
             <p>
-              Determine <m>f'(x)</m> and <m>f''(x)</m> and enter their formulas in <xref ref="T-ez-8a-1-1-formulas">Table</xref>.
-            </p>
+              Determine <m>f'(x)</m> and <m>f''(x)</m> and enter their formulas below.
+          
 
-          <table xml:id="T-ez-8a-1-1-formulas">
-            <title>Formulas for <m>f(x)</m> and its first two derivatives.</title>
-              <tabular top="none" bottom="none">
-                <row>
-                  <cell>
                     <md>
                       <mrow>f(x) \amp= \frac{1}{3}x^3 + \frac{1}{4}x^2 - 2x - 1</mrow>
                       <mrow>f'(x) \amp= <fillin characters="10" /> </mrow>
                       <mrow>f''(x) \amp= <fillin characters="10" /> </mrow>
                     </md>
-                  </cell>
-                </row>
-              </tabular>
-            </table>
+                  </p>
           </li>
           <li>
             <p>
-              Next, compute <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter those values in <xref ref="T-ez-8a-1-1-values">Table</xref>.
-            <table xml:id="T-ez-8a-1-1-values">
-            <title>Values of <m>f(x)</m> and its first two derivatives at <m>a = 0</m>.</title>
-              <tabular top="none" bottom="none">
-                <row>
-                  <cell>
+              Next, compute <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter those values below.
+
                     <md>
                       <mrow>f(0) \amp= <fillin characters="5" /> </mrow>
                       <mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
                       <mrow>f''(0) \amp= <fillin characters="5" /> </mrow>
                     </md>
-                  </cell>
-                </row>    
-              </tabular>
-            </table>
             </p>
+            
           </li>
           <li>
             <p>
@@ -612,13 +597,10 @@
           </li>
           <li>
             <p>
-              Let <m>T_2(x)</m> be the quadratic approximation to <m>f(x)</m> near <m>a = 0</m> that satisfies <m>T_2(0) = f(0)</m>, <m>T_2'(0) = f'(0)</m>, and <m>T_2''(0) = f''(0)</m>.  You might start by letting <m>T_2(x) = c_0 + c_1 x + c_2 x^2</m>, and creating an updated table like the one shown in <xref ref="T-ez-8a-1-1-updated">Table</xref>.
+              Let <m>T_2(x)</m> be the quadratic approximation to <m>f(x)</m> near <m>a = 0</m> that satisfies <m>T_2(0) = f(0)</m>, <m>T_2'(0) = f'(0)</m>, and <m>T_2''(0) = f''(0)</m>.  You might start by letting <m>T_2(x) = c_0 + c_1 x + c_2 x^2</m>, and creating an updated table like the one shown below.
             </p>
-          <table xml:id="T-ez-8a-1-1-updated">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m> and their first two derivatives.</title>
-              <tabular top="none" bottom="none">
-                <row>
-                  <cell>
+            <sidebyside widths="45% 45%">
+              <p>
                     <md>
                       <mrow>f(x) \amp= x^3/3 + x^2/4 - 2x - 1</mrow>  
                       <mrow>f'(x) \amp= <fillin characters="10" /> </mrow>
@@ -628,8 +610,8 @@
                       <mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
                       <mrow>f''(0) \amp= <fillin characters="5" /> </mrow>                     
                     </md>
-                  </cell>
-                  <cell>
+                  </p>
+                  <p>
                     <md>
                       <mrow>T_2(x) \amp= c_0 + c_1 x + c_2 x^2</mrow>
                       <mrow>T_2'(x) \amp= c_1 + 2c_2 x </mrow>
@@ -639,12 +621,10 @@
                       <mrow>T_2'(0) \amp= <fillin characters="5" /> </mrow>
                       <mrow>T_2''(0) \amp= <fillin characters="5" /> </mrow>   
                     </md>
-                  </cell>                  
-                </row>
-              </tabular>
-            </table>
-            <p>
-              Use your work in <xref ref="T-ez-8a-1-1-updated">Table</xref> to find the formula for <m>T_2(x)</m> that satisfies <m>T_2(0) = f(0)</m>, <m>T_2'(0) = f'(0)</m>, and <m>T_2''(0) = f''(0)</m>.
+                  </p>
+                  </sidebyside>
+                  <p>
+              Use your work in in the table above to find the formula for <m>T_2(x)</m> that satisfies <m>T_2(0) = f(0)</m>, <m>T_2'(0) = f'(0)</m>, and <m>T_2''(0) = f''(0)</m>.
             </p>
           </li>
           <li>
@@ -661,9 +641,6 @@
       <p>
         <ol  marker="a.">
           <li>
- 
-            <table xml:id="T-ez-8a-1-1-formulas-values-ans">
-            <title>Formulas and values for <m>f(x)</m> and its first two derivatives, plus their values at <m>a=0</m>.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -690,7 +667,6 @@
                   <cell><m>\frac{1}{2}</m></cell>
                 </row>
               </tabular>
-            </table>
 
           </li>
           <li>
@@ -704,8 +680,6 @@
             </p>
           </li>
           <li>
-          <table xml:id="T-ez-8a-1-1-updated-ans">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m> and their first two derivatives.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -751,7 +725,6 @@
                   <cell><m>2c_2</m></cell>
                 </row>
               </tabular>
-            </table>
             <p>
               <m>T_2(x) = \frac{1}{4}x^2 - 2x - 1</m>
             </p>
@@ -771,9 +744,6 @@
       <p>
         <ol  marker="a.">
           <li>
-
-          <table xml:id="T-ez-8a-1-1-formulas-values-soln">
-            <title>Formulas and values for <m>f(x)</m> and its first two derivatives, plus their values at <m>a=0</m>.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -800,8 +770,6 @@
                   <cell><m>\frac{1}{2}</m></cell>
                 </row>
               </tabular>
-            </table>
-
           </li>
           <li>
             <p>
@@ -814,8 +782,6 @@
             </p>
           </li>
           <li>
-          <table xml:id="T-ez-8a-1-1-updated-soln">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_2(x)</m> and their first two derivatives.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -861,7 +827,6 @@
                   <cell><m>2c_2</m></cell>
                 </row>
               </tabular>
-            </table>
             <p>
               We find <m>T_2(x)</m> that satisfies <m>T_2(0) = f(0)</m>, <m>T_2'(0) = f'(0)</m>, and <m>T_2''(0) = f''(0)</m> by now observing that <m>c_0 = -1</m>, <m>c_1 = -2</m>, and <m>2c_2 = \frac{1}{2}</m>, so <m>c_2 = \frac{1}{4}</m>.  Thus <m>T_2(x) = \frac{1}{4}x^2 - 2x - 1</m>
             </p>
@@ -886,46 +851,40 @@
 
       <ol>
         <li>
-          <p>Let <m>T_3(x) = k_0 + k_1x + k_2x^2 + k_3x^3</m> and determine <m>T_3'(x)</m>, <m>T_3''(x)</m>, and <m>T_3'''(x)</m>.  In addition, determine <m>f'''(x)</m>.  Record your results in <xref ref="T-ez-8a-1-2">Table</xref>, along with the values of each of these functions at <m>a = 0</m>.</p>
+          <p>Let <m>T_3(x) = k_0 + k_1x + k_2x^2 + k_3x^3</m> and determine <m>T_3'(x)</m>, <m>T_3''(x)</m>, and <m>T_3'''(x)</m>.  In addition, determine <m>f'''(x)</m>.  Record your results below, along with the values of each of these functions at <m>a = 0</m>.</p>
 
-          <table xml:id="T-ez-8a-1-2">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
-              <tabular top="none" bottom="none">
-                <row>
-                  <cell>
-                    <md>
-                      <mrow>f(x) \amp= x^3/3 + x^2/4 - 2x - 1</mrow>  
-                      <mrow>f'(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow>f''(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow>f'''(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow> \amp </mrow>
-                      <mrow>f(0) \amp= <fillin characters="5" /></mrow>
-                      <mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
-                      <mrow>f''(0) \amp= <fillin characters="5" /> </mrow>   
-                      <mrow>f'''(0) \amp= <fillin characters="5" /> </mrow>                   
-                    </md>
-                  </cell>
-                  <cell>
-                    <md>
-                      <mrow>T_3(x) \amp= k_0 + k_1 x + k_2 x^2 + k_3 x^3</mrow>
-                      <mrow>T_3'(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow>T_3''(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow>T_3'''(x) \amp= <fillin characters="10" /> </mrow>
-                      <mrow> \amp </mrow>
-                      <mrow>T_3(0) \amp= <fillin characters="5" /></mrow>
-                      <mrow>T_3'(0) \amp= <fillin characters="5" /> </mrow>
-                      <mrow>T_3''(0) \amp= <fillin characters="5" /> </mrow>
-                      <mrow>T_3'''(0) \amp= <fillin characters="5" /> </mrow>     
-                    </md>
-                  </cell>                  
-                </row> 
-              </tabular>
-            </table>
-
+          <sidebyside widths="45% 45%">
+            <p>
+              <md>
+                <mrow>f(x) \amp= x^3/3 + x^2/4 - 2x - 1</mrow>  
+                <mrow>f'(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow>f''(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow>f'''(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow> \amp </mrow>
+                <mrow>f(0) \amp= <fillin characters="5" /></mrow>
+                <mrow>f'(0) \amp= <fillin characters="5" /> </mrow>
+                <mrow>f''(0) \amp= <fillin characters="5" /> </mrow>   
+                <mrow>f'''(0) \amp= <fillin characters="5" /> </mrow>                   
+              </md>
+            </p>
+            <p>
+              <md>
+                <mrow>T_3(x) \amp= k_0 + k_1 x + k_2 x^2 + k_3 x^3</mrow>
+                <mrow>T_3'(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow>T_3''(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow>T_3'''(x) \amp= <fillin characters="10" /> </mrow>
+                <mrow> \amp </mrow>
+                <mrow>T_3(0) \amp= <fillin characters="5" /></mrow>
+                <mrow>T_3'(0) \amp= <fillin characters="5" /> </mrow>
+                <mrow>T_3''(0) \amp= <fillin characters="5" /> </mrow>
+                <mrow>T_3'''(0) \amp= <fillin characters="5" /> </mrow>     
+              </md>
+            </p>
+          </sidebyside>
         </li>
         <li>
           <p>
-            Use your work in <xref ref="T-ez-8a-1-2">Table</xref> to find the formula for <m>T_3(x)</m> that satisfies <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.
+            Use your work in above to find the formula for <m>T_3(x)</m> that satisfies <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.
           </p>
         </li>
         <li>
@@ -950,8 +909,6 @@
 
       <ol>
         <li>
-          <table xml:id="T-ez-8a-1-2-ans">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -1008,7 +965,6 @@
                   <cell><m>6k_3</m></cell>
                 </row>
               </tabular>
-            </table>
 
         </li>
         <li>
@@ -1039,8 +995,6 @@
 
       <ol>
         <li>
-          <table xml:id="T-ez-8a-1-2-soln">
-            <title>Formulas and values for <m>f(x)</m> and <m>T_3(x)</m>.</title>
               <tabular top="none" bottom="none">
                 <row>
                   <cell halign="right"><m>f(x)=</m></cell>
@@ -1097,7 +1051,6 @@
                   <cell><m>6k_3</m></cell>
                 </row>
               </tabular>
-            </table>
 
         </li>
         <li>
