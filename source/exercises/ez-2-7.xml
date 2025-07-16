@@ -41,7 +41,8 @@
     <webwork source="csafranski/2.7HW_prob9.pg"/>
   </exercise>
   <exercise label="Library__UCSB__Stewart5_3_6__Stewart5_3_6_27__Stewart5_3_6_27.pg">
-    <webwork source="Library/UCSB/Stewart5_3_6/Stewart5_3_6_27/Stewart5_3_6_27.pg"/>
+    <!-- GIF -->
+    <webwork source="local/mkeller/UCSB/Stewart5_3_6/Stewart5_3_6_27/Stewart5_3_6_27.pg"/>
   </exercise>
   <exercise label="Library__UMN__calculusStewartCCC__s_3_5_28.pg">
     <webwork source="csafranski/2.7HW_prob11.pg"/>
