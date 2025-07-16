@@ -45,7 +45,8 @@
     </ul>
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       A powerful feature of mathematics is that it can be studied both as an abstract discipline and as an applied one. For instance, calculus can be developed almost entirely as an abstract collection of ideas that focus on properties of functions.  At the same time,
       if we consider functions that represent meaningful processes, calculus can describe our experience of physical reality. We have already learned that for the position function
@@ -58,7 +59,7 @@
 
     <xi:include href="./previews/PA-1-5a.xml" /> 
     <!-- need a WeBWorK version for Runestone -->     
-  </introduction>
+  </subsection>
 
   <xi:include href="./proteus/proteus-1-5.xml" />
 

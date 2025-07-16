@@ -15,70 +15,68 @@
 
 <!-- this preview activity was completely rewritten in 2025 -->
 
-
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a">
-  <p>
-    Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
-    <m>s</m> (measured in miles per hour) at which you are driving.  Since 
-    <me>
-      \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
-    </me>,
-    it follows that 
-    <me>
-      \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
-    </me>,
-    and thus we know that <m>T(s) = \frac{50}{s}</m>.  
-  </p>
-  <p>  
-    For instance, observe that <m>T(75) = \frac{50}{75} = \frac{2}{3}</m>, so it takes <m>\frac{2}{3}</m> of an hour to drive <m>50</m> miles at <m>75</m> miles per hour, and the point <m>(75, \frac{2}{3})</m> lies on the graph of <m>T(s)</m>.
-  </p>
-
-
-<p>
-  <ol marker="a.">
-    <li>
-	<p>
-	  Plot the graph of <m>T(s) = \frac{50}{s}</m> on the axes provided in <xref ref="Fig-PA-1-5a-axes">Figure</xref>.  Include the point <m>(75, \frac{2}{3})</m>, and plot and label 2 additional points of your choice.  Write a sentence to explain why the shape of the graph makes sense.
-	</p>
-        <figure xml:id="Fig-PA-1-5a-axes">
-            <caption>Axes for plotting <m>T(s)</m>.</caption>
-                <image width="60%">
-                    <prefigure label="PA-1-5a" xmlns="https://prefigure.org">
-                        <diagram dimensions="(300,300)" margins="5">
-                            <coordinates bbox="(-5,-0.8,85,8.5)">
-                                <grid-axes xlabel="s" ylabel="T"/>
-                            </coordinates>
-                        </diagram>
-                    </prefigure>
-                </image>
-        </figure>   
-    </li>
-    <li>
-	<p>
-	  What is the value of <m>T(60)</m>? Include units on your answer. Write a sentence to explain the meaning of this 
-      value in context.
-	</p>
-    </li>
-    <li>
-	<p>
-	  Recall the average rate of change of a function on an interval <m>[a,b]</m>, as stated in 
-      <xref ref="def-1-3-aroc">Definition</xref>, <m>AV_{[a,b]}</m>. 
-      Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
-	</p>
-    </li>
-    <li>
-  	<p>
-	  Is the sign of <m>AV_{[60, 65]}</m> positive or negative?  Why does this sign make sense in light of 
-      the graph of <m>T(s)</m>?  Explain your thinking.
-	</p>
-    </li>
-    <li>
-  	<p>
-	  Write a sentence in everyday language that explains the meaning of the value of <m>AV_{[60, 65]}</m>. 
-      Include units in your sentence.
-	</p>
-    </li>
-  </ol>
-</p>
-
-</exploration>
+<worksheet label="ws-PA-1-5a">
+  <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5a">
+    <introduction>
+      <p>
+        Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
+        <m>s</m> (measured in miles per hour) at which you are driving.  Since 
+        <me>
+          \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
+        </me>,
+        it follows that 
+        <me>
+          \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
+        </me>,
+        and thus we know that <m>T(s) = \frac{50}{s}</m>.  
+      </p>
+      <p>  
+        For instance, observe that <m>T(75) = \frac{50}{75} = \frac{2}{3}</m>, so it takes <m>\frac{2}{3}</m> of an hour to drive <m>50</m> miles at <m>75</m> miles per hour, and the point <m>(75, \frac{2}{3})</m> lies on the graph of <m>T(s)</m>.
+      </p>
+    </introduction>
+    
+    <task workspace="3cm">
+      <p>
+        Plot the graph of <m>T(s) = \frac{50}{s}</m> on the axes provided in <xref ref="Fig-PA-1-5a-axes">Figure</xref>.  Include the point <m>(75, \frac{2}{3})</m>, and plot and label 2 additional points of your choice.  Write a sentence to explain why the shape of the graph makes sense.
+      </p>
+      <figure xml:id="Fig-PA-1-5a-axes">
+        <caption>Axes for plotting <m>T(s)</m>.</caption>
+        <image width="60%">
+          <prefigure label="PA-1-5a" xmlns="https://prefigure.org">
+            <diagram dimensions="(300,300)" margins="5">
+              <coordinates bbox="(-5,-0.8,85,8.5)">
+                <grid-axes xlabel="s" ylabel="T"/>
+              </coordinates>
+            </diagram>
+          </prefigure>
+        </image>
+      </figure>   
+    </task>
+    <task workspace="3cm">
+      <p>
+        What is the value of <m>T(60)</m>? Include units on your answer. Write a sentence to explain the meaning of this 
+        value in context.
+      </p>
+    </task>
+    <task workspace="3cm">
+      <p>
+        Recall the average rate of change of a function on an interval <m>[a,b]</m>, as stated in 
+        <xref ref="def-1-3-aroc">Definition</xref>, <m>AV_{[a,b]}</m>. 
+        Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.  Include units on your answer.
+      </p>
+    </task>
+    <task workspace="3cm">
+      <p>
+        Is the sign of <m>AV_{[60, 65]}</m> positive or negative?  Why does this sign make sense in light of 
+        the graph of <m>T(s)</m>?  Explain your thinking.
+      </p>
+    </task>
+    <task workspace="3cm">
+      <p>
+        Write a sentence in everyday language that explains the meaning of the value of <m>AV_{[60, 65]}</m>. 
+        Include units in your sentence.
+      </p>
+    </task>
+    
+  </exploration>
+</worksheet>
