@@ -38,13 +38,10 @@
           </p>
         </hint>
         <answer>
-          <p><xref ref="F-2-2-A2-soln-a">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_cosineSoln" />
         </answer>
         <solution>
-          <p>
-            See <xref ref="F-2-2-A2-soln">Figure</xref>..
-          </p>
+          <image width="100%" source="images/2_2_cosineSoln" />
         </solution>
       </task>
       <task workspace="0.2cm" xml:id="act-2-2-2-task-1">
@@ -123,13 +120,10 @@
           </p>
         </hint>
         <answer>
-          <p><xref ref="F-2-2-A2-soln-a">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_cosineSoln" />
         </answer>
         <solution>
-          <p>
-            See <xref ref="F-2-2-A2-soln-a">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_cosineSoln" />
         </solution>
       </task>
       <task workspace="1cm" xml:id="act-2-2-2-task-4">
