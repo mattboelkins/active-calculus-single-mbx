@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,360 +12,370 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-1-8-3">
-  <statement>
-    <p>
+<worksheet label="ws-act-1-8-3">
+  <activity xml:id="act-1-8-3">
+    <introduction>
+      <p>
         Consider <m>f(x) = 0.1 x^2 - 1.1x + 3.4</m> and <m>g(x) = -0.5x^2 + 2.5x - 2</m>.  
-    </p>
-
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-            Compute <m>f(3)</m>, <m>f'(3)</m>, <m>g(3)</m>, and <m>g'(3)</m>.  What do you observe?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Determine <m>L(x)</m>, the local linear approximation to <m>f(x)</m> at <m>x = 3</m>.  Explain why this function is also the local linear approximation to <m>g(x)</m> at <m>x = 3</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Complete the following table of values for <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>:
-            <table xml:id="T-act-1-8-4-f-g-L">
-            <title>Values of <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>.</title>
-            <tabular bottom="minor" top="minor">
-                <row bottom="medium">
-                    <cell><m>x</m></cell>
-                    <cell><m>2.9</m></cell>
-                    <cell><m>2.99</m></cell>
-                    <cell><m>2.999</m></cell>
-                    <cell><m>3</m></cell>
-                    <cell><m>3.001</m></cell>
-                    <cell><m>3.01</m></cell>
-                    <cell><m>3.1</m></cell>
-                </row>
-                <row>
-                    <cell><m>f(x)</m></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell><m>g(x)</m></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                </row>
-                <row>
-                    <cell><m>L(x)</m></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                    <cell></cell>
-                </row>                
-            </tabular>
-            </table>  
-          </p>
-          <p>
-            What do you notice about how <m>L(x)</m> approximates <m>f(x)</m> and <m>g(x)</m> near <m>x = 3</m>?
-          </p>
-        </li>
-
-        <li>
-          <p>
-            On the axes provided in <xref ref="Fig-act-1-8-3-axes">Figure</xref>, plot <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.  In addition, compute <m>f''(3)</m>, <m>g''(3)</m>, and <m>L''(3)</m>.  How do the second derivative values and the graph explain why <m>L(x)</m> is a better approximation for one of the functions than it is for the other?
-          </p>
-            <figure xml:id="Fig-act-1-8-3-axes">
-                <caption>Axes for plotting <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.</caption>
-                    <image width="60%">
-                        <prefigure label="F-act-1-8-3-axe" xmlns="https://prefigure.org">
-                            <diagram dimensions="(300,300)" margins="5">
-                                <coordinates bbox="(-1,-3,6,4)">
-                                    <grid-axes xlabel="x" ylabel="y"/>
-                                </coordinates>
-                            </diagram>
-                        </prefigure>
-                    </image>
-            </figure>             
-        </li>
-
-      </ol>
-    </p>
-  </statement>
-
-  <hint>
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-            Use the given formulas for <m>f(x)</m> and <m>g(x)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            Remember that for a given value <m>x = a</m>, the local linearization to <m>y = f(x)</m> is <m>L(x) = f(a) + f'(a)(x-a)</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            For example, you should find that <m>f(2.9) = 1.051</m>, <m>g(2.9) = 1.045</m>, and <m>L(2.9) = 1.05</m> 
-          </p>
+      </p>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="act-1-8-3-task-0">
+      <statement>
+        <p>
+          Compute <m>f(3)</m>, <m>f'(3)</m>, <m>g(3)</m>, and <m>g'(3)</m>.  What do you observe?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Use the given formulas for <m>f(x)</m> and <m>g(x)</m>.
+        </p>
+      </hint>
+      <answer>
+        <p><m>f(3) = 1</m>, <m>f'(3) = -0.5</m>, <m>g(3) = 1</m>, and <m>g'(3) = -0.5</m>; this means <m>f</m> and <m>g</m> will have the same tangent line approximation at <m>x = 3</m>.  
+        </p>
+      </answer>
+      <solution>
+        <p>
+          We find that <m>f(3) = 1</m>, <m>f'(3) = -0.5</m>, <m>g(3) = 1</m>, and <m>g'(3) = -0.5</m>, and thus we observe that <m>f</m> and <m>g</m> share the same value and the same slope at <m>x = 3</m>.  This means they will have the same tangent line approximation at <m>x = 3</m>.  
+        </p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-1-8-3-task-1">
+      <statement>
+        <p>
+          Determine <m>L(x)</m>, the local linear approximation to <m>f(x)</m> at <m>x = 3</m>.  Explain why this function is also the local linear approximation to <m>g(x)</m> at <m>x = 3</m>.
+        </p>
+      </statement>
+      <hint>
+        <p>
+          Remember that for a given value <m>x = a</m>, the local linearization to <m>y = f(x)</m> is <m>L(x) = f(a) + f'(a)(x-a)</m>.
+        </p>
+      </hint>
+      <answer>
+        <p><m>L(x) = 1 - 0.5(x-3)</m> is the tangent line approximation for both <m>f</m> and <m>g</m> at <m>x = 3</m>.
+        </p>
+      </answer>
+      <solution>
+        <p>
+          We know that for a given value <m>x = a</m>, the local linearization to <m>y = f(x)</m> is <m>L(x) = f(a) + f'(a)(x-a)</m>.  Thus, using <m>a = 3</m> and the given function <m>f</m>, we have <m>L(x) = f(3) + f'(3)(x-3) = 1 - 0.5(x-3)</m>.  This is the same tangent line approximation as that of the function <m>g</m> at <m>x = 3</m> since <m>f</m> and <m>g</m> share the same value and the same slope at <m>x = 3</m>.
+        </p>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-1-8-3-task-2">
+      <statement>
+        <p>
+          Complete the following table of values for <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>:
+        </p>
+        <table xml:id="T-act-1-8-4-f-g-L"><title>Values of <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>.</title><tabular bottom="minor" top="minor"><row bottom="medium"><cell><m>x</m></cell><cell><m>2.9</m></cell><cell><m>2.99</m></cell><cell><m>2.999</m></cell><cell><m>3</m></cell><cell><m>3.001</m></cell><cell><m>3.01</m></cell><cell><m>3.1</m></cell></row><row><cell><m>f(x)</m></cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row><row><cell><m>g(x)</m></cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row><row><cell><m>L(x)</m></cell><cell/><cell/><cell/><cell/><cell/><cell/><cell/></row></tabular></table>
+        <p>
+          What do you notice about how <m>L(x)</m> approximates <m>f(x)</m> and <m>g(x)</m> near <m>x = 3</m>?
+        </p>
+      </statement>
+      <hint>
+        <p>
+          For example, you should find that <m>f(2.9) = 1.051</m>, <m>g(2.9) = 1.045</m>, and <m>L(2.9) = 1.05</m></p>
           <p>
             Think about whether <m>L(x)</m> is too large or too small compared to values of <m>f(x)</m> and <m>g(x)</m>.
           </p>
-        </li>
-
-        <li>
-          <p>
-            How do the concavities of <m>f(x)</m> and <m>g(x)</m> differ near <m>x = 3</m>?
-          </p>
-          
-        </li>
-
-      </ol>
-    </p>
-  </hint>
-  <answer>
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-            <m>f(3) = 1</m>, <m>f'(3) = -0.5</m>, <m>g(3) = 1</m>, and <m>g'(3) = -0.5</m>; this means <m>f</m> and <m>g</m> will have the same tangent line approximation at <m>x = 3</m>.  
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <m>L(x) = 1 - 0.5(x-3)</m> is the tangent line approximation for both <m>f</m> and <m>g</m> at <m>x = 3</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <table xml:id="T-act-1-8-4-f-g-L-ans">
-            <title>Values of <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>.</title>
-            <tabular bottom="minor" top="minor">
-                <row bottom="medium">
-                    <cell><m>x</m></cell>
-                    <cell><m>2.9</m></cell>
-                    <cell><m>2.99</m></cell>
-                    <cell><m>2.999</m></cell>
-                    <cell><m>3</m></cell>
-                    <cell><m>3.001</m></cell>
-                    <cell><m>3.01</m></cell>
-                    <cell><m>3.1</m></cell>
-                </row>
-                <row>
-                    <cell><m>f(x)</m></cell>
-                    <cell><m>1.051</m></cell>
-                    <cell><m>1.00501</m></cell>
-                    <cell><m>1.0005001</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9995001</m></cell>
-                    <cell><m>0.99501</m></cell>
-                    <cell><m>0.951</m></cell>
-                </row>
-                <row>
-                    <cell><m>g(x)</m></cell>
-                    <cell><m>1.045</m></cell>
-                    <cell><m>1.00495</m></cell>
-                    <cell><m>1.0004995</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9994995</m></cell>
-                    <cell><m>0.99495</m></cell>
-                    <cell><m>0.945</m></cell>
-                </row>
-                <row>
-                    <cell><m>L(x)</m></cell>
-                    <cell><m>1.05</m></cell>
-                    <cell><m>1.005</m></cell>
-                    <cell><m>1.0005</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9995</m></cell>
-                    <cell><m>0.995</m></cell>
-                    <cell><m>0.95</m></cell>
-                </row>                
-            </tabular>
-            </table>  
-          </p>
+        </hint>
+        <answer>
+          <tabular bottom="minor" top="minor">
+            <row bottom="medium">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell>
+                <m>2.9</m>
+              </cell>
+              <cell>
+                <m>2.99</m>
+              </cell>
+              <cell>
+                <m>2.999</m>
+              </cell>
+              <cell>
+                <m>3</m>
+              </cell>
+              <cell>
+                <m>3.001</m>
+              </cell>
+              <cell>
+                <m>3.01</m>
+              </cell>
+              <cell>
+                <m>3.1</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>f(x)</m>
+              </cell>
+              <cell>
+                <m>1.051</m>
+              </cell>
+              <cell>
+                <m>1.00501</m>
+              </cell>
+              <cell>
+                <m>1.0005001</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9995001</m>
+              </cell>
+              <cell>
+                <m>0.99501</m>
+              </cell>
+              <cell>
+                <m>0.951</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>g(x)</m>
+              </cell>
+              <cell>
+                <m>1.045</m>
+              </cell>
+              <cell>
+                <m>1.00495</m>
+              </cell>
+              <cell>
+                <m>1.0004995</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9994995</m>
+              </cell>
+              <cell>
+                <m>0.99495</m>
+              </cell>
+              <cell>
+                <m>0.945</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>L(x)</m>
+              </cell>
+              <cell>
+                <m>1.05</m>
+              </cell>
+              <cell>
+                <m>1.005</m>
+              </cell>
+              <cell>
+                <m>1.0005</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9995</m>
+              </cell>
+              <cell>
+                <m>0.995</m>
+              </cell>
+              <cell>
+                <m>0.95</m>
+              </cell>
+            </row>
+          </tabular>
           <p>
             Near <m>x = 3</m>, <m>L(x)</m> always underestimates the value of <m>f(x)</m>, and <m>L(x)</m> always overestimates the value of <m>g(x)</m>.  
           </p>
-        </li>
-
-        <li>
-          <p>
-            <figure xml:id="Fig-act-1-8-3-ans">
-                <caption>Plots of <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.</caption>
-                    <image width="60%">
-                        <prefigure label="F-act-1-8-3-ans" xmlns="https://prefigure.org">
-                          <diagram dimensions="(300,300)" margins="5">
-                            <definition>f(x) = 0.1*x**2 - 1.1*x + 3.4</definition>
-                            <definition>g(x) = -0.5*x**2 + 2.5*x - 2</definition>
-                            <definition>L(x) = 1 - 0.5*(x - 3)</definition>
-                            <definition>a = 3</definition> 
-                            <coordinates bbox="(-1,-3,6,4)">
-                              <grid-axes xlabel="x" ylabel="y"/>
-                              <graph function="f"/>
-                              <graph function="g" stroke="darkmagenta"/>     
-                              <graph function="L" stroke="red"/>       
-                              <point p="(a,f(a))" alignment="nw" clear-background="yes">
-                                <!-- <m>(-4,f(-4))</m> -->
-                              </point>
-                              <label anchor="(1,f(1))" alignment="ne" >
-                                <m>f(x) </m>
-                              </label>  
-                              <label anchor="(1.7,L(1.7))" alignment="sw" >
-                                <m>L(x) </m>
-                              </label>       
-                              <label anchor="(0.4,g(0.4))" alignment="se" >
-                                <m>g(x) </m>
-                              </label> 
-
-                              <point p="(b,f(b))" alignment="se" clear-background="yes">
-                                <m>(2,f(2))</m>
-                              </point>    
-                            </coordinates>
-                          </diagram>
-                        </prefigure>
-                    </image>
-            </figure> 
-          Since <m>f''(3) = 0.2</m> ande <m>g''(3)=-1</m>, <m>g</m> has <q>more</q> concavity at <m>x = 3</m> than <m>f</m>, so <m>L(x)</m> is a closer approximation of the value of <m>f(x)</m> than of the value of <m>g(x)</m> near <m>x = 3</m>.
-          </p>              
-        </li>
-      </ol>
-    </p>
-  </answer>
-
-  <solution>
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-            We find that <m>f(3) = 1</m>, <m>f'(3) = -0.5</m>, <m>g(3) = 1</m>, and <m>g'(3) = -0.5</m>, and thus we observe that <m>f</m> and <m>g</m> share the same value and the same slope at <m>x = 3</m>.  This means they will have the same tangent line approximation at <m>x = 3</m>.  
-          </p>
-        </li>
-
-        <li>
-          <p>
-            We know that for a given value <m>x = a</m>, the local linearization to <m>y = f(x)</m> is <m>L(x) = f(a) + f'(a)(x-a)</m>.  Thus, using <m>a = 3</m> and the given function <m>f</m>, we have <m>L(x) = f(3) + f'(3)(x-3) = 1 - 0.5(x-3)</m>.  This is the same tangent line approximation as that of the function <m>g</m> at <m>x = 3</m> since <m>f</m> and <m>g</m> share the same value and the same slope at <m>x = 3</m>.
-          </p>
-        </li>
-
-        <li>
-          <p>
-            <table xml:id="T-act-1-8-4-f-g-L-soln">
-            <title>Values of <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m>.</title>
-            <tabular bottom="minor" top="minor">
-                <row bottom="medium">
-                    <cell><m>x</m></cell>
-                    <cell><m>2.9</m></cell>
-                    <cell><m>2.99</m></cell>
-                    <cell><m>2.999</m></cell>
-                    <cell><m>3</m></cell>
-                    <cell><m>3.001</m></cell>
-                    <cell><m>3.01</m></cell>
-                    <cell><m>3.1</m></cell>
-                </row>
-                <row>
-                    <cell><m>f(x)</m></cell>
-                    <cell><m>1.051</m></cell>
-                    <cell><m>1.00501</m></cell>
-                    <cell><m>1.0005001</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9995001</m></cell>
-                    <cell><m>0.99501</m></cell>
-                    <cell><m>0.951</m></cell>
-                </row>
-                <row>
-                    <cell><m>g(x)</m></cell>
-                    <cell><m>1.045</m></cell>
-                    <cell><m>1.00495</m></cell>
-                    <cell><m>1.0004995</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9994995</m></cell>
-                    <cell><m>0.99495</m></cell>
-                    <cell><m>0.945</m></cell>
-                </row>
-                <row>
-                    <cell><m>L(x)</m></cell>
-                    <cell><m>1.05</m></cell>
-                    <cell><m>1.005</m></cell>
-                    <cell><m>1.0005</m></cell>
-                    <cell><m>1</m></cell>
-                    <cell><m>0.9995</m></cell>
-                    <cell><m>0.995</m></cell>
-                    <cell><m>0.95</m></cell>
-                </row>                
-            </tabular>
-            </table>  
-          </p>
+        </answer>
+        <solution>
+          <tabular bottom="minor" top="minor">
+            <row bottom="medium">
+              <cell>
+                <m>x</m>
+              </cell>
+              <cell>
+                <m>2.9</m>
+              </cell>
+              <cell>
+                <m>2.99</m>
+              </cell>
+              <cell>
+                <m>2.999</m>
+              </cell>
+              <cell>
+                <m>3</m>
+              </cell>
+              <cell>
+                <m>3.001</m>
+              </cell>
+              <cell>
+                <m>3.01</m>
+              </cell>
+              <cell>
+                <m>3.1</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>f(x)</m>
+              </cell>
+              <cell>
+                <m>1.051</m>
+              </cell>
+              <cell>
+                <m>1.00501</m>
+              </cell>
+              <cell>
+                <m>1.0005001</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9995001</m>
+              </cell>
+              <cell>
+                <m>0.99501</m>
+              </cell>
+              <cell>
+                <m>0.951</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>g(x)</m>
+              </cell>
+              <cell>
+                <m>1.045</m>
+              </cell>
+              <cell>
+                <m>1.00495</m>
+              </cell>
+              <cell>
+                <m>1.0004995</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9994995</m>
+              </cell>
+              <cell>
+                <m>0.99495</m>
+              </cell>
+              <cell>
+                <m>0.945</m>
+              </cell>
+            </row>
+            <row>
+              <cell>
+                <m>L(x)</m>
+              </cell>
+              <cell>
+                <m>1.05</m>
+              </cell>
+              <cell>
+                <m>1.005</m>
+              </cell>
+              <cell>
+                <m>1.0005</m>
+              </cell>
+              <cell>
+                <m>1</m>
+              </cell>
+              <cell>
+                <m>0.9995</m>
+              </cell>
+              <cell>
+                <m>0.995</m>
+              </cell>
+              <cell>
+                <m>0.95</m>
+              </cell>
+            </row>
+          </tabular>
           <p>
             Near <m>x = 3</m> (for <m>x</m> not equal to <m>3</m>), we see that <m>L(x)</m> always underestimates the value of <m>f(x)</m>, and <m>L(x)</m> always overestimates the value of <m>g(x)</m>.  Moreover, in absolute terms, <m>L(x)</m> is a closer approximation of the value of <m>f(x)</m> than of the value of <m>g(x)</m>.
           </p>
-        </li>
-
-        <li>
+        </solution>
+      </task>
+      <task workspace="3cm" xml:id="act-1-8-3-task-3">
+        <statement>
           <p>
-            In <xref ref="">Figure</xref>, we  plot <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.  
-            <figure xml:id="Fig-act-1-8-3-soln">
-                <caption>Axes for plotting <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.</caption>
-                    <image width="60%">
-                        <prefigure label="F-act-1-8-3-soln" xmlns="https://prefigure.org">
-                          <diagram dimensions="(300,300)" margins="5">
-                            <definition>f(x) = 0.1*x**2 - 1.1*x + 3.4</definition>
-                            <definition>g(x) = -0.5*x**2 + 2.5*x - 2</definition>
-                            <definition>L(x) = 1 - 0.5*(x - 3)</definition>
-                            <definition>a = 3</definition> 
-                            <coordinates bbox="(-1,-3,6,4)">
-                              <grid-axes xlabel="x" ylabel="y"/>
-                              <graph function="f"/>
-                              <graph function="g" stroke="darkmagenta"/>     
-                              <graph function="L" stroke="red"/>       
-                              <point p="(a,f(a))" alignment="nw" clear-background="yes">
-                                <!-- <m>(-4,f(-4))</m> -->
-                              </point>
-                              <label anchor="(1,f(1))" alignment="ne" >
-                                <m>f(x) </m>
-                              </label>  
-                              <label anchor="(1.7,L(1.7))" alignment="sw" >
-                                <m>L(x) </m>
-                              </label>       
-                              <label anchor="(0.4,g(0.4))" alignment="se" >
-                                <m>g(x) </m>
-                              </label> 
-
-                              <point p="(b,f(b))" alignment="se" clear-background="yes">
-                                <m>(2,f(2))</m>
-                              </point>    
-                            </coordinates>
-                          </diagram>
-                        </prefigure>
-                    </image>
-            </figure> 
-          In the figure, we see how <m>g(x)</m> bends away from <m>L(x)</m> faster than <m>f(x)</m> does.  This is because <m>f''(3) = 0.2</m>, while <m>g''(3)=-1</m>, so <m>g</m> has <q>more</q> concavity at <m>x = 3</m> than <m>f</m>.  As a result, <m>L(x)</m> is a closer approximation of the value of <m>f(x)</m> than of the value of <m>g(x)</m> near <m>x = 3</m>.
-          </p>              
-        </li>
-      </ol>
-    </p>
-  </solution>
-</activity>
-
+            On the axes provided in <xref ref="Fig-act-1-8-3-axes">Figure</xref>, plot <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.  In addition, compute <m>f''(3)</m>, <m>g''(3)</m>, and <m>L''(3)</m>.  How do the second derivative values and the graph explain why <m>L(x)</m> is a better approximation for one of the functions than it is for the other?
+          </p>
+          <figure xml:id="Fig-act-1-8-3-axes">
+            <caption>Axes for plotting <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.</caption>
+            <image width="60%">
+              <prefigure label="F-act-1-8-3-axe" xmlns="https://prefigure.org">
+                <diagram dimensions="(300,300)" margins="5">
+                  <coordinates bbox="(-1,-3,6,4)">
+                    <grid-axes xlabel="x" ylabel="y"/>
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+          </figure>  
+        </statement>
+        <hint>
+          <p>
+            How do the concavities of <m>f(x)</m> and <m>g(x)</m> differ near <m>x = 3</m>?
+          </p>
+        </hint>
+        <answer>
+          <image width="60%">
+            <prefigure xmlns="https://prefigure.org" label="F-act-1-8-3-ans">
+              <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x) = 0.1*x**2 - 1.1*x + 3.4</definition>
+                <definition>g(x) = -0.5*x**2 + 2.5*x - 2</definition>
+                <definition>L(x) = 1 - 0.5*(x - 3)</definition>
+                <definition>a = 3</definition>
+                <coordinates bbox="(-1,-3,6,4)"><grid-axes xlabel="x" ylabel="y"/>
+                  <graph function="f"/><graph function="g" stroke="darkmagenta"/>
+                  <graph function="L" stroke="red"/>
+                  <point p="(a,f(a))" alignment="nw" clear-background="yes">
+                    <!-- <m>(-4,f(-4))</m> --></point>
+                    <label anchor="(1,f(1))" alignment="ne"><m>f(x) </m></label>
+                    <label anchor="(1.7,L(1.7))" alignment="sw"><m>L(x) </m></label>
+                    <label anchor="(0.4,g(0.4))" alignment="se"><m>g(x) </m></label>
+                    <!-- <point p="(b,f(b))" alignment="se" clear-background="yes"><m>(2,f(2))</m></point> -->
+                  </coordinates>
+                </diagram>
+              </prefigure>
+            </image>
+            <p>
+              Since <m>f''(3) = 0.2</m> ande <m>g''(3)=-1</m>, <m>g</m> has <q>more</q> concavity at <m>x = 3</m> than <m>f</m>, so <m>L(x)</m> is a closer approximation of the value of <m>f(x)</m> than of the value of <m>g(x)</m> near <m>x = 3</m>.
+            </p>
+          </answer>
+          <solution>
+            <p>
+              Below we  plot <m>f(x)</m>, <m>g(x)</m>, and <m>L(x)</m> near <m>x = 3</m>.  
+            </p>
+            <image width="60%"><prefigure xmlns="https://prefigure.org" label="F-act-1-8-3-soln">
+              <diagram dimensions="(300,300)" margins="5">
+                <definition>f(x) = 0.1*x**2 - 1.1*x + 3.4</definition>
+                <definition>g(x) = -0.5*x**2 + 2.5*x - 2</definition>
+                <definition>L(x) = 1 - 0.5*(x - 3)</definition>
+                <definition>a = 3</definition>
+                <coordinates bbox="(-1,-3,6,4)">
+                  <grid-axes xlabel="x" ylabel="y"/>
+                  <graph function="f"/><graph function="g" stroke="darkmagenta"/>
+                  <graph function="L" stroke="red"/>
+                  <point p="(a,f(a))" alignment="nw" clear-background="yes"><!-- <m>(-4,f(-4))</m> --></point>
+                  <label anchor="(1,f(1))" alignment="ne"><m>f(x) </m></label>
+                  <label anchor="(1.7,L(1.7))" alignment="sw"><m>L(x) </m></label>
+                  <label anchor="(0.4,g(0.4))" alignment="se"><m>g(x) </m></label>
+                  <!-- <point p="(b,f(b))" alignment="se" clear-background="yes"><m>(2,f(2))</m></point> -->
+                </coordinates></diagram>
+              </prefigure>
+            </image>
+            <p>
+              In the figure, we see how <m>g(x)</m> bends away from <m>L(x)</m> faster than <m>f(x)</m> does.  This is because <m>f''(3) = 0.2</m>, while <m>g''(3)=-1</m>, so <m>g</m> has <q>more</q> concavity at <m>x = 3</m> than <m>f</m>.  As a result, <m>L(x)</m> is a closer approximation of the value of <m>f(x)</m> than of the value of <m>g(x)</m> near <m>x = 3</m>.
+            </p>
+          </solution>
+        </task>
+      </activity>
+    </worksheet>

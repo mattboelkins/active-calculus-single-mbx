@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
@@ -12,159 +12,95 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
 <!-- this activity is new in 2025 for the second edition; it basically replaces what was act-1-5-2 in the first edition -->
-
-<activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-1-5a-1">
-  <statement>
-    <p> 
+<worksheet label="ws-act-1-5a-1">
+  <activity xml:id="act-1-5a-1">
+    <introduction>
+      <p> 
       In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in <xref ref="Ex-1-5a-1-pop-growth">Example</xref> and <xref ref="Ex-1-5a-2-time-speed">Example</xref>.  
     </p>
-    <p>  
+      <p>  
       First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units.  Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  
     </p>
-    <p>
+      <p>
       Remember not to try to simplify the units on the derivative value, but rather keep the units in the form <q>units of output per unit of input</q>.
     </p>
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
+      <p/>
+    </introduction>
+    <task workspace="3cm" xml:id="act-1-5a-1-task-0">
+      <statement>
+        <p>
             Suppose that <m>V(m)</m> measures the value of a car (in dollars) after the car has been driven <m>m</m> miles.  Explain the meaning of the statement <me>V'(10250) = -0.89</me> by writing two sentences that address the instantaneous rate of change and the predicted change in the function, respectively.  
           </p>
-
-          <p>
+        <p>
             Explicitly, your first sentence might have structure like
-            <blockquote>
+        </p>
+            <blockquote><p><m>V'(10250) = -0.89</m> means that the instantaneous rate of change of <fillin characters="5"/> when the car has been driven <fillin characters="10"/> miles is <m>-0.89</m><fillin characters="15"/>,
+              </p></blockquote>
               <p>
-                <m>V'(10250) = -0.89</m> means that the instantaneous rate of change of <fillin characters="5" /> when the car has been driven <fillin characters="10" /> miles is <m>-0.89</m> <fillin characters="15" />,
-              </p>
-            </blockquote>
             where the final blank should be completed using the units on the derivative.  Your second sentence might have form
-            <blockquote>
-              <p>
-                When the car has been driven <fillin characters="10" /> miles, if the car is driven one more mile, we expect that the value of the car will <fillin characters="10" /> by about <m>-0.89</m> <fillin characters="10" />.
               </p>
-            </blockquote>
-          </p>
-        </li>
-
-        <li>
-          <p>
+            <blockquote><p>
+                When the car has been driven <fillin characters="10"/> miles, if the car is driven one more mile, we expect that the value of the car will <fillin characters="10"/> by about <m>-0.89</m><fillin characters="10"/>.
+              </p></blockquote>
+      </statement>
+      <hint>
+        <p/>
+      </hint>
+      <answer>
+        <p/>
+      </answer>
+      <solution>
+        <p/>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-1-5a-1-task-1">
+      <statement>
+        <p>
             Suppose that <m>W(h)</m> measures the amount of water (in liters) in a tank that is filled with water that is <m>h</m> meters deep.  Explain the meaning of the statement <me>W'(0.75) = 3.43</me> by writing two sentences in the structure described above.
           </p>
-        </li>
-
-        <li>
-          <p>
+      </statement>
+      <hint>
+        <p/>
+      </hint>
+      <answer>
+        <p/>
+      </answer>
+      <solution>
+        <p/>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-1-5a-1-task-2">
+      <statement>
+        <p>
             Suppose that <m>S(t)</m> measures the temperature of a can of soda (in degrees Celsius) in a refrigerator at time <m>t</m> in minutes.  Explain the meaning of the statement <me>S'(20) = -0.527</me> by writing two sentences in the structure described above.
           </p>
-        </li>
-
-        <li>
-          <p>
+      </statement>
+      <hint>
+        <p/>
+      </hint>
+      <answer>
+        <p/>
+      </answer>
+      <solution>
+        <p/>
+      </solution>
+    </task>
+    <task workspace="3cm" xml:id="act-1-5a-1-task-3">
+      <statement>
+        <p>
             Suppose that <m>C(s)</m> measures the rate at which a person burns calories (in calories per hour) when riding a bike at a speed of <m>s</m> kilometers per hour.  Explain the meaning of the statement <me>C'(19) = 52.1</me> by writing two sentences in the structure described above.
           </p>
-        </li>
-
-      </ol>
-    </p>
-
-  </statement>
-  <hint>
-    <p>
-      <ol marker="a.">
-        <li>
-          <p>
-		  </p>
-        </li>
-
-        <li>
-          <p>
-		  </p>
-        </li>
-
-        <li>
-          <p>
-		  </p>
-        </li>
-
-        <li>
-          <p>
-		  </p>
-        </li>
-
-      </ol>
-    </p>
-  </hint>
-  <answer>
-     <p>
-      <ol marker="a.">
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-      </ol>
-    </p>
-  </answer>
-  <solution>
-     <p>
-      <ol marker="a.">
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-
-        <li>
-          <p>
-		
-          </p>
-        </li>
-      </ol>
-    </p>
-  </solution>
-</activity>
+      </statement>
+      <hint>
+        <p/>
+      </hint>
+      <answer>
+        <p/>
+      </answer>
+      <solution>
+        <p/>
+      </solution>
+    </task>
+  </activity>
+</worksheet>
