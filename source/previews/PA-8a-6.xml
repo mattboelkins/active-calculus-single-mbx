@@ -28,7 +28,7 @@
           <men xml:id="EQ-PA-8a-6-1-y">
             y = c_0 + c_1 x + c_2 x^2 + c_3 x^3 + c_4 x^4 + \cdots + c_n x^n + \cdots
           </men>.
-          Use the <xref ref="T-PS-diff-int">Power Series Differentiation Theorem</xref> to differentiate the right side of <xref ref="EQ-PA-8a-6-1-y">Equation</xref>.  Thus, express <m>y'</m> as a power series; show at least the first four nonzero terms of that series.
+          Use the <xref ref="T-PS-diff-int" text="title"/> to differentiate the right side of <xref ref="EQ-PA-8a-6-1-y">Equation</xref>.  Thus, express <m>y'</m> as a power series; show at least the first four nonzero terms of that series.
         </p>
       </statement>
       <hint/>

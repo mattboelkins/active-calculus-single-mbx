@@ -21,11 +21,12 @@
 			 	T_4(x) = c_0 + c_1 (x-1) + c_2 (x-1)^2 + c_3(x-1)^3 + c_4(x-1)^4
 			 </me>.
 		</p>
+    <p>
       <ol marker="a.">
         <li>
 		        <p>
 		          Determine <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>, and then compute <m>f'(1)</m>, <m>f''(1)</m>, <m>f'''(1)</m>, and <m>f^{(4)}(1)</m>.  Enter your results in the provided blanks below.
-		        </p>	
+		        
 					<md>
 						<mrow>k \amp= 0 \amp f(x) \amp= \ln(x) \amp f(1) \amp= \ln(1) = 0</mrow>
 						<mrow>k \amp= <fillin characters="2" /> \amp f'(x) \amp= <fillin characters="5" /> \amp f'(1) \amp= <fillin characters="5" /> </mrow>
@@ -33,6 +34,7 @@
 						<mrow>k \amp= <fillin characters="2" /> \amp f'''(x) \amp= <fillin characters="5" /> \amp f'''(1) \amp= <fillin characters="5" /> </mrow>
 						<mrow>k \amp= <fillin characters="2" /> \amp f^{(4)}(x) \amp= <fillin characters="5" /> \amp f^{(4)}(1) \amp= <fillin characters="5" />  </mrow>
 					</md>	
+        </p>
         </li>
         <li>
           <p>
@@ -70,6 +72,7 @@
                 	</p>
         </li>
       </ol>
+    </p>
     </statement>
     <hint/>
     <answer>
@@ -175,15 +178,14 @@
     </answer>
     <solution>
       <p>
+      <ol marker="a.">
+        <li>
+          <p>
 			 Let <m>f(x) = \ln(x)</m> and consider the degree <m>4</m> Taylor polynomial approximation 
 			 <me>
 			 	T_4(x) = c_0 + c_1 (x-1) + c_2 (x-1)^2 + c_3(x-1)^3 + c_4(x-1)^4
 			 </me>.
-		</p>
-      <ol marker="a.">
-        <li>
-          <table xml:id="T-8a-2-act-2-log-soln">
-            <title>Finding the derivatives of <m>f(x) = \ln(x)</m> at <m>a = 1</m>.</title>
+      </p>
             <tabular top="none" bottom="none">
               <row>
                 <cell halign="right">
@@ -256,7 +258,7 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          
         </li>
         <li>
           <p>
@@ -291,6 +293,7 @@
                 	</p>
         </li>
       </ol>
+    </p>
     </solution>
   </activity>
 </worksheet>
