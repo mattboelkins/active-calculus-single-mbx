@@ -26,8 +26,7 @@
     <webwork source="Library/Michigan/Chap3Sec4/Q47.pg"/>
   </exercise>
   <exercise label="Library__UCSB__Stewart5_3_5__Stewart5_3_5_57__Stewart5_3_5_57.pg">
-    <!-- GIF -->
-    <webwork source="local/mkeller/Stewart5_3_5_57/Stewart5_3_5_57.pg"/>
+        <webwork source="csafranski/2.5HW_prob5.pg"/>
   </exercise>
   <exercise label="Library__270__setDerivatives5ChainRule__derchr1.pg">
     <webwork source="csafranski/2.5HW_prob6.pg"/>
