@@ -265,7 +265,7 @@
       <me>
         r(x) = \lim_{n \to \infty} \frac{c_{n+1} (x-a)^{n+1}}{c_n (x-a)^n}
       </me>
-      and set <m>|r(x) \lt 1</m>, we can usually do algebra to write the resulting inequality in the form
+      and set <m>|r(x)| \lt 1</m>, we can usually do algebra to write the resulting inequality in the form
       <me>
         |x - a| \lt R
       </me>.

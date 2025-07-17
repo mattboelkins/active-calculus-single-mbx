@@ -13,6 +13,47 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <worksheet label="ws-act-8a-5x-1">
+  <exercise workspace="3cm" xml:id="ex-8a-5x-1-test-answer">
+    <introduction>
+      <p>
+        This is a test exercise within a worksheet.
+      </p>
+    </introduction>
+    <task>
+      <statement>
+        <p>
+          This is a test task within a worksheet exercise.
+        </p>
+      </statement>
+      <answer>
+        <p>
+          This is a test answer within a worksheet exercise.
+        </p>
+      </answer>
+      <solution>
+        <p>
+          And this is a test solution to a worksheet exercise.
+        </p>
+      </solution>
+    </task>
+    <task workspace="1cm">
+      <statement>
+        <p>
+          This is a second task
+        </p>
+      </statement>
+      <answer>
+        <p>
+          This is a second test answer within a worksheet exercise.
+        </p>
+      </answer>
+      <solution>
+        <p>
+          And this is a second test solution to a worksheet exercise.
+        </p>
+      </solution>      
+    </task>
+  </exercise>
   <activity xml:id="act-8a-5x-1">
     <introduction>
       <p>

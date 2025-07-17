@@ -157,7 +157,7 @@
         Plotting these partial sums in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we see an important pattern in how the partial sums approach the exact value of the infinite sum.
         <figure xml:id="F-8a-5x-alt-partial-sums">
           <caption>Plotting the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m>.</caption>
-            <image width="80%">
+            <image width="60%">
             <prefigure label="Fig-8a-5x-alt-partial-sums" xmlns="https://prefigure.org">  
               <diagram dimensions="(300,200)" margins="10">
                 <definition>a = 3</definition> 
