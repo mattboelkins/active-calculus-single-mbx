@@ -39,13 +39,10 @@
           </p>
         </hint>
         <answer>
-          <p><xref ref="F-2-2-A1-soln-a">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_sineSoln" />
         </answer>
         <solution>
-          <p>
-            See <xref ref="F-2-2-A1-soln">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_sineSoln" />
         </solution>
       </task>
       <task workspace="0.2cm" xml:id="act-2-2-1-task-1">
@@ -122,13 +119,13 @@
           </p>
         </hint>
         <answer>
-          <p><xref ref="F-2-2-A1-soln-a">Figure</xref>.
-          </p>
+          <image width="100%" source="images/2_2_sineSoln" />
         </answer>
         <solution>
           <p>
-            See the figure below.
+            See the image below.
           </p>
+          <image width="100%" source="images/2_2_sineSoln" />
         </solution>
       </task>
       <task workspace="1cm" xml:id="act-2-2-1-task-4">

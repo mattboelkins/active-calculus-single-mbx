@@ -17,10 +17,10 @@
     <webwork source="Library/Michigan/Chap11Sec2/Q01.pg"/>
   </exercise>
   <exercise label="Library__Rochester__setDiffEQ2DirectionFields__ur_de_2_3">
-    <webwork source="Library/Rochester/setDiffEQ2DirectionFields/ur_de_2_3.pg"/>
+    <webwork source="csafranski/7.2HW_prob2.pg"/>
   </exercise>
   <exercise label="Library__Rochester__setDiffEQ6AutonomousStability__ur_de_6_4">
-    <webwork source="Library/Rochester/setDiffEQ6AutonomousStability/ur_de_6_4.pg"/>
+    <webwork source="csafranski/7.2HW_prob3.pg"/>
   </exercise>
   <exercise label="Library__UMN__calculusStewartET__s_9_2_1">
     <webwork source="Library/UMN/calculusStewartET/s_9_2_1.pg"/>

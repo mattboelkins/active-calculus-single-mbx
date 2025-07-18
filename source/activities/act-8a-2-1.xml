@@ -322,7 +322,7 @@
       </answer>
       <solution>
         <p>
-          Using the results in <xref ref="T-8a-2-act-1-cosine-sol">Table</xref> along with the fact that <m>c_k = \frac{f^{(k)}(0)}{k!}</m>, we find that 
+          Using the results in the table along with the fact that <m>c_k = \frac{f^{(k)}(0)}{k!}</m>, we find that 
           <md>
             <mrow>T_2(x) \amp= 1 + 0x - \frac{1}{2!}x^2 </mrow>
             <mrow>T_4(x) \amp= 1 + 0x - \frac{1}{2!}x^2 + 0x^3 + \frac{1}{4!}x^4 </mrow>
@@ -345,7 +345,7 @@
       </answer>
       <solution>
         <p>
-          Based on the pattern in <xref ref="T-8a-2-act-1-cosine-soln">Table</xref>, we expect that <m>T_{10}(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8 - \frac{1}{10!}x^{10}</m>.
+          Based on the pattern in the table, we expect that <m>T_{10}(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \frac{1}{8!}x^8 - \frac{1}{10!}x^{10}</m>.
         </p>
       </solution>
     </task>
@@ -714,10 +714,9 @@
       </answer>
       <solution>
         <p>
-          Building the spreadsheet in <xref ref="T-8a-2-act-1-spreadsheet-6-soln">Table</xref> using <m>\Delta x = 0.2</m>, a start value of <m>x = -2</m>, and the functions <m>f(x) = \cos(x)</m>, <m>T_2(x)</m>, <m>T_4(x)</m>, and <m>T_6(x)</m>, we have the following first 3 and last 3 rows:
+          Building the spreadsheet in the table using <m>\Delta x = 0.2</m>, a start value of <m>x = -2</m>, and the functions <m>f(x) = \cos(x)</m>, <m>T_2(x)</m>, <m>T_4(x)</m>, and <m>T_6(x)</m>, we have the following first 3 and last 3 rows:
         </p>
-          <table xml:id="T-8a-2-act-1-spreadsheet-6-sol">
-            <title>Comparing <m>f(x) = \cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> approximations near <m>a = 0</m>.</title>
+
             <tabular top="minor" bottom="minor">
               <row>
                 <cell>
@@ -880,12 +879,10 @@
                 </cell>
               </row>
             </tabular>
-          </table>
+          
           <p>
             and the last three columns of your spreadsheet have the first 3 and last 3 rows:
           </p>
-          <table xml:id="T-8a-2-act-1-spreadsheet-3-sol">
-            <title>The absolute error between <m>f(x) = \cos(x)</m> and its degree <m>2</m>, <m>4</m>, and <m>6</m> approximations.</title>
             <tabular top="minor" bottom="minor">
               <row>
                 <cell>
@@ -976,7 +973,6 @@
                 </cell>
               </row>
             </tabular>
-          </table>
           <p>
             <m>|f(x) - T_2(x)| \lt 0.1</m> for roughly <m>-1.2 \lt x \lt 1.2</m>, and that interval of accuracy grows to about <m>-2 \lt x \lt 2</m> for <m>|f(x) - T_4(x)| \lt 0.1</m>.  If we increase the degree of approximation further, <m>|f(x) - T_6(x)| \lt 0.1</m> for approximately <m>-2.8 \lt x \lt 2.8</m>. 
           </p>

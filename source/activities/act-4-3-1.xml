@@ -128,7 +128,7 @@
         <solution>
           <p>
             Finally, for <m>\int_{-3}^4 g(x) \, dx</m>,
-            where <m>g</m> is the function pictured in <xref ref="F-4-3-Act1">Figure</xref>,
+            where <m>g</m> is the function pictured in the problem,
             we consider the function on seven consecutive subintervals of length 1.
             Observe that on <m>[-3,-2]</m>,
             the bounded area is <m>\frac{1}{2}</m>.
