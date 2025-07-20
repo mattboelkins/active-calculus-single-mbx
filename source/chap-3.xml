@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,12 +12,14 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <chapter xmlns:xi="http://www.w3.org/2001/XInclude"  xml:id="C-3" permid="hcC">
   <title>Using Derivatives</title>
+  <xi:include  href="./sec-3-5-rel-rates.xml" />
+  <xi:include  href="./sec-2-8-LHR.xml" />
   <xi:include  href="./sec-3-1-tests.xml" />
   <xi:include  href="./sec-3-2-families.xml" />
   <xi:include  href="./sec-3-3-optimization.xml" />
   <xi:include  href="./sec-3-4-applied-opt.xml" />
-  <xi:include  href="./sec-3-5-rel-rates.xml" />
 </chapter>
 
