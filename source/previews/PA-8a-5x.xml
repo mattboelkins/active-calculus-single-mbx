@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-8a-5x" component="static">
-
+  <introduction>
     <p>
         Consider the alternating geometric series 
         <me>
@@ -22,40 +22,82 @@
         </me>.  
         We want to explore how the partial sums of the series compare to and approximate the exact sum of the series.
     </p>
+  </introduction>
 
-    <p>
-        <ol marker="a.">
-            <li>
-                <p>
-                   Recall that the <m>n</m>th partial sum, <m>S_n</m>, is the sum of the first <m>n</m> terms of the infinite geometric series <m>S</m>.  This means that
-                    <me>
-                        S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}
-                    </me>. 
-                    Use appropriate computational technology to find the exact fractional values of <m>S_3</m>, <m>S_4</m>, <m>\ldots</m>, <m>S_8</m>, and record these values along with their decimal representations in the blank spaces provided below.  Note that <m>S_1 = 1</m> and <m>S_2 = 1 - \frac{4}{5} = \frac{1}{5} = 0.2</m> are provided, and remember that each subsequent partial sum can be found by adding or subtracting one number from the preceding partial sum.     
-                </p>
-                <p>
-                    <md>
-                        <mrow>n \amp= 1 \amp S_1 \amp= 1</mrow>
-                        <mrow>n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2</mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_3 \amp= <fillin characters="9" /> </mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_4 \amp= <fillin characters="9" /> </mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_5 \amp= <fillin characters="9" /> </mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_6 \amp= <fillin characters="9" /> </mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_7 \amp= <fillin characters="9" /> </mrow>
-                        <mrow>n \amp= <fillin characters="1" /> \amp S_8 \amp= <fillin characters="9" /> </mrow>
-                    </md>
-                </p>
-            </li>
-            <li>
-                <p>
-                    For the given infinite geometric series 
-                    <me>
-                        S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k 
-                    </me>
-                    identify the values of <m>a</m> and <m>r</m> and use <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref> to find the exact value of <m>S</m>.  State the sum of the infinite geometric series both as a fraction and as its decimal representation.
-                </p>
-            </li>
-            <li>
+  <task workspace="1cm" xml:id="PA-8a-5x-task-0">
+    <statement>
+        <p>
+            Recall that the <m>n</m>th partial sum, <m>S_n</m>, is the sum of the first <m>n</m> terms of the infinite geometric series <m>S</m>.  This means that
+                <me>
+                    S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}
+                </me>. 
+            Note that the exact fractional values of <m>S_3</m>, <m>S_4</m>, <m>\ldots</m>, <m>S_8</m>, have been recorded below along with their decimal representations.       
+        </p>
+        <p>
+            <md>
+                <mrow>n \amp= 1 \amp S_1 \amp= 1 \amp </mrow>
+                <mrow>n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2 \amp S_1 - S_2 = <fillin characters="4" /> </mrow>
+                <mrow>n \amp= 3 \amp S_3 \amp= \frac{21}{25} = 0.84 \amp S_2 - S_3 = <fillin characters="4" /> </mrow>
+                <mrow>n \amp= 4 \amp S_4 \amp= \frac{41}{125} = 0.328 \amp S_3 - S_4 = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 5 \amp S_5 \amp= \frac{461}{625} = 0.7376 \amp S_4 - S_5 = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 6 \amp S_6 \amp= \frac{1281}{3125} = 0.40992 \amp S_5 - S_6 = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 7 \amp S_7 \amp= \frac{10501}{15625} = 0.672064 \amp S_6 - S_7 = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 8 \amp S_8 \amp= \frac{36121}{78125} = 0.4623488 \amp S_7 - S_8 = <fillin characters="4" />  </mrow>
+            </md>
+        </p>           
+        <p>
+            By computing the differences between consecutive partial sums, fill in the blank spaces provided above.
+        </p>
+    </statement>
+  </task>
+  <task workspace="2cm" xml:id="PA-8a-5x-task-1">
+    <statement>
+        <p>
+            What do you notice about the differences between consecutive partial sums as the value of <m>n</m> increases?  There are at least two important things you can say.
+        </p>
+    </statement>
+  </task>
+  <task workspace="2cm" xml:id="PA-8a-5x-task-2">
+    <statement>
+        <p>
+            For the given infinite geometric series 
+            <me>
+                S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k 
+            </me>
+            identify the values of <m>a</m> and <m>r</m> and use <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref> to find the exact value of <m>S</m>.  State the sum of the infinite geometric series both as a fraction and as its decimal representation.
+        </p>
+    </statement>
+  </task>
+  <task workspace="1cm" xml:id="PA-8a-5x-task-3">
+    <statement>
+        <p>
+            Consider the same information from (a) regarding the partial sums of the geometric series:
+            <md>
+                <mrow>n \amp= 1 \amp S_1 \amp= 1 \amp S_1 - S = <fillin characters="4" /> </mrow>
+                <mrow>n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2 \amp S_2 - S = <fillin characters="4" /> </mrow>
+                <mrow>n \amp= 3 \amp S_3 \amp= \frac{21}{25} = 0.84 \amp S_3 - S = <fillin characters="4" /> </mrow>
+                <mrow>n \amp= 4 \amp S_4 \amp= \frac{41}{125} = 0.328 \amp S_4 - S = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 5 \amp S_5 \amp= \frac{461}{625} = 0.7376 \amp S_5 - S = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 6 \amp S_6 \amp= \frac{1281}{3125} = 0.40992 \amp S_6 - S = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 7 \amp S_7 \amp= \frac{10501}{15625} = 0.672064 \amp S_7 - S = <fillin characters="4" />  </mrow>
+                <mrow>n \amp= 8 \amp S_8 \amp= \frac{36121}{78125} = 0.4623488 \amp S_8 - S = <fillin characters="4" />  </mrow>
+            </md>
+        </p> 
+        <p>
+            Use the sum, <m>S</m>, of the geometric series that you found in (c) to compute the difference between each of the first <m>8</m> partial sums, and fill in the corresponding blanks above.
+        </p>
+    </statement>
+  </task>  
+  <task workspace="2cm" xml:id="PA-8a-5x-task-4">
+    <statement>
+        <p>
+            What do you notice about the differences between the partial sums and the exact sum of the series as the value of <m>n</m> increases?  There are at least two important things you can say.
+        </p>
+    </statement>
+  </task>
+</exploration>
+
+<!--
                 <p>
                     In <xref ref="F-PA-8a-5x-partial-sums">Figure</xref>, we now visualize the values of the partial sums we found in part (a) by plotting points of the form <m>(n,S_n)</m>.  For example, since <m>S_1 = 1</m> and <m>S_2 = 0.2</m>, we've plotted the points <m>(1,1)</m> and <m>(2,0.2)</m> in the figure, labeling them <q><m>S_1</m></q> and <q><m>S_2</m></q>, respectively.  Use your results from (a) to plot and label the points for <m>S_3</m>, <m>S_4</m>, <m>\ldots</m>, <m>S_8</m>.
                 </p>
@@ -99,6 +141,5 @@
             </li>
         </ol>
     </p>
-
-</exploration>
+-->
 

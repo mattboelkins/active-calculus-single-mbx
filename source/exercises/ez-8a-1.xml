@@ -322,7 +322,7 @@
         </exercise>
 
 
-                <exercise xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-quadapprox-quadratic" label="ex-quadapprox-quadratic">
+          <exercise xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ex-quadapprox-quadratic" label="ex-quadapprox-quadratic">
             <webwork xml:id="webwork-quadapprox-quadratic">                                          
                 <pg-code>
                 Context("Fraction")->variables->add(b_0=>"Real", b_1=>"Real", b_2=>"Real");
@@ -345,7 +345,7 @@
                 </pg-code>
                 <introduction>
                 <p>
-                    Let <m>f(x)=<var name="$a"/> x^2+<var name="$b"/> x+ <var name="$c"/></m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
+                    Let <m>f(x)=<var name="$func"/></m> and let <m>T_2(x)=b_0+b_1x+b_2x^2</m>.
                     We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m>
                     have the same height, slope, and concavity at <m>x=0</m>.
                 </p>

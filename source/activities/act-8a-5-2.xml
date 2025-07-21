@@ -17,69 +17,70 @@
   <activity xml:id="act-8a-5-2">
     <introduction>
       <p>
-        In this activity we determine the Taylor series expansion for <m>\cos(x)</m> in a different way and then also find the Taylor series for <m>\arctan(x)</m>.
+        In this activity we determine the Taylor series expansion for <m>\sin(x)</m> in a different way and then also find the Taylor series for <m>\arctan(x)</m>.
       </p>
       <p/>
     </introduction>
     <task workspace="1cm" xml:id="act-8a-5-2-task-0">
       <introduction>
         <p>
-          To find the Taylor series for <m>\cos(x)</m> without using the definition, we consider the function <m>f(x) = \sin(x)</m> and recall that <m>f'(x) = \cos(x)</m>.  Then we use the Power Series Differentiation Theorem on the known series for <m>f(x) = \sin(x)</m> to find the Taylor series for <m>f'(x) = \cos(x)</m>.
+          To find the Taylor series for <m>\sin(x)</m> without using the definition, we consider the function <m>f(x) = \cos(x)</m> and recall that <m>f'(x) = -\sin(x)</m>.  Then we use the Power Series Differentiation Theorem on the known series for <m>f(x) = \cos(x)</m> to find the Taylor series for <m>f'(x) = -\sin(x)</m>.
         </p>
       </introduction>
-      <task workspace="3cm" xml:id="act-8a-5-2-task-01">
+      <task workspace="1cm" xml:id="act-8a-5-2-task-01">
         <statement>
           <p>
-            State the Taylor series for <m>f(x) = \sin(x)</m> both in sigma notation and in expanded form.
+            Consider <m>f(x) = \cos(x)</m> and recall that its Taylor series in sigma notation is
+            <me>
+              f(x) = \cos(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k}}{(2k)!}
+            </me>.
+            Write out the first four nonzero terms of the Taylor series in expanded form.
           </p>
         </statement>
         <hint />
         <answer>
           <p>
-            <m>f(x) = \sin(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots</m>
+            <m>f(x) = \cos(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \cdots</m>
           </p>
         </answer>
         <solution>
           <p>
-            <m>f(x) = \sin(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots</m>
+            Using <m>k=0</m>, <m>k=1</m>, <m>k=2</m>, and <m>k=3</m> in the sum, we have <m>f(x) = \cos(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \cdots</m>
           </p>
         </solution>  
       </task>
       <task workspace="3cm" xml:id="act-8a-5-2-task-02">
         <statement>
           <p>
-            Using the expanded form of the Taylor series for <m>f(x) = \sin(x)</m>, apply the Power Series Differentiation Theorem to find the Taylor series for <m>f'(x) = \cos(x)</m> in expanded form, being sure to simplify each constant coefficient in the expansion.
+            Using the expanded form of the Taylor series for <m>f(x) = \cos(x)</m>, apply the Power Series Differentiation Theorem to find the Taylor series for <m>f'(x) = -\sin(x)</m> in expanded form, being sure to simplify each constant coefficient in the expansion.  Show the first three nonzero terms.
           </p>
         </statement>
         <hint />
         <answer>
           <p>
-            <m>f'(x) = \cos(x) = 1 - \frac{1}{2!}\cdot x^2 + \frac{1}{4!} \cdot x^4 + \cdots</m>
+            <m>f'(x) = -\sin(x) = - x + \frac{1}{3!}\cdot x^3 + \frac{1}{5!} \cdot x^5 + \cdots</m>
           </p>
         </answer>
         <solution>
           <p>
-            Since <m>f(x) = \sin(x) = x - \frac{1}{3!}x^3 + \frac{1}{5!}x^5 - \cdots</m>, it follows 
+            Since <m>f(x) = \cos(x) = 1 - \frac{1}{2!}x^2 + \frac{1}{4!}x^4 - \frac{1}{6!}x^6 + \cdots</m>, it follows 
             <me>
-              f'(x) = \cos(x) = 1 - \frac{1}{3!}\cdot 3x^2 + \frac{1}{5!} \cdot 5x^4 + \cdots
+              f'(x) = -\sin(x) = 0 - \frac{1}{2!}\cdot 2x + \frac{1}{4!} \cdot 4x^3 -  \frac{1}{6!}\cdot 6x^5 + \cdots
             </me>
-            And using the facts that <m>\frac{3}{3!} = \frac{1}{2!}</m> and <m>\frac{5}{5!} = \frac{1}{4!}</m>, we have
+            And using the facts that <m>\frac{2}{2!} = 1</m>, <m>\frac{1}{4!} \cdot 4 = \frac{1}{3!}</m>, and <m>\frac{6}{6!} = \frac{1}{5!}</m>, we have
             <me>
-              f'(x) = \cos(x) = 1 - \frac{1}{2!}\cdot x^2 + \frac{1}{4!} \cdot x^4 + \cdots
+              f'(x) = -\sin(x) = - x + \frac{1}{3!}\cdot x^3 + \frac{1}{5!} \cdot x^5 + \cdots
             </me>,
-            which is the familiar series expansion of <m>\cos(x)</m>.
+            which is the series expansion of <m>-\sin(x)</m>.
           </p>
         </solution>
       </task>  
       <task workspace="3cm" xml:id="act-8a-5-2-task-03">
         <statement>
           <p>
-            Now consider the series expansion of <m>\sin(x)</m> in sigma notation: 
+            Now recall the series expansion of <m>\cos(x)</m> in sigma notation.  What is the derivative of the general term of the series, 
             <me>
-              f(x) = \sin(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!}
-            </me>.  What is the derivative of the general term of the series, 
-            <me>
-              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} \right]
+              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k}}{(2k)!} \right]
             </me>,
             in its most simplified form?
           </p>
@@ -87,18 +88,18 @@
         <hint />
         <answer>
           <p>
-            <m>\frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} \right] = (-1)^{k} \frac{1}{(2k)!} \cdot x^{2k}</m>
+            <m>\frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k}}{(2k)!} \right] = (-1)^{k} \frac{1}{(2k-1)!} \cdot x^{2k-1}</m>
           </p>
         </answer>
         <solution>
           <p>
             Applying the power and constant multiple rules, we have
             <me>
-              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} \right] = (-1)^{k} \frac{1}{(2k+1)!} \cdot (2k+1)x^{2k}
+              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k}}{(2k)!} \right] = (-1)^{k} \frac{1}{(2k)!} \cdot (2k)x^{2k-1}
             </me>.
-            Using the fact that <m>\frac{2k+1}{(2k+1)!} = \frac{1}{(2k)!}</m>, we have 
+            Using the fact that <m>\frac{2k}{(2k)!} = \frac{1}{(2k-1)!}</m>, we have 
             <me>
-              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} \right] = (-1)^{k} \frac{1}{(2k)!} \cdot x^{2k}
+              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k}}{(2k)!} \right] = (-1)^{k} \frac{1}{(2k-1)!} \cdot x^{2k-1}
             </me>.
           </p>
         </solution>
@@ -106,32 +107,62 @@
       <task workspace="3cm" xml:id="act-8a-5-2-task-04">
         <statement>
           <p>
-            Finally, state the Taylor series for <m>f'(x) = \cos(x)</m> in sigma notation.  Be sure to decide whether the series should be indexed starting with <m>k = 0</m> or <m>k = 1</m> and to justify your choice.
+            Finally, state the Taylor series for <m>f'(x) = -\sin(x)</m> in sigma notation.  Be sure to decide whether the series should be indexed starting with <m>k = 0</m> or <m>k = 1</m> and to justify your choice.
           </p>
         </statement>
         <hint />
         <answer>
           <p>
-            <m>f'(x) = \cos(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k}}{(2k)!}</m>
+            <m>f'(x) = -\sin(x) = \sum_{k=1}^{\infty} (-1)^{k} \frac{x^{2k-1}}{(2k-1)!}</m>
           </p>
         </answer>
         <solution>
           <p>
             In part (ii), we found that 
             <me>
-              f'(x) = \cos(x) = 1 - \frac{1}{2!}\cdot x^2 + \frac{1}{4!} \cdot x^4 + \cdots
+              f'(x) = -\sin(x) = - x + \frac{1}{3!}\cdot x^3 + \frac{1}{5!} \cdot x^5 + \cdots
             </me>
             and in part (iii) we saw that the general term in the derivative's Taylor series is 
             <me>
-              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k+1}}{(2k+1)!} \right] = (-1)^{k} \frac{1}{(2k)!} \cdot x^{2k}
+              \frac{d}{dx}\left[ (-1)^{k} \frac{x^{2k}}{(2k)!} \right] = (-1)^{k} \frac{1}{(2k-1)!} \cdot x^{2k-1}
             </me>.
-            From these two facts, we see that the Taylor series for <m>f'(x) = \cos(x)</m> must start with <m>k=0</m> in order to correctly capture the first term in the series.  Thus,
+            From these two facts, we see that the Taylor series for <m>f'(x) = -\sin(x)</m> must start with <m>k=1</m> in order to correctly capture the first term in the series, as well as to ensure that we don't a negative power of <m>x</m> in the expression.  Thus,
             <me>
-              f'(x) = \cos(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k}}{(2k)!}
+              f'(x) = -\sin(x) = \sum_{k=1}^{\infty} (-1)^{k} \frac{x^{2k-1}}{(2k-1)!}
             </me>.              
           </p>
         </solution>
       </task>
+      <task workspace="1cm" xml:id="act-8a-5-2-task-05">
+        <statement>
+          <p>
+            How can you now use your work in part (iv) to find the Taylor series for <m>\sin(x)</m>?
+          </p>
+        </statement>
+      </task>
+      <hint/>
+      <answer>
+        <p>
+          <md>
+            <mrow> \sin(x) = -(-\sin(x)) \amp= - \left( \sum_{k=1}^{\infty} (-1)^{k} \frac{x^{2k-1}}{(2k-1)!} \right)\amp </mrow>
+            <mrow>                       \amp= \sum_{k=1}^{\infty} (-1)^{k-1} \frac{x^{2k-1}}{(2k-1)!}  </mrow>
+            <mrow>                       \amp= \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!}  </mrow>
+          </md>  
+        </p>
+      </answer>
+      <solution>
+        <p>
+          Since we know the series for <m>-\sin(x)</m>, we find the series for <m>\sin(x)</m> by taking its opposite.  Doing so,
+          <md>
+            <mrow> \sin(x) = -(-\sin(x)) \amp= - \left( \sum_{k=1}^{\infty} (-1)^{k} \frac{x^{2k-1}}{(2k-1)!} \right)\amp </mrow>
+            <mrow>                       \amp= \sum_{k=1}^{\infty} (-1)^{k-1} \frac{x^{2k-1}}{(2k-1)!}  </mrow>
+          </md> 
+          In the sum, observe that when <m>k = 1</m>, it follows that <m>2k - 1 = 1</m>.  If we recognize that odd integers can be represented either as <m>2k-1</m> or <m>2k+1</m>, it's possible to re-index the series in sigma notation and write
+          <me>
+            \sin(x) = -(-\sin(x)) = \sum_{k=0}^{\infty} (-1)^{k} \frac{x^{2k+1}}{(2k+1)!}
+          </me>.           
+        </p>
+      </solution>
     </task>    
     <task workspace="1cm" xml:id="act-8a-5-2-task-1">
       <introduction>
