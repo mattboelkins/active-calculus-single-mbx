@@ -21,5 +21,5 @@
   <xi:include  href="sec-8a-4-taylor-series.xml" />  
   <xi:include  href="sec-8a-5-finding-using-taylor-series.xml" />   
   <xi:include  href="sec-8a-5x-accuracy-of-approx.xml" />        
-  <xi:include  href="sec-8a-6-series-and-DEs.xml" />  
+<!--  <xi:include  href="sec-8a-6-series-and-DEs.xml" /> -->  
 </chapter>

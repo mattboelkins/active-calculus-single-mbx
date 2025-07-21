@@ -80,7 +80,7 @@
     <task workspace="3cm" xml:id="act-8a-5-1-task-2">
       <statement>
         <p>
-          <m>p(x) = \frac{1}{1+5x}</m>
+          <m>p(x) = \dfrac{1}{1+5x}</m>
         </p>
       </statement>
       <hint/>
@@ -136,7 +136,7 @@
     <task workspace="3cm" xml:id="act-8a-5-1-task-4">
       <statement>
         <p>
-          <m>r(x) = \frac{e^{3x}-1}{3x}</m>
+          <m>r(x) = \dfrac{e^{3x}-1}{3x}</m>
         </p>
       </statement>
       <hint/>

@@ -31,7 +31,6 @@
 
   </objectives>
 
-  
   <subsection>
     <title>Introduction</title>
     <p>
@@ -209,8 +208,64 @@
     </p>
 
     <p>
-      Furthermore, this result shows that differentiating or integrating a power series has no effect on radius of convergence of the power series.  Stated more informally, the Power Series Differentiation and Integration Theorem tells us that when it comes to differentiating or integrating a Taylor series, we can do so just as if they were finite polynomials:  we can differentiate or integrate the Taylor series term-wise following the Power Rule for differentiating or integrating <m>x^n</m>.  Moreover, doing so doesn't change the open interval on which the Taylor series converges<fn>Differentiating or integrating can change the convergence status at the endpoints of the interval, but we again will not concern ourselves with that issue .</fn>.  Since polynomials are the easiest of all functions to differentiate and integrate, we can now find many more Taylor series of interesting functions.
+      Furthermore, this result shows that differentiating or integrating a power series has no effect on radius of convergence of the power series.  Stated more informally, the Power Series Differentiation and Integration Theorem tells us that when it comes to differentiating or integrating a Taylor series, we can do so just as if they were finite polynomials:  we can differentiate or integrate the Taylor series term-wise following the Power Rule for differentiating or integrating <m>x^n</m>.  Moreover, doing so doesn't change the open interval on which the Taylor series converges<fn>Differentiating or integrating can change the convergence status at the endpoints of the interval, but we again will not concern ourselves with that issue .</fn>.  Since polynomials are the easiest of all functions to differentiate and integrate, we can now find many more Taylor series of interesting functions, and even find Taylor series of some familiar functions in different ways.
     </p>
+
+    <example>
+      <statement>
+        <p>
+          Use the familiar Taylor series for <m>g(x) = \frac{1}{1-x}</m> to develop the Taylor series for <m>h(x) = \ln(1+x)</m> using the Power Series Differentiation and Integration Theorem.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          In <xref ref="Ex-8a-2-Taylor-example">Example</xref>, we developed the Taylor polynomials centered at <m>a = 0</m> for <m>h(x) = \ln(1+x)</m>, using the definition.  And in <xref ref="Ex-8a-4-ln-1-plus-x">Example</xref>, we considered the Taylor series for <m>h(x) = \ln(1+x)</m> that we deduced from patterns in the Taylor polynomials.  
+        </p>
+        <p>  
+          Here, we take a different approach to finding the Taylor series for <m>h(x) = \ln(1+x)</m> that starts with the familiar geometric series expansion of <m>g(x) = \frac{1}{1-x}</m>.
+        </p>
+
+        <p>
+          The key insight in this approach is the fact that 
+          <me>
+            \frac{d}{dx}\left[ \ln(1+x) \right] = \frac{1}{1+x}
+          </me>.
+          We thus first find a Taylor series representation for <m>\frac{1}{1+x}</m>, and then integrate to find the Taylor series for <m>\ln(1+x)</m>.          
+        </p>
+
+        <p>
+          We know that for <m>|x| \lt 1</m>, 
+          <me>
+            g(x) = \frac{1}{1-x} = 1 + x + x^2 + x^3 + \cdots + x^n + \cdots
+          </me>.
+          Using the variable <m>u</m> instead (in anticipation of a change of variables), we have
+          <me>
+            g(u) = \frac{1}{1-u} = 1 + u + u^2 + u^3 + \cdots + u^n + \cdots
+          </me>.
+          Next, letting <m>u = -x</m>, it follows that 
+          <md>
+            <mrow> g(-x) = \frac{1}{1+x} \amp= 1 + (-x) + (-x)^2 + (-x)^3 + \cdots + (-x)^n + \cdots </mrow>
+            <mrow>                       \amp=  1 - x + x^2 - x^3 + \cdots + (-1)^n x^n + \cdots</mrow>
+          </md>,
+          which also converges for <m>|x| \lt 1</m>.
+        </p>
+        <p>
+          Now, since <m>\frac{1}{1+x}</m> is the derivative of <m>\ln(1+x)</m> and <m>\ln(1) = 0</m>, we can use the Second FTC to write
+                <me>
+                  \ln(1 + x) = \int_0^x \frac{1}{1+t} \, dt
+                </me>,
+                which combined with our earlier series representation for <m>\frac{1}{1+x}</m> shows that
+                <md>
+                  <mrow>\ln(1 + x) \amp= \int_0^x \frac{1}{1+t} \, dt</mrow>
+                  <mrow>    \amp= \int_0^x 1 - t + t^2 - t^3 + \cdots \, dt</mrow>
+                  <mrow>    \amp= \left. t - \frac{1}{2}t^2 + \frac{1}{3} t^3 - \frac{1}{4}t^4 + \cdots \right|_0^x</mrow>
+                  <mrow>    \amp= x - \frac{1}{2}x^2 + \frac{1}{3} x^3 - \frac{1}{4}x^4 + \cdots </mrow>
+                </md>
+                and this series is guaranteed to converge on the same open interval as the series we started with (<m>-1 \lt x \lt 1</m>).  This is also the same series we found for <m>h(x) = \ln(1+x)</m> working directly from the definition of a Taylor polynomial in <xref ref="Ex-8a-2-Taylor-example">Example</xref>.
+        </p>
+
+      </solution>
+    </example>
 
     <xi:include href="./activities/act-8a-5-2.xml" />
 
