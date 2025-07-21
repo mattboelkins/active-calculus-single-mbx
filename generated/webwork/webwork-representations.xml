@@ -8244,10 +8244,7 @@ overestimate and the left Riemann sum an underestimate.
 <fillin characters="30" name="optional1"/>, and it is an 
 <var form="popup">
 <li>
-<p>overestimate of</p>
-</li>
-<li>
-<p>underestimate of</p>
+<p>equal to</p>
 </li>
 <li>
 <p>there is ambiguity</p>
@@ -8256,7 +8253,10 @@ overestimate and the left Riemann sum an underestimate.
 <p>?</p>
 </li>
 <li>
-<p>equal to</p>
+<p>underestimate of</p>
+</li>
+<li>
+<p>overestimate of</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 3</m> and <m>x = 5</m>.</p>
@@ -8265,12 +8265,6 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
-<p>underestimate of</p>
-</li>
-<li>
-<p>overestimate of</p>
-</li>
-<li>
 <p>equal to</p>
 </li>
 <li>
@@ -8278,6 +8272,12 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 </li>
 <li>
 <p>?</p>
+</li>
+<li>
+<p>underestimate of</p>
+</li>
+<li>
+<p>overestimate of</p>
 </li>
 </var>
  the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 3</m> and <m>x = 5</m>.</p>
@@ -12565,13 +12565,13 @@ point (0,-2) has a negative slope.</p>
 <p>List the equilibrium solutions to this differential equation in increasing order and indicate whether or not these equilibria are stable, semi-stable, or unstable.</p>
 <p><fillin characters="10" name="AnSwEr0001"/>  <var form="popup">
 <li>
+<p>semi-stable</p>
+</li>
+<li>
 <p>unstable</p>
 </li>
 <li>
 <p>?</p>
-</li>
-<li>
-<p>semi-stable</p>
 </li>
 <li>
 <p>stable</p>
@@ -12593,21 +12593,21 @@ point (0,-2) has a negative slope.</p>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>?</p>
 </li>
 <li>
 <p>unstable</p>
 </li>
 <li>
-<p>?</p>
+<p>semi-stable</p>
 </li>
 <li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>semi-stable</p>
 </li>
 <li>
 <p>unstable</p>
@@ -12616,7 +12616,7 @@ point (0,-2) has a negative slope.</p>
 <p>?</p>
 </li>
 <li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 </var></p>
 </statement>
@@ -14396,7 +14396,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-20T15:24:19Z       
+###       on 2025-07-21T15:23:23Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14699,7 +14699,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-20T15:24:19Z       
+###       on 2025-07-21T15:23:23Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15046,7 +15046,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-20T15:24:19Z       
+###       on 2025-07-21T15:23:23Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15230,7 +15230,7 @@ ENDDOCUMENT();
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-quadapprox-quadratic" ww-id="webwork-quadapprox-quadratic">
     <static seed="314">
-      <introduction><p>Let <m>f(x)=6 x^2+5 x+ 3</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
+      <introduction><p>Let <m>f(x)={6x^{2}+5x+3}</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
         <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>{6x^{2}+5x+3}</m> and evaluating them at <m>x=0</m> as directed.</p>
@@ -15366,11 +15366,11 @@ ENDDOCUMENT();
         </answer>
       </task>
     </static>
-    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRjPW5vbl96ZXJvX3JhbmRvbSgtNSw1KTsKJGI9bm9uX3plcm9fcmFuZG9tKC01LDUpOwokYT1yYW5kb20oMiw4KTsKJGZ1bmM9Rm9ybXVsYSgiJGEgeF4yKyRiIHgrICRjIiktPnJlZHVjZTsKJGZ1bmNwcmltZT0kZnVuYy0+RCgneCcpOwokZnVuY2RvdWJsZXByaW1lPSRmdW5jcHJpbWUtPkQoJ3gnKTsKJFQycHJpbWU9Rm9ybXVsYSgiYl8xKzIqYl8yKngiKTsKJFQyZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipiXzIiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJiXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmJfMiIpOwokVDI9JGZ1bmM7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9WyRhXSB4XjIrWyRiXSB4KyBbJGNdYF0gYW5kIGxldCBbYFRfMih4KT1iXzArYl8xeCtiXzJ4XjJcdGV4dHsufWBdIFdlIGZpbmQgdGhlIHZhbHVlcyBvZiBbYGJfMCwgYl8xYF0gYW5kIFtgYl8yYF0gdGhhdCBtYWtlIHRoZSBmdW5jdGlvbnMgW2BmKHgpYF0gYW5kIFtgVF8yKHgpYF0gaGF2ZSB0aGUgc2FtZSBoZWlnaHQsIHNsb3BlLCBhbmQgY29uY2F2aXR5IGF0IFtgeD0wXHRleHR7Ln1gXQoKCkVORF9QR01MClNjYWZmb2xkOjpCZWdpbihudW1iZXJlZCA9PiAxLGlzX29wZW4gPT4gImNvcnJlY3Rfb3JfZmlyc3RfaW5jb3JyZWN0IixjYW5fb3BlbiA9PiBhbHdheXMsKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKQ29tcGxldGUgdGhlIHRhYmxlIGJlbG93IGJ5IGNvbXB1dGluZyBkZXJpdmF0aXZlcyBvZiBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSBhbmQgZXZhbHVhdGluZyB0aGVtIGF0IFtgeD0wYF0gYXMgZGlyZWN0ZWQuCgpbQEtleWJvYXJkSW5zdHJ1Y3Rpb25zKCdVc2UgdW5kZXJzY29yZXMgdG8gZW50ZXIgdGhlIGNvZWZmaWNpZW50cy4gIEZvciBleGFtcGxlLCB0byBlbnRlciBbYGJfMVx0ZXh0eyx9YF0gdHlwZSAiYlxfMSIuJylAXSoqCgo+PiBbQERhdGFUYWJsZShbW1BHTUwoJ1tgZih4KT1gXScpLFBHTUwoJ1tgWyRmdW5jXWBdJyksUEdNTCgnW2BUXzIoeCk9YF0nKSxQR01MKCdbYGJfMCtiXzF4K2JfMnheMmBdJyksXSxbUEdNTChxIltgZicoeCk9YF0iKSxQR01MKCdbX117JGZ1bmNwcmltZX17MTB9JyksUEdNTChxIltgVF8yJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDJwcmltZX17MTB9JyksXSxbW1BHTUwocSJbYGYnJyh4KT1gXSIpLHJvd2JvdHRvbT0+JzMnLG1pZHJ1bGU9PicxJyxdLFBHTUwoJ1tfXXskZnVuY2RvdWJsZXByaW1lfXsxMH0nKSxQR01MKHEiW2BUXzInJyh4KT1gXSIpLFBHTUwoJ1tfXXskVDJkb3VibGVwcmltZX17MTB9JyksXSxbUEdNTCgnW2BmKDApPWBdJyksUEdNTCgnW19deyRjfXsxMH0nKSxQR01MKCdbYFRfMigwKT1gXScpLFBHTUwoJ1tgYl8wYF0nKSxdLFtQR01MKHEiW2BmJygwKT1gXSIpLFBHTUwoJ1tfXXskYn17MTB9JyksUEdNTChxIltgVF8yJygwKT1gXSIpLFBHTUwoJ1tfXXskY29uc3QxfXsxMH0nKSxdLFtQR01MKHEiW2BmJycoMCk9YF0iKSxQR01MKCdbX117MiokYX17MTB9JyksUEdNTChxIltgVF8yJycoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0Mn17MTB9JyksXSxdLGFsaWduPT4ncmx8cmwnLHZhbGlnbj0+J21pZGRsZScsdG9wPT4nMycsKTtAXSogPDwKCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTZWN0aW9uOjpCZWdpbigiIik7CkJFR0lOX1BHTUwKTm93LCBzaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgWyRmdW5jXWBdIHRvIGhhdmUgdGhlIHNhbWUgaGVpZ2h0IGF0IFtgeD0wXHRleHR7LH1gXSBzZXQgW2BUXzIoMCk9ZigwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGJfMD17fWBdW19deyRjfXsxMH0uCgpTaW5jZSB3ZSB3YW50IFtgVF8yKHgpYF0gYW5kIFtgWyRmdW5jXWBdIHRvIGhhdmUgdGhlIHNhbWUgc2xvcGUgYXQgW2B4PTBcdGV4dHssfWBdIHNldCBbYFRfMicoMCk9ZicoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BiXzE9e31gXVtfXXskYn17MTB9LgoKRmluYWxseSwgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yJycoMCk9ZicnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8yPXt9YF1bX117JGF9ezEwfS4KClB1dHRpbmcgZXZlcnl0aGluZyB0b2dldGhlciwgd2hhdCBpcyB0aGUgcmVzdWx0aW5nIGZvcm11bGEgZm9yIFtgVF8yKHgpPWJfMCtiXzF4K2JfMnheMlx0ZXh0ez99YF0KCltgVF8yKHgpPXt9YF1bX117JFQyfXsyMH0KCldoYXQgZG9lcyB5b3VyIGFuc3dlciBtZWFuIGFib3V0IHRoZSBxdWFkcmF0aWMgYXBwcm94aW1hdGlvbiB0byBhIHF1YWRyYXRpYyBmdW5jdGlvbj8KCgpFTkRfUEdNTApTZWN0aW9uOjpFbmQoKTtTY2FmZm9sZDo6RW5kKCk7CkVORERPQ1VNRU5UKCk7" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <server-data problemSource="RE9DVU1FTlQoKTsKbG9hZE1hY3JvcygiUEdzdGFuZGFyZC5wbCIsIlBHTUwucGwiLCJuaWNlVGFibGVzLnBsIiwic2NhZmZvbGQucGwiLCJBbnN3ZXJGb3JtYXRIZWxwLnBsIiwiUENDbWFjcm9zLnBsIiwiY29udGV4dEZvcm0ucGwiLCJjb250ZXh0RnJhY3Rpb24ucGwiLCJQR2NvdXJzZS5wbCIsKTtURVhUKGJlZ2lucHJvYmxlbSgpKTsKQ29udGV4dCgiRnJhY3Rpb24iKS0+dmFyaWFibGVzLT5hZGQoYl8wPT4iUmVhbCIsIGJfMT0+IlJlYWwiLCBiXzI9PiJSZWFsIik7CiRjPW5vbl96ZXJvX3JhbmRvbSgtNSw1KTsKJGI9bm9uX3plcm9fcmFuZG9tKC01LDUpOwokYT1yYW5kb20oMiw4KTsKJGZ1bmM9Rm9ybXVsYSgiJGEgeF4yKyRiIHgrICRjIiktPnJlZHVjZTsKJGZ1bmNwcmltZT0kZnVuYy0+RCgneCcpOwokZnVuY2RvdWJsZXByaW1lPSRmdW5jcHJpbWUtPkQoJ3gnKTsKJFQycHJpbWU9Rm9ybXVsYSgiYl8xKzIqYl8yKngiKTsKJFQyZG91YmxlcHJpbWU9Rm9ybXVsYSgiMipiXzIiKTsKCgoKJGNvbnN0MT1Gb3JtdWxhKCJiXzEiKTsKJGNvbnN0Mj1Gb3JtdWxhKCIyKmJfMiIpOwokVDI9JGZ1bmM7CkNvbnRleHQoIkxpbWl0ZWROdW1lcmljIik7CgpCRUdJTl9QR01MCkxldCBbYGYoeCk9WyRmdW5jXWBdIGFuZCBsZXQgW2BUXzIoeCk9Yl8wK2JfMXgrYl8yeF4yXHRleHR7Ln1gXSBXZSBmaW5kIHRoZSB2YWx1ZXMgb2YgW2BiXzAsIGJfMWBdIGFuZCBbYGJfMmBdIHRoYXQgbWFrZSB0aGUgZnVuY3Rpb25zIFtgZih4KWBdIGFuZCBbYFRfMih4KWBdIGhhdmUgdGhlIHNhbWUgaGVpZ2h0LCBzbG9wZSwgYW5kIGNvbmNhdml0eSBhdCBbYHg9MFx0ZXh0ey59YF0KCgpFTkRfUEdNTApTY2FmZm9sZDo6QmVnaW4obnVtYmVyZWQgPT4gMSxpc19vcGVuID0+ICJjb3JyZWN0X29yX2ZpcnN0X2luY29ycmVjdCIsY2FuX29wZW4gPT4gYWx3YXlzLCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCkNvbXBsZXRlIHRoZSB0YWJsZSBiZWxvdyBieSBjb21wdXRpbmcgZGVyaXZhdGl2ZXMgb2YgW2BUXzIoeClgXSBhbmQgW2BbJGZ1bmNdYF0gYW5kIGV2YWx1YXRpbmcgdGhlbSBhdCBbYHg9MGBdIGFzIGRpcmVjdGVkLgoKW0BLZXlib2FyZEluc3RydWN0aW9ucygnVXNlIHVuZGVyc2NvcmVzIHRvIGVudGVyIHRoZSBjb2VmZmljaWVudHMuICBGb3IgZXhhbXBsZSwgdG8gZW50ZXIgW2BiXzFcdGV4dHssfWBdIHR5cGUgImJcXzEiLicpQF0qKgoKPj4gW0BEYXRhVGFibGUoW1tQR01MKCdbYGYoeCk9YF0nKSxQR01MKCdbYFskZnVuY11gXScpLFBHTUwoJ1tgVF8yKHgpPWBdJyksUEdNTCgnW2BiXzArYl8xeCtiXzJ4XjJgXScpLF0sW1BHTUwocSJbYGYnKHgpPWBdIiksUEdNTCgnW19deyRmdW5jcHJpbWV9ezEwfScpLFBHTUwocSJbYFRfMicoeCk9YF0iKSxQR01MKCdbX117JFQycHJpbWV9ezEwfScpLF0sW1tQR01MKHEiW2BmJycoeCk9YF0iKSxyb3dib3R0b209PiczJyxtaWRydWxlPT4nMScsXSxQR01MKCdbX117JGZ1bmNkb3VibGVwcmltZX17MTB9JyksUEdNTChxIltgVF8yJycoeCk9YF0iKSxQR01MKCdbX117JFQyZG91YmxlcHJpbWV9ezEwfScpLF0sW1BHTUwoJ1tgZigwKT1gXScpLFBHTUwoJ1tfXXskY317MTB9JyksUEdNTCgnW2BUXzIoMCk9YF0nKSxQR01MKCdbYGJfMGBdJyksXSxbUEdNTChxIltgZicoMCk9YF0iKSxQR01MKCdbX117JGJ9ezEwfScpLFBHTUwocSJbYFRfMicoMCk9YF0iKSxQR01MKCdbX117JGNvbnN0MX17MTB9JyksXSxbUEdNTChxIltgZicnKDApPWBdIiksUEdNTCgnW19dezIqJGF9ezEwfScpLFBHTUwocSJbYFRfMicnKDApPWBdIiksUEdNTCgnW19deyRjb25zdDJ9ezEwfScpLF0sXSxhbGlnbj0+J3JsfHJsJyx2YWxpZ249PidtaWRkbGUnLHRvcD0+JzMnLCk7QF0qIDw8CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2VjdGlvbjo6QmVnaW4oIiIpOwpCRUdJTl9QR01MCk5vdywgc2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIGhlaWdodCBhdCBbYHg9MFx0ZXh0eyx9YF0gc2V0IFtgVF8yKDApPWYoMClcdGV4dHsufWBdCgpUaGlzIGltcGxpZXMgW2BiXzA9e31gXVtfXXskY317MTB9LgoKU2luY2Ugd2Ugd2FudCBbYFRfMih4KWBdIGFuZCBbYFskZnVuY11gXSB0byBoYXZlIHRoZSBzYW1lIHNsb3BlIGF0IFtgeD0wXHRleHR7LH1gXSBzZXQgW2BUXzInKDApPWYnKDApXHRleHR7Ln1gXQoKVGhpcyBpbXBsaWVzIFtgYl8xPXt9YF1bX117JGJ9ezEwfS4KCkZpbmFsbHksIHNpbmNlIHdlIHdhbnQgW2BUXzIoeClgXSBhbmQgW2BbJGZ1bmNdYF0gdG8gaGF2ZSB0aGUgc2FtZSBjb25jYXZpdHkgYXQgW2B4PTBcdGV4dHssfWBdIHNldCBbYFRfMicnKDApPWYnJygwKVx0ZXh0ey59YF0KClRoaXMgaW1wbGllcyBbYGJfMj17fWBdW19deyRhfXsxMH0uCgpQdXR0aW5nIGV2ZXJ5dGhpbmcgdG9nZXRoZXIsIHdoYXQgaXMgdGhlIHJlc3VsdGluZyBmb3JtdWxhIGZvciBbYFRfMih4KT1iXzArYl8xeCtiXzJ4XjJcdGV4dHs/fWBdCgpbYFRfMih4KT17fWBdW19deyRUMn17MjB9CgpXaGF0IGRvZXMgeW91ciBhbnN3ZXIgbWVhbiBhYm91dCB0aGUgcXVhZHJhdGljIGFwcHJveGltYXRpb24gdG8gYSBxdWFkcmF0aWMgZnVuY3Rpb24/CgoKRU5EX1BHTUwKU2VjdGlvbjo6RW5kKCk7U2NhZmZvbGQ6OkVuZCgpOwpFTkRET0NVTUVOVCgpOw==" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-20T15:24:19Z       
+###       on 2025-07-21T15:23:23Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15438,7 +15438,7 @@ Context("LimitedNumeric");
 ############################################################
 
 BEGIN_PGML
-Let [`f(x)=[$a] x^2+[$b] x+ [$c]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+Let [`f(x)=[$func]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
 
 END_PGML
 

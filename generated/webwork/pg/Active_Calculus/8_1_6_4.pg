@@ -1,6 +1,6 @@
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-20T15:24:37Z       
+###       on 2025-07-21T15:23:40Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -68,7 +68,7 @@ Context("LimitedNumeric");
 ############################################################
 
 BEGIN_PGML
-Let [`f(x)=[$a] x^2+[$b] x+ [$c]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
+Let [`f(x)=[$func]`] and let [`T_2(x)=b_0+b_1x+b_2x^2\text{.}`] We find the values of [`b_0, b_1`] and [`b_2`] that make the functions [`f(x)`] and [`T_2(x)`] have the same height, slope, and concavity at [`x=0\text{.}`]
 
 END_PGML
 
