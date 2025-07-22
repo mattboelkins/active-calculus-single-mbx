@@ -13,6 +13,15 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-1-2" permid="GGO">
+
+<!-- 
+    <introduction>
+      <p>
+        The notation <m>\lim_{x \to a^-}f(x)</m> means <q>the limit as <m>x</m> approaches <m>a</m> <em>from the left</em></q>, which means we only consider <m>x</m>-values that are less than <m>a</m> for the value of this limit.  Similarly, the notation <m>\lim_{x \to a^-}f(x)</m> means <q>the limit as <m>x</m> approaches <m>a</m> <em>from the right</em></q>, for which we only consider <m>x</m>-values that are greater than <m>a</m>. 
+      </p>
+    </introduction>  
+-->
+
   <exercise label="Library__Michigan__Chap1Sec8__Q01.pg">
     <webwork source="csafranski/1.2HW_prob1.pg"/>
   </exercise>

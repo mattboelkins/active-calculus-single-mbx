@@ -17,19 +17,19 @@
     <activity xml:id="act-5-2-1" workspace="3cm">
       <introduction>
         <p>
-      Suppose that <m>f</m> is the function given in <xref ref="F-5-2-Act1">Figure</xref>
-      and that <m>f</m> is a piecewise function whose parts are either portions of lines or portions of circles,
-      as pictured.
-    </p>
+          Suppose that <m>f</m> is the function given in <xref ref="F-5-2-Act1">Figure</xref>
+          and that <m>f</m> is a piecewise function whose parts are either portions of lines or portions of circles,
+          as pictured.
+        </p>
         <figure xml:id="F-5-2-Act1">
           <caption>At left, the graph of <m>y = f(x)</m>.  At right, axes for sketching <m>y = A(x)</m>.</caption>
           <image width="100%" source="images/5_2_Act1"/>
         </figure>
         <p>
-      In addition,
-      let <m>A</m> be the function defined by the rule <m>A(x) = \int_2^x f(t) \, dt</m>.
+          In addition,
+          let <m>A</m> be the function defined by the rule <m>A(x) = \int_2^x f(t) \, dt</m>.
 
-      </p>
+        </p>
       </introduction>
       <task workspace="2cm" xml:id="act-5-2-1-task-0">
         <statement>
@@ -65,13 +65,14 @@
           </p>
         </hint>
         <answer>
-          <p><m>A(1) = -\frac{\pi}{4}</m>.
+          <p><m>A(1) = -\frac{\pi}{4}</m>, <m>A(3) = -\frac{1}{2}</m>.
           </p>
         </answer>
         <solution>
           <p>
             Since <m>A(1)= \int_2^1 f(t) \, dt = -\int_1^2 f(t) \, dt</m>,
-            it follows <m>A(1) = -\frac{\pi}{4}</m>.
+            it follows <m>A(1) = -\frac{\pi}{4}</m>.  Similarly, <m>A(3)= \int_2^3 f(t) \, dt</m>,
+            so <m>A(3) = -\frac{1}{2}</m>.
           </p>
         </solution>
       </task>

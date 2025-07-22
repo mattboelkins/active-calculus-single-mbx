@@ -43,7 +43,7 @@
           </p>
       </hint>
       <answer>
-        <p><m>\frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^n  </m>.
+        <p><m>\frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^n  </m>.
           </p>
       </answer>
       <solution>
@@ -54,7 +54,7 @@
                 </me>,
                 or
                 <men xml:id="eq-act-8a-3-1-soln">
-                  \frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2  \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n-1}  + \left(\frac{2}{5}\right)^{n}
+                  \frac{2}{5} \cdot S_n = \frac{2}{5} + \left(\frac{2}{5}\right)^2 + \left(\frac{2}{5}\right)^3 + \cdots + \left(\frac{2}{5}\right)^{n-1}  + \left(\frac{2}{5}\right)^{n}
                 </men>.
               </p>
       </solution>

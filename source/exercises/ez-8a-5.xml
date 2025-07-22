@@ -26,6 +26,27 @@
   <exercise label="Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027">
     <webwork source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg"/>
   </exercise>
+
+  <exercise label="Library__Rochester__setSeries8Power__eva8_6b_a" xml:id="ez-8-5a-WW4">
+  <!--  <title>Finding coefficients in a Taylor series expansion of a rational function</title> -->
+    <introduction>
+      <p>
+        You can interpret <q>power series</q> in the following problem statement as <q>Taylor series</q>.
+      </p>
+    </introduction>
+    <webwork source="Library/Rochester/setSeries8Power/eva8_6b_a.pg"/>
+  </exercise>
+
+  <exercise label="Library__Rochester__setSeries8Power__eva8_6e" xml:id="ez-8-5a-WW5">
+  <!--   <title>Finding coefficients in a Taylor series expansion of a function involving <m>\arctan(x)</m></title> -->
+    <introduction>
+      <p>
+        You can interpret <q>power series</q> in the following problem statement as <q>Taylor series</q>.  You might also want to recall the result of <xref ref="act-8a-5-2">Activity</xref> where we found the series expansion for <m>\arctan(x)</m>.
+      </p>
+    </introduction>    
+    <webwork source="Library/Rochester/setSeries8Power/eva8_6e.pg"/>
+  </exercise>
+
 <!--
   <exercise label="Library__Rochester__setSeries3Convergent__ur_sr_3_8">
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg"/>

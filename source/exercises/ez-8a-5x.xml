@@ -21,6 +21,7 @@
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </exercise>
 
+
   <exercise xml:id="ez-8a-5x-3">
       <statement>
         <p>
@@ -43,7 +44,7 @@
           </li>
           <li>
             <p>
-              Observe that your result in (a) is an alternating series.  Estimate the value of that alternating series to within 0.01.  How many terms of the series are needed to do so?
+              Observe that your result in (a) is an alternating series.  Estimate the value of that alternating series to within <m>0.01</m>.  How many terms of the series are needed to do so?
             </p>
           </li>
           <li>
@@ -57,7 +58,7 @@
           </li>
           <li>
             <p>
-              How are your results in (a) and (c) connected?  What famous number can we now estimate using an alternating series?
+              How are your results in (a) and (c) connected?  What famous number can we now estimate using an alternating series?  How many terms of the series were needed to ensure the first two digits of the famous number are accurate?
             </p>
           </li>
         </ol>
@@ -88,7 +89,7 @@
           </li>
           <li>
             <p>
-              <m>\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \cdots</m>.
+              <m>\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \cdots</m>; <m>200</m> terms are needed to be accurate to <m>2</m> decimal places.
             </p>
           </li>
         </ol>
@@ -126,8 +127,9 @@
           </li>
           <li>
             <p>
-              Since both (a) and (c) find representations for <m>\int_0^1 \frac{4}{1+x^2} \, dx</m>, it follwows that the two representations are equal, and thus
+              Since both (a) and (c) find representations for <m>\int_0^1 \frac{4}{1+x^2} \, dx</m>, it follows that the two representations are equal, and thus
               <me>\pi = 4 - \frac{4}{3} + \frac{4}{5} - \frac{4}{7} + \cdots</me>.
+              And if we use <m>200</m> terms, the result is only accurate to two decimal places!
             </p>
           </li>
         </ol>

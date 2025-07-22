@@ -144,7 +144,7 @@
           </p>
         </hint>
         <answer>
-          <p><m>\int t \arctan(t) dt = \frac{1}{2}t^2 \arctan(t) - \frac{1}{2}t - \frac{1}{2} \arctan(t) + c </m>.
+          <p><m>\int t \arctan(t) dt = \frac{1}{2}t^2 \arctan(t) - \frac{1}{2}t + \frac{1}{2} \arctan(t) + c </m>.
           </p>
         </answer>
         <solution>

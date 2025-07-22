@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,13 +12,18 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-6-2" permid="dLt">
   <exercise label="Library__Michigan__Chap8Sec2__Q05">
     <webwork source="Library/Michigan/Chap8Sec2/Q05.pg"/>
   </exercise>
+
+  <!-- see GitHub Issue #305 about how this exercise isn't consistent in WW
   <exercise label="csafranski__6_2HW_prob2">
     <webwork source="csafranski/6.2HW_prob2.pg"/>
   </exercise>
+  -->
+
   <exercise label="Library__UCSB__Stewart5_6_2__Stewart5_6_2_23__Stewart5_6_2_23">
         <webwork source="csafranski/6.2HW_prob3.pg"/>
   </exercise>

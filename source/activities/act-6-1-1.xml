@@ -153,6 +153,7 @@
             <me>
               A_2 = \int_0^{\frac{1 + \sqrt{5}}{2}} \left( x^2 - \left(x^3 - x \right) \right) dx = \dfrac{13 + 5\sqrt{5}}{24} \approx 1.007514 
             </me>.
+            The total area is <m>A_1 + A_2 \approx 1.083333</m>.
           </p>
         </answer>
         <solution>
@@ -179,6 +180,7 @@
             <me>
               A_2 = \int_0^{\frac{1 + \sqrt{5}}{2}} \left( x^2 - \left(x^3 - x \right) \right) dx = \dfrac{13 + 5\sqrt{5}}{24} \approx 1.007514 
             </me>.
+            The total area is <m>A_1 + A_2 \approx 1.083333</m>.
           </p>
         </solution>
       </task>

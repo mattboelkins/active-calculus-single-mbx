@@ -74,7 +74,7 @@
         </statement>
         <hint/>
         <answer>
-          <p><m>\int t^3 \sin(t^2) dt = \frac{1}{2} \left( -t^2 \cos\left(t^2 \right) + \sin\left(t^2\right) \right) </m>.
+          <p><m>\int t^3 \sin(t^2) dt = \frac{1}{2} \left( -t^2 \cos\left(t^2 \right) + \sin\left(t^2\right) \right) + C </m>.
           </p>
         </answer>
         <solution>
@@ -89,7 +89,7 @@
             <md><mrow>\int t^3 \sin(t^2) dt \amp = \frac{1}{2} \int z \sin(z) dz</mrow><mrow>\amp = \frac{1}{2} \left( -z \cos(z) + \int \cos(z) dz \right)</mrow><mrow>\amp = \frac{1}{2} \left( -z \cos(z) + \sin(z) \right)</mrow></md>
             Finally, we use <m>z = t^2</m> and obtain
             <me>
-              \int t^3 \sin(t^2) dt = \frac{1}{2} \left( -t^2 \cos\left(t^2 \right) + \sin\left(t^2\right) \right)
+              \int t^3 \sin(t^2) dt = \frac{1}{2} \left( -t^2 \cos\left(t^2 \right) + \sin\left(t^2\right) \right) + C
             </me>.
           </p>
         </solution>
