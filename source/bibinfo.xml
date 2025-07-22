@@ -40,17 +40,21 @@
       </author>
     </credit>
   <date><today /></date>
-    <credit>
-    <role>Cover Photo</role>
-    <entity>James Haefner Photography</entity>
+
+  <!--
+  <credit>
+    <role>Cover Image</role>
+    <entity>Jean Tashima</entity>
   </credit>
-  <edition>2018 Updated</edition>
+
+  -->
+  <edition>Second</edition>
   <website>
     <url href="https://activecalculus.org"/>
   </website>
 
   <copyright>
-    <year>2012<ndash />2019</year>
+    <year>2012<ndash />2025</year>
     <holder>Matthew Boelkins</holder>
     <minilicense>CC BY-SA 4.0 License</minilicense>
     <shortlicense>
@@ -60,7 +64,7 @@
         <image xml:id="CC-BY-SA-license" source="images/CC-BY-SA-license" />
       </sidebyside>
 
-      that may appear in other locations in the text shows that the work is licensed with the Creative Commons and that the work may be used for free by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original. Full details may be found by visiting <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="">https://creativecommons.org/licenses/by-sa/4.0/</url>  or sending a letter to Creative Commons, 444 Castro Street, Suite 900, Mountain View, California, 94041, USA.
+      that may appear in other locations in the text shows that the work is licensed with the Creative Commons and that the work may be used for free by any party so long as attribution is given to the author(s) and if the material is modified, the resulting contributions are distributed under the same license as this original. Learn more at <url href="https://creativecommons.org/licenses/by-sa/4.0/" visual="">https://creativecommons.org/licenses/by-sa/4.0/</url>.
     </shortlicense>
 
   </copyright>

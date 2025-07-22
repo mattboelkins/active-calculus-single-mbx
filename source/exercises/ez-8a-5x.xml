@@ -21,6 +21,11 @@
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </exercise>
 
+  <!-- this is just a test exercise 
+    <exercise label="Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027_test">
+    <webwork source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg"/>
+  </exercise>
+  -->
 
   <exercise xml:id="ez-8a-5x-3">
       <statement>
