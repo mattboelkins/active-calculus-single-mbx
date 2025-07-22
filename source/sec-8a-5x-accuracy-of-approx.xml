@@ -104,15 +104,15 @@
       </definition>
 
     <p>
-            Note that <m>a_k</m> just represents the non-alternating part of the series.  For example, using the series from <xref ref="PA-8a-5x">Preview Activity</xref>, 
-            <me>
-              \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac45 + \frac{16}{25} - \frac{64}{125} + \cdots
-            </me>, 
-            the expression <m>a_k</m> corresponds to <m>a_k = \left( \frac{4}{5} \right)^k</m>.
+      Note that <m>a_k</m> just represents the non-alternating part of the series.  For example, using the series from <xref ref="PA-8a-5x">Preview Activity</xref>, 
+      <me>
+        \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac45 + \frac{16}{25} - \frac{64}{125} + \cdots
+      </me>, 
+      the expression <m>a_k</m> corresponds to <m>a_k = \left( \frac{4}{5} \right)^k</m>.
     </p>
 
     <p>
-      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \frac{5}{9}</m>.  We found the first several partial sums shown in <xref ref="T-8a-5x-ExGeom"/> and compared them to the exact sum of the series.  
+      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums, <m>S_n</m>, of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \frac{5}{9}</m>.  For instance, <m>S_3</m> is the sum of the first <m>3</m> terms of the infinite series.  In <xref ref="T-8a-5x-ExGeom"/>, we see the first several partial sums and how they and compare to the exact sum of the series.  
 
       <table xml:id="T-8a-5x-ExGeom">
         <title>Partial sums of the alternating series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m> and their differences from <m>S = \frac{5}{9} = 0.\overline{5}</m>.</title>
@@ -174,18 +174,20 @@
 -->              
             </tabular>
           </table>
-        Plotting the partial sums in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we see important patterns in how the partial sums both approach and differ from the exact value of the infinite sum.
+        If we plot the partial sums as ordered pairs of the form <m>(n,S_n)</m>, as shown in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we see important patterns in how the partial sums both approach and differ from the exact value of the infinite sum.
         <figure xml:id="F-8a-5x-alt-partial-sums">
-          <caption>Plotting the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m>.  The dashed horizontal line represents the exact sum of the infinite series, <m>y = \frac{5}{9}</m>.</caption>
+          <caption>Plotting the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m>.  The dashed horizontal line represents the exact sum of the infinite series, <m>S = \frac{5}{9}</m>.</caption>
             <image width="60%">
             <prefigure label="Fig-8a-5x-alt-partial-sums" xmlns="https://prefigure.org">  
               <diagram dimensions="(300,200)" margins="10">
                 <definition>a = 3</definition> 
                 <definition>p = (-0.25, 0.5555555555)</definition> 
-                <definition>q = (9.5, 0.5555555555)</definition>   
+                <definition>q = (8.5, 0.5555555555)</definition>   
+                                     
                 <coordinates bbox="(-1,-0.25,10,1.5)">
-                  <axes hticks="(0,1,9)" vticks="(0,0.25,1.25)"/>
+                  <axes hticks="(0,1,9)" vticks="(0,0.25,1.25)" xlabel="n" ylabel="S_n"/>
                   <line endpoints="(p, q)" stroke="blue" thickness="1.5" dash="4 4" infinite="no"/>     
+                  <label anchor="(8.4,0.55555)" alignment="e" scale="0.8" offset="(0,0)"><m>S = \frac{5}{9}</m></label>
                   <point p="(1,1)" alignment="n" scale="0.8" size="3.5">
                     <m>S_1</m>
                   </point>
@@ -217,15 +219,15 @@
         </figure>
           In both the table and the figure, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <m>\frac{5}{9}</m>, and moreover how the amount the next partial sum lies above or below <m>\frac{5}{9}</m> is less than the amount by which the previous partial sum deviated.  For instance, 
           <me>
-            |S_5 - \frac{5}{9}| \approx 0.1820,
+            \left| S_5 - \frac{5}{9} \right| \approx 0.1820,
           </me>
           but 
           <me>
-            |S_6 - \frac{5}{9}| \approx 0.1456
+            \left| S_6 - \frac{5}{9} \right| \approx 0.1456
           </me>.
           Moreover, since <m>S_6 = S_5 - \left( \frac{4}{5} \right)^5</m>, and <m>-\left( \frac{4}{5} \right)^5 = -0.32768</m> is the last and smallest term (in absolute value) in <m>S_6</m>, <m>0.32768</m> is the total vertical distance from the point <m>(5, S_5)</m> to <m>(6, S_6)</m> in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>.  This implies that <m>0.32768</m> is more than the error in comparing <m>S_5</m> and <m>S</m>.  Said differently, we are guaranteed that
           <me>
-            |S - S_5| \lt \left( \frac{4}{5} \right)^5
+            \left| S - S_5 \right| \lt \left( \frac{4}{5} \right)^5
           </me>
           so the next term in the sum provides a bound on the error in a given partial sum.  A similar argument can be made for any value of <m>n</m>.
         </p>
@@ -296,7 +298,11 @@
           <me>
             a_{100} = \frac{1}{101} \approx 0.0099
           </me>,
-          so the <m>100^{\mbox{th}}</m> partial sum is within <m>0.0099</m> of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the difference between <m>S_{100}</m> and <m>S</m> is indeed less than the error bound of <m>0.0099</m> from the Alternating Series Estimation Theorem.
+          so the <m>100^{\mbox{th}}</m> partial sum is within <m>0.0099</m> of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the actual difference between <m>S_{100}</m> and <m>S</m> is
+          <me>
+            \left|  S_{100} - S \right| \approx \left|  0.688172 - \ln(2) \right| \approx 0.004975
+          </me>,
+          which is indeed less than the error bound of <m>0.0099</m> provided by the Alternating Series Estimation Theorem.
         </p>  
       </solution>
     </example>
@@ -309,18 +315,21 @@
     <title>Error Approximations for Taylor Polynomials</title>
 
     <p>
-      In the same way that the next term in an alternating series reveals the maximum error of a finite approximation, it turns out that a quantity related to the next term in a Taylor series determines the maximum error found in a Taylor polynomial approximation.  This will enable us to know what degree is Taylor polynomial is needed in order to achieve a given accuracy tolerance on a chosen interval. 
+      In the same way that the next term in an alternating series reveals the maximum error of a finite approximation, it turns out that a quantity related to the next term in a Taylor series determines the maximum error found in a Taylor polynomial approximation.  This will enable us to know the degree of the Taylor polynomial that is needed in order to achieve a given accuracy tolerance on a chosen interval. 
     </p>
 
     <p>
-      Throughout what follows, we assume that <m>f(x)</m> is a function with at least <m>n+1</m> derivatives at <m>a = 0</m>, and let <m>T_n(x)</m> be the degree <m>n</m> Taylor polynomial of <m>f</m> centered at <m>a = 0</m>.  We define the error function of the degree <m>n</m> approximation, <m>E_n(x)</m>, by
+      Throughout what follows, we assume that <m>f(x)</m> is a function with at least <m>n+1</m> derivatives at <m>a = 0</m>, and let <m>T_n(x)</m> be its degree <m>n</m> Taylor polynomial centered at <m>a = 0</m>.  We define the error function of the degree <m>n</m> approximation, <m>E_n(x)</m>, by
       <me>
-        E_n(x) = f(x) - T_n(x)
+        E_n(x) =  f(x) - T_n(x)
       </me>.
     </p>
 
     <p>
-      Our overall goal is to understand how much error there is in the approximation <m>f(c) \approx T_n(c)</m> for some fixed value of <m>c</m>; in other words, we'd like to know the maximum possible value of <m>E_n(c)</m>.  This leads us to maximize the error function, <m>E_n(x)</m>, on the interval <m>[0,c]</m>.  We observe several important properties of <m>E_n(x)</m>:
+      Our overall goal is to understand how much error there is in the approximation <m>f(c) \approx T_n(c)</m> for some fixed value of <m>c</m>; in other words, we'd like to know the maximum possible value of <m>| E_n(c) |</m>.  
+    </p>
+    <p>  
+      This leads us to maximize the error function, <m>E_n(x)</m>, on the interval <m>[0,c]</m>.  We observe several important properties of <m>E_n(x)</m>:
       <ul>
         <li>
           <p>
@@ -337,7 +346,7 @@
             If we assume that <m>|f^{(n+1)}(x)| \leq M</m> for some positive real number <m>M</m> for every <m>x</m> in the interval <m>[0,c]</m>,
             then 
             <men xml:id="eq-8a-5x-error-nth-derivative">
-              | E^{(n+1)}_n(x) | \leq M
+              \left| E^{(n+1)}_n(x) \right| \leq M
             </men>
             since <m>f^{(n+1)}(x) = E^{(n+1)}_n(x)</m>.
           </p>
@@ -358,7 +367,7 @@
     </p>
 
     <p>
-      A similar argument works for the same result for any real number <m>a</m> and leads to the following result, known as the <term>Lagrange Error Bound</term>.
+      A similar argument works if we center the Taylor polynomial approximation at any real number <m>a</m> and leads to the following result, known as the <term>Lagrange Error Bound</term>.
     </p>
     <p>  
       <assemblage>
@@ -370,19 +379,37 @@
           <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[a, c]</m>.
           If <m>T_n(x)</m> is the degree <m>n</m> Taylor polynomial for <m>f(x)</m> centered at <m>x=a</m>, then
           <me>
-            \left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
+            \left| f(c) - T_n(c) \right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
           </me>.
         </p>
       </assemblage> 
     </p>
     <p>  
-      The Lagrange Error Bound shows that the total error in the degree <m>n</m> Taylor polynomial approximation is determined by the maximum value of the <m>(n+1)^{\mbox{st}}</m> derivative of <m>f</m> on the interval of interest, together with the quantity <m>\frac{|c-a|^{n+1}}{(n+1)!}</m>.  In practice, this provides a straightforward way to find a bound on the maximum error of a polynomial approximation of a non-polynomial function.     
+      The Lagrange Error Bound shows that the total error in the degree <m>n</m> Taylor polynomial approximation is determined by a combination of:
+      <ul>
+        <li>
+          <p>
+            the maximum value of the <m>(n+1)^{\mbox{st}}</m> derivative of <m>f</m> on the interval of interest (which is a measure of how much polynomial approximation is being missed by using the degree <m>n</m> approximation);
+          </p>
+        </li>
+        <li>
+          <p>
+            the quantity <m>|c-a|</m> (which measures how far we've moved away from where the approximation is centered);
+          </p>
+        </li>
+        <li>
+          <p>
+            and the degree <m>n</m> of the approximation, captured in two parts of the term <m>\frac{|c-a|^{n+1}}{(n+1)!}</m> (which makes sense since we've learned that the higher the degree, the better the approximation).
+          </p>
+        </li>
+      </ul>
+      In practice, the quantity <m>M \frac{|c-a|^{n+1}}{(n+1)!}</m> provides a straightforward way to find a bound on the maximum error of a polynomial approximation of a non-polynomial function.     
     </p>
 
     <example xml:id="Ex-8a-5x-1">
       <statement>
         <p>
-          Determine the maximum error possible when using the degree <m>10</m> Taylor polynomial centered at <m>a = 0</m>, <m>T_{10}(x)</m>, for <m>\sin(x)</m> to approximate the value of <m>\sin(2)</m>.
+          Determine the maximum error possible when using the degree <m>10</m> Taylor polynomial centered at <m>a = 0</m> for <m>\sin(x)</m> to approximate the value of <m>\sin(2)</m>.
         </p>
       </statement>
       <solution>
@@ -391,6 +418,8 @@
           we will use <m>f(x) = \sin(x)</m>, <m>c = 2</m>, <m>a=0</m>,
           and <m>n = 10</m> in the Lagrange Error Bound formula.
           We also need to find a value for <m>M</m> so that <m>\left|f^{(11)}(x)\right| \le M</m> on the interval <m>[0,2]</m>.
+        </p>
+        <p>  
           Since the derivatives of <m>f(x) = \sin(x)</m> are all one of
           <m>\pm \sin(x)</m> or <m>\pm \cos(x)</m>, and the maximum absolute values of these functions on any interval is <m>1</m>, we have
           <me>
@@ -400,7 +429,7 @@
           Therefore, we let <m>M = 1</m>.
           By the Lagrange Error Bound formula, we find that
           <me>
-            \left|T_{10}(2) - f(2)\right| \leq (1)\frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797
+            \left| f(2) - T_{10}(2) \right| \leq 1 \cdot \frac{|2-0|^{11}}{(11)!} = \frac{2^{11}}{(11)!} \approx 0.00005130671797
           </me>.
         </p>
 
@@ -410,7 +439,7 @@
           <me>
             T_{10}(2) \approx 0.9093474427 \ \ \text{ and }  \ \ \sin(2) \approx 0.9092974268
           </me>
-          with an actual difference of about <m>0.0000500159</m>.  Note that the computer algebra system itself is using this same approach (but with more terms) to generate the fact that <m> \sin(2) \approx 0.9092974268</m>.
+          with an actual difference of about <m>0.0000500159</m>.  Note that the computer algebra system itself is using a related approach (possibly with more terms) to generate the fact that <m> \sin(2) \approx 0.9092974268</m> in such a way that every decimal the computer reports is accurate.
         </p>
       </solution>
     </example>
@@ -442,7 +471,7 @@
             Specifically,
             if <m>T_n(x)</m> is the degree <m>n</m> order Taylor polynomial for <m>f</m> centered at <m>x=a</m> and if <m>\left|f^{(n+1)}(x)\right| \leq M</m> for some real number <m>M</m> on the interval <m>[a, c]</m>, then
             <me>
-              \left|T_n(c) - f(c)\right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
+              \left| f(c) - T_n(c) \right| \leq M\frac{|c-a|^{n+1}}{(n+1)!}
             </me>.
         </p>
       </li>
