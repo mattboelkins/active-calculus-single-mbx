@@ -69,6 +69,11 @@
       (or falling).
     </p>
 
+    <figure xml:id="F-1-6-Intro">
+      <caption>Two tangent lines on a graph.</caption>
+      <image width="40%" source="images/1_6_Intro"/>
+    </figure>
+
     <p>
       The derivative of <m>f</m> tells us not only <em>whether</em>
       the function <m>f</m> is increasing or decreasing on an interval,
@@ -76,16 +81,11 @@
       Look at the two tangent lines shown in <xref ref="F-1-6-Intro">Figure</xref>.
       We see that near point <m>A</m>
       the value of <m>f'(x)</m> is positive and relatively close to zero,
-      and near that point the graph is rising slowly.
+      so near that point the graph is rising slowly.
       By contrast, near point <m>B</m>,
       the derivative is negative and relatively large in absolute value,
-      and <m>f</m> is decreasing rapidly near <m>B</m>.
+      so <m>f</m> is decreasing rapidly near <m>B</m>.
     </p>
-
-    <figure xml:id="F-1-6-Intro">
-      <caption>Two tangent lines on a graph.</caption>
-      <image width="45%" source="images/1_6_Intro"/>
-    </figure>
 
     <p>
       Besides asking whether the value of the derivative function is positive or negative and whether it is large or small,
@@ -147,6 +147,12 @@
       similarly, if <m>f'(x) \lt 0</m> on <m>(a,b)</m>, then <m>f</m> is decreasing on <m>(a,b)</m>.
     </p>
 
+    <figure xml:id="F-1-6-Intro2">
+      <caption>A function that is decreasing on the intervals <m>-3 \lt  x \lt  -2</m> and <m>0 \lt  x  \lt  2</m> and increasing on <m>-2 \lt  x \lt  0</m> and <m>2 \lt  x \lt  3</m>.</caption>
+      <image width="42%" source="images/1_6_Intro2"/>
+    </figure>
+  </subsection>
+
     <p oldpermid="BFA">
       For example,
       the function pictured in <xref ref="F-1-6-Intro2">Figure</xref>
@@ -156,11 +162,7 @@
       at this location, the function is changing from increasing to decreasing.
     </p>
 
-    <figure xml:id="F-1-6-Intro2">
-      <caption>A function that is decreasing on the intervals <m>-3 \lt  x \lt  -2</m> and <m>0 \lt  x  \lt  2</m> and increasing on <m>-2 \lt  x \lt  0</m> and <m>2 \lt  x \lt  3</m>.</caption>
-      <image width="47%" source="images/1_6_Intro2"/>
-    </figure>
-  </subsection>
+
 
   <subsection>
     <title>The Second Derivative</title>
@@ -193,12 +195,11 @@
     <definition>
       <statement>
         <p>
-          The <term>second derivative</term>
-          is defined by the limit definition of the derivative of the first derivative.
-          That is,
+          Let <m>f</m> be a function and <m>x</m> an input value in the function's domain.  We define the <term>second derivative of <m>f</m></term>, a new function called <m>f''(x)</m>, by the formula
           <me>
             f''(x) = \lim_{h \to 0} \frac{f'(x+h)-f'(x)}{h}
-          </me>.
+          </me>, 
+          provided this limit exists.  That is, <m>f''(x)</m> is given by limit definition of the derivative of the first derivative.
         </p>
       </statement>
     </definition>
@@ -235,17 +236,17 @@
     </p>
 
     <figure xml:id="F-1-6-3optsi">
-      <caption>Three functions that are all increasing, but doing so at an increasing rate, at a constant rate, and at a decreasing rate, respectively.</caption>
+      <caption>Three functions that are all increasing, but doing so in different ways.</caption>
       <image width="100%" source="images/1_6_3optsi"/>
     </figure>
 
     <p>
       On the leftmost curve in <xref ref="F-1-6-3optsi">Figure</xref>,
-      draw a sequence of tangent lines to the curve.
+      imagine drawing a sequence of tangent lines to the curve.
       As we move from left to right,
       the slopes of those tangent lines will increase.
       Therefore, the rate of change of the pictured function is increasing,
-      and this explains why we say this function is
+      and this explains why we sometimes say this function is
       <em>increasing at an increasing rate</em>.
       For the rightmost graph in <xref ref="F-1-6-3optsi">Figure</xref>,
       observe that as <m>x</m> increases,
@@ -268,7 +269,7 @@
       <q><m>-100</m> is more negative than <m>-2</m>.</q>
       When a function's values are negative,
       and those values get more negative as the input increases,
-      the function must be decreasing.
+      the function must be decreasing.  The situation gets a bit more complicated when we think about the slope of the tangent line to a decreasing function changes as we move from left to right.
     </p>
 
     <figure xml:id="F-1-6-3optsd">
@@ -277,16 +278,12 @@
     </figure>
 
     <p>
-      Now consider the three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref>.
-      Clearly the middle graph depicts a function decreasing at a constant rate.
-      Now, on the first curve, draw a sequence of tangent lines.
-      We see that the slopes of these lines get less and less negative as we move from left to right.
-      That means that the values of the first derivative,
-      while all negative, are increasing,
-      and thus we say that the leftmost curve is
-      <em>decreasing at an increasing rate</em>.
+      The three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref> show three possibilities for how a function can decrease in a consistent way.  The middle graph depicts a function decreasing at a constant rate.
+      If we imagine a sequence of tangent lines on leftmost graph, the slopes of the tangent lines get less and less negative as we move from left to right. That means that the values of the first derivative,
+      while all negative, are increasing.  But it is awkward to say the leftmost function is <q>decreasing at an increasing rate</q> since that sounds like the function is decreasing more and more quickly, when in fact, the absolute value of the rate of decrease is getting smaller.  The rightmost curve in <xref ref="F-1-6-3optsd">Figure</xref> presents a similar challenge.  
     </p>
 
+<!--
     <p>
       This leaves only the rightmost curve in <xref ref="F-1-6-3optsd">Figure</xref> to consider.
       For that function,
@@ -297,16 +294,16 @@
       and we say that the function is
       <em>decreasing at a decreasing rate</em>.
     </p>
+-->
 
     <p>
-      We now introduce the notion of <em>concavity</em>
+      It turns out that calculus provides a better way to describe these possible behaviors through the language of <em>concavity</em>.
           <idx><h>concavity</h></idx>
-      which provides simpler language to describe these behaviors.
       When a curve opens upward on a given interval,
-      like the parabola <m>y = x^2</m> or the exponential growth function <m>y = e^x</m>,
+      such as the parabola <m>y = x^2</m> or the natural exponential function <m>y = e^x</m>,
       we say that the curve is <em>concave up</em> on that interval.
       Likewise, when a curve opens down,
-      like the parabola <m>y = -x^2</m> or the opposite of the exponential function <m>y = -e^{x}</m>,
+      such as the parabola <m>y = -x^2</m> or the opposite of the exponential function <m>y = -e^{x}</m>,
       we say that the function is <em>concave down</em>.
       Concavity is linked to both the first and second derivatives of the function.
     </p>
@@ -351,6 +348,14 @@
         </p>
       </statement>
     </definition>
+
+    <p>
+      Returning to <xref ref="F-1-6-3optsd">Figure</xref> with the three decreasing functions, we can now say that the leftmost function is <q>decreasing and concave up</q>, while the function on the right is <q>decreasing and concave down</q>.  Applying the language of concavity to the options for increasing functions shown in <xref ref="F-1-6-3optsi">Figure</xref>, the leftmost function is <q>increasing and concave up</q>, while the function on the right is <q>increasing and concave down</q>. 
+    </p>
+
+    <p>
+      In <xref ref="act-1-6-1">Activity</xref>, we revisit <xref ref="PA-1-6">Preview Activity</xref> to use these latest ideas involving the second derivative and the concavity of a function.
+    </p>
 
     <xi:include href="./activities/act-1-6-1.xml"/>
 

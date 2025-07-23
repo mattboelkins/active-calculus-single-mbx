@@ -137,10 +137,12 @@
 
     <example>
       <statement>
-        For the function <m>g</m> pictured in <xref ref="F-1-2-PA1">Figure</xref> from <xref ref="PA-1-2">Preview Activity</xref>, what can we say about the values of
-        <me>
-            \lim_{x \to -1} g(x), \  \lim_{x \to 0} g(x), \ \lim_{x \to 1} g(x), \ \text{and} \ \lim_{x \to 2} g(x) \
-        </me>
+        <p>
+          For the function <m>g</m> pictured in <xref ref="F-1-2-PA1">Figure</xref> from <xref ref="PA-1-2">Preview Activity</xref>, what can we say about the values of
+          <me>
+            \lim_{x \to -1} g(x), \  \lim_{x \to 0} g(x), \ \lim_{x \to 1} g(x), \ \text{and} \ \lim_{x \to 2} g(x)
+          </me>?
+        </p>
       </statement>
       <solution>
         <p permid="QHh">

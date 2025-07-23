@@ -99,7 +99,7 @@
     </assemblage>
 
     <p>
-      Note well: the units on <m>AV_{[a,b]}</m> are
+      <alert>Note well</alert>: the units on <m>AV_{[a,b]}</m> are
       <q>units of <m>s</m> per unit of <m>t</m>,</q>
       such as <q>miles per hour</q> or
       <q>feet per second.</q>
