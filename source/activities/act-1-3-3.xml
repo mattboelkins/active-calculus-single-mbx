@@ -177,9 +177,11 @@
       </task>
       <task workspace="3cm" xml:id="act-1-3-3-task-5">
         <statement>
-          In a carefully-worded sentence,
+          <p>
+            In a carefully-worded sentence,
           describe the behavior of <m>P'(a)</m> as <m>a</m> increases in value.
           What does this reflect about the behavior of the given function <m>P</m>?
+          </p>
         </statement>
         <hint>
           <p>Visualize the slope of the tangent line and how it changes as a point moves along the curve.</p>

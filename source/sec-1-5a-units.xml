@@ -90,14 +90,14 @@
           units of <m>f</m> per unit of <m>x</m>.        
         </p>
       </blockquote>  
-      Note that since <m>(a+h) - a = h</m>, we often write <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}</me>.    
+      Note that since <m>(a+h) - a = h</m>, we usually write <me>AV_{[a,a+h]} = \frac{f(a+h)-f(a)}{h}</me>.    
     </p>
     <p>  
       Thus, when we take the limit of the average rate of change as <m>h</m> goes to zero, the derivative 
       <me>f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}</me> 
       has the same units: units of <m>f</m> per unit of <m>x</m>.
 
-      Said slightly differently, the units on the derivative function are <q>units of output per unit of input</q> for the variables of the original function, <m>f</m>.
+      Said slightly differently, the units on the derivative function are <q>units of output per unit of input</q> for the variables and context of the original function, <m>f</m>.
     </p>
 
     <example xml:id="Ex-1-5a-1-pop-growth">
@@ -233,15 +233,15 @@
     </definition>   
 
     <p>
-      Observe that the central difference is the average rate of change of <m>f</m> on <m>[a-h,a+h]</m>, 
+      Observe that the central difference is also the average rate of change of <m>f</m> on <m>[a-h,a+h]</m>, 
       <me>
         AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}
-      </me>. The central difference can also be interpreted as a slope.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
+      </me>, and thus we can even interpret the central difference as a slope of a certain secant line.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
     </p>
 
     <figure xml:id="F-1-5a-central-diff">
       <caption>Plot of a function <m>f</m> that satisfies the data in <xref ref="Ex-1-5-1-central-difference">Example</xref>.</caption>
-        <image width="60%">
+        <image width="50%">
           <prefigure label="Fig-1-5a-CD" xmlns="https://prefigure.org">
             <diagram dimensions="(300,300)" margins="5">
               <definition>f(x) = 4-3*(0.5)^x</definition>
@@ -281,7 +281,7 @@
 
     <p>
       In <xref ref="sec-1-4-derivative-fxn">Section</xref>, we learned how use to the graph of a given function <m>f</m> to plot the graph of its derivative, <m>f'</m>.
-      It is important to remember that when we do so, the scale and the units on the vertical axis often have to change to represent <m>f'</m>. For example, suppose that <m>P(t) = 212-148e^{-0.05t}</m> tells us the temperature in degrees Fahrenheit of a potato in an oven at time <m>t</m> in minutes. In <xref ref="Fig-1-5a-P">Figure</xref>,
+      It is important to remember that when we do so, the scale (often) and the units (always) on the vertical axis have to change to represent <m>f'</m>. For example, suppose that <m>P(t) = 212-148e^{-0.05t}</m> tells us the temperature in degrees Fahrenheit of a potato in an oven at time <m>t</m> in minutes. In <xref ref="Fig-1-5a-P">Figure</xref>,
       we sketch the graph of <m>P</m>, and in <xref ref="Fig-1-5a-PPrime">Figure</xref> the graph of <m>P'</m>.
     </p>
 

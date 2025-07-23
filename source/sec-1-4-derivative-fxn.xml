@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-4-derivative-fxn">
   <title>The derivative function</title>
   <objectives>
@@ -139,9 +140,8 @@
     </p>
 
     <p>
-      An excellent way to explore how the graph of <m>f(x)</m> generates the graph of <m>f'(x)</m> is through an applet.
+      An excellent way to explore how the graph of <m>f(x)</m> generates the graph of <m>f'(x)</m> is through an interactive graphic.
       See, for instance,
-      the applets at
       <url href="https://gvsu.edu/s/5C" visual="">gvsu.edu/s/5C</url>
       or <url href="https://gvsu.edu/s/5D" visual="">gvsu.edu/s/5D</url>,
       via the sites of <url href="https://gvsu.edu/s/5r" visual="gvsu.edu/s/5r">David Austin</url> and <url href="http://gvsu.edu/s/5p" visual="gvsu.edu/s/5p">Marc Renault</url>.
@@ -160,7 +160,7 @@
     <definition xml:id="D-derivative-defn-x">
       <statement>
         <p>
-          Let <m>f</m> be a function and <m>x</m> a value in the function's domain.
+          Let <m>f</m> be a function and <m>x</m> an input value in the function's domain.
           We define the <term>derivative of <m>f</m></term>,
           a new function called <m>f'</m>,
           by the formula <m>f'(x) = \lim_{h \to 0} \frac{f(x+h)-f(x)}{h}</m>,
@@ -170,9 +170,9 @@
     </definition>
 
     <p>
-      We now have two different ways of thinking about the derivative function:
+      We now have two different natural questions we can ask about the derivative function:
 
-      <ol marker="1">
+      <ol marker="1.">
         <li>
           given a graph of <m>y = f(x)</m>,
           how does this graph lead to the graph of the derivative function
@@ -193,7 +193,7 @@
 
     <p>
       For a dynamic investigation that allows you to experiment with graphing <m>f'</m> when given the graph of <m>f</m>, see
-      <url href="https://gvsu.edu/s/8y" visual="gvsu.edu/s/8y">this applet by Marc Renault</url>.</p>
+      <url href="https://gvsu.edu/s/8y" visual="gvsu.edu/s/8y">this interactive by Marc Renault</url>.</p>
 
     <p>
       Now, recall the opening example of this section:

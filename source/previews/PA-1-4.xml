@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-1-4">
    
     <exploration xml:id="PA-1-4">
@@ -24,7 +25,7 @@
       <task workspace="15cm" xml:id="PA-1-4-task-0">
         <statement>
           <p>
-          Use the limit definition to compute the derivative values:
+          Use the limit definition to compute each of the following derivative values:
           <m>f'(0)</m>, <m>f'(1)</m>,
           <m>f'(2)</m>, and <m>f'(3)</m>.
         </p>
@@ -40,7 +41,7 @@
           regardless of the value of <m>a</m>.
           Based on your work in (a),
           what do you conjecture is the value of <m>f'(4)</m>?
-          How about <m>f'(5)</m>? (Note:
+          How about <m>f'(5)</m>? (<alert>Note</alert>:
           you should <em>not</em>
           use the limit definition of the derivative to find either value.)
         </p>

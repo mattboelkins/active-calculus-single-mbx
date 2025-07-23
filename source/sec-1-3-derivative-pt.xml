@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+ 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-3-derivative-pt">
   <title>The derivative of a function at a point</title>
   <objectives>
@@ -50,12 +51,12 @@
     <p>
       The <em>instantaneous rate of change</em>
       of a function is an idea that sits at the foundation of calculus.
-      It is a generalization of the notion of instantaneous velocity and measures how fast a particular function is changing at a given point.
+      It is a generalization of the notion of instantaneous velocity and measures how fast a particular function is changing at a given input.
       If the original function represents the position of a moving object,
-      this instantaneous rate of change is precisely the velocity of the object.
+      this instantaneous rate of change is precisely the instantaneous velocity of the object.
       In other contexts,
       instantaneous rate of change could measure the number of cells added to a bacteria culture per day,
-      the number of additional gallons of gasoline consumed by increasing a car's velocity one mile per hour,
+      the number of additional gallons of gasoline consumed per mile by increasing a car's velocity one mile per hour,
       or the number of dollars added to a mortgage payment for each percentage point increase in interest rate.
       The instantaneous rate of change can also be interpreted geometrically on the function's graph,
       and this connection is fundamental to many of the main ideas in calculus.
@@ -115,7 +116,7 @@
     <definition xml:id="def-derivative">
       <statement>
         <p>
-          Let <m>f</m> be a function and <m>x = a</m> a value in the function's domain.
+          Let <m>f</m> be a function and <m>x = a</m> an input value in the function's domain.
           We define the <term>derivative of <m>f</m> with respect to <m>x</m> evaluated at <m>x = a</m></term>,
               <idx><h>derivative</h><h>definition</h></idx>
           denoted <m>f'(a)</m>, by the formula
@@ -131,7 +132,7 @@
       Aloud, we read the symbol <m>f'(a)</m> as either
       <q><m>f</m>-prime at <m>a</m></q>
       or <q>the derivative of <m>f</m> evaluated at <m>x = a</m>.</q>
-      Much of the next several chapters will be devoted to understanding,
+      Much of our work in Chapters 1-3 will be devoted to understanding,
       computing,
       applying, and interpreting derivatives.
       For now, we observe the following important things.
@@ -193,14 +194,14 @@
       the point <m>(a+h,f(a+h))</m> will approach <m>(a,f(a))</m> as <m>h \to 0</m>.
       Because the process of taking a limit is a dynamic one,
       it can be helpful to use computing technology to visualize it.
-      One option is a java applet in which the user is able to control the point that is moving.
+      One option is an interactive graphic in which the user is able to control the point that is moving.
       For a helpful collection of examples,
       consider the
       <url href="http://gvsu.edu/s/5r" visual="gvsu.edu/s/5r">work of David Austin</url>
       of Grand Valley State University,
       and
       <url href="http://gvsu.edu/s/5s" visual="gvsu.edu/s/5s">this particularly relevant example</url>.
-      For applets that have been built in Geogebra<fn>
+      For interactives that have been built in Geogebra<fn>
       You can even consider building your own examples;
       the fantastic program Geogebra is available for
       <url href="http://geogebra.org" visual="geogebra.org">free download</url>
@@ -358,13 +359,13 @@
     <p>
       <ul>
         <li>
-          The average rate of change of a function <m>f</m> on the interval <m>[a,b]</m> is <m>\frac{f(b)-f(a)}{b-a}</m>.
-          The units on the average rate of change are units of <m>f(x)</m> per unit of <m>x</m>,
+          The average rate of change of a function <m>f</m> on the interval <m>[a,b]</m> is <m>AV_{[a,b]} = \frac{f(b)-f(a)}{b-a}</m>.
+          The units on the average rate of change are <q>units of <m>f(x)</m> per unit of <m>x</m></q>,
           and the numerical value of the average rate of change represents the slope of the secant line between the points <m>(a,f(a))</m> and
           <m>(b,f(b))</m> on the graph of <m>y = f(x)</m>.
           If we view the interval as being <m>[a,a+h]</m> instead of <m>[a,b]</m>,
           the meaning is still the same,
-          but the average rate of change is now computed by <m>\frac{f(a+h)-f(a)}{h}</m>.
+          but the average rate of change is now computed by <m>AV_{[a,b]} = \frac{f(a+h)-f(a)}{h}</m>.
         </li>
 
         <li>
@@ -376,7 +377,7 @@
             f'(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}
           </me>,
           provided the limit exists.
-          Note particularly that the instantaneous rate of change at <m>x = a</m> is the limit of the average rate of change on <m>[a,a+h]</m> as <m>h \to 0</m>.
+          Note particularly that the instantaneous rate of change at <m>x = a</m> is the limit of the average rate of change on <m>[a,a+h]</m> as <m>h \to 0</m>, and that its units are also <q>units of <m>f(x)</m> per unit of <m>x</m></q>.
         </li>
 
         <li>

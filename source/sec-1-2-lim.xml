@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-2-lim">
   <title>The notion of limit</title>
   <objectives>
@@ -136,22 +137,26 @@
 
     <example>
       <statement>
+        For the function <m>g</m> pictured in <xref ref="F-1-2-PA1">Figure</xref> from <xref ref="PA-1-2">Preview Activity</xref>, what can we say about the values of
+        <me>
+            \lim_{x \to -1} g(x), \  \lim_{x \to 0} g(x), \ \lim_{x \to 1} g(x), \ \text{and} \ \lim_{x \to 2} g(x) \
+        </me>
+      </statement>
+      <solution>
         <p permid="QHh">
-          For the function <m>g</m> pictured in the figure in <xref ref="PA-1-2">Preview Activity</xref>,
-          we make the following observations:
-          <me>
-            \lim_{x \to -1} g(x) = 3, \  \lim_{x \to 0} g(x) = 4, \ \text{and}  \  \lim_{x \to 2} g(x) = 1
-          </me>.
           When working from a graph,
           it suffices to ask if the function <em>approaches</em>
           a single value from each side of the fixed input.
           The function value <em>at</em> the fixed input is irrelevant.
-          This reasoning explains the values of the three limits stated above.
+          Based on the graph of <m>g</m> in <xref ref="F-1-2-PA1">Figure</xref>, we can conclude that
+          <me>
+            \lim_{x \to -1} g(x) = 3, \  \lim_{x \to 0} g(x) = 4, \ \text{and}  \  \lim_{x \to 2} g(x) = 1
+          </me>,
+          because at each of those <m>x</m>-values, the function approaches the same height from both sides of the point of interest.
         </p>
 
         <p>
-          However, <m>g</m> does not have a limit as <m>x \to 1</m>.  
-          There is a jump in the graph at <m>x = 1</m>.
+          However, <m>g</m> does not have a limit as <m>x \to 1</m> due to the jump in the graph at <m>x = 1</m>.
           If we approach <m>x = 1</m> from the left,
           the function values tend to get close to 3,
           but if we approach <m>x = 1</m> from the right,
@@ -159,7 +164,7 @@
           There is no single number that all of these function values approach.
           This is why the limit of <m>g</m> does not exist at <m>x = 1</m>.
         </p>
-      </statement>
+      </solution>
     </example>
 
     <p>
@@ -170,7 +175,7 @@
       If we have a formula for <m>f(x)</m>,
       there are two additional possibilities:
 
-      <ol marker="1">
+      <ol marker="1.">
         <li>
           Evaluate the function at a sequence of inputs that approach <m>a</m> on either side
           (typically using some sort of computing technology),
@@ -212,104 +217,103 @@
         </p>
       </statement>
       <solution>
-        <p>
-          a. We first construct a graph of <m>f</m> along with tables of values near <m>a = -1</m> and <m>a = -2</m>.
+              <p>
+               a. We first construct a graph of <m>f</m> along with tables of values near <m>a = -1</m> and <m>a = -2</m>.
+ 
+                  <sidebyside widths="24% 24% 42%">
+
+                    <table xml:id="table-1-F-1-2-Ex1f">
+                      <title>Values of <m>f</m> near <m>x=-1</m>.</title>
+                      <tabular>
+                        <row bottom="minor" halign="center">
+                          <cell><m>x</m></cell>
+                          <cell><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-0.9</m></cell>
+                          <cell><m>2.9</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-0.99</m></cell>
+                          <cell><m>2.99</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-0.999</m></cell>
+                          <cell><m>2.999</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-0.9999</m></cell>
+                          <cell><m>2.9999</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.1</m></cell>
+                          <cell><m>3.1</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.01</m></cell>
+                          <cell><m>3.01</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.001</m></cell>
+                          <cell><m>3.001</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.0001</m></cell>
+                          <cell><m>3.0001</m></cell>
+                        </row>
+                      </tabular>
+
+                    </table>
+          <!--  -->
+                    <table xml:id="table-2-F-1-2-Ex1f">
+                      <title>Values of <m>f</m> near <m>x=-2</m>.</title>
+                      <tabular>
+                        <row bottom="minor" halign="center">
+                          <cell><m>x</m></cell>
+                          <cell><m>f(x)</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.9</m></cell>
+                          <cell><m>3.9</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.99</m></cell>
+                          <cell><m>3.99</m></cell>
+                        </row>
+                        <row>
+                          <cell><m>-1.999</m></cell>
+                          <cell><m>3.999</m></cell>
+                        </row>
+                        <row>
+                        <cell><m>-1.9999</m></cell>
+                        <cell><m>3.9999</m></cell>
+                      </row>
+                      <row>
+                        <cell><m>-2.1</m></cell>
+                        <cell><m>4.1</m></cell>
+                      </row>
+                      <row>
+                        <cell><m>-2.01</m></cell>
+                        <cell><m>4.01</m></cell>
+                      </row>
+                      <row>
+                        <cell><m>-2.001</m></cell>
+                        <cell><m>4.001</m></cell>
+                      </row>
+                      <row>
+                        <cell><m>-2.0001</m></cell>
+                        <cell><m>4.0001</m></cell>
+                      </row>
+                    </tabular>
+
+                  </table>
+          <!--  -->
+                  <figure xml:id="plot-F-1-2-Ex1f">
+                    <caption>Plot of <m>f(x)</m> on <m>[-4,2]</m>.</caption>
+                    <image source="images/1_2_Ex1f"/>
+                  </figure>
+                </sidebyside>
         </p>
-
-        <sidebyside widths="23% 23% 42%" valign="middle">
-
-          <table xml:id="table-1-F-1-2-Ex1f">
-            <title>Table of <m>f</m> values near <m>x=-1</m>.</title>
-            <tabular>
-              <row bottom="minor" halign="center">
-                <cell><m>x</m></cell>
-                <cell><m>f(x)</m></cell>
-              </row>
-              <row>
-                <cell><m>-0.9</m></cell>
-                <cell><m>2.9</m></cell>
-              </row>
-              <row>
-                <cell><m>-0.99</m></cell>
-                <cell><m>2.99</m></cell>
-              </row>
-              <row>
-                <cell><m>-0.999</m></cell>
-                <cell><m>2.999</m></cell>
-              </row>
-              <row>
-                <cell><m>-0.9999</m></cell>
-                <cell><m>2.9999</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.1</m></cell>
-                <cell><m>3.1</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.01</m></cell>
-                <cell><m>3.01</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.001</m></cell>
-                <cell><m>3.001</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.0001</m></cell>
-                <cell><m>3.0001</m></cell>
-              </row>
-            </tabular>
-
-          </table>
-          <!--  -->
-          <table xml:id="table-2-F-1-2-Ex1f">
-            <title>Table of <m>f</m> values near <m>x=-2</m>.</title>
-            <tabular>
-              <row bottom="minor" halign="center">
-                <cell><m>x</m></cell>
-                <cell><m>f(x)</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.9</m></cell>
-                <cell><m>3.9</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.99</m></cell>
-                <cell><m>3.99</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.999</m></cell>
-                <cell><m>3.999</m></cell>
-              </row>
-              <row>
-                <cell><m>-1.9999</m></cell>
-                <cell><m>3.9999</m></cell>
-              </row>
-              <row>
-                <cell><m>-2.1</m></cell>
-                <cell><m>4.1</m></cell>
-              </row>
-              <row>
-                <cell><m>-2.01</m></cell>
-                <cell><m>4.01</m></cell>
-              </row>
-              <row>
-                <cell><m>-2.001</m></cell>
-                <cell><m>4.001</m></cell>
-              </row>
-              <row>
-                <cell><m>-2.0001</m></cell>
-                <cell><m>4.0001</m></cell>
-              </row>
-            </tabular>
-
-          </table>
-          <!--  -->
-          <figure xml:id="plot-F-1-2-Ex1f">
-            <caption>Plot of <m>f(x)</m> on <m>[-4,2]</m>.</caption>
-            <image source="images/1_2_Ex1f"/>
-          </figure>
-        </sidebyside>
-
         <p>
           From <xref ref="table-1-F-1-2-Ex1f">Table</xref>,
           it appears that we can make <m>f</m> as close as we want to 3 by taking <m>x</m> sufficiently close to <m>-1</m>,
@@ -334,7 +338,7 @@
           the numerator and denominator of <m>f</m> both tend to 0.
           We call <m>0/0</m> an <em>indeterminate form</em>.
               <idx><h>indeterminate form</h></idx>
-          This tells us that there is somehow more work to do.
+          This tells us that there is more work to do to try to determine the limit's value.
           From <xref ref="table-2-F-1-2-Ex1f">Table</xref>
           and <xref ref="plot-F-1-2-Ex1f">Figure</xref>,
           it appears that <m>f</m> should have a limit of <m>4</m> at <m>x = -2</m>.
@@ -373,7 +377,7 @@
         <sidebyside widths="23% 23% 42%">
 
           <table xml:id="table-1-F-1-2-Ex1g">
-            <title>Table of <m>g</m> values near <m>x=3</m>.</title>
+            <title>Values of <m>g</m> near <m>x=3</m>.</title>
             <tabular>
               <row bottom="minor" halign="center">
                 <cell><m>x</m></cell>
@@ -416,7 +420,7 @@
           </table>
           <!--  -->
           <table xml:id="table-2-F-1-2-Ex1g">
-            <title>Table of <m>g</m> values near <m>x=0</m>.</title>
+            <title>Values of <m>g</m> near <m>x=0</m>.</title>
             <tabular>
               <row bottom="minor" halign="center">
                 <cell><m>x</m></cell>
@@ -510,8 +514,9 @@
           That sequence of function values suggests that the value of the limit is <m>\frac{\sqrt{3}}{2}</m>.
           Clearly the function cannot have two different values for the limit,
           so <m>g</m> has no limit as <m>x \to 0</m>.
-        </p>
-      </solution>
+        </p>        
+
+    </solution>
     </example>
 
     <p>

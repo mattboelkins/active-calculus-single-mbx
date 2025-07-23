@@ -13,6 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <!-- this activity is new in 2025 for the second edition; it basically replaces what was act-1-5-2 in the first edition -->
+
 <worksheet label="ws-act-1-5a-1">
   <activity xml:id="act-1-5a-1">
     <introduction>
@@ -41,7 +42,7 @@
             where the final blank should be completed using the units on the derivative.  Your second sentence might have form
               </p>
             <blockquote><p>
-                When the car has been driven <fillin characters="10"/> miles, if the car is driven one more mile, we expect that the value of the car will <fillin characters="10"/> by about <m>-0.89</m><fillin characters="10"/>.
+                When the car has been driven <fillin characters="10"/> miles, if the car is driven one more mile, we expect that the value of the car will <fillin characters="10"/> by about <m>0.89</m><fillin characters="10"/>.
               </p></blockquote>
       </statement>
       <hint>

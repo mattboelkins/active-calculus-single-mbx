@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-1-vel">
   <title>How do we measure velocity?</title>
   <objectives>
@@ -112,7 +113,7 @@
     <p>
       Whether we are driving a car,
       riding a bike, or throwing a ball,
-      we have an intuitive sense that a moving object has a velocity at any given moment -- a number that measures how fast the object is moving <em>right now</em>.
+      we have an intuitive sense that a moving object has a velocity at any given moment <mdash/> a number that measures how fast the object is moving <em>right now</em>.
       For instance,
       a car's speedometer tells the driver the car's velocity at any given instant.
       In fact, the velocity on a speedometer is really an average velocity that is computed over a very small time interval.
@@ -200,7 +201,7 @@
                 AV_{[0.5, 0.5+h]} = \frac{s(0.5+h) - s(0.5)}{(0.5+h) - 0.5}
               </me>.
               We start by finding <m>s(0.5+h)</m>.
-              To do so, we follow the rule that defines the function <m>s</m>.
+              To do so, we follow the rule that defines the function <m>s</m>, and then expand and simplify.  Doing so,
               <md>
                 <mrow>s(0.5+h) \amp  =  16 - 16(0.5 + h)^2</mrow>
                 <mrow>\amp  =  16 - 16(0.25 + h + h^2)</mrow>
@@ -214,6 +215,7 @@
                 <mrow>\amp  =  \frac{(12 - 16h - 16h^2) - (16 - 16(0.5)^2)}{0.5 + h - 0.5}</mrow>
                 <mrow>\amp  =  \frac{12 - 16h - 16h^2 - 12}{h}</mrow>
                 <mrow>\amp  =  \frac{-16h - 16h^2}{h}</mrow>
+                <mrow>\amp  =  \frac{h(-16 - 16h)}{h}</mrow>
               </md>.
               At this point, we note two things:
               first, the expression for average velocity clearly depends on <m>h</m>,
@@ -231,17 +233,17 @@
               From this expression we can compute the average for any small positive or negative value of <m>h</m>.
               For instance, to obtain the average velocity on
               <m>[0.5,0.75]</m>, we let <m>h = 0.25</m>,
-              and the average velocity is <m>-16 - 16(0.25) = -20</m> ft/sec.
+              and the average velocity is <m>AV_{[0.5, 0.75]} = -16 - 16(0.25) = -20</m> ft/sec.
               To get the average velocity on <m>[0.4, 0.5]</m>,
               we let <m>h = -0.1</m>, and compute the average velocity as
               <me>
-                -16 - 16(-0.1) = -14.4\ \text{ft/sec}
+                AV_{[0.4, 0.5]} = -16 - 16(-0.1) = -14.4\ \text{ft/sec}
               </me>.
             </li>
 
             <li>
               We can even explore what happens to
-              <m>AV_{[0.5, 0.5+h]}</m> as <m>h</m> gets closer and closer to zero.
+              <m>AV_{[0.5, 0.5+h]} = -16 - 16h</m> as <m>h</m> gets closer and closer to zero.
               As <m>h</m> approaches zero,
               <m>-16h</m> will also approach zero,
               so it appears that the instantaneous velocity of the ball at <m>t = 0.5</m> should be <m>-16</m> ft/sec.
