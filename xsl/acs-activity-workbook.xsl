@@ -37,7 +37,8 @@
     <xsl:text>boxrule=0pt,borderline west={3pt}{0pt}{ActiveBlue}, &#xa;</xsl:text>
     <xsl:text>runintitlestyle, blockspacingstyle, after title={.\space}, &#xa;</xsl:text>
     <xsl:text>colback=white,&#xa;</xsl:text>
-    <xsl:text>coltitle=black,after={\cleardoublepage}</xsl:text>
+    <!-- <xsl:text>coltitle=black,after={\cleardoublepage}</xsl:text> the line below puts linebreaks between paragraphs -->
+    <xsl:text>coltitle=black,before upper app={\setparstyle},after={\cleardoublepage}</xsl:text>
 </xsl:template>
 
 <xsl:param name="latex.preamble.late">

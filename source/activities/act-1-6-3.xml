@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-1-6-3">
    
     <activity xml:id="act-1-6-3" workspace="3cm">
@@ -45,7 +46,7 @@
       you should label that accordingly.
     </p>
 
-          <image width="100%" source="images/1_6_Act2"/>
+          <image width="90%" source="images/1_6_Act2"/>
 
       </statement>
       <hint>

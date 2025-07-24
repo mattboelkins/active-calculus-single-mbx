@@ -76,7 +76,7 @@
         </tabular>
       </table>
     </introduction>
-    <task workspace="3cm" xml:id="act-1-5a-2-task-0">
+    <task workspace="3.5cm" xml:id="act-1-5a-2-task-0">
       <statement>
         <p>
             Use a central difference to estimate the instantaneous rate of change of the potato's temperature at <m>t= 20</m>.  Include units on your answer.
@@ -104,7 +104,7 @@
           </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-1-5a-2-task-1">
+    <task workspace="3.5cm" xml:id="act-1-5a-2-task-1">
       <statement>
         <p>
             Use a central difference to estimate the instantaneous rate of change of the potato's temperature at <m>t= 40</m>. Include units on your answer.
@@ -132,7 +132,7 @@
           </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-1-5a-2-task-2">
+    <task workspace="2cm" xml:id="act-1-5a-2-task-2">
       <statement>
         <p>
             Without doing any calculation, which do you expect to be greater:
@@ -155,7 +155,7 @@
           </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-1-5a-2-task-3">
+    <task workspace="4.5cm" xml:id="act-1-5a-2-task-3">
       <statement>
         <p>
             Suppose we know that <m>F(46) = 192.5</m> and <m>F'(46) = 1.39</m>. What are the respective units on these two quantities? What do you expect the temperature of the potato to be when <m>t = 47</m>? when <m>t = 48</m>? Why?

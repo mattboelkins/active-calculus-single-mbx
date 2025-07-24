@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2024                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <pretext xmlns:xi="http://www.w3.org/2001/XInclude">
     <!-- Has LaTeX macros, which may be needed       -->
     <!-- May have some unnecessary stuff, but OK now -->
@@ -39,7 +40,7 @@
       <title><line>Activities Workbook</line>
       <line>for</line>
       <line>Active Calculus Single Variable</line>
-      <line>Chapters 1<ndash/>4</line>
+      <line>Chapters 1<ndash/>4, 2nd Edition</line>
       </title>
     <frontmatter permid="WYW">
       <xi:include href="./bibinfo.xml" />
@@ -48,14 +49,14 @@
 
       <preface permid="qRN">
         <p permid="Dgf">
-          This Activities Workbook for <pubtitle>Active Calculus Single Variable</pubtitle> collects all the Preview Activities and Activities in a way that each starts on a new page.
+          This Activities Workbook for <pubtitle>Active Calculus Single Variable</pubtitle> (Chapters 1-4) collects all the Preview Activities and Activities in a way that each starts on a new page.
           The Activities Workbook provides space for students to write and organize their work as they complete the activities found in the text.
         </p>
 
         <p permid="jno">
           The design of this workbook is such that each Preview Activity and Activity starts on a right-hand page.
-          The workbook is offered for purchase in print form in two volumes:
-          the first for chapters 1<ndash />4 and the second for chapters 5<ndash />8.
+          The workbook is offered in two volumes:
+          the first for chapters 1<ndash />4 and the second for chapters 5<ndash />8.  This workbook is for chapters 1<ndash />4.
         </p>
       </preface>
     </frontmatter>
@@ -144,7 +145,7 @@
     </p>
   </appendix>
 -->
-        <colophon>
+  <colophon>
     <p>
       This book was authored in <pretext />.
     </p>

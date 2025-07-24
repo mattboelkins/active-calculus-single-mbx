@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,22 +12,22 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-1-4-2">
    
     <activity xml:id="act-1-4-2" workspace="3cm">
       <introduction>
         <p>
-      For each of the listed functions,
-      determine a formula for the derivative function.
-      For the first two,
-      determine the formula for the derivative by thinking about the nature of the given function and its slope at various points;
-      do not use the limit definition.
-      For the latter four, use the limit definition.
-      Pay careful attention to the function names and independent variables.
-      It is important to be comfortable with using letters other than <m>f</m> and <m>x</m>.
-      For example, given a function <m>p(z)</m>,
-      we call its derivative <m>p'(z)</m>.
-
+          For each of the listed functions,
+          determine a formula for the derivative function.
+          For the first two,
+          determine the formula for the derivative by thinking about the nature of the given function and its slope at various points;
+          do not use the limit definition.
+          For the latter four, use the limit definition.
+          Pay careful attention to the function names and independent variables.
+          It is important to be comfortable with using letters other than <m>f</m> and <m>x</m>.
+          For example, given a function <m>p(z)</m>,
+          we call its derivative <m>p'(z)</m>.
       </p>
       </introduction>
       <task workspace="2cm" xml:id="act-1-4-2-task-0">
@@ -51,7 +51,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="2cm" xml:id="act-1-4-2-task-1">
+      <task workspace="2.2cm" xml:id="act-1-4-2-task-1">
         <statement>
           <p>
             <m>g(t) = t</m>
@@ -109,16 +109,16 @@
       <task workspace="10cm" xml:id="act-1-4-2-task-4">
         <statement>
           <p>
-            <m>F(t) = \frac{1}{t}</m>
+            <m>F(t) = \dfrac{1}{t}</m>
           </p>
         </statement>
         <hint>
           <p>
-            <m>F(t+h) = \frac{1}{t+h}</m>
+            <m>F(t+h) = \dfrac{1}{t+h}</m>
           </p>
         </hint>
         <answer>
-          <p><m>F'(t) = \frac{-1}{t^2}</m>.
+          <p><m>F'(t) = \dfrac{-1}{t^2}</m>.
           </p>
         </answer>
         <solution/>

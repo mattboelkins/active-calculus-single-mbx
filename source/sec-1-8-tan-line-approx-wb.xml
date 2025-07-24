@@ -13,8 +13,9 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-8-tan-line-approx">
-  <title>The Tangent Line Approximation</title>
+  <title>The tangent line approximation</title>
     <xi:include href="./previews/PA-1-8.xml"/>
     <xi:include href="./activities/act-1-8-1.xml"/>
     <xi:include href="./activities/act-1-8-2.xml"/>
+    <xi:include href="./activities/act-1-8-3.xml"/>
 </section>

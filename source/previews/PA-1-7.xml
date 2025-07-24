@@ -24,7 +24,7 @@
   <p>  
     <alert>Note</alert>: to the right of <m>x = 2</m>,
     the graph of <m>f</m> is exhibiting infinite oscillatory behavior similar to the function
-    <m>\sin(\frac{\pi}{x})</m> that we encountered in part (b) of <xref ref="Ex-1-2-Limits">Example</xref>.  Assume that <m>f(2) = -2.5</m>.
+    <m>\sin(\frac{\pi}{x})</m> <!-- this used to xref to Ex-1-2-Limits from Section 1.2 -->.  Assume that <m>f(2) = -2.5</m>.
   </p>
           <image width="47%" source="images/1_7_PA1"/>
       </introduction>

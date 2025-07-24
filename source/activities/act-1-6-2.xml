@@ -294,7 +294,7 @@
           </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-1-6-2-task-1">
+    <task workspace="5cm" xml:id="act-1-6-2-task-1">
       <statement>
         <p>
             Use a central difference to estimate the value of <m>F''(30)</m>.
@@ -322,7 +322,7 @@
           </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-1-6-2-task-2">
+    <task workspace="4cm" xml:id="act-1-6-2-task-2">
       <statement>
         <p>
             What is the meaning of the value of <m>F''(30)</m> that you have computed in (b) in terms of the potato's temperature?
