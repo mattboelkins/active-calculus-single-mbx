@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-1-7-3">
    
     <activity xml:id="act-1-7-3" workspace="3cm">
@@ -22,7 +23,7 @@
         </p>
 
         <p>
-          For (a)-(c), let <m>g</m> be the function given by the rule <m>g(x) = |x|</m>.
+          For (a)-(c), let <m>g</m> be the function given by the rule <m>g(x) = |x|</m>.  Note that for part (d) we use the function <m>f</m> given by the graph in (d).
         </p>
       </introduction>
       <task workspace="3cm" xml:id="act-1-7-3-task-0">

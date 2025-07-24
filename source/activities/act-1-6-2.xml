@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,14 +12,125 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-1-6-2">
   <activity xml:id="act-1-6-2">
     <introduction>
-      <p>
-      A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature <m>F</m> (in degrees Fahrenheit) is recorded in the following table. Time <m>t</m> is measured in minutes.<fn>Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.</fn></p>
-      <p>  
-      In <xref ref="act-1-5a-2">Activity</xref>, we used this data to compute approximations to <m>F'(20)</m> and <m>F'(40)</m> using central differences.  Those values are provided in the second table below, along with several others computed in the same way.
+    <p>
+      A potato is placed in an oven whose temperature is 350 degrees Fahrenheit, and the potato's temperature <m>F</m> (in degrees Fahrenheit) is recorded in <xref ref="table-1-act-1-6-2">Table</xref>. Time <m>t</m> is measured in minutes.<fn>Thanks to Nick Owad of Hood College for conducting experiments with actual potatoes in his oven in order to generate the data for this activity.</fn>
     </p>
+
+        <table xml:id="table-1-act-1-6-2">
+          <title>Select values of <m>F(t)</m>.</title>
+          <tabular bottom="minor" top="minor">
+            <row bottom="medium">
+              <cell>
+                <m>t</m>
+              </cell>
+              <cell>
+                <m>0</m>
+              </cell>
+              <cell>
+                <m>10</m>
+              </cell>
+              <cell>
+                <m>20</m>
+              </cell>
+              <cell>
+                <m>30</m>
+              </cell>
+              <cell>
+                <m>40</m>
+              </cell>              
+              <cell>
+                <m>50</m>
+              </cell>
+              <cell>
+                <m>60</m>
+              </cell>              
+            </row>  
+            <row>
+              <cell>
+                <m>F(t)</m>
+              </cell>
+              <cell>
+                <m>65</m>
+              </cell>
+              <cell>
+                <m>94.7</m>
+              </cell>
+              <cell>
+                <m>141.7</m>
+              </cell>
+              <cell>
+                <m>167.6</m>
+              </cell>
+              <cell>
+                <m>182.4</m>
+              </cell>
+              <cell>
+                <m>197.9</m>
+              </cell>
+              <cell>
+                <m>209.3</m>
+              </cell>
+            </row>
+          </tabular>
+        </table>
+        <table xml:id="table-2-act-1-6-2">
+          <title>Select approximate values of <m>F'(t)</m>.</title>
+          <tabular bottom="minor" top="minor">
+            <row bottom="medium">
+              <cell>
+                <m>t</m>
+              </cell>
+              <cell>
+                <m>0</m>
+              </cell>
+              <cell>
+                <m>10</m>
+              </cell>
+              <cell>
+                <m>20</m>
+              </cell>
+              <cell>
+                <m>30</m>
+              </cell>
+              <cell>
+                <m>40</m>
+              </cell>
+              <cell>
+                <m>50</m>
+              </cell>
+              <cell>
+                <m>60</m>
+              </cell>
+            </row> 
+            <row> 
+              <cell>
+                <m>F'(t)</m>
+              </cell>
+              <cell>NA</cell>
+              <cell>
+                <m>3.805</m>
+              </cell>
+              <cell>
+                <m>3.645</m>
+              </cell>
+              <cell>
+                <m>2.065</m>
+              </cell>
+              <cell>
+                <m>1.515</m>
+              </cell>
+              <cell>
+                <m>1.35</m>
+              </cell>
+              <cell>NA</cell>
+            </row>
+          </tabular>
+        </table>
+<!--    
       <sidebyside widths="47% 47%" margins="0%">
         <table xml:id="table-1-act-1-6-2">
           <title>Select values of <m>F(t)</m>.</title>
@@ -156,7 +267,12 @@
           </tabular>
         </table>
       </sidebyside>
-      <p/>
+-->
+
+    <p>  
+      In <xref ref="act-1-5a-2">Activity</xref>, we used this data to compute approximations to <m>F'(20)</m> and <m>F'(40)</m> using central differences.  Those values are provided in <xref ref="table-2-act-1-6-2">Table</xref>, along with several others computed in the same way.
+    </p>
+
     </introduction>
     <task workspace="3cm" xml:id="act-1-6-2-task-0">
       <statement>

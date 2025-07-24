@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-7-lim-cont-diff">
   <title>Limits, Continuity, and Differentiability</title>
   <objectives>
@@ -50,7 +51,7 @@
   <subsection><title>Introduction</title>
     <p>
       In <xref ref="sec-1-2-lim">Section</xref>,
-      we learned how limits can be used to study the trend of a function near a fixed input value.
+      we learned how limits can be used to study the trending behavior of a function near a fixed input value.
       In this section,  
       we aim to quantify how the function acts and how its values change near a particular point.
       If the function has a limit <m>L</m> at <m>x = a</m>,
@@ -105,11 +106,11 @@
           </me>
           provided that we can make the value of <m>f(x)</m> as close to <m>L_1</m> as we like by taking <m>x</m> sufficiently close to <m>a</m> while always having <m>x \lt  a</m>.
           We call <m>L_1</m> the left-hand limit of <m>f</m> as <m>x</m> approaches <m>a</m>.
-          Similarly, we say <em><m>L_2</m> is the right-hand limit of <m>f</m> as <m>x</m> approaches <m>a</m></em> and write
+          Similarly, we say <em><m>f</m> has limit <m>L_1</m> as <m>x</m> approaches <m>a</m> from the right</em> and write
           <me>
             \lim_{x \to a^+} f(x) = L_2
           </me>
-          provided that we can make the value of <m>f(x)</m> as close to <m>L_2</m> as we like by taking <m>x</m> sufficiently close to <m>a</m> while always having <m>x \gt a</m>.
+          provided that we can make the value of <m>f(x)</m> as close to <m>L_2</m> as we like by taking <m>x</m> sufficiently close to <m>a</m> while always having <m>x \gt a</m>. We call <m>L_1</m> the right-hand limit of <m>f</m> as <m>x</m> approaches <m>a</m>.
         </p>
       </statement>
     </definition>
@@ -147,6 +148,7 @@
     </p>
 
     <assemblage xml:id="limit-left-right">
+      <title>When a function <m>f</m> has a limit</title>    
       <p>
         A function <m>f</m> has limit <m>L</m> as <m>x \to a</m> if and only if
         <me>
@@ -275,7 +277,7 @@
     </p>
 
     <p>
-      This route of substituting an input value to evaluate a limit works whenever we know that the function being considered is continuous.
+      This approach of substituting an input value to evaluate a limit works whenever we know that the function being considered is continuous.
       Besides polynomial functions,
       all exponential functions and the sine and cosine functions are continuous at every point,
       as are many other familiar functions and combinations thereof.
@@ -322,7 +324,7 @@
 
     <figure xml:id="F-1-7-NotDiff">
       <caption>A function <m>f</m> that is continuous at <m>a = 1</m> but not differentiable at <m>a = 1</m>; at right, we zoom in on the point <m>(1,1)</m> in a magnified version of the box in the left-hand plot.</caption>
-      <image width="70%" source="images/1_7_NotDiff"/>
+      <image width="60%" source="images/1_7_NotDiff"/>
     </figure>
 
     <p>
@@ -349,7 +351,7 @@
       the function and the tangent line should appear essentially indistinguishable<fn>
       See,
       for instance,
-      <url href="https://gvsu.edu/s/6J" visual="gvsu.edu/s/6J">this applet</url>,
+      <url href="https://gvsu.edu/s/6J" visual="gvsu.edu/s/6J">this interactive graphic</url>,
       where zooming in shows the increasing similarity between the tangent line and the curve.
       </fn>.
       Conversely,
@@ -369,6 +371,7 @@
     </p>
 
     <assemblage xml:id="cont-diff-summary">
+      <title>When a function is differentiable and/or continuous</title>
       <p>
         <ul>
           <li>

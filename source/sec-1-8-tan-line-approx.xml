@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-1-8-tan-line-approx">
   <title>The Tangent Line Approximation</title>
   <objectives>
@@ -78,7 +79,7 @@
       <me>
         y - f(a) = f'(a)(x-a) \ \ \text{or} \ \ y = f'(a)(x-a) + f(a)
       </me>.
-      Note well: there is a major difference between <m>f(a)</m> and <m>f(x)</m> in this context.
+      <alert>Note well</alert>: there is a major difference between <m>f(a)</m> and <m>f(x)</m> in this context.
       The former is a constant that results from using the given fixed value of <m>a</m>,
       while the latter is the general expression for the rule that defines the function.
       The same is true for <m>f'(a)</m> and <m>f'(x)</m>:
@@ -87,18 +88,20 @@
       we need to evaluate the function and its derivative at a fixed <m>a</m>-value.
     </p>
 
+    <figure xml:id="F-1-8-TanLine">
+      <caption>A function <m>y = f(x)</m> and its tangent line at the point <m>(a,f(a))</m>: at left, from a distance, and at right, up close.  At right, we label the tangent line function by <m>y = L(x)</m> and observe that for <m>x</m> near <m>a</m>, <m>f(x) \approx L(x)</m>.</caption>
+      <image width="80%" source="images/1_8_TanLine"/>
+    </figure>
+
     <p>
       In <xref ref="F-1-8-TanLine">Figure</xref>,
       we see the graph of a function <m>f</m> and its tangent line at the point <m>(a,f(a))</m>.
       Notice how when we zoom in we see the local linearity of <m>f</m> more clearly highlighted.
       The function and its tangent line are nearly indistinguishable up close.
-      Local linearity can also be seen dynamically in <url href="https://gvsu.edu/s/6J" visual="gvsu.edu/s/6J">this applet</url>.
+      Local linearity can also be seen dynamically in <url href="https://gvsu.edu/s/6J" visual="gvsu.edu/s/6J">this interactive graphic</url>.
     </p>
 
-    <figure xml:id="F-1-8-TanLine">
-      <caption>A function <m>y = f(x)</m> and its tangent line at the point <m>(a,f(a))</m>: at left, from a distance, and at right, up close.  At right, we label the tangent line function by <m>y = L(x)</m> and observe that for <m>x</m> near <m>a</m>, <m>f(x) \approx L(x)</m>.</caption>
-      <image width="100%" source="images/1_8_TanLine"/>
-    </figure>
+
   </subsection>
 
   <subsection>
@@ -131,14 +134,18 @@
           Suppose that a function
           <m>y = f(x)</m> has its tangent line approximation given by
           <m>L(x) = 3 - 2(x-1)</m> at the point <m>(1,3)</m>,
-          but we do not know anything else about the function <m>f</m>.
+          but we do not know anything else about the function <m>f</m>.  How can we estimate the value of <m>f(x)</m> for <m>x</m> near <m>1</m>?
+        </p>
+      </statement>
+      <solution>
+        <p>
           To estimate a value of <m>f(x)</m> for <m>x</m> near 1, such as <m>f(1.2)</m>,
           we can use the fact that <m>f(1.2) \approx L(1.2)</m> and hence
           <me>
             f(1.2) \approx L(1.2) = 3 - 2(1.2-1) = 3 - 2(0.2) = 2.6
           </me>.
         </p>
-      </statement>
+      </solution>
     </example>
 
     <p>
@@ -218,7 +225,7 @@
           It is possible that
           <m>f''(a) = 0</m> but <m>f''</m> does not change sign at <m>x = a</m>,
           in which case the graph will look like one of the first two options.
-          </fn>.
+          </fn>
         </li>
 
         <li>

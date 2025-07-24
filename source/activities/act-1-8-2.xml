@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-1-8-2">
    
     <activity xml:id="act-1-8-2" workspace="3cm">
@@ -23,7 +24,7 @@
           <image width="100%" source="images/1_8_Act2"/>
 
         <p>
-      Your task is to determine as much information as possible about <m>f</m>
+      Your overall task is to determine as much information as possible about <m>f</m>
       (especially near the value <m>a = 2</m>)
       by responding to the questions below.
 

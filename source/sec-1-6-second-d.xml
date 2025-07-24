@@ -361,7 +361,7 @@
 
     <p>
       Exploring the context of position, velocity,
-      and acceleration is an excellent way to understand how a function,
+      and acceleration is a good way to understand how a function,
       its first derivative,
       and its second derivative are related to one another.
       In <xref ref="act-1-6-1">Activity</xref>,
@@ -370,8 +370,7 @@
       and essentially all the same observations hold.
       In particular, note that the following are equivalent:
       on an interval where the graph of <m>f</m> is concave up,
-      <m>f'</m> is increasing and <m>f''</m> is positive.
-      Likewise, on an interval where the graph of <m>f</m> is concave down,
+      <m>f'</m> is increasing and <m>f''</m> is positive; and where the graph of <m>f</m> is concave down,
       <m>f'</m> is decreasing and <m>f''</m> is negative.
     </p>
 
@@ -388,6 +387,7 @@
   </p>
 
     <xi:include href="./activities/act-1-6-3.xml" />
+    
   </subsection>
 
   <subsection>
