@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-7-implicit">
   <title>Derivatives of Functions Given Implicitly</title>
   <objectives>
@@ -92,7 +93,7 @@
     <p>
       How can we find an equation for
       <m>\frac{dy}{dx}</m> without an explicit formula for <m>y</m> in terms of <m>x</m>?
-      The following preview activity reminds us of some ways we can compute derivatives of functions in settings where the function's formula is not known.
+      To begin answering this question, the following preview activity reminds us of some ways we can compute derivatives of functions in settings where the function's formula is not known.
     </p>
 
     <xi:include href="./previews/PA-2-7-WW.xml" />
@@ -161,16 +162,13 @@
       </me>.
     </p>
 
-    <p>
-      There are several important things to observe about the result that <m>\frac{dy}{dx} = -\frac{x}{y}</m>.
-      First, this expression for the derivative involves both <m>x</m> and <m>y</m>.
-      This makes sense because 
-      there are two corresponding points on the circle for each value of <m>x</m> between <m>-4</m> and <m>4</m>,
-      and the slope of the tangent line is different at each of these points.
-    </p>
-
     <sidebyside widths="50% 46%" margins="0%" valign="middle">
       <p>
+        Let's think further about the result that <m>\frac{dy}{dx} = -\frac{x}{y}</m>.
+        First, notice that this expression for the derivative involves both <m>x</m> and <m>y</m>.
+        This makes sense because 
+        there are two corresponding points on the circle for each value of <m>x</m> between <m>-4</m> and <m>4</m>,
+        and the slope of the tangent line is different at each of these points.
         Second, this formula is entirely consistent with our understanding of circles.
         The slope of the radius from the origin to the point <m>(a,b)</m> is <m>m_r = \frac{b}{a}</m>.
         The tangent line to the circle at <m>(a,b)</m> is perpendicular to the radius,
@@ -179,27 +177,24 @@
         In particular,
         the slope of the tangent line is zero at <m>(0,4)</m> and <m>(0,-4)</m>,
         and is undefined at <m>(-4,0)</m> and <m>(4,0)</m>.
-        All of these values are consistent with the formula <m>\frac{dy}{dx} = -\frac{x}{y}</m>.
       </p>
 
-      <figure xml:id="F-2-7-Circle">
+      <figure width="85%" xml:id="F-2-7-Circle">
         <caption>The circle given by <m>x^2 + y^2 = 16</m> with point <m>(a,b)</m> on the circle and the tangent line at that point, with labeled slopes of the radial line, <m>m_r</m>, and tangent line, <m>m_t</m>.</caption>
         <image source="images/2_7_Circle"/>
       </figure>
     </sidebyside>
 
+    <p>
+      All of these observations about the circle are consistent with the formula <m>\frac{dy}{dx} = -\frac{x}{y}</m>.
+    </p>
+
     <example xml:id="Ex-2-7-1">
       <statement>
         <p>
           For the curve given implicitly by <m>x^3 + y^2 - 2xy = 2</m>,
-          shown in <xref ref="F-2-7-Ex1">Figure</xref>,
           find the slope of the tangent line at <m>(-1,1)</m>.
         </p>
-
-        <figure xml:id="F-2-7-Ex1">
-          <caption>The curve <m>x^3 + y^2 - 2xy = 2</m>.</caption>
-          <image width="47%" source="images/2_7_Ex1"/>
-        </figure>
       </statement>
       <solution>
         <p>
@@ -262,8 +257,13 @@
         </p>
 
         <p>
-          This value matches our visual estimate of the slope of the tangent line shown in <xref ref="F-2-7-Ex1">Figure</xref>.
+          If we plot<fn>In <em>Desmos</em>, entering the equation <m>x^3 + y^2 - 2xy = 2</m> will automatically graph the corresponding curve.</fn> the implicit curve and its tangent line, as shown in <xref ref="F-2-7-Ex1">Figure</xref>,
+          we see that the slope we have found matches the graph and confirms the local linearity of this curve at <m>(-1,1)</m>.
         </p>
+        <figure xml:id="F-2-7-Ex1">
+          <caption>The curve <m>x^3 + y^2 - 2xy = 2</m> and its tangent line at <m>(-1,1)</m>.</caption>
+          <image width="47%" source="images/2_7_Ex1"/>
+        </figure>
       </solution>
     </example>
 

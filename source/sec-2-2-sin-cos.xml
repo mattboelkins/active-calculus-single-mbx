@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-2-sin-cos">
   <title>The sine and cosine functions</title>
   <objectives>
@@ -53,7 +54,7 @@
         \text{then}~ f'(x) = a^x \ln(a)
       </me>.
       Later in this section,
-      we will use a graphical argument to conjecture derivative formulas for the sine and cosine functions.
+      we will use a graphical argument to conjecture derivative formulas for the sine and cosine functions.  In <xref ref="PA-2-2">Preview Activity</xref> we use a graphical approach to understand why the rule for exponential functions is plausible.
     </p>
 
     <xi:include href="./previews/PA-2-2-WW.xml" />
@@ -93,7 +94,7 @@
     </p>
 
     <assemblage xml:id="sine-cosine-fxns">
-      <title>Sine and Cosine Functions</title>
+      <title>The derivatives of the sine and cosine functions</title>
       <p>
             <idx><h>derivative</h><h>cosine</h></idx>
             <idx><h>derivative</h><h>sine</h></idx>
@@ -123,7 +124,7 @@
             the graph of <m>f'(x)</m> appears to be a scaled version of the original function.
             In particular, careful analysis of the graph of<m>f(x) = 2^x</m>,
             suggests that <m>\frac{d}{dx}[2^x] = 2^x \ln(2)</m>,
-            which is a special case of the rule we stated in <xref ref="sec-2-1-elem-rules">Section</xref>.
+            which is a special case of the rule we stated in <xref ref="sec-2-1-elem-rules">Section</xref>: <m>\frac{d}{dx}[a^x] = a^x \ln(a)</m>.
           </p>
         </li>
 

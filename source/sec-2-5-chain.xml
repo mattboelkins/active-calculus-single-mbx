@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-5-chain">
   <title>The chain rule</title>
   <objectives>
@@ -43,7 +44,7 @@
     <example>
       <statement>
         <p>
-          State the rule(s) to find the derivative of each of the following combinations of
+          State the rule(s) required to find the derivative of each of the following combinations of
           <m>f(x) = \sin(x)</m> and <m>g(x) = x^2</m>:
           <me>
             s(x) = 3x^2 - 5\sin(x)
@@ -212,7 +213,7 @@
         </p>
 
         <p>
-          Next, we recall that the double angle identity for the cosine,
+          Next, we recall that a double angle identity for the cosine tells us
           <me>
             \cos(2x) = \cos^2(x) - \sin^2(x)
           </me>.
@@ -258,7 +259,7 @@
     </p>
 
     <assemblage xml:id="chain-rule">
-      <title>Chain Rule</title>
+      <title>The Chain Rule</title>
       <p>
             <idx><h>chain rule</h></idx>
         If <m>g</m> is differentiable at <m>x</m> and <m>f</m> is differentiable at <m>g(x)</m>,
@@ -302,8 +303,6 @@
           <m>g</m>, and their derivatives, we have
         </p>
 
-        <sidebyside>
-
           <tabular>
             <row>
               <cell><m>f(x) = x^2</m></cell>
@@ -321,8 +320,6 @@
               <cell/>
             </row>
           </tabular>
-
-        </sidebyside>
 
         <p>
           Applying the chain rule, we find that
@@ -378,8 +375,6 @@
           and finding the derivatives of <m>f</m> and <m>g</m>, we have
         </p>
 
-        <sidebyside>
-
           <tabular>
             <row>
               <cell><m>f(t) = 3^t</m></cell>
@@ -398,7 +393,6 @@
             </row>
           </tabular>
 
-        </sidebyside>
 
         <p>
           Thus, by the chain rule,
@@ -409,8 +403,6 @@
           Turning next to <m>b</m>,
           we write <m>b(t) = r(s(t)) = \sec^4(t)</m> and find the derivatives of <m>r</m> and <m>s</m>.
         </p>
-
-        <sidebyside>
 
           <tabular>
             <row>
@@ -430,7 +422,6 @@
             </row>
           </tabular>
 
-        </sidebyside>
 
         <p>
           By the chain rule,
@@ -467,7 +458,7 @@
       the instantaneous velocity of a moving particle,
       or the instantaneous rate of change of a certain quantity,
       if the function under consideration is a composition,
-      the chain rule is indispensable.
+      the chain rule is often an essential tool.
     </p>
 
     <xi:include href="./activities/act-2-5-3.xml"/>
@@ -485,7 +476,12 @@
     <example>
       <statement>
         <p>
-          Use the chain rule to differentiate each of the following composite functions whose inside function is linear:
+          For each of the following composite functions whose inside function is linear, find the overall function's derivative using the chain rule: <m>f(x) = (5x+7)^{10}</m>, <m>g(x) = \tan(17x)</m>, and <m>h(x) = e^{-3x}</m>.
+        </p>
+      </statement>
+      <solution>
+        <p>
+          For each of the three given functions, the derivative of the inner function is constant.  By the chain rule, we see
           <me>
             \frac{d}{dx} \left[ (5x+7)^{10} \right] = 10(5x+7)^9 \cdot 5
           </me>,
@@ -496,21 +492,20 @@
             \frac{d}{dx} \left[ e^{-3x} \right] = -3e^{-3x}
           </me>.
         </p>
-      </statement>
+      </solution>
     </example>
 
     <p>
-      More generally,
-      the following is an excellent exercise for getting comfortable with the derivative rules.
-      Write down a list of all the basic functions whose derivatives we know, and
-      list the derivatives.
-      Then write a composite function with the inner function being an unknown function <m>u(x)</m> and the outer function being a basic function.
-      Finally, write the chain rule for the composite function.
-      The following example illustrates this for two different functions.
+      More generally, we can think about how each basic function rule has a corresponding chain rule version.  The next example demonstrates this for two familiar functions.
     </p>
 
-    <example>
+    <example xml:id="ex-2-5-basic-to-chain">
       <statement>
+        <p>
+          Develop a chain rule version of the two basic derivative rules that state <m>\frac{d}{dx}[\sin(x)] = \cos(x)</m> and <m>\frac{d}{dx}[a^x] = a^x \ln(a)</m>.
+        </p>
+      </statement>
+      <solution>
         <p>
           To determine
           <me>
@@ -533,8 +528,17 @@
           </me>.
           This rule is analogous to the basic derivative rule that <m>\frac{d}{dx}[a^{x}] = a^{x} \ln(a)</m>.
         </p>
-      </statement>
+      </solution>  
     </example>
+
+    <p>
+      An excellent exercise for getting comfortable with the derivative rules is to complete <xref ref="ex-2-5-basic-to-chain">Example</xref> for every basic function.  That is, 
+      write down a list of all the basic functions whose derivatives you know, and
+      list their corresponding derivatives.
+      Then, corresponding to each basic rule, write a composite function with the inner function being an unknown function <m>u(x)</m> and the outer function being a basic function.
+      Finally, write the chain rule for the composite function, such as <m>\frac{d}{dx}[\sin(u(x))] = \cos(u(x)) \cdot u'(x)</m>.
+    </p>
+
   </subsection>
 
   <subsection>

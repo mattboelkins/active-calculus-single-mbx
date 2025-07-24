@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,12 +12,13 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-2-3-3">
    
     <activity xml:id="act-2-3-3" workspace="6cm">
       <introduction>
         <p>
-      Use relevant derivative rules to answer each of the questions below.
+      Use relevant derivative rules to respond to each of the prompts below.
       Throughout,
       be sure to use proper notation and carefully label any derivative you find by name.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,16 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-2-2-3">
    
     <activity xml:id="act-2-2-3" workspace="3cm">
       <introduction>
         <p>
-      Answer each of the following questions.
-      Where a derivative is requested,
-      be sure to label the derivative function with its name using proper notation.
-
-      </p>
+          Respond to each of the following prompts.
+          Where a derivative is requested,
+          be sure to label the derivative function with its name using proper notation.
+        </p>
       </introduction>
       <task workspace="2cm" xml:id="act-2-2-3-task-0">
         <statement>

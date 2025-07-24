@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,22 +12,24 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-2-5">
    
     <exploration xml:id="PA-2-5">
       <introduction>
         <p>
-    For each function given below,
-    identify its fundamental algebraic structure.
-    In particular, is the given function a sum,
-    product, quotient, or composition of basic functions?
-    If the function is a composition of basic functions,
-    state a formula for the inner function <m>g</m> and the outer function <m>f</m> so that the overall composite function can be written in the form <m>f(g(x))</m>.
-    If the function is a sum, product,
-    or quotient of basic functions,
-    use the appropriate rule to determine its derivative.
-
-    </p>
+          For each function given below,
+          identify its fundamental algebraic structure.
+        </p>
+        <p>  
+          In particular, is the given function a sum,
+          product, quotient, or composition of basic functions?
+          If the function is a composition of basic functions,
+          state a formula for the inner function <m>g</m> and the outer function <m>f</m> so that the overall composite function can be written in the form <m>f(g(x))</m>.
+          If the function is a sum, product,
+          or quotient of basic functions,
+          use the appropriate rule to determine its derivative.
+        </p>
       </introduction>
       <task workspace="3.75cm" xml:id="PA-2-5-task-0">
         <statement>

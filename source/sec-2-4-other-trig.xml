@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-4-other-trig">
   <title>Derivatives of other trigonometric functions</title>
   <objectives>
@@ -148,7 +149,7 @@
     </p>
 
     <assemblage xml:id="cotangent-rule">
-      <title>Cotangent Function</title>
+      <title>The derivative of the cotangent function</title>
       <p>
             <idx><h>derivative</h><h>cotangent</h></idx>
         For all real numbers <m>x</m> such that <m>x \ne k\pi</m>,
@@ -164,7 +165,7 @@
     </p>
 
     <assemblage xml:id="tangent-rule">
-      <title>Tangent Function</title>
+      <title>The derivative of the tangent function</title>
       <p>
             <idx><h>derivative</h><h>tangent</h></idx>
         For all real numbers <m>x</m> such that <m>x \ne \frac{(2k+1)\pi}{2}</m>,

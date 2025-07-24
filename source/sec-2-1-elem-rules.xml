@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-1-elem-rules">
   <title>Elementary derivative rules</title>
   <objectives>
@@ -75,7 +76,7 @@
       <em>without</em>
       using the limit definition directly.
       For example,
-      we would like to apply shortcuts to differentiate a function such as <m>g(x) = 4x^7 - \sin(x) + 3e^x</m>
+      we would like to apply shortcuts to differentiate a function such as <m>g(x) = 4x^7 - \sin(x) + 3e^x</m> simply by observation.
     </p>
 
     <xi:include href="./previews/PA-2-1-WW.xml" />
@@ -144,7 +145,7 @@
     </p>
 
     <assemblage xml:id="const-fxns">
-      <title>Constant Functions</title>
+      <title>The derivative of a constant function</title>
       <p>
             <idx><h>derivative</h><h>constant function</h></idx>
         For any real number <m>c</m>,
@@ -166,12 +167,12 @@
       you conjectured that for any positive integer <m>n</m>,
       if <m>f(x) = x^n</m>, then <m>f'(x) = nx^{n-1}</m>.
       This rule can be formally proved for any positive integer <m>n</m>,
-      and also for any nonzero real number
+      and even for any nonzero real number
       (positive or negative).
     </p>
 
     <assemblage xml:id="power-fxns">
-      <title>Power Functions</title>
+      <title>The derivative of a power function</title>
       <p>
             <idx><h>derivative</h><h>power function</h></idx>
         For any nonzero real number <m>n</m>,
@@ -193,14 +194,13 @@
     </example>
 
     <p>
-      It will be instructive to have a derivative formula for one more type of basic function.
+      It will be helpful to have a derivative formula for one more type of basic function.
       For now, we simply state this rule without explanation or justification;
-      we will explore why this rule is true in one of the exercises.
-      And we will encounter graphical reasoning for why the rule is plausible in <xref ref="PA-2-2">Preview Activity</xref>.
+      we explore why this rule is true in one of the exercises and we will encounter graphical reasoning for why the rule is plausible in <xref ref="PA-2-2">Preview Activity</xref>.
     </p>
 
     <assemblage xml:id="exp-fxns">
-      <title>Exponential Functions</title>
+      <title>The derivative of an exponential function</title>
       <p>
             <idx><h>derivative</h><h>exponential function</h></idx>
         For any positive real number <m>a</m>,
@@ -266,7 +266,7 @@
       we change the value of its derivative by a factor of <m>k</m> as well.<fn>
       The Constant Multiple Rule can be formally proved as a consequence of properties of limits,
       using the limit definition of the derivative.
-      </fn>,
+      </fn>
     </p>
 
     <assemblage xml:id="const-mult-rule">
@@ -377,7 +377,7 @@
         <li>
           We should not lose sight of the fact that all of the meaning of the derivative that we developed in <xref ref="C-1">Chapter</xref> still holds.
           The derivative measures the instantaneous rate of change of the original function,
-          as well as the slope of the tangent line at any selected point on the curve.
+          as well as the slope of the tangent line at any selected point on its graph.
         </li>
       </ul>
     </p>
@@ -404,7 +404,7 @@
             For example,
             if <m>f</m> is a power function of the form <m>f(x) = x^n</m>,
             then <m>f'(x) = nx^{n-1}</m> for any real number <m>n</m> other than 0.
-            This is called the Rule for Power Functions.
+            <!-- This is called the Rule for Power Functions. -->
           </p>
         </li>
 
