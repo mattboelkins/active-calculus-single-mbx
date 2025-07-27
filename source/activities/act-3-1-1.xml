@@ -12,12 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet xml:id="ws-act-3-1-1">
   
 <activity xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="act-3-1-1">
   <statement>
     <p>
-      Suppose that <m>g(x)</m> is a function whose first derivative is <m>g'(x) = \frac{(x+4)(x-2)}{x^2+1}</m>.
+      Suppose that <m>g(x)</m> is a function whose first derivative is 
+      <me>
+        g'(x) = \frac{(x+4)(x-2)}{x^2+1}
+      </me>.
        <ol marker="a.">
         <li>
           <p>

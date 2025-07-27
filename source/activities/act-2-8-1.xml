@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,17 +12,17 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-2-8-1">
    
     <activity xml:id="act-2-8-1" workspace="6cm">
       <introduction>
         <p>
-      Evaluate each of the following limits.
-      If you use L'Hôpital's Rule,
-      indicate where it was used,
-      and be certain its hypotheses are met before you apply it.
-
-      </p>
+          Evaluate each of the following limits.
+          If you use L'Hôpital's Rule,
+          indicate where it was used,
+          and be certain the limit is indeterminate before you apply it.
+        </p>
       </introduction>
       <task workspace="9cm" xml:id="act-2-8-1-task-0">
         <statement>

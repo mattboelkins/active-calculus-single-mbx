@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-3-4-applied-opt">
   <title>Applied Optimization</title>
   <objectives>
@@ -78,7 +79,7 @@
               It is essential to first understand what quantities are allowed to vary in the problem and then to represent those values with variables.
               Constructing a figure with the variables labeled is almost always an essential first step.
               Sometimes drawing several diagrams can be especially helpful to get a sense of the situation.
-              A nice example of this can be seen <url href="https://gvsu.edu/s/99" visual="gvsu.edu/s/99">in this applet</url>,
+              A nice example of this can be seen <url href="https://gvsu.edu/s/99" visual="gvsu.edu/s/99">in this interactive graphic</url>,
               where the choice of where to bend a piece of wire into the shape of a rectangle determines both the rectangle's shape and area.
             </p>
           </li>
@@ -102,7 +103,7 @@
               (girth plus length equals 108 inches)
               allows us to relate <m>x</m> and <m>y</m> and thus observe equivalently that <m>y = 108-4x</m>.
               Substituting for <m>y</m> in the volume equation yields <m>V(x) = x^2(108-4x)</m>,
-              and thus we have written the volume as a function of the single variable <m>x</m>.
+              and thus we have written the volume as a function of the single variable <m>x</m>.  The equation <m>4x + y = 108</m> that shows a key relationship that always holds between the variables is often called a <term>constraint equation</term>.
             </p>
           </li>
 
@@ -160,17 +161,19 @@
       For instance,
       we could investigate which isosceles triangle that circumscribes a unit circle has the smallest area,
       which you can explore for yourself
-      <url href="https://gvsu.edu/s/9b" visual="gvsu.edu/s/9b">in this applet</url>.
+      <url href="https://gvsu.edu/s/9b" visual="gvsu.edu/s/9b">in this interactive graphic</url>.
       Or similarly, for a region bounded by a parabola,
       we might seek the rectangle of largest area that fits beneath the curve,
       as shown 
-      <url href="https://gvsu.edu/s/9c" visual="gvsu.edu/s/9c">in this applet</url>.
-      The next activity is similar to the latter problem.
+      <url href="https://gvsu.edu/s/9c" visual="gvsu.edu/s/9c">in this interactive graphic</url>.
+      The final activity in the section is similar to the latter problem.
     </p>
+
+    <xi:include href="./activities/act-3-4-4.xml"/>
 
     <xi:include href="./activities/act-3-4-3.xml"/>
 
-    <xi:include href="./activities/act-3-4-4.xml"/>
+
   </subsection>
 
   <subsection>

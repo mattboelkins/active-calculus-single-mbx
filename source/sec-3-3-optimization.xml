@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-3-3-optimization">
   <title>Global Optimization</title>
   <objectives>
@@ -46,19 +47,16 @@
       as well as whether the function has relative extrema.
     </p>
 
-    <p>
-      Remember the difference between a relative maximum and a global maximum:
-      there is a <em>relative</em> maximum of <m>f</m> at <m>x = p</m> if
-      <m>f(p) \ge f(x)</m> for all <m>x</m> <em>near</em> <m>p</m>,
-      while there is a <em>global</em> maximum at <m>p</m> if
-      <m>f(p) \ge f(x)</m> for <em>all</em>
-      <m>x</m> in the domain of <m>f</m>.
-    </p>
-
     <sidebyside widths="50% 44%" margins="0%">
       <p>
+        Recall the difference between a relative maximum and a global maximum:
+        there is a <em>relative</em> maximum of <m>f</m> at <m>x = p</m> if
+        <m>f(p) \ge f(x)</m> for all <m>x</m> <em>near</em> <m>p</m>,
+        while there is a <em>global</em> maximum at <m>p</m> if
+        <m>f(p) \ge f(x)</m> for <em>all</em>
+        <m>x</m> in the domain of <m>f</m>.
         For instance, in <xref ref="F-3-3-Intro">Figure</xref>,
-        we see a function <m>f</m> that has a global maximum at <m>x = c</m> and a relative maximum at <m>x = a</m>,
+        <m>f</m> has a global maximum at <m>x = c</m> and a relative maximum at <m>x = a</m>,
         since <m>f(c)</m> is greater than <m>f(x)</m> for every value of <m>x</m>,
         while <m>f(a)</m> is only greater than the value of <m>f(x)</m> for <m>x</m> near <m>a</m>.
         Since the function appears to decrease without bound,
@@ -182,13 +180,8 @@
       the function pictured in <xref ref="F-3-3-Interval">Figure</xref>.
     </p>
 
-    <figure xml:id="F-3-3-Interval">
-      <caption>A function <m>g</m> considered on three different intervals.</caption>
-      <image width="100%" source="images/3_3_Interval"/>
-    </figure>
-
     <p>
-      In sequence, from left to right,
+      In sequence, from left to right in the figure,
       the interval under consideration is changed from <m>[-2,3]</m> to <m>[-2,2]</m> to <m>[-2,1]</m>.
 
       <ul>
@@ -212,8 +205,12 @@
       </ul>
     </p>
 
+    <figure xml:id="F-3-3-Interval">
+      <caption>A function <m>g</m> considered on three different intervals.</caption>
+      <image width="100%" source="images/3_3_Interval"/>
+    </figure>
     <p>
-      Remember to consider only the critical numbers that lie within the interval.
+      For optimizing on a closed, bounded interval, it's important to remember to consider only the critical numbers that lie within the interval.
     </p>
   </subsection>
 
@@ -318,7 +315,7 @@
             </li>
           </ul>
         </p>
-        <!--<sidebyside widths="47% 47%" margins="0%">-->
+      <sidebyside widths="47% 47%" margins="0%">
         <p>
           Thus, the absolute minimum occurs when
           <m>x \approx 11.3007</m> and results in the minimum area of approximately <m>10.8741</m> square centimeters.
@@ -334,7 +331,7 @@
           <caption>A plot of the area function from <xref ref="Ex-3-3-1">Example</xref>.</caption>
           <image width="47%" source="images/3_3_Ex1Plot"/>
         </figure>
-      <!--</sidebyside>-->
+      </sidebyside>
       </solution>
     </example>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-2-8-LHR">
   <title>Using Derivatives to Evaluate Limits</title>
   <objectives>
@@ -55,7 +56,7 @@
       Remember, saying that a limit has an indeterminate form only means that we don't yet know its value and have more work to do:
       indeed, limits of the form
       <m>\frac{0}{0}</m> can take on any value,
-      as is evidenced by evaluating <m>f'(x)</m> for varying values of <m>x</m> for a function such as <m>f'(x) = x^2</m>.
+      as is evidenced by evaluating <m>f'(x)</m> for varying values of <m>x</m> for a function such as <m>f(x) = x^2</m>.
     </p>
 
     <p>
@@ -70,6 +71,7 @@
     <xi:include href="./previews/PA-2-8.xml" />
   </subsection>
   <xi:include href="./proteus/proteus-2-8.xml" />
+
   <subsection>
     <title>Using derivatives to evaluate indeterminate limits of the form <m>\frac{0}{0}</m>.</title>
     <figure xml:id="F-2-8-LHR">
@@ -99,8 +101,8 @@
       we can replace <m>f</m> with <m>L_f</m> and replace <m>g</m> with <m>L_g</m>,
       and thus we observe that
       <md>
-        <mrow>\lim_{x \to a} \frac{f(x)}{g(x)} =\mathstrut \amp  \lim_{x \to a} \frac{L_f(x)}{L_g(x)}</mrow>
-        <mrow>=\mathstrut \amp  \lim_{x \to a} \frac{f'(a)(x-a) + f(a)}{g'(a)(x-a) + g(a)}</mrow>
+        <mrow>\lim_{x \to a} \frac{f(x)}{g(x)} \amp=  \lim_{x \to a} \frac{L_f(x)}{L_g(x)}</mrow>
+        <mrow>\amp=  \lim_{x \to a} \frac{f'(a)(x-a) + f(a)}{g'(a)(x-a) + g(a)}</mrow>
       </md>.
     </p>
 
@@ -110,8 +112,8 @@
       Substituting these values for <m>f(a)</m> and <m>g(a)</m> in the limit above,
       we now have
       <md>
-        <mrow>\lim_{x \to a} \frac{f(x)}{g(x)} =\mathstrut \amp  \lim_{x \to a} \frac{f'(a)(x-a)}{g'(a)(x-a)}</mrow>
-        <mrow>=\mathstrut \amp  \lim_{x \to a} \frac{f'(a)}{g'(a)}</mrow>
+        <mrow>\lim_{x \to a} \frac{f(x)}{g(x)} \amp=  \lim_{x \to a} \frac{f'(a)(x-a)}{g'(a)(x-a)}</mrow>
+        <mrow>\amp=  \lim_{x \to a} \frac{f'(a)}{g'(a)}</mrow>
       </md>,
       where the latter equality holds because
       <m>\frac{x-a}{x-a} = 1</m> when <m>x</m> is approaching
@@ -134,14 +136,17 @@
       <p permid="uxa">
         Let <m>f</m> and <m>g</m> be differentiable on an open interval that includes <m>x=a</m>,
         and suppose that <m>f(a) = g(a) = 0</m> and that <m>g'(a) \neq 0</m>.
-        Then <m>\lim_{x \to a} \frac{f(x)}{g(x)} = \frac{f'(a)}{g'(a)}</m>.
+        Then 
+        <me>
+          \lim_{x \to a} \frac{f(x)}{g(x)} = \frac{f'(a)}{g'(a)}.
+        </me>
       </p>
     </assemblage>
 
     <p>
       In practice,
       we typically work with a slightly more general version of L'Hôpital's Rule,
-      which states that (under the identical assumptions as the boxed rule above and the extra assumption that <m>g'</m> is continuous at <m>x=a</m>)
+      which states that (under the identical assumptions as the boxed rule above plus the extra assumption that <m>g'</m> is continuous at <m>x=a</m>)
       <me>
         \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
       </me>,
@@ -160,8 +165,8 @@
       </me>,
       by L'Hôpital's Rule we have that
       <me>
-        \lim_{x \to 1} \frac{x^5 + x - 2}{x^2 - 1} = \lim_{x \to 1} \frac{5x^4 + 1}{2x} = \frac{6}{2} = 3. \\
-      </me>
+        \lim_{x \to 1} \frac{x^5 + x - 2}{x^2 - 1} = \lim_{x \to 1} \frac{5x^4 + 1}{2x} = \frac{6}{2} = 3
+      </me>.
     </p>
 
     <p>
@@ -328,7 +333,7 @@
     <p>
       For polynomial functions of the form
       <me>
-        p(x) = a_n x^n + a_{n-1}x^{n-1} + \cdots a_1 x + a_0
+        p(x) = a_n x^n + a_{n-1}x^{n-1} + \cdots + a_1 x + a_0
       </me>,
       the end behavior depends on the sign of <m>a_n</m> and whether the highest power <m>n</m> is even or odd.
       If <m>n</m> is even and <m>a_n</m> is positive,
@@ -357,7 +362,7 @@
       Finally, it is straightforward to analyze the behavior of any rational function as <m>x \to \infty</m>.
     </p>
 
-    <example>
+    <example xml:id="ex-2-8-rational-infty">
       <statement>
         <p>
           Determine the limit of the function
@@ -366,24 +371,25 @@
           </me>
           as <m>x \to \infty</m>.
         </p>
-
+      </statement>
+      <solution>
         <p>
           Note that both <m>(3x^2 - 4x + 5) \to \infty</m> as <m>x \to \infty</m> and
           <m>(7x^2 + 9x - 10) \to \infty</m> as <m>x \to \infty</m>.
           Here we say that <m>\lim_{x \to \infty} q(x)</m> has indeterminate form <m>\frac{\infty}{\infty}</m>.
           We can determine the value of this limit through a standard algebraic approach.
-          Multiplying the numerator and denominator each by <m>\frac{1}{x^2}</m>,
+          Multiplying the numerator and denominator each by <m>\frac{1}{x^2}</m> (we choose this quantity since <m>x^2</m> is the highest power present in the numerator or denominator),
           we find that
           <md>
-            <mrow>\lim_{x \to \infty} q(x) =\mathstrut \amp  \lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10} \cdot \frac{\frac{1}{x^2}}{\frac{1}{x^2}}</mrow>
-            <mrow>=\mathstrut \amp  \lim_{x \to \infty} \frac{3 - 4\frac{1}{x} + 5\frac{1}{x^2}}{7 + 9\frac{1}{x} - 10\frac{1}{x^2}} = \frac{3}{7}</mrow>
+            <mrow>\lim_{x \to \infty} q(x) \amp=  \lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10} \cdot \frac{\frac{1}{x^2}}{\frac{1}{x^2}}</mrow>
+            <mrow>\amp=  \lim_{x \to \infty} \frac{3 - 4\frac{1}{x} + 5\frac{1}{x^2}}{7 + 9\frac{1}{x} - 10\frac{1}{x^2}} = \frac{3}{7}</mrow>
           </md>
           since <m>\frac{1}{x^2} \to 0</m> and
           <m>\frac{1}{x} \to 0</m> as <m>x \to \infty</m>.
           This shows that the rational function <m>q</m> has a horizontal asymptote at <m>y = \frac{3}{7}</m>.
           A similar approach can be used to determine the limit of any rational function as <m>x \to \infty</m>.
         </p>
-      </statement>
+      </solution>
     </example>
 
     <p>
@@ -394,10 +400,14 @@
     </p>
 
     <p>
-      Here, both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>,
-      but there is not an obvious algebraic approach that enables us to find the limit's value.
+      Here, both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>.  Like the situation we considered in <xref ref="ex-2-8-rational-infty">Example</xref>, <m>\lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10}</m>, here we have both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>, so 
+      <me>
+        \lim_{x \to \infty} \frac{x^2}{e^x}?
+      </me>
+      is also indeterminate with form <m>\frac{\infty}{\infty}</m>.
+      With the presence of <m>e^x</m>, there is not an algebraic approach that enables us to find the limit's value.
       Fortunately,
-      it turns out that L'Hôpital's Rule extends to cases involving infinity.
+      it turns out that L'Hôpital's Rule can be extended to cases involving infinity.
     </p>
 
     <assemblage>
@@ -405,9 +415,8 @@
       <idx><h>L'Hôpital's rule (at infinity)</h></idx>
 
       <p>
-        If <m>f</m> and <m>g</m> are differentiable and both approach zero or both approach <m>\pm \infty</m> as <m>x \to a</m>
-        (where <m>a</m> is allowed to be <m>\infty</m>)
-        , then
+        Suppose that <m>f</m> and <m>g</m> are both differentiable on an open interval that contains <m>a</m>, both approach zero or both approach <m>\pm \infty</m> as <m>x \to a</m>, and <m>g'(x) \ne 0</m> on an open interval that contains <m>a</m>
+        (where <m>a</m> is allowed to be <m>\infty</m>), then
         <me>
           \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
         </me>,
@@ -415,16 +424,18 @@
       </p>
     </assemblage>
 
+    <!--
     <p>
       (To be technically correct,
       we need to add the additional hypothesis that
       <m>g'(x) \ne 0</m> on an open interval that contains <m>a</m> or in every neighborhood of infinity if <m>a</m> is <m>\infty</m>;
       this is almost always met in practice.)
     </p>
+    -->
 
     <p>
       To evaluate <m>\lim_{x \to \infty} \frac{x^2}{e^x}</m>,
-      we can apply L'Hôpital's Rule,
+      we can now apply the infinite version of L'Hôpital's Rule,
       since both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>.
       Doing so, it follows that
       <me>
@@ -467,9 +478,9 @@
       we say that <m>f</m> and <m>g</m>
       <em>grow at the same rate</em>.
       For example,
-      we saw that <m>\lim_{x \to \infty} \frac{x^2}{e^x} = 0</m>,
-      so <m>e^x</m> dominates <m>x^2</m>,
-      while <m>\lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10} = \frac{3}{7}</m>,
+      we saw that <me>\lim_{x \to \infty} \frac{x^2}{e^x} = 0</me>,
+      so <m>e^x</m> dominates <m>x^2</m> (i.e., <m>e^x</m> grows faster than <m>x^2</m> as <m>x \to \infty</m>),
+      while <me>\lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10} = \frac{3}{7}</me>,
       so <m>f(x) = 3x^2 - 4x + 5</m> and
       <m>g(x) = 7x^2 + 9x - 10</m> grow at the same rate.
     </p>
@@ -485,7 +496,7 @@
             <m>\frac{0}{0}</m> through L'Hôpital's Rule,
             by replacing the functions in the numerator and denominator with their tangent line approximations.
             In particular,
-            if <m>f(a) = g(a) = 0</m> and <m>f</m> and <m>g</m> are differentiable at <m>a</m>, L'Hôpital's Rule tells us that
+            if <m>f(a) = g(a) = 0</m> and <m>f</m> and <m>g</m> are differentiable on an open interval containing <m>a</m>, L'Hôpital's Rule tells us that
             <me>
               \lim_{x \to a}\frac{f(x)}{g(x)} = \lim_{x \to a}\frac{f'(x)}{g'(x)}
             </me>.
@@ -496,9 +507,9 @@
           <p>
             When we write <m>x \to \infty</m>,
             this means that <m>x</m> is increasing without bound.
-            Thus, <m>\lim_{x \to \infty} f(x) = L</m>
+            Thus, writing <m>\lim_{x \to \infty} f(x) = L</m>
             means that we can make <m>f(x)</m> as close to <m>L</m> as we like by choosing <m>x</m> to be sufficiently large.
-            Similarly, <m>\lim_{x \to a} f(x) = \infty</m>,
+            Similarly, <m>\lim_{x \to a} f(x) = \infty</m>
             means that we can make <m>f(x)</m> as large as we like by choosing <m>x</m> sufficiently close to <m>a</m>.
           </p>
         </li>

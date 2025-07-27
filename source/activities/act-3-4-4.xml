@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-4-4">
    
     <activity xml:id="act-3-4-4" workspace="3cm">
@@ -25,7 +26,7 @@
       At what angle should the folds be made to produce the trough of maximum volume?
     </p>
 
-          <image width="47%" source="images/3_4_Act4"/>
+          <image width="60%" source="images/3_4_Act4"/>
 
       </statement>
       <hint>

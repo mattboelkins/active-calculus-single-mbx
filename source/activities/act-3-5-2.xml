@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-5-2">
    
     <activity xml:id="act-3-5-2" workspace="3cm">
@@ -21,17 +22,17 @@
       The angle of elevation of the camera has to change at the correct rate in order to keep the rocket in sight.
       In addition,
       the auto-focus of the camera has to take into account the increasing distance between the camera and the rocket.
-      We assume that the rocket rises vertically. (A similar problem is discussed and <url href="https://gvsu.edu/s/9t" visual="gvsu.edu/s/9t">pictured dynamically</url>.
-      Exploring the applet at the link will be helpful to you in answering the questions that follow.)
+      We assume that the rocket rises vertically. (A similar situation is discussed and pictured dynamically <url href="https://gvsu.edu/s/9t" visual="gvsu.edu/s/9t">in this interactive graphic</url>.
+      Exploring the interactive will be helpful to you in answering the questions that follow.)
 
       </p>
       </introduction>
       <task workspace="6cm" xml:id="act-3-5-2-task-0">
         <statement>
           <p>
-            Draw a figure that summarizes the given situation.
-            What parts of the picture are changing?
-            What parts are constant?
+            Draw several figures that show the rocket at different points in time.
+            What quantities are changing?
+            What quantities are constant?
             Introduce appropriate variables to represent the quantities that are changing.
           </p>
         </statement>

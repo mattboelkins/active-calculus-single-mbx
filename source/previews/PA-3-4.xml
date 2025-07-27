@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,18 +12,19 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-3-4">
    
     <exploration xml:id="PA-3-4">
       <introduction>
         <p>
-    According to U.S.<nbsp/>postal regulations,
-    the girth plus the length of a parcel sent by mail may not exceed 108 inches,
-    where by <q>girth</q> we mean the perimeter of the smallest end.
-    What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail?
-    What are the dimensions of the package of largest volume?
-  </p>
-        <p/>
+          According to U.S.<nbsp/>postal regulations,
+          the girth plus the length of a parcel sent by mail may not exceed 108 inches,
+          where by <q>girth</q> we mean the perimeter of the smallest end.
+          What is the largest possible volume of a rectangular parcel with a square end that can be sent by mail?
+          What are the dimensions of the package of largest volume?
+        </p>
+        <image width="40%" source="images/3_4_PA1" />
       </introduction>
       <task workspace="0.05cm" xml:id="PA-3-4-task-0">
         <statement>
@@ -31,7 +32,7 @@
           Let <m>x</m> represent the length of one side of the square end and <m>y</m> the length of the longer side.
           Label these quantities appropriately on the image shown in the provided figure.
         </p>
-        <image width="47%" source="images/3_4_PA1" />
+
         </statement>
         <hint/>
         <answer/>
@@ -40,7 +41,7 @@
       <task workspace="2.5cm" xml:id="PA-3-4-task-1">
         <statement>
           <p>
-          What is the quantity to be optimized in this problem?
+          What is the quantity to be optimized in this situation?
           Find a formula for this quantity in terms of <m>x</m> and <m>y</m>.
         </p>
         </statement>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,21 +12,21 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-5-3">
    
     <activity xml:id="act-3-5-3" workspace="3cm">
       <introduction>
         <p>
-      As pictured in the <url href="https://gvsu.edu/s/9q" visual="gvsu.edu/s/9q">applet</url>,
-      a skateboarder who is 6 feet tall rides under a 15 foot tall lamppost at a constant rate of 3 feet per second.
-      We are interested in understanding how fast his shadow is changing at various points in time.
-
-      </p>
+          As pictured in the <url href="https://gvsu.edu/s/9q" visual="gvsu.edu/s/9q">interactive graphic</url>,
+          a skateboarder who is 6 feet tall rides under a 15 foot tall lamppost at a constant rate of 3 feet per second.
+          We are interested in understanding how fast his shadow is changing at various points in time.
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="act-3-5-3-task-0">
         <statement>
           <p>
-            Draw an appropriate right triangle that represents a snapshot in time of the skateboarder,
+            Draw several rights triangle that represents snapshots in time of the skateboarder,
             lamppost,
             and his shadow.
             Let <m>x</m> denote the horizontal distance from the base of the lamppost to the skateboarder and <m>s</m> represent the length of his shadow.

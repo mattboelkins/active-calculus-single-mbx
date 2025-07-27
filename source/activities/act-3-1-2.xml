@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-1-2">
    
     <activity xml:id="act-3-1-2" workspace="3cm">
@@ -24,33 +25,11 @@
           <image width="47%" source="images/3_1_Act2"/>
 
       </introduction>
-      <task workspace="3cm" xml:id="act-3-1-2-task-0">
+
+      <task workspace="8cm" xml:id="act-3-1-2-task-0">
         <statement>
           <p>
-            Find the <m>x</m>-coordinates of all points of inflection of <m>g</m>.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            What must be true of <m>g''(x)</m> at a point of inflection?
-          </p>
-        </hint>
-        <answer>
-          <p><m>x = -1</m> is an inflection point of <m>g</m>.
-          </p>
-        </answer>
-        <solution>
-          <p>
-            Based on the given graph of <m>g''</m>,
-            the only point at which <m>g''</m> changes sign is <m>x = -1</m>,
-            and hence this is an inflection point of <m>g</m>.
-          </p>
-        </solution>
-      </task>
-      <task workspace="8cm" xml:id="act-3-1-2-task-1">
-        <statement>
-          <p>
-            Fully describe the concavity of <m>g</m> by making an appropriate sign chart.
+            Identify all <m>x</m>-values where <m>g''(x) = 0</m> or <m>g''(x)</m> is undefined.  Then, construct a second derivative sign chart for <m>g</m> and hence state the intervals on which <m>g</m> is concave up, as well as the intervals on which <m>g</m> is concave down.
           </p>
         </statement>
         <hint>
@@ -75,6 +54,32 @@
           </p>
         </solution>
       </task>
+
+      <task workspace="1cm" xml:id="act-3-1-2-task-1">
+        <statement>
+          <p>
+            State the <m>x</m>-coordinates of all points of inflection of <m>g</m>.
+          </p>
+        </statement>
+        <hint>
+          <p>
+            What must be true of <m>g''(x)</m> at a point of inflection?
+          </p>
+        </hint>
+        <answer>
+          <p><m>x = -1</m> is an inflection point of <m>g</m>.
+          </p>
+        </answer>
+        <solution>
+          <p>
+            Based on the given graph of <m>g''</m>,
+            the only point at which <m>g''</m> changes sign is <m>x = -1</m>,
+            and hence this is an inflection point of <m>g</m>.
+          </p>
+        </solution>
+      </task>
+      
+
       <task workspace="5cm" xml:id="act-3-1-2-task-2">
         <statement>
           <p>

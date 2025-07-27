@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,23 +12,22 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-5-1">
    
     <activity xml:id="act-3-5-1" workspace="3cm">
       <introduction>
         <p>
-      A water tank has the shape of an inverted circular cone
-      (point down)
-      with a base of radius 6 feet and a depth of 8 feet.
-      Suppose that water is being pumped into the tank at a constant instantaneous rate of 4 cubic feet per minute.
-
-      </p>
+          A water tank has the shape of an inverted circular cone
+          (point down)
+          with a base of radius 6 feet and a depth of 8 feet.
+          Suppose that water is being pumped into the tank at a constant instantaneous rate of 4 cubic feet per minute.
+        </p>
       </introduction>
       <task workspace="8cm" xml:id="act-3-5-1-task-0">
         <statement>
           <p>
-            Draw a picture of the conical tank,
-            including a sketch of the water level at a point in time when the tank is not yet full.
+            Draw 2-3 pictures of the conical tank that show sketches of the water level at different points in time when the tank is not yet full.
             Introduce variables that measure the radius of the water's surface and the water's depth in the tank,
             and label them on your figure.
           </p>
@@ -37,8 +36,7 @@
         <answer/>
         <solution>
           <p>
-            Letting <m>r</m> represent the water's radius at time <m>t</m> and <m>h</m> the water's depth,
-            we see the following situation:
+            Your drawings should be similar to what see in <url href="http://webspace.ship.edu/msrenault/GeoGebraCalculus/derivative_app_rr_conical_tank.html" >this animation</url>.
           </p>
         </solution>
       </task>
@@ -155,7 +153,7 @@
         <statement>
           <p>
             When is the water rising most rapidly:
-            at <m>h = 3</m>, <m>h = 4</m>, or <m>h = 5</m>?
+            at <m>h = 3</m>, <m>h = 4</m>, or <m>h = 5</m>?  Why?
           </p>
         </statement>
 <!--        <hint>

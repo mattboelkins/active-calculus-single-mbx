@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-3-1-tests">
   <title>Using derivatives to identify extreme values</title>
   <objectives>
@@ -137,17 +138,20 @@
   <subsection>
     <title>Critical numbers and the first derivative test</title>
     <figure xml:id="F-3-1-extremes">
-      <caption>From left to right, a function with a relative maximum where its derivative is zero; a function with a relative maximum where its derivative is undefined; a function with neither a maximum nor a minimum at a point where its derivative is zero; a function with a relative minimum where its derivative is zero; and a function with a relative minimum where its derivative is undefined.</caption>
+      <caption>Five different possible behaviors of a function near one of its critical numbers.</caption>
       <image width="100%" source="images/3_1_extremes"/>
     </figure>
 
+    <!--From left to right, a function with a relative maximum where its derivative is zero; a function with a relative maximum where its derivative is undefined; a function with neither a maximum nor a minimum at a point where its derivative is zero; a function with a relative minimum where its derivative is zero; and a function with a relative minimum where its derivative is undefined.-->
     <p>
-      As seen in <xref ref="F-3-1-extremes">Figure</xref>, when a continuous function defined on <m>(a,b)</m> changes from being always increasing on interval <m>(a,c)</m> to being always decreasing on  interval <m>(c, b)</m> (where <m>a \lt c \lt b</m>), the function has a relative maximum at <m>c</m>.   Similarly, when a continuous function defined on <m>(a,b)</m> changes from being always decreasing on interval <m>(a,c)</m> to being always increasing on  interval <m>(c, b)</m>, the function has a relative minimum at <m>c</m>.
+      As seen in the first two functions on the left in <xref ref="F-3-1-extremes">Figure</xref>, when a continuous function defined on <m>(a,b)</m> changes from being always increasing on interval <m>(a,c)</m> to being always decreasing on  interval <m>(c, b)</m> (where <m>a \lt c \lt b</m>), the function has a relative maximum at <m>c</m>.   Similarly, when a continuous function defined on <m>(a,b)</m> changes from being always decreasing on interval <m>(a,c)</m> to being always increasing on  interval <m>(c, b)</m> (as in the two rightmost functions in the figure), the function has a relative minimum at <m>c</m>.  The middle option in <xref ref="F-3-1-extremes">Figure</xref> demonstrates that it's possible for a function to have neither a maximum nor minimum at a critical number, as it can be the case that the function doesn't change from increasing to decreasing or vice versa.
+    </p>
+    <p>  
 <!--      If a continuous function has a relative maximum at <m>c</m>,
       then it is both necessary and sufficient that the function change from being increasing just before <m>c</m> to decreasing just after <m>c</m>.
       A continuous function has a relative minimum at <m>c</m> if and only if the function changes from decreasing to increasing at <m>c</m>.
       (See <xref ref="F-3-1-extremes">Figure</xref>.) -->
-      Because the sign of the derivative changes at such locations, there are only two possible ways for these changes in behavior to occur:
+      Because the sign of the derivative changes at every location <m>c</m> where a continuous function changes from increasing to decreasing or from decreasing to increasing, there are only two possible ways for these changes in behavior to occur:
       either <m>f'(c) = 0</m> or <m>f'(c)</m> is undefined.
       Because these values of <m>c</m> are so important,
       we call them <em>critical numbers</em>.
@@ -167,7 +171,7 @@
 
     <p>
       Critical numbers are the only possible locations where the function <m>f</m> may have relative extremes.
-      Note that not every critical number produces a maximum or minimum;
+      Again, note that not every critical number produces a maximum or minimum;
       in the middle graph of <xref ref="F-3-1-extremes">Figure</xref>,
       the function pictured there has a horizontal tangent line at the noted point,
       but the function is increasing before and increasing after,
@@ -189,7 +193,7 @@
     </p>
 
     <assemblage xml:id="First-D-Test">
-      <title>First Derivative Test</title>
+      <title>The First Derivative Test</title>
       <p>
             <idx><h>first derivative test</h></idx>
         Let <m>p</m> be a critical number of a continuous function <m>f</m> that is differentiable near <m>p</m>
@@ -240,16 +244,11 @@
           along with the corresponding behavior of <m>f</m>.
         </p>
 
-        <figure xml:id="F-3-1-signchart">
-          <caption>The first derivative sign chart for a function <m>f</m> whose derivative is given by the formula <m>f'(x) = e^{-2x}(3-x)(x+1)^2</m>.</caption>
-          <image width="65%" source="images/3_1_signchart"/>
-        </figure>
-
         <p>
           To produce the first derivative sign chart in <xref ref="F-3-1-signchart">Figure</xref>
           we identify the sign of each factor of <m>f'(x)</m> at one selected point in each interval.
           For instance, for <m>x \lt -1</m>,
-          we could determine the sign of <m>e^{-2x}</m>,
+          we can determine the sign of <m>e^{-2x}</m>,
           <m>(3-x)</m>, and <m>(x+1)^2</m> at the value <m>x = -2</m>.
           We note that both <m>e^{-2x}</m> and <m>(x+1)^2</m> are positive regardless of the value of <m>x</m>,
           while <m>(3-x)</m> is also positive at <m>x = -2</m>.
@@ -266,6 +265,11 @@
           we find that <m>f'</m> is positive and <m>f</m> is increasing on <m>-1 \lt x \lt 3</m>,
           and <m>f'</m> is negative and <m>f</m> is decreasing for <m>x \gt 3</m>.
         </p>
+
+        <figure xml:id="F-3-1-signchart">
+          <caption>The first derivative sign chart for a function <m>f</m> whose derivative is given by the formula <m>f'(x) = e^{-2x}(3-x)(x+1)^2</m>.</caption>
+          <image width="65%" source="images/3_1_signchart"/>
+        </figure>
 
         <p>
           Now we look for critical numbers at which <m>f'</m> changes sign.
@@ -495,6 +499,10 @@
       <m>f(x) = a(x-h)^2 + k</m> where <m>a</m>, <m>h</m>,
       and <m>k</m> are parameters.
       Each parameter has considerable impact on how the graph appears.
+    </p>
+
+    <p>
+      In the final activity in this section, we explore the impact a parameter has on the concavity of an interesting function.
     </p>
 
     <xi:include href="./activities/act-3-1-3.xml"/>
