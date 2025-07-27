@@ -18,9 +18,9 @@
     <exploration xml:id="PA-4-3">
       <introduction>
         <p>
-    Consider this <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">interactive graphic</url>, in which
-    you will initially see the situation shown in the following figure.  The screenshot shows a right Riemann sum with 10 subintervals for the function <m>f(x) = \sin(2x) - \frac{x^2}{10} + 3</m> on the interval <m>[1,7]</m>.  The value of the sum is <m>R_{10} = 4.90595</m>.
-  </p>
+          Consider this <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">interactive graphic</url>, in which
+          you will initially see the situation shown in the following figure.  The screenshot shows a right Riemann sum with 10 subintervals for the function <m>f(x) = \sin(2x) - \frac{x^2}{10} + 3</m> on the interval <m>[1,7]</m>.  The value of the sum is <m>R_{10} = 4.90595</m>.
+        </p>
 
           <image width="60%" source="images/4_3_GGBApplet"/>
 
@@ -41,7 +41,7 @@
   </p>
 
       </introduction>
-      <task workspace="4cm" xml:id="PA-4-3-task-0">
+      <task workspace="1.5cm" xml:id="PA-4-3-task-0">
         <statement>
           <p>
           Update the interactive

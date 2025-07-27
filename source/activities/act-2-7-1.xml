@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-2-7-1">
    
     <activity xml:id="act-2-7-1" workspace="3cm">
@@ -29,7 +30,7 @@
           </p>
         </statement>
       </task>
-      <task workspace="10cm" xml:id="act-2-7-1-task-1">
+      <task workspace="9cm" xml:id="act-2-7-1-task-1">
         <statement>
           <p>
             Use implicit differentiation to find a formula for <m>dy/dx</m>.

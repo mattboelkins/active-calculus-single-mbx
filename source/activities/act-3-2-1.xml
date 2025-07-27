@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,15 +12,15 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-2-1">
    
     <activity xml:id="act-3-2-1" workspace="3cm">
       <introduction>
         <p>
-      Consider the family of functions defined by <m>p(x) = x^3 - ax</m>,
-      where <m>a \ne 0</m> is an arbitrary constant.
-
-      </p>
+          Consider the family of functions defined by <m>p(x) = x^3 - ax</m>,
+          where <m>a \ne 0</m> is an arbitrary constant.
+        </p>
       </introduction>
       <task workspace="3cm" xml:id="act-3-2-1-task-0">
         <statement>
@@ -58,7 +58,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="7cm" xml:id="act-3-2-1-task-1">
+      <task workspace="6.5cm" xml:id="act-3-2-1-task-1">
         <statement>
           <p>
             Construct a first derivative sign chart for <m>p</m>.
@@ -105,7 +105,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="8cm" xml:id="act-3-2-1-task-2">
+      <task workspace="7.5cm" xml:id="act-3-2-1-task-2">
         <statement>
           <p>
             Find <m>p''(x)</m> and construct a second derivative sign chart for <m>p</m>.

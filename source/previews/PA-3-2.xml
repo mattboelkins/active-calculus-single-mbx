@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,25 +12,25 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-3-2">
    
     <exploration xml:id="PA-3-2">
       <introduction>
         <p>
-    Let <m>a</m>, <m>h</m>,
-    and <m>k</m> be arbitrary real numbers with <m>a \ne 0</m>,
-    and let <m>f</m> be the function given by the rule <m>f(x) = a(x-h)^2 + k</m>.
-
-    </p>
+          Let <m>a</m>, <m>h</m>,
+          and <m>k</m> be arbitrary real numbers with <m>a \ne 0</m>,
+          and let <m>f</m> be the function given by the rule <m>f(x) = a(x-h)^2 + k</m>.
+        </p>
       </introduction>
       <task workspace="3cm" xml:id="PA-3-2-task-0">
         <statement>
           <p>
-          What familiar type of function is <m>f</m>?
-          What information do you know about <m>f</m> just by looking at its form? (Think about the roles of <m>a</m>,
-          <m>h</m>,
-          and <m>k</m>.)
-        </p>
+            What familiar type of function is <m>f</m>?
+            What information do you know about <m>f</m> just by looking at its form? (Think about the roles of <m>a</m>,
+            <m>h</m>,
+            and <m>k</m>.)
+          </p>
         </statement>
         <hint/>
         <answer/>
@@ -61,7 +61,7 @@
         <answer/>
         <solution/>
       </task>
-      <task workspace="6cm" xml:id="PA-3-2-task-3">
+      <task workspace="5cm" xml:id="PA-3-2-task-3">
         <statement>
           <p>
           Assume that <m>a \lt 0</m>.

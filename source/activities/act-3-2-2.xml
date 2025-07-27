@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,15 +12,15 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-3-2-2">
    
     <activity xml:id="act-3-2-2" workspace="3cm">
       <introduction>
         <p>
-      Consider the two-parameter family of functions of the form <m>h(x) = a(1-e^{-bx})</m>,
-      where <m>a</m> and <m>b</m> are positive real numbers.
-
-      </p>
+          Consider the two-parameter family of functions of the form <m>h(x) = a(1-e^{-bx})</m>,
+          where <m>a</m> and <m>b</m> are positive real numbers.
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="act-3-2-2-task-0">
         <statement>
@@ -81,7 +81,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-3-2-2-task-2">
+      <task workspace="5cm" xml:id="act-3-2-2-task-2">
         <statement>
           <p>
             What is the value of

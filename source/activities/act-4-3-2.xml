@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,25 +12,25 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-4-3-2">
    
     <activity xml:id="act-4-3-2" workspace="5cm">
       <introduction>
         <p>
-      Suppose that the following information is known about the functions <m>f</m>,
-      <m>g</m>, <m>x^2</m>, and <m>x^3</m>:
+          Suppose that the following information is known about the functions <m>f</m>,
+          <m>g</m>, <m>x^2</m>, and <m>x^3</m>:
 
-      <ul><li><p><m>\int_0^2 f(x) \, dx = -3</m>;
-            <m>\int_2^5 f(x) \, dx = 2</m></p></li><li><p><m>\int_0^2 g(x) \, dx = 4</m>;
-            <m>\int_2^5 g(x) \, dx = -1</m></p></li><li><p><m>\int_0^2 x^2 \, dx = \frac{8}{3}</m>;
-            <m>\int_2^5 x^2 \, dx = \frac{117}{3}</m></p></li><li><p><m>\int_0^2 x^3 \, dx = 4</m>;
-            <m>\int_2^5 x^3 \, dx = \frac{609}{4}</m></p></li></ul></p>
-        <p>
-      Use the provided information and the rules discussed in the preceding section to evaluate each of the following definite integrals.
-
-      </p>
+          <ul><li><p><m>\int_0^2 f(x) \, dx = -3</m>;
+                <m>\int_2^5 f(x) \, dx = 2</m></p></li><li><p><m>\int_0^2 g(x) \, dx = 4</m>;
+                <m>\int_2^5 g(x) \, dx = -1</m></p></li><li><p><m>\int_0^2 x^2 \, dx = \frac{8}{3}</m>;
+                <m>\int_2^5 x^2 \, dx = \frac{117}{3}</m></p></li><li><p><m>\int_0^2 x^3 \, dx = 4</m>;
+                <m>\int_2^5 x^3 \, dx = \frac{609}{4}</m></p></li></ul></p>
+            <p>
+          Use the provided information and the rules discussed in the preceding section to evaluate each of the following definite integrals.
+        </p>
       </introduction>
-      <task workspace="5cm" xml:id="act-4-3-2-task-0">
+      <task workspace="4cm" xml:id="act-4-3-2-task-0">
         <statement>
           <p>
             <m>\int_5^2 f(x) \, dx</m>
@@ -54,7 +54,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="5cm" xml:id="act-4-3-2-task-1">
+      <task workspace="4cm" xml:id="act-4-3-2-task-1">
         <statement>
           <p>
             <m>\int_0^5 g(x) \, dx</m>

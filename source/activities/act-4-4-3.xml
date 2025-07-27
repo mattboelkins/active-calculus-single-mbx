@@ -27,7 +27,7 @@
           its formula is <m>c(t) = -0.05t^2 + 3t - 30</m>.
         </p>
       </introduction>
-      <task workspace="6cm" xml:id="act-4-4-3-task-0">
+      <task workspace="9cm" xml:id="act-4-4-3-task-0">
         <statement>
           <p>
             What is the exact total number of calories the person burns during the first 10 minutes of her workout?
@@ -58,7 +58,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-4-4-3-task-1">
+      <task workspace="9cm" xml:id="act-4-4-3-task-1">
         <statement>
           <p>
             Let <m>C(t)</m> be an antiderivative of <m>c(t)</m>.
@@ -85,7 +85,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-4-4-3-task-2">
+      <task workspace="3cm" xml:id="act-4-4-3-task-2">
         <statement>
           <p>
             Determine the exact average rate at which the person burned calories during the 40-minute workout.  Sketch a representative of the average rate at which calories were burned on the provided graph of <m>c(t)</m>.
@@ -134,7 +134,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-4-4-3-task-3">
+      <task workspace="4cm" xml:id="act-4-4-3-task-3">
         <statement>
           <p>
             At what time(s), if any,

@@ -26,7 +26,7 @@
 
       </introduction>
 
-      <task workspace="8cm" xml:id="act-3-1-2-task-0">
+      <task workspace="9cm" xml:id="act-3-1-2-task-0">
         <statement>
           <p>
             Identify all <m>x</m>-values where <m>g''(x) = 0</m> or <m>g''(x)</m> is undefined.  Then, construct a second derivative sign chart for <m>g</m> and hence state the intervals on which <m>g</m> is concave up, as well as the intervals on which <m>g</m> is concave down.

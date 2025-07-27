@@ -68,7 +68,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="2.5cm" xml:id="act-1-7-2-task-2">
+      <task workspace="2cm" xml:id="act-1-7-2-task-2">
         <statement>
           <p>
             At which values of <m>a</m> does <m>f</m> have a limit,
@@ -95,7 +95,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="2.5cm" xml:id="act-1-7-2-task-3">
+      <task workspace="2cm" xml:id="act-1-7-2-task-3">
         <statement>
           <p>
             State all values of <m>a</m> for which <m>f</m> is not continuous at <m>x = a</m>.

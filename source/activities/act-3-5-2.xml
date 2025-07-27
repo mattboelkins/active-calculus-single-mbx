@@ -18,14 +18,13 @@
     <activity xml:id="act-3-5-2" workspace="3cm">
       <introduction>
         <p>
-      A television camera is positioned 4000 feet from the base of a rocket launching pad.
-      The angle of elevation of the camera has to change at the correct rate in order to keep the rocket in sight.
-      In addition,
-      the auto-focus of the camera has to take into account the increasing distance between the camera and the rocket.
-      We assume that the rocket rises vertically. (A similar situation is discussed and pictured dynamically <url href="https://gvsu.edu/s/9t" visual="gvsu.edu/s/9t">in this interactive graphic</url>.
-      Exploring the interactive will be helpful to you in answering the questions that follow.)
-
-      </p>
+          A television camera is positioned 4000 feet from the base of a rocket launching pad.
+          The angle of elevation of the camera has to change at the correct rate in order to keep the rocket in sight.
+          In addition,
+          the auto-focus of the camera has to take into account the increasing distance between the camera and the rocket.
+          We assume that the rocket rises vertically. (A similar situation is discussed and pictured dynamically <url href="https://gvsu.edu/s/9t" visual="gvsu.edu/s/9t">in this interactive graphic</url>.
+          Exploring the interactive will be helpful to you in answering the questions that follow.)
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="act-3-5-2-task-0">
         <statement>
@@ -52,7 +51,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="5cm" xml:id="act-3-5-2-task-1">
+      <task workspace="4cm" xml:id="act-3-5-2-task-1">
         <statement>
           <p>
             Find an equation that relates the camera's angle of elevation to the height of the rocket,
