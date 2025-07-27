@@ -209,7 +209,7 @@
     </example>
 
     <p>
-      Note the difference between the notations
+      Observe the difference between the notations
       <m>\frac{dr}{dt}</m> and <m>\left. \frac{dr}{dt} \right|_{r=4}</m>.
       The former represents the rate of change of <m>r</m> with respect to <m>t</m> at an arbitrary value of <m>t</m>,
       while the latter is the rate of change of <m>r</m> with respect to <m>t</m> at a particular moment,

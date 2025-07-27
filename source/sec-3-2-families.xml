@@ -149,7 +149,7 @@
 
         <figure xml:id="F-3-2-signchartg">
           <caption>The first derivative sign chart for <m>g(x) = axe^{-bx}</m>.</caption>
-          <image width="40%" source="images/3_2_signchartg"/>
+          <image width="45%" source="images/3_2_signchartg"/>
         </figure>
 
         <p>
@@ -181,7 +181,7 @@
 
         <figure xml:id="F-3-2-signchartg2">
           <caption>The second derivative sign chart for <m>g(x) = axe^{-bx}</m>.</caption>
-          <image width="40%" source="images/3_2_signchartg2"/>
+          <image width="45%" source="images/3_2_signchartg2"/>
         </figure>
 
         <p>

@@ -402,7 +402,7 @@
     <p>
       Here, both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>.  Like the situation we considered in <xref ref="ex-2-8-rational-infty">Example</xref>, <m>\lim_{x \to \infty} \frac{3x^2 - 4x + 5}{7x^2 + 9x - 10}</m>, here we have both <m>x^2 \to \infty</m> and <m>e^x \to \infty</m>, so 
       <me>
-        \lim_{x \to \infty} \frac{x^2}{e^x}?
+        \lim_{x \to \infty} \frac{x^2}{e^x}
       </me>
       is also indeterminate with form <m>\frac{\infty}{\infty}</m>.
       With the presence of <m>e^x</m>, there is not an algebraic approach that enables us to find the limit's value.
