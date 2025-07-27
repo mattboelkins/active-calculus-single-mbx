@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-4-2-Riemann">
   <title>Riemann Sums</title>
   <objectives>
@@ -46,7 +47,7 @@
       then the sum of these signed areas tells us the moving object's change in position over a given time interval.
     </p>
 
-    <sidebyside widths="47% 47%" margins="0%">
+    <sidebyside widths="47% 47%" margins="0%" valign="middle">
       <p>
         For instance,
         for the velocity function given in <xref ref="F-4-2-Intro">Figure</xref>,
@@ -60,6 +61,8 @@
         <me>
           s(b) - s(a) = A_1 - A_2 + A_3
         </me>.
+        Because the motion is in the negative direction on the interval where <m>v(t) \lt 0</m>,
+        we subtract <m>A_2</m> to determine the object's total change in position.
       </p>
 
       <figure xml:id="F-4-2-Intro">
@@ -69,21 +72,15 @@
     </sidebyside>
 
     <p>
-      Because the motion is in the negative direction on the interval where <m>v(t) \lt 0</m>,
-      we subtract <m>A_2</m> to determine the object's total change in position.
-    </p>
-
-    <p>
       Of course, finding <m>D</m> and
       <m>s(b)-s(a)</m> for the graph in <xref ref="F-4-2-Intro">Figure</xref>
       presumes that we can actually find the areas <m>A_1</m>,
       <m>A_2</m>, and <m>A_3</m>.
       So far,
-      we have worked with velocity functions that were either constant or linear,
-      so that the area bounded by the velocity function and the horizontal axis is a combination of rectangles and triangles,
-      and we can find the area exactly.
+      we have worked with velocity functions that were either constant or linear
+      so that we could find the exact area bounded by the velocity function and the horizontal axis through a combination of rectangles and triangles.
       But when the curve bounds a region that is not a familiar geometric shape,
-      we cannot find its area exactly.
+      we cannot find its area exactly without some key ideas in calculus.
       Indeed, this is one of our biggest goals in <xref ref="C-4">Chapter</xref>:
       to learn how to find the exact area bounded between a curve and the horizontal axis for as many different types of functions as possible.
     </p>
@@ -144,7 +141,7 @@
     </p>
 
     <p>
-      Sigma notation allows us to vary easily the function being used to describe the terms in the sum,
+      Sigma notation allows us to easily change the function being used to describe the terms in the sum,
       and to adjust the number of terms in the sum simply by changing the value of <m>n</m>.
       We test our understanding of this new notation in the following activity.
     </p>
@@ -293,14 +290,14 @@
       Thus, we have two variables to explore:
       the number of rectangles and the height of each rectangle.
       We can explore these choices dynamically,
-      and <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">this applet</url>
+      and <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">this interactive</url>
       is a particularly useful one.
       There we see the image shown in <xref ref="F-4-2-RenaultAppletRS">Figure</xref>,
       but with the opportunity to adjust the slider bars for the heights and the number of rectangles.
     </p>
 
     <figure xml:id="F-4-2-RenaultAppletRS">
-      <caption>A snapshot of the applet found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url>.</caption>
+      <caption>A snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url>.</caption>
       <image width="71%" source="images/4_2_RenaultAppletRS"/>
     </figure>
 
@@ -336,7 +333,7 @@
 
     <p>
       <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">
-      The applet noted earlier
+      In the interactive graphic noted earlier
       </url> and referenced in <xref ref="F-4-2-RenaultAppletRS">Figure</xref>,
       by unchecking the <q>relative</q> box at the top left,
       and instead checking <q>random,</q>
@@ -380,9 +377,9 @@
 
     <p>
       In the middle graph of <xref ref="F-4-2-NegF">Figure</xref>,
-      we see that by increasing the number of rectangles the approximation of the area
+      we see that increasing the number of rectangles appears to improve the approximation of the area
       (or the opposite of the area)
-      bounded by the curve appears to improve.
+      bounded by the curve.
     </p>
 
     <p>

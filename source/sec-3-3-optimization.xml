@@ -47,7 +47,7 @@
       as well as whether the function has relative extrema.
     </p>
 
-    <sidebyside widths="50% 44%" margins="0%">
+    <sidebyside widths="50% 44%" margins="0%" valign="middle">
       <p>
         Recall the difference between a relative maximum and a global maximum:
         there is a <em>relative</em> maximum of <m>f</m> at <m>x = p</m> if
@@ -315,7 +315,7 @@
             </li>
           </ul>
         </p>
-      <sidebyside widths="47% 47%" margins="0%">
+      <sidebyside widths="47% 47%" margins="0%" valign="middle">
         <p>
           Thus, the absolute minimum occurs when
           <m>x \approx 11.3007</m> and results in the minimum area of approximately <m>10.8741</m> square centimeters.

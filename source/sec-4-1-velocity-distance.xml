@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-4-1-velocity-distance">
   <title>Determining distance traveled from velocity</title>
   <objectives>
@@ -135,7 +136,7 @@
       we simply chose <m>v(a)</m>,
       the value at the interval's left endpoint.)
       For several examples where the velocity function is piecewise constant, see
-      <url href="https://gvsu.edu/s/9T" visual="gvsu.edu/s/9T">this applet</url>.</p>
+      <url href="https://gvsu.edu/s/9T" visual="gvsu.edu/s/9T">this interactive</url>.</p>
 
     <p>
       The situation is more complicated when the velocity function is not constant.
@@ -156,7 +157,8 @@
       Note that because <m>v</m> is decreasing on <m>[1,1.5]</m>,
       <m>A_2 = 1.25</m> is an over-estimate of the actual distance traveled.
     </p>
-    <!--<sidebyside widths="47% 47%" margins="0%" valign="bottom">-->
+
+  <sidebyside widths="47% 47%" margins="0%" valign="middle">
     <p>
       To estimate the area under this non-constant velocity function on a wider interval,
       say <m>[0,3]</m>, one rectangle will not give a good approximation.
@@ -170,18 +172,22 @@
     </p>
 
     <figure xml:id="F-4-1-VelArea2">
-      <caption>Using six rectangles to estimate the area under <m>y = v(t)</m> on <m>[0,3]</m>.</caption>
-      <image width="47%" source="images/4_1_VelArea2"/>
+      <caption>Estimating the area under <m>y = v(t)</m> on <m>[0,3]</m>.</caption>
+      <image width="42%" source="images/4_1_VelArea2"/>
     </figure>
-<!--</sidebyside>-->
+
+  </sidebyside>
+
     <p>
       We will study these questions and more in what follows;
       for now it suffices to observe that the simple idea of the area of a rectangle gives us a powerful tool for estimating distance traveled from a velocity function,
       as well as for estimating the area under an arbitrary curve.
       To explore the use of multiple rectangles to approximate area under a non-constant velocity function,
-      see <url href="https://gvsu.edu/s/9U" visual="gvsu.edu/s/9U">this applet</url>.</p>
+      see <url href="https://gvsu.edu/s/9U" visual="gvsu.edu/s/9U">this interactive graphic</url>.
+    </p>
 
     <xi:include href="./activities/act-4-1-1.xml"/>
+
   </subsection>
 
   <subsection>
@@ -225,17 +231,20 @@
       where a person is walking along a straight line with velocity function <m>v(t) = 3</m> mph.
     </p>
 
-    <figure xml:id="F-4-1-PA1Soln">
-      <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
-      <image width="100%" source="images/4_1_PA1Soln"/>
-    </figure>
-
     <p>
       On the left-hand graph of the velocity function in <xref ref="F-4-1-PA1Soln">Figure</xref>,
       we see the relationship between area and distance traveled,
       <me>
         A= 3 \, \frac{\text{miles} }{\text{hour} } \cdot 1.25 \, \text{hours}  = 3.75 \, \text{miles}
       </me>.
+    </p>
+
+    <figure xml:id="F-4-1-PA1Soln">
+      <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
+      <image width="90%" source="images/4_1_PA1Soln"/>
+    </figure>
+
+    <p>
       In addition, we observe<fn>
       Here we are making the implicit assumption that <m>s(0) = 0</m>;
       we will discuss different possibilities for values of <m>s(0)</m> in subsequent study.
@@ -252,8 +261,8 @@
     </p>
 
     <p>
-      This is the person's change in position on <m>[0.25,1.5]</m>,
-      which is precisely the distance traveled.
+      The quantity <m>s(1.5) - s(0.25)</m> is the person's change in position on <m>[0.25,1.5]</m>,
+      as well as the distance traveled since their velocity is always positive.
       In this example there are profound ideas and connections that we will study throughout <xref ref="C-4">Chapter</xref>.
     </p>
 
@@ -301,7 +310,7 @@
     </p>
 
     <p>
-      Consider a simple example where a woman goes for a walk on the beach along a stretch of very straight shoreline that runs east-west.
+      Consider a simple example where a person goes for a walk on the beach along a stretch of very straight shoreline that runs east-west.
       We assume that her initial position is <m>s(0) = 0</m>,
       and that her position function increases as she moves east from her starting location.
       For instance,
@@ -351,7 +360,7 @@
     <p>
       Since the velocity for <m>1.5 \lt  t \lt  2</m> is <m>v = -4</m>,
       indicating motion in the westward direction,
-      the woman first walked 4.5 miles east,
+      the person first walked 4.5 miles east,
       then 2 miles west, followed by 3 more miles east.
       Thus, the total change in her position is
       <me>
@@ -360,15 +369,12 @@
     </p>
 
     <p>
-      We have been able to answer these questions fairly easily,
-      and if we think about the problem graphically,
-      we can generalize our solution to the more complicated setting when velocity is not constant,
-      and possibly negative.
+      It's also valuable to think about our conclusions from a graphical perspective.
     </p>
 
     <figure xml:id="F-4-1-NegVel">
       <caption>At left, the velocity function of the person walking; at right, the corresponding position function.</caption>
-      <image width="100%" source="images/4_1_NegVel"/>
+      <image width="90%" source="images/4_1_NegVel"/>
     </figure>
 
     <p>
@@ -394,12 +400,12 @@
       But the change in position has to account for travel in the negative direction.  
       An area above the <m>t</m>-axis is considered positive because it represents distance traveled in the positive direction,
       while one below the <m>t</m>-axis is viewed as negative because it represents travel in thenegative direction.
-      Thus, the change in the woman's position is
+      Thus, the change in the person's position is
       <me>
         s(3) - s(0) = (+4.5) + (-2) + (+3) = 5.5 \ \text{miles}
       </me>.
       In other words,
-      the woman walks 4.5 miles in the positive direction,
+      the person walks 4.5 miles in the positive direction,
       followed by two miles in the negative direction,
       and then 3 more miles in the positive direction.
     </p>
@@ -409,7 +415,7 @@
       Its slope is negative (specifically,
       <m>-4</m>) on the interval
       <m>1.5\lt t\lt 2</m> because the velocity is <m>-4</m> on that interval.
-      The negative slope shows the position function is decreasing because the woman is walking east,
+      The negative slope shows the position function is decreasing because the person is walking east,
       rather than west.
     </p>
 

@@ -222,7 +222,7 @@
               <p>
                a. We first construct a graph of <m>f</m> along with tables of values near <m>a = -1</m> and <m>a = -2</m>.
  
-                  <sidebyside widths="24% 24% 42%">
+                  <sidebyside widths="24% 24% 42%" valign="middle">
 
                     <table xml:id="table-1-F-1-2-Ex1f">
                       <title>Values of <m>f</m> near <m>x=-1</m>.</title>
@@ -376,7 +376,7 @@
           and construct two tables and a graph.
         </p>
 
-        <sidebyside widths="23% 23% 42%">
+        <sidebyside widths="23% 23% 42%" valign="middle">
 
           <table xml:id="table-1-F-1-2-Ex1g">
             <title>Values of <m>g</m> near <m>x=3</m>.</title>

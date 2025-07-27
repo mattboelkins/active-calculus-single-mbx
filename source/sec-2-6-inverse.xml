@@ -251,7 +251,7 @@
       <m>f(x) = e^x</m> and <m>f^{-1}(x) = \ln(x)</m>.
     </p>
 
-    <sidebyside widths="48% 46%" margins="0%" valign="top">
+    <sidebyside widths="48% 46%" margins="0%" valign="middle">
       <p>
         In <xref ref="F-2-6-Log-Exp">Figure</xref>,
         we are reminded that since the natural exponential function has the property that its derivative is itself,
@@ -298,7 +298,7 @@
       so that it is one-to-one on that domain.
     </p>
 
-    <sidebyside widths="44% 50%" margins="0%" valign="top">
+    <sidebyside widths="44% 50%" margins="0%" valign="middle">
       <p>
         For instance,
         consider the sine function on the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>.
@@ -371,7 +371,7 @@
       A bit of right triangle trigonometry allows us to simplify this expression considerably.
     </p>
 
-    <sidebyside widths="52% 42%" margins="0%">
+    <sidebyside widths="52% 42%" margins="0%" valign="middle">
       <p>
         Let's say that <m>\theta = \arcsin(x)</m>,
         so that <m>\theta</m> is the angle whose sine is <m>x</m>.

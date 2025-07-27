@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-4-3-definite-integral">
   <title>The Definite Integral</title>
   <objectives>
@@ -223,6 +224,8 @@
     </p>
 
     <assemblage>
+      <title>Integrating from <m>x = a</m> to <m>x = a</m></title>
+      
       <p>
         If <m>f</m> is a continuous function and <m>a</m> is a real number,
         then <m>\int_a^a f(x) \,dx = 0</m>.
@@ -245,6 +248,8 @@
     </figure>
 <!--</sidebyside>-->
     <assemblage>
+      <title>Subdividing the interval of integration</title>
+      
       <p>
         If <m>f</m> is a continuous function and <m>a</m>, <m>b</m>,
         and <m>c</m> are real numbers, then
@@ -264,6 +269,8 @@
     </p>
 
     <assemblage>
+      <title>Reversing the limits of integration</title>
+      
       <p>
         If <m>f</m> is a continuous function and <m>a</m> and <m>b</m> are real numbers, then
         <me>
@@ -283,7 +290,7 @@
     <p>
       There are two additional useful properties of the definite integral.
       When we worked with derivative rules in <xref ref="C-2">Chapter</xref>,
-      we formulated the Constant Multiple Rule and the Sum Rule.
+      we learned the Constant Multiple Rule and the Sum Rule.
       Recall that the Constant Multiple Rule says that if <m>f</m> is a differentiable function and <m>k</m> is a constant, then
       <me>
         \frac{d}{dx} [kf(x)] = kf'(x)
@@ -307,7 +314,7 @@
 
     <figure xml:id="F-4-3-ConstMult">
       <caption>The areas bounded by <m>y = f(x)</m> and <m>y = 2f(x)</m> on <m>[a,b]</m>.</caption>
-      <image width="100%" source="images/4_3_ConstMult"/>
+      <image width="90%" source="images/4_3_ConstMult"/>
     </figure>
 
     <p>
@@ -327,7 +334,7 @@
     </p>
 
     <assemblage>
-      <title>Constant Multiple Rule</title>
+      <title>The Constant Multiple Rule</title>
       <idx><h>definite integral</h><h>constant multiple rule</h></idx>
 
       <p>
@@ -362,7 +369,7 @@
     </p>
 
     <assemblage>
-      <title>Sum Rule</title>
+      <title>The Sum Rule</title>
       <idx><h>definite integral</h><h>sum rule</h></idx>
 
       <p>
@@ -445,7 +452,7 @@
     </p>
 
     <assemblage xml:id="average-value">
-      <title>Average value of a function</title>
+      <title>The average value of a function</title>
       <p>
             <idx><h>average value</h></idx>
         If <m>f</m> is a continuous function on <m>[a,b]</m>,
@@ -479,7 +486,7 @@
       The area of the blue region in the left figure is the same as the area of the green rectangle in the center figure.
       We can also observe that the areas <m>A_1</m> and <m>A_2</m> in the rightmost figure appear to be equal.
       Thus, knowing the average value of a function enables us to construct a rectangle whose area is the same as the value of the definite integral of the function on the interval.
-      <url href="https://gvsu.edu/s/az" visual="gvsu.edu/s/az">This applet</url>
+      <url href="https://gvsu.edu/s/az" visual="gvsu.edu/s/az">This interactive graphic</url>
       provides an opportunity to explore how the average value of the function changes as the interval changes,
       through an image similar to that found in <xref ref="F-4-3-AvgVal">Figure</xref>.
     </p>

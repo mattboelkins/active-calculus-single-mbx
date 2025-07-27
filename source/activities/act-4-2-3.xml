@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-4-2-3">
    
     <activity xml:id="act-4-2-3" workspace="3cm">
@@ -91,7 +92,7 @@
       <task workspace="5cm" xml:id="act-4-2-3-task-2">
         <statement>
           <p>
-            Building on your work in (a) and (b),
+            Re-interpret your work in (a) and (b) to
             estimate the total distance traveled by the object on <m>[1,5]</m>.
           </p>
         </statement>

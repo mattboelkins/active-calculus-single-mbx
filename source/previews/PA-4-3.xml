@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,12 +12,13 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-4-3">
    
     <exploration xml:id="PA-4-3">
       <introduction>
         <p>
-    Consider this <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">applet</url>, in which
+    Consider this <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">interactive graphic</url>, in which
     you will initially see the situation shown in the following figure.  The screenshot shows a right Riemann sum with 10 subintervals for the function <m>f(x) = \sin(2x) - \frac{x^2}{10} + 3</m> on the interval <m>[1,7]</m>.  The value of the sum is <m>R_{10} = 4.90595</m>.
   </p>
 
@@ -43,7 +44,7 @@
       <task workspace="4cm" xml:id="PA-4-3-task-0">
         <statement>
           <p>
-          Update the applet
+          Update the interactive
           (and view window, as needed)
           so that the function being considered is
           <m>f(x) = 2x+1</m> on <m>[1,4]</m>.  When you do so, you should see the following figure.
@@ -89,11 +90,11 @@
       <task workspace="5cm" xml:id="PA-4-3-task-3">
         <statement>
           <p>
-          Update the applet to consider the function
+          Update the interactive to consider the function
           <m>f(x) = x^2 + 1</m> on the interval <m>[1,4]</m>
           (note that you need to enter
-          <q><c>x ^ 2 + 1</c></q> for the function formula).
-          Use the applet to compute <m>L_{n}</m>, <m>M_{n}</m>,
+          <q><c>x ^ 2 + 1</c></q> for the function formula), and hence
+          compute <m>L_{n}</m>, <m>M_{n}</m>,
           <m>R_{n}</m> for <m>n = 5</m>,
           <m>n = 25</m>, and <m>n = 100</m>.
           What do you conjecture is the exact area bounded by
