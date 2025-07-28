@@ -150,8 +150,8 @@
       we find that <m>T_3</m>,
       the trapezoidal approximation to <m>\int_a^b f(x) \, dx</m> is given by
       <md>
-        <mrow>T_3 &amp;=  D_1 + D_2 + D_3</mrow>
-        <mrow>&amp;= \frac{1}{2}(f(x_0) + f(x_1)) \cdot \Delta x + \frac{1}{2}(f(x_1) + f(x_2)) \cdot \Delta x + \frac{1}{2}(f(x_2) + f(x_3)) \cdot \Delta x</mrow>
+        <mrow>T_3 \amp=  D_1 + D_2 + D_3</mrow>
+        <mrow>\amp= \frac{1}{2}(f(x_0) + f(x_1)) \cdot \Delta x + \frac{1}{2}(f(x_1) + f(x_2)) \cdot \Delta x + \frac{1}{2}(f(x_2) + f(x_3)) \cdot \Delta x</mrow>
       </md>.
     </p>
 
@@ -183,8 +183,8 @@
         The trapezoidal approximation, <m>T_n</m>,
         of the definite integral <m>\int_a^b f(x) \, dx</m> using <m>n</m> subintervals is given by the rule
         <md>
-          <mrow>T_n =\mathstrut \amp  \left[\frac{1}{2}(f(x_0) + f(x_1)) + \frac{1}{2}(f(x_1) + f(x_2))  + \cdots + \frac{1}{2}(f(x_{n-1}) + f(x_n)) \right] \Delta x.</mrow>
-          <mrow>=\mathstrut \amp  \sum_{i=0}^{n-1} \frac{1}{2}(f(x_i) + f(x_{i+1}))  \Delta x</mrow>
+          <mrow>T_n \amp=  \left[\frac{f(x_0) + f(x_1)}{2} + \frac{f(x_1) + f(x_2)}{2}  + \cdots + \frac{f(x_{n-1}) + f(x_n)}{2} \right] \Delta x.</mrow>
+          <mrow>\amp=  \sum_{i=0}^{n-1} \frac{1}{2}(f(x_i) + f(x_{i+1}))  \Delta x</mrow>
         </md>.
         Moreover, <m>T_n = \frac{1}{2} \left[ L_n + R_n \right]</m>.
       </p>
