@@ -5990,125 +5990,27 @@ x}{\frac1{4}x^{-3/4}}=\lim_{x\to0}4\,x^{3/4}\cos x=0.</me>
     <pg source="Library/UMN/calculusStewartCCC/s_4_5_28.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-143" ww-id="webwork-143">
-    <static seed="143" source="Library/UMN/calculusStewartCCC/s_4_5_14.pg">
-      <statement><p>Find the limit.  Use l'Hospital's Rule where appropriate.
-<me>\lim_{x \to \infty} \frac{4(\ln x)^3}{x}</me></p>
-<p>Limit: <fillin characters="20" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/UMN/calculusStewartCCC/s_4_5_14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/UMN/calculusStewartCCC/s_4_5_14.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-144" ww-id="webwork-144">
-    <static seed="144" source="Library/UMN/calculusStewartCCC/s_4_5_73.pg">
-      <statement><p>If <m>f'</m> is continuous, <m>f(8)=0,</m> and <m>f'(8)=10,</m> evaluate
-<me>\lim_{x \to 0} \frac{f( 8 + 3 x)+f( 8 + 5 x)}{x}.</me></p>
-<p>Limit: <fillin characters="20" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>8\cdot 10</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/UMN/calculusStewartCCC/s_4_5_73.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/UMN/calculusStewartCCC/s_4_5_73.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-145" ww-id="webwork-145">
-    <static seed="145" source="csafranski/2.8HW_prob6.pg">
-      <statement><p>Evaluate the limit</p>
-<p><me>\lim_{ x \rightarrow \infty } \frac {\sqrt{ 2 + 8 x^2 }  }{( 4 + 2 x ) }</me>
-Enter <alert> I </alert> for <m>\infty</m>, <alert> -I </alert> for <m>-\infty</m>,
-and <alert> DNE </alert> if the limit does not exist.</p>
-<p>Limit =
-<fillin characters="15" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>1.4142135623731</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="csafranski/2.8HW_prob6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/2.8HW_prob6.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-146" ww-id="webwork-146">
-    <static seed="146" source="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg">
-      <statement><p>A tank contains <m>5000</m> L of pure water. Brine that contains <m>30</m> g of salt per liter of water is pumped into the tank at a rate of <m>25</m> L/min. The concentration of salt after <m>t</m> minutes can be shown to be given by:</p>
-<p><me>C(t)=\displaystyle \frac{30t}{200+t}</me></p>
-<p>What happens to the concentration as <m>t \to \infty</m>?</p>
-<p><m>\displaystyle \lim_{ t \to \infty} C(t)=</m> <fillin characters="10" name="AnSwEr0001"/> g/L</p>
-</statement>
-      <answer>
-        <p>
-          <m>30</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-147" ww-id="webwork-147">
-    <static seed="147" source="Library/ma122DB/set2/s2_6_21.pg">
-      <statement><p>Evaluate the limit</p>
-<p><me>\lim_{ x \rightarrow \infty } \left(\sqrt{ x^2+4 } - \sqrt{x^2-2}\right)</me></p>
-<p>Answer: <fillin characters="15" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <solution><p>SOLUTION</p>
-<p>We  multiply numerator and denominator by the conjugate radical:  
-<me>\begin{array}{rcl}  \displaystyle \lim_{ x \rightarrow \infty } 
-\left( \sqrt{ x^2 + 4} - \sqrt{x^2 - 2} \right) 
-\amp =\amp   \displaystyle \lim_{ x \to  \infty } 
-\left( \sqrt{x^2 + 4} - \sqrt{x^2 - 2 } \right)    
-\frac{\sqrt{x^2 + 4} + \sqrt{x^2-2}}{\sqrt{ x^2 + 4} + \sqrt{x^2- 2}}
-\\ 
-\amp =\amp   \displaystyle \lim_{ x \to  \infty }  \frac{(x^2 + 4) -  (x^2-2)}{\sqrt{ x^2 + 4} + \sqrt{x^2 - 2}}
-\\  \amp  = \amp  \displaystyle \lim_{ x \to  \infty }  \frac{ 6}{\sqrt{ x^2 + 4} + \sqrt{x^2 - 2 }} 
-\end{array}</me> 
-Notice that the denominator of this last expression 
-<m>\left(\sqrt{ x^2 + 4} + \sqrt{x^2 - 2 } \right)</m> becomes large as 
-<m>x \to \infty</m> (it's bigger than <m>x</m>). 
-So 
-<me>\lim_{ x \rightarrow \infty } 
-\left( \sqrt{ x^2 + 4} - \sqrt{x^2 - 2} \right)  =
-\displaystyle \lim_{ x \to  \infty }  \frac{ 6}{\sqrt{ x^2 + 4} + \sqrt{x^2 - 2 }}    = 0</me></p>
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/ma122DB/set2/s2_6_21.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/ma122DB/set2/s2_6_21.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-148" ww-id="webwork-148">
-    <static seed="148" source="Library/Michigan/Chap4Sec7/Q15.pg">
+    <static seed="143" source="Library/Michigan/Chap4Sec7/Q15.pg">
       <statement><p>The functions <m>f</m> and <m>g</m> and their tangent lines at <m>(4,0)</m>
 are shown in the figure below.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-148-image-1.png" width="58%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-143-image-1.png" width="58%"/>
 <p><m>f</m> is shown in blue, <m>g</m> in black, and the tangent line to <m>f</m>
-is <m>y = 1.2 (x - 4)</m>, and is graphed in red, and the tangent line
-to <m>g</m> is <m>y = -0.6 (x - 4)</m>, and is graphed in green.</p>
+is <m>y = 1.8 (x - 4)</m>, and is graphed in red, and the tangent line
+to <m>g</m> is <m>y = -0.9 (x - 4)</m>, and is graphed in green.</p>
 <p>Find the limit</p>
 <p><m>\displaystyle\lim_{x\to 4} \frac{f(x)}{g(x)} =</m>
 <fillin characters="5" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\frac{1.2}{-0.6}</m>
+          <m>\frac{1.8}{-0.9}</m>
         </p>
       </answer>
       <solution><m>f(4)</m> and <m>g(4)</m> are zero.  Also,
-<m>f'(4)=1.2</m> and
-<m>g'(4)=-0.6</m>, so by l'Hopital's rule,
+<m>f'(4)=1.8</m> and
+<m>g'(4)=-0.9</m>, so by l'Hopital's rule,
 <me>\lim_{x\to 4} \frac{f(x)}{g(x)} = \frac{f'(4)}{g'(4)} =
-\frac{1.2}{-0.6} = -2.</me>
+\frac{1.8}{-0.9} = -2.</me>
 
 
 
@@ -6117,16 +6019,16 @@ to <m>g</m> is <m>y = -0.6 (x - 4)</m>, and is graphed in green.</p>
     <server-data sourceFilePath="Library/Michigan/Chap4Sec7/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap4Sec7/Q15.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-149" ww-id="webwork-149">
-    <static seed="149" source="Library/Michigan/Chap4Sec7/Q01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-144" ww-id="webwork-144">
+    <static seed="144" source="Library/Michigan/Chap4Sec7/Q01.pg">
       <statement><p>For the figures below, determine the nature of
 <m>\displaystyle \lim_{x\to a}\,\frac{f(x)}{g(x)}</m>,
 if <m>f(x)</m> is shown as the blue curve and <m>g(x)</m>
 as the black curve.</p>
 <tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="medium" left="medium" right="medium" top="medium">
 <row>
-<cell><image pi:generated="webwork/images/webwork-149-image-1.png" width="41%"/></cell>
-<cell><image pi:generated="webwork/images/webwork-149-image-2.png" width="41%"/></cell>
+<cell><image pi:generated="webwork/images/webwork-144-image-1.png" width="41%"/></cell>
+<cell><image pi:generated="webwork/images/webwork-144-image-2.png" width="41%"/></cell>
 </row>
 <row>
 <cell><m>\displaystyle \lim_{x\to a}\,\frac{f(x)}{g(x)} =</m><ul form="popup" name="AnSwEr0001"><li>
@@ -6156,23 +6058,23 @@ undefined
 </statement>
       <answer>
         <p>
-          <m>\text{positive}</m>
+          <m>\text{zero}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\text{negative}</m>
+          <m>\text{zero}</m>
         </p>
       </answer>
       <solution><me>\lim_{x\to a} \frac{f(x)}{g(x)} = \frac{f'(a)}{g'(a)}.</me>
 
 
 
-For the left graph, since <m>f'(a) \lt  0</m> and <m>g'(a) \lt  0</m>, the limit is positive..
+For the left graph, since <m>f'(a) = 0</m> and <m>g'(a) \ne 0</m>, the limit is zero..
 
 
 
-For the right graph, since <m>f''(a) \lt  0</m> and <m>g''(a) &gt; 0</m>, the limit is negative..
+For the right graph, since <m>f'(a) = 0</m> and <m>g'(a) \ne 0</m>, the limit is zero..
 
 
 
@@ -6180,6 +6082,104 @@ For the right graph, since <m>f''(a) \lt  0</m> and <m>g''(a) &gt; 0</m>, the li
     </static>
     <server-data sourceFilePath="Library/Michigan/Chap4Sec7/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap4Sec7/Q01.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-145" ww-id="webwork-145">
+    <static seed="145" source="Library/UMN/calculusStewartCCC/s_4_5_14.pg">
+      <statement><p>Find the limit.  Use l'Hospital's Rule where appropriate.
+<me>\lim_{x \to \infty} \frac{6(\ln x)^2}{x}</me></p>
+<p>Limit: <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/UMN/calculusStewartCCC/s_4_5_14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/UMN/calculusStewartCCC/s_4_5_14.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-146" ww-id="webwork-146">
+    <static seed="146" source="Library/UMN/calculusStewartCCC/s_4_5_73.pg">
+      <statement><p>If <m>f'</m> is continuous, <m>f(2)=0,</m> and <m>f'(2)=12,</m> evaluate
+<me>\lim_{x \to 0} \frac{f( 2 + 3 x)+f( 2 + 5 x)}{x}.</me></p>
+<p>Limit: <fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>8\cdot 12</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/UMN/calculusStewartCCC/s_4_5_73.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/UMN/calculusStewartCCC/s_4_5_73.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-147" ww-id="webwork-147">
+    <static seed="147" source="csafranski/2.8HW_prob6.pg">
+      <statement><p>Evaluate the limit</p>
+<p><me>\lim_{ x \rightarrow \infty } \frac {\sqrt{ 4 + 2 x^2 }  }{( 2 + 6 x ) }</me>
+Enter <alert> I </alert> for <m>\infty</m>, <alert> -I </alert> for <m>-\infty</m>,
+and <alert> DNE </alert> if the limit does not exist.</p>
+<p>Limit =
+<fillin characters="15" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.235702260395516</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="csafranski/2.8HW_prob6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/2.8HW_prob6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-148" ww-id="webwork-148">
+    <static seed="148" source="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg">
+      <statement><p>A tank contains <m>5000</m> L of pure water. Brine that contains <m>30</m> g of salt per liter of water is pumped into the tank at a rate of <m>25</m> L/min. The concentration of salt after <m>t</m> minutes can be shown to be given by:</p>
+<p><me>C(t)=\displaystyle \frac{30t}{200+t}</me></p>
+<p>What happens to the concentration as <m>t \to \infty</m>?</p>
+<p><m>\displaystyle \lim_{ t \to \infty} C(t)=</m> <fillin characters="10" name="AnSwEr0001"/> g/L</p>
+</statement>
+      <answer>
+        <p>
+          <m>30</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/UCSB/Stewart5_2_6/Stewart5_2_6_54.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-149" ww-id="webwork-149">
+    <static seed="149" source="Library/ma122DB/set2/s2_6_21.pg">
+      <statement><p>Evaluate the limit</p>
+<p><me>\lim_{ x \rightarrow \infty } \left(\sqrt{ x^2+6 } - \sqrt{x^2-5}\right)</me></p>
+<p>Answer: <fillin characters="15" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0</m>
+        </p>
+      </answer>
+      <solution><p>SOLUTION</p>
+<p>We  multiply numerator and denominator by the conjugate radical:  
+<me>\begin{array}{rcl}  \displaystyle \lim_{ x \rightarrow \infty } 
+\left( \sqrt{ x^2 + 6} - \sqrt{x^2 - 5} \right) 
+\amp =\amp   \displaystyle \lim_{ x \to  \infty } 
+\left( \sqrt{x^2 + 6} - \sqrt{x^2 - 5 } \right)    
+\frac{\sqrt{x^2 + 6} + \sqrt{x^2-5}}{\sqrt{ x^2 + 6} + \sqrt{x^2- 5}}
+\\ 
+\amp =\amp   \displaystyle \lim_{ x \to  \infty }  \frac{(x^2 + 6) -  (x^2-5)}{\sqrt{ x^2 + 6} + \sqrt{x^2 - 5}}
+\\  \amp  = \amp  \displaystyle \lim_{ x \to  \infty }  \frac{ 11}{\sqrt{ x^2 + 6} + \sqrt{x^2 - 5 }} 
+\end{array}</me> 
+Notice that the denominator of this last expression 
+<m>\left(\sqrt{ x^2 + 6} + \sqrt{x^2 - 5 } \right)</m> becomes large as 
+<m>x \to \infty</m> (it's bigger than <m>x</m>). 
+So 
+<me>\lim_{ x \rightarrow \infty } 
+\left( \sqrt{ x^2 + 6} - \sqrt{x^2 - 5} \right)  =
+\displaystyle \lim_{ x \to  \infty }  \frac{ 11}{\sqrt{ x^2 + 6} + \sqrt{x^2 - 5 }}    = 0</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/ma122DB/set2/s2_6_21.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/ma122DB/set2/s2_6_21.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-150" ww-id="webwork-150">
     <static seed="150" source="Library/Michigan/Chap4Sec1/Q03.pg">
@@ -8245,16 +8245,16 @@ overestimate and the left Riemann sum an underestimate.
 <p>overestimate of</p>
 </li>
 <li>
-<p>underestimate of</p>
+<p>there is ambiguity</p>
+</li>
+<li>
+<p>equal to</p>
 </li>
 <li>
 <p>?</p>
 </li>
 <li>
-<p>there is ambiguity</p>
-</li>
-<li>
-<p>equal to</p>
+<p>underestimate of</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -8263,16 +8263,16 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
-<p>equal to</p>
-</li>
-<li>
-<p>there is ambiguity</p>
+<p>underestimate of</p>
 </li>
 <li>
 <p>?</p>
 </li>
 <li>
-<p>underestimate of</p>
+<p>equal to</p>
+</li>
+<li>
+<p>there is ambiguity</p>
 </li>
 <li>
 <p>overestimate of</p>
@@ -12502,55 +12502,55 @@ point (0,1) has a negative slope.</p>
 <p>stable</p>
 </li>
 <li>
+<p>unstable</p>
+</li>
+<li>
 <p>semi-stable</p>
 </li>
 <li>
 <p>?</p>
-</li>
-<li>
-<p>unstable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0003"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>?</p>
 </li>
 <li>
 <p>semi-stable</p>
 </li>
 <li>
-<p>?</p>
+<p>unstable</p>
 </li>
 <li>
-<p>unstable</p>
+<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
 <li>
-<p>semi-stable</p>
-</li>
-<li>
-<p>unstable</p>
+<p>stable</p>
 </li>
 <li>
 <p>?</p>
 </li>
 <li>
-<p>stable</p>
+<p>semi-stable</p>
+</li>
+<li>
+<p>unstable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
 <li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 <li>
 <p>unstable</p>
 </li>
 <li>
-<p>?</p>
+<p>semi-stable</p>
 </li>
 <li>
-<p>stable</p>
+<p>?</p>
 </li>
 </var></p>
 </statement>
@@ -14330,7 +14330,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-22T21:12:54Z       
+###       on 2025-07-28T18:23:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14633,7 +14633,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-22T21:12:54Z       
+###       on 2025-07-28T18:23:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14980,7 +14980,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-22T21:12:54Z       
+###       on 2025-07-28T18:23:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15304,7 +15304,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-22T21:12:54Z       
+###       on 2025-07-28T18:23:16Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
