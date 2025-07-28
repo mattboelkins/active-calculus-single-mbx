@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,20 +12,20 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-5-4">
    
     <exploration xml:id="PA-5-4">
       <introduction>
         <p>
-    In Section 2.3,
-    we developed the Product Rule and studied how it is employed to differentiate a product of two functions.
-    In particular,
-    recall that if <m>f</m> and <m>g</m> are differentiable functions of <m>x</m>, then
-    <me>
-      \frac{d}{dx} \left[ f(x) \cdot g(x)  \right] = f(x) \cdot g'(x) + g(x) \cdot f'(x)
-    </me>.
-  </p>
-        <p/>
+          In Section 2.3,
+          we developed the Product Rule and studied how it is employed to differentiate a product of two functions.
+          In particular,
+          recall that if <m>f</m> and <m>g</m> are differentiable functions of <m>x</m>, then
+          <me>
+            \frac{d}{dx} \left[ f(x) \cdot g(x)  \right] = f(x) \cdot g'(x) + g(x) \cdot f'(x)
+          </me>.
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="PA-5-4-task-0">
         <statement>

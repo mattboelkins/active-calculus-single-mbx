@@ -59,6 +59,11 @@
       we defined <m>\overline{x}_{i} = (x_{i-1} + x_i)/2</m>.
     </p>
 
+    <figure xml:id="F-5-6-LRMsum">
+      <caption>Left, right, and middle Riemann sums for <m>y = f(x)</m> on <m>[1,8]</m> with 5 subintervals.</caption>
+      <image width="100%" source="images/5_6_LRMsum"/>
+    </figure>
+
     <p>
       A Riemann sum is a sum of
       (possibly signed)
@@ -72,11 +77,6 @@
       and use 5 rectangles for each of the Riemann sums.
     </p>
 
-    <figure xml:id="F-5-6-LRMsum">
-      <caption>Left, right, and middle Riemann sums for <m>y = f(x)</m> on <m>[1,8]</m> with 5 subintervals.</caption>
-      <image width="100%" source="images/5_6_LRMsum"/>
-    </figure>
-
     <p>
       While it is a good exercise to compute a few Riemann sums by hand,
       just to ensure that we understand how they work and how varying the function,
@@ -86,12 +86,12 @@
       <m>R_n</m>, and <m>M_n</m>.
       Any computer algebra system will offer this capability;
       as we saw in <xref ref="PA-4-3">Preview Activity</xref>,
-      a straightforward option that is freely available online is <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">this applet</url>.
+      a straightforward option that is freely available online is <url href="https://gvsu.edu/s/a9" visual="gvsu.edu/s/a9">this interactive</url>.
       Note that we can adjust the formula for <m>f(x)</m>,
       the window of <m>x</m>- and <m>y</m>-values of interest,
-      the number of subintervals, and the method.
+      the number of subintervals, and the type of Riemann sum.
       (See <xref ref="PA-4-3">Preview Activity</xref>
-      for any needed reminders on how the applet works.)
+      for any needed reminders on how the interactive works.)
     </p>
 
     <p>
@@ -126,7 +126,7 @@
 
     <figure xml:id="F-5-6-TRAP">
       <caption>Estimating <m>\int_a^b f(x) \  dx</m> using three subintervals and trapezoids, rather than rectangles, where <m>a = x_0</m> and <m>b = x_3</m>.</caption>
-      <image width="73%" source="images/5_6_TRAP"/>
+      <image width="65%" source="images/5_6_TRAP"/>
     </figure>
 
     <p>
@@ -225,7 +225,7 @@
     <p>
       To begin, we compare the errors in the Midpoint and Trapezoid rules.
       First, consider a function that is concave up on a given interval,
-      and picture approximating the area bounded on that interval by both the Midpoint and Trapezoid rules using a single subinterval.
+      and picture approximating the area bounded on that interval by both the Midpoint and Trapezoid rules using a single subinterval, as shown in <xref ref="F-5-6-MidVTrap">Figure</xref>.
     </p>
 
     <figure xml:id="F-5-6-MidVTrap">
@@ -234,7 +234,7 @@
     </figure>
 
     <p>
-      As seen in <xref ref="F-5-6-MidVTrap">Figure</xref>,
+      As seen at left in <xref ref="F-5-6-MidVTrap">Figure</xref>,
       it is evident that whenever the function is concave up on an interval,
       the Trapezoid Rule with one subinterval, <m>T_1</m>,
       will overestimate the exact value of the definite integral on that interval.
@@ -247,11 +247,6 @@
       Thus, when the function is concave up on the interval,
       <m>M_1</m> underestimates the integral's true value.
     </p>
-
-    <figure xml:id="F-5-6-MidTrapError">
-      <caption>Comparing the error in estimating <m>\int_a^b f(x) \  dx</m> using a single subinterval: in red, the error from the Trapezoid rule; in light red, the error from the Midpoint rule.</caption>
-      <image width="47%" source="images/5_6_MidTrapError"/>
-    </figure>
 
     <p>
       These observations extend easily to the situation where the function's concavity remains consistent but we use larger values of <m>n</m> in the Midpoint and Trapezoid Rules.
@@ -268,11 +263,16 @@
       where the error of the Trapezoid Rule is shaded in red,
       while the error of the Midpoint Rule is shaded lighter red,
       it is visually apparent that the error in the Trapezoid Rule is more significant.
-      To see how much more significant,
-      let's consider two examples and some particular computations.
     </p>
 
+    <figure xml:id="F-5-6-MidTrapError">
+      <caption>Comparing the error in estimating <m>\int_a^b f(x) \  dx</m> using a single subinterval: in red, the error from the Trapezoid rule; in light red, the error from the Midpoint rule.</caption>
+      <image width="30%" source="images/5_6_MidTrapError"/>
+    </figure>
+
     <p>
+      To see how much more significant the error from the Trapezoid Rule is,
+      let's consider two examples and some particular computations.
       If we let <m>f(x) = 1-x^2</m> and consider <m>\int_0^1 f(x) \,dx</m>,
       we know by the First FTC that the exact value of the integral is
       <me>
@@ -289,6 +289,20 @@
       we find the results summarized in <xref ref="T-5-6-Ex2">Table</xref>.
       We also include the approximations and their errors for the example
       <m>\int_1^2 \frac{1}{x^2} \, dx</m> from <xref ref="act-5-6-1">Activity</xref>.
+    </p>
+
+    <p oldpermid="rhI">
+      For a given function <m>f</m> and interval <m>[a,b]</m>,
+      <m>E_{T,4} = T_4 - \int_a^b f(x) \,dx</m> calculates the difference between the approximation generated by the Trapezoid Rule with <m>n = 4</m> and the exact value of the definite integral.
+      If we look at not only <m>E_{T,4}</m>,
+      but also the other errors generated by using <m>T_n</m> and <m>M_n</m> with <m>n = 4</m> and <m>n = 8</m> in the two examples noted in <xref ref="T-5-6-Ex2">Table</xref>,
+      we see an evident pattern.
+      Not only is the sign of the error
+      (which measures whether the rule generates an over- or under-estimate)
+      tied to the rule used and the function's concavity,
+      but the magnitude of the errors generated by <m>T_n</m> and <m>M_n</m> seems closely connected.
+      In particular,
+      the errors generated by the Midpoint Rule seem to be about half the size (in absolute value) of those generated by the Trapezoid Rule.
     </p>
 
     <table xml:id="T-5-6-Ex2">
@@ -332,20 +346,6 @@
       </tabular>
 
     </table>
-
-    <p oldpermid="rhI">
-      For a given function <m>f</m> and interval <m>[a,b]</m>,
-      <m>E_{T,4} = T_4 - \int_a^b f(x) \,dx</m> calculates the difference between the approximation generated by the Trapezoid Rule with <m>n = 4</m> and the exact value of the definite integral.
-      If we look at not only <m>E_{T,4}</m>,
-      but also the other errors generated by using <m>T_n</m> and <m>M_n</m> with <m>n = 4</m> and <m>n = 8</m> in the two examples noted in <xref ref="T-5-6-Ex2">Table</xref>,
-      we see an evident pattern.
-      Not only is the sign of the error
-      (which measures whether the rule generates an over- or under-estimate)
-      tied to the rule used and the function's concavity,
-      but the magnitude of the errors generated by <m>T_n</m> and <m>M_n</m> seems closely connected.
-      In particular,
-      the errors generated by the Midpoint Rule seem to be about half the size (in absolute value) of those generated by the Trapezoid Rule.
-    </p>
 
     <p>
       That is, we can observe in both examples that

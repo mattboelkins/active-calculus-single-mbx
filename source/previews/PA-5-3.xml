@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-5-3">
    
     <exploration xml:id="PA-5-3">
@@ -80,10 +81,8 @@
         <statement>
           <p>
           For each of the following functions,
-          use your work in (a) to help you determine the general antiderivative<fn>
-          Recall that the general antiderivative of a function includes <q><m>+C</m></q>
-          to reflect the entire family of functions that share the same derivative.
-          </fn> of the function.
+          use your work in (a) to help you determine the general antiderivative (that is, include <q><m>+C</m></q>)
+          of the function.
           Label each antiderivative by name (e.g., the antiderivative of <m>m</m> should be called <m>M</m>).
           In addition,
           check your work by computing the derivative of each proposed antiderivative.

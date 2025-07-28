@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-5-2-FTC2">
   <title>The Second Fundamental Theorem of Calculus</title>
   <objectives>
@@ -55,7 +56,7 @@
     <p>
       We have used this result in two settings:
 
-      <ol marker="1">
+      <ol marker="1.">
         <li>
           <p>
             If we have a graph of <m>f</m> and we can compute the exact area bounded by <m>f</m> 
@@ -82,9 +83,9 @@
       <m>F(x) = \frac{1}{3}x^3</m> is an antiderivative of <m>f(x) = x^2</m>.
       Thus,
       <md>
-        <mrow>\int_1^4 x^2 \, dx &amp;= \frac{1}{3}x^3 \bigg\vert_1^4</mrow>
-        <mrow>&amp;=  \frac{1}{3}(4)^3 - \frac{1}{3}(1)^3</mrow>
-        <mrow>&amp;=  21</mrow>
+        <mrow>\int_1^4 x^2 \, dx \amp= \frac{1}{3}x^3 \bigg\vert_1^4</mrow>
+        <mrow>\amp=  \frac{1}{3}(4)^3 - \frac{1}{3}(1)^3</mrow>
+        <mrow>\amp=  21</mrow>
       </md>.
     </p>
 
@@ -124,7 +125,7 @@
       we studied integral functions of the form <m>A(x) = \int_c^x f(t) \, dt</m>.
       <xref ref="F-5-1-IntFxn">Figure</xref>
       is a particularly important image to keep in mind as we work with integral functions,
-      and the corresponding <url href="https://gvsu.edu/s/cz" visual="gvsu.edu/s/cz">applet</url>
+      and the corresponding <url href="https://gvsu.edu/s/cz" visual="gvsu.edu/s/cz">interactive</url>
       can help us understand the function <m>A</m>.
       In what follows,
       we use the First FTC to gain additional understanding of the function <m>A(x) = \int_c^x f(t) \, dt</m>,
@@ -150,9 +151,9 @@
       if we let <m>f(t) = \cos(t) - t</m> and set <m>A(x) = \int_2^x f(t) \, dt</m>,
       we can determine a formula for <m>A</m> by the First FTC. Specifically,
       <md>
-        <mrow>A(x) &amp;=  \int_2^x (\cos(t) - t) \, dt</mrow>
-        <mrow>&amp;=  \sin(t) - \frac{1}{2}t^2 \bigg\vert_2^x</mrow>
-        <mrow>&amp;=  \sin(x) -  \frac{1}{2}x^2 - \left(\sin(2) - 2 \right)</mrow>
+        <mrow>A(x) \amp=  \int_2^x (\cos(t) - t) \, dt</mrow>
+        <mrow>\amp=  \sin(t) - \frac{1}{2}t^2 \bigg\vert_2^x</mrow>
+        <mrow>\amp=  \sin(x) -  \frac{1}{2}x^2 - \left(\sin(2) - 2 \right)</mrow>
       </md>.
     </p>
 
@@ -312,7 +313,7 @@
 
         <figure xml:id="F-5-2-erf">
           <caption>At left, the graph of <m>f(t) = e^{-t^2}</m>.  At right, the integral function <m>E(x) = \int_0^x e^{-t^2} \ dt</m>, which is the unique antiderivative of <m>f</m> that satisfies <m>E(0) = 0</m>.</caption>
-          <image width="100%" source="images/5_2_erf"/>
+          <image width="80%" source="images/5_2_erf"/>
         </figure>
 
         <p>
@@ -378,8 +379,8 @@
       <m>\frac{d}{dt} \left[ f(t) \right]</m> and apply the First FTC.
       We see that
       <md>
-        <mrow>\int_a^x \frac{d}{dt} \left[ f(t) \right] \, dt &amp;=  f(t) \bigg\vert_a^x</mrow>
-        <mrow>&amp;=  f(x) - f(a)</mrow>
+        <mrow>\int_a^x \frac{d}{dt} \left[ f(t) \right] \, dt \amp=  f(t) \bigg\vert_a^x</mrow>
+        <mrow>\amp=  f(x) - f(a)</mrow>
       </md>.
     </p>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-5-3-substitution">
   <title>Integration by Substitution</title>
   <objectives>
@@ -101,7 +102,8 @@
           </me>.
           Check the result by differentiating.
         </p>
-
+      </statement>
+      <solution>
         <p>
           For this composite function, the outer function <m>f</m> is <m>f(u) = u^6</m>,
           while the inner function is <m>u(x) = 5x - 3</m>.
@@ -123,7 +125,7 @@
           </me>,
           and thus <m>H</m> is indeed the general antiderivative of <m>h</m>.
         </p>
-      </statement>
+      </solution>
     </example>
 
     <p>
@@ -132,6 +134,7 @@
     </p>
 
     <assemblage>
+      <title>Antidifferentiating a composite function whose inner function is linear</title>
       <p>
         If <m>h(x) = f(ax + b)</m> and <m>F</m> is a known algebraic antiderivative of <m>f</m>,
         then the general antiderivative of <m>h</m> is given by
@@ -259,6 +262,7 @@
     </p>
 
     <assemblage>
+      <title><m>u</m>-substitution</title>
       <p>
         With the substitution <m>u = g(x)</m>,
         <me>

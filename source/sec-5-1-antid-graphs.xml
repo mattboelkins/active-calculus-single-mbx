@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-5-1-antid-graphs">
   <title>Constructing Accurate Graphs of Antiderivatives</title>
   <objectives>
@@ -48,8 +49,8 @@
       the graph of <m>y = f'(x)</m> was known
       (along with the value of <m>f</m> at a single point)
       and we endeavored to sketch a possible graph of <m>f</m> near the known point.
-      In <xref ref="Ex-f-from-f-prime">Example</xref>
-      <mdash/> we investigated how the first derivative test enables us to use information about <m>f'</m> to determine where the original function <m>f</m> is increasing and decreasing,
+      In <xref ref="Ex-f-from-f-prime">Example</xref>, we investigated how the first derivative test enables us 
+      to use information about <m>f'</m> to determine where the original function <m>f</m> is increasing and decreasing,
       as well as where <m>f</m> has relative extreme values.
       If we know a formula or graph of <m>f'</m>,
       by computing <m>f''</m> we can find where the original function <m>f</m> is concave up and concave down.
@@ -177,6 +178,10 @@
     </p>
 
     <assemblage>
+      <title>
+        Antiderivatives of the same function differ by a constant
+      </title>
+         
       <p>
         If <m>G</m> and <m>H</m> are both antiderivatives of a function <m>f</m> on an interval <m>(a,b)</m>,
         then the function <m>G - H</m> must be constant on the interval <m>(a,b)</m>.
@@ -294,7 +299,7 @@
     <p>
       The function <m>A</m> measures the net signed area from <m>t = 0</m> to <m>t = x</m> bounded by the curve <m>y = f(t)</m>;
       this value is then reported as the corresponding height on the graph of <m>y = A(x)</m>.
-      <url href="https://gvsu.edu/s/cz" visual="gvsu.edu/s/cz">This applet</url>,
+      <url href="https://gvsu.edu/s/cz" visual="gvsu.edu/s/cz">This interactive graphic</url>
       brings the static picture in <xref ref="F-5-1-IntFxn">Figure</xref> to life.
       There, the user can move the red point on the function <m>f</m> and see how the corresponding height changes at the light blue point on the graph of <m>A</m>.
     </p>

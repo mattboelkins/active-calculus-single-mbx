@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-5-1-1">
    
     <activity xml:id="act-5-1-1" workspace="3cm">
@@ -182,7 +183,7 @@
       <task workspace="3cm" xml:id="act-5-1-1-task-5">
         <statement>
           <p>
-            What happens if we change one key piece of information:
+            Suppose we change one key piece of information:
             in particular,
             say that <m>G</m> is an antiderivative of <m>f</m> and <m>G(0) = 0</m>.
             How (if at all) would your answers to the preceding questions change?
