@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-2-3" permid="ApM">
   <exercise label="csafranski__2.3HW_prob1.pg">
     <webwork source="csafranski/2.3HW_prob1.pg"/>
@@ -146,112 +147,14 @@
       </p>
     </solution>
   </exercise>
-  <exercise permid="CHC">
-    <statement>
-      <p permid="ZXP">
-        Consider the functions <m>r(t) = t^t</m> and <m>s(t) = \arccos(t)</m>,
-        for which you are given the facts that
-        <m>r'(t) = t^t(\ln(t) + 1)</m> and <m>s'(t) = -\frac{1}{\sqrt{1-t^2}}</m>.
-        Do not be concerned with where these derivative formulas come from.
-        We restrict our interest in both functions to the domain <m>0 \lt t \lt 1</m>.
 
-        <ol marker="a." permid="mtl">
-          <li permid="sSr">
-            <p permid="xgL">
-              Let <m>w(t) = t^t \arccos(t)</m>.
-              Determine <m>w'(t)</m>.
-            </p>
-          </li>
-          <li permid="YZA">
-            <p permid="dnU">
-              Find an equation for the tangent line to
-              <m>y = w(t)</m> at the point <m>(\frac{1}{2}, w(\frac{1}{2}))</m>.
-            </p>
-          </li>
-          <li permid="FgJ">
-            <p permid="Jvd">
-              Let <m>v(t) = \frac{t^t}{\arccos(t)}</m>.
-              Is <m>v</m> increasing or decreasing at the instant <m>t = \frac{1}{2}</m>?
-              Why?
-            </p>
-          </li>
-        </ol>
-      </p>
-    </statement>
-    <answer permid="TFN">
-      <p permid="IZE">
-        <ol marker="a." permid="BCj">
-          <li permid="lnS">
-            <p permid="pCm">
-              <m>
-              w'(t) = t^t\left(\ln t+1\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{-1}{\sqrt{1-t^2}}
-              </m>.
-            </p>
-          </li>
-          <li permid="Rvb">
-            <p permid="VJv">
-              <m>L(t) \approx 0.740-0.589(t-0.5)</m>.
-            </p>
-          </li>
-          <li permid="xCk">
-            <p permid="BQE">
-              Increasing.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </answer>
-    <solution permid="nyE">
-      <p permid="EpL">
-        <ol marker="a." permid="QLh">
-          <li permid="dJt">
-            <p permid="hXN">
-              Using the Product Rule and the information given,
-              <md permid="yAz">
-                <mrow>w'(t) &amp;= \frac{d}{dt}\left(t^t\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{d}{dt}\left(\arccos t\right)</mrow>
-                <mrow>&amp;= t^t\left(\ln t+1\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{-1}{\sqrt{1-t^2}}</mrow>
-              </md>
-            </p>
-          </li>
-          <li permid="JQC">
-            <p permid="OeW">
-              Using the local linearization formula,
-              we have <m>L(t) = w\left(\frac{1}{2}\right) + w'\left(\frac{1}{2}\right) \left(t-\frac{1}{2}\right)</m>.
-              Substituting <m>t=\frac{1}{2}</m> into the formulas for <m>w</m> and <m>w'</m> and using a computational device gives
-              <me permid="eHI">
-                w(2) = \left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\arccos\left(\frac{1}{2}\right) \approx 0.740
-              </me>
-              and
-              <me permid="KOR">
-                w'(2) = \left[\left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\left(\ln t+1\right)\cdot\left(\arccos \left(\frac{1}{2}\right)\right)+\left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\cdot\frac{-1}{\sqrt{1-\left(\frac{1}{2}\right)^2}}\right] \approx -0.589
-              </me>.
-              Thus, <m>L(t) \approx 0.740-0.589(t-0.5)</m>.
-            </p>
-          </li>
-          <li permid="pXL">
-            <p permid="umf">
-              Using the Quotient Rule,
-              <me permid="qWa">
-                v'(t) = frac{(t)^{t}\left(\ln(t)+1\right)\left(\arccos(t)\right)-(t)^{t}\cdot\left(\frac{-1}{\sqrt{1-(t)^2}}\right)}{\arccos^2(t)}
-              </me>.
-              Using a computational device to evaluate <m>v'(2)</m>,
-              it follows <m>v'(2) \approx 0.952</m>.
-              Since this number is positive,
-              the instantaneous rate of change of <m>v</m> at <m>t=\frac{1}{2}</m> is positive,
-              which means that <m>v</m> is increasing at that instant.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </solution>
-  </exercise>
   <exercise permid="iOL">
     <statement>
       <p permid="GeY">
         Let functions <m>p</m> and <m>q</m> be the piecewise linear functions given by their respective graphs in <xref ref="F-2-3-Ez3">Figure</xref>.
         Use the graphs to answer the following questions.
       </p>
-      <sidebyside widths="47% 47%" margins="0%" permid="NgH">
+      <sidebyside widths="47% 47%" margins="0%" valign="middle" permid="NgH">
         <p permid="hCo">
           <ol marker="a." permid="aeT">
             <li permid="WeU">
@@ -403,6 +306,107 @@
       </p>
     </solution>
   </exercise>
+
+  <exercise permid="CHC">
+    <statement>
+      <p permid="ZXP">
+        Consider the functions <m>r(t) = t^t</m> and <m>s(t) = \arccos(t)</m>,
+        for which you are given the facts that
+        <m>r'(t) = t^t(\ln(t) + 1)</m> and <m>s'(t) = -\frac{1}{\sqrt{1-t^2}}</m>.
+        Do not be concerned with where these derivative formulas come from.
+        We restrict our interest in both functions to the domain <m>0 \lt t \lt 1</m>.
+
+        <ol marker="a." permid="mtl">
+          <li permid="sSr">
+            <p permid="xgL">
+              Let <m>w(t) = t^t \arccos(t)</m>.
+              Determine <m>w'(t)</m>.
+            </p>
+          </li>
+          <li permid="YZA">
+            <p permid="dnU">
+              Find an equation for the tangent line to
+              <m>y = w(t)</m> at the point <m>(\frac{1}{2}, w(\frac{1}{2}))</m>.
+            </p>
+          </li>
+          <li permid="FgJ">
+            <p permid="Jvd">
+              Let <m>v(t) = \frac{t^t}{\arccos(t)}</m>.
+              Is <m>v</m> increasing or decreasing at the instant <m>t = \frac{1}{2}</m>?
+              Why?
+            </p>
+          </li>
+        </ol>
+      </p>
+    </statement>
+    <answer permid="TFN">
+      <p permid="IZE">
+        <ol marker="a." permid="BCj">
+          <li permid="lnS">
+            <p permid="pCm">
+              <m>
+              w'(t) = t^t\left(\ln t+1\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{-1}{\sqrt{1-t^2}}
+              </m>.
+            </p>
+          </li>
+          <li permid="Rvb">
+            <p permid="VJv">
+              <m>L(t) \approx 0.740-0.589(t-0.5)</m>.
+            </p>
+          </li>
+          <li permid="xCk">
+            <p permid="BQE">
+              Increasing.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </answer>
+    <solution permid="nyE">
+      <p permid="EpL">
+        <ol marker="a." permid="QLh">
+          <li permid="dJt">
+            <p permid="hXN">
+              Using the Product Rule and the information given,
+              <md permid="yAz">
+                <mrow>w'(t) &amp;= \frac{d}{dt}\left(t^t\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{d}{dt}\left(\arccos t\right)</mrow>
+                <mrow>&amp;= t^t\left(\ln t+1\right)\cdot\left(\arccos t\right)+t^t\cdot\frac{-1}{\sqrt{1-t^2}}</mrow>
+              </md>
+            </p>
+          </li>
+          <li permid="JQC">
+            <p permid="OeW">
+              Using the local linearization formula,
+              we have <m>L(t) = w\left(\frac{1}{2}\right) + w'\left(\frac{1}{2}\right) \left(t-\frac{1}{2}\right)</m>.
+              Substituting <m>t=\frac{1}{2}</m> into the formulas for <m>w</m> and <m>w'</m> and using a computational device gives
+              <me permid="eHI">
+                w(2) = \left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\arccos\left(\frac{1}{2}\right) \approx 0.740
+              </me>
+              and
+              <me permid="KOR">
+                w'(2) = \left[\left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\left(\ln t+1\right)\cdot\left(\arccos \left(\frac{1}{2}\right)\right)+\left(\frac{1}{2}\right)^{\left(\frac{1}{2}\right)}\cdot\frac{-1}{\sqrt{1-\left(\frac{1}{2}\right)^2}}\right] \approx -0.589
+              </me>.
+              Thus, <m>L(t) \approx 0.740-0.589(t-0.5)</m>.
+            </p>
+          </li>
+          <li permid="pXL">
+            <p permid="umf">
+              Using the Quotient Rule,
+              <me permid="qWa">
+                v'(t) = frac{(t)^{t}\left(\ln(t)+1\right)\left(\arccos(t)\right)-(t)^{t}\cdot\left(\frac{-1}{\sqrt{1-(t)^2}}\right)}{\arccos^2(t)}
+              </me>.
+              Using a computational device to evaluate <m>v'(2)</m>,
+              it follows <m>v'(2) \approx 0.952</m>.
+              Since this number is positive,
+              the instantaneous rate of change of <m>v</m> at <m>t=\frac{1}{2}</m> is positive,
+              which means that <m>v</m> is increasing at that instant.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+
   <exercise permid="OVU">
     <statement>
       <p permid="mmh">

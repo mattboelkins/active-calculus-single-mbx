@@ -204,11 +204,6 @@
       as seen in <xref ref="F-4-2-LeftSum">Figure</xref>.
     </p>
 
-    <figure xml:id="F-4-2-LeftSum">
-      <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.</caption>
-      <image width="73%" source="images/4_2_LeftSum"/>
-    </figure>
-
     <p>
       If we let <m>L_n</m> denote the sum of the areas of these rectangles,
       we see that
@@ -221,6 +216,11 @@
         L_n = \sum_{i = 0}^{n-1} f(x_i) \Delta x
       </me>.
     </p>
+
+    <figure xml:id="F-4-2-LeftSum">
+      <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.</caption>
+      <image width="65%" source="images/4_2_LeftSum"/>
+    </figure>
 
     <p>
       Note that since the index of summation begins at <m>0</m> and ends at <m>n-1</m>,

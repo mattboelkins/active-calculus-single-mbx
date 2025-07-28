@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-2-6" permid="YSJ">
   <exercise label="Library__Michigan__Chap3Sec6__Q51.pg">
     <webwork source="Library/Michigan/Chap3Sec6/Q51.pg"/>
@@ -37,6 +38,103 @@
     <webwork source="Library/Rochester/setDerivatives7Log/mec4.pg" />
   </exercise>
   -->
+
+  <exercise xml:id="ez-2-6-Ez4" permid="fyT">
+    <statement>
+      <p permid="qWn">
+        Consider the graph of <m>y = f(x)</m> provided in <xref ref="F-2-6-Ez4">Figure</xref>
+        and use it to answer the following questions.
+      </p>
+      <sidebyside widths="47% 47%" margins="0%" valign="middle" permid="JQP">
+        <p permid="yAM">
+          <ol marker="a." permid="Sfi">
+            <li permid="MpW">
+              <p permid="RJJ">
+                Use the provided graph to estimate the value of <m>f'(1)</m>.
+              </p>
+            </li>
+            <li permid="sxf">
+              <p permid="xQS">
+                Sketch an approximate graph of <m>y = f^{-1}(x)</m>.
+                Label at least three distinct points on the graph that correspond to three points on the graph of <m>f</m>.
+              </p>
+            </li>
+            <li permid="YEo">
+              <p permid="dYb">
+                Based on your work in (a),
+                what is the value of <m>(f^{-1})'(-1)</m>?
+                Why?
+              </p>
+            </li>
+          </ol>
+        </p>
+        <figure xml:id="F-2-6-Ez4" permid="eHV">
+          <caption>A function <m>y = f(x)</m>
+          </caption>
+          <image source="images/2_6_Ez4"/>
+        </figure>
+      </sidebyside>
+    </statement>
+    <answer permid="QpV">
+      <p permid="ZYc">
+        <ol marker="a." permid="ZJH">
+          <li permid="ELx">
+            <p permid="Kfk">
+              <m>f'(1) \approx 2</m>.
+            </p>
+          </li>
+          <li permid="kSG">
+            <sidebyside width="50%" permid="pXY">
+              <image source="images/2_6_Ez4Soln"/>
+            </sidebyside>
+          </li>
+          <li permid="QZP">
+            <p permid="qmt">
+              <m>(f^{-1})'(-1) \approx 1/2</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </answer>
+    <solution permid="kiM">
+      <p permid="Bvs">
+        <ol marker="a." permid="BgX">
+          <li permid="xgY">
+            <p permid="WtC">
+              By plotting the tangent line as shown in the figure below,
+              it appears that <m>f'(1) \approx 2</m>.
+            </p>
+          </li>
+          <li permid="doh">
+            <p permid="CAL">
+              One way to estimate the graph of
+              <m>y = f^{-1}(x)</m> is to plot several <m>(x,y)</m> points on the graph of
+              <m>y = f(x)</m> and then plot the corresponding points <m>(y,x)</m> with the coordinates reversed.
+              Doing so and recalling that the graph of
+              <m>y = f^{-1}(x)</m> is the reflection of the graph of
+              <m>y = f(x)</m> across the line <m>y = x</m>,
+              we see the following figure.
+            </p>
+            <sidebyside width="50%" permid="Wfh">
+              <image source="images/2_6_Ez4Soln"/>
+            </sidebyside>
+          </li>
+          <li permid="Jvq">
+            <p permid="iHU">
+              Because the original function passes through the point <m>(1,-1)</m>,
+              the inverse function passes through <m>(-1,1)</m>.
+              Moreover, since the tangent line to the original function at <m>(1,-1)</m> has slope <m>f'(1) \approx 2</m>,
+              and the tangent line to the inverse function at <m>(-1,1)</m> corresponds to the reflection of the original tangent line across the line <m>y=x</m>,
+              it follows that <m>(f^{-1})'(-1) \approx 1/2</m>.
+              This can also be deduced from the ``derivative of an inverse function'' rule,
+              whereby <m>(f^{-1})'(-1) = \frac{1}{f'(1)}</m>.
+            </p>
+          </li>
+        </ol>
+      </p>
+    </solution>
+  </exercise>
+
   <exercise permid="zrK">
     <statement>
       <p permid="KPe">
@@ -162,101 +260,7 @@
       </p>
     </solution>
   </exercise>
-  <exercise xml:id="ez-2-6-Ez4" permid="fyT">
-    <statement>
-      <p permid="qWn">
-        Consider the graph of <m>y = f(x)</m> provided in <xref ref="F-2-6-Ez4">Figure</xref>
-        and use it to answer the following questions.
-      </p>
-      <sidebyside widths="47% 47%" margins="0%" permid="JQP">
-        <p permid="yAM">
-          <ol marker="a." permid="Sfi">
-            <li permid="MpW">
-              <p permid="RJJ">
-                Use the provided graph to estimate the value of <m>f'(1)</m>.
-              </p>
-            </li>
-            <li permid="sxf">
-              <p permid="xQS">
-                Sketch an approximate graph of <m>y = f^{-1}(x)</m>.
-                Label at least three distinct points on the graph that correspond to three points on the graph of <m>f</m>.
-              </p>
-            </li>
-            <li permid="YEo">
-              <p permid="dYb">
-                Based on your work in (a),
-                what is the value of <m>(f^{-1})'(-1)</m>?
-                Why?
-              </p>
-            </li>
-          </ol>
-        </p>
-        <figure xml:id="F-2-6-Ez4" permid="eHV">
-          <caption>A function <m>y = f(x)</m>
-          </caption>
-          <image source="images/2_6_Ez4"/>
-        </figure>
-      </sidebyside>
-    </statement>
-    <answer permid="QpV">
-      <p permid="ZYc">
-        <ol marker="a." permid="ZJH">
-          <li permid="ELx">
-            <p permid="Kfk">
-              <m>f'(1) \approx 2</m>.
-            </p>
-          </li>
-          <li permid="kSG">
-            <sidebyside width="50%" permid="pXY">
-              <image source="images/2_6_Ez4Soln"/>
-            </sidebyside>
-          </li>
-          <li permid="QZP">
-            <p permid="qmt">
-              <m>(f^{-1})'(-1) \approx 1/2</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </answer>
-    <solution permid="kiM">
-      <p permid="Bvs">
-        <ol marker="a." permid="BgX">
-          <li permid="xgY">
-            <p permid="WtC">
-              By plotting the tangent line as shown in the figure below,
-              it appears that <m>f'(1) \approx 2</m>.
-            </p>
-          </li>
-          <li permid="doh">
-            <p permid="CAL">
-              One way to estimate the graph of
-              <m>y = f^{-1}(x)</m> is to plot several <m>(x,y)</m> points on the graph of
-              <m>y = f(x)</m> and then plot the corresponding points <m>(y,x)</m> with the coordinates reversed.
-              Doing so and recalling that the graph of
-              <m>y = f^{-1}(x)</m> is the reflection of the graph of
-              <m>y = f(x)</m> across the line <m>y = x</m>,
-              we see the following figure.
-            </p>
-            <sidebyside width="50%" permid="Wfh">
-              <image source="images/2_6_Ez4Soln"/>
-            </sidebyside>
-          </li>
-          <li permid="Jvq">
-            <p permid="iHU">
-              Because the original function passes through the point <m>(1,-1)</m>,
-              the inverse function passes through <m>(-1,1)</m>.
-              Moreover, since the tangent line to the original function at <m>(1,-1)</m> has slope <m>f'(1) \approx 2</m>,
-              and the tangent line to the inverse function at <m>(-1,1)</m> corresponds to the reflection of the original tangent line across the line <m>y=x</m>,
-              it follows that <m>(f^{-1})'(-1) \approx 1/2</m>.
-              This can also be deduced from the ``derivative of an inverse function'' rule,
-              whereby <m>(f^{-1})'(-1) = \frac{1}{f'(1)}</m>.
-            </p>
-          </li>
-        </ol>
-      </p>
-    </solution>
-  </exercise>
+
   <exercise permid="LGc">
     <statement>
       <p permid="Xdw">

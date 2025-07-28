@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <exercises xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="ez-2-8" permid="qtK">
   <exercise label="Library__Michigan__Chap4Sec7__Q07.pg">
     <webwork source="Library/Michigan/Chap4Sec7/Q07.pg"/>
@@ -22,6 +23,14 @@
   <exercise label="Library__UMN__calculusStewartCCC__s_4_5_28.pg">
     <webwork source="Library/UMN/calculusStewartCCC/s_4_5_28.pg"/>
   </exercise>
+
+  <exercise label="Library__Michigan__Chap4Sec7__Q15.pg">
+    <webwork source="Library/Michigan/Chap4Sec7/Q15.pg"/>
+  </exercise>
+  <exercise label="Library__Michigan__Chap4Sec7__Q01.pg">
+    <webwork source="Library/Michigan/Chap4Sec7/Q01.pg"/>
+  </exercise>  
+
   <exercise label="Library__UMN__calculusStewartCCC__s_4_5_14.pg">
     <webwork source="Library/UMN/calculusStewartCCC/s_4_5_14.pg"/>
   </exercise>
@@ -37,12 +46,7 @@
   <exercise label="Library__ma122DB__set2__s2_6_21.pg">
     <webwork source="Library/ma122DB/set2/s2_6_21.pg"/>
   </exercise>
-  <exercise label="Library__Michigan__Chap4Sec7__Q15.pg">
-    <webwork source="Library/Michigan/Chap4Sec7/Q15.pg"/>
-  </exercise>
-  <exercise label="Library__Michigan__Chap4Sec7__Q01.pg">
-    <webwork source="Library/Michigan/Chap4Sec7/Q01.pg"/>
-  </exercise>
+
   <!-- Uses EV2 so not compatible with PTX -->
   <!--
   <exercise label="Library__Rochester__setDerivatives21LHospital__sc4_5_3" xml:id="ez-2-8-WW4">

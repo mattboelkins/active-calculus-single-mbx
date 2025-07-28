@@ -283,6 +283,10 @@
       In <xref ref="sec-1-4-derivative-fxn">Section</xref>, we learned how use to the graph of a given function <m>f</m> to plot the graph of its derivative, <m>f'</m>.
       It is important to remember that when we do so, the scale (often) and the units (always) on the vertical axis have to change to represent <m>f'</m>. For example, suppose that <m>P(t) = 212-148e^{-0.05t}</m> tells us the temperature in degrees Fahrenheit of a potato in an oven at time <m>t</m> in minutes. In <xref ref="Fig-1-5a-P">Figure</xref>,
       we sketch the graph of <m>P</m>, and in <xref ref="Fig-1-5a-PPrime">Figure</xref> the graph of <m>P'</m>.
+      Notice that the vertical scales are different in size
+      and different in units,
+      as the units of <m>P</m> are
+      <degree />F, while those of <m>P'</m> are <degree />F/min.
     </p>
 
 <!-- original image 
@@ -352,13 +356,6 @@
 
 <!-- sample prefigure image from preview -->
  
-
-    <p>
-      Notice that the vertical scales are different in size
-      and different in units,
-      as the units of <m>P</m> are
-      <degree />F, while those of <m>P'</m> are <degree />F/min.
-    </p>
 
     <xi:include href="./activities/act-1-5-3.xml" />
 

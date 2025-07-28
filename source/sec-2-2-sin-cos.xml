@@ -87,6 +87,11 @@
       <m>\cos(x - \frac{\pi}{2}) = \sin(x)</m>,
       but that they are even further linked through calculus,
       as the derivative of each involves the other.
+      We have now added the sine and cosine functions to our library of basic functions whose derivatives we know.
+      The constant multiple and sum rules still hold, of course,
+      as well as all of the inherent meaning of the derivative.
+    </p>
+    <p>
       The following rules summarize the results of the activities<fn>
       These two rules may be formally proved using the limit definition of the derivative and the expansion identities for
       <m>\sin(x+h)</m> and <m>\cos(x+h)</m>.
@@ -105,11 +110,7 @@
       </p>
     </assemblage>
 
-    <p>
-      We have now added the sine and cosine functions to our library of basic functions whose derivatives we know.
-      The constant multiple and sum rules still hold, of course,
-      as well as all of the inherent meaning of the derivative.
-    </p>
+
 
     <xi:include href="./activities/act-2-2-3.xml"/>
   </subsection>

@@ -269,7 +269,7 @@
       <q><m>-100</m> is more negative than <m>-2</m>.</q>
       When a function's values are negative,
       and those values get more negative as the input increases,
-      the function must be decreasing.  The situation gets a bit more complicated when we think about the slope of the tangent line to a decreasing function changes as we move from left to right.
+      the function must be decreasing.  The situation gets a bit more complicated when we think about how the slope of the tangent line to a decreasing function changes as we move from left to right.
     </p>
 
     <figure xml:id="F-1-6-3optsd">
@@ -279,8 +279,8 @@
 
     <p>
       The three graphs shown in <xref ref="F-1-6-3optsd">Figure</xref> show three possibilities for how a function can decrease in a consistent way.  The middle graph depicts a function decreasing at a constant rate.
-      If we imagine a sequence of tangent lines on leftmost graph, the slopes of the tangent lines get less and less negative as we move from left to right. That means that the values of the first derivative,
-      while all negative, are increasing.  But it is awkward to say the leftmost function is <q>decreasing at an increasing rate</q> since that sounds like the function is decreasing more and more quickly, when in fact, the absolute value of the rate of decrease is getting smaller.  The rightmost curve in <xref ref="F-1-6-3optsd">Figure</xref> presents a similar challenge.  
+      If we imagine a sequence of tangent lines on the leftmost graph, the slopes of the tangent lines get less and less negative as we move from left to right. 
+      That means that the values of the first derivative of the leftmost function, while all negative, are increasing.  In the rightmost curve in <xref ref="F-1-6-3optsd">Figure</xref>, observe that as <m>x</m> increases, the function value decreases, and the slopes of the tangent lines decrease (because they become more and more negative). That means that the values of the first derivative of the rightmost function are all negative and decreasing.
     </p>
 
 <!--
@@ -297,7 +297,7 @@
 -->
 
     <p>
-      It turns out that calculus provides a better way to describe these possible behaviors through the language of <em>concavity</em>.
+      In calculus, we describe these possible behaviors through the language of <em>concavity</em>.
           <idx><h>concavity</h></idx>
       When a curve opens upward on a given interval,
       such as the parabola <m>y = x^2</m> or the natural exponential function <m>y = e^x</m>,
