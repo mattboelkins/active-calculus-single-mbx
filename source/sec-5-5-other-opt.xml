@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-5-5-other-opt">
   <title>Other Options for Finding Algebraic Antiderivatives</title>
   <objectives>
@@ -120,11 +121,21 @@
         </p>
 
         <p>
-          This integral is straightforward to evaluate,
+          Recalling the fact that <m>\ln(|u|)</m> is an antiderivative of <m>f(u) = \frac{1}{u}</m> for all <m>u \ne 0</m>, this integral is straightforward to evaluate,
           and hence we find that
           <me>
             \int \frac{5x}{x^2-x-2} \, dx = \frac{10}{3} \ln|x-2| + \frac{5}{3}\ln|x+1| + C
           </me>.
+        </p>
+
+        <p>
+          <alert>Note</alert>: as we discussed briefly in <xref ref="sec-4-4-FTC">Section</xref> immediately following the development of <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2"/>, there is a subtle issue with writing 
+          <me>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </me>
+          due to the fact that <m>\frac{1}{u}</m> has a discontinuity at <m>u = 0</m>, which leads to an antiderivative for one piece of the function and another antiderivative for the other.  In most applications (such as when we use partial fractions to solve certain differential equations such as the Logistic Equation in <xref ref="sec-7-6-logistic">Section</xref>), the domain of input values on which we seek the antiderivative leads to a natural resolution of this ambiguity, so we will still write <m>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </m>.
         </p>
       </solution>
     </example>
@@ -180,6 +191,7 @@
     </p>
 
     <xi:include href="./activities/act-5-5-1.xml"/>
+
   </subsection>
 
   <subsection>

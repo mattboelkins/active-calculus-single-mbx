@@ -372,6 +372,25 @@
     </p>
 
     <xi:include href="./activities/act-4-4-2.xml"/>
+
+    <p>
+      The list of antiderivatives that we developed in <xref ref="T-4-4-Act2">Table</xref> is important to know by heart, as anytime we want to evaluate a definite integral using the FTC, we need to find antiderivatives.
+    </p>
+
+    <p>
+      There are some subtle issues that arise with some of the functions in <xref ref="T-4-4-Act2">Table</xref> due to them having one or more <m>x</m>-values at which they are not defined.  To understand the situation better, we focus on the function <m>f(x) = \frac{1}{x}</m> and its antiderivative, <m>F(x) = \ln(x)</m>.  In the table, we specified that this relationship holds for <m>x \gt 0</m>.  We can also observe that if <m>x \lt 0</m> and <m>G(x) = \ln(-x)</m>, then <me>
+        G'(x) = \frac{1}{-x} \cdot (-1) = \frac{1}{x}
+      </me>
+      so <m>G(x) = \ln(-x)</m> is an antiderivative of <m>\frac{1}{x}</m> when <m>x \lt 0</m>.  Since <m>|x|=x</m> when <m>x \gt 0</m> and <m>|x|=-x</m> when <m>x \lt 0</m>, we can say that <m>F(x) = \ln(|x|)</m> is an antiderivative of <m>f(x) = \frac{1}{x}</m> for all <m>x \ne 0</m>.  This situation is explored in more detail in <xref ref="Ez-4-4-antid-of-1-over-x">Exercise</xref>.
+    </p>
+
+    <p>
+      Since <m>F(x) = \ln(|x|)</m> is an antiderivative of <m>f(x) = \frac{1}{x}</m> for all <m>x \ne 0</m>, it seems natural to write that the general antiderivative of <m>f(x) = \frac{1}{x}</m> is <m>F(x) = \ln(|x|) + C</m>.  But doing so is technically incorrect.  This is due to the discontinuity of <m>f(x) = \frac{1}{x}</m> at <m>x = 0</m> and the fact that there's one antiderivative, <m>\ln(-x) + C_1</m>, for <m>x \lt 0</m>, and a second, <m>\ln(x) + C_2</m>, for <m>x \gt 0</m>.  While we will still sometimes write <q><m>F(x) = \ln(|x|) + C</m></q> as the general antiderivative, we should be especially careful when the value <m>x = 0</m>, where <m>\frac{1}{x}</m> is undefined, is included in the interval of values in which we are interested.  
+    </p>
+    <p>  
+      This situation arises for any function that has a discontinuity (e.g., <m>\frac{1}{x^2}</m>, <m>\tan(x)</m>); some of these issues will be considered further when we study improper integrals in <xref ref="sec-6-5-improper">Section</xref>.
+    </p>
+
   </subsection>
 
   <subsection>

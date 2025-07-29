@@ -838,7 +838,7 @@
   <exercise xml:id="Ez-4-4-antid-of-1-over-x" permid="LVI">
     <statement>
       <p permid="uBY">
-        In <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2">Activity</xref>, we noted that for <m>x \gt 0</m>, the antiderivative of <m>f(x) = \frac{1}{x}</m> is <m>F(x) = \ln(x)</m>.  Here we observe that a key difference between <m>f(x)</m> and <m>F(x)</m> is that <m>f</m> is defined for all <m>x \ne 0</m>, while <m>F</m> is only defined for <m>x \gt 0</m>, and see how we can actually define the antiderivative of <m>f</m> for all values of <m>x</m>.
+        In <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2">Activity</xref>, we noted that for <m>x \gt 0</m>, the antiderivative of <m>f(x) = \frac{1}{x}</m> is <m>F(x) = \ln(x)</m>.  Here we observe that a key difference between <m>f(x)</m> and <m>F(x)</m> is that <m>f</m> is defined for all <m>x \ne 0</m>, while <m>F</m> is only defined for <m>x \gt 0</m>, and see how we can actually define an antiderivative of <m>f</m> for all values of <m>x</m>.
       </p>
       <p permid="aJh">
         <ol marker="a." permid="pil">
@@ -867,7 +867,7 @@
           </li>
           <li permid="NKV">
             <p permid="jsZ">
-              Now discuss why we say that the antiderivative of <m>\frac{1}{x}</m> is <m>\ln(|x|)</m> for all <m>x \ne 0</m>.
+              Now discuss why we say that an antiderivative of <m>\frac{1}{x}</m> is <m>\ln(|x|)</m> for all <m>x \ne 0</m>.
             </p>
           </li>
         </ol>
@@ -919,7 +919,7 @@
           </li>
           <li permid="KQp">
             <p permid="gyt">
-              By considering the cases of <m>x \lt 0</m> and <m>x \gt 0</m>, we see that for <m>x \lt 0</m>, <m>H'(x) = G'(x) = \frac{1}{x}</m> and for <m>x \gt 0</m>, <m>H'(x) = F'(x) = \frac{1}{x}</m> for all <m>x \ne 0</m>, the derivative of <m>H(x) = \ln(|x|)</m> is <m>\frac{1}{x}</m>, which makes <m>\ln(|x|)</m> the antiderivative of <m>\frac{1}{x}</m>.
+              By considering the cases of <m>x \lt 0</m> and <m>x \gt 0</m>, we see that for <m>x \lt 0</m>, <m>H'(x) = G'(x) = \frac{1}{x}</m> and for <m>x \gt 0</m>, <m>H'(x) = F'(x) = \frac{1}{x}</m> for all <m>x \ne 0</m>, the derivative of <m>H(x) = \ln(|x|)</m> is <m>\frac{1}{x}</m>, which makes <m>\ln(|x|)</m> an antiderivative of <m>\frac{1}{x}</m>.
             </p>
           </li>
         </ol>

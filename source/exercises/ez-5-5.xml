@@ -22,7 +22,7 @@
 
   <exercise label="Library__Michigan__Chap7Sec4__Q33" xml:id="ez-5-5-WW2" permid="LOG">
   <!--  <title>Partial fractions: constant over product</title> -->
-    <webwork source="Library/Michigan/Chap7Sec4/Q33.pg"/>
+    <webwork source="csafranski/5.5HW_prob2.pg"/>
   </exercise>
 
   <exercise label="Library__Michigan__Chap7Sec4__Q39" xml:id="ez-5-5-WW3" permid="rVP">

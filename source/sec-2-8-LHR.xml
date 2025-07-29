@@ -407,7 +407,7 @@
       is also indeterminate with form <m>\frac{\infty}{\infty}</m>.
       With the presence of <m>e^x</m>, there is not an algebraic approach that enables us to find the limit's value.
       Fortunately,
-      it turns out that L'Hôpital's Rule can be extended to cases involving infinity.
+      it turns out that L'Hôpital's Rule can be extended<fn>The mathematical argument for why this is possible is beyond the scope of this text.  One reason to think that an infinite version of L'Hôpital's Rule is plausible is that if we have <m>\frac{f(x)}{g(x)} \to \frac{\infty}{\infty}</m>, it's equivalent to consider <m>\frac{1/g(x)}{1/f(x)}</m> which has the indeterminate form <m>\frac{0}{0}</m>.</fn> to cases involving infinity.
     </p>
 
     <assemblage>

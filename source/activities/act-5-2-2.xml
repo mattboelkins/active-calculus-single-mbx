@@ -18,39 +18,22 @@
     <activity xml:id="act-5-2-2" workspace="3cm">
       <introduction>
         <p>
-      Suppose that <m>f(t) = \frac{t}{1+t^2}</m> and <m>F(x) = \int_0^x f(t) \, dt</m>.
-    </p>
-        <p/>
+          Suppose that <m>f(t) = \frac{t}{1+t^2}</m>. 
+        </p>
+        <p>
+          Note that while we know a function whose derivative is <m>\frac{1}{1+t^2}</m>, namely <m>\arctan(t)</m>,
+          we haven't yet encountered an elementary function whose derivative is <m>f(t) = \frac{t}{1+t^2}</m>.
+        </p>        
+        <p>
+          Let <m>F(x) = \int_0^x f(t) \, dt</m>.  We will explore <m>F(x)</m> from numerical, graphical, and algebraic perspectives.  
+        </p>
+        <!-- <p/>
         <figure xml:id="F-5-2-Act2">
           <caption>Axes for plotting <m>f</m> and <m>F</m>.</caption>
           <image width="80%" source="images/5_2_Act2"/>
-        </figure>
+        </figure> -->
       </introduction>
-      <task workspace="1cm" xml:id="act-5-2-2-task-0">
-        <statement>
-          <p>
-            On the axes at left in <xref ref="F-5-2-Act2">Figure</xref>,
-            plot a graph of <m>f(t) = \frac{t}{1+t^2}</m> on the interval <m>-10 \le t \le 10</m>.
-            Clearly label the vertical axes with appropriate scale.
-          </p>
-        </statement>
-        <hint>
-          <p>
-            Use computing technology appropriately to generate the desired graph.
-          </p>
-        </hint>
-        <answer>
-          <p>
-            See the plot at below left.
-          </p>
-        </answer>
-        <solution>
-          <p>
-            See the plot at below left.
-          </p>
-        </solution>
-      </task>
-      <task workspace="3cm" xml:id="act-5-2-2-task-1">
+      <task workspace="2cm" xml:id="act-5-2-2-task-0">
         <statement>
           <p>
             What is the key relationship between <m>F</m> and <m>f</m>,
@@ -59,7 +42,7 @@
         </statement>
         <hint>
           <p>
-            Again, recall the statement of the Second FTC.
+            Recall the statement of the Second FTC.
           </p>
         </hint>
         <answer>
@@ -71,10 +54,11 @@
           </p>
         </solution>
       </task>
-      <task workspace="5cm" xml:id="act-5-2-2-task-2">
+      <!-- I don't want to ask them to plot f(t) because I want them to do the next parts algebraically. -->
+      <task workspace="4cm" xml:id="act-5-2-2-task-1">
         <statement>
           <p>
-            Use the first derivative test to determine the intervals on which <m>F</m> is increasing and decreasing.
+            Analyze the first derivative of <m>F</m> algebraically to determine the intervals on which <m>F</m> is increasing and decreasing.
           </p>
         </statement>
         <hint>
@@ -92,10 +76,10 @@
             Similarly, <m>F</m> is decreasing for <m>x \lt 0</m></p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-5-2-2-task-3">
+      <task workspace="4cm" xml:id="act-5-2-2-task-2">
         <statement>
           <p>
-            Use the second derivative test to determine the intervals on which <m>F</m> is concave up and concave down.
+            Analyze the second derivative of <m>F</m> algebraically to determine the intervals on which <m>F</m> is concave up and concave down.
             Note that <m>f'(t)</m> can be simplified to be written in the form <m>f'(t) = \frac{1-t^2}{(1+t^2)^2}</m>.
           </p>
         </statement>
@@ -117,12 +101,39 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-5-2-2-task-4">
+      <task workspace="2cm" xml:id="act-5-2-2-task-3">
         <statement>
           <p>
-            Using technology appropriately,
-            estimate the values of <m>F(5)</m> and <m>F(10)</m> through appropriate Riemann sums.
+            Use a Riemann sum calculator with midpoints and 10 subintervals to calculate approximate values of <m>F(x)</m> 
+            in the table shown below.
           </p>
+          <p>
+            Note that <m>F(0)=\int_0^0 f(t) \, dt = 0</m>.
+          </p>
+          <tabular top="minor" left="minor" halign="center">
+            <col right="medium"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <row header="yes" bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>-10</m></cell>
+              <cell><m>-5</m></cell>
+              <cell><m>0</m></cell>
+              <cell><m>5</m></cell>
+              <cell><m>10</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>F(x)</m></cell>
+              <cell><fillin characters="10" /></cell>
+              <cell><fillin characters="10" /></cell>
+              <cell>0</cell>
+              <cell><fillin characters="10" /></cell>
+              <cell><fillin characters="10" /></cell>
+            </row>
+          </tabular>
         </statement>
         <hint>
           <p>
@@ -130,40 +141,137 @@
           </p>
         </hint>
         <answer>
-          <p><m>F(5) \approx 1.64038</m>;
-            <m>F(10) \approx 2.35973</m>.
-          </p>
+          <tabular top="minor" left="minor" halign="center">
+            <col right="medium"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <col right="minor"/>
+            <row header="yes" bottom="medium">
+              <cell><m>x</m></cell>
+              <cell><m>-10</m></cell>
+              <cell><m>-5</m></cell>
+              <cell><m>0</m></cell>
+              <cell><m>5</m></cell>
+              <cell><m>10</m></cell>
+            </row>
+            <row bottom="minor">
+              <cell><m>F(x)</m></cell>
+              <cell>2.35973 </cell>
+              <cell>1.64038 </cell>
+              <cell>0</cell>
+              <cell>1.64038</cell>
+              <cell>2.35973</cell>
+            </row>
+          </tabular>
         </answer>
         <solution>
           <p><m>F(5) = \int_0^5 \frac{t}{1+t^2} \, dt \approx 1.64038</m>,
             using a midpoint Riemann sum with 10 subintervals.
             Similarly,
-            <m>F(10) = \int_0^{10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>.
+            <m>F(10) = \int_0^{10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>, and 
+            <m>F(-5) = \int_0^{-5} \frac{t}{1+t^2} \, dt \approx 1.64038</m>, and finally
+            <m>F(-10) = \int_0^{-10} \frac{t}{1+t^2} \, dt \approx 2.35973</m>
           </p>
+        </solution>
+      </task>
+      <task workspace="0cm" xml:id="act-5-2-2-task-4">
+        <statement>
+          <p>
+            Use your work above to sketch an accurate graph of
+            <m>y = F(x)</m> on the axes provided.
+          </p>
+
+            <image width="50%">
+              <shortdescription>Axes for plotting the graph of F </shortdescription>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-act-5-2-Act2">
+                <diagram dimensions="(300,250)" margins="5">
+                  <!-- <definition>f(x)=1/2*ln(1+x^2)</definition> -->
+                  <coordinates bbox="(-11,-5.5,11,5.5)">
+                    <grid-axes xlabel="x" ylabel="y" hticks="(-10,5,10)" hlabels="(-10,5,10)"
+                    vlabels="(-4,2,4)" 
+                    tick-size="(2,2)" spacings="((-10,2,10),(-5,1,5))" bounding-box="no"
+                    />
+                    <!-- <graph function="f"/> -->
+                  </coordinates>
+                </diagram>
+              </prefigure>       
+            </image>
+
+        </statement>
+        <hint>
+          <p>
+            Use the table of values along with the intervals where <m>F</m> is increasing, decreasing,
+            concave up and concave down.
+          </p>
+        </hint>
+        <answer>
+
+            <image width="50%">
+              <shortdescription>Axes for plotting the graph of F </shortdescription>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-act-5-2-Act2ans">
+                <diagram dimensions="(300,250)" margins="5">
+                  <definition>f(x)=1/2*log(1+x^2)</definition>
+                  <coordinates bbox="(-11,-5.5,11,5.5)">
+                    <grid-axes xlabel="x" ylabel="y" hticks="(-10,5,10)" hlabels="(-10,5,10)"
+                    vlabels="(-4,2,4)" 
+                    tick-size="(2,2)" spacings="((-10,2,10),(-5,1,5))" bounding-box="no"
+                    />
+                    <graph function="f"/>
+                  </coordinates>
+                </diagram>
+              </prefigure>       
+            </image>
+
+        </answer>
+        <solution>
+          <p>
+            Using the values and information we've found in (b)-(d),
+            we arrive at the following figure.
+          </p>
+
+            <image width="50%">
+              <shortdescription>Axes for plotting the graph of F </shortdescription>
+              <prefigure xmlns="https://prefigure.org" label="prefigure-act-5-2-Act2sol">
+                <diagram dimensions="(300,250)" margins="5">
+                  <definition>f(x)=1/2*log(1+x^2)</definition>
+                  <coordinates bbox="(-11,-5.5,11,5.5)">
+                    <grid-axes xlabel="x" ylabel="y" hticks="(-10,5,10)" hlabels="(-10,5,10)"
+                    vlabels="(-4,2,4)" 
+                    tick-size="(2,2)" spacings="((-10,2,10),(-5,1,5))" bounding-box="no"
+                    />
+                    <graph function="f"/>
+                  </coordinates>
+                </diagram>
+              </prefigure>       
+            </image>          
+
         </solution>
       </task>
       <task workspace="3cm" xml:id="act-5-2-2-task-5">
         <statement>
           <p>
-            Sketch an accurate graph of
-            <m>y = F(x)</m> on the righthand axes provided,
-            and clearly label the vertical axes with appropriate scale.
+            Now consider the function <m>g(x)=\frac{1}{2}\ln(1+x^2)</m>.  Calculate <m>g(0)</m> and 
+            <m>g'(x)</m>.  Use appropriate computing technology to plot the graph of <m>g(x)</m>. 
+            What can you conclude about the functions <m>F(x)</m> and <m>g(x)</m>?
           </p>
         </statement>
         <hint>
           <p>
-            Don't forget that <m>F(0) = 0</m>.
+            Use the chain rule to calculate <m>g'(x)</m>, and note that <m>g(0)=\frac{1}{2}\ln(1+0^2)=\frac{1}{2}\ln(1)=0</m>.
           </p>
         </hint>
         <answer>
           <p>
-            See the graph at below right.
+            <m>g'(x)=\frac{x}{1+x^2}</m> and <m>g(0)=0</m>.  <m>F=g</m> 
           </p>
         </answer>
         <solution>
           <p>
-            Recalling that <m>F(0) = 0</m> and using the values and information we've found in (b)-(e),
-            we arrive at the graph at below right.
+            The function <m>g(x)</m> has derivative <m>g'(x)=\frac{x}{1+x^2}</m> and <m>g(0)=0</m>. 
+            As further confirmed by graphing <m>g(x)</m> and <m>F(x)</m> together, the functions <m>g</m>
+            and <m>F</m> are the same function, described in different ways.  
           </p>
         </solution>
       </task>
