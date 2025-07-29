@@ -21,7 +21,7 @@
           Evaluate each of the following indefinite integrals, using the provided hints.
         </p>
       </introduction>
-      <task workspace="6cm" xml:id="act-5-4-2-task-0">
+      <task workspace="5cm" xml:id="act-5-4-2-task-0">
         <statement>
           <p>
             Evaluate <m>\int \arctan(x) \, dx</m> by using integration by parts with the substitution

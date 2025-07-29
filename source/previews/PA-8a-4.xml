@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-PA-8a-4">
   <exploration xml:id="PA-8a-4" component="static">
     <introduction>
@@ -36,7 +37,7 @@
     <task workspace="3cm" xml:id="PA-8a-4-task-1">
       <statement>
         <p>
-          Use <xref ref="eq-8a-3-infinite-geometric-sum">Equation</xref> to find a single fraction that represents the value of <m>T(x)</m>.  For which values of <m>x</m> is this representation valid?
+          Recall that the sum of an infinite geometric series with first term <m>a</m> and constant ratio <m>r</m> is <m>S = \frac{1}{1-r}</m>, provided <m>|r| \lt 1</m>.  Use this result to find a single fraction that represents the value of <m>T(x)</m>.  For which values of <m>x</m> is this representation valid?
         </p>
       </statement>
       <hint/>

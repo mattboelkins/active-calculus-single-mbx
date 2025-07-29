@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-6-5-1">
    
     <activity xml:id="act-6-5-1" workspace="3cm">
@@ -105,7 +106,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="6cm" xml:id="act-6-5-1-task-1">
+      <task workspace="5cm" xml:id="act-6-5-1-task-1">
         <statement>
           <p>
             Next, we investigate <m>\int_1^{\infty} \frac{1}{x^{3/2}} \, dx</m>.

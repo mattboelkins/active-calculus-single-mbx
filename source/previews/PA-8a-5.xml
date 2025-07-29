@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2022                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,16 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-PA-8a-5">
   <exploration xml:id="PA-8a-5" component="static">
     <introduction>
       <p>
-    Let 
-    <me>
-      g(x) = \frac{1}{1+x^2}
-    </me>.
-  </p>
-      <p/>
+          Let 
+          <me>
+            g(x) = \frac{1}{1+x^2}
+          </me>.
+      </p>
     </introduction>
     <task workspace="3cm" xml:id="PA-8a-5-task-0">
       <statement>

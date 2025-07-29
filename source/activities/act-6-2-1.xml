@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,20 +12,20 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-6-2-1">
    
     <activity xml:id="act-6-2-1" workspace="9cm">
       <introduction>
         <p>
-      In each of the following questions,
-      draw a careful, labeled sketch of the region described,
-      as well as the resulting solid that results from revolving the region about the stated axis.
-      In addition,
-      draw a representative slice and state the volume of that slice,
-      along with a definite integral whose value is the volume of the entire solid.
-      It is not necessary to evaluate the integrals you find.
-
-      </p>
+          In each of the following questions,
+          draw a careful, labeled sketch of the region described,
+          as well as the resulting solid that results from revolving the region about the stated axis.
+          In addition,
+          draw a representative slice and state the volume of that slice,
+          along with a definite integral whose value is the volume of the entire solid.
+          It is not necessary to evaluate the integrals you find.
+        </p>
       </introduction>
       <task workspace="9cm" xml:id="act-6-2-1-task-0">
         <statement>
@@ -61,7 +61,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="10cm" xml:id="act-6-2-1-task-1">
+      <task workspace="9.5cm" xml:id="act-6-2-1-task-1">
         <statement>
           <p>
             The region <m>S</m> bounded by the <m>y</m>-axis,

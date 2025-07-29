@@ -18,15 +18,15 @@
     <exploration xml:id="PA-5-3">
       <introduction>
         <p>
-    In Section 2.5,
-    we learned the Chain Rule and how it can be applied to find the derivative of a composite function.
-    In particular,
-    if <m>u</m> is a differentiable function of <m>x</m>,
-    and <m>f</m> is a differentiable function of <m>u(x)</m>, then
-    <me>
-      \frac{d}{dx} \left[ f(u(x))  \right] = f'(u(x)) \cdot u'(x)
-    </me>.
-  </p>
+          In Section 2.5,
+          we learned the Chain Rule and how it can be applied to find the derivative of a composite function.
+          In particular,
+          if <m>u</m> is a differentiable function of <m>x</m>,
+          and <m>f</m> is a differentiable function of <m>u(x)</m>, then
+          <me>
+            \frac{d}{dx} \left[ f(u(x))  \right] = f'(u(x)) \cdot u'(x)
+          </me>.
+        </p>
         <p>
     In words, we say that the derivative of a composite function <m>c(x) = f(u(x))</m>,
     where <m>f</m> is considered the <q>outer</q>
@@ -36,7 +36,7 @@
     times the derivative of the inner function.</q></p>
         <p/>
       </introduction>
-      <task workspace="5cm" xml:id="PA-5-3-task-0">
+      <task workspace="4cm" xml:id="PA-5-3-task-0">
         <statement>
           <p>
           For each of the following functions,
@@ -93,7 +93,7 @@
         <answer/>
         <solution/>
       </task>
-      <task workspace="6cm" xml:id="PA-5-3-task-2">
+      <task workspace="10cm" xml:id="PA-5-3-task-2">
         <statement>
           <p>
           Based on your experience in parts (a) and (b),
