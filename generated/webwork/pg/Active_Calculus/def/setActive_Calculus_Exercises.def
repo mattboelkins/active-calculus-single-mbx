@@ -1,6 +1,6 @@
-openDate          = 07/28/2025 at 12:00am
-dueDate           = 01/28/2026 at 10:00pm
-answerDate        = 01/28/2026 at 10:00pm
+openDate          = 07/29/2025 at 12:00am
+dueDate           = 01/29/2026 at 10:00pm
+answerDate        = 01/29/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
@@ -34,7 +34,7 @@ source_file = Library/LoyolaChicago/Precalc/Chap1Sec2/Q18.pg
 problem_id = 7
 problem_end
 problem_start
-source_file = Library/Michigan/Chap2Sec1/Q13.pg
+source_file = csafranski/1.1HW_prob8.pg
 problem_id = 8
 problem_end
 problem_start
@@ -886,7 +886,7 @@ source_file = Library/Michigan/Chap7Sec4/Q57.pg
 problem_id = 1
 problem_end
 problem_start
-source_file = Library/Michigan/Chap7Sec4/Q33.pg
+source_file = csafranski/5.5HW_prob2.pg
 problem_id = 2
 problem_end
 problem_start

@@ -702,8 +702,8 @@ c) Using the average rate of change formula above for the endpoints <m>(x, f(x))
     <pg source="Library/LoyolaChicago/Precalc/Chap1Sec2/Q18.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-26" ww-id="webwork-26">
-    <static seed="26" source="Library/Michigan/Chap2Sec1/Q13.pg">
-      <statement><p>A car is driven at an increasing speed, starting at noon.  Which of the following
+    <static seed="26" source="csafranski/1.1HW_prob8.pg">
+      <statement><p>A car is driven at a speed that is initially high and then decreases, starting at noon.  Which of the following
 could be a graph of the distance the car has traveled as a function
 of time past noon?</p>
 <tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="medium" left="medium" right="medium" top="medium">
@@ -732,19 +732,19 @@ of time past noon?</p>
 </statement>
       <answer>
         <p>
-          <m>4</m>
+          <m>6</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>Because the car is driven at an increasing speed, the distance 
+<p>Because the car is driven at a decreasing speed, the distance 
 traveled for different time intervals of the same length must 
-increase as time goes on.  Therefore the slope of the graph 
-of distance traveled must increase with increasing time, and 
-must be 4.</p>
+decrease as time goes on.  Therefore the slope of the graph 
+of distance traveled must decrease with increasing time, and 
+must be 6.</p>
 </solution>
     </static>
-    <server-data sourceFilePath="Library/Michigan/Chap2Sec1/Q13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap2Sec1/Q13.pg"/>
+    <server-data sourceFilePath="csafranski/1.1HW_prob8.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/1.1HW_prob8.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-27" ww-id="webwork-27">
     <static seed="27" source="csafranski/1.2HW_prob1.pg">
@@ -5113,13 +5113,32 @@ For <m>H(x) = F(x)/G(x)</m>,
     <pg source="Library/Michigan/Chap3Sec4/Q47.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-109" ww-id="webwork-109">
-    <static seed="109" source="csafranski/2.5HW_prob5.pg" failure="compile">
-      <statement>
-        <p>PTX:ERROR: WeBWorK problem csafranski/2.5HW_prob5.pg with seed 109 is either empty or failed to compile  
-  Use -a to halt with returned content
-</p>
-      </statement>
+    <static seed="109" source="csafranski/2.5HW_prob5.pg">
+      <statement><p>If <m>f</m> and <m>g</m> are the functions whose graphs are shown, let <m>u(x)=f(g(x)), v(x)=g(f(x))</m>, and <m>w(x)=g(g(x))</m>.</p>
+<p>Find each of the following derivatives, if they exist. If it does not exist, enter "dne" (without the quotes) below.</p>
+<p>(a) <m>u'(1) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p>(b) <m>v'(1) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p>(c) <m>w'(1) =</m> <fillin characters="10" name="AnSwEr0003"/></p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-109-image-1.png" width="50%"/>
+</statement>
+      <answer>
+        <p>
+          <m>\frac{3}{4}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{DNE}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-2</m>
+        </p>
+      </answer>
     </static>
+    <server-data sourceFilePath="csafranski/2.5HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/2.5HW_prob5.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-110" ww-id="webwork-110">
     <static seed="110" source="csafranski/2.5HW_prob6.pg">
@@ -8242,19 +8261,19 @@ overestimate and the left Riemann sum an underestimate.
 <fillin characters="30" name="optional1"/>, and it is an 
 <var form="popup">
 <li>
-<p>overestimate of</p>
+<p>equal to</p>
 </li>
 <li>
 <p>there is ambiguity</p>
 </li>
 <li>
-<p>equal to</p>
-</li>
-<li>
-<p>?</p>
+<p>overestimate of</p>
 </li>
 <li>
 <p>underestimate of</p>
+</li>
+<li>
+<p>?</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -8263,10 +8282,7 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
-<p>underestimate of</p>
-</li>
-<li>
-<p>?</p>
+<p>overestimate of</p>
 </li>
 <li>
 <p>equal to</p>
@@ -8275,7 +8291,10 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <p>there is ambiguity</p>
 </li>
 <li>
-<p>overestimate of</p>
+<p>?</p>
+</li>
+<li>
+<p>underestimate of</p>
 </li>
 </var>
  the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -10311,32 +10330,32 @@ same:
     <pg source="Library/Michigan/Chap7Sec4/Q57.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-239" ww-id="webwork-239">
-    <static seed="239" source="Library/Michigan/Chap7Sec4/Q33.pg">
+    <static seed="239" source="csafranski/5.5HW_prob2.pg">
       <statement><p>Calculate the integral:</p>
-<p><m>\displaystyle \int \frac{1}{(x+6)(x+3)}\,dx =</m>
+<p><m>\displaystyle \int \frac{1}{(x+5)(x+3)}\,dx =</m>
 <fillin characters="55" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.333333\ln\mathopen{}\left(\left|x+3\right|\right)-0.333333\ln\mathopen{}\left(\left|x+6\right|\right)+C</m>
+          <m>0.5\ln\mathopen{}\left(\left|x+3\right|\right)-0.5\ln\mathopen{}\left(\left|x+5\right|\right)+C</m>
         </p>
       </answer>
-      <solution><me>\frac{1}{(x+6)(x+3)}=\frac{A}{x+6}+\frac{B}{x+3},</me>
+      <solution><me>\frac{1}{(x+5)(x+3)}=\frac{A}{x+5}+\frac{B}{x+3},</me>
 giving
-<me>1 =  A(x+3)+B(x+6),</me>
+<me>1 =  A(x+3)+B(x+5),</me>
 or
-<me>1 = (A+B)x+ (3 A+6 B).</me>
-Solving for <m>A</m> and <m>B</m>, we find <m>A = -0.333333</m> and <m>B = 0.333333</m>,
+<me>1 = (A+B)x+ (3 A+5 B).</me>
+Solving for <m>A</m> and <m>B</m>, we find <m>A = -0.5</m> and <m>B = 0.5</m>,
 so
-<me>\int \frac{1}{(x+6)(x+3)}\,dx= \int\frac{-0.333333}{x+6}\,dx +
-  \int \frac{0.333333}{x+3}\,dx = 0.333333\ln\mathopen{}\left(\left|x+3\right|\right)-0.333333\ln\mathopen{}\left(\left|x+6\right|\right)+C.</me>
+<me>\int \frac{1}{(x+5)(x+3)}\,dx= \int\frac{-0.5}{x+5}\,dx +
+  \int \frac{0.5}{x+3}\,dx = 0.5\ln\mathopen{}\left(\left|x+3\right|\right)-0.5\ln\mathopen{}\left(\left|x+5\right|\right)+C.</me>
 
 
 
 </solution>
     </static>
-    <server-data sourceFilePath="Library/Michigan/Chap7Sec4/Q33.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap7Sec4/Q33.pg"/>
+    <server-data sourceFilePath="csafranski/5.5HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/5.5HW_prob2.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-240" ww-id="webwork-240">
     <static seed="240" source="Library/Michigan/Chap7Sec4/Q39.pg">
@@ -11782,33 +11801,14 @@ This integral converges to <m>{2\over 2} e^{-4}</m>.
     <pg source="Library/Michigan/Chap7Sec7/Q11.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-272" ww-id="webwork-272">
-    <static seed="272" source="Library/Michigan/Chap7Sec7/Q15.pg">
-      <statement><p>Calculate the integral, if it converges.  If it diverges, enter
-<alert>diverges</alert> for your answer.</p>
-<p><m>{\displaystyle\int_{-1}^{1}{1\over v}\,dv} =</m>
-<fillin characters="35" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>\text{diverges}</m>
-        </p>
-      </answer>
-      <solution><m>1/v</m> is undefined at <m>v=0</m>.
-To evaluate it, we must split the region of integration up into two
-pieces, from 0 to 1 and from <m>-1</m> to 0.  But notice,
-<me>\int_0^{1}{1\over v}\, dv =
-\lim_{b\to 0^+}\int_b^{1} {1\over v}\, dv =
-\lim_{b\to 0^+}\left({\ln v}\bigg|_b^{1}\right) =
-\ln(1) - \ln b.</me>
-As <m>b\to 0^+</m>, this goes to infinity and the integral diverges, so
-our original integral also diverges.
-
-
-
-</solution>
+    <static seed="272" source="Library/Michigan/Chap7Sec7/Q15.pg" failure="xml">
+      <statement>
+        <p>PTX:ERROR: WeBWorK problem Library/Michigan/Chap7Sec7/Q15.pg with seed 272 does not return valid XML  
+  It may not be PTX compatible  
+  Use -a to halt with returned content
+</p>
+      </statement>
     </static>
-    <server-data sourceFilePath="Library/Michigan/Chap7Sec7/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap7Sec7/Q15.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-273" ww-id="webwork-273">
     <static seed="273" source="Library/Michigan/Chap7Sec7/Q34.pg">
@@ -12499,37 +12499,34 @@ point (0,1) has a negative slope.</p>
 <p>List the equilibrium solutions to this differential equation in increasing order and indicate whether or not these equilibria are stable, semi-stable, or unstable.</p>
 <p><fillin characters="10" name="AnSwEr0001"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>unstable</p>
 </li>
 <li>
-<p>unstable</p>
+<p>?</p>
 </li>
 <li>
 <p>semi-stable</p>
 </li>
 <li>
-<p>?</p>
+<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0003"/>  <var form="popup">
 <li>
-<p>?</p>
-</li>
-<li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 <li>
 <p>unstable</p>
 </li>
 <li>
-<p>stable</p>
+<p>semi-stable</p>
+</li>
+<li>
+<p>?</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
 <li>
-<p>stable</p>
-</li>
-<li>
 <p>?</p>
 </li>
 <li>
@@ -12537,6 +12534,9 @@ point (0,1) has a negative slope.</p>
 </li>
 <li>
 <p>unstable</p>
+</li>
+<li>
+<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
@@ -14330,7 +14330,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-28T18:23:16Z       
+###       on 2025-07-29T14:26:15Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14633,7 +14633,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-28T18:23:16Z       
+###       on 2025-07-29T14:26:15Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14980,7 +14980,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-28T18:23:16Z       
+###       on 2025-07-29T14:26:15Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15304,7 +15304,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-28T18:23:16Z       
+###       on 2025-07-29T14:26:15Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
