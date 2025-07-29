@@ -236,12 +236,12 @@
       Observe that the central difference is also the average rate of change of <m>f</m> on <m>[a-h,a+h]</m>, 
       <me>
         AV_{[a-h,a+h]} = \frac{f(a+h) - f(a-h)}{2h}
-      </me>, and thus we can even interpret the central difference as a slope of a certain secant line.  In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>.
+      </me>, and thus we can even interpret the central difference as a slope of a certain secant line.  
     </p>
 
     <figure xml:id="F-1-5a-central-diff">
       <caption>Plot of a function <m>f</m> that satisfies the data in <xref ref="Ex-1-5-1-central-difference">Example</xref>.</caption>
-        <image width="50%">
+        <image width="35%">
           <prefigure label="Fig-1-5a-CD" xmlns="https://prefigure.org">
             <diagram dimensions="(300,300)" margins="5">
               <definition>f(x) = 4-3*(0.5)^x</definition>
@@ -267,7 +267,7 @@
     </figure> 
     
     <p>
-      The top line in <xref ref="F-1-5a-central-diff">Figure</xref> is the tangent line to the curve at <m>(2,f(2))</m>; for the function shown, the slope of that tangent line turns out to be <m>f'(2) = 0.5199</m>.  We found in <xref ref="Ex-1-5-1-central-difference">Example</xref> that the central difference approximation is <m>0.5625</m>, which is the slope of the secant line through the points <m>(1,f(1))</m> and <m>(3,f(3))</m> in <xref ref="F-1-5a-central-diff">Figure</xref>.  
+      In <xref ref="F-1-5a-central-diff">Figure</xref>, we see a function that passes through the three data points given in <xref ref="Ex-1-5-1-central-difference">Example</xref>: <m>(1,2.5)</m>, <m>(2,3.25)</m>, and <m>(3,3.265)</m>. The top line in the figure is the tangent line to the curve at <m>(2,f(2))</m>; for the function shown, the slope of that tangent line turns out to be <m>f'(2) = 0.5199</m>.  We found in <xref ref="Ex-1-5-1-central-difference">Example</xref> that the central difference approximation is <m>0.5625</m>, which is the slope of the secant line through the points <m>(1,f(1))</m> and <m>(3,f(3))</m> in <xref ref="F-1-5a-central-diff">Figure</xref>.  
     </p>
     <p>  
       In general, the central difference 

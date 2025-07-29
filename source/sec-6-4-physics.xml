@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-6-4-physics">
   <title>Physics Applications:  Work, Force, and Pressure</title>
   <objectives>
@@ -175,7 +176,7 @@
     </p>
 
     <p>
-      While it is a straightforward exercise to evaluate this integral exactly using the First Fundamental Theorem of Calculus,
+      While we could evaluate this integral exactly using the First Fundamental Theorem of Calculus,
       in applied settings such as this one we will typically use computing technology.
       Here, it turns out that <m>W = \int_0^{50} (12 + 8e^{-0.1h}) \, dh \approx 679.461</m> foot-pounds.
     </p>
@@ -186,6 +187,8 @@
     </p>
 
     <assemblage>
+      <title>The work done by a varying force</title>
+      
       <p>
         For an object being moved in the positive direction along an axis with location
         <m>x</m> by a force <m>F(x)</m>,
@@ -228,7 +231,7 @@
 
       <figure xml:id="F-6-4-SumpCrock">
         <caption>A sump crock.</caption>
-        <image width="47%" source="images/6_4_SumpCrock"/>
+        <image width="35%" source="images/6_4_SumpCrock"/>
       </figure>
     </sidebyside>
 
@@ -382,7 +385,7 @@
       <m>F</m> represents force,
       and <m>A</m> the area of the region being considered.
       Of course, in the equation <m>F = PA</m>,
-      we assume that the pressure is constant over the entire region <m>A</m>.
+      we are assuming that the pressure is constant over the entire region <m>A</m>.
     </p>
 
     <p>

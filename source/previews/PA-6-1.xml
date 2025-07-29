@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,24 +12,21 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-6-1">
    
     <exploration xml:id="PA-6-1">
       <introduction>
         <p>
-    Consider the functions given by
-    <m>f(x) = 5-(x-1)^2</m> and <m>g(x) = 4-x</m>.
-
-    </p>
-
-          <image width="47%" source="images/6_1_PA1"/>
-
+          Consider the functions given by
+          <m>f(x) = 5-(x-1)^2</m> and <m>g(x) = 4-x</m>.
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="PA-6-1-task-0">
         <statement>
           <p>
-          Use algebra to find the points where the graphs of <m>f</m> and <m>g</m> intersect.
-        </p>
+            Use algebra to find the points where the graphs of <m>f</m> and <m>g</m> intersect.
+          </p>
         </statement>
         <hint/>
         <answer/>
@@ -38,9 +35,10 @@
       <task workspace="0.05cm" xml:id="PA-6-1-task-1">
         <statement>
           <p>
-          Sketch an accurate graph of <m>f</m> and <m>g</m> on the axes provided,
-          labeling the curves by name and the intersection points with ordered pairs.
-        </p>
+            Sketch an accurate graph of <m>f</m> and <m>g</m> on the axes provided,
+            labeling the curves by name and the intersection points with ordered pairs.
+          </p>
+          <image width="45%" source="images/6_1_PA1"/>
         </statement>
         <hint/>
         <answer/>

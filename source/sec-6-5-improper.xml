@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-6-5-improper">
   <title>Improper Integrals</title>
   <objectives>
@@ -63,7 +64,7 @@
 
     <p>
       Thus about 14.22% of all lightbulbs fail between <m>t = 2</m> and <m>t = 3</m>.
-      Clearly we could adjust the limits of integration to measure the fraction of light bulbs that fail during any time period of interest.
+      Clearly we can adjust the limits of integration to measure the fraction of light bulbs that fail during any time period of interest.
     </p>
 
     <xi:include href="./previews/PA-6-5-WW.xml" />
@@ -75,7 +76,7 @@
     <idx><h>improper integral</h></idx>
 
     <p>
-      In view of the above examples, 
+      In view of the introductory example and the Preview Activity, 
       we see that we may want to integrate over an interval whose upper limit grows without bound.
       For example,
       to find the fraction of light bulbs that fail <em>eventually</em>,
@@ -135,6 +136,7 @@
     </p>
 
     <assemblage>
+      <title>Whether an improper integral converges or diverges</title>      
       <p>
         If <m>f(x)</m> is nonnegative for <m>x \ge a</m>,
         then we say that the improper integral <m>\int_a^{\infty} f(x) \, dx</m>
@@ -195,10 +197,10 @@
       and diverges otherwise.
       In this example, we observe that
       <md>
-        <mrow>\int_0^1 \frac{1}{\sqrt{x}} \, dx &amp;=  \lim_{a \to 0^+} \int_a^1 \frac{1}{\sqrt{x}} \, dx</mrow>
-        <mrow>&amp;= \lim_{a \to 0^+} \left. 2\sqrt{x}\, \right\vert_a^1</mrow>
-        <mrow>&amp;= \lim_{a \to 0^+} 2\sqrt{1} - 2\sqrt{a}</mrow>
-        <mrow>&amp;= 2</mrow>
+        <mrow>\int_0^1 \frac{1}{\sqrt{x}} \, dx \amp=  \lim_{a \to 0^+} \int_a^1 \frac{1}{\sqrt{x}} \, dx</mrow>
+        <mrow>\amp= \lim_{a \to 0^+} \left. 2\sqrt{x}\, \right\bigvert_a^1</mrow>
+        <mrow>\amp= \lim_{a \to 0^+} 2\sqrt{1} - 2\sqrt{a}</mrow>
+        <mrow>\amp= 2</mrow>
       </md>,
       so the improper integral
       <m>\int_0^1 \frac{1}{\sqrt{x}} \, dx</m> converges
@@ -229,7 +231,7 @@
 
     <p>
       Such an incorrect application of the FTC leads to an impossible result (<m>-2</m>),
-      which would itself suggest that something we did must be wrong.
+      which would itself suggest that something we did must be incorrect.
       Instead, we must address the vertical asymptote at <m>x = 2</m> by writing
       <me>
         \int_1^3 \frac{1}{(x-2)^2} \, dx = \lim_{a \to 2^-} \int_1^a \frac{1}{(x-2)^2} \, dx + \lim_{b \to 2^+} \int_b^3 \frac{1}{(x-2)^2} \, dx
@@ -238,10 +240,10 @@
       For instance,
       doing so for the integral with <m>a</m> approaching <m>2</m> from the left, we find
       <md>
-        <mrow>\int_1^2 \frac{1}{(x-2)^2} \, dx&amp;= \lim_{a \to 2^-} \int_1^a \frac{1}{(x-2)^2} \, dx</mrow>
-        <mrow>&amp;= \lim_{a \to 2^-} -\frac{1}{(x-2)} \bigg\vert_1^a</mrow>
-        <mrow>&amp;= \lim_{a \to 2^-} -\frac{1}{(a-2)} + \frac{1}{1-2}</mrow>
-        <mrow>&amp;= \infty</mrow>
+        <mrow>\int_1^2 \frac{1}{(x-2)^2} \, dx\amp= \lim_{a \to 2^-} \int_1^a \frac{1}{(x-2)^2} \, dx</mrow>
+        <mrow>\amp= \lim_{a \to 2^-} -\frac{1}{(x-2)} \bigg\vert_1^a</mrow>
+        <mrow>\amp= \lim_{a \to 2^-} -\frac{1}{(a-2)} + \frac{1}{1-2}</mrow>
+        <mrow>\amp= \infty</mrow>
       </md>,
       since <m>\frac{1}{a-2} \to -\infty</m> as <m>a</m> approaches 2 from the left.
       Thus, the improper integral <m>\int_1^2 \frac{1}{(x-2)^2} \, dx</m> diverges;

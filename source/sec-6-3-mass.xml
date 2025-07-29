@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-6-3-mass">
   <title>Density, Mass, and Center of Mass</title>
   <objectives>
@@ -90,6 +91,8 @@
     </p>
 
     <assemblage>
+      <title>Density, mass, and volume</title>
+            
       <p>
         For an object of constant density <m>d</m>,
         with mass <m>m</m> and volume <m>V</m>,
@@ -193,6 +196,8 @@
     </p>
 
     <assemblage>
+      <title>The mass of a thin rod</title>
+      
       <p>
         For an object of constant cross-sectional area whose mass is distributed along a single axis according to the function <m>\rho(x)</m>
         (whose units are units of mass per unit of length),
@@ -328,7 +333,8 @@
       </fn> (such as books on a shelf) is found by taking a weighted average of their respective locations.
       In the activity, we were computing the <em>center of mass</em>
       of a system of masses distributed along an axis,
-      which is the balancing point of the axis on which the masses rest.
+      which is the balancing point of the axis on which the masses rest.  Here we formally summarize
+      the results of the activity, which hold for any finite collection of point-masses.  This forms an important foundation for when mass varies continuously.
     </p>
 
     <assemblage>
@@ -351,7 +357,7 @@
       If the density is constant,
       it is obvious that the balancing point of the bar is its midpoint.
       But if density is not constant,
-      we must compute a weighted average.
+      we used the idea of a weighted average to find its balancing point.
       Let's say that the function <m>\rho(x)</m> tells us the density distribution along the bar,
       measured in g/cm.
       If we slice the bar into small sections,
@@ -414,7 +420,10 @@
           <p>
             For an object of constant density <m>D</m>,
             with volume <m>V</m> and mass <m>m</m>,
-            we know that <m>m = D \cdot V</m>.
+            we know that 
+            <me>
+              m = D \cdot V
+            </me>.
           </p>
         </li>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-20259                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,24 +12,24 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-6-5">
    
     <exploration xml:id="PA-6-5">
       <introduction>
         <p>
-    A company with a large customer base has a call center that receives thousands of calls a day.
-    After studying the data that represents how long callers wait for assistance,
-    they find that the function
-    <m>p(t) = 0.25e^{-0.25t}</m> models the time customers wait in the following way:
-    the fraction of customers who wait between <m>t = a</m> and <m>t = b</m> minutes is given by
-    <me>
-      \int_a^b p(t) \, dt
-    </me>.
-  </p>
+          A company with a large customer base has a call center that receives thousands of calls a day.
+          After studying the data that represents how long callers wait for assistance,
+          they find that the function
+          <m>p(t) = 0.25e^{-0.25t}</m> models the time customers wait in the following way:
+          the fraction of customers who wait between <m>t = a</m> and <m>t = b</m> minutes is given by
+          <me>
+            \int_a^b p(t) \, dt
+          </me>.
+        </p>
         <p>
-    Use this information to answer the following questions.
-
-    </p>
+          Use this information to answer the following questions.
+        </p>
       </introduction>
       <task workspace="3cm" xml:id="PA-6-5-task-0">
         <statement>
@@ -84,8 +84,8 @@
       <task workspace="5cm" xml:id="PA-6-5-task-4">
         <statement>
           <p>
-          What is the value of the limit <m>\displaystyle \lim_{b \to \infty} F(b)</m>?
-          What is its meaning in the context of the problem?
+          What is the value of <m>\displaystyle \lim_{b \to \infty} F(b)</m>?
+          What is the meaning of this limit in the context of the problem?
         </p>
         </statement>
         <hint/>
