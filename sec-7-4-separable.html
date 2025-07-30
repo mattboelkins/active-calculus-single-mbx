@@ -1313,7 +1313,7 @@ y + \frac{dy}{dt} = t\text{.}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-3-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para" id="sec-7-4-separable-3-7">As we will see, this will not be helpful, since the left-hand side is not a product of a function of <span class="process-math">\(y\)</span> with <span class="process-math">\(\frac{dy}{dt}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="sec-7-4-separable-3-7">As we will see, this turns out not to be helpful, since the left-hand side is not a product of a function of <span class="process-math">\(y\)</span> with <span class="process-math">\(\frac{dy}{dt}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-3-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <section class="worksheet" id="ws-PA-7-4"><h4 class="heading hide-type">
 <span class="type"> </span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title"> </span><div class="print-links"><a href="ws-PA-7-4-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
@@ -1487,7 +1487,13 @@ y(t) = \sqrt[3]{\frac32\, t^2+8}\text{.}
 <div class="autopermalink" data-description="Solution 7.4.1.1"><a href="#Ex-7-4-1-2" title="Copy heading and permalink for Solution 7.4.1.1" aria-label="Copy heading and permalink for Solution 7.4.1.1">🔗</a></div>
 </div></details></div>
 <div class="autopermalink" data-description="Example 7.4.1"><a href="#Ex-7-4-1" title="Copy heading and permalink for Example 7.4.1" aria-label="Copy heading and permalink for Example 7.4.1">🔗</a></div></article><div class="para logical" id="sec-7-4-separable-4-5">
-<div class="para">The strategy of <a href="sec-7-4-separable.html#Ex-7-4-1" class="xref" data-knowl="./knowl/xref/Ex-7-4-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.1">Example 7.4.1</a> may be applied to any differential equation of the form <span class="process-math">\(\frac{dy}{dt} = g(y) \cdot h(t)\text{,}\)</span> and any differential equation of this form is said to be <em class="emphasis">separable</em>. We work to solve a separable differential equation by writing</div>
+<div class="para">The strategy of <a href="sec-7-4-separable.html#Ex-7-4-1" class="xref" data-knowl="./knowl/xref/Ex-7-4-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Example 7.4.1">Example 7.4.1</a> may be applied to any differential equation of the form</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-7-4-1.html">
+\begin{equation*}
+\frac{dy}{dt} = g(y) \cdot h(t)\text{,}
+\end{equation*}
+</div>
+<div class="para">and any differential equation of this form is said to be <em class="emphasis">separable</em>. We work to solve a separable differential equation by writing</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Ex-7-4-1.html">
 \begin{equation*}
 \frac{1}{g(y)} \frac{dy}{dt} = h(t)\text{,}
@@ -1564,7 +1570,17 @@ y(t) = Ce^{3t}\text{.}
 </div>
 <div class="autopermalink" data-description="Solution 7.4.2.1"><a href="#Ex-7-4-2-2" title="Copy heading and permalink for Solution 7.4.2.1" aria-label="Copy heading and permalink for Solution 7.4.2.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 7.4.2"><a href="#Ex-7-4-2" title="Copy heading and permalink for Example 7.4.2" aria-label="Copy heading and permalink for Example 7.4.2">🔗</a></div></article><div class="para" id="sec-7-4-separable-4-7">There is one more technical point to make. Notice that <span class="process-math">\(y=0\)</span> is an equilibrium solution to this differential equation. In solving the equation above, we begin by dividing both sides by <span class="process-math">\(y\text{,}\)</span> which is not allowed if <span class="process-math">\(y=0\text{.}\)</span> To be perfectly careful, therefore, we should consider the equilibrium solutions separately. In this case, notice that the final form of our solution captures the equilibrium solution by allowing <span class="process-math">\(C=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Example 7.4.2"><a href="#Ex-7-4-2" title="Copy heading and permalink for Example 7.4.2" aria-label="Copy heading and permalink for Example 7.4.2">🔗</a></div></article><div class="para" id="sec-7-4-separable-4-7">There are two more technical points to make. First, notice that <span class="process-math">\(y=0\)</span> is an equilibrium solution to this differential equation. In solving the equation above, we begin by dividing both sides by <span class="process-math">\(y\text{,}\)</span> which is not allowed if <span class="process-math">\(y=0\text{.}\)</span> To be perfectly careful, therefore, we should consider the equilibrium solutions separately. In this case, notice that the final form of our solution captures the equilibrium solution by allowing <span class="process-math">\(C=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-4-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="para logical" id="sec-7-4-separable-4-8">
+<div class="para">Second, recall the discussion in <a href="sec-4-4-FTC.html" class="internal" title="Section 4.4: The Fundamental Theorem of Calculus">Section 4.4</a> immediately following the development of <a href="sec-4-4-FTC.html#T-4-4-Act2" class="xref" data-knowl="./knowl/xref/T-4-4-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 4.4.5: Familiar basic functions and their antiderivatives.">Table 4.4.5</a> in <a href="sec-4-4-FTC.html#act-4-4-2" class="xref" data-knowl="./knowl/xref/act-4-4-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.4.3">Activity 4.4.3</a>. When we write</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-4-4-FTC.html ./knowl/xref/T-4-4-Act2.html ./knowl/xref/act-4-4-2.html">
+\begin{equation*}
+\int \frac{1}{u} \, du = \ln(|u|) + C
+\end{equation*}
+</div>
+<div class="para">there is a subtle issue with the value of <span class="process-math">\(C\)</span> that is connected to the discontinuity in <span class="process-math">\(\frac{1}{u}\)</span> at <span class="process-math">\(u = 0\text{.}\)</span>  This issue normally gets resolved either by applying a given initial condition to find the value of <span class="process-math">\(C\)</span> or by only being interested in a solution to the differential equation on certain interval of <span class="process-math">\(u\)</span>-values.</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-7-4-separable-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <section class="worksheet" id="ws-act-7-4-1"><h4 class="heading hide-type">
 <span class="type"> </span><span class="space"> </span><span class="codenumber"></span><span class="space"> </span><span class="title"> </span><div class="print-links"><a href="ws-act-7-4-1-printable.html" class="print-link" title="Print preview"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8ad;</span></a></div>
