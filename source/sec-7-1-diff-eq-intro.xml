@@ -81,7 +81,7 @@
 
     <p>
       As many important examples of differential equations involve quantities
-      that change in time, the independent variable in our discussion will
+      that change over time, the independent variable in our discussion will
       frequently be time
       <m>t</m>.
       In the preview activity, we considered the
@@ -211,8 +211,8 @@
     </p>
 
     <p>
-      If we have a candidate for a solution, it is straightforward to
-      check whether it is a solution or not.
+      If we have a candidate for a solution to a differential equation, it is straightforward to
+      check whether the function is a solution or not.
       Before we demonstrate how, let's consider the same issue in a simpler context.
       Suppose we are given the equation
       <m>2x^2 - 2x = 2x+6</m> and asked whether <m>x=3</m> is a solution.
@@ -276,24 +276,13 @@
 
     <p>
       This activity shows us something interesting.
-      Notice that the differential equation has infinitely many solutions,
+      As shown by the function in part (d) of the activity, we see that the differential equation <m>\frac{dv}{dt} = 1.5 - 0.5v</m> has infinitely many solutions,
       which are parametrized by the constant <m>C</m> in <m>v(t) = 3+Ce^{-0.5t}</m>.
-      In <xref ref="F-7-1-family">Figure</xref>,
-      we see the graphs of these solutions for a few values of <m>C</m>,
-      as labeled.
     </p>
 
-    <figure xml:id="F-7-1-family">
-      <caption>The family of solutions to the differential equation <m>\frac{dv}{dt} = 1.5 - 0.5v</m>.</caption>
-      <image width="47%" source="images/7_1_family"/>
-    </figure>
-
     <p>
-      Notice that the value of <m>C</m> is connected to the initial value of the velocity <m>v(0)</m>,
-      since <m>v(0) = 3+C</m>.
-      In other words,
-      while the differential equation describes how the velocity changes as a function of the velocity itself,
-      this is not enough information to determine the velocity uniquely:
+      Observe further that the value of <m>C</m> is connected to the initial value of the velocity <m>v(0)</m>,
+      since <m>v(0) = 3+C</m>.  In other words, while the differential equation describes how the velocity changes as a function of the velocity itself, this is not enough information to determine the velocity uniquely:
       we also need to know the initial velocity.
       For this reason,
       differential equations will typically have infinitely many solutions,
@@ -302,6 +291,16 @@
       given the velocity of a moving object <m>v(t)</m>,
       we cannot uniquely determine the object's position function unless we also know its initial position.
     </p>
+    <p>  
+      In <xref ref="F-7-1-family">Figure</xref>,
+      we see the graphs of several different solutions to the differential equation <m>\frac{dv}{dt} = 1.5 - 0.5v</m> for a few values of <m>C</m>,
+      as labeled.
+    </p>
+
+    <figure xml:id="F-7-1-family">
+      <caption>The family of solutions to the differential equation <m>\frac{dv}{dt} = 1.5 - 0.5v</m>.</caption>
+      <image width="47%" source="images/7_1_family"/>
+    </figure>
 
     <p>
       If we are given a differential equation and an initial value for the
@@ -323,15 +322,16 @@
     </p>
 
     <assemblage>
+      <title>Well-behaved initial value problems have unique solutions</title>     
       <p>
         Initial value problems that are
-        <q>well behaved</q> have exactly one solution,
+        <q>well-behaved</q> have exactly one solution,
         which exists in some interval around the initial point.
       </p>
     </assemblage>
 
     <p>
-      We won't worry about what <q>well behaved</q>
+      We won't worry about what <q>well-behaved</q>
       means<mdash/>it is a technical
       condition that will be satisfied by all the differential equations we
       consider.
@@ -400,7 +400,7 @@
 
         <li>
           <p>
-            A solution to a differential equation is a function whose derivatives satisfy the equation's description.
+            A solution to a differential equation is a function whose derivative(s) satisfy the equation's description.
             Differential equations typically have infinitely many solutions,
             parametrized by the initial values.
           </p>

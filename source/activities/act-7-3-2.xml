@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-7-3-2">
    
     <activity xml:id="act-7-3-2" workspace="3cm">
@@ -27,16 +28,16 @@
           <p>
             Sketch the slope field for this differential equation on the axes provided.
           </p>
-          <image width="50%" source="images/7_3_slopefield" />
+          <image width="40%" source="images/7_3_slopefield" />
         </statement>
         <answer>
-          <image width="50%" source="images/7_3_Act2_slope_field_soln" />
+          <image width="40%" source="images/7_3_Act2_slope_field_soln" />
         </answer>
         <solution>
           <p>
             The slope field for this differential equation is shown in the following figure.
           </p>
-          <image source="images/7_3_Act2_slope_field_soln" width="50%" />
+          <image source="images/7_3_Act2_slope_field_soln" width="40%" />
         </solution>
       </task>
       <task workspace="6cm" xml:id="act-7-3-2-task-1">
@@ -90,7 +91,7 @@
             <m>(t_i, y_i)</m> on the axes provided.
             Note the different horizontal scale on the axes here compared to the axes above.
           </p>
-          <sidebyside widths="47% 47%" margins="0%">
+          <sidebyside widths="47% 47%" margins="0%" valign="middle">
             <tabular top="minor" bottom="minor">
               <row bottom="medium">
                 <cell><m>t_i</m></cell>
@@ -135,7 +136,7 @@
                 <cell></cell>
               </row>
             </tabular>
-            <image source="images/7_3_euler_empty_2" />
+            <image width="70%" source="images/7_3_euler_empty_2" />
           </sidebyside>
 
         </statement>
@@ -197,6 +198,55 @@
             and <m>1.0</m> as shown in the following table and figure.
             We see that our estimates actually jump slightly above the equilibrium solution before being pulled back down.
           </p>
+          <sidebyside widths="47% 42%" margins="0%" permid="eIe">
+
+            <tabular top="minor" bottom="minor" valign="middle">
+              <row bottom="medium">
+                <cell><m>t_i</m></cell>
+                <cell><m>y_i</m></cell>
+                <cell><m>dy/dt</m></cell>
+                <cell><m>\Delta y</m></cell>
+              </row>
+              <row>
+                <cell><m>0.0</m></cell>
+                <cell><m>1.0000</m></cell>
+                <cell><m>5.0000</m></cell>
+                <cell><m>1.0000</m></cell>
+              </row>
+              <row>
+                <cell><m>0.2</m></cell>
+                <cell><m>2.0000</m></cell>
+                <cell><m>8.0000</m></cell>
+                <cell><m>1.6000</m></cell>
+              </row>
+              <row>
+                <cell><m>0.4</m></cell>
+                <cell><m>3.6000</m></cell>
+                <cell><m>8.6400</m></cell>
+                <cell><m>1.7280</m></cell>
+              </row>
+              <row>
+                <cell><m>0.6</m></cell>
+                <cell><m>5.3280</m></cell>
+                <cell><m>3.5804</m></cell>
+                <cell><m>0.7161</m></cell>
+              </row>
+              <row>
+                <cell><m>0.8</m></cell>
+                <cell><m>6.0441</m></cell>
+                <cell><m>-0.2664</m></cell>
+                <cell><m>-0.0533</m></cell>
+              </row>
+              <row>
+                <cell><m>1.0</m></cell>
+                <cell><m>5.9908</m></cell>
+                <cell><m>0.0551</m></cell>
+                <cell><m>0.0110</m></cell>
+              </row>
+            </tabular>
+
+            <image source="images/7_3_Act2_euler_soln" />
+          </sidebyside>
         </solution>
       </task>
       <task workspace="3cm" xml:id="act-7-3-2-task-4">

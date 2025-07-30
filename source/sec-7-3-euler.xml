@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-3-euler">
   <title>Euler's method</title>
   <objectives>
@@ -37,7 +38,7 @@
       In particular,
       the slope field is a plot of a large collection of tangent lines to a large number of solutions of the differential equation,
       and we sketch a single solution by simply following these tangent lines.
-      With a little more thought,
+      With a little more care,
       we can use this same idea to approximate numerically the solutions of a differential equation.
     </p>
 
@@ -62,28 +63,32 @@
       we will approximate the solution by taking horizontal steps of a fixed size that we denote by <m>\Delta t</m>.
     </p>
 
-    <sidebyside widths="47% 47%" margins="0%">
+    <sidebyside widths="47% 47%" margins="0%" valign="middle">
 
       <stack>
         <p>
           Before explaining the algorithm in detail,
           let's remember how we compute the slope of a line:
-          the slope is the ratio of the vertical change to the horizontal change,
+          the slope of a given line is the ratio of the vertical change to the horizontal change,
           as shown in <xref ref="F-7-3-slope">Figure</xref>.
         </p>
 
         <p>
-          In other words, <m>m = \frac{\Delta y}{\Delta t}</m>.
+          In symbols, <m>m = \frac{\Delta y}{\Delta t}</m>.
           Solving for <m>\Delta y</m>, we see that the
           vertical change is the product of the slope and the horizontal change, or
           <me>
             \Delta y = m\Delta t
           </me>.
         </p>
+
+        <p>
+          In words, this says that (along a line), the change in <m>y</m> between two points is the product of the slope times the change in <m>x</m>.
+        </p>
       </stack>
 
       <figure xml:id="F-7-3-slope">
-        <caption>The role of slope in Euler's Method.</caption>
+        <caption>Visualizing slope.</caption>
         <image source="images/7_3_slope"/>
       </figure>
     </sidebyside>
@@ -96,16 +101,14 @@
     </p>
 
     <p>
-      There is an algorithm by which we can find an algebraic formula for the solution to this initial value problem,
+      Using more advanced techniques from differential equations, it's possible to find an algebraic formula for the solution to this initial value problem,
       and we can check that this solution is <m>y(t) = t -1 + 2e^{-t}</m>.
-      But
-      we are instead interested in generating an approximate solution by creating a sequence of points <m>(t_i, y_i)</m>,
-      where <m>y_i\approx y(t_i)</m>.
-      For this first example, we choose <m>\Delta t = 0.2</m>.
+      Here we are instead interested in generating an approximate solution by creating a sequence of points <m>(t_i, y_i)</m>,
+      where <m>y_i\approx y(t_i)</m>, but we'll use the algebraic formula as a way to check the accuracy of our approximation.
     </p>
 
     <p>
-      Since we know that <m>y(0) = 1</m>,
+      For this first example, we choose <m>\Delta t = 0.2</m>.  Since we know that <m>y(0) = 1</m>,
       we will take the initial point to be
       <m>(t_0,y_0) = (0,1)</m> and move horizontally by <m>\Delta t = 0.2</m> to the
       point <m>(t_1,y_1)</m>.
@@ -117,14 +120,17 @@
       </me>,
     </p>
 
-    <sidebyside widths="50% 44%" margins="0%">
+    <sidebyside widths="50% 44%" margins="0%" valign="middle">
       <p>
         so to move along the tangent line by taking a horizontal step of size <m>\Delta t=0.2</m>,
         we must also move vertically by
         <me>
           \Delta y = m\Delta t = -1\cdot 0.2 = -0.2
         </me>.
-        We then have the approximation <m>y(0.2) \approx y_1= y_0 + \Delta y = 1 - 0.2 = 0.8</m>.
+        We then have the approximation 
+        <me>
+          y(0.2) \approx y_1= y_0 + \Delta y = 1 - 0.2 = 0.8
+        </me>.
         At this point, we have executed one step of Euler's method,
         as seen graphically in <xref ref="F-7-3-euler-points-1">Figure</xref>.
       </p>
@@ -144,15 +150,18 @@
       </me>.
     </p>
 
-    <sidebyside widths="50% 44%" margins="0%">
+    <sidebyside widths="50% 44%" margins="0%" valign="middle">
       <p>
-        If we move forward horizontally by
-        <m>\Delta t</m> to <m>t_2=t_1+\Delta = 0.4</m>,
+        Since we are moving forward horizontally by
+        <m>\Delta t</m> to <m>t_2=t_1+\Delta t = 0.4</m>,
         we must move vertically by
         <me>
-          \Delta y = -0.6\cdot0.2 = -0.12
+          \Delta y = m \cdot \Delta t = -0.6\cdot0.2 = -0.12
         </me>.
-        We consequently arrive at <m>y_2=y_1+\Delta y = 0.8-0.12 = 0.68</m>,
+        We consequently arrive at 
+        <me>
+          y_2 = y_1 + \Delta y = 0.8-0.12 = 0.68
+        </me>,
         which gives <m>y(0.2)\approx 0.68</m>.
         Now we have completed the second step of Euler's method,
         as shown in <xref ref="F-7-3-euler-points-2">Figure</xref>.
@@ -168,7 +177,7 @@
       If we continue in this way,
       we may generate the points
       <m>(t_i, y_i)</m> shown in <xref ref="F-7-3-Euler-Pts-a">Figure</xref>.
-      Because we can find a formula for the actual solution <m>y(t)</m> to this differential equation,
+      Because it turns out that the exact to this differential equation is <m>y(t) = t -1 + 2e^{-t}</m>,
       we can graph <m>y(t)</m> and compare it to the points generated by Euler's method,
       as shown in <xref ref="F-7-3-Euler-Pts-b">Figure</xref>.
     </p>
@@ -176,14 +185,14 @@
     <sidebyside widths="47% 47%" margins="0%">
       <figure xml:id="F-7-3-Euler-Pts-a">
         <caption>The points and piecewise linear approximate solution generated by Euler's method.</caption>
-        <image source="images/7_3_euler_points_6">
+        <image width="80%" source="images/7_3_euler_points_6">
         </image>
 
       </figure>
 
       <figure xml:id="F-7-3-Euler-Pts-b">
         <caption>The approximate solution compared to the exact solution (shown in blue).</caption>
-        <image source="images/7_3_euler">
+        <image width="80%" source="images/7_3_euler">
         </image>
 
       </figure>
@@ -191,12 +200,14 @@
 
     <p>
       Because we need to generate a large number of points <m>(t_i,y_i)</m>,
-      it is convenient to organize the implementation of Euler's method in a table as shown.
-      We begin with the given initial data.
+      it is convenient to organize the implementation of Euler's method in a table.
+      We begin with the given initial data, as shown in <xref ref="T-7-3-euler-initial">Table</xref>.
     </p>
 
-    <sidebyside>
+    <sidebyside widths="47% 47%">
 
+    <table xml:id="T-7-3-euler-initial">
+      <title>Starting with given initial data.</title>
       <tabular top="minor" bottom="minor">
         <row>
           <cell><m>t_i</m></cell>
@@ -211,70 +222,65 @@
           <cell/>
         </row>
       </tabular>
+    </table> 
 
+    <table xml:id="T-7-3-euler-one-step">
+      <title>The first values of <m>dy/dt</m> and <m>\Delta y</m>.</title>
+      <tabular top="minor" bottom="minor">
+        <row>
+          <cell><m>t_i</m></cell>
+          <cell><m>y_i</m></cell>
+          <cell><m>dy/dt</m></cell>
+          <cell><m>\Delta y</m></cell>
+        </row>
+        <row>
+          <cell><m>0.0000</m></cell>
+          <cell><m>1.0000</m></cell>
+          <cell><m>-1.0000</m></cell>
+          <cell><m>-0.2000</m></cell>
+        </row>
+      </tabular>
+    </table>
     </sidebyside>
 
     <p>
       From here, we compute the slope of the tangent line <m>m=dy/dt</m> using the formula for <m>dy/dt</m> from the differential equation,
       and then we find <m>\Delta y</m>,
-      the change in <m>y</m>, using the rule <m>\Delta y = m\Delta t</m>.
+      the change in <m>y</m>, using the rule <m>\Delta y = m\Delta t</m>.  These two results are shown in the last two columns of <xref ref="T-7-3-euler-one-step">Table</xref>.
     </p>
-
-    <sidebyside>
-
-      <tabular top="minor" bottom="minor">
-        <row>
-          <cell><m>t_i</m></cell>
-          <cell><m>y_i</m></cell>
-          <cell><m>dy/dt</m></cell>
-          <cell><m>\Delta y</m></cell>
-        </row>
-        <row>
-          <cell><m>0.0000</m></cell>
-          <cell><m>1.0000</m></cell>
-          <cell><m>-1.0000</m></cell>
-          <cell><m>-0.2000</m></cell>
-        </row>
-      </tabular>
-
-    </sidebyside>
 
     <p>
       Next, we increase <m>t_i</m> by
-      <m>\Delta t</m> and <m>y_i</m> by <m>\Delta y</m> to get
+      <m>\Delta t</m> and <m>y_i</m> by <m>\Delta y</m> to get the start of the second row in <xref ref="T-7-3-euler-second-step">Table</xref>.
     </p>
 
-    <sidebyside>
+    <sidebyside widths="47% 47%">
 
-      <tabular top="minor" bottom="minor">
-        <row>
-          <cell><m>t_i</m></cell>
-          <cell><m>y_i</m></cell>
-          <cell><m>dy/dt</m></cell>
-          <cell><m>\Delta y</m></cell>
-        </row>
-        <row>
-          <cell><m>0.0000</m></cell>
-          <cell><m>1.0000</m></cell>
-          <cell><m>-1.0000</m></cell>
-          <cell><m>-0.2000</m></cell>
-        </row>
-        <row>
-          <cell><m>0.2000</m></cell>
-          <cell><m>0.8000</m></cell>
-          <cell/>
-          <cell/>
-        </row>
-      </tabular>
+      <table xml:id="T-7-3-euler-second-step">
+        <title>Starting the second step of Euler's Method.</title>
+          <tabular top="minor" bottom="minor">
+            <row>
+              <cell><m>t_i</m></cell>
+              <cell><m>y_i</m></cell>
+              <cell><m>dy/dt</m></cell>
+              <cell><m>\Delta y</m></cell>
+            </row>
+            <row>
+              <cell><m>0.0000</m></cell>
+              <cell><m>1.0000</m></cell>
+              <cell><m>-1.0000</m></cell>
+              <cell><m>-0.2000</m></cell>
+            </row>
+            <row>
+              <cell><m>0.2000</m></cell>
+              <cell><m>0.8000</m></cell>
+              <cell/>
+              <cell/>
+            </row>
+          </tabular>
+      </table>
 
-    </sidebyside>
-
-    <p>
-      We continue the process for however many steps we decide,
-      eventually generating a table like <xref ref="T-7-3-Example">Table</xref>.
-    </p>
-
-    <table xml:id="T-7-3-Example">
+          <table xml:id="T-7-3-Example">
       <title>Euler's method for 6 steps with <m>\Delta t = 0.2</m>.</title>
       <tabular top="minor" bottom="minor">
         <row>
@@ -326,12 +332,54 @@
           <cell><m>0.0951</m></cell>
         </row>
       </tabular>
-
     </table>
+
+    </sidebyside>
+
+    <p>
+      We can continue the process for however many steps we decide,
+      eventually generating a table like <xref ref="T-7-3-Example">Table</xref>, which is the full set of data needed to generate <xref ref="F-7-3-Euler-Pts-a">Figure</xref>.
+    </p>
+
+    <p>
+      Overall, we have developed the following general approach that is known as Euler's Method.
+    </p>
+
+    <assemblage xml:id="asm-Euler">
+      <title>Euler's Method</title>
+      <p>
+        Given an initial value problem of the form <m>\frac{dy}{dt} = f(t, y), \text{  } y(t_0) = y_0</m>, we can generate a collection of approximations <m>y_1, y_2, \ldots</m> to the values of <m>y(t_1), y(t_2), \ldots</m> using the following algorithm:
+        <ul>
+          <li>
+            <p>
+              Choose a value for <m>\Delta t</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              Set <m>y_0 = y(t_0)</m>
+            </p>
+          </li>
+          <li>
+            <p>
+              For each desired natural number <m>i</m>, set <m>t_{i+1} = t_i + \Delta t</m> and
+              <me>
+                 y_{i+1} = y_i + f(t_i, y_i) \Delta y
+              </me> 
+            </p>
+          </li>
+        </ul>        
+      </p>
+    </assemblage>
+
+    <p>
+      The notation <m>\frac{dy}{dt} = f(t, y)</m> just means <q><m>\frac{dy}{dt}</m> depends on <m>y</m> and/or <m>t</m> in the way described by the given differential equation</q>.  We have worked most recently with <m>\frac{dy}{dt} = t - y</m>, and the formula <m>f(t,y) = t - y</m> was used every time we needed to find the slope at the next point.
+    </p>
 
     <xi:include href="./activities/act-7-3-1.xml"/>
 
     <xi:include href="./activities/act-7-3-2.xml"/>
+
   </subsection>
 
   <subsection>
@@ -352,7 +400,7 @@
     <p>
       The question posed by this initial value problem is
       <q>what function do we know that is the same as its own derivative and has value 1 when <m>t=0</m>?</q>
-      It is not hard to see that the solution is <m>y(t) = e^t</m>.
+      Observe that the solution is <m>y(t) = e^t</m>.
       We now apply Euler's method to approximate
       <m>y(1) = e</m> using several values of <m>\Delta t</m>.
       These approximations will be denoted by <m>E_{\Delta t}</m>,
@@ -375,7 +423,7 @@
       expressed in both tabular and graphical form.
     </p>
 
-    <sidebyside widths="47% 47%" margins="0%">
+    <sidebyside widths="47% 47%" margins="0%" valign="middle">
 
       <table>
         <title>Errors that correspond to different <m>\Delta t</m> values.</title>

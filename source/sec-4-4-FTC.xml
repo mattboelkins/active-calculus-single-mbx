@@ -335,7 +335,7 @@
         G(x) = \frac{1}{3}x^3 + C
       </me>,
       where <m>C</m> represents an arbitrary real number constant.
-      Regardless of the formula for <m>g</m>,
+      Provided that <m>g</m> is a continuous function,
       including <m>+C</m> in the formula for its antiderivative <m>G</m> results in the most general possible antiderivative.
     </p>
 

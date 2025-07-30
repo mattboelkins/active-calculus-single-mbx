@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-4-separable">
   <title>Separable differential equations</title>
   <objectives>
@@ -92,7 +93,7 @@
 
     <p>
       As we will see,
-      this will not be helpful,
+      this turns out not to be helpful,
       since the left-hand side is not a product of a function of <m>y</m> with <m>\frac{dy}{dt}</m>.
     </p>
 
@@ -219,7 +220,10 @@
 
     <p>
       The strategy of <xref ref="Ex-7-4-1">Example</xref>
-      may be applied to any differential equation of the form <m>\frac{dy}{dt} = g(y) \cdot h(t)</m>,
+      may be applied to any differential equation of the form 
+      <me>
+        \frac{dy}{dt} = g(y) \cdot h(t)
+      </me>,
       and any differential equation of this form is said to be <em>separable</em>.
       We work to solve a separable differential equation by writing
       <me>
@@ -294,8 +298,8 @@
     </example>
 
     <p>
-      There is one more technical point to make.
-      Notice that <m>y=0</m> is an equilibrium solution to this differential equation.
+      There are two more technical points to make.
+      First, notice that <m>y=0</m> is an equilibrium solution to this differential equation.
       In solving the equation above,
       we begin by dividing both sides by <m>y</m>,
       which is not allowed if <m>y=0</m>.
@@ -303,6 +307,14 @@
       we should consider the equilibrium solutions separately.
       In this case,
       notice that the final form of our solution captures the equilibrium solution by allowing <m>C=0</m>.
+    </p>
+
+    <p>
+      Second, recall the discussion in <xref ref="sec-4-4-FTC">Section</xref> immediately following the development of <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2"/>. When we write  
+      <me>
+        \int \frac{1}{u} \, du = \ln(|u|) + C
+      </me>
+      there is a subtle issue with the value of <m>C</m> that is connected to the discontinuity in <m>\frac{1}{u}</m> at <m>u = 0</m>.  This issue normally gets resolved either by applying a given initial condition to find the value of <m>C</m> or by only being interested in a solution to the differential equation on certain interval of <m>u</m>-values.
     </p>
 
     <xi:include href="./activities/act-7-4-1.xml"/>

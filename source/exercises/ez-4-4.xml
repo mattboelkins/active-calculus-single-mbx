@@ -838,7 +838,7 @@
   <exercise xml:id="Ez-4-4-antid-of-1-over-x" permid="LVI">
     <statement>
       <p permid="uBY">
-        In <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2">Activity</xref>, we noted that for <m>x \gt 0</m>, the antiderivative of <m>f(x) = \frac{1}{x}</m> is <m>F(x) = \ln(x)</m>.  Here we observe that a key difference between <m>f(x)</m> and <m>F(x)</m> is that <m>f</m> is defined for all <m>x \ne 0</m>, while <m>F</m> is only defined for <m>x \gt 0</m>, and see how we can actually define an antiderivative of <m>f</m> for all values of <m>x</m>.
+        In <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2">Activity</xref>, we noted that for <m>x \gt 0</m>, an antiderivative of <m>f(x) = \frac{1}{x}</m> is <m>F(x) = \ln(x)</m>.  Here we observe that a key difference between <m>f(x)</m> and <m>F(x)</m> is that <m>f</m> is defined for all <m>x \ne 0</m>, while <m>F</m> is only defined for <m>x \gt 0</m>, and see how we can actually define an antiderivative of <m>f</m> for all values of <m>x</m>.
       </p>
       <p permid="aJh">
         <ol marker="a." permid="pil">

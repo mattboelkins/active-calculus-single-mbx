@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,17 +12,17 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-7-3">
    
     <exploration xml:id="PA-7-3">
       <introduction>
         <p>
-    Consider the initial value problem
-    <me>
-      \frac{dy}{dt} = \frac12 (y + 1), \ y(0) = 0
-    </me>.
-  </p>
-        <p/>
+          Consider the initial value problem
+          <me>
+            \frac{dy}{dt} = \frac12 (y + 1), \ y(0) = 0
+          </me>.
+        </p>
       </introduction>
       <task workspace="3cm" xml:id="PA-7-3-task-0">
         <statement>
@@ -38,8 +38,8 @@
       <task workspace="0.5cm" xml:id="PA-7-3-task-1">
         <statement>
           <p>
-          Sketch the tangent line on the axes provided below
-          on the interval <m>0\leq t\leq 2</m> and use it to approximate <m>y(2)</m>,
+          Sketch the tangent line you found in (a) on the axes provided
+          on the interval <m>0\leq t\leq 2</m> and use the tangent line to approximate <m>y(2)</m>,
           the value of the solution at <m>t=2</m>.
           </p>
           <image width="47%" source="images/7_3_PA" />
@@ -51,8 +51,8 @@
       <task workspace="3.5cm" xml:id="PA-7-3-task-2">
         <statement>
           <p>
-          Assuming that your approximation for <m>y(2)</m> is the actual value of <m>y(2)</m>,
-          use the differential equation to find the slope of the tangent line to <m>y(t)</m> at <m>t=2</m>.
+          Assuming that your approximation for <m>y(2)</m> from (b) is the actual value of <m>y(2)</m>,
+          use the differential equation to find the slope of the tangent line to <m>y(t)</m> at <m>t=2</m> (i.e., at the point <m>(2,y(2))</m>).
           Then,
           write the equation of the tangent line at <m>t=2</m>.
         </p>
@@ -64,7 +64,7 @@
       <task workspace="3cm" xml:id="PA-7-3-task-3">
         <statement>
           <p>
-          Add a sketch of this tangent line on the interval
+          Add a sketch of this tangent line from (c) on the interval
           <m>2\leq t\leq 4</m> to your plot in (b);
           use this new tangent line to approximate <m>y(4)</m>,
           the value of the solution at <m>t=4</m>.

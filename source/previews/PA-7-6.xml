@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,24 +12,24 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-7-6">
    
     <exploration xml:id="PA-7-6">
       <introduction>
         <p>
-    Recall that one model for population growth states that a population grows at a rate proportional to its size.
-
-    </p>
+          Recall that one model for population growth states that a population grows at a rate proportional to its size.  In symbols: <m>\frac{dP}{dt} = kP</m>.
+        </p>
       </introduction>
       <task workspace="0cm" xml:id="PA-7-6-task-0">
         <statement>
           <p>
-          We begin with the differential equation
-          <me>
-            \frac{dP}{dt} = \frac12 P
-          </me>.
-          Sketch a slope field below as well as a few typical solutions on the axes provided.
-        </p>
+            We begin with the differential equation
+            <me>
+              \frac{dP}{dt} = \frac12 P
+            </me>.
+            Sketch a slope field as well as a few typical solutions on the axes provided.
+          </p>
         <image width="50%" source="images/7_6_preview" />
         </statement>
         <hint/>
@@ -40,7 +40,7 @@
         <statement>
           <p>
           Find all equilibrium solutions of the equation
-          <m>\frac{dP}{dt} = \frac12 P</m> and classify them as stable or unstable.
+          <m>\frac{dP}{dt} = \frac12 P</m> and classify each as stable or unstable.
         </p>
         </statement>
         <hint/>

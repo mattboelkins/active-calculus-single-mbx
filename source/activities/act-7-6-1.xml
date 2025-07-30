@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,15 +12,18 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-7-6-1">
    
     <activity xml:id="act-7-6-1" workspace="3cm">
       <introduction>
         <p>
-      Using some recent population data for planet Earth, we want to model the growth of the population over time.
-      </p>
+           Using some recent population data for planet Earth, we want to model the growth of the population over time.
+        </p>
 
-<tabular top="minor" bottom="minor" permid="EQo">
+    <table xml:id="T-7-6-earth">
+      <title>Some recent population data (in billions) for planet Earth.</title>
+      <tabular top="minor" bottom="minor" permid="EQo">
         <row>
           <cell>Year</cell>
           <cell>1998</cell>
@@ -36,9 +39,7 @@
           <cell>2010</cell>
         </row>
         <row>
-          <cell>
-            <line>Pop</line>
-            <line>(billions)</line></cell>
+          <cell>Pop</cell>
           <cell><m>5.932</m></cell>
           <cell><m>6.008</m></cell>
           <cell><m>6.084</m></cell>
@@ -52,10 +53,11 @@
           <cell><m>6.831</m></cell>
         </row>
       </tabular>
+    </table>
 
       <p>
-      Our first model will be based on the following assumption:
-    </p>
+        Our first model will be based on the following assumption:
+      </p>
         <blockquote>
           <p>
             <em>The rate of change of the population is proportional to the population. </em>

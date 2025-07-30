@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-5-modeling">
   <title>Modeling with differential equations</title>
   <objectives>
@@ -32,7 +33,7 @@
 
   <subsection><title>Introduction</title>
     <p>
-      We have seen several ways that differential equations arise in the natural world,
+      We have seen several ways that differential equations arise in the world around us,
       from the growth of a population to the temperature of a cup of coffee.
       In this section,
       we look more closely at how differential equations give us a natural way to describe various phenoma.
@@ -127,9 +128,7 @@
         </p>
 
         <p>
-          Since <m>5\cdot10^{10}</m> cubic meters of water flow out each year<fn>
-          and we assume that each cubic meter of water that flows out carries with it the plastic pollution it contains
-          </fn>, then
+          Since <m>5\cdot10^{10}</m> cubic meters of water flow out each year (and we assume that each cubic meter of water that flows out carries with it the plastic pollution it contains), then
           the plastic pollution leaves the lake at the rate of
           <me>
             \left(\frac{P}{5\cdot10^{12}} \frac{m^3 \text{ plastic} }{m^3 \text{ water} } \right) \left(5\cdot10^{10} \frac{m^3 \text{ water} }{\text{year} } \right)=\frac{P}{100}
@@ -140,10 +139,10 @@
         <p>
           The total rate of change of <m>P</m> is thus the difference between the rate at which
           pollution enters the lake and the rate at which pollution leaves the
-          lake; that is,
+          lake, which is
           <md>
-            <mrow>\frac{dP}{dt} =\mathstrut \amp  1.5\cdot10^{3}-\frac{P}{100}</mrow>
-            <mrow>=\mathstrut \amp  \frac{1}{100}(1.5\cdot10^{5} - P)</mrow>
+            <mrow>\frac{dP}{dt} \amp=  1.5\cdot10^{3}-\frac{P}{100}</mrow>
+            <mrow>\amp=  \frac{1}{100}(1.5\cdot10^{5} - P)</mrow>
           </md>.
         </p>
 
@@ -202,8 +201,8 @@
           and thus changing variables on the left and antidifferentiating on both sides,
           we find that
           <md>
-            <mrow>\int \frac{dP}{1.5\cdot10^5-P} =\mathstrut \amp  \int \frac1{100}~dt</mrow>
-            <mrow>-\ln|1.5\cdot10^5 - P| =\mathstrut \amp  \frac1{100}t + C</mrow>
+            <mrow>\int \frac{dP}{1.5\cdot10^5-P} \amp=  \int \frac1{100}~dt</mrow>
+            <mrow>-\ln|1.5\cdot10^5 - P| \amp=  \frac1{100}t + C</mrow>
           </md>
         </p>
 
@@ -301,7 +300,7 @@
     <p>
       It follows that
       <me>
-        T = -100\,\ln\left(\frac12\right) \approx 69.3 \text{years.}
+        T = -100\,\ln\left(\frac12\right) \approx 69.3 \text{ years.}
       </me>
     </p>
 

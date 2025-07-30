@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-6-logistic">
   <title>Population Growth and the Logistic Equation</title>
   <objectives>
@@ -32,11 +33,11 @@
 
   <subsection><title>Introduction</title>
     <p>
-      The growth of the earth's population is one of the pressing issues of our time.
+      The growth of the earth's population has long been an important issue for humankind.
       Will the population continue to grow?
       Or will it perhaps level off at some point, and if so, when?
       In this section,
-      we look at two ways in which we may use differential equations to help us address these questions.
+      we look at two ways we may use differential equations to help us address these questions.
     </p>
 
     <p>
@@ -51,13 +52,12 @@
   <subsection>
     <title>The earth's population</title>
     <p>
-      We will now begin studying the earth's population.
-      To get started, in <xref ref="T-7-6-earth">Table</xref>
-      are some data for the earth's population in recent years that we will use in our investigations.
+      We will now begin studying the earth's population.  In <xref ref="act-7-6-1">Activity</xref>, we consider some recent population data and explore an elementary model.
     </p>
 
+    <!-- this belongs only in the activity
     <table xml:id="T-7-6-earth">
-      <title>Some recent population data for planet Earth.</title>
+      <title>Some recent population data (in billions) for planet Earth.</title>
       <tabular top="minor" bottom="minor">
         <row>
           <cell>Year</cell>
@@ -74,9 +74,7 @@
           <cell>2010</cell>
         </row>
         <row>
-          <cell>
-            <line>Pop</line>
-            <line>(billions)</line></cell>
+          <cell>Pop</cell>
           <cell><m>5.932</m></cell>
           <cell><m>6.008</m></cell>
           <cell><m>6.084</m></cell>
@@ -92,6 +90,7 @@
       </tabular>
 
     </table>
+-->
 
     <xi:include href="./activities/act-7-6-1.xml"/>
 
@@ -198,7 +197,7 @@
       The equation <m>\frac{dP}{dt} = P(0.025 - 0.002P)</m> is an example of the
       <em>logistic equation</em>,
       and is the second model for population growth that we will consider.
-      We expect that it will be more realistic,
+      This model should be more realistic,
       because the per capita growth rate is a decreasing function of the population.
     </p>
 
@@ -292,7 +291,7 @@
     <p>
       From the definition of the logarithm,
       replacing <m>e^C</m> with <m>C</m>,
-      and letting <m>C</m> absorb the absolute value signs,
+      and letting <m>C</m> absorb the <m>\pm</m> that arises from the absolute value,
       we now know that
       <me>
         \frac{P}{N-P} =  Ce^{kNt}

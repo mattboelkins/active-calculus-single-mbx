@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-2-qualitative">
   <title>Qualitative behavior of solutions to DEs</title>
   <objectives>
@@ -57,11 +58,14 @@
       a differential equation gives us crucial information about the tangent lines to the graph of a solution.
       We will use this information about the tangent lines to create a <em>slope field</em>
       for the differential equation,
-      which enables us to sketch solutions to initial value problems.
-      Our aim will be to understand the solutions qualitatively.
+      which enables us to sketch solutions to initial value problems with the goal of understanding the solutions qualitatively.
       That is, we would like to understand the basic nature of solutions,
       such as their long-range behavior,
       without precisely determining the value of a solution at a particular point.
+    </p>
+
+    <p>
+      In the following Preview Activity, we consider a certain differential equation and explore how we can use the equation to find tangent lines to provide a kind of road map for an approximate solution.
     </p>
 
     <xi:include href="./previews/PA-7-2-WW.xml" />
@@ -76,7 +80,7 @@
       <xref ref="PA-7-2">Preview Activity</xref>
       shows that we can sketch the solution to an initial value problem if we know an appropriate collection of tangent lines.
       We can use the differential equation to find the slope of the tangent line at any point of interest,
-      and hence plot such a collection.
+      and hence generate and plot such a collection.
     </p>
 
     <p>
@@ -84,7 +88,7 @@
       If <m>t=0</m>, this equation says that <m>dy/dt = 0-2=-2</m>.
       Note that this value holds regardless of the value of <m>y</m>.
       We will therefore sketch tangent lines for several values of <m>y</m> and <m>t=0</m> with a slope of <m>-2</m>,
-      as shown in <xref ref="F-7-2-field-0">Figure</xref>.
+      as shown in <xref ref="F-7-2-field-0">Figure</xref>.  These tangent lines then provide a kind of road map for a solution to follow, starting from a certain initial condition.
     </p>
 
     <sidebyside widths="47% 47%" margins="0%">

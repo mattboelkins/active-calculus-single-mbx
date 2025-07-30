@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,20 +12,18 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-7-1-3">
    
     <activity xml:id="act-7-1-3" workspace="4cm">
       <introduction>
         <p>
-      Consider the differential equation
-      <me>
-        \frac{dv}{dt} = 1.5 - 0.5v
-      </me>.
-    </p>
-        <p>
-      Which of the following functions are solutions of this differential equation?
-
-      </p>
+          Consider the differential equation
+          <me>
+            \frac{dv}{dt} = 1.5 - 0.5v
+          </me>.
+          Determine, with justification, whether or not each of the following functions is a solution to the differential equation.
+        </p>
       </introduction>
       <task workspace="4cm" xml:id="act-7-1-3-task-0">
         <statement>

@@ -175,6 +175,17 @@
     </p>
 
     <xi:include href="./activities/act-5-3-1.xml"/>
+
+        <p>
+          <alert>Note</alert>: one of the integrals in <xref ref="act-5-3-1">Activity</xref> has the form <m>\int \frac{1}{u} \, du</m>.  As we discussed briefly in <xref ref="sec-4-4-FTC">Section</xref> immediately following the development of <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2"/>, there is a subtle issue with writing 
+          <me>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </me>
+          due to the fact that <m>\frac{1}{u}</m> has a discontinuity at <m>u = 0</m>, which leads to an antiderivative for one piece of the function and another antiderivative for the other.  In most applications (such as when we use partial fractions to solve certain differential equations such as the Logistic Equation in <xref ref="sec-7-6-logistic">Section</xref>), the domain of input values on which we seek the antiderivative leads to a natural resolution of this ambiguity, so we will still write <m>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </m>.
+        </p>        
+
   </subsection>
 
   <subsection>
@@ -370,16 +381,6 @@
     </p>
 
     <xi:include href="./activities/act-5-3-2.xml"/>
-
-        <p>
-          <alert>Note</alert>: one of the integrals in <xref ref="act-5-3-1">Activity</xref> has the form <m>\int \frac{1}{u} \, du</m>.  As we discussed briefly in <xref ref="sec-4-4-FTC">Section</xref> immediately following the development of <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2"/>, there is a subtle issue with writing 
-          <me>
-            \int \frac{1}{u} \, du = \ln(|u|) + C
-          </me>
-          due to the fact that <m>\frac{1}{u}</m> has a discontinuity at <m>u = 0</m>, which leads to an antiderivative for one piece of the function and another antiderivative for the other.  In most applications (such as when we use partial fractions to solve certain differential equations such as the Logistic Equation in <xref ref="sec-7-6-logistic">Section</xref>), the domain of input values on which we seek the antiderivative leads to a natural resolution of this ambiguity, so we will still write <m>
-            \int \frac{1}{u} \, du = \ln(|u|) + C
-          </m>.
-        </p>    
         
   </subsection>
 
