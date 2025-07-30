@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,18 +12,18 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-7-1-1">
    
     <activity xml:id="act-7-1-1" workspace="3cm">
       <introduction>
         <p>
-      Express the following statements as
-      differential equations.
-      In each case, you will need to introduce notation
-      to describe the important quantities in the statement so be sure to
-      clearly state what your notation means.
-
-      </p>
+          Express the following statements as
+          differential equations.
+          In each case, you will need to introduce notation
+          to describe the important quantities in the statement, so be sure to
+          clearly state what your notation means.
+        </p>
       </introduction>
       <task workspace="3cm" xml:id="act-7-1-1-task-0">
         <statement>

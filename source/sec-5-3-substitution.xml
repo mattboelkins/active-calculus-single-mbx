@@ -62,9 +62,9 @@
       Because one antiderivative of <m>f</m> is <m>F(x) = \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x</m>,
       the Fundamental Theorem of Calculus tells us that
       <md>
-        <mrow>\int_0^1 \left(x^3 - \sqrt{x} + 5^x\right) \,dx &amp;=  \left. \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x\right|_0^1</mrow>
-        <mrow>&amp;= \left( \frac{1}{4}(1)^4 - \frac{2}{3}(1)^{3/2} + \frac{1}{\ln(5)}5^1 \right) - \left( 0 - 0 + \frac{1}{\ln(5)}5^0 \right)</mrow>
-        <mrow>&amp;= -\frac{5}{12} + \frac{4}{\ln(5)}</mrow>
+        <mrow>\int_0^1 \left(x^3 - \sqrt{x} + 5^x\right) \,dx \amp=  \left. \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x\right|_0^1</mrow>
+        <mrow>\amp= \left( \frac{1}{4}(1)^4 - \frac{2}{3}(1)^{3/2} + \frac{1}{\ln(5)}5^1 \right) - \left( 0 - 0 + \frac{1}{\ln(5)}5^0 \right)</mrow>
+        <mrow>\amp= -\frac{5}{12} + \frac{4}{\ln(5)}</mrow>
       </md>.
     </p>
 
@@ -324,10 +324,10 @@
           and then replace <m>u</m> by the expression <m>7x^4 + 3</m>.
           Doing so, we find
           <md>
-            <mrow>\int \sin (7x^4 + 3) \cdot x^3 \, dx &amp;= \int \sin(u) \cdot \frac{1}{28} \, du</mrow>
-            <mrow>&amp;= \frac{1}{28} \int \sin(u) \, du</mrow>
-            <mrow>&amp;= \frac{1}{28} (-\cos(u)) + C</mrow>
-            <mrow>&amp;= -\frac{1}{28} \cos(7x^4 + 3) + C</mrow>
+            <mrow>\int \sin (7x^4 + 3) \cdot x^3 \, dx \amp= \int \sin(u) \cdot \frac{1}{28} \, du</mrow>
+            <mrow>\amp= \frac{1}{28} \int \sin(u) \, du</mrow>
+            <mrow>\amp= \frac{1}{28} (-\cos(u)) + C</mrow>
+            <mrow>\amp= -\frac{1}{28} \cos(7x^4 + 3) + C</mrow>
           </md>.
         </p>
 
@@ -350,10 +350,10 @@
       For instance,
       we can use <m>u</m>-substitution with <m>u = x^2</m> and <m>du = 2xdx</m> to find that
       <md>
-        <mrow>\int xe^{x^2} \, dx &amp;=  \int e^u \cdot \frac{1}{2} \, du</mrow>
-        <mrow>&amp;= \frac{1}{2} \int e^u \, du</mrow>
-        <mrow>&amp;= \frac{1}{2} e^u + C</mrow>
-        <mrow>&amp;= \frac{1}{2} e^{x^2} + C</mrow>
+        <mrow>\int xe^{x^2} \, dx \amp=  \int e^u \cdot \frac{1}{2} \, du</mrow>
+        <mrow>\amp= \frac{1}{2} \int e^u \, du</mrow>
+        <mrow>\amp= \frac{1}{2} e^u + C</mrow>
+        <mrow>\amp= \frac{1}{2} e^{x^2} + C</mrow>
       </md>.
     </p>
 
@@ -370,6 +370,17 @@
     </p>
 
     <xi:include href="./activities/act-5-3-2.xml"/>
+
+        <p>
+          <alert>Note</alert>: one of the integrals in <xref ref="act-5-3-1">Activity</xref> has the form <m>\int \frac{1}{u} \, du</m>.  As we discussed briefly in <xref ref="sec-4-4-FTC">Section</xref> immediately following the development of <xref ref="T-4-4-Act2">Table</xref> in <xref ref="act-4-4-2"/>, there is a subtle issue with writing 
+          <me>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </me>
+          due to the fact that <m>\frac{1}{u}</m> has a discontinuity at <m>u = 0</m>, which leads to an antiderivative for one piece of the function and another antiderivative for the other.  In most applications (such as when we use partial fractions to solve certain differential equations such as the Logistic Equation in <xref ref="sec-7-6-logistic">Section</xref>), the domain of input values on which we seek the antiderivative leads to a natural resolution of this ambiguity, so we will still write <m>
+            \int \frac{1}{u} \, du = \ln(|u|) + C
+          </m>.
+        </p>    
+        
   </subsection>
 
   <subsection>
@@ -406,9 +417,9 @@
       Thus, under the change of variables of <m>u</m>-substitution,
       we now have
       <md>
-        <mrow>\int_{x=2}^{x=5} xe^{x^2} \, dx    &amp;= \int_{u=4}^{u=25} e^{u} \cdot \frac{1}{2} \, du</mrow>
-        <mrow>&amp;= \left. \frac{1}{2}e^u \right|_{u=4}^{u=25}</mrow>
-        <mrow>&amp;= \frac{1}{2}e^{25} - \frac{1}{2}e^4</mrow>
+        <mrow>\int_{x=2}^{x=5} xe^{x^2} \, dx    \amp= \int_{u=4}^{u=25} e^{u} \cdot \frac{1}{2} \, du</mrow>
+        <mrow>\amp= \left. \frac{1}{2}e^u \right|_{u=4}^{u=25}</mrow>
+        <mrow>\amp= \frac{1}{2}e^{25} - \frac{1}{2}e^4</mrow>
       </md>.
     </p>
 
@@ -419,8 +430,8 @@
       and then evaluate the original definite integral.
       With that method, we'd have
       <md>
-        <mrow>\int_{2}^{5} xe^{x^2} \, dx    &amp;= \left. \frac{1}{2}e^{x^2} \right|_{2}^{5}</mrow>
-        <mrow>&amp;= \frac{1}{2}e^{25} - \frac{1}{2}e^4</mrow>
+        <mrow>\int_{2}^{5} xe^{x^2} \, dx    \amp= \left. \frac{1}{2}e^{x^2} \right|_{2}^{5}</mrow>
+        <mrow>\amp= \frac{1}{2}e^{25} - \frac{1}{2}e^4</mrow>
       </md>,
       which is, of course, the same result.
     </p>

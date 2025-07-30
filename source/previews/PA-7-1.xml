@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet component="static" label="ws-PA-7-1">
    
     <exploration xml:id="PA-7-1">
@@ -21,7 +22,7 @@
     function <m>s(t)</m>,
     where <m>s</m> is measured in feet and <m>t</m> in seconds.
     We
-    determine that the velocity is <m>v(t) = 4t + 1</m> feet per second.
+    determine that the object's velocity is <m>v(t) = 4t + 1</m> feet per second.
 
     </p>
       </introduction>

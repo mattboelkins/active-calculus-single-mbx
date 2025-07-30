@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-1-diff-eq-intro">
   <title>An Introduction to Differential Equations</title>
   <objectives>
@@ -55,8 +56,7 @@
       A differential equation is an equation that provides a description of a function's derivative,
       which means that it tells us the function's rate of change.
       Using this information,
-      we would like to learn as much as possible about the function itself.
-      Ideally we would like to have an algebraic description of the function.
+      we would like to learn as much as possible about the function itself, ideally including an algebraic description of the function.
       As we'll see, this may be too much to ask in some situations,
       but we will still be able to make accurate approximations.
     </p>
@@ -70,14 +70,13 @@
     <idx><h>differential equation</h></idx>
 
     <p>
-      A differential equation is an equation that describes the derivative,
-      or derivatives, of a function that is unknown to us.
+      A differential equation is an equation that describes one or more of the derivatives of a function that is unknown to us.
       For instance, the equation
       <me>
         \frac{dy}{dx} = x\sin x
       </me>
-      describes the derivative of a
-      function <m>y(x)</m> that is unknown to us.
+      describes the derivative of an unknown
+      function <m>y(x)</m>.
     </p>
 
     <p>
@@ -106,7 +105,7 @@
     </p>
 
     <p>
-      Differential equations arise frequently in our every day world.
+      Differential equations arise frequently in our everyday world.
       For instance, you may hear a bank advertising:
     </p>
 
@@ -122,7 +121,7 @@
       translate: <m>A(t)</m> will be amount of money you have in your account at
       time <m>t</m>.
       The rate at which your money grows is the
-      derivative <m>dA/dt</m>, and we are told that this rate is
+      derivative <m>\frac{dA}{dt}</m>, and we are told that this rate is
       <m>0.03 A</m>.
       This leads to the differential equation
       <me>
@@ -134,7 +133,7 @@
       This differential equation has a slightly different feel than the previous equation <m>\frac{ds}{dt} = 4t+1</m>.
       In the earlier example,
       the rate of change depends only on the independent variable <m>t</m>,
-      and we may find <m>s(t)</m> by integrating the velocity <m>4t+1</m>.
+      and we may find <m>s(t)</m> by integrating the velocity <m>4t+1</m> (with respect to <m>t</m>).
       In the banking example, however,
       the rate of change depends on the dependent variable <m>A</m>,
       so we'll need some new techniques in order to find <m>A(t)</m>.
@@ -146,7 +145,7 @@
   <subsection>
     <title>Differential equations in the world around us</title>
     <p>
-      Differential equations give a natural way to describe phenomena we see in the real world.
+      Differential equations give a natural way to describe phenomena we see in physical reality.
       For instance,
       physical principles are frequently expressed as a description of how a quantity changes.
       A good example is Newton's Second Law,
@@ -167,8 +166,8 @@
       gravitational constant <m>g</m>.
       We therefore have
       <md>
-        <mrow>ma =\mathstrut \amp  mg, \ \text{or}</mrow>
-        <mrow>\frac{dv}{dt} =\mathstrut \amp  g</mrow>
+        <mrow>ma \amp=  mg, \text{ or}</mrow>
+        <mrow>\frac{dv}{dt} \amp=  g</mrow>
       </md>,
       where <m>v</m> is the velocity of the object,
       and <m>g = 9.8</m> meters per
@@ -181,11 +180,12 @@
     <xi:include href="./activities/act-7-1-2.xml"/>
 
     <p>
-      The point of this activity is to demonstrate how differential equations model processes in the real world.
+      The point of this activity is to demonstrate how differential equations model processes in physical reality.
       In this example, two factors influence the velocities:
       gravity and wind resistance.
       The differential equation describes how these factors influence the rate of change of the velocities.
     </p>
+
   </subsection>
 
   <subsection>
@@ -193,8 +193,7 @@
     <idx><h>differential equation</h><h>solution</h></idx>
 
     <p>
-      A differential equation describes the derivative,
-      or derivatives, of a function that is unknown to us.
+      A differential equation describes one or more derivatives of a function that is unknown to us.
       By a <em>solution</em> to a differential equation,
       we mean simply a function that satisfies this description.
     </p>
@@ -214,8 +213,7 @@
     <p>
       If we have a candidate for a solution, it is straightforward to
       check whether it is a solution or not.
-      Before we demonstrate,
-      however, let's consider the same issue in a simpler context.
+      Before we demonstrate how, let's consider the same issue in a simpler context.
       Suppose we are given the equation
       <m>2x^2 - 2x = 2x+6</m> and asked whether <m>x=3</m> is a solution.
       To answer
@@ -249,17 +247,15 @@
       Consider
       the differential equation
       <md>
-        <mrow>\frac{dv}{dt} =\mathstrut \amp  1.5 - 0.5v, \ \text{or}</mrow>
-        <mrow>\frac{d\Box}{dt} =\mathstrut \amp  1.5 - 0.5\Box</mrow>
+        <mrow>\frac{dv}{dt} \amp=  1.5 - 0.5v, \ \text{or}</mrow>
+        <mrow>\frac{d\Box}{dt} \amp=  1.5 - 0.5\Box</mrow>
       </md>.
     </p>
 
     <p>
-      Let's ask whether <m>v(t) = 3 - 2e^{-0.5t}</m> is a solution<fn>
-      At this time,
-      don't worry about why we chose this function;  we will learn
-      techniques for finding solutions to differential equations soon enough.
-      </fn>.
+      Let's ask whether <m>v(t) = 3 - 2e^{-0.5t}</m> is a solution (for now,
+      don't worry about why we chose this function;  we will learn some
+      techniques for finding solutions to differential equations soon).
       Using this formula for <m>v</m>, observe first that
       <me>
         \frac{dv}{dt} =  \frac{d\Box}{dt}  = \frac{d}{dt}[3 - 2e^{-0.5t}] = -2e^{-0.5t} \cdot (-0.5) = e^{-0.5t}
