@@ -1295,9 +1295,9 @@ eBookConfig.enable_chatcodes =  false;
 <div class="para">it is straightforward to do so, since we can easily antidifferentiate <span class="process-math">\(f(x) = x^3 - \sqrt{x} + 5^x\text{.}\)</span> Because one antiderivative of <span class="process-math">\(f\)</span> is <span class="process-math">\(F(x) = \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x\text{,}\)</span> the Fundamental Theorem of Calculus tells us that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/C-2.html ./knowl/xref/T-4-4-Act2.html" id="sec-5-3-substitution-3-3-7">
 \begin{align*}
-\int_0^1 \left(x^3 - \sqrt{x} + 5^x\right) \,dx &amp;=  \left. \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x\right|_0^1\\
-&amp;= \left( \frac{1}{4}(1)^4 - \frac{2}{3}(1)^{3/2} + \frac{1}{\ln(5)}5^1 \right) - \left( 0 - 0 + \frac{1}{\ln(5)}5^0 \right)\\
-&amp;= -\frac{5}{12} + \frac{4}{\ln(5)}\text{.}
+\int_0^1 \left(x^3 - \sqrt{x} + 5^x\right) \,dx \amp=  \left. \frac{1}{4}x^4 - \frac{2}{3}x^{3/2} + \frac{1}{\ln(5)}5^x\right|_0^1\\
+\amp= \left( \frac{1}{4}(1)^4 - \frac{2}{3}(1)^{3/2} + \frac{1}{\ln(5)}5^1 \right) - \left( 0 - 0 + \frac{1}{\ln(5)}5^0 \right)\\
+\amp= -\frac{5}{12} + \frac{4}{\ln(5)}\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-5-3-substitution-3-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1645,10 +1645,10 @@ g(x) = x e^{x^2} \ \text{and}  \ h(x) = e^{x^2}?
 <div class="para">Now we may evaluate the easier integral in <span class="process-math">\(u\text{,}\)</span> and then replace <span class="process-math">\(u\)</span> by the expression <span class="process-math">\(7x^4 + 3\text{.}\)</span> Doing so, we find</div>
 <div class="displaymath process-math" id="Ex-5-3-usub-2-3-4">
 \begin{align*}
-\int \sin (7x^4 + 3) \cdot x^3 \, dx &amp;= \int \sin(u) \cdot \frac{1}{28} \, du\\
-&amp;= \frac{1}{28} \int \sin(u) \, du\\
-&amp;= \frac{1}{28} (-\cos(u)) + C\\
-&amp;= -\frac{1}{28} \cos(7x^4 + 3) + C\text{.}
+\int \sin (7x^4 + 3) \cdot x^3 \, dx \amp= \int \sin(u) \cdot \frac{1}{28} \, du\\
+\amp= \frac{1}{28} \int \sin(u) \, du\\
+\amp= \frac{1}{28} (-\cos(u)) + C\\
+\amp= -\frac{1}{28} \cos(7x^4 + 3) + C\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ex-5-3-usub-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1669,10 +1669,10 @@ g(x) = x e^{x^2} \ \text{and}  \ h(x) = e^{x^2}?
 <div class="para">The <span class="process-math">\(u\)</span>-substitution worked because the function multiplying <span class="process-math">\(\sin (7x^4 + 3)\)</span> was <span class="process-math">\(x^3\text{.}\)</span> If instead that function was <span class="process-math">\(x^2\)</span> or <span class="process-math">\(x^4\text{,}\)</span> the substitution process would not have worked. This is one of the primary challenges of antidifferentiation: slight changes in the integrand make tremendous differences. For instance, we can use <span class="process-math">\(u\)</span>-substitution with <span class="process-math">\(u = x^2\)</span> and <span class="process-math">\(du = 2xdx\)</span> to find that</div>
 <div class="displaymath process-math" id="sec-5-3-substitution-5-13-9">
 \begin{align*}
-\int xe^{x^2} \, dx &amp;=  \int e^u \cdot \frac{1}{2} \, du\\
-&amp;= \frac{1}{2} \int e^u \, du\\
-&amp;= \frac{1}{2} e^u + C\\
-&amp;= \frac{1}{2} e^{x^2} + C\text{.}
+\int xe^{x^2} \, dx \amp=  \int e^u \cdot \frac{1}{2} \, du\\
+\amp= \frac{1}{2} \int e^u \, du\\
+\amp= \frac{1}{2} e^u + C\\
+\amp= \frac{1}{2} e^{x^2} + C\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-5-3-substitution-5-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1736,7 +1736,20 @@ g(x) = x e^{x^2} \ \text{and}  \ h(x) = e^{x^2}?
 <div class="para" id="act-5-3-2-task-2-1-1">
 <span class="process-math">\(\int \frac{\cos(\sqrt{x})}{\sqrt{x}} \, dx\)</span><div class="autopermalink" data-description="Paragraph"><a href="#act-5-3-2-task-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Task 5.3.3.c"><a href="#act-5-3-2-task-2" title="Copy heading and permalink for Task 5.3.3.c" aria-label="Copy heading and permalink for Task 5.3.3.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 5.3.3"><a href="#act-5-3-2" title="Copy heading and permalink for Activity 5.3.3" aria-label="Copy heading and permalink for Activity 5.3.3">🔗</a></div></article><div class="autopermalink" data-description="  5.3.3"><a href="#ws-act-5-3-2" title="Copy heading and permalink for   5.3.3" aria-label="Copy heading and permalink for   5.3.3">🔗</a></div></section><div class="autopermalink" data-description="Subsection 5.3.3: Reversing the Chain Rule: u-substitution"><a href="#sec-5-3-substitution-5" title="Copy heading and permalink for Subsection 5.3.3: Reversing the Chain Rule: u-substitution" aria-label="Copy heading and permalink for Subsection 5.3.3: Reversing the Chain Rule: u-substitution">🔗</a></div></section><section class="subsection" id="sec-5-3-substitution-6"><h3 class="heading hide-type">
+<div class="autopermalink" data-description="Task 5.3.3.c"><a href="#act-5-3-2-task-2" title="Copy heading and permalink for Task 5.3.3.c" aria-label="Copy heading and permalink for Task 5.3.3.c">🔗</a></div></article><div class="autopermalink" data-description="Activity 5.3.3"><a href="#act-5-3-2" title="Copy heading and permalink for Activity 5.3.3" aria-label="Copy heading and permalink for Activity 5.3.3">🔗</a></div></article><div class="autopermalink" data-description="  5.3.3"><a href="#ws-act-5-3-2" title="Copy heading and permalink for   5.3.3" aria-label="Copy heading and permalink for   5.3.3">🔗</a></div></section><div class="para logical" id="sec-5-3-substitution-5-16">
+<div class="para">
+<em class="alert">Note</em>: one of the integrals in <a href="sec-5-3-substitution.html#act-5-3-1" class="xref" data-knowl="./knowl/xref/act-5-3-1.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 5.3.2">Activity 5.3.2</a> has the form <span class="process-math">\(\int \frac{1}{u} \, du\text{.}\)</span>  As we discussed briefly in <a href="sec-4-4-FTC.html" class="internal" title="Section 4.4: The Fundamental Theorem of Calculus">Section 4.4</a> immediately following the development of <a href="sec-4-4-FTC.html#T-4-4-Act2" class="xref" data-knowl="./knowl/xref/T-4-4-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 4.4.5: Familiar basic functions and their antiderivatives.">Table 4.4.5</a> in <a href="sec-4-4-FTC.html#act-4-4-2" class="xref" data-knowl="./knowl/xref/act-4-4-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.4.3">Activity 4.4.3</a>, there is a subtle issue with writing</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/act-5-3-1.html ./knowl/xref/sec-4-4-FTC.html ./knowl/xref/T-4-4-Act2.html ./knowl/xref/act-4-4-2.html ./knowl/xref/sec-7-6-logistic.html">
+\begin{equation*}
+\int \frac{1}{u} \, du = \ln(|u|) + C
+\end{equation*}
+</div>
+<div class="para">due to the fact that <span class="process-math">\(\frac{1}{u}\)</span> has a discontinuity at <span class="process-math">\(u = 0\text{,}\)</span> which leads to an antiderivative for one piece of the function and another antiderivative for the other.  In most applications (such as when we use partial fractions to solve certain differential equations such as the Logistic Equation in <a href="sec-7-6-logistic.html" class="internal" title="Section 7.6: Population Growth and the Logistic Equation">Section 7.6</a>), the domain of input values on which we seek the antiderivative leads to a natural resolution of this ambiguity, so we will still write <span class="process-math">\(\int \frac{1}{u} \, du = \ln(|u|) + C
+\text{.}\)</span>
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#sec-5-3-substitution-5-16" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Subsection 5.3.3: Reversing the Chain Rule: u-substitution"><a href="#sec-5-3-substitution-5" title="Copy heading and permalink for Subsection 5.3.3: Reversing the Chain Rule: u-substitution" aria-label="Copy heading and permalink for Subsection 5.3.3: Reversing the Chain Rule: u-substitution">🔗</a></div></section><section class="subsection" id="sec-5-3-substitution-6"><h3 class="heading hide-type">
 <span class="type">Subsection</span><span class="space"> </span><span class="codenumber">5.3.4</span><span class="space"> </span><span class="title">Evaluating Definite Integrals via <span class="process-math">\(u\)</span>-substitution</span>
 </h3>
 <div class="para logical" id="sec-5-3-substitution-6-2">
@@ -1761,9 +1774,9 @@ g(x) = x e^{x^2} \ \text{and}  \ h(x) = e^{x^2}?
 <div class="para">When we execute a <span class="process-math">\(u\)</span>-substitution, we change the <em class="emphasis">variable</em> of integration; it is essential to note that this also changes the <em class="emphasis">limits</em> of integration. For instance, with the substitution <span class="process-math">\(u = x^2\)</span> and <span class="process-math">\(du = 2x \, dx\text{,}\)</span> it also follows that when <span class="process-math">\(x = 2\text{,}\)</span> <span class="process-math">\(u = 2^2 = 4\text{,}\)</span> and when <span class="process-math">\(x = 5\text{,}\)</span> <span class="process-math">\(u = 5^2 = 25\text{.}\)</span> Thus, under the change of variables of <span class="process-math">\(u\)</span>-substitution, we now have</div>
 <div class="displaymath process-math" id="sec-5-3-substitution-6-4-11">
 \begin{align*}
-\int_{x=2}^{x=5} xe^{x^2} \, dx    &amp;= \int_{u=4}^{u=25} e^{u} \cdot \frac{1}{2} \, du\\
-&amp;= \left. \frac{1}{2}e^u \right|_{u=4}^{u=25}\\
-&amp;= \frac{1}{2}e^{25} - \frac{1}{2}e^4\text{.}
+\int_{x=2}^{x=5} xe^{x^2} \, dx    \amp= \int_{u=4}^{u=25} e^{u} \cdot \frac{1}{2} \, du\\
+\amp= \left. \frac{1}{2}e^u \right|_{u=4}^{u=25}\\
+\amp= \frac{1}{2}e^{25} - \frac{1}{2}e^4\text{.}
 \end{align*}
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-5-3-substitution-6-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1772,8 +1785,8 @@ g(x) = x e^{x^2} \ \text{and}  \ h(x) = e^{x^2}?
 <div class="para">Alternatively, we could consider the related indefinite integral <span class="process-math">\(\int xe^{x^2} \, dx\text{,}\)</span> find the antiderivative <span class="process-math">\(\frac{1}{2}e^{x^2}\)</span> through <span class="process-math">\(u\)</span>-substitution, and then evaluate the original definite integral. With that method, we’d have</div>
 <div class="displaymath process-math" id="sec-5-3-substitution-6-5-4">
 \begin{align*}
-\int_{2}^{5} xe^{x^2} \, dx    &amp;= \left. \frac{1}{2}e^{x^2} \right|_{2}^{5}\\
-&amp;= \frac{1}{2}e^{25} - \frac{1}{2}e^4\text{,}
+\int_{2}^{5} xe^{x^2} \, dx    \amp= \left. \frac{1}{2}e^{x^2} \right|_{2}^{5}\\
+\amp= \frac{1}{2}e^{25} - \frac{1}{2}e^4\text{,}
 \end{align*}
 </div>
 <div class="para">which is, of course, the same result.</div>
