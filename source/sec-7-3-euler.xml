@@ -216,7 +216,7 @@
           <cell><m>\Delta y</m></cell>
         </row>
         <row>
-          <cell><m>0.0000</m></cell>
+          <cell><m>0.0</m></cell>
           <cell><m>1.0000</m></cell>
           <cell/>
           <cell/>
@@ -234,7 +234,7 @@
           <cell><m>\Delta y</m></cell>
         </row>
         <row>
-          <cell><m>0.0000</m></cell>
+          <cell><m>0.0</m></cell>
           <cell><m>1.0000</m></cell>
           <cell><m>-1.0000</m></cell>
           <cell><m>-0.2000</m></cell>
@@ -254,7 +254,7 @@
       <m>\Delta t</m> and <m>y_i</m> by <m>\Delta y</m> to get the start of the second row in <xref ref="T-7-3-euler-second-step">Table</xref>.
     </p>
 
-    <sidebyside widths="47% 47%">
+    <sidebyside widths="44% 44%">
 
       <table xml:id="T-7-3-euler-second-step">
         <title>Starting the second step of Euler's Method.</title>
@@ -266,13 +266,13 @@
               <cell><m>\Delta y</m></cell>
             </row>
             <row>
-              <cell><m>0.0000</m></cell>
+              <cell><m>0.0</m></cell>
               <cell><m>1.0000</m></cell>
               <cell><m>-1.0000</m></cell>
               <cell><m>-0.2000</m></cell>
             </row>
             <row>
-              <cell><m>0.2000</m></cell>
+              <cell><m>0.2</m></cell>
               <cell><m>0.8000</m></cell>
               <cell/>
               <cell/>
@@ -290,43 +290,43 @@
           <cell><m>\Delta y</m></cell>
         </row>
         <row>
-          <cell><m>0.0000</m></cell>
+          <cell><m>0.0</m></cell>
           <cell><m>1.0000</m></cell>
           <cell><m>-1.0000</m></cell>
           <cell><m>-0.2000</m></cell>
         </row>
         <row>
-          <cell><m>0.2000</m></cell>
+          <cell><m>0.2</m></cell>
           <cell><m>0.8000</m></cell>
           <cell><m>-0.6000</m></cell>
           <cell><m>-0.1200</m></cell>
         </row>
         <row>
-          <cell><m>0.4000</m></cell>
+          <cell><m>0.4</m></cell>
           <cell><m>0.6800</m></cell>
           <cell><m>-0.2800</m></cell>
           <cell><m>-0.0560</m></cell>
         </row>
         <row>
-          <cell><m>0.6000</m></cell>
+          <cell><m>0.6</m></cell>
           <cell><m>0.6240</m></cell>
           <cell><m>-0.0240</m></cell>
           <cell><m>-0.0048</m></cell>
         </row>
         <row>
-          <cell><m>0.8000</m></cell>
+          <cell><m>0.8</m></cell>
           <cell><m>0.6192</m></cell>
           <cell><m>0.1808</m></cell>
           <cell><m>0.0362</m></cell>
         </row>
         <row>
-          <cell><m>1.0000</m></cell>
+          <cell><m>1.0</m></cell>
           <cell><m>0.6554</m></cell>
           <cell><m>0.3446</m></cell>
           <cell><m>0.0689</m></cell>
         </row>
         <row>
-          <cell><m>1.2000</m></cell>
+          <cell><m>1.2</m></cell>
           <cell><m>0.7243</m></cell>
           <cell><m>0.4757</m></cell>
           <cell><m>0.0951</m></cell>

@@ -410,15 +410,15 @@
       <me>
         T_1(x) = f(a) + f'(a)(x-a)
       </me>, 
-      it is natural for us to consider a quadratic approximation of form 
+      it is natural for us to consider quadratic and cubic approximations of form 
       <me>
-        T_2(x) = c_0 + c_1(x-a) + c_2 (x-a)^2
+        T_2(x) = c_0 + c_1(x-a) + c_2 (x-a)^2, {\text{ and}}
       </me>, 
       a cubic approximation of form 
       <me>
         T_3(x) = c_0 + c_1 (x-a) + c_2 (x-a)^2 + c_3(x-a)^3
       </me>, 
-      and so on.  Indeed, we define the more general degree <m>n</m> Taylor Polynomial centered at <m>a</m> as follows.
+      and so on.  We define the more general degree <m>n</m> Taylor Polynomial centered at <m>a</m> as follows.
     </p>
 
     <definition xml:id="def-Taylor-poly-a">
@@ -429,9 +429,9 @@
           T_n(x) = c_0 + c_1(x-a) + c_2(x-a)^2 + \cdots + c_n(x-a)^n
          </me>
          that satisfies
-         <me>
+         <m>
           T_n(a) = f(a), T_n'(a) = f'(a), T_n''(a) = f''(a), \ldots, T_n^{(n)}(a) = f^{(n)}(a)           
-         </me>. 
+         </m>. 
         </p>
         
       </statement>
