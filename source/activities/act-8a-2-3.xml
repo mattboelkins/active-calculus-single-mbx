@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-8a-2-3">
   <activity xml:id="act-8a-2-3">
     <introduction>
@@ -23,7 +24,7 @@
         
       </p>
     </introduction>
-    <task workspace="3cm" xml:id="act-8a-2-3-task-0">
+    <task workspace="0.25cm" xml:id="act-8a-2-3-task-0">
       <statement>
         <p>
           We recall <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m> from our work in <xref ref="act-8a-2-2">Activity</xref>, and then compute <m>f'(2)</m>, <m>f''(2)</m>, <m>f'''(2)</m>, and <m>f^{(4)}(2)</m>.  Enter the updated results in the blanks below.
@@ -116,7 +117,7 @@
           <tabular top="none" bottom="none"><row><cell halign="right"><m>f(x) =</m></cell><cell><m>\ln(x)</m></cell><cell halign="right"><m>f(2) =</m></cell><cell><m>\ln(2)</m></cell></row><row><cell halign="right"><m>f'(x) = </m></cell><cell><m>x^{-1}</m></cell><cell halign="right"><m>f'(2) = </m></cell><cell><m>\frac{1}{2}</m></cell></row><row><cell halign="right"><m>f''(x) = </m></cell><cell><m>-1 \cdot x^{-2}</m></cell><cell halign="right"><m>f''(2) = </m></cell><cell><m>-\frac{1}{2^2}</m></cell></row><row><cell halign="right"><m>f'''(x) = </m></cell><cell><m>(-2)(-1)x^{-3}</m></cell><cell halign="right"><m>f'''(2) = </m></cell><cell><m>\frac{(-2)(-1)}{2^3}</m></cell></row><row><cell halign="right"><m>f^{(4)}(x) = </m></cell><cell><m>(-3)(-2)(-1)x^{-4}</m></cell><cell halign="right"><m>f^{(4)}(2) = </m></cell><cell><m>\frac{(-3)(-2)(-1)}{2^4}</m></cell></row></tabular>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-2-3-task-1">
+      <task workspace="2cm" xml:id="act-8a-2-3-task-1">
         <statement>
           <p>
             Use your work in (<xref ref="act-8a-2-3-task-0" text="local"/>) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(a)}{k!}</m> to determine <m>T_4(x) = c_0 + c_1 (x-2) + c_2 (x-2)^2 + c_3(x-2)^3 + c_4(x-2)^4</m>.
@@ -134,7 +135,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-2-3-task-2">
+      <task workspace="0.25cm" xml:id="act-8a-2-3-task-2">
         <statement>
           <p>
             Use appropriate technology to plot <m>f(x) = \ln(x)</m>, its tangent line, <m>T_1(x) = \ln(2) + \frac{1}{2}(x - 2)</m>, and <m>T_4(x)</m> on the same axes in the window shown <xref ref="F-8a-2-act-3">Figure</xref>. 

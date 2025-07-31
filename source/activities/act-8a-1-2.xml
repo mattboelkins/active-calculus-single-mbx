@@ -295,7 +295,7 @@
         </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-8a-1-2-task-1">
+    <task workspace="10cm" xml:id="act-8a-1-2-task-1">
       <statement>
 					<p>
 						Next, recall that we want <m>f</m> and <m>T_3</m> to share the same function and derivative values at <m>a = 0</m> up to and including the third derivative.  For instance, one of the four needed equations is <m>T_3'(0) = f'(0)</m>.  Use the four equations your work in the preceding question to determine the values of <m>c_0</m>, <m>c_1</m>, <m>c_2</m>, and <m>c_3</m>.

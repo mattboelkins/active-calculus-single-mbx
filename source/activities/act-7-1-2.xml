@@ -203,7 +203,7 @@
         </solution>
       </task>
 
-      <task workspace="4cm" xml:id="act-7-1-2-task-2">
+      <task workspace="2cm" xml:id="act-7-1-2-task-2">
         <statement>
           <p>
             You should find that all of the points you plotted on the axes in (a) lie on a line.  Remember that these points show how <m>dv/dt</m> depends on <m>v</m>.
@@ -243,7 +243,7 @@
         </solution>
       </task>
 
-      <task workspace="2cm" xml:id="act-7-1-2-task-4">
+      <task workspace="3cm" xml:id="act-7-1-2-task-4">
         <statement>
           <p>
             Use the differential equation you found in (c) to 
@@ -263,7 +263,7 @@
         </solution>
       </task>
 
-      <task workspace="2cm" xml:id="act-7-1-2-task-5">
+      <task workspace="3cm" xml:id="act-7-1-2-task-5">
         <statement>
           <p>
             Similarly, use the differential equation to

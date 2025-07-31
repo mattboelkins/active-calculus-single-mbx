@@ -27,7 +27,7 @@
           To find the Taylor series for <m>\sin(x)</m> without using the definition, we consider the function <m>f(x) = \cos(x)</m> and recall that <m>f'(x) = -\sin(x)</m>.  Then we use the Power Series Differentiation Theorem on the known series for <m>f(x) = \cos(x)</m> to find the Taylor series for <m>f'(x) = -\sin(x)</m>.
         </p>
       </introduction>
-      <task workspace="1cm" xml:id="act-8a-5-2-task-01">
+      <task workspace="4cm" xml:id="act-8a-5-2-task-01">
         <statement>
           <p>
             Consider <m>f(x) = \cos(x)</m> and recall that its Taylor series in sigma notation is
@@ -49,7 +49,7 @@
           </p>
         </solution>  
       </task>
-      <task workspace="3cm" xml:id="act-8a-5-2-task-02">
+      <task workspace="3.5cm" xml:id="act-8a-5-2-task-02">
         <statement>
           <p>
             Using the expanded form of the Taylor series for <m>f(x) = \cos(x)</m>, apply the Power Series Differentiation Theorem to find the Taylor series for <m>f'(x) = -\sin(x)</m> in expanded form, being sure to simplify each constant coefficient in the expansion.  Show the first three nonzero terms.
@@ -75,7 +75,7 @@
           </p>
         </solution>
       </task>  
-      <task workspace="3cm" xml:id="act-8a-5-2-task-03">
+      <task workspace="5cm" xml:id="act-8a-5-2-task-03">
         <statement>
           <p>
             Now recall the series expansion of <m>\cos(x)</m> in sigma notation.  What is the derivative of the general term of the series, 
@@ -104,7 +104,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-5-2-task-04">
+      <task workspace="2cm" xml:id="act-8a-5-2-task-04">
         <statement>
           <p>
             Finally, state the Taylor series for <m>f'(x) = -\sin(x)</m> in sigma notation.  Be sure to decide whether the series should be indexed starting with <m>k = 0</m> or <m>k = 1</m> and to justify your choice.
@@ -133,7 +133,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="1cm" xml:id="act-8a-5-2-task-05">
+      <task workspace="1.5cm" xml:id="act-8a-5-2-task-05">
         <statement>
           <p>
             How can you now use your work in part (iv) to find the Taylor series for <m>\sin(x)</m>?
@@ -213,7 +213,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-5-2-task-13">
+      <task workspace="5cm" xml:id="act-8a-5-2-task-13">
         <statement>
           <p>
             Explain why we can think of <m>g(x)</m> as being given by

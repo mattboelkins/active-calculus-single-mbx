@@ -304,7 +304,7 @@
           </table>
       </solution>
     </task>  
-    <task workspace="2cm" xml:id="act-8a-2-1-task-1">
+    <task workspace="6cm" xml:id="act-8a-2-1-task-1">
       <statement>
         <p>
           Use your work in (a) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(0)}{k!}</m> to find formulas for <m>T_2(x)</m>, <m>T_4(x)</m>, <m>T_6(x)</m>, and <m>T_8(x)</m>.
@@ -332,7 +332,7 @@
         </p>
       </solution>
     </task>  
-    <task workspace="2cm" xml:id="act-8a-2-1-task-2">  
+    <task workspace="4cm" xml:id="act-8a-2-1-task-2">  
       <statement>
         <p>
           Based on the patterns you observe in your prior work, what do you expect to be the formula for <m>T_{10}(x)</m>?
@@ -350,7 +350,7 @@
       </solution>
     </task>
 
-    <task workspace="3cm" xml:id="act-8a-2-1-task-3">
+    <task workspace="1cm" xml:id="act-8a-2-1-task-3">
       <statement>
         <p>
           Use appropriate computing technology to plot <m>T_4(x)</m> and <m>T_6(x)</m> along with <m>f(x) = \cos(x)</m> and <m>T_2(x)</m> in the same window as shown in <xref ref="F-8a-2-act-1">Figure</xref>.

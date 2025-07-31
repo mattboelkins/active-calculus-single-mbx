@@ -21,7 +21,7 @@
     </p>
       <p/>
     </introduction>
-    <task workspace="3cm" xml:id="act-8a-5x-2-task-0">
+    <task workspace="9cm" xml:id="act-8a-5x-2-task-0">
       <statement>
         <p>
             Use the degree <m>10</m> Taylor polynomial (centered at <m>a = 0</m>) of <m>f(x) = e^x</m> to estimate the value of <m>e^2</m>.  What is the maximum error of your estimate, according to the Lagrange Error Bound?  How does this compare to the actual error between <m>e^2</m> and <m>T_{10}(2)</m> as reported by a computer algebra system?
@@ -31,7 +31,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="act-8a-5x-2-task-1">
+    <task workspace="8cm" xml:id="act-8a-5x-2-task-1">
       <statement>
         <p>
                 Use a degree <m>n</m> Taylor polynomial (centered at <m>a = 0</m>) of <m>f(x) = \cos(x)</m> to estimate the value of <m>\cos(1)</m> within an accuracy of <m>0.00000001</m>.  According to the Lagrange Error Bound, what value of <m>n</m> is needed to achieve this accuracy?  What is the resulting approximate value of <m>\cos(1)</m>?
@@ -41,7 +41,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="act-8a-5x-2-task-2">
+    <task workspace="9cm" xml:id="act-8a-5x-2-task-2">
       <statement>
         <p>
           Recall that for <m>f(x) = \ln(1+x)</m>, its Taylor series centered at <m>a = 0</m> is given by 

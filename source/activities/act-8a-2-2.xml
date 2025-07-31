@@ -24,7 +24,7 @@
       </p>
       <p/>
     </introduction>
-    <task workspace="3cm" xml:id="act-8a-2-2-task-0">
+    <task workspace="4cm" xml:id="act-8a-2-2-task-0">
       <statement>
         <p>
           Determine <m>f'(x)</m>, <m>f''(x)</m>, <m>f'''(x)</m>, and <m>f^{(4)}(x)</m>, and then compute <m>f'(1)</m>, <m>f''(1)</m>, <m>f'''(1)</m>, and <m>f^{(4)}(1)</m>.  Enter your results in the provided blanks below.
@@ -118,7 +118,7 @@
           <tabular top="none" bottom="none"><row><cell halign="right"><m>f(x) =</m></cell><cell><m>\ln(x)</m></cell><cell halign="right"><m>f(1) =</m></cell><cell><m>0</m></cell></row><row><cell halign="right"><m>f'(x) = </m></cell><cell><m>x^{-1}</m></cell><cell halign="right"><m>f'(1) = </m></cell><cell><m>1</m></cell></row><row><cell halign="right"><m>f''(x) = </m></cell><cell><m>-1 \cdot x^{-2}</m></cell><cell halign="right"><m>f''(1) = </m></cell><cell><m>-1</m></cell></row><row><cell halign="right"><m>f'''(x) = </m></cell><cell><m>(-2)(-1)x^{-3}</m></cell><cell halign="right"><m>f'''(1) = </m></cell><cell><m>(-2)(-1)</m></cell></row><row><cell halign="right"><m>f^{(4)}(x) = </m></cell><cell><m>(-3)(-2)(-1)x^{-4}</m></cell><cell halign="right"><m>f^{(4)}(1) = </m></cell><cell><m>(-3)(-2)(-1)</m></cell></row></tabular>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-2-2-task-1">
+      <task workspace="8cm" xml:id="act-8a-2-2-task-1">
         <statement>
           <p>
             Use your work in (<xref ref="act-8a-2-2-task-0" text="local"/>) along with the fact that the coefficients of the Taylor polynomial are determined by <m>c_k = \frac{f^{(k)}(a)}{k!}</m> to determine 
@@ -147,7 +147,7 @@
         </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-8a-2-2-task-2">
+    <task workspace="1.5cm" xml:id="act-8a-2-2-task-2">
       <statement>
         <p>
           Use appropriate technology to plot <m>f(x) = \ln(x)</m>, its tangent line, <m>T_1(x) = x - 1</m>, and <m>T_4(x)</m> in the same window shown in <xref ref="F-8a-2-act-2">Figure</xref>.  
@@ -174,7 +174,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-2-2-task-3">
+      <task workspace="2cm" xml:id="act-8a-2-2-task-3">
         <statement>
           <p>
             Compute <m>|f(x) - T_4(x)|</m> for several different <m>x</m> values (you might find it helpful to use a slider in <em>Desmos</em> in the variable <m>b</m> to experiment with <m>|f(b) - T_4(b)|</m>); for approximately what values of <m>x</m> is it true that <m>|f(x) - T_4(x)| \lt 0.1</m>?
@@ -191,7 +191,7 @@
           </p>
         </solution>
       </task>
-      <task workspace="3cm" xml:id="act-8a-2-2-task-4">
+      <task workspace="2cm" xml:id="act-8a-2-2-task-4">
         <statement>
           <p>
             Use the patterns you observe in your work in parts (a) and (b) to conjecture formulas for <m>T_5(x)</m> and <m>T_6(x)</m>.  

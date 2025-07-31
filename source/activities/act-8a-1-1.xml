@@ -57,7 +57,7 @@
 					</p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-8a-1-1-task-2">
+    <task workspace="1.5cm" xml:id="act-8a-1-1-task-2">
       <statement>
 					<p>
 						Enter the formulas you've determined for <m>f'(x)</m>, <m>f''(x)</m>, and <m>T_2''(x)</m> to fill in the blanks below.
@@ -270,7 +270,7 @@
         </p>
       </solution>
     </task>
-    <task workspace="3cm" xml:id="act-8a-1-1-task-3">
+    <task workspace="1.5cm" xml:id="act-8a-1-1-task-3">
       <statement>
           <p>
 						Next, observe that since <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>, it follows that <m>T_2(0) = b_0</m>.  Reason similarly to determine the values of <m>T_2'(0)</m> and <m>T_2''(0)</m>, as well as those of <m>f(0)</m>, <m>f'(0)</m>, and <m>f''(0)</m> and enter these values appropriately in the blanks below.

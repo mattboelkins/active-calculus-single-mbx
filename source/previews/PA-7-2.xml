@@ -18,12 +18,11 @@
     <exploration xml:id="PA-7-2">
       <introduction>
         <p>
-    Let's consider the initial value problem
-    <me>
-      \frac{dy}{dt} = t - 2, \ \ y(0) = 1
-    </me>.
-  </p>
-        <p/>
+          Let's consider the initial value problem
+          <me>
+            \frac{dy}{dt} = t - 2, \ \ y(0) = 1
+          </me>.
+        </p>
       </introduction>
       <task workspace="0.05cm" xml:id="PA-7-2-task-0">
         <statement>
@@ -39,7 +38,7 @@
         <answer/>
         <solution/>
       </task>
-      <task workspace="6cm" xml:id="PA-7-2-task-1">
+      <task workspace="5cm" xml:id="PA-7-2-task-1">
         <statement>
           <p>
           Also shown in the figure in (a)
@@ -53,7 +52,7 @@
         <answer/>
         <solution/>
       </task>
-      <task workspace="0.75cm" xml:id="PA-7-2-task-2">
+      <task workspace="1.25cm" xml:id="PA-7-2-task-2">
         <statement>
           <p>
           Using the tangent lines from (a) and (b) as a guide,

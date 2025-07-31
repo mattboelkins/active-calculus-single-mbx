@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
  
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-5x-accuracy-of-approx">
-  <title>Finding and Using Taylor Series</title>
+  <title>Quantifying the accuracy of approximations</title>
     <xi:include href="./previews/PA-8a-5x.xml"/>
     <xi:include href="./activities/act-8a-5x-1.xml"/>
     <xi:include href="./activities/act-8a-5x-2.xml"/>

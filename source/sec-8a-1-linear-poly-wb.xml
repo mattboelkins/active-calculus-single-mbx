@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
  
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-1-linear-poly">
-  <title>Approximating <m>f(x) = e^x</m></title>
+  <title>Extending local linearization</title>
     <xi:include href="./previews/PA-8a-1.xml"/>
     <xi:include href="./activities/act-8a-1-1.xml"/>
     <xi:include href="./activities/act-8a-1-2.xml"/>

@@ -20,7 +20,7 @@
   <xi:include  href="sec-8a-3-geometric-wb.xml" />  
   <xi:include  href="sec-8a-4-taylor-series-wb.xml" />  
   <xi:include  href="sec-8a-5-finding-using-taylor-series-wb.xml" />     
-
-<!--  <xi:include  href="sec-8a-5x-accuracy-of-approx-wb.xml" />   -->   
+  <xi:include  href="sec-8a-5x-accuracy-of-approx-wb.xml" />   
+  
 <!--  <xi:include  href="sec-8a-6-series-and-DEs.xml" />  -->
 </chapter>

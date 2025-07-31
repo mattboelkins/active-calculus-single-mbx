@@ -23,7 +23,7 @@
           </me>.
       </p>
     </introduction>
-    <task workspace="3cm" xml:id="PA-8a-5-task-0">
+    <task workspace="6cm" xml:id="PA-8a-5-task-0">
       <statement>
         <p>
           Note that we can write <m>g(x) = (1+x^2)^{-1}</m>.  Determine <m>g'(x)</m>, <m>g''(x)</m>, and <m>g'''(x)</m>.
@@ -33,7 +33,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-5-task-1">
+    <task workspace="1.5cm" xml:id="PA-8a-5-task-1">
       <statement>
         <p>
           In (a), you found that 
@@ -47,7 +47,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-5-task-2">
+    <task workspace="7cm" xml:id="PA-8a-5-task-2">
       <statement>
         <p>
           Find <m>g(0)</m>, <m>g'(0)</m>, <m>g''(0)</m>, and <m>g'''(0)</m>, and use the results to determine <m>T_3(x)</m>.

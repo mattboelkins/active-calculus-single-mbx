@@ -44,7 +44,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-4-task-2">
+    <task workspace="9cm" xml:id="PA-8a-4-task-2">
       <statement>
         <p>
           Consider the function <m>f(x) = 9 (3 + x)^{-1}</m>.  Determine <m>f(0)</m>, <m>f'(0)</m>, <m>f''(0)</m>, and <m>f'''(0)</m>.  What is the degree <m>3</m> Taylor polynomial centered at <m>0</m> for the function <m>f(x)</m>?

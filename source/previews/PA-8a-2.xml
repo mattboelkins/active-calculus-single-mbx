@@ -20,7 +20,7 @@
         Let <m>f(x) = \sin(x)</m> and let <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3x^3</m>.  Our goal is to find the values of <m>c_0, \ldots, c_3</m> that make the sine function and its derivative values agree with those of the cubic polynomial <m>T_3</m> at <m>a = 0</m> and to study the resulting degree <m>3</m> approximation of the sine function.
       </p>
     </introduction>
-    <task workspace="3cm" xml:id="PA-8a-2-task-0">
+    <task workspace="2cm" xml:id="PA-8a-2-task-0">
       <statement>
         <p>
           As in previous work, the derivatives of <m>T_3(x)</m> and their respective values at <m>a = 0</m> are those shown below.  
@@ -45,7 +45,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-2-task-1">
+    <task workspace="8cm" xml:id="PA-8a-2-task-1">
       <statement>
         <p>
           Now, set <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  What are the resulting values of <m>c_0, \ldots, c_3</m>?  What is the resulting formula for <m>T_3(x)</m>?
@@ -55,7 +55,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-2-task-2">
+    <task workspace="0.25cm" xml:id="PA-8a-2-task-2">
       <statement>
         <p>
           Recall that the tangent line approximation <m>T_1</m> to <m>f(x) = \sin(x)</m> at <m>a = 0</m> is <m>T_1(x) = x</m>.  Use appropriate computing technology to plot the cubic approximation <m>T_3(x)</m> you found in (b) along with <m>f(x)</m> and <m>T_1(x)</m> in the same window shown in <xref ref="F-8a-2-PA">Figure</xref>. 
@@ -69,7 +69,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-2-task-3">
+    <task workspace="2cm" xml:id="PA-8a-2-task-3">
       <statement>
         <p>
            What do you observe about the approximation of <m>f(x)</m> by <m>T_3(x)</m> compared to the approximation of <m>f(x)</m> by <m>T_1(x)</m>?  For example, how do <m>f(1) - T_1(1)</m> and <m>f(1) - T_3(1)</m> compare?
@@ -79,7 +79,7 @@
       <answer/>
       <solution/>
     </task>
-    <task workspace="3cm" xml:id="PA-8a-2-task-4">
+    <task workspace="1cm" xml:id="PA-8a-2-task-4">
       <statement>
         <p>
           In our work so far, we've seen that raising the degree of polynomial improves the approximation of the original function <m>f(x)</m>.  If we wanted to find a degree <m>9</m> approximation to <m>f(x) = \sin(x)</m>, we'd need to find a polynomial whose value and first <m>9</m> derivatives match those of the sine function at <m>a = 0</m>.
