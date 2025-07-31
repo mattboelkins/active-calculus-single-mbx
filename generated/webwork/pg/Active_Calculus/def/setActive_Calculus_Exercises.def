@@ -1,6 +1,6 @@
-openDate          = 07/29/2025 at 12:00am
-dueDate           = 01/29/2026 at 10:00pm
-answerDate        = 01/29/2026 at 10:00pm
+openDate          = 07/31/2025 at 12:00am
+dueDate           = 01/31/2026 at 10:00pm
+answerDate        = 01/31/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
@@ -1304,4 +1304,24 @@ problem_end
 problem_start
 source_file = Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg
 problem_id = 2
+problem_end
+problem_start
+source_file = csafranski/8.6HW_prob3.pg
+problem_id = 3
+problem_end
+problem_start
+source_file = csafranski/8.6HW_prob4.pg
+problem_id = 4
+problem_end
+problem_start
+source_file = csafranski/8.6HW_prob5.pg
+problem_id = 5
+problem_end
+problem_start
+source_file = Library/Dartmouth/setStewartCh12S10/problem_11.pg
+problem_id = 6
+problem_end
+problem_start
+source_file = Library/Dartmouth/setStewartCh12S10/problem_12.pg
+problem_id = 7
 problem_end

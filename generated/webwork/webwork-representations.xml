@@ -8261,19 +8261,19 @@ overestimate and the left Riemann sum an underestimate.
 <fillin characters="30" name="optional1"/>, and it is an 
 <var form="popup">
 <li>
+<p>overestimate of</p>
+</li>
+<li>
 <p>equal to</p>
 </li>
 <li>
 <p>there is ambiguity</p>
 </li>
 <li>
-<p>overestimate of</p>
+<p>?</p>
 </li>
 <li>
 <p>underestimate of</p>
-</li>
-<li>
-<p>?</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -8282,19 +8282,19 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
-<p>overestimate of</p>
+<p>there is ambiguity</p>
 </li>
 <li>
 <p>equal to</p>
 </li>
 <li>
-<p>there is ambiguity</p>
-</li>
-<li>
-<p>?</p>
+<p>overestimate of</p>
 </li>
 <li>
 <p>underestimate of</p>
+</li>
+<li>
+<p>?</p>
 </li>
 </var>
  the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -11801,14 +11801,33 @@ This integral converges to <m>{2\over 2} e^{-4}</m>.
     <pg source="Library/Michigan/Chap7Sec7/Q11.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-272" ww-id="webwork-272">
-    <static seed="272" source="Library/Michigan/Chap7Sec7/Q15.pg" failure="xml">
-      <statement>
-        <p>PTX:ERROR: WeBWorK problem Library/Michigan/Chap7Sec7/Q15.pg with seed 272 does not return valid XML  
-  It may not be PTX compatible  
-  Use -a to halt with returned content
-</p>
-      </statement>
+    <static seed="272" source="Library/Michigan/Chap7Sec7/Q15.pg">
+      <statement><p>Calculate the integral, if it converges.  If it diverges, enter
+<alert>diverges</alert> for your answer.</p>
+<p><m>{\displaystyle\int_{-1}^{1}{1\over v}\,dv} =</m>
+<fillin characters="35" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>\text{diverges}</m>
+        </p>
+      </answer>
+      <solution><m>1/v</m> is undefined at <m>v=0</m>.
+To evaluate it, we must split the region of integration up into two
+pieces, from 0 to 1 and from <m>-1</m> to 0.  But notice,
+<me>\int_0^{1}{1\over v}\, dv =
+\lim_{b\to 0^+}\int_b^{1} {1\over v}\, dv =
+\lim_{b\to 0^+}\left({\ln v}\bigg|_b^{1}\right) =
+\ln(1) - \ln b.</me>
+As <m>b\to 0^+</m>, this goes to infinity and the integral diverges, so
+our original integral also diverges.
+
+
+
+</solution>
     </static>
+    <server-data sourceFilePath="Library/Michigan/Chap7Sec7/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap7Sec7/Q15.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-273" ww-id="webwork-273">
     <static seed="273" source="Library/Michigan/Chap7Sec7/Q34.pg">
@@ -12499,7 +12518,7 @@ point (0,1) has a negative slope.</p>
 <p>List the equilibrium solutions to this differential equation in increasing order and indicate whether or not these equilibria are stable, semi-stable, or unstable.</p>
 <p><fillin characters="10" name="AnSwEr0001"/>  <var form="popup">
 <li>
-<p>unstable</p>
+<p>stable</p>
 </li>
 <li>
 <p>?</p>
@@ -12508,7 +12527,7 @@ point (0,1) has a negative slope.</p>
 <p>semi-stable</p>
 </li>
 <li>
-<p>stable</p>
+<p>unstable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0003"/>  <var form="popup">
@@ -12527,6 +12546,9 @@ point (0,1) has a negative slope.</p>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
 <li>
+<p>stable</p>
+</li>
+<li>
 <p>?</p>
 </li>
 <li>
@@ -12534,9 +12556,6 @@ point (0,1) has a negative slope.</p>
 </li>
 <li>
 <p>unstable</p>
-</li>
-<li>
-<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
@@ -14330,7 +14349,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-29T14:26:15Z       
+###       on 2025-07-31T18:29:22Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14633,7 +14652,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-29T14:26:15Z       
+###       on 2025-07-31T18:29:22Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14980,7 +14999,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-29T14:26:15Z       
+###       on 2025-07-31T18:29:22Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15304,7 +15323,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-29T14:26:15Z       
+###       on 2025-07-31T18:29:22Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -16956,5 +16975,219 @@ from the convergent value of that series?</p>
     </static>
     <server-data sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-344" ww-id="webwork-344">
+    <static seed="344" source="csafranski/8.6HW_prob3.pg">
+      <statement><p>Consider the function <m>f(x) = \frac{1}{x^2}</m>.</p>
+<p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
+<p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
+<p>Calculate:</p>
+<p><m>T_{1}(1.02) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p><m>T_{2}(1.02) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p><m>T_{2}(1.02)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p>over</p>
+</li><li>
+<p>under</p>
+</li></ul> estimate of <m>f(1.02)</m>.</p>
+<p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
+<p><m>\left|f(1.02)-T_{2}(1.02)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.96</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.9612</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{over}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>-\left(-3.2\times 10^{-5}\right)</m>
+        </p>
+      </answer>
+      <solution><p>SOLUTION</p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(1.02)</m> about <m>x=1</m> is given by:</p>
+<p><m>T_n(x) = f(1.02) + f'(1.02)(1.02-1) + \cdots + \frac{f^n(1.02)}{n!}(1.02-1)^n</m></p>
+<p><m>f'(x) = -\frac{2}{x^3}</m>,</p>
+<p><m>f''(x) = \frac{6}{x^4}</m>,</p>
+<p><m>f'''(x) = -\frac{24}{x^5}</m>.</p>
+<p>Therefore,</p>
+<p><m>T_1(1.02) = 0.96</m>,</p>
+<p><m>T_2(1.02) = 0.9612</m>,</p>
+<p><m>f''(x)</m> is always positive in the interval [1,1.02] so <m>T_{2}(1.02)</m> is a overestimate of <m>f(1.02)</m>.</p>
+<p>Using the Lagrange Error Bound we find an M such that:</p>
+<p><m>\left|f(1.02)-T_{2}(1.02)\right| \le \frac{M}{3 !}\left|1.02-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1.02,1].</p>
+<p>By examining <m>f'''(x)</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
+<p>By calculation we find:
+<m>|f(1.02)-T_{2}(1.02)| \le 3.2\times 10^{-5}</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/8.6HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/8.6HW_prob3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-345" ww-id="webwork-345">
+    <static seed="345" source="csafranski/8.6HW_prob4.pg">
+      <statement><p>Consider the function <m>f(x) = \sqrt{x+1}</m>.</p>
+<p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 8</m>.</p>
+<p><alert> Use 3 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
+<p>Calculate:</p>
+<p><m>T_{1}(10) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
+<p><m>T_{2}(10) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
+<p><m>T_{2}(10)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p>over</p>
+</li><li>
+<p>under</p>
+</li></ul> estimate of <m>f(10)</m>.</p>
+<p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
+<p><m>\left|f(10)-T_{2}(10)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>3.3333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3.3148</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{under}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.0021</m>
+        </p>
+      </answer>
+      <solution><p>SOLUTION</p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(10)</m> about <m>x=8</m> is given by:</p>
+<p><m>T_n = f(8) + f'(8)(10-8) + \cdots + \frac{f^n(8)}{n!}(10-8)^n</m></p>
+<p><m>f'(x) = \frac{1}{2\sqrt{1+x}}</m>,</p>
+<p><m>f''(x) = -\frac{1}{4(1+x)^{\frac{3}{2}}}</m>,</p>
+<p><m>f'''(x) = \frac{3}{8(1+x)^{\frac{5}{2}}}</m>.</p>
+<p>Therefore,</p>
+<p><m>T_1(10) = 3.3333</m>,</p>
+<p><m>T_2(10) = 3.3148</m>,</p>
+<p><m>f''(x)</m> is always negative in the interval [8,10] so <m>T_{2}(10)</m> is a underestimate of <m>f(10)</m>.</p>
+<p>Using the Lagrange Error Bound we find an M such that:</p>
+<p><m>\left|f(10)-T_{2}(10)\right| \le \frac{M}{3 !}\left|10-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [10,8].</p>
+<p>By examining <m>f'''(x)</m> we find that it is biggest when <m>t=8</m>.   Therefore, a suitable choice is <m>M=f'''(8)</m>.</p>
+<p>By calculation we find:
+<m>\left|f(10)-T_{2}(10)\right| \le 0.0021</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/8.6HW_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/8.6HW_prob4.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-346" ww-id="webwork-346">
+    <static seed="346" source="csafranski/8.6HW_prob5.pg">
+      <statement><p>Consider the function <m>f(x) = x \ln(x)</m>.</p>
+<p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
+<p><alert> Use 3 decimal places in your three answers below, but make sure you carry all decimals when performing calculations. </alert></p>
+<p>Calculate:</p>
+<p><m>T_{1}(2) =</m> <fillin characters="20" name="AnSwEr0001"/></p>
+<p><m>T_{2}(2) =</m> <fillin characters="20" name="AnSwEr0002"/></p>
+<p><m>T_{3}(2) =</m> <fillin characters="20" name="AnSwEr0003"/></p>
+<p><m>T_{3}(2)</m> is an <ul form="popup" name="AnSwEr0004"><li>
+<p>over</p>
+</li><li>
+<p>under</p>
+</li></ul> estimate of <m>f(2)</m>.</p>
+<p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
+<p><m>\left|f(2)-T_{3}(2)\right| \le</m> <fillin characters="10" name="AnSwEr0005"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1.333</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\text{under}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.083</m>
+        </p>
+      </answer>
+      <solution><p>SOLUTION</p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(2)</m> about <m>x=1</m> is given by:</p>
+<p><m>T_n = f(1) + f'(1)(2-1) + \cdots + \frac{f^n(1)}{n!}(2-1)^n</m></p>
+<p><m>f'(x) = 1+\ln(x)</m>,</p>
+<p><m>f''(x) = \frac{1}{x}</m>,</p>
+<p><m>f'''(x) = -\frac{1}{x^2}</m>,</p>
+<p><m>f^{(iv)}(x) = 2\frac{1}{x^3}</m>.</p>
+<p>Therefore,</p>
+<p><m>T_1(2) = 1.000</m>,</p>
+<p><m>T_2(2) = 1.500</m>,</p>
+<p><m>T_3(2) = 1.333</m>,</p>
+<p><m>f'''(x)</m> is always negative in the interval [1,2] so <m>T_{3}(2)</m> is a underestimate of <m>f(2)</m>.</p>
+<p>Using the Lagrange Error Bound we find an M such that:</p>
+<p><m>\left|f(2)-T_{3}(2)\right| \le \frac{M}{4 !}\left|2-1\right|^{4}</m>, where <m>M \ge \left|f^{(4)}(t)\right|</m> for all <m>t</m> in the interval [2,1].</p>
+<p>By examining <m>f^{(4)}(x)</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f^{(4)}(1)</m>.</p>
+<p>By calculation we find:
+<m>\left|f(2)-T_{3}(2)\right| \le 0.083</m>.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/8.6HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/8.6HW_prob5.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-347" ww-id="webwork-347">
+    <static seed="347" source="Library/Dartmouth/setStewartCh12S10/problem_11.pg">
+      <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
+<me>\int_0^{1} \sin(x^3)\,dx, \textrm{ with an error } \lt  10^{-4}</me></p>
+<p>Note: The answer you derive here should be the partial sum of an
+appropriate series (the number of terms determined by an error
+estimate).  This number is not necessarily the correct value of the integral
+truncated to the correct number of decimal places.</p>
+<p><fillin characters="60" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.233854166666667</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Dartmouth/setStewartCh12S10/problem_11.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-348" ww-id="webwork-348">
+    <static seed="348" source="Library/Dartmouth/setStewartCh12S10/problem_12.pg">
+      <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
+<me>\int_0^{0.4} e^{-x^3}\,dx, \textrm{ with an error } \lt  10^{-4}</me></p>
+<p>Note: The answer you derive here should be the partial sum of an
+appropriate series (the number of terms determined by an error
+estimate).  This number is not necessarily the correct value of the integral
+truncated to the correct number of decimal places.</p>
+<p><fillin characters="60" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>0.393717028571429</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_12.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Dartmouth/setStewartCh12S10/problem_12.pg"/>
   </webwork-reps>
 </webwork-representations>
