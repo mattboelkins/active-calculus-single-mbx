@@ -36,7 +36,8 @@
 
   </objectives>
 
-  <introduction>
+  <subsection>
+    <title>Introduction</title>
     <p>
       This section is all about understanding precisely how accurate certain approximations are.  Through Taylor series, we now know that we can represent certain functions and their values exactly through infinite sums.  For example, we know that for any value of <m>x</m>, 
       <me>
@@ -63,7 +64,7 @@
   <!--  <xi:include href="./previews/PA-8a-5x-WW.xml" /> -->
   <xi:include href="./previews/PA-8a-5x.xml" /> 
 
-  </introduction>  
+  </subsection>
 
 
   <subsection>

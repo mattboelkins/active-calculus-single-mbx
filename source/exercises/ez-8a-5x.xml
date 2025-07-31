@@ -20,6 +20,22 @@
   <exercise label="Library__Rochester__setSeries3Convergent__ur_sr_3_10">
     <webwork source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </exercise>
+  <exercise label="csafranski__8.6HW_prob3.pg">
+    <webwork source="csafranski/8.6HW_prob3.pg"/>
+  </exercise>  
+  <exercise label="csafranski__8.6HW_prob4.pg">
+    <webwork source="csafranski/8.6HW_prob4.pg"/>
+  </exercise>  
+  <exercise label="csafranski__8.6HW_prob5.pg">
+    <webwork source="csafranski/8.6HW_prob5.pg"/>
+  </exercise>  
+  <exercise label="Library__Dartmouth__setStewartCh12S10__problem_11.pg">
+    <webwork source="Library/Dartmouth/setStewartCh12S10/problem_11.pg"/>
+  </exercise>  
+  <exercise label="Library__Dartmouth__setStewartCh12S10__problem_12.pg">
+    <webwork source="Library/Dartmouth/setStewartCh12S10/problem_12.pg"/>
+  </exercise>  
+
 
   <!-- this is just a test exercise 
     <exercise label="Library__WinonaState__StewartCalcEarlyTran7ed__Chap11Section09__SCalcET7-11-9-027_test">
