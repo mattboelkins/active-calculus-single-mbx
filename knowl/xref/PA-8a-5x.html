@@ -28,7 +28,12 @@
 S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots\text{.}
 \end{equation*}
 </div>
-<div class="para">We want to explore how the partial sums of the series compare to and approximate the exact sum of the series.</div>
+<div class="para">We want to explore how the partial sums of the series compare to and approximate the exact sum of the series, which is</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S = \frac{a}{1-r} = \frac{1}{1-\left(\frac{-4}{5}\right)} = \frac{1}{\frac{9}{5}} = \frac{5}{9}\text{.}
+\end{equation*}
+</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div></div>
 <article class="task exercise-like"><h4 class="heading"><span class="codenumber">(a)</span></h4>
@@ -39,59 +44,28 @@ S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + 
 S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}\text{.}
 \end{equation*}
 </div>
-<div class="para">Note that the exact fractional values of <span class="process-math">\(S_3\text{,}\)</span> <span class="process-math">\(S_4\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{,}\)</span> have been recorded below along with their decimal representations.</div>
+<div class="para">Note that the exact fractional values of <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_6\text{,}\)</span> have been recorded below along with their decimal representations.  Your task is to use this information to do some related computations that help us understand the behavior of the series and its partial sums.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-0-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para">First, by computing the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> for several different values of <span class="process-math">\(n\)</span> (recalling that <span class="process-math">\(S = \frac{5}{9} = 0.\overline{5}\)</span>), fill in the first column of blank spaces provided below.  Then, by viewing the series <span class="process-math">\(S = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots\)</span> as being in the form <span class="process-math">\(S = a_0 + a_1 + a_2 + \cdots\text{,}\)</span> fill in the last column of blank spaces.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-0-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical">
 <div class="displaymath process-math">
 \begin{align*}
-n \amp= 1 \amp S_1 \amp= 1 \amp \\
-n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2 \amp S_1 - S_2 = \fillinmath{XXXX} \\
-n \amp= 3 \amp S_3 \amp= \frac{21}{25} = 0.84 \amp S_2 - S_3 = \fillinmath{XXXX} \\
-n \amp= 4 \amp S_4 \amp= \frac{41}{125} = 0.328 \amp S_3 - S_4 = \fillinmath{XXXX}  \\
-n \amp= 5 \amp S_5 \amp= \frac{461}{625} = 0.7376 \amp S_4 - S_5 = \fillinmath{XXXX}  \\
-n \amp= 6 \amp S_6 \amp= \frac{1281}{3125} = 0.40992 \amp S_5 - S_6 = \fillinmath{XXXX}  \\
-n \amp= 7 \amp S_7 \amp= \frac{10501}{15625} = 0.672064 \amp S_6 - S_7 = \fillinmath{XXXX}  \\
-n \amp= 8 \amp S_8 \amp= \frac{36121}{78125} = 0.4623488 \amp S_7 - S_8 = \fillinmath{XXXX}  
+n \amp= 1 \amp S_1 \amp= 1 \amp S_1 - S \amp= \fillinmath{XXXX} \amp a_1 \amp= -0.8 \\
+n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2 \amp S_2 - S \amp= \fillinmath{XXXX} \amp a_2 \amp= 0.64 \\
+n \amp= 3 \amp S_3 \amp= \frac{21}{25} = 0.84 \amp S_3 - S \amp= \fillinmath{XXXX} \amp a_3 \amp= \fillinmath{XXXX} \\
+n \amp= 4 \amp S_4 \amp= \frac{41}{125} = 0.328 \amp S_4 - S \amp= \fillinmath{XXXX} \amp a_4 \amp= \fillinmath{XXXX} \\
+n \amp= 5 \amp S_5 \amp= \frac{461}{625} = 0.7376 \amp S_5 - S \amp= \fillinmath{XXXX} \amp a_5 \amp= \fillinmath{XXXX} \\
+n \amp= 6 \amp S_6 \amp= \frac{1281}{3125} = 0.40992 \amp S_6 - S \amp= \fillinmath{XXXX} \amp a_6 \amp= \fillinmath{XXXX} 
 \end{align*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-0-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para">By computing the differences between consecutive partial sums, fill in the blank spaces provided above.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-0-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-0-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 8.6.1.a"><a href="#PA-8a-5x-task-0" title="Copy heading and permalink for Task 8.6.1.a" aria-label="Copy heading and permalink for Task 8.6.1.a">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(b)</span></h4>
-<div class="para">What do you notice about the differences between consecutive partial sums as the value of <span class="process-math">\(n\)</span> increases?  There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">What do you notice about the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> as the value of <span class="process-math">\(n\)</span> increases?  There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Task 8.6.1.b"><a href="#PA-8a-5x-task-1" title="Copy heading and permalink for Task 8.6.1.b" aria-label="Copy heading and permalink for Task 8.6.1.b">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(c)</span></h4>
-<div class="para logical">
-<div class="para">For the given infinite geometric series</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/eq-8a-3-infinite-geometric-sum.html">
-\begin{equation*}
-S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k 
-\end{equation*}
+<div class="para">What do you notice about how the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> compare to the value of <span class="process-math">\(a_n\text{?}\)</span> There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">identify the values of <span class="process-math">\(a\)</span> and <span class="process-math">\(r\)</span> and use <a href="sec-8a-3-geometric.html#eq-8a-3-infinite-geometric-sum" class="xref" data-knowl="./knowl/xref/eq-8a-3-infinite-geometric-sum.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.3.11">Equation (8.3.11)</a> to find the exact value of <span class="process-math">\(S\text{.}\)</span>  State the sum of the infinite geometric series both as a fraction and as its decimal representation.</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 8.6.1.c"><a href="#PA-8a-5x-task-2" title="Copy heading and permalink for Task 8.6.1.c" aria-label="Copy heading and permalink for Task 8.6.1.c">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(d)</span></h4>
-<div class="para logical">
-<div class="para">Consider the same information from (a) regarding the partial sums of the geometric series:</div>
-<div class="displaymath process-math">
-\begin{align*}
-n \amp= 1 \amp S_1 \amp= 1 \amp S_1 - S = \fillinmath{XXXX} \\
-n \amp= 2 \amp S_2 \amp= \frac{1}{5} = 0.2 \amp S_2 - S = \fillinmath{XXXX} \\
-n \amp= 3 \amp S_3 \amp= \frac{21}{25} = 0.84 \amp S_3 - S = \fillinmath{XXXX} \\
-n \amp= 4 \amp S_4 \amp= \frac{41}{125} = 0.328 \amp S_4 - S = \fillinmath{XXXX}  \\
-n \amp= 5 \amp S_5 \amp= \frac{461}{625} = 0.7376 \amp S_5 - S = \fillinmath{XXXX}  \\
-n \amp= 6 \amp S_6 \amp= \frac{1281}{3125} = 0.40992 \amp S_6 - S = \fillinmath{XXXX}  \\
-n \amp= 7 \amp S_7 \amp= \frac{10501}{15625} = 0.672064 \amp S_7 - S = \fillinmath{XXXX}  \\
-n \amp= 8 \amp S_8 \amp= \frac{36121}{78125} = 0.4623488 \amp S_8 - S = \fillinmath{XXXX}  
-\end{align*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para">Use the sum, <span class="process-math">\(S\text{,}\)</span> of the geometric series that you found in (c) to compute the difference between each of the first <span class="process-math">\(8\)</span> partial sums, and fill in the corresponding blanks above.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-3-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 8.6.1.d"><a href="#PA-8a-5x-task-3" title="Copy heading and permalink for Task 8.6.1.d" aria-label="Copy heading and permalink for Task 8.6.1.d">🔗</a></div></article><article class="task exercise-like"><h4 class="heading"><span class="codenumber">(e)</span></h4>
-<div class="para">What do you notice about the differences between the partial sums and the exact sum of the series as the value of <span class="process-math">\(n\)</span> increases?  There are at least two important things you can say.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8a-5x-task-4-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Task 8.6.1.e"><a href="#PA-8a-5x-task-4" title="Copy heading and permalink for Task 8.6.1.e" aria-label="Copy heading and permalink for Task 8.6.1.e">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 8.6.1"><a href="#PA-8a-5x" title="Copy heading and permalink for Preview Activity 8.6.1" aria-label="Copy heading and permalink for Preview Activity 8.6.1">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x">in-context</a></span>
+<div class="autopermalink" data-description="Task 8.6.1.c"><a href="#PA-8a-5x-task-2" title="Copy heading and permalink for Task 8.6.1.c" aria-label="Copy heading and permalink for Task 8.6.1.c">🔗</a></div></article><div class="autopermalink" data-description="Preview Activity 8.6.1"><a href="#PA-8a-5x" title="Copy heading and permalink for Preview Activity 8.6.1" aria-label="Copy heading and permalink for Preview Activity 8.6.1">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-8a-5x-accuracy-of-approx.html#PA-8a-5x">in-context</a></span>
 </body>
 </html>
