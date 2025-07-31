@@ -67,7 +67,7 @@
     </p>
 
     <p>
-      While we have usually used the notation <q><m>L(x)</m></q> for the tangent line, in what follows we will instead write <q><m>T_1(x)</m></q>, and think of this as <q>the degree <m>1</m> approximation</q>.  In a similar way, we will write <q><m>T_2(x)</m></q> for the quadratic approximation.
+      While we have usually used the notation <q><m>L(x)</m></q> for the tangent line, in what follows we will instead write <q><m>T_1(x)</m></q>, and think of this as <q>the degree <m>1</m> approximation</q>.  In a similar way, we will write <q><m>T_2(x)</m></q> for the quadratic (degree <m>2</m>) approximation.
     </p>
 
     <p>
@@ -149,13 +149,13 @@
         <li>
           <p>
             the same conditions we imposed on <m>T_2(x)</m>: 
-            <me>T_3(0) = f(0), T_3'(0) = f'(0), \mbox{ and } T_3''(0) = f''(0)</me> 
+            <me>T_3(0) = f(0), T_3'(0) = f'(0), \text{ and } T_3''(0) = f''(0)</me> 
             so that <m>T_3</m> and <m>f</m> share the same function value, first derivative value, and second derivative value at <m>a = 0</m>,
           </p>
         </li>
         <li>
           <p>
-            plus we add the additional condition that 
+            plus the additional condition that 
             <me>T_3'''(0) = f'''(0)</me>, 
             so <m>T_3</m> and <m>f</m> share the same third derivative value<fn>Here we are assuming that the original function <m>f</m> has a third derivative at <m>a = 0</m>, which is valid since <m>f'''(x) = e^x</m>.</fn> at <m>a = 0</m>.
           </p>
@@ -203,12 +203,12 @@
       <me>
         e^{\frac{1}{2}} \approx 1 + \frac{1}{2} + \frac{1}{2}\left( \frac{1}{2} \right)^2 + \frac{1}{6}\left( \frac{1}{2} \right)^3  + \frac{1}{24}\left( \frac{1}{2} \right)^4 = \frac{211}{128} = 1.6484375
       </me>.
-      In fact, this approach through polynomial approximation is how computers determine the value of <m>e^{\frac{1}{2}}</m>, which is approximately <m>1.64872127</m>, to whatever accuracy is needed: by using even better polynomial approximations than the degree-<m>4</m> one that we found, computers are able to generate the approximate value <m>1.64872127</m> simply by the basic computations of addition and multiplication with enough terms.
+      In fact, this approach through polynomial approximation is one way that computers determine the value of <m>e^{\frac{1}{2}}</m>, which is approximately <m>1.64872127</m>, to whatever accuracy is needed: by using even better polynomial approximations than the degree-<m>4</m> one that we found, computers are able to generate the approximate value <m>1.64872127</m> simply by the basic computations of addition and multiplication with enough terms.
     </p>
       
 
     <p>
-      Throughout this section, we have focused on <m>f(x) = e^x</m>.  One of the characteristics that makes <m>f(x) = e^x</m> special is the fact that its derivative is itself; indeed, the <m>n^{\mbox{th}}</m> derivative of <m>f</m> is <m>f^{(n)}(x) = e^x</m> for every natural number <m>n</m>, which in turn implies that <m>f^{(n)}(0) = 1</m> for every value of <m>n</m>.  This will ultimately help to find patterns in the coefficients of the degree <m>n</m> polynomial approximation, <m>T_n(x)</m>, and be able to easily write down a formula for any value of <m>n</m>.  
+      Throughout this section, we have focused on <m>f(x) = e^x</m>.  One of the characteristics that makes <m>f(x) = e^x</m> special is the fact that its derivative is itself; indeed, the <m>n^{\text{th}}</m> derivative of <m>f</m> is <m>f^{(n)}(x) = e^x</m> for every natural number <m>n</m>, which in turn implies that <m>f^{(n)}(0) = 1</m> for every value of <m>n</m>.  This will ultimately help to find patterns in the coefficients of the degree <m>n</m> polynomial approximation, <m>T_n(x)</m>, and be able to easily write down a formula for any value of <m>n</m>.  
     </p>
 
     <p>  
@@ -224,7 +224,7 @@
       <ul>
       <li>
         <p>
-          For the function <m>f(x) = e^x</m>, which bends considerably as we move away from <m>a = 0</m> (especially for <m>x \gt 0</m>), the tangent line, <m>T_1(x)</m>, is not a very good approximation for <m>x</m>-values that satisfy <m>|x| \gt 0.5</m>.  For example, <m>|T_1(0.5) - e^{0.5}| \approx 0.148721</m>, so the linear approximation has an absolute error of more than <m>0.1</m> at <m>x = 0.5</m>.
+          For the function <m>f(x) = e^x</m>, which bends considerably as we move away from <m>a = 0</m> (especially for <m>x \gt 0</m>), the tangent line, <m>T_1(x)</m>, is not a very good approximation for <m>x</m>-values that satisfy <m>|x| \gt 0.5</m>.  For example, <m>|e^{0.5} - T_1(0.5)| \approx 0.148721</m>, so the linear approximation has an absolute error of more than <m>0.1</m> at <m>x = 0.5</m>.
         </p>
       </li>
       <li>

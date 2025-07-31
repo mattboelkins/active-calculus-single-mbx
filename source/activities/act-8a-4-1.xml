@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-8a-4-1">
   <activity xml:id="act-8a-4-1">
     <introduction>
@@ -27,7 +28,7 @@
     <task workspace="3cm" xml:id="act-8a-4-1-task-0">
       <statement>
         <p>
-            As described in the statement of the Ratio Test, let <m>r_n(x)</m> be the ratio of the <m>(n+1)^{\mbox{st}}</m> term of <m>T(x)</m> to the <m>n</m>th term of <m>T(x)</m>.  Find the simplest formula that you can for <m>r_n(x)</m>.
+            As described in the statement of the Ratio Test, let <m>r_n(x)</m> be the ratio of the <m>(n+1)^{\text{st}}</m> term of <m>T(x)</m> to the <m>n^{\text{th}}</m> term of <m>T(x)</m>.  Find the simplest formula that you can for <m>r_n(x)</m>.
           </p>
       </statement>
       <hint/>

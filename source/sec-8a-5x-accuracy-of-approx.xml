@@ -57,7 +57,7 @@
     </p>
 
     <p>
-      As we have seen, most of the infinite series that arise (such as the one in <xref ref="eq-8a-5x-exp-1-2">Equation</xref>) are not geometric.  But since geometric series are among the easiest infinite series to understand and evaluate, we use a geometric series as the starting point for our analysis of approximation errors.  In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigate an example of a convergent geometric series and explore certain patterns that arise when we compare partial sums to one another and to the exact sum of the series.
+      As we have seen, most of the infinite series that arise (such as the one in <xref ref="eq-8a-5x-exp-1-2">Equation</xref>) are not geometric.  But since geometric series are among the easiest infinite series to understand and evaluate, we use a geometric series as the starting point for our analysis of approximation errors.  In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigate an example of a convergent geometric series and explore certain patterns that arise when we compare partial sums the exact sum of the series.
     </p>
 
   <!--  <xi:include href="./previews/PA-8a-5x-WW.xml" /> -->
@@ -81,13 +81,10 @@
       <me>
         e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1}{n!} x^{2n} + \cdots
       </me>
-      and apply the Fundamental Theorem of Calculus to the series representation of <m>e^{-x^2}</m>, we find that
-      <mdn>
-        <mrow number="no">\int_0^1 e^{-x^2} \, dx \amp= \int_0^1 \left( 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1}{n!} x^{2n} + \cdots \right) \, dx</mrow>
-        <mrow number="no"> \amp= \left. x - \frac{1}{3}x^3 + \frac{1}{2! \cdot 5} x^5 + \cdots +  \frac{(-1)^n}{n! \cdot (2n+1) } x^{2n+1} + \cdots \right|_0^1 </mrow>
-        <mrow number="no"> \amp= \left(1 - \frac{1}{3} + \frac{1}{2! \cdot 5} + \cdots + \frac{(-1)^n}{ n! \cdot (2n+1)} + \cdots \right) - \left( 0 \right)</mrow>
-        <mrow xml:id="eq-8a-5x-alt-sum-ex2"> \amp= 1 - \frac{1}{3} + \frac{1}{2! \cdot 5} - \frac{1}{3! \cdot 7} + \cdots + \frac{(-1)^n}{n! \cdot (2n+1)} + \cdots</mrow>
-      </mdn>   
+      and apply the Fundamental Theorem of Calculus to the series representation of <m>e^{-x^2}</m>, it turns out that
+      <men xml:id="eq-8a-5x-alt-sum-ex2">
+        \int_0^1 e^{-x^2} \, dx = 1 - \frac{1}{3} + \frac{1}{2! \cdot 5} - \frac{1}{3! \cdot 7} + \cdots + \frac{(-1)^n}{n! \cdot (2n+1)} + \cdots
+      </men>   
       Like the geometric series <m>\sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k </m> that we encountered in <xref ref="PA-8a-5x">Preview Activity</xref>, the infinite series in <xref ref="eq-8a-5x-alt-sum-ex2">Equation</xref> is an example of an <term>alternating series</term> of real numbers.  It turns out to be straightforward to determine whether or not an alternating series converges and to estimate the value of a convergent alternating series. 
 
     </p>
@@ -112,7 +109,9 @@
     </p>
 
     <p>
-      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums, <m>S_n</m>, of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \frac{5}{9}</m>.  For instance, <m>S_3</m> is the sum of the first <m>3</m> terms of the infinite series.  In <xref ref="T-8a-5x-ExGeom"/>, we see the first several partial sums and how they and compare to the exact sum of the series.  
+      In <xref ref="PA-8a-5x">Preview Activity</xref>, we investigated the partial sums, <m>S_n</m>, of the convergent alternating geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m>, whose sum is <m>S = \frac{5}{9}</m>.  For instance, <m>S_3</m> is the sum of the first <m>3</m> terms of the infinite series.  
+    </p>  
+<!--      In <xref ref="T-8a-5x-ExGeom"/>, we see the first several partial sums and how they and compare to the exact sum of the series.  
 
       <table xml:id="T-8a-5x-ExGeom">
         <title>Partial sums of the alternating series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m> and their differences from <m>S = \frac{5}{9} = 0.\overline{5}</m>.</title>
@@ -162,7 +161,7 @@
               <cell><m>\frac{36121}{78125} = 0.4623488</m></cell>
               <cell><m>-\frac{65536}{703125} = -0.0932067\overline{5}</m></cell>
             </row>
-<!--               
+               
             <row>
               <cell halign="center"><m>9</m></cell>
               <cell><m>\frac{246141}{390625} = 0.63012096</m></cell>               
@@ -170,14 +169,17 @@
             <row>                
               <cell halign="center"><m>10</m></cell>
               <cell><m>\frac{968561}{1953125} = 0.495903232</m></cell>
-            </row>
--->              
+            </row>        
             </tabular>
           </table>
+--> 
+      <p>
         If we plot the partial sums as ordered pairs of the form <m>(n,S_n)</m>, as shown in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we see important patterns in how the partial sums both approach and differ from the exact value of the infinite sum.
+      </p>  
+
         <figure xml:id="F-8a-5x-alt-partial-sums">
           <caption>Plotting the partial sums <m>S_1</m>, <m>S_2</m>, <m>\ldots</m>, <m>S_8</m>.  The dashed horizontal line represents the exact sum of the infinite series, <m>S = \frac{5}{9}</m>.</caption>
-            <image width="60%">
+            <image width="55%">
             <prefigure label="Fig-8a-5x-alt-partial-sums" xmlns="https://prefigure.org">  
               <diagram dimensions="(300,200)" margins="10">
                 <definition>a = 3</definition> 
@@ -217,23 +219,37 @@
             </prefigure>
           </image>    
         </figure>
-          In both the table and the figure, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <m>\frac{5}{9}</m>, and moreover how the amount the next partial sum lies above or below <m>\frac{5}{9}</m> is less than the amount by which the previous partial sum deviated.  For instance, 
-          <me>
-            \left| S_5 - \frac{5}{9} \right| \approx 0.1820,
-          </me>
+        <p>
+          In both our work in the Preview Activity and in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <m>\frac{5}{9}</m>, and moreover how the absolute difference between <m>S</m> and <m>S_n</m> decreases as <m>n</m> increases.  
+        </p>
+        <p>
+          The quantity <m>|S - S_n|</m> is the error in the partial sum approximation of the infinite series; we can study how this error compares to terms in the series itself.  For instance, 
+          <men xml:id="eq-8a-5x-S5">
+            \left| S - S_5 \right| = \left| \frac{5}{9} - S_5 \right| \approx 0.1820
+          </men>.
+          <!--
           but 
           <me>
-            \left| S_6 - \frac{5}{9} \right| \approx 0.1456
-          </me>.
-          Moreover, since <m>S_6 = S_5 - \left( \frac{4}{5} \right)^5</m>, and <m>-\left( \frac{4}{5} \right)^5 = -0.32768</m> is the last and smallest term (in absolute value) in <m>S_6</m>, <m>0.32768</m> is the total vertical distance from the point <m>(5, S_5)</m> to <m>(6, S_6)</m> in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>.  This implies that <m>0.32768</m> is more than the error in comparing <m>S_5</m> and <m>S</m>.  Said differently, we are guaranteed that
+            \left| \frac{5}{9} - S_6  \right| \approx 0.1456
+          </me>.-->
+          Observe that while <m>S_5</m> is greater than <m>S</m>, <m>S_6</m> falls below <m>S</m>, so
+          <men xml:id="ineq-8a-5x-S5">
+            \left| S - S_5 \right| \lt \left| S_6 - S_5 \right|
+          </men>.
+          Remember that <m>S_5</m> is the partial sum of the first <m>5</m> terms of the series, and likewise <m>S_6</m> is simply the sum of the first <m>6</m> terms.  This means that <m>\left| S_6 - S_5 \right|</m> is the absolute value of the <m>6^{\text{th}}</m> term of the series, or <m>\left| S_6 - S_5 \right| = \left( \frac{4}{5} \right)^5 = 0.32768</m>.  Combining <xref ref="eq-8a-5x-S5"/> and <xref ref="ineq-8a-5x-S5"/>, we have
+          <me>
+            \left| \frac{5}{9} - S_5 \right| \approx 0.1820 \lt \left( \frac{4}{5} \right)^5 = 0.32768
+          </me>
+          Making this argument for an arbitrary value of <m>n</m> shows that the next term in the alternating sum always provides a bound on the error that arises from a given partial sum.       
+<!--          Moreover, since <m>S_6 = S_5 - \left( \frac{4}{5} \right)^5</m>, and <m>-\left( \frac{4}{5} \right)^5 = -0.32768</m> is the last and smallest term (in absolute value) in <m>S_6</m>, <m>\left( \frac{4}{5} \right)^5 = 0.32768</m> is the total vertical distance from the point <m>(5, S_5)</m> to <m>(6, S_6)</m> in <xref ref="F-8a-5x-alt-partial-sums">Figure</xref>.  This implies that <m>\left( \frac{4}{5} \right)^5 = 0.32768</m> is more than the error in comparing <m>S</m> and <m>S_5</m>.  Said differently, we are guaranteed that
           <me>
             \left| S - S_5 \right| \lt \left( \frac{4}{5} \right)^5
-          </me>
-          so the next term in the sum provides a bound on the error in a given partial sum.  A similar argument can be made for any value of <m>n</m>.
+          </me>.
+ -->
         </p>
 
     <p>  
-      A more general version of this argument can be made for any alternating series whose terms go to zero.  This leads us to state two important results.
+      Our work with the geometric series <m>S = \sum_{k=0}^{\infty} (-1)^k \left( \frac{4}{5} \right)^k</m> suggests two general results that are true for any alternating series.
     </p>
 
     <assemblage>
@@ -257,7 +273,7 @@
       <p>
         If the alternating series
         <m>
-        \sum_{k=0}^{\infty} (-1)^{k}a_k
+        S = \sum_{k=0}^{\infty} (-1)^{k}a_k
         </m>
         has positive terms <m>a_k</m> that decrease to zero as <m>k \to \infty</m>, and
         <m>
@@ -265,7 +281,7 @@
         </m>
         is the <m>n</m>th partial sum of the alternating series, then
         <me>
-          \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - S_n \right| \leq a_{n}
+          \left| S - S_n \right| = \left|  \sum_{k=0}^{\infty} (-1)^{k}a_k - S_n \right| \lt a_{n}
         </me>.
       </p>
     </assemblage>
@@ -277,7 +293,7 @@
     <example xml:id="Ex-8a-5x-ASET">
       <statement>
         <p>
-          Determine how well the <m>100^{\mbox{th}}</m> partial sum <m>S_{100}</m> of
+          Determine how well the <m>100^{\text{th}}</m> partial sum <m>S_{100}</m> of
           <me>
             \sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}
           </me>
@@ -289,7 +305,7 @@
           If we let <m>S</m> be the value of the series <m>\sum_{k=0}^{\infty} \frac{(-1)^{k}}{k+1}</m>,
           then we know that
           <me>
-            \left| S_{100} - S \right| \lt  a_{100}
+            \left| S - S_{100} \right| \lt  a_{100}
           </me>.
         </p>
 
@@ -298,9 +314,9 @@
           <me>
             a_{100} = \frac{1}{101} \approx 0.0099
           </me>,
-          so the <m>100^{\mbox{th}}</m> partial sum is within <m>0.0099</m> of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the actual difference between <m>S_{100}</m> and <m>S</m> is
+          so the <m>100^{\text{th}}</m> partial sum is within <m>0.0099</m> of the exact value of the series.  In addition, it turns out that <m>S_{100} \approx 0.688172</m> and <m>S = \ln(2) \approx 0.69314</m>, so we see that the actual difference between <m>S_{100}</m> and <m>S</m> is
           <me>
-            \left|  S_{100} - S \right| \approx \left|  0.688172 - \ln(2) \right| \approx 0.004975
+            \left| S - S_{100} \right| \approx \left| \ln(2) - 0.688172 \right| \approx 0.004975
           </me>,
           which is indeed less than the error bound of <m>0.0099</m> provided by the Alternating Series Estimation Theorem.
         </p>  
@@ -333,7 +349,7 @@
       <ul>
         <li>
           <p>
-            <m>E_n(0) = E_n'(0) = E_n''(0) = \cdots = E_n^{(n)}(0) = 0</m>, since <m>E_n(x) = f(x) - T_n(x)</m> and <m>f</m> and <m>T_n</m> share the same function and first <m>n</m> derivative values at <m>a = 0</m>;
+            <m>E_n(0) = E_n'(0) = E_n''(0) = \cdots = E_n^{(n)}(0) = 0</m>, since <m>E_n(x) = f(x) - T_n(x)</m> and <m>f</m> and <m>T_n</m> share the same function value and same first <m>n</m> derivative values at <m>a = 0</m>;
           </p>
         </li>
         <li>
@@ -389,7 +405,7 @@
       <ul>
         <li>
           <p>
-            the maximum value of the <m>(n+1)^{\mbox{st}}</m> derivative of <m>f</m> on the interval of interest (which is a measure of how much polynomial approximation is being missed by using the degree <m>n</m> approximation);
+            the maximum value of the <m>(n+1)^{\text{st}}</m> derivative of <m>f</m> on the interval of interest (which is a measure of how much polynomial approximation is being missed by using the degree <m>n</m> approximation);
           </p>
         </li>
         <li>
@@ -459,7 +475,11 @@
       </li>      
       <li>
         <p>
-          An alternating series is one whose terms alternate in sign, often represented by <m>\sum_{k=0}^{\infty} (-1)^{k}a_k</m> where <m>a_k \gt 0</m> for all values of <m>k</m>.  Any alternating series whose terms <m>a_k</m> approach zero as <m>k \to \infty</m> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,
+          An alternating series is one whose terms alternate in sign, often represented by 
+          <me>
+            \sum_{k=0}^{\infty} (-1)^{k}a_k
+          </me> 
+          where <m>a_k \gt 0</m> for all values of <m>k</m>.  Any alternating series whose terms <m>a_k</m> approach zero as <m>k \to \infty</m> is guaranteed to converge.  Moreover, the Alternating Series Estimation Theorem tells us that we can estimate the exact value of a converging alternating series by using a partial sum, and the error of that approximation is at most the next term in the series.  That is,
           <me>
             \left| \sum_{k=0}^{\infty} (-1)^{k}a_k - \left(a_0 - a_1 + a_2 - a_3 + \cdots + (-1)^{n-1} a_{n-1} \right) \right| \lt a_{n}
           </me>.

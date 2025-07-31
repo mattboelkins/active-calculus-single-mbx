@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,6 +12,7 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <frontmatter xml:id="frontmatter" xmlns:xi="http://www.w3.org/2001/XInclude" permid="yaN">
   <xi:include href="./bibinfo.xml" />
   <xi:include href="./titlepage.xml" />
@@ -30,7 +31,7 @@
     </p>
 
     <p permid="ZcE">
-      The .html version of the text is possible only because of the amazing work of Rob Beezer and his development of <url href="https://pretextbook.org/" visual="pretextbook.org">PreTeXt</url> that's been ongoing for more than a decade.  The PreTeXt community has also been invaluable: Oscar Levin and Steven Clontz developed the CLI and related tools that make writing and producing the text far easier; Alex Jordan's work made live <webwork /> exercises possible, plus he has contributed some <webwork /> versions of Preview Activities; and Mitch Keller brings wide-ranging expertise across many aspects of PreTeXt work to his role as production editor.
+      The .html version of the text is possible only because of the amazing work of Rob Beezer and his development of <url href="https://pretextbook.org/" visual="pretextbook.org">PreTeXt</url> that's been ongoing for more than a decade.  The PreTeXt community has also been invaluable: Oscar Levin and Steven Clontz developed the CLI and related tools that make writing and producing the text far easier; Alex Jordan's work made live <webwork /> exercises possible, plus he has contributed some <webwork /> versions of Preview Activities; and Mitch Keller brings wide-ranging expertise across many aspects of PreTeXt work to his role as production editor.  Due to PreTeXt, one or more .html versions of the text have been available since 2017.
     </p>
 
     <p permid="sVv">
@@ -40,13 +41,13 @@
     <p permid="FjN">
       For the 2018 first edition, Kathy Yoshiwara of the AIM Editorial Board read the entire text and contributed 
       editorial suggestions for every section, making the prose cleaner,
-      more direct, and simply better.
+      more direct, and simply better.  Mike Shulman is a long-time user of the first edition and has frequently provided substantive feedback that has improved many aspects of the text.
     </p>
 
     <p permid="lqW">
       Over my more than 27 years at GVSU, many of my colleagues have shared with me ideas and 
       resources for teaching calculus.
-      I am particularly indebted to David Austin, Will Dickinson, Paul Fishback, Marcia Frobish, Lauren Keough, Jon Hodge,
+      I am particularly indebted to David Austin, Will Dickinson, Paul Fishback, Marcia Frobish, Jon Hodge, Lauren Keough,
       and Steve Schlicker for their contributions that improved my teaching of and thinking about calculus,
       including materials that I have modified and used over many different semesters with students.
       Parts of their ideas can be found throughout this text.
@@ -56,7 +57,7 @@
       David Austin and Steve Schlicker each agreed to write a chapter to support the completion 
       of the material on integral calculus early in the life of the textbook. 
       David wrote <xref ref="C-7">Chapter</xref>
-      and Steve wrote the version of Chapter 8 that appears in the first edition.  The new <xref ref="C-8a">Chapter</xref> in this edition is primarily my own contribution, but with substantial critical feedback and support from Spencer Bagley and Chrissy Safranski.  Chrissy has also authored a considerable number of new <webwork /> exercises and Preview Activities.
+      and Steve wrote the version of Chapter 8 that appears in the first edition.  The new <xref ref="C-8a">Chapter</xref> in this second edition is primarily my own contribution, but with substantial critical feedback and support from Spencer Bagley and Chrissy Safranski.  Chrissy has also authored a considerable number of new <webwork /> exercises and Preview Activities.
       Ted Sundstrom and Steve Schlicker each contributed a large number of problem and 
       activity solutions and answers.
     </p>
@@ -430,6 +431,11 @@
 
   <preface xml:id="preface-for-instructors" permid="Sgt">
     <title>Instructors!  Read this!</title>
+
+    <p>
+      <alert>This is the Second Edition of <pubtitle>Active Calculus</pubtitle></alert>.  Some of what follows regarding how to use this text mentions differences between the first and second editions.  You can see a detailed summary of the biggest changes at <url href="https://activecalculus.org/acs1e-vs-acs2e/" visual="activecalculus.org/acs1e-vs-acs2e/">https://activecalculus.org/acs1e-vs-acs2e/</url>.  The first edition remains available at <url href="https://activecalculus.org/single1e/" visual="activecalculus.org/single1e/">https://activecalculus.org/single1e/</url>.
+    </p>
+
     <p permid="kTR">
       This book is different.  Before you read further, first read <xref ref="preface-for-students" text="custom"><q>Students! Read this!</q></xref>  More information for instructors can also be found at <url href="https://activecalculus.org/acs/" visual="https://activecalculus.org/acs/">the home page for the text</url>, at <url href="https://activecalculus.org/" visual="https://activecalculus.org/">activecalculus.org generally</url>, and especially on the <url href="https://activecalculus.org/instructors/" visual="https://activecalculus.org/instructors/">instructors page</url>.
     </p>
@@ -443,7 +449,7 @@
       Among the three formats (HTML, PDF, print), the HTML is optimal for display in class if you have a suitable projector.  The HTML is also best for navigation, as links to internal and external references are much more obvious.  We recommend saving a downloaded version of the PDF format as a backup in the event you don't have internet access.  
     </p>
     <p>  
-      It is ideal (even essential) for each student to have a printed version of the Activities Workbook; free PDFs can be found at <url href="https://activecalculus.org/acs/" visual="https://activecalculus.org/acs/">the home page for the textbooks</url> (scroll down in the left panel and look for links to <q>download PDF 1-4</q> and <q>download PDF 5-8</q>); many instructors use the PDF to have coursepacks printed for students to purchase from their local bookstore.  Print versions of the workbook for this second edition of the text will be available for purchase beginning in January 2026.
+      It is ideal (even essential) for each student to have a printed version of the Activities Workbook; free PDFs can be found at <url href="https://activecalculus.org/acs2e/" visual="activecalculus.org/acs2e/">the home page for the second edition</url> (scroll down in the left panel and look for links to <q>download PDF 1-4</q> and <q>download PDF 5-8</q>); many instructors use the PDF to have coursepacks printed for students to purchase from their local bookstore.  Print versions of the workbook for this second edition of the text will be available for purchase beginning in January 2026.
       <!-- which is available on Amazon (<url href="https://gvsu.edu/s/14l" visual="gvsu.edu/s/14l">Chapters 1-4</url>, <url href="https://gvsu.edu/s/14m" visual="gvsu.edu/s/14m">Chapters 5-8</url>) or as free PDFs at <url href="https://activecalculus.org/acs/" visual="https://activecalculus.org/acs/">the home page for the textbooks</url> (scroll down in the left panel and look for links to <q>download PDF 1-4</q> and <q>download PDF 5-8</q>); many instructors use the PDF to have coursepacks printed for students to purchase from their local bookstore.-->
     </p>
 
@@ -492,7 +498,7 @@
     </p>
 
     <p permid="BSc">
-      You and your students can find additional resources in the <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-" visual="gvsu.edu/s/pG">GVSU Math 201 YouTube Channel</url> and <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGtewW75Nw7PnGNSkfqwAm3v" visual="gvsu.edu/s/Nb">GVSU Math 202 YouTube Channel</url> where there are short video tutorials for every section of the text.  Math 201 (GVSU's Calculus I) corresponds to Chapters 1-4 and Math 202 (GVSU's Calculus II) to Chapters 5-8 of the first edition; for this second edition, some of the video numbering in Chapter 3 won't match exactly, and there are not yet videos for <url href="https://activecalculus.org/single2e/C-8a.html" >Chapter 8</url> of the second edition.
+      You and your students can find additional resources in the <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGuXQHuS5Jkmum_CFILoCZX-" visual="gvsu.edu/s/pG">GVSU Math 201 YouTube Channel</url> and <url href="https://www.youtube.com/playlist?list=PL9bIjQJDwfGtewW75Nw7PnGNSkfqwAm3v" visual="gvsu.edu/s/Nb">GVSU Math 202 YouTube Channel</url> where there are short video tutorials for every section of the text.  Math 201 (GVSU's Calculus I) corresponds to Chapters 1-4 and Math 202 (GVSU's Calculus II) to Chapters 5-8 of the first edition; for this second edition, some of the video numbering in Chapter 3 won't match exactly, and there are not yet videos for <url href="https://activecalculus.org/single2e/C-8.html" >Chapter 8</url> of the second edition.
     </p>
 
     <p permid="hZl">

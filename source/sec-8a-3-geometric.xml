@@ -228,8 +228,8 @@
           <m>S_1 = 1</m>, <m>S_2 = \frac{3}{2} = 1.5</m>, <m>S_3 = \frac{7}{4} = 1.75</m>, <m>S_4 = \frac{15}{8} = 1.875</m>, <m>S_5 = \frac{31}{16} = 1.9375</m>, and indeed
           <me>
             S_n = \frac{1 - \left( \frac{1}{2} \right)^{n}}{1 - \frac{1}{2}} = \frac{1 - \left( \frac{1}{2} \right)^{n}}{\frac{1}{2}}
-          </me>
-          so if we multiply both the numerator and denominator by <m>2^{n}</m>, we find that
+          </me>.
+          If we now multiply both the numerator and denominator by <m>2^{n}</m>, we find that
           <men xml:id="eq-8a-3-Sn-one-half-closed">
             S_n = \frac{2^{n} - 1}{2^{n-1}} 
           </men>.
@@ -328,7 +328,7 @@
     </p> 
 
     <p>
-      As in our work in <xref ref="C-4">Chapter</xref> with Riemann sums, we can use sigma notation (see <xref ref="sigma-notation">Subsection</xref>) to express a sum in convenient shorthand.  For instance, it's equivalent to write
+      As in our work in <xref ref="C-4">Chapter</xref> with Riemann sums, we can use sigma notation (see also <xref ref="sigma-notation">Subsection</xref>) to express a sum in convenient shorthand.  For instance, it's equivalent to write
       <me>
         S_n = a + ar + ar^2 + \cdots + ar^{n-1} = \sum_{k=0}^{n-1} ar^{k} 
       </me>.
@@ -381,7 +381,7 @@
     </p>
 
     <p>
-      In our preceding work in this subsection, we arrived at the function <m>f(x) = \frac{1}{1-x}</m> by starting with the infinite geometric series
+      In our recent preceding work, we arrived at the function <m>f(x) = \frac{1}{1-x}</m> by starting with the infinite geometric series
       <me>
         1 + x + x^2 + \cdots + x^{n-1} + x^n + \cdots
       </me>

@@ -39,7 +39,7 @@
   <subsection>
     <title>Introduction</title>
     <p>
-      In <xref ref="act-8a-1-2">Activity</xref>, we used <m>f(x) = e^x</m> as a case study to investigate polynomial approximations to <m>f(x)</m> near near <m>a = 0</m>.  For the degree <m>3</m> case, we chose the conditions <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  Starting with <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and <m>f(x) = e^x</m>, we found the first three derivatives of <m>f</m> and <m>T_3</m> and evaluated them at <m>a = 0</m>, which led to the results below.
+      In <xref ref="act-8a-1-2">Activity</xref>, we used <m>f(x) = e^x</m> as a case study to investigate polynomial approximations to <m>f(x)</m> near near <m>a = 0</m>.  For the degree <m>3</m> approximation, we chose the conditions <m>T_3(0) = f(0)</m>, <m>T_3'(0) = f'(0)</m>, <m>T_3''(0) = f''(0)</m>, and <m>T_3'''(0) = f'''(0)</m>.  Starting with <m>T_3(x) = c_0 + c_1 x + c_2 x^2 + c_3 x^3</m> and <m>f(x) = e^x</m>, we found the first three derivatives of <m>f</m> and <m>T_3</m> and evaluated them at <m>a = 0</m>, which led to the results below.
       <md>
         <mrow> f(x) \amp= e^x \amp T_3(x) \amp= c_0 + c_1 x + c_2 x^2 + c_3 x^3</mrow>
         <mrow> f'(x) \amp= e^x \amp T_3'(x) \amp= c_1 + 2 c_2 x + 3 c_3 x^2</mrow>
@@ -74,7 +74,7 @@
     -->
 
     <p>
-      One important pattern we observed in our work with <m>f(x) = e^x</m> is that for every natural number <m>n</m>, the <m>n^{\mbox{th}}</m> derivative's value at <m>a=0</m> is <m>f^{(n)}(0) = 1</m>.  As we will see, this information will ultimately help us find a general formula for <m>c_n</m>, the coefficient of <m>x^n</m> in the general degree <m>n</m> polynomial approximation of <m>f(x) = e^x</m>.
+      One important pattern we observed in our work with <m>f(x) = e^x</m> is that for every natural number <m>n</m>, the <m>n^{\text{th}}</m> derivative's value at <m>a=0</m> is <m>f^{(n)}(0) = 1</m>.  As we will see, this information will ultimately help us find a general formula for <m>c_n</m>, the coefficient of <m>x^n</m> in the degree <m>n</m> polynomial approximation of <m>f(x) = e^x</m>.
     </p>
 
     <p>
@@ -151,7 +151,7 @@
     </definition>
 
     <p>
-      By definition, <m>T_n</m> is the polynomial whose function and first <m>n</m> derivative values at <m>a = 0</m> match the function value and all <m>n</m> derivative values of <m>f</m> at <m>a = 0</m>.  
+      By definition, <m>T_n</m> is the polynomial whose function value and first <m>n</m> derivative values at <m>a = 0</m> match the function value and all <m>n</m> derivative values of <m>f</m> at <m>a = 0</m>.  
     </p>
 
     <p>
@@ -160,20 +160,19 @@
         T_n(0) = f(0), T_n'(0) = f'(0), T_n''(0) = f''(0), \ldots, T_n^{(n)}(0) = f^{(n)}(0)
       </me> 
       enable us to determine the coefficients <m>c_0, c_1, \ldots, c_n</m> in terms of the values of the various derivatives of <m>f</m>.  First, we take <m>n</m> derivatives of <m>T_n(x)</m>, and assemble those below.  As we do so, we choose not to combine products of numbers that arise in order to see certain patterns in the coefficients.
-                    <md>
-                      <mrow>T_n(x) \amp= c_0 + c_1x + c_2x^2 + c_3x^3 + c_4x^4 + \cdots + c_nx^n</mrow>
-                      <mrow>T_n'(x) \amp= c_1 + 2c_2x + 3c_3x^2 + 4c_4x^3 + \cdots + nc_nx^{n-1} </mrow>
-                      <mrow>T_n''(x) \amp= 2c_2 + (3 \cdot 2) c_3x + (4 \cdot 3) c_4x^2 + \cdots + n (n-1) c_nx^{n-2} </mrow>
-                      <mrow>T_n'''(x) \amp= (3 \cdot 2 \cdot 1) c_3 + (4 \cdot 3 \cdot 2) c_4x + \cdots + n (n-1) (n-2) c_nx^{n-3} </mrow>
-                      <mrow>T_n^{(4)}(x) \amp= (4 \cdot 3 \cdot 2 \cdot 1) c_4 + \cdots + n (n-1) (n-2) (n-3) c_nx^{n-4} </mrow>
-                      <mrow>  \amp\vdots </mrow>
-                      <mrow>T_n^{(n)}(x) \amp= \bigl[ n (n-1) (n-2) (n-3) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n</mrow>
-                      <mrow> \amp </mrow>
-                    </md>
-                  </p>
-    
+      <md>
+        <mrow>T_n(x) \amp= c_0 + c_1x + c_2x^2 + c_3x^3 + c_4x^4 + \cdots + c_nx^n</mrow>
+        <mrow>T_n'(x) \amp= c_1 + 2c_2x + 3c_3x^2 + 4c_4x^3 + \cdots + nc_nx^{n-1} </mrow>
+        <mrow>T_n''(x) \amp= 2c_2 + (3 \cdot 2) c_3x + (4 \cdot 3) c_4x^2 + \cdots + n (n-1) c_nx^{n-2} </mrow>
+        <mrow>T_n'''(x) \amp= (3 \cdot 2 \cdot 1) c_3 + (4 \cdot 3 \cdot 2) c_4x + \cdots + n (n-1) (n-2) c_nx^{n-3} </mrow>
+        <mrow>T_n^{(4)}(x) \amp= (4 \cdot 3 \cdot 2 \cdot 1) c_4 + \cdots + n (n-1) (n-2) (n-3) c_nx^{n-4} </mrow>
+        <mrow>  \amp\vdots </mrow>
+        <mrow>T_n^{(n)}(x) \amp= \bigl[ n (n-1) (n-2) (n-3) \cdots 3 \cdot 2 \cdot 1 \bigr] c_n</mrow>
+        <mrow> \amp </mrow>
+      </md> 
+    </p>                
     <p>
-      Next, we evaluate each of the derivatives of <m>T_n(x)</m> at <m>a = 0</m>, and then set the result equal to the corresponding derivative value of <m>f</m> evaluated at <m>a = 0</m>, which ultimately enables us to determine the coefficients <m>c_0, c_1, \ldots, c_n</m>.  These two steps are summarized in <xref ref="T-8a-2-Taylor-0">Table</xref>.  Note particularly how we use the index variable, <m>k</m>, to track the various derivatives of <m>T_n</m> and <m>f</m>.
+      Next, we evaluate each of the derivatives of <m>T_n(x)</m> at <m>a = 0</m> and set each result equal to the corresponding derivative value of <m>f</m> evaluated at <m>a = 0</m>, which ultimately enables us to determine the coefficients <m>c_0, c_1, \ldots, c_n</m>.  These two steps are summarized in <xref ref="T-8a-2-Taylor-0">Table</xref>.  Note how we use the index variable, <m>k</m>, to track the various derivatives of <m>T_n</m> and <m>f</m>.
     </p>
 
           <table xml:id="T-8a-2-Taylor-0">
@@ -223,7 +222,7 @@
             </table>
 
     <p>
-      We see a natural pattern that results from taking the <m>k^{\mbox{th}}</m> derivative of the <m>k{\mbox{th}}</m> power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>(4 \cdot 3) x^2</m>, <m>(4 \cdot 3 \cdot 2) x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
+      We see a natural pattern that results from taking the <m>k^{\text{th}}</m> derivative of the <m>k{\text{th}}</m> power of <m>x</m>, <m>x^k</m>.  For example, the repeated derivatives of <m>x^4</m> are <m>4x^3</m>, <m>(4 \cdot 3) x^2</m>, <m>(4 \cdot 3 \cdot 2) x</m>, and finally <m>4 \cdot 3 \cdot 2 \cdot 1</m>.  By the time we get to the fourth derivative of <m>x^4</m>, only a constant remains, and that constant is the factorial<fn>For any positive whole number <m>n</m>, its factorial, <m>n!</m>, is the product of all of the positive whole numbers less than or equal to <m>n</m>: <m>n! = n \cdot (n-1) \cdot (n-2) \cdot \cdots \cdot 3 \cdot 2 \cdot 1</m>.</fn> 
       <me>
         \frac{d^4}{dx^4}\left[ x^4 \right] = 4 \cdot 3 \cdot 2 \cdot 1 = 4!
       </me>
@@ -261,7 +260,7 @@
       </statement>
       <solution>
         <p>
-           To find the degree <m>5</m> Taylor polynomial, we need to compute <m>f(0)</m>, <m>f'(0)</m>, <m>f''(0)</m>, <m>\ldots</m>, <m>f^{(5)}(0)</m>, so we first find the first through fifth derivatives of <m>f</m> in the left column of <xref ref="T-8a-2-Taylor-example">Table</xref>, and then evaluate those derivatives at <m>a = 0</m> in the right column.
+           To find the degree <m>5</m> Taylor polynomial, we need to compute <m>f(0)</m>, <m>f'(0)</m>, <m>f''(0)</m>, <m>\ldots</m>, <m>f^{(5)}(0)</m>, so we first find the first through fifth derivatives of <m>f</m> in the first several rows of <xref ref="T-8a-2-Taylor-example">Table</xref>, and then evaluate those derivatives at <m>a = 0</m> in the last several rows.
         </p>
 
           <table xml:id="T-8a-2-Taylor-example">
@@ -383,7 +382,7 @@
       <me>
         \sin(1) \approx T_7(1) = 1 - \frac{1}{3!}1^3 + \frac{1}{5!}1^5 - \frac{1}{7!}1^7 = \frac{4241}{5040} \approx 0.84146825
       </me>
-       is a remarkably accurate estimate of <m>\sin(1) = 0.84147098 \ldots</m> that only involves the sum of four rational numbers. 
+       is a surprisingly accurate estimate of <m>\sin(1) = 0.84147098 \ldots</m> that only involves the sum of four rational numbers. 
     </p>
 
   </subsection>

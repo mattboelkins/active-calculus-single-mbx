@@ -17,9 +17,8 @@
   <activity xml:id="act-8a-1-1">
     <introduction>
       <p>
-			Let <m>f(x)=e^x</m> and <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>.  We seek numerical values for the constants <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> so that <m>f(0)=T_2(0)</m>, <m>f'(0)=T_2'(0)</m>, and <m>f''(0)=T_2''(0)</m>.
-		</p>
-      <p/>
+        Let <m>f(x)=e^x</m> and <m>T_2(x) = b_0 + b_1 x + b_2 x^2</m>.  We seek numerical values for the constants <m>b_0</m>, <m>b_1</m>, and <m>b_2</m> so that <m>f(0)=T_2(0)</m>, <m>f'(0)=T_2'(0)</m>, and <m>f''(0)=T_2''(0)</m>.
+      </p>
     </introduction>
     <task workspace="3cm" xml:id="act-8a-1-1-task-0">
       <statement>
@@ -32,19 +31,21 @@
       </statement>
       <hint/>
       <answer>
-        <p><m>T_2''(x) = 2b_2</m>.
+        <p>
+          <m>T_2''(x) = 2b_2</m>.
 				</p>
       </answer>
       <solution>
-        <p><m>T_2''(x) = 2b_2</m>.
+        <p>
+          <m>T_2''(x) = 2b_2</m>.
 				</p>
       </solution>
     </task>
     <task workspace="3cm" xml:id="act-8a-1-1-task-1">
       <statement>
         <p>
-						Recall that <m>f(x) = e^x</m>.  Determine <m>f'(x)</m> and <m>f''(x)</m>.
-					</p>
+					Recall that <m>f(x) = e^x</m>.  Determine <m>f'(x)</m> and <m>f''(x)</m>.
+				</p>
       </statement>
       <hint/>
       <answer>

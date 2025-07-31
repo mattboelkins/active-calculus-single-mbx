@@ -137,11 +137,11 @@
               </p>
 
               <p>
-                For a series to be geometric, we must be able to construct the next term in the series by multiplying the prior term by a constant ratio.  In <m>T_f(x)</m>, the general <m>n^{\mbox{th}}</m> term is 
+                For a series to be geometric, we must be able to construct the next term in the series by multiplying the prior term by a constant ratio.  In <m>T_f(x)</m>, the general <m>n^{\text{th}}</m> term is 
                 <me>
                   a_n(x) = (-1)^{n-1}\frac{1}{n}x^n 
                 </me>
-                and the <m>(n+1)^{\mbox{st}}</m> term is
+                and the <m>(n+1)^{\text{st}}</m> term is
                 <me>
                   a_{n+1}(x) = (-1)^{n}\frac{1}{n+1}x^{n+1} 
                 </me>.
@@ -204,7 +204,7 @@
       <me>
         \ln(1+x) = x - \frac{1}{2}x^2 + \frac{1}{3}x^3 - \cdots + (-1)^{n-1}\frac{1}{n}x^n + \cdots
       </me>
-      for <m>x</m>-values that satisfy <m>-1 \lt x \lt 1</m>.  This result is analogous to <xref ref="Eq-8a-4-f-equals-Tf">Equation</xref>, but is different in the sense that the Taylor series for <m>\ln(1+x)</m> is not geometric.  
+      for <m>x</m>-values that satisfy <m>-1 \lt x \lt 1</m>.  (It also turns out this equality holds when <m>x = 1</m> for reasons that we'll consider in <xref ref="sec-8a-5x-accuracy-of-approx">Section</xref>.)  This result is analogous to <xref ref="Eq-8a-4-f-equals-Tf">Equation</xref>, but is different in the sense that the Taylor series for <m>\ln(1+x)</m> is not geometric.  
     </p>
     <p>  
       We next introduce a more formal way to test <q>how geometric</q> a Taylor series is in an effort to understand where the Taylor series is guaranteed to converge.
@@ -492,7 +492,7 @@
         e^x = \sum_{k=0}^\infty \frac{1}{k!}x^k = 1 + x + \frac{1}{2!}x^2 + \frac{1}{3!}x^3 + \cdots + \frac{1}{n!}x^n + \cdots
       </me>,
       and this equation is true for every possible value of <m>x</m>.
-      This equation is completely determined by the values of <m>f(x) = e^x</m> and its derivatives only at the value <m>a = 0</m>.   When we use a computational device like <em>Desmos</em> or a calculator and enter <m>e^2</m>, this is how the device finds the decimal representation of the number.  Since
+      This equation is completely determined by the values of <m>f(x) = e^x</m> and its derivatives only at the value <m>a = 0</m>.   When we use a computational device like <em>Desmos</em> or a calculator and enter <m>e^2</m>, this is how the device can find the decimal representation of the number.  Since
       <me>
         e^2 = 1 + 2 + \frac{1}{2!}2^2 + \frac{1}{3!}2^3 + \cdots + \frac{1}{n!}2^n + \cdots
       </me>

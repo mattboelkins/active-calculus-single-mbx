@@ -12,11 +12,10 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-
-<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-2-taylor-poly">
-  <title>Taylor Polynomials</title>
-    <xi:include href="./previews/PA-8a-2.xml"/>
-    <xi:include href="./activities/act-8a-2-1.xml"/>
-    <xi:include href="./activities/act-8a-2-2.xml"/>
-    <xi:include href="./activities/act-8a-2-3.xml"/>
+ 
+<section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-5x-accuracy-of-approx">
+  <title>Finding and Using Taylor Series</title>
+    <xi:include href="./previews/PA-8a-5x.xml"/>
+    <xi:include href="./activities/act-8a-5x-1.xml"/>
+    <xi:include href="./activities/act-8a-5x-2.xml"/>
 </section>
