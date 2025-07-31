@@ -35,13 +35,22 @@
     </p>
 
     <p permid="sVv">
-      For the graphics in the text, I'm grateful for the support of David Austin, first through his Python library that uses <url href="https://gvsu.edu/s/bi" visual="gvsu.edu/s/bi">Bill Casselman's PiScript program</url>, and now through his latest project, <url href="https://prefigure.org" visual="prefigure.org">PreFigure</url>.  
+      For the graphics in the text, I'm grateful for the support of David Austin, first through his Python library that uses <url href="https://gvsu.edu/s/bi" visual="gvsu.edu/s/bi">Bill Casselman's PiScript program</url>, and now through his latest fantastic project, <url href="https://prefigure.org" visual="prefigure.org">PreFigure</url>.  
+    </p>
+
+    <p permid="Ryf">
+      David Austin and Steve Schlicker each wrote a chapter to support the completion 
+      of the material on integral calculus early in the life of the textbook late in 2012. 
+      David wrote <xref ref="C-7">Chapter</xref>
+      and Steve wrote the version of Chapter 8 that appears in the first edition.  The new <xref ref="C-8">Chapter</xref> in this second edition is primarily my own contribution, but with substantial critical feedback and support from Spencer Bagley and Chrissy Safranski.  Chrissy has also authored a considerable number of new <webwork /> exercises and Preview Activities, the latter of which especially support the Runestone implementation of the text.
+      Ted Sundstrom and Steve Schlicker each contributed a large number of exercise and 
+      activity solutions and answers.
     </p>
 
     <p permid="FjN">
       For the 2018 first edition, Kathy Yoshiwara of the AIM Editorial Board read the entire text and contributed 
       editorial suggestions for every section, making the prose cleaner,
-      more direct, and simply better.  Mike Shulman is a long-time user of the first edition and has frequently provided substantive feedback that has improved many aspects of the text.
+      more direct, and simply better.  Mike Shulman is a long-time user of the first edition and has frequently provided substantive feedback that has improved many aspects of the text.  Especially through their in-class work with students and the text, Chrissy, Mike, and Spencer have been invaluable partners in strengthening <pubtitle>Active Calculus</pubtitle> in both its first and second editions.
     </p>
 
     <p permid="lqW">
@@ -53,21 +62,8 @@
       Parts of their ideas can be found throughout this text.
     </p>
 
-    <p permid="Ryf">
-      David Austin and Steve Schlicker each agreed to write a chapter to support the completion 
-      of the material on integral calculus early in the life of the textbook. 
-      David wrote <xref ref="C-7">Chapter</xref>
-      and Steve wrote the version of Chapter 8 that appears in the first edition.  The new <xref ref="C-8a">Chapter</xref> in this second edition is primarily my own contribution, but with substantial critical feedback and support from Spencer Bagley and Chrissy Safranski.  Chrissy has also authored a considerable number of new <webwork /> exercises and Preview Activities.
-      Ted Sundstrom and Steve Schlicker each contributed a large number of problem and 
-      activity solutions and answers.
-    </p>
-
     <p>
-      Many other people have written me with comments, suggestions, and corrections, and I am indebted to this group of people as well.
-    </p>
-
-    <p permid="xFo">
-      Overall, I'm grateful for how the work of these friends and colleagues
+      Many other people have written me with comments, suggestions, and corrections, and I am indebted to everyone who has taken the time to share their feedback.  Overall, I'm grateful for how the work of these friends and colleagues
       has made the text so much better.
     </p>
 
@@ -84,6 +80,11 @@
       I will gladly take <url href="https://gvsu.edu/s/0vK" visual="gvsu.edu/s/0vK">reader and user feedback</url> 
       to correct them, along with other suggestions to improve the text.
     </p>
+
+    <p>
+      
+    </p>
+
     <attribution>
     <line>Matt Boelkins</line>
     <line>Grand Rapids, MI</line>
