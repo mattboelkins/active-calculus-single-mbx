@@ -1,6 +1,6 @@
-openDate          = 07/31/2025 at 12:00am
-dueDate           = 01/31/2026 at 10:00pm
-answerDate        = 01/31/2026 at 10:00pm
+openDate          = 08/01/2025 at 12:00am
+dueDate           = 02/01/2026 at 10:00pm
+answerDate        = 02/01/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
@@ -66,11 +66,11 @@ source_file = csafranski/1.2HW_prob7.pg
 problem_id = 7
 problem_end
 problem_start
-source_file = Library/Michigan/Chap2Sec1/Q05.pg
+source_file = Library/Michigan/Chap2Sec2/Q15.pg
 problem_id = 1
 problem_end
 problem_start
-source_file = Library/Michigan/Chap2Sec2/Q15.pg
+source_file = Library/Michigan/Chap2Sec1/Q05.pg
 problem_id = 2
 problem_end
 problem_start

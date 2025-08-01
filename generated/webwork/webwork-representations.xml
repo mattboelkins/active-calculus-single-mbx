@@ -1072,19 +1072,122 @@ If the limit does not exist enter DNE.</p>
     <pg source="csafranski/1.2HW_prob7.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-34" ww-id="webwork-34">
-    <static seed="34" source="Library/Michigan/Chap2Sec1/Q05.pg">
+    <static seed="34" source="Library/Michigan/Chap2Sec2/Q15.pg">
+      <statement><p>Consider the graph of the function <m>f(x)</m> shown below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-34-image-1.png" width="41%"/>
+<p>Using this graph, for each of the following pairs of numbers
+decide which is larger.  <em>Be sure that you can explain your
+answer.</em></p>
+<p><alert>A.</alert>
+<m>f(4)</m> <ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>&lt;</p>
+</li><li>
+<p>=</p>
+</li><li>
+<p>&gt;</p>
+</li></ul> <m>f(5)</m></p>
+<p><alert>B.</alert>
+<m>f(4) - f(3)</m> <ul form="popup" name="AnSwEr0002"><li>
+<p>?</p>
+</li><li>
+<p>&lt;</p>
+</li><li>
+<p>=</p>
+</li><li>
+<p>&gt;</p>
+</li></ul> <m>f(3) - f(2)</m></p>
+<p><alert>C.</alert>
+<m>\frac{f(3) - f(2)}{3 - 2}</m>
+  <ul form="popup" name="AnSwEr0003"><li>
+<p>?</p>
+</li><li>
+<p>&lt;</p>
+</li><li>
+<p>=</p>
+</li><li>
+<p>&gt;</p>
+</li></ul>
+  <m>\frac{f(4) - f(2)}{4 - 2}</m></p>
+<p><alert>D.</alert>
+<m>f'(2)</m> <ul form="popup" name="AnSwEr0004"><li>
+<p>?</p>
+</li><li>
+<p>&lt;</p>
+</li><li>
+<p>=</p>
+</li><li>
+<p>&gt;</p>
+</li></ul> <m>f'(5)</m></p>
+</statement>
+      <answer>
+        <p>
+          <m>{\verb!&lt;!}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\verb!&lt;!}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\verb!&gt;!}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>{\verb!&gt;!}</m>
+        </p>
+      </answer>
+      <solution><alert>A.</alert>
+Since <m>f</m> is increasing,
+<m>f(4)</m> &lt; <m>f(5)</m>.
+
+
+
+<alert>B.</alert>
+From the figure, it appears that
+<m>f(4) - f(3)</m> &lt;
+<m>f(3) - f(2)</m>.
+
+
+
+<alert>C.</alert>
+The quantity <m>\frac{f(3)-f(2)}{3-2}</m>
+represents the slope of the secant line connecting the points on the graph
+at <m>x=2</m> and <m>x=3</m>. This is greater than the slope of the
+secant line connecting the points at <m>x=2</m> and <m>x=4</m>, which
+is <m>\frac{f(4)-f(2)}{4-2}</m>
+
+
+
+<alert>D.</alert>
+The function is steeper at <m>x=2</m> than at <m>x=5</m>, so
+<m>f'(2)</m> &gt; <m>f'(5)</m>.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec2/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec2/Q15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-35" ww-id="webwork-35">
+    <static seed="35" source="Library/Michigan/Chap2Sec1/Q05.pg">
       <statement><p>Match the points labeled on the curve below with the given slopes in the
 following table.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-34-image-1.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-35-image-1.png" width="41%"/>
 <tabular bottom="medium" left="medium" right="medium" top="medium">
 <row>
 <cell>slope</cell>
 <cell>-2</cell>
+<cell>-1</cell>
 <cell>-1/2</cell>
 <cell>0</cell>
-<cell>1/2</cell>
+<cell>1</cell>
 <cell>2</cell>
-<cell>3</cell>
 </row>
 <row>
 <cell>label</cell>
@@ -1183,6 +1286,11 @@ F
 </statement>
       <answer>
         <p>
+          <m>\text{D}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
           <m>\text{C}</m>
         </p>
       </answer>
@@ -1193,17 +1301,7 @@ F
       </answer>
       <answer>
         <p>
-          <m>\text{D}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
           <m>\text{B}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\text{E}</m>
         </p>
       </answer>
       <answer>
@@ -1211,26 +1309,31 @@ F
           <m>\text{F}</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>\text{E}</m>
+        </p>
+      </answer>
       <solution><tabular bottom="medium" left="medium" right="medium" top="medium">
 
 <row>
 <cell>slope</cell>
 <cell>-2</cell>
+<cell>-1</cell>
 <cell>-1/2</cell>
 <cell>0</cell>
-<cell>1/2</cell>
+<cell>1</cell>
 <cell>2</cell>
-<cell>3</cell>
 </row>
 
 <row>
 <cell>label</cell>
+<cell>D</cell>
 <cell>C</cell>
 <cell>A</cell>
-<cell>D</cell>
 <cell>B</cell>
-<cell>E</cell>
 <cell>F</cell>
+<cell>E</cell>
 </row>
 
 
@@ -1243,109 +1346,6 @@ F
     </static>
     <server-data sourceFilePath="Library/Michigan/Chap2Sec1/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap2Sec1/Q05.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-35" ww-id="webwork-35">
-    <static seed="35" source="Library/Michigan/Chap2Sec2/Q15.pg">
-      <statement><p>Consider the graph of the function <m>f(x)</m> shown below.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-35-image-1.png" width="41%"/>
-<p>Using this graph, for each of the following pairs of numbers
-decide which is larger.  <em>Be sure that you can explain your
-answer.</em></p>
-<p><alert>A.</alert>
-<m>f(9)</m> <ul form="popup" name="AnSwEr0001"><li>
-<p>?</p>
-</li><li>
-<p>&lt;</p>
-</li><li>
-<p>=</p>
-</li><li>
-<p>&gt;</p>
-</li></ul> <m>f(12)</m></p>
-<p><alert>B.</alert>
-<m>f(9) - f(6)</m> <ul form="popup" name="AnSwEr0002"><li>
-<p>?</p>
-</li><li>
-<p>&lt;</p>
-</li><li>
-<p>=</p>
-</li><li>
-<p>&gt;</p>
-</li></ul> <m>f(6) - f(3)</m></p>
-<p><alert>C.</alert>
-<m>\frac{f(6) - f(3)}{6 - 3}</m>
-  <ul form="popup" name="AnSwEr0003"><li>
-<p>?</p>
-</li><li>
-<p>&lt;</p>
-</li><li>
-<p>=</p>
-</li><li>
-<p>&gt;</p>
-</li></ul>
-  <m>\frac{f(9) - f(3)}{9 - 3}</m></p>
-<p><alert>D.</alert>
-<m>f'(3)</m> <ul form="popup" name="AnSwEr0004"><li>
-<p>?</p>
-</li><li>
-<p>&lt;</p>
-</li><li>
-<p>=</p>
-</li><li>
-<p>&gt;</p>
-</li></ul> <m>f'(12)</m></p>
-</statement>
-      <answer>
-        <p>
-          <m>{\verb!&lt;!}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>{\verb!&lt;!}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>{\verb!&gt;!}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>{\verb!&gt;!}</m>
-        </p>
-      </answer>
-      <solution><alert>A.</alert>
-Since <m>f</m> is increasing,
-<m>f(9)</m> &lt; <m>f(12)</m>.
-
-
-
-<alert>B.</alert>
-From the figure, it appears that
-<m>f(9) - f(6)</m> &lt;
-<m>f(6) - f(3)</m>.
-
-
-
-<alert>C.</alert>
-The quantity <m>\frac{f(6)-f(3)}{6-3}</m>
-represents the slope of the secant line connecting the points on the graph
-at <m>x=3</m> and <m>x=6</m>. This is greater than the slope of the
-secant line connecting the points at <m>x=3</m> and <m>x=9</m>, which
-is <m>\frac{f(9)-f(3)}{9-3}</m>
-
-
-
-<alert>D.</alert>
-The function is steeper at <m>x=3</m> than at <m>x=12</m>, so
-<m>f'(3)</m> &gt; <m>f'(12)</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap2Sec2/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap2Sec2/Q15.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="19" xml:id="extracted-webwork-36" ww-id="webwork-36">
     <static seed="36" source="csafranski/1.3HW_prob3.pg">
@@ -8261,6 +8261,12 @@ overestimate and the left Riemann sum an underestimate.
 <fillin characters="30" name="optional1"/>, and it is an 
 <var form="popup">
 <li>
+<p>?</p>
+</li>
+<li>
+<p>underestimate of</p>
+</li>
+<li>
 <p>overestimate of</p>
 </li>
 <li>
@@ -8268,12 +8274,6 @@ overestimate and the left Riemann sum an underestimate.
 </li>
 <li>
 <p>there is ambiguity</p>
-</li>
-<li>
-<p>?</p>
-</li>
-<li>
-<p>underestimate of</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -8282,6 +8282,12 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
+<p>underestimate of</p>
+</li>
+<li>
+<p>?</p>
+</li>
+<li>
 <p>there is ambiguity</p>
 </li>
 <li>
@@ -8289,12 +8295,6 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 </li>
 <li>
 <p>overestimate of</p>
-</li>
-<li>
-<p>underestimate of</p>
-</li>
-<li>
-<p>?</p>
 </li>
 </var>
  the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -12549,13 +12549,13 @@ point (0,1) has a negative slope.</p>
 <p>stable</p>
 </li>
 <li>
-<p>?</p>
+<p>unstable</p>
 </li>
 <li>
 <p>semi-stable</p>
 </li>
 <li>
-<p>unstable</p>
+<p>?</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
@@ -14349,7 +14349,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-31T18:29:22Z       
+###       on 2025-08-01T15:43:03Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14652,7 +14652,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-31T18:29:22Z       
+###       on 2025-08-01T15:43:03Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14999,7 +14999,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-31T18:29:22Z       
+###       on 2025-08-01T15:43:03Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15323,7 +15323,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-07-31T18:29:22Z       
+###       on 2025-08-01T15:43:03Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -16982,24 +16982,24 @@ from the convergent value of that series?</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
 <p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(1.02) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
-<p><m>T_{2}(1.02) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
-<p><m>T_{2}(1.02)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(1.01) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p><m>T_{2}(1.01) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p><m>T_{2}(1.01)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(1.02)</m>.</p>
+</li></ul> estimate of <m>f(1.01)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(1.02)-T_{2}(1.02)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(1.01)-T_{2}(1.01)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.96</m>
+          <m>0.98</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.9612</m>
+          <m>0.9803</m>
         </p>
       </answer>
       <answer>
@@ -17009,24 +17009,24 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>-\left(-3.2\times 10^{-5}\right)</m>
+          <m>-\left(-4\times 10^{-6}\right)</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(1.02)</m> about <m>x=1</m> is given by:</p>
-<p><m>T_n(x) = f(1.02) + f'(1.02)(1.02-1) + \cdots + \frac{f^n(1.02)}{n!}(1.02-1)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(1.01)</m> about <m>x=1</m> is given by:</p>
+<p><m>T_n(x) = f(1) + f'(1)(1.01-1) + \cdots + \frac{f^n(1)}{n!}(1.01-1)^n</m></p>
 <p><m>f'(x) = -\frac{2}{x^3}</m>,</p>
 <p><m>f''(x) = \frac{6}{x^4}</m>,</p>
 <p><m>f'''(x) = -\frac{24}{x^5}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(1.02) = 0.96</m>,</p>
-<p><m>T_2(1.02) = 0.9612</m>,</p>
-<p><m>f''(x)</m> is always positive in the interval [1,1.02] so <m>T_{2}(1.02)</m> is a overestimate of <m>f(1.02)</m>.</p>
+<p><m>T_1(1.01) = 0.98</m>,</p>
+<p><m>T_2(1.01) = 0.9803</m>,</p>
+<p><m>f''(x)</m> is always positive in the interval [1,1.01] so <m>T_{2}(1.01)</m> is a overestimate of <m>f(1.01)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(1.02)-T_{2}(1.02)\right| \le \frac{M}{3 !}\left|1.02-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1.02,1].</p>
+<p><m>\left|f(1.01)-T_{2}(1.01)\right| \le \frac{M}{3 !}\left|1.01-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.01].</p>
 <p>By examining <m>f'''(x)</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
 <p>By calculation we find:
-<m>|f(1.02)-T_{2}(1.02)| \le 3.2\times 10^{-5}</m>.</p>
+<m>|f(1.01)-T_{2}(1.01)| \le 4\times 10^{-6}</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
