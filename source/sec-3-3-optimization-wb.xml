@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-3-3-optimization">
-  <title>Global Optimization</title>
+  <title>Global optimization</title>
     <xi:include href="./previews/PA-3-3.xml"/>
     <xi:include href="./activities/act-3-3-1.xml"/>
     <xi:include href="./activities/act-3-3-2.xml"/>

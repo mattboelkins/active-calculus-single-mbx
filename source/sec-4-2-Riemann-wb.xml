@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-4-2-Riemann">
-  <title>Riemann Sums</title>
+  <title>Riemann sums</title>
     <xi:include href="./previews/PA-4-2.xml"/>
     <xi:include href="./activities/act-4-2-1.xml"/>
     <xi:include href="./activities/act-4-2-2.xml"/>

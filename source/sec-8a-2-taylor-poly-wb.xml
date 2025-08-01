@@ -14,7 +14,7 @@
 <!-- **********************************************************************-->
 
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-8a-2-taylor-poly">
-  <title>Taylor Polynomials</title>
+  <title>Taylor polynomials</title>
     <xi:include href="./previews/PA-8a-2.xml"/>
     <xi:include href="./activities/act-8a-2-1.xml"/>
     <xi:include href="./activities/act-8a-2-2.xml"/>

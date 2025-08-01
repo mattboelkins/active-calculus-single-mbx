@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -13,7 +13,7 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-5-1-antid-graphs">
-  <title>Constructing Accurate Graphs of Antiderivatives</title>
+  <title>Constructing accurate graphs of antiderivatives</title>
     <xi:include href="./previews/PA-5-1.xml"/>
     <xi:include href="./activities/act-5-1-1.xml"/>
     <xi:include href="./activities/act-5-1-2.xml"/>

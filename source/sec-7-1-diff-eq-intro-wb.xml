@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,8 +12,9 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <section xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="sec-7-1-diff-eq-intro">
-  <title>An Introduction to Differential Equations</title>
+  <title>An introduction to differential equations</title>
     <xi:include href="./previews/PA-7-1.xml"/>
     <xi:include href="./activities/act-7-1-1.xml"/>
     <xi:include href="./activities/act-7-1-2.xml"/>
