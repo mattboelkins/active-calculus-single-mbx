@@ -17,29 +17,106 @@
   <activity xml:id="act-8-6-2">
     <introduction>
       <p>
-      In this activity we apply the Lagrange Error Bound to quantify the accuracy of several different approximations.
-    </p>
-      <p/>
+        In this activity we apply the Lagrange Error Bound to quantify the accuracy of several different approximations.
+      </p>
     </introduction>
     <task workspace="9cm" xml:id="act-8-6-2-task-0">
       <statement>
         <p>
             Use the degree <m>10</m> Taylor polynomial (centered at <m>a = 0</m>) of <m>f(x) = e^x</m> to estimate the value of <m>e^2</m>.  What is the maximum error of your estimate, according to the Lagrange Error Bound?  How does this compare to the actual error between <m>e^2</m> and <m>T_{10}(2)</m> as reported by a computer algebra system?
-          </p>
+        </p>
       </statement>
       <hint/>
-      <answer/>
-      <solution/>
+      <answer>
+        <p>
+          For <m>f(x) = e^2</m>, the Lagrange Error Bound gives
+          <m>
+            \left| f(2) - T_{10}(2) \right| \leq e^2 \cdot \frac{|2-0|^{11}}{(11)!} = \frac{e^2 \cdot 2^{11}}{(11)!} \approx 0.00037910821
+          </m>.  The actual error is <m>\left| f(2) - T_{10}(2) \right| \approx 0.00006138994 </m>
+        </p>
+      </answer>>
+      <solution>
+        <p>
+          To approximate the value of <m>e^2</m> using <m>T_{10}(2)</m>,
+          we will use <m>f(x) = e^x</m>, <m>c = 2</m>, <m>a=0</m>,
+          and <m>n = 10</m> in the Lagrange Error Bound formula.
+          We also need to find a value for <m>M</m> so that <m>\left|f^{(11)}(x)\right| \le M</m> on the interval <m>[0,2]</m>.
+        </p>
+        <p>  
+          Since the derivatives of <m>f(x) = e^x</m> are 
+          <m>f^{(n)}(x) = e^x</m>, and the maximum value of <m>e^x</m> on  <m>[0,2]</m> is <m>e^2</m>, we have
+          <me>
+            \left| f^{(n+1)}(x) \right| \leq e^2
+          </me>
+          for any <m>n</m> and any <m>x</m>.
+          Therefore, we let <m>M = e^2</m>.
+          By the Lagrange Error Bound formula, we find that
+          <me>
+            \left| f(2) - T_{10}(2) \right| \leq e^2 \cdot \frac{|2-0|^{11}}{(11)!} = \frac{e^2 \cdot 2^{11}}{(11)!} \approx 0.00037910821
+          </me>.
+        </p>
+
+        <p>
+          So <m>T_{10}(2)</m> approximates <m>\e^2</m> to within at most <m>0.00037910821</m>.
+          Using a computer algebra system, we can find that
+          <me>
+            T_{10}(2) \approx 7.388994708994 \ \ \text{ and }  \ \ e^2 \approx 7.38905609893
+          </me>
+          with an actual absolute difference of about <m>0.00006138994</m> (which is considerably more accurate than what is guaranteed by the Lagrange Error Bound).  
+        </p>
+      </solution>  
     </task>
     <task workspace="8cm" xml:id="act-8-6-2-task-1">
       <statement>
         <p>
-                Use a degree <m>n</m> Taylor polynomial (centered at <m>a = 0</m>) of <m>f(x) = \cos(x)</m> to estimate the value of <m>\cos(1)</m> within an accuracy of <m>0.00000001</m>.  According to the Lagrange Error Bound, what value of <m>n</m> is needed to achieve this accuracy?  What is the resulting approximate value of <m>\cos(1)</m>?
-            </p>
+          Use a degree <m>n</m> Taylor polynomial (centered at <m>a = 0</m>) of <m>f(x) = \cos(x)</m> to estimate the value of <m>\cos(1)</m> within an accuracy of <m>0.00000001</m>.  According to the Lagrange Error Bound, what value of <m>n</m> is needed to achieve this accuracy?  What is the resulting approximate value of <m>\cos(1)</m>?
+        </p>
       </statement>
       <hint/>
-      <answer/>
-      <solution/>
+      <answer>
+        <p>
+          Using <m>M = 1</m> as the bound on the <m>(n+1)^{\text{st}}</m> derivative of <m>\cos(x)</m>, the Lagrange error bound tells us that we need to use <m>n = 11</m> (<m>n+1 = 12</m>) to achieve the desired accuracy, and that
+          <m>\cos(1) \approx T_{10}(1) = 1 - \frac{1^2}{2!} + \frac{1^4}{4!} - \cdots - \frac{1^{10}}{10!} \approx 0.54030230379189</m>.
+        </p>
+      </answer>
+      <solution>
+        <p>
+          To approximate the value of <m>\cos(1)</m> using a degree <m>n</m> Taylor polynomial,
+          we will use <m>f(x) = \cos(x)</m>, <m>c = 1</m>, <m>a=0</m>,
+          and (momentarily) keep <m>n</m> arbitrary in the Lagrange Error Bound formula.
+          We first seek a value for <m>M</m> so that <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[0,1]</m> for all <m>n</m>.
+        </p>
+        <p>  
+          Since the derivatives of <m>f(x) = \cos(x)</m> are all one of
+          <m>\pm \sin(x)</m> or <m>\pm \cos(x)</m>, and the maximum absolute values of these functions on any interval is <m>1</m>, we have
+          <me>
+            \left| f^{(n+1)}(x) \right| \leq 1
+          </me>
+          for any <m>n</m> and any <m>x</m>.
+          Therefore, we let <m>M = 1</m>.
+          By the Lagrange Error Bound formula, we find that
+          <me>
+            \left| f(1) - T_{n}(1) \right| \leq 1 \cdot \frac{|1-0|^{n+1}}{(n+1)!} = \frac{1}{(n+1)!}
+          </me>.
+        </p>
+
+        <p>
+          To have a polynomial estimate within an accuracy of <m>0.00000001</m>, we need the degree <m>n</m> to satisfy 
+          <me>
+            \frac{1}{(n+1)!} \leq 0.00000001 = 10^{-8}
+          </me>.
+          Since <m>\frac{1}{11!} \approx 2.505 \cdot 10^{-8}</m> and <m>\frac{1}{12!} \approx 2.088 \cdot 10^{-9}</m>, it follows that <m>n = 11</m> (so <m>n + 1 = 12</m>) is the smallest degree Taylor polynomial we can choose to achieve the desired accuracy.  Then, using
+          <me>
+            T_{11}(x) = 1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots - \frac{x^{10}}{10!}
+          </me>, 
+          we have
+          <me>
+            \cos(1) \approx T_{10}(1) = 1 - \frac{1^2}{2!} + \frac{1^4}{4!} - \cdots - \frac{1^{10}}{10!} \approx 0.54030230379189
+          </me>, 
+          while a CAS reports
+          <m>\cos(1) = 0.54030230586814 \cdots</m>, so the <m>T_{12}(1)</m> estimate is indeed accurate to within approximately <m>10^{-8}</m>, as promised.
+        </p>
+      </solution>
     </task>
     <task workspace="9cm" xml:id="act-8-6-2-task-2">
       <statement>
@@ -56,13 +133,37 @@
             </p>
       </statement>
       <hint/>
-      <answer/>
-      <solution/>
+      <answer>
+        <p>
+          <m><m>n = 101</m></m>
+        </p>
+      </answer>
+      <solution>
+        <p>
+          To approximate the value of <m>\ln(1.5)</m> using a degree <m>n</m> Taylor polynomial,
+          we will use <m>f(x) = \ln(1+x)</m>, <m>c = 0.5</m>, <m>a=0</m>,
+          and (momentarily) keep <m>n</m> arbitrary in the Lagrange Error Bound formula.
+          We first seek a value for <m>M</m> so that <m>\left|f^{(n+1)}(x)\right| \le M</m> on the interval <m>[0,0.5]</m> for all <m>n</m>.
+        </p>
+        <p>  
+          Since the <m>n^{\text{th}}</m> derivative of <m>f(x) = \ln(1+x)</m> is <m>f^{(n)}(x) = (-1)^{n-1} \cdot \frac{(n-1)!}{(1+x)^{n}}</m>, and since the maximum (absolute) value of <m>g(x) = \frac{1}{(1+x)^n}</m> on <m>[0,0.5]</m> is <m>1</m>, it follows that 
+          <me>
+            \left| f^{(n)}(x) \right = \left| (-1)^{n-1} \cdot \frac{(n-1)!}{(1+x)^{n}} \right \le (n-1)!
+          </me>.
+          Thus, we let <m>M = (n-1)!</m>.
+          By the Lagrange Error Bound formula, we have
+          <me>
+            \left| f(0.5) - T_{n}(0.5) \right| \leq 1 \cdot \frac{(n-1)!}{(n+1)!} = \frac{1}{(n+1)(n-1)}
+          </me>.
+        </p>
+        <p>
+          To have a polynomial estimate within an accuracy of <m>0.0001</m>, we need the degree <m>n</m> to satisfy 
+          <me>
+            \frac{1}{(n+1)(n-1)} \leq 0.0001
+          </me>.
+          Since <m>\frac{1}{(100+1)(100-1)} = 0.000100010001</m> and <m>\frac{(101+1)(101-1)} = 0.0000980392156863</m>, it follows that we need <m>n = 101</m> is the smallest degree Taylor polynomial we can choose to achieve the desired accuracy.        
+        </p>
+      </solution>  
     </task>
-    <hint/>
-    <answer>
-    </answer>
-    <solution>
-    </solution>
   </activity>
 </worksheet>

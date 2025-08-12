@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,7 +12,196 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
-<exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5" label="ACS__Preview__1-5" component="runestone">
-  <webwork source="csafranski/1.5Preview_prob1.pg" />
-</exploration>
+
+<!-- updated August 2025 to align with the totally new preview activity -->
+
+  <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5" label="1-5a_Preview_traveltime_as_functionofspeed" component="runestone">
+    <webwork xml:id="webwork-PA-1-5">
+      <pg-code>
+        Context("Point");
+        $answer = List("(10,5),(50,1),(25,2)");
+        $evaluator = $answer ->cmp(list_checker => sub {
+          my ($correct,$student,$ansHash,$value) = @_;
+          my $n = scalar(@$student);  # number of student answers
+          my $score = 0;              # number of correct student answers
+          my @errors = ();            # stores error messages
+          my $i, $j;                  # loop counters
+
+          #
+          #  Loop though the student answers
+          ##
+          for ($i = 0; $i &lt; $n; $i++) {
+            my $ith = Value::List->NameForNumber($i+1);
+            my $p = $student->[$i];   # i-th student answer
+            #
+            #  Check that the student's answer is a point
+            #
+            if ($p->type ne "Point") {
+              push(@errors,"Your $ith entry is not a point");
+              next;
+            }
+            #
+            #  Check that the point hasn't been given before
+            #
+            for ($j = 0, $used = 0; $j &lt; $i; $j++) {
+              if ($student->[$j]->type eq "Point" &amp;&amp; $student->[$j] == $p) {
+                push(@errors,"Your $ith point is the same as a previous one") unless $ansHash->{isPreview};
+                $used = 1; last;
+              }
+            }
+            #
+            #  If not already used, check that it satisfies the equation
+            #    and increase the score if so.
+            #
+            if (!$used) {
+              my ($a,$b) = $p->value;
+              if ($a * $b == 50 &amp;&amp; $a > 0) {$score++} else {
+                push(@errors,"Your $ith point is not correct") unless $ansHash->{isPreview}
+              }
+            }
+          }
+          #
+          #  Check that there are the right number of answers
+          #
+          if (!$ansHash->{isPreview}) {
+            push(@errors,"You need to provide more points") if $i &lt; 3;
+            push(@errors,"You have given too many points") if $score > 3 &amp;&amp; $i != $score;
+          }
+          return ($score,@errors);
+        });
+
+
+        $radio = RadioButtons([
+          'The function is increasing because as speed goes up, travel time goes up.',
+          'The function is decreasing and decreasing more quickly, because the travel time decreases as speed increases, and it does so in a way that the decreases get larger.',
+          'The function is decreasing but decreasing more slowly, because the travel time decreases as speed increases, but the amount of decrease is getting smaller.',
+          ], 2
+        );
+        Context("Numeric")->flags->set(tolType => 'absolute', tolerance => 0.01);
+        $answer2 = Compute("5/6");
+        $radio2 = RadioButtons([
+          "${BM}T(60)${EM} is the speed, ${BM}60${EM} mph.",
+          "${BM}T(60)${EM} is the distance, ${BM}60${EM} miles.",
+          "${BM}T(60)${EM} is the time in hours it takes to travel ${BM}50${EM} miles at a speed of ${BM}60${EM} mph.",
+          "${BM}T(60)${EM} is how fast the travel time is changing when the car is traveling at a speed of ${BM}60${EM} mph.",
+          ], 2
+        );
+        $answer3 = Compute("(50/65-50/60)/5");
+        $popup2 = PopUp([
+          "?",
+          "miles",
+          "miles per hour",
+          "hours per mile",
+          "hours per (miles per hour)",
+          "square hours per mile",
+          ], 4
+        );
+        $popup = DropDown([
+          "positive",
+          "negative",
+          ], 1
+        );
+        $radio3 = RadioButtons([
+          "${BM}T${EM} is increasing from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is decreasing from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is increasing but the amount of increase is smaller from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}T${EM} is decreasing and the amount of decrease is smaller from ${BM}60${EM} to ${BM}65${EM} mph.",
+          ], 1
+        );
+        $radio4 = RadioButtons([
+          "${BM}AV_{[60, 65]}${EM} is the average amount of hours ${BM}T${EM} has changed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          "${BM}AV_{[60, 65]}${EM} is the average change in hours the trip takes for each one mph change in speed from ${BM}60${EM} to ${BM}65${EM} mph.",
+          ], 2
+        );
+      </pg-code>
+      <introduction>
+          <p>
+            Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
+            <m>s</m> (measured in miles per hour) at which you are driving.  Since 
+            <me>
+              \mbox{distance} = \mbox{rate} \cdot \mbox{travel time}
+            </me>,
+            it follows that 
+            <me>
+              \mbox{travel time} =  \frac{\mbox{distance}}{\mbox{rate}}
+            </me>,
+            and thus we know that <m>T(s) = \frac{50}{s}</m>.  
+          </p>
+          <p>  
+            For instance, observe that <m>T(75) = \frac{50}{75} = \frac{2}{3}</m>, so it takes <m>\frac{2}{3}</m> of an hour to drive <m>50</m> miles at <m>75</m> miles per hour, and the point <m>(75, \frac{2}{3})</m> lies on the graph of <m>T(s)</m>.
+          </p>
+      </introduction>
+
+      <task>
+        <statement>
+          <p>
+            Give three points which lie on the graph of <m>T</m>, separated by commas.
+          </p>
+          <p><var name="$answer" evaluator="$evaluator" width="10" /></p>
+          <p>
+            Which of the following statements is true about the graph of <m>T(s)</m>?
+          </p>
+          <p>
+            <var name="$radio" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            What is the value of <m>T(60)</m>? 
+          </p>
+          <p>
+            <var name="$answer2" width="10"/>
+          </p>
+          <p>
+            Which of the following is the best explanation of the meaning of this 
+        value in context?
+          </p>
+          <p>
+            <var name="$radio2" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            Recall the average rate of change of a function <m>f(x)</m> on an interval <m>[a,b]</m> is 
+            <me>AV_{[a,b]}=\frac{f(b)-f(a)}{b-a}</me>. 
+            Determine the average rate of <m>T</m> on the interval <m>[60,65]</m>, <m>AV_{[60, 65]}</m>.
+          </p>
+          <p>
+            <var name="$answer3" width="10"/>
+            <var name="$popup2" form="popup"/>
+          </p>
+        </statement>
+      </task>
+
+      <task>
+        <statement>
+          <p>
+            The sign of <m>AV_{[60, 65]}</m> is <var name="$popup" form="popup"/>
+          </p>
+          <p>This sign makes sense because</p>
+          <p>
+            <var name="$radio3" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+      <task>
+        <statement>
+          <p>
+            Which of the following explains the meaning of the value of <m>AV_{[60, 65]}</m>? 
+          </p>
+          <p>
+            <var name="$radio4" form="buttons"/>
+          </p>
+        </statement>
+      </task>
+    </webwork>
+  </exploration>
+
 
