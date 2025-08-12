@@ -15,8 +15,8 @@
 
 <!-- this preview activity was completely rewritten in 2025; big thanks to Spencer Bagley for the idea -->
 
-<worksheet label="ws-PA-1-5">
-  <exploration xmlns:xi="http://www.w3.org/2001/XInclude" xml:id="PA-1-5">
+<worksheet component="static" label="ws-PA-1-5">
+  <exploration xml:id="PA-1-5">
     <introduction>
       <p>
         Suppose that you are driving a car on the highway using cruise control so that you drive at a constant speed.  The time, <m>T</m> (measured in hours), it takes to drive 50 miles depends on the constant rate, 
