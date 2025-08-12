@@ -13,8 +13,8 @@
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<worksheet label="ws-PA-8-4">
-  <exploration xml:id="PA-8-4" component="static">
+<worksheet component="static" label="ws-PA-8-4">
+  <exploration xml:id="PA-8-4">
     <introduction>
       <p>
     Let 

@@ -16,8 +16,8 @@
 <!-- Replace the #worksheet tag with the one below with @component after the WW version is written -->
 <!-- <worksheet label="ws-PA-8-6" component="static"> -->
 
-<worksheet label="ws-PA-8-6">
-    <exploration xml:id="PA-8-6" component="static">
+<worksheet component="static" label="ws-PA-8-6">
+    <exploration xml:id="PA-8-6">
     <introduction>
         <p>
             Consider the alternating geometric series 
