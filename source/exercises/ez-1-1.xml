@@ -158,7 +158,7 @@
                 <mrow>AV_{[1,6]} &amp;= \frac{s(6)-s(1)}{6-1} \approx  -13.25</mrow>
                 <mrow>AV_{[8,10]} &amp;= \frac{s(10)-s(8)}{10-8} \approx  -7.35</mrow>
               </md>
-              The units on each of these average velocities are ``feet per second''.
+              The units on each of these average velocities are <q>feet per second</q>.
             </p>
           </li>
           <li permid="cDa">
@@ -507,7 +507,7 @@
                 <mrow>AV_{[5,7]} &amp;= \frac{186 904.57 - 185,444.20}{7-5} \approx 730.19</mrow>
                 <mrow>AV_{[5,6]} &amp;= \frac{186 172.95 - 185,444.20}{6-5} \approx 728.7535</mrow>
               </md>
-              The units on each of these quantities are ``people per year''.
+              The units on each of these quantities are <q>people per year</q>.
             </p>
           </li>
         </ol>

@@ -195,7 +195,7 @@
               False.
               Since <m>\cot(x) = \frac{\cos(x)}{\sin(x)}</m>,
               we can write <m>f(x) = \sin(x) \cdot \frac{\cos(x)}{\sin(x)}</m>.
-              From here, it is tempting to ``cancel'' the <m>\sin(x)</m> term in the numerator and denominator.
+              From here, it is tempting to <q>cancel</q> the <m>\sin(x)</m> term in the numerator and denominator.
               However, note that because of the <m>\sin(x)</m> in the denominator,
               <m>f</m> is not defined for
               <m>x = \frac{\pi}{2} + k\pi</m> for any integer <m>k</m>.

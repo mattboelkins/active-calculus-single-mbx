@@ -748,7 +748,7 @@
           <li permid="wTD">
             <p permid="Rwo">
               Given an original function,
-              we know that the units on its derivative are ``units of input per unit of output.'' Since the units on <m>m(h)</m> are ``minutes per foot'', it follows that the antiderivative of <m>m(h)</m> should have output units of ``minutes'' since its input units are ``feet''. The antiderivative function should thus tell us the total number of minutes that it takes for the plane to climb to an altitude of <m>h</m> feet.
+              we know that the units on its derivative are <q>units of input per unit of output</q>. Since the units on <m>m(h)</m> are <q>minutes per foot</q>, it follows that the antiderivative of <m>m(h)</m> should have output units of <q>minutes</q> since its input units are <q>feet</q>. The antiderivative function should thus tell us the total number of minutes that it takes for the plane to climb to an altitude of <m>h</m> feet.
             </p>
           </li>
           <li permid="daM">
@@ -758,8 +758,8 @@
               <me permid="qIS">
                 M = \int_{0}^{10000} m(h) \, dh
               </me>
-              since the units on <m>m(h)</m> are ``minutes per foot'' and the units on
-              <m>\triangle h</m> in the corresponding Riemann sum are ``feet'', so when we take the product of quantities with these units,
+              since the units on <m>m(h)</m> are <q>minutes per foot</q> and the units on
+              <m>\triangle h</m> in the corresponding Riemann sum are <q>feet</q>, so when we take the product of quantities with these units,
               the resulting numerical quantity is measured in minutes.
             </p>
           </li>

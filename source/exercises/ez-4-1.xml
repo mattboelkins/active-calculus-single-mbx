@@ -527,7 +527,7 @@
           </li>
           <li permid="amX">
             <p permid="ITn">
-              Think about the product of the units involved: ``units of pollution per day'' times ``days''. Connect this to the area of a thin vertical rectangle whose height is given by the curve.
+              Think about the product of the units involved: <q>units of pollution per day</q> times <q>days</q>. Connect this to the area of a thin vertical rectangle whose height is given by the curve.
             </p>
           </li>
           <li permid="Gug">
@@ -556,7 +556,7 @@
               <m>\triangle t</m> and whose height is <m>p(t)</m>,
               the polution rate on that interval.
               When we compute the product <m>p(t) \cdot \triangle t</m> to find the area,
-              the units involved are ``units of pollution per day'' times ``days'', which results in an overall unit of ``units of pollution''. Thus,
+              the units involved are <q>units of pollution per day</q> times <q>days</q>, which results in an overall unit of <q>units of pollution</q>. Thus,
               the area under the curve tells us the total pollution emitted over the time interval <m>[0,30]</m>.
             </p>
           </li>

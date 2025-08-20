@@ -254,7 +254,7 @@
           <li permid="QFq">
             <p permid="Cgm">
               An antiderivative function <m>C</m> measures the total number of calories burned in the workout since <m>t = 0</m>.
-              Since the units on <m>c(t) = C'(t)</m> are ``calories per minute'', the units on <m>C(t)</m> are ``calories''.
+              Since the units on <m>c(t) = C'(t)</m> are <q>calories per minute</q>, the units on <m>C(t)</m> are <q>calories</q>.
             </p>
           </li>
           <li permid="wMz">

@@ -185,7 +185,7 @@
           </li>
           <li permid="NBG">
             <p permid="DMv">
-              ``degrees Fahrenheit per milliliter.''
+              <q>degrees Fahrenheit per milliliter.</q>
             </p>
           </li>
           <li permid="tIP">
@@ -210,7 +210,7 @@
             <p permid="whW">
               Since the units of <m>f</m> are degrees F and the units of <m>q</m> are ml,
               it follows that the units of
-              <m>s(q) = f'(q)</m> are ``degrees Fahrenheit per milliliter.''
+              <m>s(q) = f'(q)</m> are <q>degrees Fahrenheit per milliliter.</q>
             </p>
           </li>
           <li permid="meq">
@@ -274,7 +274,7 @@
           </li>
           <li permid="DcB">
             <p permid="tnq">
-              ``feet per second per second'';
+              <q>feet per second per second</q>;
               <m>v'(1) = -32</m> tells us that the ball's velocity is decreasing at a rate of 32 feet per second per second.
             </p>
           </li>
@@ -308,7 +308,7 @@
           <li permid="bFl">
             <p permid="xXj">
               Because <m>v</m> is measured in feet per second and <m>t</m> in seconds,
-              the units on <m>v'(1)</m> are ``feet per second per second.'' Knowing that <m>v'(1) = -32</m>,
+              the units on <m>v'(1)</m> are <q>feet per second per second.</q> Knowing that <m>v'(1) = -32</m>,
               this tells us that the ball's velocity is decreasing at a rate of 32 feet per second per second;
               that is, for whatever the ball's velocity is at <m>t = 1</m>,
               we would expect the velocity to decrease by (exactly) <m>32</m> feet per second over the next one second.

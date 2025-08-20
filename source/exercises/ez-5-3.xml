@@ -593,7 +593,7 @@
               This is because <m>r(t)</m> is measured in megawatts and <m>\triangle t</m> in hours,
               and thus in the Riemann sum that corresponds to the definite integral,
               the terms in the sum of the form
-              <m>r(t) \cdot \triangle t</m> have units ``megawatt-hours''. Moreover,
+              <m>r(t) \cdot \triangle t</m> have units <q>megawatt-hours</q>. Moreover,
               by integrating the rate of power consumption we get the total change in power consumed.
             </p>
           </li>

@@ -456,7 +456,7 @@
               <me permid="FgW">
                 \frac{dV}{dh} = \frac{\pi}{3} \left(24h - 3h^2\right) = \pi \left(8h-h^2 \right)
               </me>,
-              with units ``cubic feet per foot''.  Evaluating at <m>h=1</m>, we get
+              with units <q>cubic feet per foot</q>.  Evaluating at <m>h=1</m>, we get
               <me permid="TAh">
                 \left. \frac{dV}{dh} \right|_{h=1} = \pi \left(8 \cdot 1 - 1^2 \right) = 7\pi
               </me>
@@ -481,7 +481,7 @@
               <me permid="Rvo">
                 \frac{dV}{dt} = \frac{\pi}{3}\left[ 12 \cdot 2 (\sin(\pi t) + 1) \cdot \pi \cos(\pi t) - 3 (\sin(\pi t) + 1)^2 \cdot \pi \cos(\pi t) \right]
               </me>
-              with units ``cubic feet per hour''.
+              with units <q> feet per hour</q>.
             </p>
             <p permid="SAH">
               Now we want to find <m>\frac{dV}{dt}</m> when <m>t=2</m>.

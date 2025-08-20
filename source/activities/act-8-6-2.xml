@@ -57,7 +57,7 @@
         </p>
 
         <p>
-          So <m>T_{10}(2)</m> approximates <m>\e^2</m> to within at most <m>0.00037910821</m>.
+          So <m>T_{10}(2)</m> approximates <m>e^2</m> to within at most <m>0.00037910821</m>.
           Using a computer algebra system, we can find that
           <me>
             T_{10}(2) \approx 7.388994708994 \ \ \text{ and }  \ \ e^2 \approx 7.38905609893
@@ -148,7 +148,7 @@
         <p>  
           Since the <m>n^{\text{th}}</m> derivative of <m>f(x) = \ln(1+x)</m> is <m>f^{(n)}(x) = (-1)^{n-1} \cdot \frac{(n-1)!}{(1+x)^{n}}</m>, and since the maximum (absolute) value of <m>g(x) = \frac{1}{(1+x)^n}</m> on <m>[0,0.5]</m> is <m>1</m>, it follows that 
           <me>
-            \left| f^{(n)}(x) \right = \left| (-1)^{n-1} \cdot \frac{(n-1)!}{(1+x)^{n}} \right \le (n-1)!
+            \left| f^{(n)}(x) \right| = \left| (-1)^{n-1} \cdot \frac{(n-1)!}{(1+x)^{n}} \right| \le (n-1)!
           </me>.
           Thus, we let <m>M = (n-1)!</m>.
           By the Lagrange Error Bound formula, we have

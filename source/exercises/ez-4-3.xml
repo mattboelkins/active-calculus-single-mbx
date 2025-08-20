@@ -537,7 +537,7 @@
           </li>
           <li permid="GPS">
             <p permid="Lem">
-              We know that <m>\int_0^4 c \, dx</m> is the signed area of a rectangle with ``height" <m>c</m>
+              We know that <m>\int_0^4 c \, dx</m> is the signed area of a rectangle with <q>height</q> <m>c</m>
               (note that <m>c</m> could be negative),
               and base <m>4</m>, so
               <me permid="WXf">

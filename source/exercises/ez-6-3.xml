@@ -564,7 +564,7 @@
 
           <li permid="yXY">
             <p permid="JbE">
-              Even though we are dealing with ``weight'' instead of ``mass'', we can compute the center of mass in the usual way since weight differs from mass only by the gravitational constant,
+              Even though we are dealing with <q>weight</q> instead of <q>mass</q>, we can compute the center of mass in the usual way since weight differs from mass only by the gravitational constant,
               and this constant is present in both the numerator and denominator of the center of mass.
               Thus, using the standard formula,
               <me permid="xxg">

@@ -105,7 +105,7 @@
               Since <m>V'(t) = 24 \cdot 1.07^t \cdot \ln(1.07) + 6 \cos(t)</m>,
               it follows that <m>V''(t) = 24 \cdot 1.07^t \cdot (\ln(1.07))^2 - 6 \sin(t)</m>,
               and thus <m>V''(2) = 24 \cdot 1.07^2 \cdot \ln(1.07)^2 - 6 \sin(2) \approx -5.33</m>,
-              with units ``thousands of dollars per year per year.'' This means that around the time that <m>t = 2</m>,
+              with units <q>thousands of dollars per year per year</q>. This means that around the time that <m>t = 2</m>,
               the portfolio's value is decreasing at while the value function is concave down.
               More specifically,
               we know that <m>V'</m> is decreasing at the moment <m>t = 2</m> and expect the derivative's value to decrease by about <m>5.33</m> thousand dollars per year over the course of the next year.
