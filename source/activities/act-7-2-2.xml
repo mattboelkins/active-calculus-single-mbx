@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,16 +12,17 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-7-2-2">
    
     <activity xml:id="act-7-2-2" workspace="3cm">
       <introduction>
         <p>
-      Consider the autonomous differential equation
-      <me>
-        \frac{dy}{dt} = -\frac{1}{2}y(y-4)
-      </me>.
-      </p>
+          Consider the autonomous differential equation
+          <me>
+            \frac{dy}{dt} = -\frac{1}{2}y(y-4)
+          </me>.
+        </p>
       </introduction>
       <task workspace="0.2cm" xml:id="act-7-2-2-task-0">
         <statement>
@@ -39,7 +40,7 @@
             <m>y</m> is a decreasing function of <m>t</m>.
             When <m>0 \lt y \lt 4</m>, <m>y</m> is a increasing function of <m>t</m>.
           </p>
-          <image source="images/7_2_Act2_dydt_plot_soln"/>
+          <image width="50%" source="images/7_2_Act2_dydt_plot_soln"/>
         </answer>
         <solution>
           <p>
@@ -49,7 +50,7 @@
             We also see that when <m>0 \lt y \lt 4</m>,
             <m>\frac{dy}{dt} \gt 0</m> and hence <m>y</m> is a increasing function of <m>t</m>.
           </p>
-          <image source="images/7_2_Act2_dydt_plot_soln" />
+          <image width="50%" source="images/7_2_Act2_dydt_plot_soln" />
         </solution>
       </task>
       <task workspace="1.25cm" xml:id="act-7-2-2-task-1">
@@ -79,13 +80,13 @@
         </statement>
         <hint/>
         <answer>
-          <image source="images/7_2_Act2_slope_field_soln"/>
+          <image width="50%" source="images/7_2_Act2_slope_field_soln"/>
         </answer>
         <solution>
           <p>
             Following is a slope field for the differential equation <m>\frac{dy}{dt} = -\frac{1}{2}y(y - 4)</m>.
           </p>
-          <image source="images/7_2_Act2_slope_field_soln"/>
+          <image width="50%" source="images/7_2_Act2_slope_field_soln"/>
         </solution>
       </task>
       <task workspace="0.2cm" xml:id="act-7-2-2-task-3">
@@ -96,7 +97,7 @@
         </statement>
         <hint/>
         <answer>
-          <image source="images/7_2_Act2_trajectories_soln"/>
+          <image width="50%" source="images/7_2_Act2_trajectories_soln"/>
         </answer>
         <solution>
           <p>
@@ -105,7 +106,7 @@
             <m>y(0) = 2</m>,
             <m>y(0) = 3</m>, <m>y(0) = 4</m>, and <m>y(0) = 5</m>.
           </p>
-          <image source="images/7_2_Act2_trajectories_soln"/>
+          <image width="50%" source="images/7_2_Act2_trajectories_soln"/>
         </solution>
       </task>
       <task workspace="2cm" xml:id="act-7-2-2-task-4">

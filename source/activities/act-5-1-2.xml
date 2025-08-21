@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,20 +12,16 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-5-1-2">
    
     <activity xml:id="act-5-1-2" workspace="8cm">
       <introduction>
         <p>
-      For each of the following functions,
-      sketch an accurate graph of the antiderivative that satisfies the given initial condition.
-      In addition,
-      sketch the graph of two additional antiderivatives of the given function,
-      and state the corresponding initial conditions that each of them satisfy.
-      If possible,
-      find an algebraic formula for the antiderivative that satisfies the initial condition.
-
-      </p>
+          For each of the following functions,
+          sketch an accurate graph of the antiderivative that satisfies the given initial condition. In addition, sketch the graph of two additional antiderivatives of the given function, and state the corresponding initial conditions that each of them satisfy.
+          If possible, find an algebraic formula for the antiderivative that satisfies the initial condition.
+        </p>
       </introduction>
       <task workspace="9cm" xml:id="act-5-1-2-task-0">
         <statement>
@@ -36,7 +32,7 @@
         </statement>
         <hint/>
         <answer>
-          <image source="images/5_1_act_2_soln_a1" />
+          <image width="50%"  source="images/5_1_act_2_soln_a1" />
         </answer>
         <solution>
           <p>
@@ -47,13 +43,15 @@
             Other antiderivatives that satisfy
             <m>F(0) = 2</m> and <m>H(0) = 0</m> are also shown.
           </p>
+          <image width="50%"  source="images/5_1_act_2_soln_a1" />
         </solution>
       </task>
       <task workspace="9cm" xml:id="act-5-1-2-task-1">
         <statement>
           <p>
             original function: <m>h(x) = \sin(x)</m>; initial condition:
-            <m>H(0) = 1</m>; interval for sketch: <m>[0,4\pi]</m></p>
+            <m>H(0) = 1</m>; interval for sketch: <m>[0,4\pi]</m>
+          </p>
         </statement>
         <hint/>
         <answer>
@@ -78,13 +76,14 @@
         </statement>
         <hint/>
         <answer>
-          <image source="images/5_1_act_2_soln_c1" />
+          <image width="50%" source="images/5_1_act_2_soln_c1" />
         </answer>
         <solution>
           <p>
             A possible antiderivative <m>P</m> that satifies
             <m>P(0) = 1</m> is shown in the figure below.
           </p>
+          <image width="50%" source="images/5_1_act_2_soln_c1" />
         </solution>
       </task>
     </activity>

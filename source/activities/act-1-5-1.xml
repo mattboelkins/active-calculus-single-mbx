@@ -21,8 +21,8 @@
       In each of the following contexts, explain the meaning of the given derivative values in two ways that are similar to the sentence structures and discussions of units in <!-- <xref ref="Ex-1-5a-1-pop-growth">Example</xref> and <xref ref="Ex-1-5a-2-time-speed">Example</xref>--> the two examples preceding this activity in the text.  
     </p>
       <p>  
-      First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units.  Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  
-    </p>
+        First, write a sentence that explicitly describes what we know about the instantaneous rate of change of the given function at a particular instant, with units.  Then, write a second sentence that explains the amount of change we expect in the function value if the input variable changes by one unit at the known instant.  
+      </p>
       <p>
       Remember not to try to simplify the units on the derivative value, but rather keep the units in the form <q>units of output per unit of input</q>.
     </p>
@@ -36,23 +36,31 @@
         <p>
             Explicitly, your first sentence might have structure like
         </p>
-            <blockquote><p><m>V'(10250) = -0.89</m> means that the instantaneous rate of change of <fillin characters="5"/> when the car has been driven <fillin characters="10"/> miles is <m>-0.89</m><fillin characters="15"/>,
-              </p></blockquote>
-              <p>
-            where the final blank should be completed using the units on the derivative.  Your second sentence might have form
+            <blockquote>
+              <p><m>V'(10250) = -0.89</m> means that the instantaneous rate of change of <fillin characters="5"/> when the car has been driven <fillin characters="10"/> miles is <m>-0.89</m><fillin characters="15"/>,
               </p>
-            <blockquote><p>
+            </blockquote>
+        <p>
+            where the final blank should be completed using the units on the derivative.  Your second sentence might have form
+        </p>
+            <blockquote>
+              <p>
                 When the car has been driven <fillin characters="10"/> miles, if the car is driven one more mile, we expect that the value of the car will <fillin characters="10"/> by about <m>0.89</m><fillin characters="10"/>.
-              </p></blockquote>
+              </p>
+            </blockquote>
       </statement>
       <hint>
         <p/>
       </hint>
       <answer>
-        <p/>
+        <p>
+          <m>V'(10250) = -0.89</m> means that the instantaneous rate of change of the car's value when the car has been driven <m>10250</m> miles is <m>-0.89</m> dollars per mile. In addition, when the car has been driven <m>10250</m> miles, if the car is driven one more mile, we expect that the value of the car will decrease by about <m>0.89</m> dollars.
+        </p>
       </answer>
       <solution>
-        <p/>
+        <p>
+          <m>V'(10250) = -0.89</m> means that the instantaneous rate of change of the car's value when the car has been driven <m>10250</m> miles is <m>-0.89</m> dollars per mile. This tells us that when the car has been driven <m>10250</m> miles, if the car is driven one more mile, we expect that the value of the car will decrease by about <m>0.89</m> dollars.
+        </p>
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-1-5-1-task-1">
@@ -65,10 +73,14 @@
         <p/>
       </hint>
       <answer>
-        <p/>
+        <p>
+          <m>W'(0.75) = 3.43</m> means that the instantaneous rate of change of volume of water in the tank when the water is <m>0.75</m> meters deep is <m>3.43</m> liters per meter. This tells us that when the water is <m>0.75</m> meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about <m>3.43</m> liters.
+        </p>
       </answer>
       <solution>
-        <p/>
+        <p>
+          <m>W'(0.75) = 3.43</m> means that the instantaneous rate of change of volume of water in the tank when the water is <m>0.75</m> meters deep is <m>3.43</m> liters per meter. This tells us that when the water is <m>0.75</m> meters deep, if the water rises one more meter, we expect that the volume of water in the tank will increase by about <m>3.43</m> liters.
+        </p>
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-1-5-1-task-2">
@@ -81,10 +93,14 @@
         <p/>
       </hint>
       <answer>
-        <p/>
+        <p>
+          <m>S'(20) = -0.527</m> means that the instantaneous rate of change of the soda's temperature at the instant <m>t = 20</m> minutes is <m>-0.527</m> degrees Celsius per minute. This tells us that after <m>20</m> minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about <m>0.527</m> degrees Celsius.
+        </p>
       </answer>
       <solution>
-        <p/>
+        <p>
+          <m>S'(20) = -0.527</m> means that the instantaneous rate of change of the soda's temperature at the instant <m>t = 20</m> minutes is <m>-0.527</m> degrees Celsius per minute. This tells us that after <m>20</m> minutes have elapsed, if one more minute passes, we expect that the soda's temperature will drop by about <m>0.527</m> degrees Celsius.
+        </p>
       </solution>
     </task>
     <task workspace="4cm" xml:id="act-1-5-1-task-3">
@@ -97,10 +113,14 @@
         <p/>
       </hint>
       <answer>
-        <p/>
+        <p>
+          <m>C'(19) = 52.1</m> means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of <m>19</m> kilometers per hour is <m>52.1</m> calories per hour per kilometer per hour. This tells us that when the person is riding at <m>19</m> kilometers per hour, if they increase their speed by <m>1</m> kilometer per hour, we expect that they will burn about <m>52.1</m> additional calories over the next hour.
+        </p>
       </answer>
       <solution>
-        <p/>
+        <p>
+          <m>C'(19) = 52.1</m> means that the instantaneous rate of change of the rate at which the biker is burning calories when traveling at a speed of <m>19</m> kilometers per hour is <m>52.1</m> calories per hour per kilometer per hour. This tells us that when the person is riding at <m>19</m> kilometers per hour, if they increase their speed by <m>1</m> kilometer per hour, we expect that they will burn about <m>52.1</m> additional calories over the next hour.
+        </p>
       </solution>
     </task>
   </activity>

@@ -138,6 +138,55 @@
             Using Euler's Method with <m>\Delta t = 0.2</m>,
             we find the results shown in the table and graph below.
           </p>
+          <sidebyside widths="47% 47%" margins="0%">
+
+            <tabular top="minor" bottom="minor">
+              <row bottom="medium">
+                <cell><m>t_i</m></cell>
+                <cell><m>y_i</m></cell>
+                <cell><m>dy/dt</m></cell>
+                <cell><m>\Delta y</m></cell>
+              </row>
+              <row>
+                <cell><m>0</m></cell>
+                <cell><m>0</m></cell>
+                <cell><m>-1</m></cell>
+                <cell><m>-0.2</m></cell>
+              </row>
+              <row>
+                <cell><m>0.2</m></cell>
+                <cell><m>-0.2</m></cell>
+                <cell><m>-0.6</m></cell>
+                <cell><m>-0.12</m></cell>
+              </row>
+              <row>
+                <cell><m>0.4</m></cell>
+                <cell><m>-0.32</m></cell>
+                <cell><m>-0.2</m></cell>
+                <cell><m>-0.04</m></cell>
+              </row>
+              <row>
+                <cell><m>0.6</m></cell>
+                <cell><m>-0.36</m></cell>
+                <cell><m>0.2</m></cell>
+                <cell><m>0.04</m></cell>
+              </row>
+              <row>
+                <cell><m>0.8</m></cell>
+                <cell><m>-0.32</m></cell>
+                <cell><m>0.6</m></cell>
+                <cell><m>0.12</m></cell>
+              </row>
+              <row>
+                <cell><m>1.0</m></cell>
+                <cell><m>-0.2</m></cell>
+                <cell><m>1</m></cell>
+                <cell><m>0.2</m></cell>
+              </row>
+            </tabular>
+
+            <image source="images/7_3_Act1_soln" />
+          </sidebyside>          
         </solution>
       </task>
       <task workspace="6cm" xml:id="act-7-3-1-task-1">

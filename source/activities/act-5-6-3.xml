@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- **********************************************************************-->
-<!-- Copyright 2012-2019                                                   -->
+<!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
 <!-- This file is part of Active Calculus.                                 -->
@@ -12,17 +12,17 @@
 <!-- "share and share alike".  All trademarks are the registered marks of  -->
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
+
 <worksheet label="ws-act-5-6-3">
    
     <activity xml:id="act-5-6-3" workspace="3cm">
       <introduction>
         <p>
-      Consider the functions <m>f(x) = 2-x^2</m>, <m>g(x) = 2-x^3</m>,
-      and <m>h(x) = 2-x^4</m>, all on the interval <m>[0,1]</m>.
-      For each of the questions that require a numerical answer in what follows,
-      write your answer exactly in fraction form.
-
-      </p>
+          Consider the functions <m>f(x) = 2-x^2</m>, <m>g(x) = 2-x^3</m>,
+          and <m>h(x) = 2-x^4</m>, all on the interval <m>[0,1]</m>.
+          For each of the questions that require a numerical answer in what follows,
+          write your answer exactly in fraction form.
+        </p>
 
           <image width="100%" source="images/5_6_Act3"/>
 
@@ -43,7 +43,7 @@
         </hint>
         <answer>
           <p>
-            For <m>L_1</m> and <m>T_1</m>:
+            <m>L_1 = 2</m> for each of the three functions and <m>R_1 = 1</m> for each.
           </p>
           <p>
             The values of <m>L_1</m> and <m>R_1</m> are the same for all three.
@@ -51,12 +51,7 @@
         </answer>
         <solution>
           <p>
-            For the left and right endpoint rules, we see that
-          </p>
-          <p>
-            Thus,
-            we observe that despite the fact the functions are all different,
-            the values of <m>L_1</m> and <m>R_1</m> are the same for all three.
+            For the left and right endpoint rules, we see that since <m>f(0) = g(0) = h(0) = 2</m> and <m>f(1) = g(1) = h(1) = 1</m>, the values of <m>L_1</m> and <m>R_1</m> are identical for all three functions, despite the fact the three fucntions are different: <m>L_1 = 2</m> and <m>R_1 = 1</m>.
           </p>
         </solution>
       </task>
@@ -76,12 +71,12 @@
         </hint>
         <answer>
           <p>
-            For the <m>M_1</m>,
+            For <m>f</m>, <m>g</m>, and <m>h</m>, respectively, <m>M_1 = 7/4</m>, <m>15/8</m>, and <m>31/16</m>.
           </p>
         </answer>
         <solution>
           <p>
-            For the midpoint rule, we find that
+            For the midpoint rule with one interval, we need to compute each function value at the midpoint of the interval, <m>x = \frac{1}{2}</m>: <m>f(0.5) = 7/4</m>, <m>g(0.5) = 15/8</m>, <m>h(0.5) = 31/16</m>.  It follows that for <m>f</m>, <m>g</m>, and <m>h</m>, respectively, <m>M_1 = 7/4</m>, <m>15/8</m>, and <m>31/16</m>.
           </p>
         </solution>
       </task>
@@ -99,12 +94,45 @@
         </hint>
         <answer>
           <p>
-            For <m>T_1</m> and <m>S_2</m>,
+            <ul>
+              <li>
+                <p>
+                  For <m>f</m>, <m>S_2 = (2M_1 + T_1)/3 = 5/3</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  For <m>g</m>, <m>S_2 = (2M_1 + T_1)/3 = 7/4</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  For <m>h</m>, <m>S_2 = (2M_1 + T_1)/3 = 43/24</m>
+                </p>
+              </li>
+            </ul>
           </p>
         </answer>
         <solution>
           <p>
-            For the trapezoid rule and Simpson's rule,
+            For all three functions, <m>T_1 = (L_1 + R_1)/2 = 1.5</m>.  For the respective three functions, we have:
+            <ul>
+              <li>
+                <p>
+                  For <m>f</m>, <m>S_2 = (2M_1 + T_1)/3 = (2 \cdot 1.75 + 1.5)/3 = 5/3</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  For <m>g</m>, <m>S_2 = (2M_1 + T_1)/3 = (2 \cdot 1.875 + 1.5)/3 = 7/4</m>
+                </p>
+              </li>
+              <li>
+                <p>
+                  For <m>h</m>, <m>S_2 = (2M_1 + T_1)/3 = (2 \cdot 1.875 + 1.5)/3 = 43/24</m>
+                </p>
+              </li>
+            </ul>
           </p>
         </solution>
       </task>
@@ -131,7 +159,10 @@
         <solution>
           <p>
             The exact values of the three definite integrals are
-            <md><mrow>\int_0^1 f(x) dx \amp = \frac{5}{3}   \amp   \int_0^1 g(x) dx \amp = \frac{7}{4}  \amp    \int_0^1 h(x) dx \amp = \frac{9}{5}</mrow><mrow>\amp \approx 1.6667  \amp                          \amp = 1.75            \amp                          \amp = 1.8</mrow></md></p>
+            <md>
+              <mrow>\int_0^1 f(x) dx \amp= \frac{5}{3} \amp \int_0^1 g(x) dx \amp = \frac{7}{4}  \amp \int_0^1 h(x) dx \amp = \frac{9}{5}</mrow>
+              <mrow>\amp \approx 1.6667  \amp \amp = 1.75 \amp   \amp = 1.8</mrow></md>
+          </p>
         </solution>
       </task>
       <task workspace="6cm" xml:id="act-5-6-3-task-4">

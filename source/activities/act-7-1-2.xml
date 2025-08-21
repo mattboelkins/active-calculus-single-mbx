@@ -152,7 +152,7 @@
             A graph of the points from parts (a) and (b) is shown in the following diagram:
           </p>
 
-            <image>
+            <image width="50%">
               <shortdescription>plotting dv dt as a function of t</shortdescription>
               <prefigure label="Fig-7-1-2-act-ans" xmlns="https://prefigure.org">
                 <diagram dimensions="(300,180)" margins="(25,25,5,5)">
@@ -180,7 +180,7 @@
             A graph of the points from parts (a) and (b) is shown in the following diagram:
           </p>
 
-            <image>
+            <image width="50%">
               <shortdescription>plotting dv dt as a function of t</shortdescription>
               <prefigure label="Fig-7-1-2-act-sol" xmlns="https://prefigure.org">
                 <diagram dimensions="(300,180)" margins="(25,25,5,5)">

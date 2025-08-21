@@ -125,7 +125,7 @@
           </p>
         </hint>
         <answer>
-          <image source="images/1_3_Act2Soln" />
+          <image width="50%" source="images/1_3_Act2Soln" />
         </answer>
         <solution>
           <p>
@@ -133,7 +133,7 @@
             as well as the tangent line through
             <m>(1,s(1))</m> with slope <m>s'(1)</m>.
           </p>
-          <image source="images/1_3_Act2Soln" />
+          <image width="50%" source="images/1_3_Act2Soln" />
         </solution>
       </task>
       <task workspace="2cm" xml:id="act-1-3-2-task-4">
