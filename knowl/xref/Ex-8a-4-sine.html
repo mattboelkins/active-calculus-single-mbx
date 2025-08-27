@@ -34,14 +34,14 @@ T_f(x) = \sum_{k=0}^{\infty} (-1)^{k} \frac{1}{(2k+1)!}x^{2k+1}
 </div>
 <div class="solutions"><details class="solution solution-like born-hidden-knowl"><summary class="knowl__link"><span class="type">Solution</span><span class="period">.</span></summary><div class="solution solution-like knowl__content">
 <div class="para logical">
-<div class="para">We observed in <a href="sec-8a-2-taylor-poly.html" class="internal" title="Section 8.2: Taylor polynomials">Section 8.2</a> that the derivatives of the sine function cycle and repeat every <span class="process-math">\(4\)</span> derivatives, since</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-8a-2-taylor-poly.html">
+<div class="para">We observed in <a href="sec-8-2-taylor-poly.html" class="internal" title="Section 8.2: Taylor polynomials">Section 8.2</a> that the derivatives of the sine function cycle and repeat every <span class="process-math">\(4\)</span> derivatives, since</div>
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-8-2-taylor-poly.html">
 \begin{equation*}
 f(x) = \sin(x), f'(x) = \cos(x), f''(x) = -\sin(x), f'''(x) = -\cos(x), 
 \end{equation*}
 </div>
 <div class="para">and so</div>
-<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-8a-2-taylor-poly.html">
+<div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/sec-8-2-taylor-poly.html">
 \begin{equation*}
 f^{(4)}(x) = \sin(x), f^{(5)}(x) = \cos(x), f^{(6)}(x) = -\sin(x), f^{(7)}(x) = -\cos(x)\text{.}
 \end{equation*}
@@ -82,7 +82,7 @@ r_n(x) =\mathstrut \amp \frac{(-1)^{n+1}}{(-1)^{n}} \cdot \frac{\frac{1}{(2n+3)!
 =\mathstrut \amp \frac{(-1)^{n+1}}{(-1)^{n}} \cdot \frac{(2n+1)!}{(2n+3)!} \cdot \frac{x^{2n+3}}{x^{2n+1}}\tag{8.4.4}
 \end{align}
 </div>
-<div class="para">We now consider the three fractions in <a href="sec-8a-4-taylor-series.html#Ex-8a-4-sine-2-4-6" class="xref" data-knowl="./knowl/xref/Eq-8a-4-sine-ratio.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.4">Equation (8.4.4)</a> one at a time and simplify each.  First, we observe that</div>
+<div class="para">We now consider the three fractions in <a href="sec-8-4-taylor-series.html#Ex-8a-4-sine-2-4-6" class="xref" data-knowl="./knowl/xref/Eq-8a-4-sine-ratio.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.4">Equation (8.4.4)</a> one at a time and simplify each.  First, we observe that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Eq-8a-4-sine-ratio.html ./knowl/xref/Eq-8a-4-sine-ratio.html">
 \begin{equation*}
 \frac{(-1)^{n+1}}{(-1)^{n}} = -1
@@ -112,7 +112,7 @@ r_n(x) =\mathstrut \amp \frac{(-1)^{n+1}}{(-1)^{n}} \cdot \frac{\frac{1}{(2n+3)!
 \frac{x^{2n+3}}{x^{2n+1}} = x^{(2n+3) - (2n+1)} = x^2\text{.}
 \end{equation*}
 </div>
-<div class="para">Putting all of this work together, we can update <a href="sec-8a-4-taylor-series.html#Ex-8a-4-sine-2-4-6" class="xref" data-knowl="./knowl/xref/Eq-8a-4-sine-ratio.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.4">Equation (8.4.4)</a> to the simpler form</div>
+<div class="para">Putting all of this work together, we can update <a href="sec-8-4-taylor-series.html#Ex-8a-4-sine-2-4-6" class="xref" data-knowl="./knowl/xref/Eq-8a-4-sine-ratio.html" data-reveal-label="Reveal" data-close-label="Close" title="Equation 8.4.4">Equation (8.4.4)</a> to the simpler form</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/Eq-8a-4-sine-ratio.html ./knowl/xref/Eq-8a-4-sine-ratio.html">
 \begin{equation*}
 r_n(x) = (-1) \cdot \frac{1}{(2n+3)(2n+2)} \cdot x^2\text{.}
@@ -129,13 +129,13 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{1}{(2n+
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="para">Finally, we investigate whether the Taylor series appears to converge to <span class="process-math">\(f(x) = \sin(x)\)</span> or not.  In <a href="sec-8a-4-taylor-series.html#F-8a-4-T159" class="xref" data-knowl="./knowl/xref/F-8a-4-T159.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.4.5">Figure 8.4.5</a>, we see the Taylor polynomials of degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\text{,}\)</span> and the significant improvement of the approximation as the degree increases.<div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para">Finally, we investigate whether the Taylor series appears to converge to <span class="process-math">\(f(x) = \sin(x)\)</span> or not.  In <a href="sec-8-4-taylor-series.html#F-8a-4-T159" class="xref" data-knowl="./knowl/xref/F-8a-4-T159.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.4.5">Figure 8.4.5</a>, we see the Taylor polynomials of degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\text{,}\)</span> and the significant improvement of the approximation as the degree increases.<div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="generated/prefigure/Fig-8a-4-T159.svg" role="img" class="contained"></div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.5<span class="period">.</span></span><span class="space"> </span>The degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\)</span> Taylor polynomials centered at <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> along with the sine function.<div class="autopermalink" data-description="Figure 8.4.5"><a href="#F-8a-4-T159" title="Copy heading and permalink for Figure 8.4.5" aria-label="Copy heading and permalink for Figure 8.4.5">🔗</a></div></figcaption></figure><div class="para">For the degree <span class="process-math">\(9\)</span> approximation, we see that <span class="process-math">\(T_9(x)\)</span> and <span class="process-math">\(f(x) = \sin(x)\)</span> are almost indistinguishable on <span class="process-math">\(-4 \lt x \lt 4\text{,}\)</span> which is much wider than the interval <span class="process-math">\(-2 \lt x \lt 2\)</span> on which the <span class="process-math">\(T_5(x)\)</span> approximation is accurate.  Experimenting with even higher degree Taylor polynomials shows that increasing the degree of the approximation appears to widen the interval on which the approximation is accurate and seems to do so without bound, which suggests that the Taylor series of <span class="process-math">\(f(x) = \sin(x)\)</span> in fact converges to <span class="process-math">\(f(x) = \sin(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Solution 8.4.4.1"><a href="#Ex-8a-4-sine-2" title="Copy heading and permalink for Solution 8.4.4.1" aria-label="Copy heading and permalink for Solution 8.4.4.1">🔗</a></div>
 </div></details></div>
-<div class="autopermalink" data-description="Example 8.4.4"><a href="#Ex-8a-4-sine" title="Copy heading and permalink for Example 8.4.4" aria-label="Copy heading and permalink for Example 8.4.4">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-8a-4-taylor-series.html#Ex-8a-4-sine">in-context</a></span>
+<div class="autopermalink" data-description="Example 8.4.4"><a href="#Ex-8a-4-sine" title="Copy heading and permalink for Example 8.4.4" aria-label="Copy heading and permalink for Example 8.4.4">🔗</a></div></article><span class="incontext"><a class="internal" href="sec-8-4-taylor-series.html#Ex-8a-4-sine">in-context</a></span>
 </body>
 </html>

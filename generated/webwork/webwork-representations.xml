@@ -8261,19 +8261,19 @@ overestimate and the left Riemann sum an underestimate.
 <fillin characters="30" name="optional1"/>, and it is an 
 <var form="popup">
 <li>
-<p>?</p>
-</li>
-<li>
 <p>underestimate of</p>
 </li>
 <li>
 <p>overestimate of</p>
 </li>
 <li>
-<p>equal to</p>
+<p>?</p>
 </li>
 <li>
 <p>there is ambiguity</p>
+</li>
+<li>
+<p>equal to</p>
 </li>
 </var>
 the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -8282,19 +8282,19 @@ the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, an
 <fillin characters="30" name="optional3"/>, and it is an 
 <var form="popup">
 <li>
+<p>overestimate of</p>
+</li>
+<li>
 <p>underestimate of</p>
-</li>
-<li>
-<p>?</p>
-</li>
-<li>
-<p>there is ambiguity</p>
 </li>
 <li>
 <p>equal to</p>
 </li>
 <li>
-<p>overestimate of</p>
+<p>there is ambiguity</p>
+</li>
+<li>
+<p>?</p>
 </li>
 </var>
  the area of the region enclosed by <m>\displaystyle y = f(x)</m>, the x-axis, and the vertical lines <m>x = 4</m> and <m>x = 6</m>.</p>
@@ -12518,30 +12518,30 @@ point (0,1) has a negative slope.</p>
 <p>List the equilibrium solutions to this differential equation in increasing order and indicate whether or not these equilibria are stable, semi-stable, or unstable.</p>
 <p><fillin characters="10" name="AnSwEr0001"/>  <var form="popup">
 <li>
-<p>stable</p>
-</li>
-<li>
-<p>?</p>
-</li>
-<li>
 <p>semi-stable</p>
 </li>
 <li>
 <p>unstable</p>
+</li>
+<li>
+<p>stable</p>
+</li>
+<li>
+<p>?</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0003"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>semi-stable</p>
 </li>
 <li>
 <p>unstable</p>
 </li>
 <li>
-<p>semi-stable</p>
+<p>?</p>
 </li>
 <li>
-<p>?</p>
+<p>stable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
@@ -12549,24 +12549,24 @@ point (0,1) has a negative slope.</p>
 <p>stable</p>
 </li>
 <li>
+<p>?</p>
+</li>
+<li>
 <p>unstable</p>
 </li>
 <li>
 <p>semi-stable</p>
-</li>
-<li>
-<p>?</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
 <li>
-<p>stable</p>
+<p>semi-stable</p>
 </li>
 <li>
 <p>unstable</p>
 </li>
 <li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 <li>
 <p>?</p>
@@ -14349,7 +14349,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T15:43:03Z       
+###       on 2025-08-12T11:15:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14652,7 +14652,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T15:43:03Z       
+###       on 2025-08-12T11:15:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -14999,7 +14999,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T15:43:03Z       
+###       on 2025-08-12T11:15:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -15323,7 +15323,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-08-01T15:43:03Z       
+###       on 2025-08-12T11:15:11Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -17024,7 +17024,7 @@ from the convergent value of that series?</p>
 <p><m>f''(x)</m> is always positive in the interval [1,1.01] so <m>T_{2}(1.01)</m> is a overestimate of <m>f(1.01)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
 <p><m>\left|f(1.01)-T_{2}(1.01)\right| \le \frac{M}{3 !}\left|1.01-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.01].</p>
-<p>By examining <m>f'''(x)</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
+<p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
 <p>By calculation we find:
 <m>|f(1.01)-T_{2}(1.01)| \le 4\times 10^{-6}</m>.</p>
 </solution>
@@ -17036,26 +17036,26 @@ from the convergent value of that series?</p>
     <static seed="345" source="csafranski/8.6HW_prob4.pg">
       <statement><p>Consider the function <m>f(x) = \sqrt{x+1}</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 8</m>.</p>
-<p><alert> Use 3 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
+<p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(10) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
-<p><m>T_{2}(10) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
-<p><m>T_{2}(10)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(9) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
+<p><m>T_{2}(9) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
+<p><m>T_{2}(9)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(10)</m>.</p>
+</li></ul> estimate of <m>f(9)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(9)-T_{2}(9)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>3.3333</m>
+          <m>3.1667</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.3148</m>
+          <m>3.162</m>
         </p>
       </answer>
       <answer>
@@ -17065,24 +17065,24 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>0.0021</m>
+          <m>0.0003</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(10)</m> about <m>x=8</m> is given by:</p>
-<p><m>T_n = f(8) + f'(8)(10-8) + \cdots + \frac{f^n(8)}{n!}(10-8)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(9)</m> about <m>x=8</m> is given by:</p>
+<p><m>T_n(9) = f(8) + f'(8)(9-8) + \cdots + \frac{f^n(8)}{n!}(9-8)^n</m></p>
 <p><m>f'(x) = \frac{1}{2\sqrt{1+x}}</m>,</p>
 <p><m>f''(x) = -\frac{1}{4(1+x)^{\frac{3}{2}}}</m>,</p>
 <p><m>f'''(x) = \frac{3}{8(1+x)^{\frac{5}{2}}}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(10) = 3.3333</m>,</p>
-<p><m>T_2(10) = 3.3148</m>,</p>
-<p><m>f''(x)</m> is always negative in the interval [8,10] so <m>T_{2}(10)</m> is a underestimate of <m>f(10)</m>.</p>
+<p><m>T_1(9) = 3.1667</m>,</p>
+<p><m>T_2(9) = 3.1620</m>,</p>
+<p><m>f''(x)</m> is always negative in the interval [8,9] so <m>T_{2}(9)</m> is a underestimate of <m>f(9)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le \frac{M}{3 !}\left|10-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [10,8].</p>
-<p>By examining <m>f'''(x)</m> we find that it is biggest when <m>t=8</m>.   Therefore, a suitable choice is <m>M=f'''(8)</m>.</p>
+<p><m>\left|f(9)-T_{2}(9)\right| \le \frac{M}{3 !}\left|9-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [8,9].</p>
+<p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=8</m>.   Therefore, a suitable choice is <m>M=f'''(8)</m>.</p>
 <p>By calculation we find:
-<m>\left|f(10)-T_{2}(10)\right| \le 0.0021</m>.</p>
+<m>\left|f(9)-T_{2}(9)\right| \le 0.0003</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
@@ -17132,7 +17132,7 @@ from the convergent value of that series?</p>
       </answer>
       <solution><p>SOLUTION</p>
 <p>The <m>n^{th}</m> degree approximation of <m>f(2)</m> about <m>x=1</m> is given by:</p>
-<p><m>T_n = f(1) + f'(1)(2-1) + \cdots + \frac{f^n(1)}{n!}(2-1)^n</m></p>
+<p><m>T_n(x) = f(1) + f'(1)(2-1) + \cdots + \frac{f^n(1)}{n!}(2-1)^n</m></p>
 <p><m>f'(x) = 1+\ln(x)</m>,</p>
 <p><m>f''(x) = \frac{1}{x}</m>,</p>
 <p><m>f'''(x) = -\frac{1}{x^2}</m>,</p>
@@ -17143,8 +17143,8 @@ from the convergent value of that series?</p>
 <p><m>T_3(2) = 1.333</m>,</p>
 <p><m>f'''(x)</m> is always negative in the interval [1,2] so <m>T_{3}(2)</m> is a underestimate of <m>f(2)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(2)-T_{3}(2)\right| \le \frac{M}{4 !}\left|2-1\right|^{4}</m>, where <m>M \ge \left|f^{(4)}(t)\right|</m> for all <m>t</m> in the interval [2,1].</p>
-<p>By examining <m>f^{(4)}(x)</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f^{(4)}(1)</m>.</p>
+<p><m>\left|f(2)-T_{3}(2)\right| \le \frac{M}{4 !}\left|2-1\right|^{4}</m>, where <m>M \ge \left|f^{(4)}(t)\right|</m> for all <m>t</m> in the interval [1,2].</p>
+<p>By examining <m>\left|f^{(4)}(x)\right|</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f^{(4)}(1)</m>.</p>
 <p>By calculation we find:
 <m>\left|f(2)-T_{3}(2)\right| \le 0.083</m>.</p>
 </solution>
