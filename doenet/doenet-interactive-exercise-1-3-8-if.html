@@ -121,9 +121,9 @@ window.MathJax = {
 
 <setup>
 
-  <selectFromSequence assignNames="a" from="8" to="12" step="1" numToSelect="1"/>
-  <selectFromSequence assignNames="b" from="0.25" to="0.35" step="0.25" numToSelect="1"/>  
-  <selectFromSequence assignNames="c" from="4" to="6" step="1" numToSelect="1"/> 
+  <selectFromSequence name="a" from="8" to="12" step="1" />
+  <selectFromSequence name="b" from="0.25" to="0.35" step="0.25" />  
+  <selectFromSequence name="c" from="4" to="6" step="1" /> 
 
   <function name="f" symbolic="false">1/(1+$a*e^(-$b*x))</function>
   <function name="g" symbolic="false">1/(1+$a*e^(-$b*x))-$$f(0)</function>
@@ -158,11 +158,11 @@ window.MathJax = {
   <p>At the instant when <m>a = $c</m> minutes, we know that the person has walked<answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$g($c)
         </award></answer> miles and that their instantaneous velocity at that moment is <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$gP($c)
         </award></answer> miles per minute.
-    </p>
-<p>
-  Between <m>t = $c</m> and <m>t = <math simplify="numbers">$c+5</math></m>, the person walked <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$g($c+5)-$$g($c)
-        </award></answer> miles, and their average velocity was <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> ($$g($c+5)-$$g($c))/5
-        </award></answer> miles per minute.
+  </p>
+  <p>
+    Between <m>t = $c</m> and <m>t = <math simplify="numbers">$c+5</math></m>, the person walked <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> $$g($c+5)-$$g($c)
+          </award></answer> miles, and their average velocity was <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute> ($$g($c+5)-$$g($c))/5
+          </award></answer> miles per minute.
   </p>
    
       </script>
