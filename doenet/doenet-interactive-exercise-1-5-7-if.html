@@ -119,106 +119,97 @@ window.MathJax = {
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<!-- Author: Christina Safranski                                           -->
-<!-- technical help: Virginia Mae                                          -->
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
 
-<!-- Show limit situations and graphs, ask to match which one goes where? multiple select? a hole, a hole with value equals the limit instead, a jump, a vertical asymptote, nothing funny, something funny but not at the right x&#x2D;value. Make two or three the right answer? Jumble order of the graphs?  Then can reuse/modify the setup in 1.7 while asking about continuous or not, which condition fails. 
-
-Make last exercise a "choose your own adventure", where student answers which thing they want to practice, then conditional content with a whole bunch of different practice problems. Do this in every section?-->
 
 <setup>
-  <selectFromSequence name="m" from="-1" to="1" exclude="0" />
-  <selectFromSequence name="a" from="-1" to="1" numToSelect="1" />       
-  <selectFromSequence name="b" from="-1" to="1" numToSelect="1" />
+
+  <selectFromSequence name="P" from="2500" to="5000" step="500"/>
+  <selectFromSequence name="r" from="0.04" to="0.08" step="0.01"/>  
   
-<!--   <selectFromSequence name="c" from="1" to="4"/> -->
-  <selectFromSequence name="upordown" from="-1" to="1" exclude="0" />
-
-  <function name="line"> $m*x+$b</function>
-  <function name="line2">$m(x-$a)+$$line($a)+$upordown</function>
-
-  <math name="c">0</math>
-
-<!-- Virginia's note - the <select> below replaces the previous <select> which had assignNames. Now, we refer to the boolean of the first selected option as $graphSelect[1][2]. (first index is the first selection made of all the options, second index is the second component defined within that option) -->
+  <function name="A">$P*e^($r*x)</function>
+  <derivative name="AP">$A</derivative>  
   
-<select name="graphSelect" numToSelect="3">
-  <option>
-    <graph name="graph1" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
-    <function> $line </function>
-  </graph> 
-  <boolean>1</boolean>
-  </option>
-  <option>
-    <graph name="graph2" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
-      <function domain="[-2.5,$a-$c)"> $line </function>
-      <function domain="[$a+$c,2.5)"> $line </function>
-      <endpoint open="true" draggable="false">($a, $$line($a))</endpoint>
-    </graph>
-    <boolean>1</boolean>
-  </option>
-  <option>
-    <graph name="graph3" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
-      <function domain="[-2.5,$a-$c)"> $line </function>
-      <function domain="[$a+$c,2.5)"> $line </function>
-      <endpoint open="true" draggable="false">($a, $$line($a))</endpoint>
-      <endpoint draggable="false">($a, $$line($a)+$upordown)</endpoint>
-    </graph> 
-    <boolean>1</boolean>
-  </option>
-  <option>
-    <graph name="graph4" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
-      <function domain="[-2.5,$a-$c)"> $line </function>
-      <function domain="[$a+$c,2.5)"> $line2 </function>
-      <endpoint open="true" draggable="false">($a, $$line($a))</endpoint>
-      <endpoint draggable="false">($a, $$line($a)+$upordown)</endpoint>
-    </graph>
-    <boolean>0</boolean>
-  </option>
- <option>
-    <graph name="graph5" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
-      <function domain="[-2.5,$a-$c)"> $line2 </function>
-      <function domain="[$a+$c,2.5)"> $line2 </function>
-      <endpoint draggable="false">($a, $$line($a))</endpoint>
-      <endpoint open="true" draggable="false">($a, $$line($a)+$upordown)</endpoint>
-    </graph>
-    <boolean>0</boolean>
-  </option>
-</select>
-
-<mathList name="correctLabels">
-<repeatForSequence from="A" to="C" type="letters" name="correctMap" valueName="letter" indexName="i">
-    <conditionalContent>
-      <case condition="$graphSelect[$i][2]">$letter</case>
-      <else />
-    </conditionalContent>
-  </repeatForSequence>
-</mathList>
-
-<boolean name="checkLists" unorderedCompare="true">$correctLabels = $mi1</boolean>
-<!--   Should it be $mL?  Or could we remove the part that makes $mi1 into a list below? -->
-  <!-- Virginia - no, you didn't need the mathList, so I removed it. -->
-
 </setup>
 
+  <p>Let <m>A(t)</m> represent the amount of money in an investment account, in dollars, at time <m>t</m> in years, where <m>t = 0</m> corresponds to <m>2015</m>.  Assume that a single investment was made at <m>t = 0</m> and that the increases are due to interest earnings.  The following table shows some of the values of <m>A(t)</m>.</p>
+   <!--  <p>Note that <m>a = $a</m> and <m>b = $b</m>. </p> -->
 
-<!-- testing -->
-<!-- <p>correctLabels = $correctLabels</p>
-<p>checkLists = $checkLists</p>
-<p>a = $a</p> -->
-<!-- /testing -->
+      <tabular bottom="minor" top="minor">
+        <row bottom="minor">
+          <cell><m>t</m></cell>
+          <cell><m>0</m></cell>
+          <cell><m>2</m></cell>
+          <cell><m>4</m></cell>
+          <cell><m>6</m></cell> 
+          <cell><m>8</m></cell>  
+          <cell><m>10</m></cell>   
+        </row>
+        <row>
+          <cell><m>A(t)</m></cell>
+          <cell><math displayDecimals="2">$$A(0)</math></cell>
+          <cell><math displayDecimals="2">$$A(2)</math></cell>
+          <cell><math displayDecimals="2">$$A(4)</math></cell>
+          <cell><math displayDecimals="2">$$A(6)</math></cell>
+          <cell><math displayDecimals="2">$$A(8)</math></cell>
+          <cell><math displayDecimals="2">$$A(10)</math></cell>
+        </row>
+      </tabular>
 
- <p>Which of the following graphs below satisfy the property that <m>\displaystyle \lim_{x\to $a} f(x)= $$line($a) </m>?  Enter the (capital) letters of all such graphs, separated by commas. <mathInput name="mi1" /></p>
- <answer>
-    <award>
-      <when>$checkLists</when>
-    </award>
-  </answer>
-
-<sideBySide margins="1%">
-  <figure suppressFigureNameInCaption="true">$graphSelect[1][1]<caption>A</caption></figure>
-  <figure suppressFigureNameInCaption="true">$graphSelect[2][1]<caption>B</caption></figure>
-  <figure suppressFigureNameInCaption="true">$graphSelect[3][1]<caption>C</caption></figure>
-</sideBySide>
+<p>
+  <ol marker="a.">
+    <li>
+      <setup>
+        <math simplify name="cd1">($$A(6)-$$A(2))/(4) </math>  
+        <math simplify name="cd2">($$A(10)-$$A(6))/(4) </math>  
+        <math simplify name="A4">$$A(4) </math>  
+        <math simplify name="A8">$$A(8) </math> 
+      </setup>  
+      <p>
+        Use a central difference to find the best estimate you can for <m>A'(4)</m>. 
+      </p>
+      <p><m>A'(4) \approx</m><answer inline><mathInput name="ans1"/>
+          <award allowedErrorInNumbers="0.01"> 
+            <when>
+              $ans1 = $cd1
+            </when>
+          </award>
+        </answer></p>
+    </li>
+    <li>
+      <p>
+        Similarly, use a central difference to find the best estimate you can for <m>A'(8)</m>. 
+      </p>
+      <p><m>A'(8) \approx</m><answer inline><mathInput name="ans2"/>
+          <award allowedErrorInNumbers="0.01"> 
+            <when>
+              $ans2 = $cd2
+            </when>
+          </award>
+        </answer></p>
+    </li>  
+    <li>
+      <p>
+        Complete the following sentences to explain the meaning of select data in the table and the derivative values you found in (a) and (b).
+      </p>  
+      <p>
+        At the start of the year <answer><award>2019</award></answer>, the value of the money in the account is <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$A4</award></answer> dollars, and its value is changing at an instantaneous rate of <answer><award allowedErrorInNumbers="0.1" allowedErrorIsAbsolute>$cd1</award></answer> dollars per year. At the start of the year <answer><award>2023</award></answer>, the value of the money in the account is is <answer><award allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$A8</award></answer> dollars, and its value is changing at an instantaneous rate of <answer><award allowedErrorInNumbers="0.1" allowedErrorIsAbsolute>$cd2</award></answer> dollars per year. 
+      </p>  
+    </li>  
+  </ol>  
+</p>
       </script>
 </div></div>
 </body>
