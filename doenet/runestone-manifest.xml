@@ -552,6 +552,16 @@
           </div>
         </htmlsrc>
       </question>
+      <question>
+        <label>DoenetML Interactive</label>
+        <htmlsrc>
+          <div class="ptx-runestone-container">
+            <div data-component="doenet" id="ac-single_2_doenet-interactive-exercise-1-6-8">
+              <iframe id="doenet-interactive-exercise-1-6-8" width="600" height="600" src="doenet-interactive-exercise-1-6-8-if.html"/>
+            </div>
+          </div>
+        </htmlsrc>
+      </question>
     </subchapter>
     <subchapter>
       <id>sec-1-7-lim-cont-diff</id>
