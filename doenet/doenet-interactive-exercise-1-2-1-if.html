@@ -121,11 +121,6 @@ window.MathJax = {
 
 <!-- Author: Christina Safranski                                           -->
 
-<!--
-<section name = "exercise-1-1-d-1"><title>Title here</title>
-  <statement>
--->
-
  <setup>
 <!--   <selectFromSequence assignNames="a b c" from="1" to="4" step="1" numToSelect="3"/>
   <selectFromSequence name="a" from="5" to="10" exclude="0 $b"/> -->
@@ -144,19 +139,20 @@ window.MathJax = {
 </setup>
 
 <graph showNavigation="false" xmin="-3" xmax="5" ymin="$yminim" ymax="$ymaxim">
-  <function domain="[-3,0-$k)">$quad</function>
+  <label anchor="(-2.2,4)"> <m>y=f(x)</m> </label>
+  <function domain="[-3,0-$k-0.1)">$quad</function>
   <endpoint name="xis0" open draggable="false">(0,$$quad(0))</endpoint>
-  <function domain="(0+$k,$b]">$quad</function>
+  <function domain="(0+$k+0.1,$b-0.03]">$quad</function>
   <endpoint name="xisb" draggable="false">($b,$$quad($b))</endpoint>
   <endpoint name="xisb2" open draggable="false">($b,$$line($b))</endpoint>
-  <function domain="($b+$k,$c-$k)">$line</function>
+  <function domain="($b+0.07+$k,$c-0.07-$k)">$line</function>
   <endpoint name="xisc" open draggable="false">($c,$$line($c))</endpoint>
   <endpoint name="xisc2"  draggable="false">($c,$$line($c)+$c*$upordown)</endpoint>
-  <function domain="($c+$k,5)">$line</function>
+  <function domain="($c+0.07+$k,5)">$line</function>
 </graph>
 
 <p> 
-  Use the graph to determine the following limits. If the limit does not exist, enter <em>DNE</em>.
+  Use the given graph of <m>f</m> to determine the following limits. If the limit does not exist, enter <em>DNE</em>.  An open circle on the graph indicates a <q>hole</q> at that location.
   <ol marker="a.">
     <li>
       <m>\displaystyle\lim_{x \to -$b} f(x)=</m>
@@ -176,7 +172,6 @@ window.MathJax = {
     </li>
   </ol>
 </p>
-
 
       </script>
 </div></div>

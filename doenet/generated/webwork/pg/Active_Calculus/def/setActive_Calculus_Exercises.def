@@ -1,58 +1,10 @@
-openDate          = 09/07/2025 at 12:00am
-dueDate           = 03/07/2026 at 10:00pm
-answerDate        = 03/07/2026 at 10:00pm
+openDate          = 09/10/2025 at 12:00am
+dueDate           = 03/10/2026 at 10:00pm
+answerDate        = 03/10/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
 problemListV2
-problem_start
-source_file = csafranski/1.7HW_prob1.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = Library/Michigan/Chap1Sec8/Q21.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/1.7HW_prob3.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/Michigan/Chap2Sec6/Q02.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = Library/Michigan/Chap1Sec7/Q19.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = Library/UBC/setContinuity/graphs.pg
-problem_id = 6
-problem_end
-problem_start
-source_file = Library/Michigan/Chap2Sec2/Q11.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = csafranski/1.8HW_prob2.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/1.8HW_prob3.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/ma122DB/set7/s3_11_9.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = Library/Michigan/Chap3Sec9/Q11.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = Library/Valdosta/APEX_Calculus/2.2/APEX_2.2_8.pg
-problem_id = 6
-problem_end
 problem_start
 source_file = Library/Michigan/Chap3Sec1/Q15.pg
 problem_id = 1
