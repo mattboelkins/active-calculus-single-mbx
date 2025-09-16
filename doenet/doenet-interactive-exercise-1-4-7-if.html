@@ -169,20 +169,29 @@ window.MathJax = {
       </li>
       <li> 
         <p>
-          ***ISSUE HERE TO RESOLVE IN ANSWER** Next, apply the limit definition of the derivative by substituting the simplest possible expression for <m>f(x+h)-f(x)</m> in the space provided:
+          Next, use your work from (b) to substitute the simplest possible expression for <m>f(x+h)-f(x)</m> in the space provided:
         </p>  
+
+        <setup>
+          <boolean name="exprCorrect">$dq_x1 = (-$b h)/((x + h - $a)(x-$a))</boolean>
+          <matchesPattern name="singleFraction" pattern="-()/()">$dq_x1</matchesPattern>
+        </setup>
         <p><m>f'(x)= \displaystyle \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} = \lim_{h \to 0} </m> <mathInput name="dq_x1" minwidth="70"></mathInput> <m>\cdot \frac{1}{h}</m>
-      <answer><award><when>$dq_x1 = 
-        $$f(x+h) - $$f(x)
-      </when></award></answer></p>
+      <!-- <answer><award><when>$dq_x1 = 
+        \frac{<math>-$b*h</math>}{(x+h-$a)(x-$a)}
+      </when></award></answer> -->
+      <answer>
+        <award>
+          <when>$exprCorrect and $singleFraction</when>
+        </award>
+      </answer>
+        </p>
+        <!-- testing 
         <p><math simplify>$$f(x+h) - $$f(x)</math></p>
-      </li>
-      <li>
-        <p>Further, simplifying your most recent result as much as possible, it follows that</p>
-        <p>  <m>f'(x)= \displaystyle \lim_{h \to 0} </m> <mathInput minwidth="70" name="simp_x1"></mathInput>
-      <answer><award><when>$simp_x1 = 
-        -$b/((x+h-$a)(x-$a))
-      </when></award></answer></p>
+        <p><math simplify>-$b*h/((x+h-$a)(x-$a))</math></p>
+        <p>exprCorrect = $exprCorrect</p>
+        <p>singleFraction = $singleFraction</p>
+       /testing -->
       </li>
       <li>
         <p>Finally, evaluating the limit by letting <m>h \to 0</m>, we determine the value of <m>f'(x)</m>:</p>

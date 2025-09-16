@@ -105,8 +105,7 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-      
-<!-- **********************************************************************-->
+      <!-- **********************************************************************-->
 <!-- Copyright 2012-2025                                                   -->
 <!-- Matthew Boelkins                                                      -->
 <!--                                                                       -->
@@ -120,7 +119,7 @@ window.MathJax = {
 <!-- their respective owners.                                              -->
 <!-- **********************************************************************-->
 
-<!-- originally authored by Hannah Burson at the 2024 Doenet workshop -->
+<!-- authored by Hannah Burson at the 2024 Doenet workshop -->
 
   <p>
     The position of a car driving along a straight road at time <m>t</m> in minutes is given by the function
@@ -136,7 +135,7 @@ window.MathJax = {
 
       <aside> <title>(a)</title>
         <p>
-          For each of the following intervals, decide if the car has a constant, increasing, or decreasing velocity.
+          For each of the following intervals, decide if the car is moving at a constant, increasing, or decreasing velocity.
         </p>
 
         <sideBySide widths="47% 47%">
@@ -170,7 +169,73 @@ window.MathJax = {
           Which of the following graphs is most likely to be the graph of 
          <m>y = s'(t)</m>?
         </p>
-        <answer>
+        <hr/>
+        <sideBySide margins="2%">
+          <stack>
+            <p><booleanInput name="choiceA" 
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceE or $choiceF">
+              <label>A</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-2.png" description="graph with all non-negtive y-values. It peaks when x= 2,5,9, and 12"/>
+          </stack>
+            
+          <stack>
+            <p><booleanInput name="choiceB"
+                 disabled="$choiceA or $choiceC or $choiceD or $choiceE or $choiceF">
+              <label>B</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-3.png" description="Graph with positive and negative y-values. It peaks when x=0.5,3.5,7.5, and 10.5"/>
+          </stack>
+           
+          <stack>
+            <p><booleanInput name="choiceC" 
+                 disabled="$choiceB or $choiceA or $choiceD or $choiceE or $choiceF">
+              <label>C</label>
+            </booleanInput>
+            </p>
+          <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-4.png" description="Graph with positive and negative y-values. It peaks when x=4 and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/>
+          </stack>
+        </sideBySide>
+        <hr/>
+
+        <sideBySide  margins="2%">
+          <stack>
+            <p><booleanInput name="choiceD" 
+                 disabled="$choiceB or $choiceC or $choiceA or $choiceE or $choiceF">
+              <label>D</label>
+            </booleanInput>
+            </p>
+          <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-5.png" description="Graph with positive y-values. It peaks when x=1, 4, 8, and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/>
+          </stack>
+
+          <stack>
+            <p><booleanInput name="choiceE" 
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceA or $choiceF">
+              <label>E</label>
+            </booleanInput>
+            </p>
+          <image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___286f7178-f6c6-3ca4-814e-0975a871a211.png" description="Graph with positive y-values. It peaks when x=1, 5, 9, and 12. It is zero when x=3, 7, and 10"/>
+          </stack>
+
+          <stack>
+            <p><booleanInput name="choiceF"
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceE or $choiceA">>
+              <label>F</label>
+            </booleanInput>
+            </p>
+          <image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___a376b55c-3860-32fe-8021-4f2408c63c93.png" description="Graph with positive and negative y-values. It peaks when x=1 and 8. It is zero when x=3, 7, and 10"/>
+          </stack>
+        </sideBySide>
+        <answer name="ansb">
+          <award><when>$choiceD = true</when></award>
+        </answer>
+
+
+
+        
+        <!-- <answer>
 
                 <choice>
                   <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-2.png" description="graph with all non-negtive y-values. It peaks when x= 2,5,9, and 12"/>
@@ -192,7 +257,7 @@ window.MathJax = {
           <choice>
             <image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___a376b55c-3860-32fe-8021-4f2408c63c93.png" description="Graph with positive and negative y-values. It peaks when x=1 and 8. It is zero when x=3, 7, and 10"/>
           </choice>
-        </answer>
+        </answer> -->
       </aside>
 
       <aside> <title>(c)</title>
@@ -282,9 +347,83 @@ window.MathJax = {
    
    </aside>
    <aside> <title>(e)</title>
-        <p>
+    <p>
           Which of the following graphs is most likely to be the graph of <m>y=v'(t)</m>?</p>
-                <answer><choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-2.png" description="graph with all non-negtive y-values. It peaks when x= 2,5,9, and 12"/></choice><choice credit="1"><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-3.png" description="Graph with positive and negative y-values. It peaks when x=0.5,3.5,7.5, and 10.5"/></choice><choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-4.png" description="Graph with positive and negative y-values. It peaks when x=4 and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/></choice><choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-5.png" description="Graph with positive y-values. It peaks when x=1, 4, 8, and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/></choice><choice><image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___286f7178-f6c6-3ca4-814e-0975a871a211.png" description="Graph with positive y-values. It peaks when x=1, 5, 9, and 12. It is zero when x=3, 7, and 10"/></choice><choice><image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___a376b55c-3860-32fe-8021-4f2408c63c93.png" description="Graph with positive and negative y-values. It peaks when x=1 and 8. It is zero when x=3, 7, and 10"/></choice></answer>
+
+        <hr/>
+        <sideBySide margins="2%">
+          <stack>
+            <p><booleanInput name="choiceA" 
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceE or $choiceF">
+              <label>A</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-2.png" description="graph with all non-negtive y-values. It peaks when x= 2,5,9, and 12"/>
+          </stack>
+            
+          <stack>
+            <p><booleanInput name="choiceB"
+                 disabled="$choiceA or $choiceC or $choiceD or $choiceE or $choiceF">
+              <label>B</label>
+            </booleanInput>
+            </p>
+              <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-3.png" description="Graph with positive and negative y-values. It peaks when x=0.5,3.5,7.5, and 10.5"/>
+          </stack>
+           
+          <stack>
+            <p><booleanInput name="choiceC" 
+                 disabled="$choiceB or $choiceA or $choiceD or $choiceE or $choiceF">
+              <label>C</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-4.png" description="Graph with positive and negative y-values. It peaks when x=4 and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/>
+          </stack>
+        </sideBySide>
+        <hr/>
+
+        <sideBySide  margins="2%">
+          <stack>
+            <p><booleanInput name="choiceD" 
+                 disabled="$choiceB or $choiceC or $choiceA or $choiceE or $choiceF">
+              <label>D</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-5.png" description="Graph with positive y-values. It peaks when x=1, 4, 8, and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/>
+          </stack>
+
+          <stack>
+            <p><booleanInput name="choiceE" 
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceA or $choiceF">
+              <label>E</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___286f7178-f6c6-3ca4-814e-0975a871a211.png" description="Graph with positive y-values. It peaks when x=1, 5, 9, and 12. It is zero when x=3, 7, and 10"/>
+          </stack>
+
+          <stack>
+            <p><booleanInput name="choiceF"
+                 disabled="$choiceB or $choiceC or $choiceD or $choiceE or $choiceA">>
+              <label>F</label>
+            </booleanInput>
+            </p>
+            <image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___a376b55c-3860-32fe-8021-4f2408c63c93.png" description="Graph with positive and negative y-values. It peaks when x=1 and 8. It is zero when x=3, 7, and 10"/>
+          </stack>
+        </sideBySide>
+        <answer name="anse">
+          <award><when>$choiceB = true</when></award>
+        </answer>
+
+
+
+     
+                <!-- <answer>
+                  <choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-2.png" description="graph with all non-negtive y-values. It peaks when x= 2,5,9, and 12"/></choice>
+                  <choice credit="1"><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-3.png" description="Graph with positive and negative y-values. It peaks when x=0.5,3.5,7.5, and 10.5"/></choice>
+                  <choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-4.png" description="Graph with positive and negative y-values. It peaks when x=4 and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/></choice>
+                  <choice><image width="40%" source="https://runestone.academy/ns/books/published/MATH1271-Fall2024-Burson/generated/webwork/images/webwork-60-image-5.png" description="Graph with positive y-values. It peaks when x=1, 4, 8, and 11. It is zero on the intervals (2,3), (5,7), and (9,10)"/></choice>
+                  <choice><image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___286f7178-f6c6-3ca4-814e-0975a871a211.png" description="Graph with positive y-values. It peaks when x=1, 5, 9, and 12. It is zero when x=3, 7, and 10"/></choice>
+                  <choice><image width="40%" source="https://webwork-dev.uleth.ca/wwtmp/chrissy-playground/images/a7772b6a-ddfb-300c-9b40-ccc8f446d173___a376b55c-3860-32fe-8021-4f2408c63c93.png" description="Graph with positive and negative y-values. It peaks when x=1 and 8. It is zero when x=3, 7, and 10"/></choice>
+                </answer> -->
 
       </aside>
       <aside> <title>(f)</title> 
@@ -310,9 +449,7 @@ window.MathJax = {
            <choice credit="1">There are times when <m>v'(t)</m> is zero and <m>v(t)</m> is not zero.</choice>
            <choice credit="1"> When <m>v(t)</m> is negative, the car is slowing down.</choice><choice>The function <m>v'</m> represents the position of the car.</choice>
            <choice credit="1">The function <m>v'</m> represents the acceleration of the car.</choice></answer>
-      </aside>
-      
- 
+      </aside> 
     </script>
 </div></div>
 </body>
