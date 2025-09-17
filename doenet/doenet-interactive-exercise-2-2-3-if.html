@@ -105,21 +105,7 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-        <!-- **********************************************************************-->
-<!-- Copyright 2012-2025                                                   -->
-<!-- Matthew Boelkins                                                      -->
-<!--                                                                       -->
-<!-- This file is part of Active Calculus.                                 -->
-<!--                                                                       -->
-<!-- Permission is granted to copy, distribute and/or modify this document -->
-<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
-<!-- may be used for free by any party so long as attribution is given to  -->
-<!-- the author(s), the work and its derivatives are used in the spirit of -->
-<!-- "share and share alike".  All trademarks are the registered marks of  -->
-<!-- their respective owners.                                              -->
-<!-- **********************************************************************-->
-
-<setup>
+        <setup>
   <function name="f">sin(x)</function>
   <function name="f1P">cos(x)</function>
   <function name="f2P">-sin(x)</function>
@@ -132,7 +118,7 @@ window.MathJax = {
 
   <selectFromSequence name = "num1" from = "27" to = "32" step = "1"/>
   <selectFromSequence name = "k" from = "51" to = "75" step = "1"/>
-  <number name="j">$k+3</number>
+  <number name="j">$k+5</number>
 </setup>
 
 <p>
@@ -293,9 +279,14 @@ window.MathJax = {
       <p>
         In addition, <m>g^{($j)}(x) = </m>
               <answer>
-                <mathInput name="gjderiv"/>
+                <mathInput name="gderivaj"/>
                   <award>
-                    <when>(<mod>$j 4</mod> = 1 and $gjderik = $g1P) or (<mod>$j 4</mod> = 2 and $gjderiv = $g2P) or (<mod>$j 4</mod> = 3 and $gjderiv = $g3P) or (<mod>$j 4</mod> = 0 and $gjderiv = $g</when>
+                    <when>
+                      (<mod>$j 4</mod> = 1 and $gderivaj = $g1P) or 
+                      (<mod>$j 4</mod> = 2 and $gderivaj = $g2P) or 
+                      (<mod>$j 4</mod> = 3 and $gderivaj = $g3P) or 
+                      (<mod>$j 4</mod> = 0 and $gderivaj = $g)
+                    </when>
                   </award>
               </answer>        
       </p>

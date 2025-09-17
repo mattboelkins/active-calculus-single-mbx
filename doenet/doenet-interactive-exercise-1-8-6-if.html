@@ -169,61 +169,65 @@ window.MathJax = {
           From all the given information, it follows that our estimate of <m>p($cplus)</m> in part (b) is       
         <answer>
           <choiceInput name="overunder" inline>
+            <choice>?</choice>
             <choice>greater than</choice>
             <choice>less than</choice>
             <choice>equal to</choice>
           </choiceInput>            
             <award>
-              <when>$overunder.selectedIndices=1 and $cplus < $c   
+              <when>$overunder.selectedIndices=2 and $cplus < $c   
               </when>
             </award>  
             <award>
-              <when>$overunder.selectedIndices=2 and $cplus > $c 
+              <when>$overunder.selectedIndices=3 and $cplus > $c 
               </when> 
             </award>
           </answer> 
           the true value of <m>p($cplus)</m>, since <m>p''($c)</m> is 
           <answer>
             <choiceInput name="reason1" inline>
+              <choice>?</choice>
               <choice>positive</choice>
               <choice>zero</choice>
               <choice>negative</choice>
             </choiceInput>            
               <award>
-                <when>$reason1.selectedIndices=1 and $cplus > $c       
+                <when>$reason1.selectedIndices=2 and $cplus > $c       
                 </when>
               </award>  
               <award>
-                <when>$reason1.selectedIndices=3 and $cplus < $c 
+                <when>$reason1.selectedIndices=4 and $cplus < $c 
                 </when>
               </award>
           </answer>, so near <m>x = $c</m>, <m>f</m> is
           <answer>
             <choiceInput name="reason2" inline>
+              <choice>?</choice>
               <choice>concave up</choice>
               <choice>linear</choice>
               <choice>concave down</choice>
             </choiceInput>            
               <award>
-                <when>$reason1.selectedIndices=1 and $cplus > $c     
+                <when>$reason1.selectedIndices=2 and $cplus > $c     
                 </when>
               </award>  
               <award>
-                <when>$reason2.selectedIndices=3 and $cplus < $c  
+                <when>$reason2.selectedIndices=4 and $cplus < $c  
                 </when>
               </award>
           </answer>, which makes the tangent line to <m>f</m> at the point <m>($c,p($c))</m> lie
      <answer>
             <choiceInput name="reason3" inline>
+              <choice>?</choice>
               <choice>below</choice>
               <choice>above</choice>
             </choiceInput>            
               <award>
-                <when>$reason3.selectedIndices=2 and $cplus < $c   
+                <when>$reason3.selectedIndices=3 and $cplus < $c   
                 </when>
               </award>  
               <award>
-                <when>$reason3.selectedIndices=1 and $cplus > $c  
+                <when>$reason3.selectedIndices=2 and $cplus > $c  
                 </when> 
               </award>
       </answer>   
