@@ -1,34 +1,10 @@
-openDate          = 09/17/2025 at 12:00am
-dueDate           = 03/17/2026 at 10:00pm
-answerDate        = 03/17/2026 at 10:00pm
+openDate          = 10/01/2025 at 12:00am
+dueDate           = 04/01/2026 at 10:00pm
+answerDate        = 04/01/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
 problemListV2
-problem_start
-source_file = Library/Michigan/Chap3Sec6/Q51.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = Library/Michigan/Chap3Sec6/Q01.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/2.6HW_prob3.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/Rochester/setDerivatives6InverseTrig/sc3_6_26.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = Library/Rochester/setDerivatives1/osu_dr_1_11.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = Library/UCSB/Stewart5_3_6/Stewart5_3_6_68.pg
-problem_id = 6
-problem_end
 problem_start
 source_file = Library/Michigan/Chap3Sec7/Q07.pg
 problem_id = 1
