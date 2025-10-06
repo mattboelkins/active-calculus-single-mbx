@@ -105,21 +105,7 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-        <!-- **********************************************************************-->
-<!-- Copyright 2012-2025                                                   -->
-<!-- Matthew Boelkins                                                      -->
-<!--                                                                       -->
-<!-- This file is part of Active Calculus.                                 -->
-<!--                                                                       -->
-<!-- Permission is granted to copy, distribute and/or modify this document -->
-<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
-<!-- may be used for free by any party so long as attribution is given to  -->
-<!-- the author(s), the work and its derivatives are used in the spirit of -->
-<!-- "share and share alike".  All trademarks are the registered marks of  -->
-<!-- their respective owners.                                              -->
-<!-- **********************************************************************-->
-  
-<setup>
+        <setup>
   <selectFromSequence name = "a" from = "3" to = "9" step = "1"/>
   <selectFromSequence name = "b" from = "-5" to = "5" step = "1" exclude="-1 0 1"/>
   <selectFromSequence name = "c" from = "-3" to = "3" step = "1" exclude="0 1"/>
@@ -127,10 +113,10 @@ window.MathJax = {
   <selectFromSequence name = "k" from = "2" to = "6" step = "1"/>
   <math name="m">$a+1</math>
     
-  <function name="f">$c*ln($d*x^2+1)</function>
+  <function name="f">$c*x^$a*ln(x)</function>
   <derivative name="fP">$f</derivative>
   
-  <function name="g"><math simplify>asin($a^x)</math></function>
+  <function name="g"><math simplify>asin(x)/($a^x)</math></function>
   <derivative name="gP">$g</derivative>
 
   <function name="h">atan($k*x+1)</function>
@@ -139,7 +125,7 @@ window.MathJax = {
   <function name="p">$m/(ln(x)+atan(x))</function>
   <derivative name="pP">$p</derivative>
 
-  <function name="q">($a*asin(x) + $k)($b*atan(x) + $d)</function>
+  <function name="q">$b*asin(x^2 + $d)</function>
   <derivative name="qP">$q</derivative>
   
 </setup>
@@ -152,7 +138,12 @@ window.MathJax = {
   <ol marker="a.">
     <li>
       <p>
-        If <m>f(x) = $c \ln($d x^2 + 1)</m>, then <m>f'(x)=</m><answer>$fP</answer>.
+        If <m>f(x) = $c x^$a \ln(x)</m>, then <m>f'(x)=</m><answer>$fP</answer>.
+      </p>
+    </li>
+    <li>
+      <p>
+        If <m>g(x) = \frac{\arcsin(x)}{$a^x}</m>, then <m>g'(x)= </m><answer>$gP</answer>.
       </p>
     </li>
     <li>
@@ -162,17 +153,12 @@ window.MathJax = {
     </li>
     <li>
       <p>
-        If <m>g(x) = \arcsin($a^x)</m>, then <m>g'(x)= </m><answer>$gP</answer>.
-      </p>
-    </li>
-    <li>
-      <p>
         If <m>p(x)= \displaystyle \frac{<math simplify>$m</math>}{\ln(x) + \arctan(x)}</m>, then <m>p'(x)= </m><answer>$pP</answer>.
       </p>
     </li>
     <li>
       <p>
-        If <m>q(x)= ($a \arcsin(x) + $k)($b \arctan(x) + $d)</m>, then <m>q'(x)= </m><answer>$qP</answer>.
+        If <m>q(x)= $b \arcsin(x^2 + $d)</m>, then <m>q'(x)= </m><answer>$qP</answer>.
       </p>
     </li>
    
