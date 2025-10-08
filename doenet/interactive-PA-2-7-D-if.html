@@ -122,6 +122,21 @@ window.MathJax = {
 
 <!-- this preview was written by Hannah Burson at the 2024 Doenet workshop --> 
 
+
+<!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
 <p>
   Let <m>f</m> be a differentiable function of <m>x</m> (whose formula is not known)
   and recall that <m>\frac{d}{dx}[f(x)]</m> and <m>f'(x)</m> are interchangeable notations.
@@ -141,7 +156,7 @@ window.MathJax = {
       <li>
         <p>
           <m>\frac{d}{dx} \left[ x^2 + f(x) \right]=</m> <mathInput name="mi1"/>
-          <answer name= "PA_2-7-1_ans1" matchPartial><award> <when> $mi1 = 2x+f'(x) or $mi1=2x+d/dx(f(x)) or $mi1=2x+df/dx</when></award> </answer>
+          <answer symbolicEquality simplifyOnCompare name= "PA_2-7-1_ans1" matchPartial><award> <when> $mi1 = 2x+f'(x) or $mi1=2x+d/dx(f(x)) or $mi1=2x+df/dx</when></award> </answer>
         </p>
         
       </li>
@@ -149,14 +164,14 @@ window.MathJax = {
       <li>
         <p>
           <m>\frac{d}{dx} \left[ x^2 f(x) \right]=</m><mathInput name="mi2"/>
-          <answer name= "PA_2-7-1_ans2" matchPartial><award> <when> $mi2 = 2x*f(x)+x^2*f'(x) or $mi2=2x*f(x)+x^2*d/dx(f(x)) or $mi2=2x*f(x)+x^2*df/dx</when></award> </answer>
+          <answer symbolicEquality simplifyOnCompare name= "PA_2-7-1_ans2" matchPartial><award> <when> $mi2 = 2x*f(x)+x^2*f'(x) or $mi2=2x*f(x)+x^2*d/dx(f(x)) or $mi2=2x*f(x)+x^2*df/dx</when></award> </answer>
         </p>
       </li>
 
       <li>
         <p>
           <m>\frac{d}{dx} \left[ c + x + f(x)^2 \right]=</m><mathInput name="mi3"/>
-          <answer name= "PA_2-7-1_ans3"><award> <when> $mi3 = 1+2f(x)*f'(x)<!-- or $mi2=1+2f(x)*d/dx(f(x)) or $mi2=1+2f(x)*df/dx--> </when></award> </answer>
+          <answer symbolicEquality simplifyOnCompare name= "PA_2-7-1_ans3"><award> <when> $mi3 = 1+2f(x)*f'(x) or $mi2=1+2f(x)*d/dx(f(x)) or $mi2=1+2f(x)*df/dx </when></award> </answer>
         
         </p>
       </li>
@@ -164,7 +179,7 @@ window.MathJax = {
       <li>
         <p>
           <m>\frac{d}{dx} \left[ f(x^2) \right]=</m><mathInput name="mi4"/>
-          <answer name= "PA_2-7-1_ans4" matchPartial><award> <when> $mi4 = f'(x^2)*2x </when></award> </answer>
+          <answer symbolicEquality simplifyOnCompare name= "PA_2-7-1_ans4" matchPartial><award> <when> $mi4 = f'(x^2)*2x </when></award> </answer>
 
         </p>
       </li>
@@ -174,7 +189,7 @@ window.MathJax = {
           <m>\frac{d}{dx} \left[ xf(x) + f(cx) + cf(x) \right]</m>
        <mathInput name="mi5"/>
         </p>
-          <answer name= "PA_2-7-1_ans5" matchPartial><award> <when> $mi5 = f(x)+x*f'(x)+c*f'(cx)+c*f'(x) </when></award> </answer>
+          <answer symbolicEquality simplifyOnCompare name= "PA_2-7-1_ans5" matchPartial><award> <when> $mi5 = f(x)+x*f'(x)+c*f'(cx)+c*f'(x) </when></award> </answer>
       </li>
     </ol>
 </p>

@@ -105,15 +105,35 @@ window.MathJax = {
 <p>Waiting on the page to load...</p>
 </div>
 <script type="text/doenetml">
-        <setup>
+        <!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+ 
+<setup>
   <selectFromSequence name = "a" from = "3" to = "8" step = "1"/>
   <selectFromSequence name = "b" from = "2" to = "8" step = "1" exclude="$a"/>  
   <selectFromSequence name = "c" from = "2" to = "8" step = "1" exclude="$a $b"/>  
   <selectFromSequence name = "d" from = "2" to = "8" step = "1" exclude="$a $b $c"/>  
-    
+  
+  <function name="F" variable="y">$Fexp</function>
+  <function name="C" variable="x">5/9(x-32)</function>
+  
+  <math name="Cx" functionSymbols="C">C(x)</math>
+  
   <math name="Correct1">x^$a * $b * y^($b-1) * dy/dx + $a*x^($a-1) * y^$b</math>
   <math name="Correct2">$c*x^($c-1)</math>  
   <math name="Correct3">$d*y^($d-1) * dy/dx </math>  
+  <math name="Correct4">0</math>  
 
   <math name="FinalAns">(-$c*x^($c-1) - $a*x^($a-1)*y^$b)/(x^$a * $b * y^($b-1) + $d*y^($d-1))</math>  
   
@@ -140,13 +160,13 @@ window.MathJax = {
           Use appropriate derivative rules to state the derivative of each of the following expressions from the equation above; use <q><m>\frac{dy}{dx}</m></q> to represent the derivative of <m>y</m> with respect to <m>x</m>.
         </p>
         <p>
-          <m>\frac{d}{dx}\left[ x^$a y^$b \right]=</m><answer name="A1">$Correct1</answer>
+          <m>\frac{d}{dx}\left[ x^$a y^$b \right]=</m><answer symbolicEquality simplifyOnCompare  name="A1">$Correct1</answer>
         </p>
         <p>
-          <m>\frac{d}{dx}\left[ x^$c \right]=</m><answer name="A2">$Correct2</answer>
+          <m>\frac{d}{dx}\left[ x^$c \right]=</m><answer symbolicEquality simplifyOnCompare  name="A2">$Correct2</answer>
         </p>
         <p>
-          <m>\frac{d}{dx}\left[ y^$d \right]=</m><answer name="A3">$Correct3</answer>
+          <m>\frac{d}{dx}\left[ y^$d \right]=</m><answer symbolicEquality simplifyOnCompare  name="A3">$Correct3</answer>
         </p> 
 
         <!-- answer testing
@@ -201,7 +221,7 @@ window.MathJax = {
           Finally, remove a factor of <m>\frac{dy}{dx}</m> from each term on the lefthand side and thus solve for <m>\frac{dy}{dx}</m>: 
         </p>
         <p hide="not $Bsolved">
-          <m>\frac{dy}{dx}=</m><answer>$FinalAns</answer>
+          <m>\frac{dy}{dx}=</m><answer symbolicEquality simplifyOnCompare>$FinalAns</answer>
         </p>
       </li>
 
