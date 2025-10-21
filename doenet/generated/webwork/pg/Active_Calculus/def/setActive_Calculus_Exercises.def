@@ -1,66 +1,10 @@
-openDate          = 10/14/2025 at 12:00am
-dueDate           = 04/14/2026 at 10:00pm
-answerDate        = 04/14/2026 at 10:00pm
+openDate          = 10/20/2025 at 12:00am
+dueDate           = 04/20/2026 at 10:00pm
+answerDate        = 04/20/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
 problemListV2
-problem_start
-source_file = csafranski/3.4HW_prob1.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = csafranski/3.4HW_prob2.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/3.4HW_prob3.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = csafranski/3.4HW_prob4.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = csafranski/3.4HW_prob5.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = csafranski/3.4HW_prob6.pg
-problem_id = 6
-problem_end
-problem_start
-source_file = Library/UCSB/Stewart5_4_7/Stewart5_4_7_32.pg
-problem_id = 7
-problem_end
-problem_start
-source_file = Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/4_Applications_of_the_Derivative/4.7_Applied_Optimization/4.7.7.pg
-problem_id = 8
-problem_end
-problem_start
-source_file = csafranski/4.1HW_prob1.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = csafranski/4.1HW_prob2.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = csafranski/4.1HW_prob3.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/Rochester/setIntegrals3Definite/osu_in_3_1a_mo.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = csafranski/4.1HW_prob5.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = csafranski/4.1HW_prob6.pg
-problem_id = 6
-problem_end
 problem_start
 source_file = csafranski/4.2HW_prob1.pg
 problem_id = 1
