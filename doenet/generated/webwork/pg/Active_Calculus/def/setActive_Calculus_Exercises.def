@@ -1,6 +1,6 @@
-openDate          = 10/29/2025 at 12:00am
-dueDate           = 04/29/2026 at 10:00pm
-answerDate        = 04/29/2026 at 10:00pm
+openDate          = 11/03/2025 at 12:00am
+dueDate           = 05/03/2026 at 10:00pm
+answerDate        = 05/03/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
@@ -36,46 +36,6 @@ problem_end
 problem_start
 source_file = Library/Michigan/Chap5Sec3/Q25.pg
 problem_id = 8
-problem_end
-problem_start
-source_file = csafranski/5.3HW_prob1.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = csafranski/5.3HW_prob2.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q11.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q49.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q27.pg
-problem_id = 5
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q33.pg
-problem_id = 6
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q55.pg
-problem_id = 7
-problem_end
-problem_start
-source_file = Library/Michigan/Chap7Sec1/Q83.pg
-problem_id = 8
-problem_end
-problem_start
-source_file = Library/UCSB/Stewart5_5_5/Stewart5_5_5_26.pg
-problem_id = 9
-problem_end
-problem_start
-source_file = Library/UCSB/Stewart5_7_5/Stewart5_7_5_27.pg
-problem_id = 10
 problem_end
 problem_start
 source_file = csafranski/5.4HW_prob1.pg
