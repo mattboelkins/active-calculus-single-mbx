@@ -1,6 +1,6 @@
-openDate          = 11/11/2025 at 12:00am
-dueDate           = 05/11/2026 at 10:00pm
-answerDate        = 05/11/2026 at 10:00pm
+openDate          = 11/13/2025 at 12:00am
+dueDate           = 05/13/2026 at 10:00pm
+answerDate        = 05/13/2026 at 10:00pm
 paperHeaderFile   = Active_Calculus/header/Active_Calculus_Exercises.pg
 screenHeaderFile  = Active_Calculus/header/Active_Calculus_Exercises.pg
 description       = Active Calculus
@@ -51,22 +51,6 @@ problem_id = 3
 problem_end
 problem_start
 source_file = Library/Michigan/Chap7Sec5/Q13.pg
-problem_id = 4
-problem_end
-problem_start
-source_file = Library/Michigan/Chap8Sec4/Q03.pg
-problem_id = 1
-problem_end
-problem_start
-source_file = Library/Michigan/Chap8Sec4/Q19.pg
-problem_id = 2
-problem_end
-problem_start
-source_file = Library/Michigan/Chap8Sec4/Q05.pg
-problem_id = 3
-problem_end
-problem_start
-source_file = Library/Michigan/Chap8Sec4/Q07.pg
 problem_id = 4
 problem_end
 problem_start
