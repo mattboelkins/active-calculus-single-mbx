@@ -3002,6 +3002,16 @@
           </div>
         </htmlsrc>
       </question>
+      <question>
+        <label>DoenetML Interactive</label>
+        <htmlsrc>
+          <div class="ptx-runestone-container">
+            <div data-component="doenet" id="ac-single_2_doenet-interactive-exercise-6-5-6">
+              <iframe id="doenet-interactive-exercise-6-5-6" width="600" height="600" src="doenet-interactive-exercise-6-5-6-if.html"/>
+            </div>
+          </div>
+        </htmlsrc>
+      </question>
     </subchapter>
   </chapter>
   <chapter>
