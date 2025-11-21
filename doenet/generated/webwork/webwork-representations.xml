@@ -800,345 +800,15 @@ area under the graph.  Here,
     <pg source="Library/Michigan/Chap7Sec5/Q13.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-31" ww-id="webwork-31">
-    <static seed="31" source="csafranski/7.1HW_prob1.pg">
-      <statement><p>Match the graphs below with the following descriptions by indicating the
-graph corresponding to each description in the answer blank to the left
-of the description.  <em>(Note that because this is a matching
-question, it does not show which parts are incorrect.)</em></p>
-<p><ol>
-<li>
-<p>The amount of money in a savings account after an initial investment that compounds continuously over time.</p>
-</li>
-<li>
-<p>The downward speed of a parachuter who jumps from a plane, and then later deploys her parachute.</p>
-</li>
-<li>
-<p>The temperature in a house that loses heat on a very cold winter day in the northern hemisphere.</p>
-</li>
-<li>
-<p>The concentration of tree pollen in the air over the course of a year.</p>
-</li>
-<li>
-<p>The distance from the finish line of a runner waiting for the start of a race and then running at a constant speed.</p>
-</li>
-</ol></p>
-<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="medium" left="medium" right="medium" top="medium">
-<row>
-<cell><alert>A. </alert></cell>
-<cell>
-<image pi:generated="webwork/images/webwork-31-image-1.png" width="25%"/>
-</cell>
-<cell> </cell>
-<cell><alert>D. </alert></cell>
-<cell>
-<image pi:generated="webwork/images/webwork-31-image-2.png" width="25%"/>
-</cell>
-</row>
-<row>
-<cell><alert>B. </alert></cell>
-<cell>
-<image pi:generated="webwork/images/webwork-31-image-3.png" width="25%"/>
-</cell>
-<cell> </cell>
-<cell><alert>E. </alert></cell>
-<cell>
-<image pi:generated="webwork/images/webwork-31-image-4.png" width="25%"/>
-</cell>
-</row>
-<row>
-<cell><alert>C. </alert></cell>
-<cell>
-<image pi:generated="webwork/images/webwork-31-image-5.png" width="25%"/>
-<p/></cell>
-<cell> </cell>
-<cell> </cell>
-<cell> </cell>
-</row>
-</tabular>
-</statement>
-      <solution><alert>1.</alert>
-The answer is E, because
-the amount of money in the account grows exponentially.
-
-
-
-
-<alert>2.</alert>
-The answer is C, because
-the parachuter's speed will increase, then decrease after the parachute is deployed.
-
-
-
-
-<alert>3.</alert>
-The answer is D, because
-The temperature in the house will drop off at a decreasing rate, eventually approaching the (very cold) outside temperature.
-
-
-
-
-<alert>4.</alert>
-The answer is B, because
-tree pollen is seasonal, and therefore cyclical.
-
-
-
-
-<alert>5.</alert>
-The answer is A, because
-the runner is initially a constant distance away from the finish line, and then when running at a constant speed this distance decreases linearly.
-
-
-
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/7.1HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/7.1HW_prob1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
-    <static seed="32" source="Library/Michigan/Chap11Sec1/Q03.pg">
-      <statement><p>Let <m>A</m> and <m>k</m> be positive constants.</p>
-<p>Which of the given functions is a solution to <m>\frac{dy}{dt}=-k(y+A)</m>?
-<var form="buttons">
-<li>
-<p><m>y = A + C e^{-kt}</m></p>
-</li>
-<li>
-<p><m>y = A + C e^{kt}</m></p>
-</li>
-<li>
-<p><m>y = A^{-1} + C e^{-Akt}</m></p>
-</li>
-<li>
-<p><m>y = -A + C e^{-kt}</m></p>
-</li>
-<li>
-<p><m>y = A^{-1} + C e^{Akt}</m></p>
-</li>
-<li>
-<p><m>y = -A + C e^{kt}</m></p>
-</li>
-</var></p>
-</statement>
-      <solution><m>\frac{d}{dt} (-A + C e^{-kt}) = -k C e^{-kt}</m>, so
-that, plugging in, we have
-<me>-k C e^{-kt} = -k(-A + C e^{Akt} + A),</me>
-a true statement, so that the correct answer is
-<m>y = -A + C e^{-kt}</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap11Sec1/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap11Sec1/Q03.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
-    <static seed="33" source="Library/Rochester/setDiffEQ1/e7_1_3a.pg">
-      <statement><p>The family of functions <me>y = ce^{-2x} + e^{-x}</me> is solution of the equation
- <me>y' + 2y = e^{-x}.</me> 
-Find the constant <m>c</m> which defines the solution
-which also satisfies the initial condition <m>y(2)= 7</m>.</p>
-<p><m>c =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>374.797994133079</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setDiffEQ1/e7_1_3a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setDiffEQ1/e7_1_3a.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
-    <static seed="34" source="Library/Rochester/setDiffEQ1/e7_1_4a.pg">
-      <statement><p>The  functions   <me>y = x^2 + \frac{c}{x^2}</me>  are all solutions of equation:
-<me>xy' + 2y = 4x^2,\ (x \gt 0).</me>
-Find the constant <m>c</m> which produces a solution 
-which also satisfies the initial condition <m>y(8)= 3</m>.</p>
-<p><m>c =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>-3904</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setDiffEQ1/e7_1_4a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setDiffEQ1/e7_1_4a.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
-    <static seed="35" source="Library/Michigan/Chap11Sec1/Q15.pg">
-      <statement><p>Match the solutions to the differential equations.  If there
-is more than one solution to an equation, select the answer that
-includes all solutions.</p>
-<p><ol>
-<li>
-<p><m>\frac{dy}{dx}=8 y</m></p>
-</li>
-<li>
-<p><m>\frac{dy}{dx}=-8 y</m></p>
-</li>
-<li>
-<p><m>\frac{d^2y}{dx^2}=-64 y</m></p>
-</li>
-<li>
-<p><m>\frac{d^2y}{dx^2}=64 y</m></p>
-</li>
-</ol>
-<ol label="A.">
-<li>
-<p><m>y = e^{-8 x}</m></p>
-</li>
-<li>
-<p><m>y = \sin(8 x)</m></p>
-</li>
-<li>
-<p><m>y = e^{-8 x}</m> or <m>y = e^{8 x}</m></p>
-</li>
-<li>
-<p><m>y = e^{8 x}</m></p>
-</li>
-<li>
-<p><m>y = 8\sin(x)</m></p>
-</li>
-<li>
-<p><m>y = \sin(8 x)</m> or <m>y = 8\sin(x)</m></p>
-</li>
-</ol></p>
-</statement>
-      <solution><m>\frac{d}{dx} (e^{-8 x}) = -8 e^{-8 x}</m>, 
-
-
-<m>\frac{d^2}{dx^2} (e^{-8 x}) = 64 e^{-8 x}</m>, 
-
-
-<m>\frac{d}{dx} (e^{8 x}) = 8 e^{-8 x}</m>, 
-
-
-<m>\frac{d^2}{dx^2} (e^{-8 x}) = 64 e^{-8 x}</m>, 
-
-
-<m>\frac{d}{dx} (\sin(8 x)) = 8 \cos(8 x)</m>, 
-
-
-<m>\frac{d^2}{dx^2} (\sin(8 x)) = -64 \sin(8 x)</m>, 
-
-
-<m>\frac{d}{dx} (8 \sin(x)) = 8 \cos(x)</m>, and
-
-
-<m>\frac{d^2}{dx^2} (8 \sin(x)) = -8 \sin(8 x)</m>.
-
-
-
-Thus, the correct answers are: 
-
-
-<m>\frac{dy}{dx}=8 y</m> : D, 
-
-
-<m>\frac{dy}{dx}=-8 y</m> : A, 
-
-
-<m>\frac{d^2y}{dx^2}=-64 y</m> : B, and 
-
-
-<m>\frac{d^2y}{dx^2}=64 y</m> : C
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap11Sec1/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap11Sec1/Q15.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
-    <static seed="36" source="Library/Michigan/Chap11Sec1/Q05.pg">
-      <statement><p>Fill in the missing values in the table given if you know that
-<m>dy/dt=0.8 y</m>.  Assume the rate of growth given by
-<m>dy/dt</m> is approximately constant over each unit time
-interval and that the initial value of <m>y</m> is <m>8</m>.</p>
-<tabular bottom="medium" left="medium" right="medium" top="medium">
-<row>
-<cell><m>t</m></cell>
-<cell>0</cell>
-<cell>1</cell>
-<cell>2</cell>
-<cell>3</cell>
-<cell>4</cell>
-</row>
-<row>
-<cell><m>y</m></cell>
-<cell>8</cell>
-<cell><fillin characters="5" name="AnSwEr0001"/></cell>
-<cell><fillin characters="5" name="AnSwEr0002"/></cell>
-<cell><fillin characters="5" name="AnSwEr0003"/></cell>
-<cell><fillin characters="5" name="AnSwEr0004"/></cell>
-</row>
-</tabular>
-</statement>
-      <answer>
-        <p>
-          <m>14.4</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>25.92</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>46.656</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>83.9808</m>
-        </p>
-      </answer>
-      <solution><m>t=0</m> the value of <m>y</m> is 8. Since we are told
-that <m>dy/dt=0.8 y</m>, we know that at time <m>t=0</m> the
-derivative of <m>y</m> is <m>0.8 (8) = 6.4</m>. Thus as <m>t</m> goes from
-0 to 1, <m>y</m>
-will increase by 6.4, so at <m>t=1</m>, <m>y=8 + 6.4 = 14.4</m>.
-
-
-
-Likewise, at <m>t=1</m>, we get <m>{dy}/{dt} = 0.8 (14.4)=11.52</m> so that
-at <m>t=2</m>, we obtain <m>y=14.4 + 11.52 = 25.92</m>.
-
-
-
-At <m>t=2</m>, we have <m>dy/dt=0.8 (25.92)=20.736</m> so that at <m>t=3</m>, we
-obtain <m>y=25.92 + 20.736 = 46.656</m>.
-
-
-
-Continuing similarly, <m>dy/dt|_{t=3} = 37.3248</m>, so that at <m>t=4</m>
-we have <m>y = 46.656 + 37.3248 = 83.9808</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap11Sec1/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap11Sec1/Q05.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
-    <static seed="37" source="Library/Michigan/Chap11Sec2/Q01.pg">
+    <static seed="31" source="Library/Michigan/Chap11Sec2/Q01.pg">
       <statement><p>Consider the two slope fields shown, in figures 1 and 2 below.</p>
 <tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="medium" left="medium" right="medium" top="medium">
 <row>
 <cell>
-<image pi:generated="webwork/images/webwork-37-image-1.png" width="41%"/>
+<image pi:generated="webwork/images/webwork-31-image-1.png" width="41%"/>
 </cell>
 <cell>
-<image pi:generated="webwork/images/webwork-37-image-2.png" width="41%"/>
+<image pi:generated="webwork/images/webwork-31-image-2.png" width="41%"/>
 <p/></cell>
 </row>
 <row>
@@ -1150,7 +820,7 @@ we have <m>y = 46.656 + 37.3248 = 83.9808</m>.
 curves to the differential equations that generated them.  Then complete
 the following statements:</p>
 <p>For the slope field in figure 1, a solution passing through the
-point (0,-3) has a <ul form="popup" name="AnSwEr0001"><li>
+point (2,-1) has a <ul form="popup" name="AnSwEr0001"><li>
 <p>?</p>
 </li><li>
 <p>positive</p>
@@ -1162,7 +832,7 @@ point (0,-3) has a <ul form="popup" name="AnSwEr0001"><li>
 <p>undefined</p>
 </li></ul> slope.</p>
 <p>For the slope field in figure 1, a solution passing through the
-point (-3,2) has a <ul form="popup" name="AnSwEr0002"><li>
+point (-3,0) has a <ul form="popup" name="AnSwEr0002"><li>
 <p>?</p>
 </li><li>
 <p>positive</p>
@@ -1174,7 +844,7 @@ point (-3,2) has a <ul form="popup" name="AnSwEr0002"><li>
 <p>undefined</p>
 </li></ul> slope.</p>
 <p>For the slope field in figure 2, a solution passing through the
-point (2,1) has a <ul form="popup" name="AnSwEr0003"><li>
+point (2,-1) has a <ul form="popup" name="AnSwEr0003"><li>
 <p>?</p>
 </li><li>
 <p>positive</p>
@@ -1186,7 +856,7 @@ point (2,1) has a <ul form="popup" name="AnSwEr0003"><li>
 <p>undefined</p>
 </li></ul> slope.</p>
 <p>For the slope field in figure 2, a solution passing through the
-point (0,-3) has a <ul form="popup" name="AnSwEr0004"><li>
+point (0,-4) has a <ul form="popup" name="AnSwEr0004"><li>
 <p>?</p>
 </li><li>
 <p>positive</p>
@@ -1200,7 +870,7 @@ point (0,-3) has a <ul form="popup" name="AnSwEr0004"><li>
 </statement>
       <answer>
         <p>
-          <m>\text{negative}</m>
+          <m>\text{positive}</m>
         </p>
       </answer>
       <answer>
@@ -1221,20 +891,20 @@ point (0,-3) has a <ul form="popup" name="AnSwEr0004"><li>
       <solution><p>SOLUTION</p>
 <p>There are many possible solution curves that could be drawn.</p>
 <p>For the slope field in figure 1, a solution passing through the
-point (0,-3) has a negative slope.</p>
+point (2,-1) has a positive slope.</p>
 <p>For the slope field in figure 1, a solution passing through the
-point (-3,2) has a positive slope.</p>
+point (-3,0) has a positive slope.</p>
 <p>For the slope field in figure 2, a solution passing through the
-point (2,1) has a positive slope.</p>
+point (2,-1) has a positive slope.</p>
 <p>For the slope field in figure 2, a solution passing through the
-point (0,-3) has a negative slope.</p>
+point (0,-4) has a negative slope.</p>
 </solution>
     </static>
     <server-data sourceFilePath="Library/Michigan/Chap11Sec2/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec2/Q01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
-    <static seed="38" source="csafranski/7.2HW_prob2.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32" source="csafranski/7.2HW_prob2.pg">
       <statement><p>Match the following equations with their direction field.  
 	Clicking on each picture will give you an 
 	enlarged view.  While you can probably solve this problem by guessing, it is useful
@@ -1259,25 +929,25 @@ point (0,-3) has a negative slope.</p>
 </ol></p>
 <p><ol>
 <li>
-<p><m>y'= 2\sin(3x) + 1 + y</m></p>
-</li>
-<li>
 <p><m>y'= 2y - 2</m></p>
 </li>
 <li>
-<p><m>y'= y + xe^{-x} + 1</m></p>
+<p><m>\displaystyle y'= \frac{y}{x} +3\cos(2x)</m></p>
 </li>
 <li>
 <p><m>y'= 2xy + 2xe^{-x^2}</m></p>
+</li>
+<li>
+<p><m>\displaystyle y'= -\frac{(2x+y)}{(2y)}</m></p>
 </li>
 </ol></p>
 <tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="none" left="none" right="none" top="none">
 <row halign="center" valign="middle">
 <cell>
-<image pi:generated="webwork/images/webwork-38-image-1.png" width="33%"/>
+<image pi:generated="webwork/images/webwork-32-image-1.png" width="33%"/>
 </cell>
 <cell>
-<image pi:generated="webwork/images/webwork-38-image-2.png" width="33%"/>
+<image pi:generated="webwork/images/webwork-32-image-2.png" width="33%"/>
 </cell>
 </row>
 <row halign="center" valign="middle">
@@ -1286,10 +956,10 @@ point (0,-3) has a negative slope.</p>
 </row>
 <row halign="center" valign="middle">
 <cell>
-<image pi:generated="webwork/images/webwork-38-image-3.png" width="33%"/>
+<image pi:generated="webwork/images/webwork-32-image-3.png" width="33%"/>
 </cell>
 <cell>
-<image pi:generated="webwork/images/webwork-38-image-4.png" width="33%"/>
+<image pi:generated="webwork/images/webwork-32-image-4.png" width="33%"/>
 <p/></cell>
 </row>
 <row halign="center" valign="middle">
@@ -1302,13 +972,16 @@ point (0,-3) has a negative slope.</p>
     <server-data sourceFilePath="csafranski/7.2HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/7.2HW_prob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
-    <static seed="39" source="csafranski/7.2HW_prob3.pg">
-      <statement><p>Given the differential equation <m>x'(t) =  - x^4  - 6x^3  - 7x^2 + 6x + 8</m>.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
+    <static seed="33" source="csafranski/7.2HW_prob3.pg">
+      <statement><p>Given the differential equation <m>x'(t) =  - x^4  - 1x^3 + 7x^2 + 1x  - 6</m>.</p>
 <p>Use appropriate computing technology such as <url href="">sketching the graph</url> to find the equilibrium solutions.</p>
 <p>List the equilibrium solutions to this differential equation in increasing order and indicate whether or not these equilibria are stable, semi-stable, or unstable.</p>
 <p><fillin characters="10" name="AnSwEr0001"/>  <var form="popup">
 <li>
+<p>unstable</p>
+</li>
+<li>
 <p>semi-stable</p>
 </li>
 <li>
@@ -1316,37 +989,34 @@ point (0,-3) has a negative slope.</p>
 </li>
 <li>
 <p>?</p>
-</li>
-<li>
-<p>unstable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0003"/>  <var form="popup">
 <li>
-<p>semi-stable</p>
+<p>unstable</p>
 </li>
 <li>
 <p>stable</p>
 </li>
 <li>
-<p>?</p>
+<p>semi-stable</p>
 </li>
 <li>
-<p>unstable</p>
+<p>?</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0005"/>  <var form="popup">
 <li>
-<p>unstable</p>
-</li>
-<li>
-<p>stable</p>
+<p>?</p>
 </li>
 <li>
 <p>semi-stable</p>
 </li>
 <li>
-<p>?</p>
+<p>stable</p>
+</li>
+<li>
+<p>unstable</p>
 </li>
 </var></p>
 <p><fillin characters="10" name="AnSwEr0007"/>  <var form="popup">
@@ -1357,21 +1027,16 @@ point (0,-3) has a negative slope.</p>
 <p>?</p>
 </li>
 <li>
-<p>stable</p>
+<p>semi-stable</p>
 </li>
 <li>
-<p>semi-stable</p>
+<p>stable</p>
 </li>
 </var></p>
 </statement>
       <answer>
         <p>
-          <m>-4</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-2</m>
+          <m>-3</m>
         </p>
       </answer>
       <answer>
@@ -1384,53 +1049,58 @@ point (0,-3) has a negative slope.</p>
           <m>1</m>
         </p>
       </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
     </static>
     <server-data sourceFilePath="csafranski/7.2HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/7.2HW_prob3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
-    <static seed="40" source="Library/UMN/calculusStewartET/s_9_2_1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
+    <static seed="34" source="Library/UMN/calculusStewartET/s_9_2_1.pg">
       <statement><p>Consider the direction field below for a differential equation.  Use the graph to find the equilibrium solutions.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-40-image-1.png" width="66%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-34-image-1.png" width="66%"/>
 <p>Answer (separate by commas):<m>y =</m> <fillin characters="30" name="AnSwEr0001"/></p>
 <p><alert> Note: </alert> <em> You can click on the graph to enlarge the image.</em></p>
 </statement>
       <answer>
         <p>
-          <m>-1, 2</m>
+          <m>-1, 3</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/UMN/calculusStewartET/s_9_2_1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/UMN/calculusStewartET/s_9_2_1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
-    <static seed="41" source="Library/Michigan/Chap11Sec2/Q03.pg">
-      <statement><p>The slope field for the equation <m>y'=-x+y</m> is shown below</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-41-image-1.png" width="41%"/>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
+    <static seed="35" source="Library/Michigan/Chap11Sec2/Q03.pg">
+      <statement><p>The slope field for the equation <m>y'=-x-y</m> is shown below</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-35-image-1.png" width="41%"/>
 <p>On a print out of this slope field, sketch the solutions that pass
 through the points</p>
 <p><alert>(i)</alert> (0,0);</p>
-<p><alert>(ii)</alert> (-3,1); and</p>
-<p><alert>(iii)</alert> (-1,0).</p>
+<p><alert>(ii)</alert> (3,1); and</p>
+<p><alert>(iii)</alert> (1,0).</p>
 <p>From your sketch, what is the equation of the solution to the
-differential equation that passes through (-1,0)?
+differential equation that passes through (1,0)?
 (Verify that your solution is correct by substituting it into the
 differential equation.)</p>
 <p><m>y =</m> <fillin characters="15" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>x+1</m>
+          <m>-x+1</m>
         </p>
       </answer>
-      <solution><image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-41-image-2.png" width="41%"/>
+      <solution><image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-35-image-2.png" width="41%"/>
 
 
 
 
-We can guess from this that the solution through (-1,0)
-is <m>y = x+1</m>.  Plugging this into the differential equation
+We can guess from this that the solution through (1,0)
+is <m>y = -x+1</m>.  Plugging this into the differential equation
 confirms this.
 
 
@@ -1440,9 +1110,9 @@ confirms this.
     <server-data sourceFilePath="Library/Michigan/Chap11Sec2/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec2/Q03.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-42" ww-id="webwork-42">
-    <static seed="42" source="Library/Michigan/Chap11Sec3/Q03.pg">
-      <statement><p>Consider the solution of the differential equation <m>y' =  y</m> 
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
+    <static seed="36" source="Library/Michigan/Chap11Sec3/Q03.pg">
+      <statement><p>Consider the solution of the differential equation <m>y' = 4 y</m> 
 passing through <m>y(0) = 1</m>.</p>
 <p><alert>A.</alert>
 Sketch the slope field for this differential equation, and sketch the
@@ -1485,39 +1155,39 @@ Is the estimated solution an over or under estimate for the actual solution?
 </li>
 </var></p>
 <p><alert>D.</alert>
-Check that <m>y =  e^{1 x}</m> is a solution to <m>y' =  y</m>
+Check that <m>y =  e^{4 x}</m> is a solution to <m>y' = 4 y</m>
 with <m>y(0) = 1</m>.</p>
 </statement>
       <answer>
         <p>
-          <m>1.2</m>
+          <m>1.8</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.44</m>
+          <m>3.24</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.728</m>
+          <m>5.832</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2.0736</m>
+          <m>10.4976</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2.48832</m>
+          <m>18.8957</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
 A rough sketch of the slope field and solution are shown in the graph
 below. 
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-42-image-1.png" width="33%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-36-image-1.png" width="33%"/>
 
 
 
@@ -1533,23 +1203,23 @@ gives
 
 
 
-<m>y(0.2) \approx y(0) + 0.2 (1) y(0) = 1.2</m>
+<m>y(0.2) \approx y(0) + 0.2 (4) y(0) = 1.8</m>
 
 
 
-<m>y(0.4) \approx y(0.2) + 0.2 (1) y(0.2) = 1.44</m>
+<m>y(0.4) \approx y(0.2) + 0.2 (4) y(0.2) = 3.24</m>
 
 
 
-<m>y(0.6) \approx y(0.4) + 0.2 (1) y(0.4) = 1.728</m>
+<m>y(0.6) \approx y(0.4) + 0.2 (4) y(0.4) = 5.832</m>
 
 
 
-<m>y(0.8) \approx y(0.6) + 0.2 (1) y(0.6) = 2.0736</m>
+<m>y(0.8) \approx y(0.6) + 0.2 (4) y(0.6) = 10.4976</m>
 
 
 
-<m>y(1.0) \approx y(0.8) + 0.2 (1) y(0.8) = 2.48832</m>.
+<m>y(1.0) \approx y(0.8) + 0.2 (4) y(0.8) = 18.89568</m>.
 
 
 
@@ -1558,7 +1228,7 @@ gives
 A plot of the Euler approximation is shown in the graph below, in
 red.
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-42-image-2.png" width="33%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-36-image-2.png" width="33%"/>
 
 
 
@@ -1574,10 +1244,10 @@ is an under estimate for the actual solution.
     <server-data sourceFilePath="Library/Michigan/Chap11Sec3/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec3/Q03.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-43" ww-id="webwork-43">
-    <static seed="43" source="Library/Michigan/Chap11Sec3/Q09.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
+    <static seed="37" source="Library/Michigan/Chap11Sec3/Q09.pg">
       <statement><p>Use Euler's method to solve 
-<me>\frac{dB}{dt}= 0.07 B</me>
+<me>\frac{dB}{dt}= 0.03 B</me>
 with initial value <m>B=900</m> when  <m>t=0</m> .</p>
 <p><alert>A.</alert>
 <m>\Delta t = 1</m> and 1 step: 
@@ -1597,17 +1267,17 @@ parts (b) and (c) in terms of compound interest.</p>
 </statement>
       <answer>
         <p>
-          <m>963</m>
+          <m>927</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>964.1025</m>
+          <m>927.2025</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>964.673128160156</m>
+          <m>927.305271597656</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
@@ -1615,7 +1285,7 @@ With one step of <m>\Delta t = 1</m>, we have
 
 
 
-<m>B(1) \approx 900 + (1)(0.07)(900) = 963</m>.
+<m>B(1) \approx 900 + (1)(0.03)(900) = 927</m>.
 
 
 
@@ -1625,16 +1295,16 @@ With two steps of <m>\Delta t = 0.5</m>, we have
 
 
 
-<m>B(0.5) \approx 900 + (0.5)(0.07)(900) = 931.5</m>, 
+<m>B(0.5) \approx 900 + (0.5)(0.03)(900) = 913.5</m>, 
 
 
-<m>B(1) \approx 931.5 + (0.5)(0.07)(931.5) = 964.1025</m>.
+<m>B(1) \approx 913.5 + (0.5)(0.03)(913.5) = 927.2025</m>.
 
 
 
 Note that we can simplify this some: 
-<m>B(0.5) \approx (1 + \frac{0.07}{2}) (900)</m>, so that 
-<m>B(1) \approx B(0.5) + \frac{0.07}{2} B(0.5) = (1 + \frac{0.07}{2})^2 (900)</m>.
+<m>B(0.5) \approx (1 + \frac{0.03}{2}) (900)</m>, so that 
+<m>B(1) \approx B(0.5) + \frac{0.03}{2} B(0.5) = (1 + \frac{0.03}{2})^2 (900)</m>.
 
 
 
@@ -1644,43 +1314,43 @@ With four steps of <m>\Delta t = 0.25</m>, we have, following the pattern
 we saw in (B), 
 
 
-<m>B(0.25) \approx 900 + (0.25)(0.07)(900) = (1 + \frac{0.07}{4}) (900)</m>, 
+<m>B(0.25) \approx 900 + (0.25)(0.03)(900) = (1 + \frac{0.03}{4}) (900)</m>, 
 
 
-<m>B(0.5) \approx B(0.25) + (0.25)(0.07) B(0.25) = (1 + \frac{0.07}{4})^2 (900)</m>,
+<m>B(0.5) \approx B(0.25) + (0.25)(0.03) B(0.25) = (1 + \frac{0.03}{4})^2 (900)</m>,
 
 
 
-<m>B(0.75) \approx B(0.5) + (0.25)(0.07) B(0.5) = (1 + \frac{0.07}{4})^3 (900)</m>,
+<m>B(0.75) \approx B(0.5) + (0.25)(0.03) B(0.5) = (1 + \frac{0.03}{4})^3 (900)</m>,
 and
-<m>B(1) \approx B(0.75) + (0.25)(0.07) B(0.75) = (1 + \frac{0.07}{4})^4 (900)
-   = 964.673</m>.
+<m>B(1) \approx B(0.75) + (0.25)(0.03) B(0.75) = (1 + \frac{0.03}{4})^4 (900)
+   = 927.305</m>.
 
 
 
 
 <alert>D.</alert>
 In part (A), we get our approximation by making a single
-increment, <m>\Delta B</m>, where <m>\Delta B</m> is just <m>0.07 B</m>.  If we
+increment, <m>\Delta B</m>, where <m>\Delta B</m> is just <m>0.03 B</m>.  If we
 think in terms of interest, <m>\Delta B</m> is just like getting one end
-of the year interest payment.  Since <m>\Delta B</m> is 0.07 times the
-balance <m>B</m>, it is like getting 63 dollars.
+of the year interest payment.  Since <m>\Delta B</m> is 0.03 times the
+balance <m>B</m>, it is like getting 27 dollars.
 
 
 
 
 Part (B) is equivalent to computing the final amount in an
-account that begins with 900 dollars and earns 63 dollars 
+account that begins with 900 dollars and earns 27 dollars 
 twice annually.  Each step is like computing the interest after
 6 months.  When <m>t=0.5</m>, for example, the interest is
-<m>\Delta B=(0.07 B)\cdot\frac{1}{2}</m>, and we add this to 900 dollars 
+<m>\Delta B=(0.03 B)\cdot\frac{1}{2}</m>, and we add this to 900 dollars 
 to get the new balance.
 
 
 
 
 Similarly, part (C) is equivalent to the final amount in an account
-that has an initial balance of 900 dollars and earns 63 dollars
+that has an initial balance of 900 dollars and earns 27 dollars
 compounded quarterly.
 
 
@@ -1690,10 +1360,10 @@ compounded quarterly.
     <server-data sourceFilePath="Library/Michigan/Chap11Sec3/Q09.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec3/Q09.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-44" ww-id="webwork-44">
-    <static seed="44" source="Library/Michigan/Chap11Sec3/Q05.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
+    <static seed="38" source="Library/Michigan/Chap11Sec3/Q05.pg">
       <statement><p>Consider the differential equation
-<me>\frac{dy}{dx} = 7 x,</me>
+<me>\frac{dy}{dx} = 3 x,</me>
 with initial condition <m>y(0) = 5</m>.</p>
 <p><alert>A.</alert>
 Use Euler's method with two steps to estimate  <m>y</m>  when  <m>x=1</m>:</p>
@@ -1722,27 +1392,27 @@ with four)?</p>
 </statement>
       <answer>
         <p>
-          <m>6.75</m>
+          <m>5.75</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>7.625</m>
+          <m>6.125</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>5+3.5x^{2}</m>
+          <m>5+1.5x^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.75</m>
+          <m>0.75</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.875</m>
+          <m>0.375</m>
         </p>
       </answer>
       <answer>
@@ -1759,11 +1429,11 @@ Euler's method with two steps uses <m>\Delta x = 0.5</m>, so we have
 
 
 
-<m>y(0.5) \approx y(0) + 0.5 ( 7 (0) ) = 5</m>, and
+<m>y(0.5) \approx y(0) + 0.5 ( 3 (0) ) = 5</m>, and
 
 
 
-<m>y(1) \approx y(0.5) + 0.5 ( 7 (0.5) ) = 5 + 1.75 = 6.75</m>.
+<m>y(1) \approx y(0.5) + 0.5 ( 3 (0.5) ) = 5 + 0.75 = 5.75</m>.
 
 
 
@@ -1776,27 +1446,27 @@ Similarly, with four steps <m>\Delta x = 0.25</m>, so
 
 
 
-<m>y(0.25) \approx y(0) + 0.25 ( 7 (0) ) = 5</m>, 
+<m>y(0.25) \approx y(0) + 0.25 ( 3 (0) ) = 5</m>, 
 
 
 
-<m>y(0.5) \approx y(0.25) + 0.25 (7 (0.25)) = 5.4375</m>,
+<m>y(0.5) \approx y(0.25) + 0.25 (3 (0.25)) = 5.1875</m>,
 
 
 
-<m>y(0.75) \approx y(0.5) + 0.25 (7 (0.5)) = 6.3125</m>,
+<m>y(0.75) \approx y(0.5) + 0.25 (3 (0.5)) = 5.5625</m>,
 
 
 
-<m>y(1) \approx y(0.75) + 0.25 (7 (0.75)) = 7.625</m>,
+<m>y(1) \approx y(0.75) + 0.25 (3 (0.75)) = 6.125</m>,
 
 
 
 
 <alert>B.</alert>
 We can just integrate to find the solution to the differential
-equation: <m>y = \frac{7}{2} x^2 + C</m>.  For <m>y(0) = 5</m>, we must 
-have <m>y = \frac{7}{2} x^2 + 5</m>.
+equation: <m>y = \frac{3}{2} x^2 + C</m>.  For <m>y(0) = 5</m>, we must 
+have <m>y = \frac{3}{2} x^2 + 5</m>.
 
 
 
@@ -1804,16 +1474,16 @@ have <m>y = \frac{7}{2} x^2 + 5</m>.
 <alert>C.</alert>
 The error in the two Euler approximations is just the difference
 between the estimates for <m>y(1)</m> and the exact value.  That is, the
-difference between 6.75 and 8.5, and between 7.625 and 8.5.  Thus,
+difference between 5.75 and 6.5, and between 6.125 and 6.5.  Thus,
 taking the magnitude of the differences,
 
 
 
-Error in Euler with two steps = 1.75, and
+Error in Euler with two steps = 0.75, and
 
 
 
-Error in Euler with four steps = 0.875.
+Error in Euler with four steps = 0.375.
 
 
 
@@ -1830,8 +1500,8 @@ with two steps should be twice as big as that with four), which it is.
     <server-data sourceFilePath="Library/Michigan/Chap11Sec3/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec3/Q05.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-45" ww-id="webwork-45">
-    <static seed="45" source="Library/Michigan/Chap11Sec3/Q01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
+    <static seed="39" source="Library/Michigan/Chap11Sec3/Q01.pg">
       <statement><p>Consider the differential equation <m>y'=-x-y</m>.</p>
 <p>Use Euler's method with <m>\Delta x=0.1</m> to estimate <m>y</m>
 when <m>x=1.4</m> for the solution curve satisfying</p>
@@ -1967,42 +1637,42 @@ happens to lie on a linear solution to the differential equation
     <server-data sourceFilePath="Library/Michigan/Chap11Sec3/Q01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec3/Q01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-46" ww-id="webwork-46">
-    <static seed="46" source="Library/Rochester/setDiffEQ2DirectionFields/ur_de_2_6.pg">
-      <statement><p>Use Euler's method with step size <m>0.4</m> to estimate <m>y(2)</m>, 
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
+    <static seed="40" source="Library/Rochester/setDiffEQ2DirectionFields/ur_de_2_6.pg">
+      <statement><p>Use Euler's method with step size <m>0.2</m> to estimate <m>y(1)</m>, 
 where <m>y(x)</m> is the solution of the initial-value problem 
-<me>y' = -2 x + y^2, \ \ \ y(0)=0.</me></p>
-<p><m>y(2)=</m> <fillin characters="10" name="AnSwEr0001"/>.</p>
+<me>y' = -3 x + y^2, \ \ \ y(0)=-1.</me></p>
+<p><m>y(1)=</m> <fillin characters="10" name="AnSwEr0001"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>-1.8710842407845</m>
+          <m>-1.33922076360117</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ2DirectionFields/ur_de_2_6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ2DirectionFields/ur_de_2_6.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-47" ww-id="webwork-47">
-    <static seed="47" source="Library/FortLewis/DiffEq/1-First-order/03-Separable/Lebl-1-3-02.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
+    <static seed="41" source="Library/FortLewis/DiffEq/1-First-order/03-Separable/Lebl-1-3-02.pg">
       <statement><p>Find the equation of the solution to 
 <m>\displaystyle \frac{dy}{dx} = x^{7} y</m>
-through the point <m>(x,y) = (1,2)</m>.</p>
+through the point <m>(x,y) = (1,4)</m>.</p>
 <p><fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>y = \frac{2}{e^{\frac{1}{8}}}e^{\frac{x^{8}}{8}}</m>
+          <m>y = \frac{4}{e^{\frac{1}{8}}}e^{\frac{x^{8}}{8}}</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/FortLewis/DiffEq/1-First-order/03-Separable/Lebl-1-3-02.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/FortLewis/DiffEq/1-First-order/03-Separable/Lebl-1-3-02.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-48" ww-id="webwork-48">
-    <static seed="48" source="csafranski/7.4HW_prob2.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-42" ww-id="webwork-42">
+    <static seed="42" source="csafranski/7.4HW_prob2.pg">
       <statement><p>Solve the differential equation
-<me>\frac{dy}{dx} = \frac{x}{9 y}.</me></p>
+<me>\frac{dy}{dx} = \frac{x}{25 y}.</me></p>
 <p><ol label="a.">
 <li>
 <p>Find an implicit solution and put your answer 
@@ -2011,12 +1681,12 @@ in the following form:
 </li>
 <li>
 <p>Find the equation of the solution through
-the point <m>(x,y) = (-3,1)</m>.  Your equation must describe a single curve <m>y=f(x)</m> with the domain of <m>f</m> as large as possible. 
+the point <m>(x,y) = (5,1)</m>.  Your equation must describe a single curve <m>y=f(x)</m> with the domain of <m>f</m> as large as possible. 
 <fillin characters="21" name="AnSwEr0002"/></p>
 </li>
 <li>
 <p>Find the equation of the solution through
-the point <m>(x,y) = (0,-3)</m>.  Your answer should 
+the point <m>(x,y) = (0,-6)</m>.  Your answer should 
 be of the form <m>y = f(x)</m>. 
 <fillin characters="21" name="AnSwEr0003"/></p>
 </li>
@@ -2024,44 +1694,44 @@ be of the form <m>y = f(x)</m>.
 </statement>
       <answer>
         <p>
-          <m>y^{2}-\left(\frac{x}{3}\right)^{2}</m>
+          <m>y^{2}-\left(\frac{x}{5}\right)^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>x+3y = 0</m>
+          <m>5y-x = 0</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>y = -\sqrt{\left(\frac{x}{3}\right)^{2}+9}</m>
+          <m>y = -\sqrt{\left(\frac{x}{5}\right)^{2}+36}</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="csafranski/7.4HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/7.4HW_prob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-49" ww-id="webwork-49">
-    <static seed="49" source="Library/Michigan/Chap11Sec4/Q13.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-43" ww-id="webwork-43">
+    <static seed="43" source="Library/Michigan/Chap11Sec4/Q13.pg">
       <statement><p>Find the solution to the differential equation
-<me>\frac{dy}{dt} = 0.4 (y - 100)</me>
-if <m>y=35</m> when <m>t=0</m>.</p>
+<me>\frac{dy}{dt} = 0.7 (y - 100)</me>
+if <m>y=60</m> when <m>t=0</m>.</p>
 <p><m>y =</m> <fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>-65e^{0.4t}+100</m>
+          <m>-40e^{0.7t}+100</m>
         </p>
       </answer>
-      <solution><me>\int\frac{dy}{y-100} = \int 0.4 dt,</me>
+      <solution><me>\int\frac{dy}{y-100} = \int 0.7 dt,</me>
 so
-<me>\ln|y-100| = 0.4 t +C.</me>
+<me>\ln|y-100| = 0.7 t +C.</me>
 Solving for <m>y</m>,
-<me>y = 100 + A e^{0.4 t},</me>
+<me>y = 100 + A e^{0.7 t},</me>
 where <m>A = \pm e^C</m>.
-The initial condition, <m>y(0)=35</m>, gives
-<m>35 = 100 + A</m>, so <m>A = 65</m>, and 
-<me>y= 100 - 65 e^{0.4 t}.</me>
+The initial condition, <m>y(0)=60</m>, gives
+<m>60 = 100 + A</m>, so <m>A = 40</m>, and 
+<me>y= 100 - 40 e^{0.7 t}.</me>
 
 
 
@@ -2070,31 +1740,31 @@ The initial condition, <m>y(0)=35</m>, gives
     <server-data sourceFilePath="Library/Michigan/Chap11Sec4/Q13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec4/Q13.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-50" ww-id="webwork-50">
-    <static seed="50" source="Library/Michigan/Chap11Sec4/Q23.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-44" ww-id="webwork-44">
+    <static seed="44" source="Library/Michigan/Chap11Sec4/Q23.pg">
       <statement><p>Find the solution to the differential equation
-<me>\frac{dy}{dt} = y^2(5 + t),</me>
+<me>\frac{dy}{dt} = y^2(7 + t),</me>
 <m>y=7</m> when <m>t=1</m>.</p>
 <p><m>y =</m> <fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>\frac{14}{2+\left(1-t\right)\mathopen{}\left(11+t\right)\cdot 7}</m>
+          <m>\frac{14}{2+\left(1-t\right)\mathopen{}\left(15+t\right)\cdot 7}</m>
         </p>
       </answer>
-      <solution><me>\frac{dy}{y^2} = (5 + t)\,dt,</me>
+      <solution><me>\frac{dy}{y^2} = (7 + t)\,dt,</me>
 so
-<me>\int \frac{dy}{y^2} = \int (5 + t)\,dt,</me>
+<me>\int \frac{dy}{y^2} = \int (7 + t)\,dt,</me>
 and
-<me>-\frac{1}{y} = {1\over2}(5 + t)^2 + C,</me>
+<me>-\frac{1}{y} = {1\over2}(7 + t)^2 + C,</me>
 giving
-<me>y=-\frac{2}{(5 + t)^2 + A},</me>
+<me>y=-\frac{2}{(7 + t)^2 + A},</me>
 where <m>A = 2C</m>.  Since <m>y=7</m> when <m>t=1</m>, we have
-<me>7 = -\frac{2}{6^2 + A},\quad \hbox{ so } \quad 
-  7 A + 252 = -2,</me>
-and <m>A = -{{254\over7}}</m>. 
+<me>7 = -\frac{2}{8^2 + A},\quad \hbox{ so } \quad 
+  7 A + 448 = -2,</me>
+and <m>A = -{{450\over7}}</m>. 
 Thus
-<me>y = -\frac{2}{(5 + t)^2 - {{254\over7}}}.</me>
+<me>y = -\frac{2}{(7 + t)^2 - {{450\over7}}}.</me>
 
 
 
@@ -2103,45 +1773,45 @@ Thus
     <server-data sourceFilePath="Library/Michigan/Chap11Sec4/Q23.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec4/Q23.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-51" ww-id="webwork-51">
-    <static seed="51" source="Library/Rochester/setDiffEQ3Separable/jas7_4_5a.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-45" ww-id="webwork-45">
+    <static seed="45" source="Library/Rochester/setDiffEQ3Separable/jas7_4_5a.pg">
       <statement><p>Solve the separable differential equation for <m>u</m>  
-<me>\frac{du}{dt} = e^{3 u + 7 t}.</me> 
-Use the following initial condition: <m>u(0) = 2.</m></p>
+<me>\frac{du}{dt} = e^{4 u + 10 t}.</me> 
+Use the following initial condition: <m>u(0) = 10.</m></p>
 <p><m>u =</m> <fillin characters="45" name="AnSwEr0001"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{-\ln\mathopen{}\left(e^{-2\cdot 3}+\frac{3}{7}-\frac{3}{7}e^{7t}\right)}{3}</m>
+          <m>\frac{-\ln\mathopen{}\left(e^{-10\cdot 4}+\frac{4}{10}-\frac{4}{10}e^{10t}\right)}{4}</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ3Separable/jas7_4_5a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ3Separable/jas7_4_5a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-52" ww-id="webwork-52">
-    <static seed="52" source="Library/Rochester/setDiffEQ3Separable/ns7_4_13a.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-46" ww-id="webwork-46">
+    <static seed="46" source="Library/Rochester/setDiffEQ3Separable/ns7_4_13a.pg">
       <statement><p>Find an equation of the curve that satisfies 
-<me>\frac{dy}{dx} = 80 yx^{9}</me> 
+<me>\frac{dy}{dx} = 36 yx^{17}</me> 
 and whose <m>y</m>-intercept is <m>2</m>.</p>
 <p><m>y(x) =</m> <fillin characters="40" name="AnSwEr0001"/>.</p>
 </statement>
       <answer>
         <p>
-          <m>2\exp\mathopen{}\left(8x^{10}\right)</m>
+          <m>2\exp\mathopen{}\left(2x^{18}\right)</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ3Separable/ns7_4_13a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ3Separable/ns7_4_13a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-53" ww-id="webwork-53">
-    <static seed="53" source="Library/Utah/Calculus_II/set11_Conics_and_Polar_Coordinates/set11_pr7.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-47" ww-id="webwork-47">
+    <static seed="47" source="Library/Utah/Calculus_II/set11_Conics_and_Polar_Coordinates/set11_pr7.pg">
       <statement><p>Suppose that we use Euler's method to approximate the
 solution to the differential equation
-<me>\frac{dy}{dx}= \frac{x^5}{y};\qquad y( 0.5) = 7.</me>
-Let <m>f(x,y) = x^5/y.</m></p>
-<p>We let <m>x_0 = 0.5</m> and <m>y_0 = 7</m> and pick a step size <m>h=0.2 .</m></p>
+<me>\frac{dy}{dx}= \frac{x^2}{y};\qquad y( 0.1) = 7.</me>
+Let <m>f(x,y) = x^2/y.</m></p>
+<p>We let <m>x_0 = 0.1</m> and <m>y_0 = 7</m> and pick a step size <m>h=0.2 .</m></p>
 <p>Euler's method is the the following algorithm. From <m>x_n</m> and <m>y_n ,</m>
 our approximations to the solution of the differential
 equation at the nth stage,
@@ -2156,7 +1826,7 @@ we find the next stage by computing
 </row>
 <row>
 <cell><m>0</m></cell>
-<cell><m>0.5</m></cell>
+<cell><m>0.1</m></cell>
 <cell><m>7</m></cell>
 </row>
 <row>
@@ -2187,9 +1857,29 @@ we find the next stage by computing
 </tabular>
 <p>The exact solution can also be found using separation of variables. It is</p>
 <p><m>y(x)=</m> <fillin characters="60" name="AnSwEr0011"/></p>
-<p>Thus the actual value of the function at the point <m>x=1.5</m></p>
-<p><m>y(1.5 ) =</m> <fillin characters="20" name="AnSwEr0012"/>.</p>
+<p>Thus the actual value of the function at the point <m>x=1.1</m></p>
+<p><m>y(1.1 ) =</m> <fillin characters="20" name="AnSwEr0012"/>.</p>
 </statement>
+      <answer>
+        <p>
+          <m>0.3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7.0002857</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>0.5</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>7.002857</m>
+        </p>
+      </answer>
       <answer>
         <p>
           <m>0.7</m>
@@ -2197,7 +1887,7 @@ we find the next stage by computing
       </answer>
       <answer>
         <p>
-          <m>7.0008929</m>
+          <m>7.009997</m>
         </p>
       </answer>
       <answer>
@@ -2207,7 +1897,7 @@ we find the next stage by computing
       </answer>
       <answer>
         <p>
-          <m>7.0056942</m>
+          <m>7.023977</m>
         </p>
       </answer>
       <answer>
@@ -2217,48 +1907,28 @@ we find the next stage by computing
       </answer>
       <answer>
         <p>
-          <m>7.0225517</m>
+          <m>7.0470409</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.3</m>
+          <m>\sqrt{\frac{2x^{3}}{3}+2\cdot 24.4996667}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>7.0684185</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>7.1734754</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\sqrt{\frac{2x^{6}}{6}+2\cdot 24.4973958}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>7.2657874</m>
+          <m>7.0630494</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Utah/Calculus_II/set11_Conics_and_Polar_Coordinates/set11_pr7.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Utah/Calculus_II/set11_Conics_and_Polar_Coordinates/set11_pr7.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-54" ww-id="webwork-54">
-    <static seed="54" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31a.pg">
-      <statement><p>A tank contains <m>2960</m> L of  pure water.  A solution
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-48" ww-id="webwork-48">
+    <static seed="48" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31a.pg">
+      <statement><p>A tank contains <m>1620</m> L of  pure water.  A solution
 that contains <m>0.04</m> kg of sugar per liter enters the 
-tank at the rate <m>4</m> L/min. The solution is mixed and drains
+tank at the rate <m>8</m> L/min. The solution is mixed and drains
 from the tank at the same rate.</p>
 <p>(a) How much sugar is in the tank at the beginning?</p>
 <p><m>y(0) =</m> <fillin characters="5" name="AnSwEr0001"/> (include units)</p>
@@ -2269,8 +1939,8 @@ differential equation which models this situation.</p>
 Don't enter units for this function.</p>
 <p>(c) Find the amount of sugar (in kg) after t  minutes.</p>
 <p><m>S(t) =</m> <fillin characters="40" name="AnSwEr0003"/>  (function of t)</p>
-<p>(d) Find the amount of the sugar after 42 minutes.</p>
-<p><m>S(42)=</m> <fillin characters="40" name="AnSwEr0004"/> (include <url href=""/>)</p>
+<p>(d) Find the amount of the sugar after 84 minutes.</p>
+<p><m>S(84)=</m> <fillin characters="40" name="AnSwEr0004"/> (include <url href=""/>)</p>
 </statement>
       <answer>
         <p>
@@ -2279,135 +1949,135 @@ Don't enter units for this function.</p>
       </answer>
       <answer>
         <p>
-          <m>0.16-4\frac{S}{2960}</m>
+          <m>0.32-8\frac{S}{1620}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>118.4\mathopen{}\left(1-e^{-0.0013514t}\right)</m>
+          <m>64.8\mathopen{}\left(1-e^{-0.0049383t}\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>6.5329\ {\rm kg}</m>
+          <m>22.002\ {\rm kg}</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-55" ww-id="webwork-55">
-    <static seed="55" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31c.pg">
-      <statement><p>A tank contains <m>50</m> kg of salt and <m>2000</m> L of water. A solution of a concentration <m>0.0125</m> kg of salt per
-liter enters a tank at the rate <m>9</m> L/min. The solution is mixed and drains from the tank at the same rate.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-49" ww-id="webwork-49">
+    <static seed="49" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31c.pg">
+      <statement><p>A tank contains <m>70</m> kg of salt and <m>1000</m> L of water. A solution of a concentration <m>0.035</m> kg of salt per
+liter enters a tank at the rate <m>6</m> L/min. The solution is mixed and drains from the tank at the same rate.</p>
 <p>(a) What is the concentration of our solution in the tank initially?</p>
 <p>concentration = <fillin characters="20" name="AnSwEr0001"/> (kg/L)</p>
-<p>(b) Find the amount of salt in the tank after 5 hours.</p>
+<p>(b) Find the amount of salt in the tank after 3.5 hours.</p>
 <p>amount =  <fillin characters="20" name="AnSwEr0002"/> (kg)</p>
 <p>(c) Find the concentration of salt in the solution in the tank as time approaches infinity.</p>
 <p>concentration =  <fillin characters="20" name="AnSwEr0003"/> (kg/L)</p>
 </statement>
       <answer>
         <p>
-          <m>0.025</m>
+          <m>0.07</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>31.4810065161473</m>
+          <m>44.927890927492</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.0125</m>
+          <m>0.035</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31c.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_4_31c.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-56" ww-id="webwork-56">
-    <static seed="56" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_3.pg">
-      <statement><p>A bacteria culture starts with <m>280</m> bacteria and grows at a rate
-proportional to its size.  After <m>5</m> hours there will be <m>1400</m> bacteria.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-50" ww-id="webwork-50">
+    <static seed="50" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_3.pg">
+      <statement><p>A bacteria culture starts with <m>580</m> bacteria and grows at a rate
+proportional to its size.  After <m>5</m> hours there will be <m>2900</m> bacteria.</p>
 <p>(a) Express the population after <m>t</m> hours as a function of <m>t</m>.</p>
 <p>population: <fillin characters="40" name="AnSwEr0001"/> (function of t)</p>
-<p>(b) What will be the population after <m>2</m> hours?</p>
+<p>(b) What will be the population after <m>6</m> hours?</p>
 <p><fillin characters="40" name="AnSwEr0002"/></p>
-<p>(c) How long will it take for the population to reach <m>2330</m> ?</p>
+<p>(c) How long will it take for the population to reach <m>1650</m> ?</p>
 <p><fillin characters="40" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>280\cdot 2.71828^{0.321888t}</m>
+          <m>580\cdot 2.71828^{0.321888t}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>533.023102840446</m>
+          <m>4001.21601823752</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>6.58252774779609</m>
+          <m>3.24803602325035</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-57" ww-id="webwork-57">
-    <static seed="57" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_10.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-51" ww-id="webwork-51">
+    <static seed="51" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_10.pg">
       <statement><p>An unknown radioactive element decays into non-radioactive substances.
-In <m>380</m> days the radioactivity of a sample decreases by <m>62</m> percent.</p>
+In <m>680</m> days the radioactivity of a sample decreases by <m>57</m> percent.</p>
 <p>(a) What is the half-life of the element?</p>
 <p>half-life:  <fillin characters="30" name="AnSwEr0001"/>  (days)</p>
-<p>(b) How long will it take for a sample of <m>100</m> mg to decay to <m>72</m> mg?</p>
+<p>(b) How long will it take for a sample of <m>100</m> mg to decay to <m>42</m> mg?</p>
 <p>time needed: <fillin characters="40" name="AnSwEr0002"/> (days)</p>
 </statement>
       <answer>
         <p>
-          <m>272.22021185118</m>
+          <m>558.479618378261</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>129.013648490731</m>
+          <m>698.958892977506</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ns7_5_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-58" ww-id="webwork-58">
-    <static seed="58" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ur_de_5_1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-52" ww-id="webwork-52">
+    <static seed="52" source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ur_de_5_1.pg">
       <statement><p>A young person with no initial capital invests <m>k</m> dollars per year in a retirement account at an annual rate of 
-return <m>0.06</m>.  Assume that investments are made continuously and that the return is compounded continuously.</p>
+return <m>0.09</m>.  Assume that investments are made continuously and that the return is compounded continuously.</p>
 <p>Determine a formula for the sum <m>S(t)</m> -- (this will involve the parameter <m>k</m>):</p>
 <p><m>S(t) =</m> <fillin characters="60" name="AnSwEr0001"/></p>
-<p>What value of <m>k</m> will  provide <m>4767000</m> dollars in <m>41</m> years?</p>
+<p>What value of <m>k</m> will  provide <m>2711000</m> dollars in <m>48</m> years?</p>
 <p><m>k =</m>  <fillin characters="40" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>\frac{k}{0.06}\mathopen{}\left(\exp\mathopen{}\left(0.06t\right)-1\right)</m>
+          <m>\frac{k}{0.09}\mathopen{}\left(\exp\mathopen{}\left(0.09t\right)-1\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>26718.8262896323</m>
+          <m>3288.77896272189</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ur_de_5_1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setDiffEQ5ModelingWith1stOrder/ur_de_5_1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-59" ww-id="webwork-59">
-    <static seed="59" source="Library/Michigan/Chap11Sec7/Q03.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-53" ww-id="webwork-53">
+    <static seed="53" source="Library/Michigan/Chap11Sec7/Q03.pg">
       <statement><p>The slope field for a population <m>P</m> modeled by
-<m>dP/dt = 4 P - 4 P^2</m> is shown in the
+<m>dP/dt = 7.5 P - 5 P^2</m> is shown in the
 figure below.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-59-image-1.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-53-image-1.png" width="41%"/>
 <p><alert>(a)</alert>
 On a print-out of the slope field, sketch three non-zero solution curves
 showing different types of behavior for the population <m>P</m>.
@@ -2461,93 +2131,93 @@ explains the shape of solution curves to the differential equation.</p>
 </statement>
       <answer>
         <p>
-          <m>0.5</m>
+          <m>0.75</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1</m>
+          <m>1.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2</m>
+          <m>2.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1</m>
+          <m>1.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\left(0,1\right)</m>
+          <m>\left(0,1.5\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\left(1,\infty \right)</m>
+          <m>\left(1.5,\infty \right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1</m>
+          <m>1.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.5</m>
+          <m>0.75</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\left(0,1\right)</m>
+          <m>\left(0,1.5\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\left(1,\infty \right)</m>
+          <m>\left(1.5,\infty \right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0, 1</m>
+          <m>0, 1.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{1}{2}</m>
+          <m>\frac{1.5}{2}</m>
         </p>
       </answer>
-      <solution><image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-59-image-2.png" width="41%"/>
+      <solution><image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-53-image-2.png" width="41%"/>
 
 
 
 
 Thus we get different solution behaviors for the initial conditions
-<m>P(0) = 1</m>, <m>P(0) &gt; 1</m>, and <m>0 \lt  P(0) \lt  1</m>.  The initial
+<m>P(0) = 1.5</m>, <m>P(0) &gt; 1.5</m>, and <m>0 \lt  P(0) \lt  1.5</m>.  The initial
 condition <m>P(0) = 0</m> gives the zero solution, which is an equilibrium
-and has the same behavior as the initial condition <m>P(0) = 1</m>.  Note
+and has the same behavior as the initial condition <m>P(0) = 1.5</m>.  Note
 that we can also say that the behavior for initial conditions
-<m>0 \lt  P(0) \lt  0.5</m> is different from that for initial conditions
-<m>0.5 \le P(0) \lt  1</m>, because the former will be sigmoidal while
+<m>0 \lt  P(0) \lt  0.75</m> is different from that for initial conditions
+<m>0.75 \le P(0) \lt  1.5</m>, because the former will be sigmoidal while
 the latter are strictly exponential.
 
 
 
 
 From the solutions graphed above, or by looking at the slope field,
-we can see that the equilibrium solution <m>P = 1</m> is stable.  The
+we can see that the equilibrium solution <m>P = 1.5</m> is stable.  The
 other equilibrium solution, <m>P = 0</m> is unstable.
 
 
 
 
 Also by looking at the solution curves, we can see that <m>P</m> is
-increasing when <m>0 \lt  P \lt  1</m> and decreasing when <m>P &gt; 1</m>.
+increasing when <m>0 \lt  P \lt  1.5</m> and decreasing when <m>P &gt; 1.5</m>.
 In the long run, we're most likely to start with a non-zero population
-and thus <m>P\to 1</m>.  The solution curves with initial populations
-of less than <m>P= 0.5</m> have inflection points at <m>P=0.5</m>. (This will
+and thus <m>P\to 1.5</m>.  The solution curves with initial populations
+of less than <m>P= 0.75</m> have inflection points at <m>P=0.75</m>. (This will
 be demonstrated algebraically below.)  At the inflection point,
 the population is growing fastest.
 
@@ -2559,33 +2229,33 @@ A graph of <m>dP/dt</m> against <m>P</m> is shown below.
 
 
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-59-image-3.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-53-image-3.png" width="41%"/>
 
 
 
 
-Since <m>\frac{dP}{dt}=4 P - 4 P^2 = 4 P(1 - P)</m>, the graph of
+Since <m>\frac{dP}{dt}=7.5 P - 5 P^2 = 5 P(1.5 - P)</m>, the graph of
 <m>\frac{dP}{dt}</m> against <m>P</m> is a parabola, opening downward with
-<m>P</m> intercepts at 0 and 1.
-The quantity <m>\frac{dP}{dt}</m> is positive for <m>0 \lt  P \lt  1</m>,
-negative for <m>P &gt; 1</m> (and <m>P \lt  0</m>).  The quantity
+<m>P</m> intercepts at 0 and 1.5.
+The quantity <m>\frac{dP}{dt}</m> is positive for <m>0 \lt  P \lt  1.5</m>,
+negative for <m>P &gt; 1.5</m> (and <m>P \lt  0</m>).  The quantity
 <m>\frac{dP}{dt}</m> is 0 at <m>P=0</m> and <m>P=</m>, and maximum
-at <m>P=0.5</m>.
-The fact that <m>\frac{dP}{dt} =0</m> at <m>P=0</m> and <m>P=1</m> tells us that
+at <m>P=0.75</m>.
+The fact that <m>\frac{dP}{dt} =0</m> at <m>P=0</m> and <m>P=1.5</m> tells us that
 these are equilibria.  Further, since <m>\frac{dP}{dt}&gt; 0</m> for <m>0 \lt  P
-\lt  1</m>, we see that solution curves starting here will increase toward
-<m>P=1</m>.
+\lt  1.5</m>, we see that solution curves starting here will increase toward
+<m>P=1.5</m>.
 
 
 
 
-If the population starts at a value <m>P\lt 0.5</m>, it increases at
-an increasing rate up to <m>P=0.5</m>.  After this, <m>P</m> continues
+If the population starts at a value <m>P\lt 0.75</m>, it increases at
+an increasing rate up to <m>P=0.75</m>.  After this, <m>P</m> continues
 to increase, but at a decreasing rate.  The fact that <m>\frac{dP}{dt}</m>
-has a maximum at <m>P=0.5</m> tells us that there is a point of
-inflection when <m>P=0.5</m>.  Similarly, since <m>\frac{dP}{dt} \lt  0</m> for
-<m>P &gt; 1</m>, solution curves starting with <m>P &gt; 1</m> will decrease to <m>P =
-1</m>.  Thus, <m>P=1</m> is a stable equilibrium.
+has a maximum at <m>P=0.75</m> tells us that there is a point of
+inflection when <m>P=0.75</m>.  Similarly, since <m>\frac{dP}{dt} \lt  0</m> for
+<m>P &gt; 1.5</m>, solution curves starting with <m>P &gt; 1</m> will decrease to <m>P =
+1.5</m>.  Thus, <m>P=1.5</m> is a stable equilibrium.
 
 
 
@@ -2594,8 +2264,8 @@ inflection when <m>P=0.5</m>.  Similarly, since <m>\frac{dP}{dt} \lt  0</m> for
     <server-data sourceFilePath="Library/Michigan/Chap11Sec7/Q03.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec7/Q03.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-60" ww-id="webwork-60">
-    <static seed="60" source="Library/Michigan/Chap11Sec7/Q05.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-54" ww-id="webwork-54">
+    <static seed="54" source="Library/Michigan/Chap11Sec7/Q05.pg">
       <statement><p>The table below gives the percentage, <m>P</m>, of households
 with a VCR, as a function of year.</p>
 <tabular bottom="medium" left="medium" right="medium" top="medium">
@@ -2805,14 +2475,14 @@ and the limiting value is 75.
     <server-data sourceFilePath="Library/Michigan/Chap11Sec7/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec7/Q05.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-61" ww-id="webwork-61">
-    <static seed="61" source="Library/Michigan/Chap11Sec7/Q09.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-55" ww-id="webwork-55">
+    <static seed="55" source="Library/Michigan/Chap11Sec7/Q09.pg">
       <statement><p>The total number of people infected with a virus often grows like a
-logistic curve.  Suppose that 25 people originally have the
+logistic curve.  Suppose that 10 people originally have the
 virus, and that in the early stages of the virus (with time, <m>t</m>,
 measured in weeks), the number of people infected is increasing
 exponentially with <m>k=2</m>.  It is estimated that, in the long run,
-approximately 4750 people become infected.</p>
+approximately 6750 people become infected.</p>
 <p><alert>(a)</alert>
 Use this information to find a logistic function to model this
 situation.</p>
@@ -2826,12 +2496,12 @@ vertical coordinate at this point?</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{4750}{1+\frac{\left(4750-25\right)e^{-2t}}{25}}</m>
+          <m>\frac{6750}{1+\frac{\left(6750-10\right)e^{-2t}}{10}}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{4750}{2}</m>
+          <m>\frac{6750}{2}</m>
         </p>
       </answer>
       <solution><alert>(a)</alert>
@@ -2841,16 +2511,16 @@ where <m>C=(L-P_0)/P_0</m> and <m>P</m> is the number of people infected by
 the virus at a particular time <m>t</m>. We know that <m>L</m> is the limiting
 value, or the maximal number of people infected with the virus, so
 in our case
-<me>L=4750.</me>
-We are also told that initially there are only 25 people infected
+<me>L=6750.</me>
+We are also told that initially there are only 10 people infected
 with the virus so that we get
-<m>P_0=25.</m>
+<m>P_0=10.</m>
 Thus we have
-<me>C = \frac{L-P_0}{P_0} = \frac{4750-25}{25} = 189.</me>
+<me>C = \frac{L-P_0}{P_0} = \frac{6750-10}{10} = 674.</me>
 We are also told that in the early stages of the virus, infection
 grows exponentially with <m>k=2</m>. Thus we get that the logistic
 function for people infected is
-<me>P=\frac{4750}{1+189 e^{-2 t}}.</me>
+<me>P=\frac{6750}{1+674 e^{-2 t}}.</me>
 
 
 
@@ -2861,15 +2531,15 @@ Graphing this solution, we see
 
 
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-61-image-1.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-55-image-1.png" width="41%"/>
 
 
 
 
 Looking at the graph we see that the the point at which the rate
 changes from increasing to decreasing, the inflection point, occurs at
-roughly <m>t=2.5</m> giving a value of <m>P=2500</m>. Thus after roughly
-2500 people have been infected, the rate of infection starts dropping.
+roughly <m>t=3.25</m> giving a value of <m>P=3500</m>. Thus after roughly
+3500 people have been infected, the rate of infection starts dropping.
 
 
 
@@ -2878,8 +2548,8 @@ roughly <m>t=2.5</m> giving a value of <m>P=2500</m>. Thus after roughly
     <server-data sourceFilePath="Library/Michigan/Chap11Sec7/Q09.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap11Sec7/Q09.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-62" ww-id="webwork-62">
-    <static seed="62" source="Library/Michigan/Chap11Sec7/Q15.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-56" ww-id="webwork-56">
+    <static seed="56" source="Library/Michigan/Chap11Sec7/Q15.pg">
       <statement><p>Any population, <m>P</m>, for which we can ignore
 immigration, satisfies
 <me>\frac{dP}{dt} =\hbox{Birth rate} - \hbox{Death rate}.</me></p>
@@ -2944,7 +2614,7 @@ A graph of <m>dP/dt</m> vs <m>P</m> is shown below.
 
 
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-62-image-1.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-56-image-1.png" width="41%"/>
 
 
 
@@ -2981,7 +2651,7 @@ to those shown in the graph below
 
 
 
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-62-image-2.png" width="41%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-56-image-2.png" width="41%"/>
 
 
 
@@ -3000,7 +2670,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg source="Library/Michigan/Chap11Sec7/Q15.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-quadapprox-cos" ww-id="webwork-quadapprox-cos">
-    <static seed="63">
+    <static seed="57">
       <introduction><p>Let <m>f(x)=\cos(x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\cos(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
@@ -3140,7 +2810,7 @@ an unstable equilibrium, and <m>P=0</m> is a stable equilibrium.
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-11-18T12:23:01Z       
+###       on 2025-11-20T18:55:59Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3303,7 +2973,7 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-quadapprox-ln1plusx" ww-id="webwork-quadapprox-ln1plusx">
-    <static seed="64">
+    <static seed="58">
       <introduction><p>Let <m>f(x)=\ln(1+x)</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>\ln(1+x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
@@ -3443,7 +3113,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-11-18T12:23:01Z       
+###       on 2025-11-20T18:55:59Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3607,7 +3277,7 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-cubicapprox-eneg2x" ww-id="webwork-cubicapprox-eneg2x">
-    <static seed="65">
+    <static seed="59">
       <introduction><p>Let <m>f(x)=e^{-2x}</m> and let <m>T_3(x)=c_0+c_1x+c_2x^2+c_3x^3\text{.}</m> We find the values of <m>c_0,\ldots,c_3</m> that make the functions <m>e^{-2x}</m> and <m>T_3(x)</m> have the same height, slope, concavity, and third derivative value at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
@@ -3790,7 +3460,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-11-18T12:23:01Z       
+###       on 2025-11-20T18:55:59Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -3973,11 +3643,11 @@ ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-quadapprox-quadratic" ww-id="webwork-quadapprox-quadratic">
-    <static seed="66">
-      <introduction><p>Let <m>f(x)={3x^{2}-4x-2}</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
+    <static seed="60">
+      <introduction><p>Let <m>f(x)={7x^{2}-3x+2}</m> and let <m>T_2(x)=b_0+b_1x+b_2x^2\text{.}</m> We find the values of <m>b_0, b_1</m> and <m>b_2</m> that make the functions <m>f(x)</m> and <m>T_2(x)</m> have the same height, slope, and concavity at <m>x=0\text{.}</m></p>
 </introduction>
       <task>
-        <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>{3x^{2}-4x-2}</m> and evaluating them at <m>x=0</m> as directed.</p>
+        <statement><p>Complete the table below by computing derivatives of <m>T_2(x)</m> and <m>{7x^{2}-3x+2}</m> and evaluating them at <m>x=0</m> as directed.</p>
 <!-- PTX:WARNING: PGML wanted to center align here. -->
 <tabular>
 <col halign="right"/>
@@ -3986,7 +3656,7 @@ ENDDOCUMENT();
 <col/>
 <row>
 <cell><m>f(x)=</m></cell>
-<cell><m>{3x^{2}-4x-2}</m></cell>
+<cell><m>{7x^{2}-3x+2}</m></cell>
 <cell><m>T_2(x)=</m></cell>
 <cell><m>b_0+b_1x+b_2x^2</m></cell>
 </row>
@@ -4033,7 +3703,7 @@ ENDDOCUMENT();
 </statement>
         <answer>
           <p>
-            <m>6x-4</m>
+            <m>14x-3</m>
           </p>
         </answer>
         <answer>
@@ -4043,7 +3713,7 @@ ENDDOCUMENT();
         </answer>
         <answer>
           <p>
-            <m>6</m>
+            <m>14</m>
           </p>
         </answer>
         <answer>
@@ -4053,12 +3723,12 @@ ENDDOCUMENT();
         </answer>
         <answer>
           <p>
-            <m>-2</m>
+            <m>2</m>
           </p>
         </answer>
         <answer>
           <p>
-            <m>-4</m>
+            <m>-3</m>
           </p>
         </answer>
         <answer>
@@ -4068,7 +3738,7 @@ ENDDOCUMENT();
         </answer>
         <answer>
           <p>
-            <m>6</m>
+            <m>14</m>
           </p>
         </answer>
         <answer>
@@ -4078,11 +3748,11 @@ ENDDOCUMENT();
         </answer>
       </task>
       <task>
-        <statement><p>Now, since we want <m>T_2(x)</m> and <m>{3x^{2}-4x-2}</m> to have the same height at <m>x=0\text{,}</m> set <m>T_2(0)=f(0)\text{.}</m></p>
+        <statement><p>Now, since we want <m>T_2(x)</m> and <m>{7x^{2}-3x+2}</m> to have the same height at <m>x=0\text{,}</m> set <m>T_2(0)=f(0)\text{.}</m></p>
 <p>This implies <m>b_0={}</m><fillin characters="10" name="AnSwEr0010"/>.</p>
-<p>Since we want <m>T_2(x)</m> and <m>{3x^{2}-4x-2}</m> to have the same slope at <m>x=0\text{,}</m> set <m>T_2'(0)=f'(0)\text{.}</m></p>
+<p>Since we want <m>T_2(x)</m> and <m>{7x^{2}-3x+2}</m> to have the same slope at <m>x=0\text{,}</m> set <m>T_2'(0)=f'(0)\text{.}</m></p>
 <p>This implies <m>b_1={}</m><fillin characters="10" name="AnSwEr0011"/>.</p>
-<p>Finally, since we want <m>T_2(x)</m> and <m>{3x^{2}-4x-2}</m> to have the same concavity at <m>x=0\text{,}</m> set <m>T_2''(0)=f''(0)\text{.}</m></p>
+<p>Finally, since we want <m>T_2(x)</m> and <m>{7x^{2}-3x+2}</m> to have the same concavity at <m>x=0\text{,}</m> set <m>T_2''(0)=f''(0)\text{.}</m></p>
 <p>This implies <m>b_2={}</m><fillin characters="10" name="AnSwEr0012"/>.</p>
 <p>Putting everything together, what is the resulting formula for <m>T_2(x)=b_0+b_1x+b_2x^2\text{?}</m></p>
 <p><m>T_2(x)={}</m><fillin characters="20" name="AnSwEr0013"/></p>
@@ -4090,22 +3760,22 @@ ENDDOCUMENT();
 </statement>
         <answer>
           <p>
-            <m>-2</m>
+            <m>2</m>
           </p>
         </answer>
         <answer>
           <p>
-            <m>-4</m>
+            <m>-3</m>
           </p>
         </answer>
         <answer>
           <p>
-            <m>3</m>
+            <m>7</m>
           </p>
         </answer>
         <answer>
           <p>
-            <m>3x^{2}-4x-2</m>
+            <m>7x^{2}-3x+2</m>
           </p>
         </answer>
       </task>
@@ -4114,7 +3784,7 @@ ENDDOCUMENT();
     <pg><![CDATA[
 #############################################
 ###       Generated from PreTeXt source      
-###       on 2025-11-18T12:23:01Z       
+###       on 2025-11-20T18:55:59Z       
 ###   A recent stable commit (2022-07-01):   
 ### 6c761d3dba23af92cba35001c852aac04ae99a5f 
 ###                                          
@@ -4281,13 +3951,13 @@ Scaffold::End();
 ENDDOCUMENT();
 ]]></pg>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-67" ww-id="webwork-67">
-    <static seed="67" source="csafranski/8.1HW_prob1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-61" ww-id="webwork-61">
+    <static seed="61" source="csafranski/8.1HW_prob1.pg">
       <statement><p>Suppose that <m>T_2(x)=c_0+c_1x+c_2x^2</m> is the
 second degree Taylor polynomial for the function <m>f</m> about <m>x=0</m>.
 What can you say about the signs of
 <m>c_0</m>, <m>c_1</m>, <m>c_2</m> if <m>f</m> has the graph given below?</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-67-image-1.png" width="25%"/>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-61-image-1.png" width="25%"/>
 <p><em>(For each, enter <m>+</m> if the term is positive, and <m>-</m> if
 it is negative.  Note that because this is essentially multiple choice
 problem it will not show which parts of your answer are correct or
@@ -4308,7 +3978,7 @@ incorrect.)</em></p>
       </answer>
       <answer>
         <p>
-          <m>\text{-}</m>
+          <m>\text{+}</m>
         </p>
       </answer>
       <solution><m>T_2(x)</m> is the second degree Taylor polynomial for <m>f(x)</m>
@@ -4323,7 +3993,7 @@ about <m>x=0</m>, <m>T_2(0)=f(0)</m>, which says <m>c_0=f(0)</m>.  Since
 
 
 Thus
-<m>c_0 &gt; 0</m>; <m>c_1 \lt  0</m>; and <m>c_2 \lt  0</m>
+<m>c_0 &gt; 0</m>; <m>c_1 \lt  0</m>; and <m>c_2 &gt; 0</m>
 
 
 
@@ -4332,46 +4002,46 @@ Thus
     <server-data sourceFilePath="csafranski/8.1HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.1HW_prob1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-68" ww-id="webwork-68">
-    <static seed="68" source="csafranski/8.2HW_prob1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-62" ww-id="webwork-62">
+    <static seed="62" source="csafranski/8.2HW_prob1.pg">
       <statement><p>Find the Taylor polynomials
 of degree <m>n</m> approximating
-<m>\sin\mathopen{}\left(3x\right)</m>
+<m>\cos\mathopen{}\left(4x\right)</m>
 for <m>x</m> near 0:</p>
-<p>For <m>n=1</m>, <m>T_{1}(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
-<p>For <m>n=3</m>, <m>T_{3}(x) =</m> <fillin characters="45" name="AnSwEr0002"/></p>
-<p>For <m>n=5</m>, <m>T_{5}(x) =</m> <fillin characters="45" name="AnSwEr0003"/></p>
+<p>For <m>n=2</m>, <m>T_{2}(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
+<p>For <m>n=4</m>, <m>T_{4}(x) =</m> <fillin characters="45" name="AnSwEr0002"/></p>
+<p>For <m>n=6</m>, <m>T_{6}(x) =</m> <fillin characters="45" name="AnSwEr0003"/></p>
 </statement>
       <answer>
         <p>
-          <m>3x</m>
+          <m>1-\frac{4^{2}}{2}x^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3x-4.5x^{3}</m>
+          <m>1-\frac{4^{2}}{2}x^{2}+\frac{4^{4}}{4!}x^{4}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3x-4.5x^{3}+2.025x^{5}</m>
+          <m>1-\frac{4^{2}}{2!}x^{2}+\frac{4^{4}}{4!}x^{4}-\frac{4^{6}}{6!}x^{6}</m>
         </p>
       </answer>
-      <solution><m>f(x) = \sin\mathopen{}\left(3x\right)</m> Then <m>f(0) = \sin(0) = 0</m>, and
-<me>f'(x) = 3\cos\mathopen{}\left(3x\right),\qquad \hbox{so}\quad f'(0) = 3,</me>
-<me>f''(x) = -9\sin\mathopen{}\left(3x\right),\qquad \hbox{so}\quad f''(0) = 0,</me>
-<me>f'''(x) = -27\cos\mathopen{}\left(3x\right),\qquad \hbox{so}\quad f'''(0) = -27,</me>
-<me>f^{4}(x) = 81\sin\mathopen{}\left(3x\right),\qquad \hbox{so}\quad f^{4}(0) = 0,</me>
-<me>f^{5}(x) = 243\cos\mathopen{}\left(3x\right),\qquad \hbox{so}\quad f^{5}(0) = 243,</me>
-
+      <solution><m>f(x) = \cos\mathopen{}\left(4x\right)</m> Then <m>f(0) = \cos(0) = 1</m>, and
+<me>f'(x) = -4\sin\mathopen{}\left(4x\right),\qquad \hbox{so}\quad f'(0) = 0,</me>
+<me>f''(x) = -16\cos\mathopen{}\left(4x\right),\qquad \hbox{so}\quad f''(0) = -16,</me>
+<me>f'''(x) = 64\sin\mathopen{}\left(4x\right),\qquad \hbox{so}\quad f'''(0) = 0,</me>
+<me>f^{4}(x) = 256\cos\mathopen{}\left(4x\right),\qquad \hbox{so}\quad f^{4}(0) = 256,</me>
+<me>f^{5}(x) = -1024\sin\mathopen{}\left(4x\right),\qquad \hbox{so}\quad f^{5}(0) = 0,</me>
+<me>f^{6}(x) = (-4096*cos(4*x)),\qquad \hbox{so}\quad f^{6}(0) = -4096,</me>
 
 
 
 Thus,
-<me>T_{1}(x) = 3 x,</me>
-<me>T_{3}(x) = 3 x - {9\over2} x^3,</me>
+<me>T_{2}(x) = 1 - 8 x^2,</me>
+<me>T_{4}(x) = 1 - 8 x^2 + {64\over3} x^4,</me>
 and
-<me>T_{5}(x) = 3 x - {9\over2} x^3 + {81\over40} x^5.</me>
+<me>T_{6}(x) = 1 - 8 x^2 + {64\over3} x^4 - {256\over45} x^6.</me>
 
 
 
@@ -4380,43 +4050,43 @@ and
     <server-data sourceFilePath="csafranski/8.2HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.2HW_prob1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-69" ww-id="webwork-69">
-    <static seed="69" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg">
-      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = \pi</m> for <m>f(x) = \cos\mathopen{}\left(x\right)</m>.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-63" ww-id="webwork-63">
+    <static seed="63" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg">
+      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = \frac{\pi }{6}</m> for <m>f(x) = \cos\mathopen{}\left(x\right)</m>.</p>
 </statement>
       <answer>
         <p>
-          <m>-1</m>
+          <m>0.866025403784439</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0</m>
+          <m>-0.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.5</m>
+          <m>-0.433012701892219</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>-1</m>
+          <m>0.866025403784439</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0</m>
+          <m>-0.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.5</m>
+          <m>-0.433012701892219</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0</m>
+          <m>0.0833333333333333</m>
         </p>
       </answer>
       <solution><me>\begin{array}{lcll} 
@@ -4433,7 +4103,7 @@ So, in this case, <m>f(x) = \cos\mathopen{}\left(x\right)</m> and
 
 
 
-<m>T_2(x) = A + B(x-\pi ) + C(x-\pi )^2</m> 
+<m>T_2(x) = A + B(x-\frac{\pi }{6}) + C(x-\frac{\pi }{6})^2</m> 
 
 
 
@@ -4441,15 +4111,15 @@ where
 
 
 
-<m>A=f(\pi )=-1=-1</m> 
+<m>A=f(\frac{\pi }{6})=\frac{\sqrt{3}}{2}=0.866025403784439</m> 
 
 
 
-<m>B=f'(\pi )=0=0</m> 
+<m>B=f'(\frac{\pi }{6})=-\frac{1}{2}=-0.5</m> 
 
 
 
-<m>C=\frac{f''(\pi )}{2!}=\frac{1}{2}=0.5</m> 
+<m>C=\frac{f''(\frac{\pi }{6})}{2!}=-\frac{\sqrt{3}}{4}=-0.433012701892219</m> 
 
 
 
@@ -4457,7 +4127,7 @@ Thus,
 
 
 
-<me>T_2(x) = -1 + 0 (x - \pi ) + \frac{1}{2} (x - \pi )^2</me>
+<me>T_2(x) = \frac{\sqrt{3}}{2}  - \frac{1}{2} (x - \frac{\pi }{6})  - \frac{\sqrt{3}}{4} (x - \frac{\pi }{6})^2</me>
 
 
 
@@ -4465,7 +4135,7 @@ or
 
 
 
-<me>T_2(x) = 0.5\mathopen{}\left(x-\pi \right)^{2}-1</me>
+<me>T_2(x) = 0.866025-0.5\mathopen{}\left(x-\frac{\pi }{6}\right)-0.433013\mathopen{}\left(x-\frac{\pi }{6}\right)^{2}</me>
 
 
 
@@ -4473,7 +4143,7 @@ Similarly,
 
 
 
-<m>T_3(x) = D + E(x-\pi ) + F(x-\pi )^2 + G(x-\pi )^3</m> 
+<m>T_3(x) = D + E(x-\frac{\pi }{6}) + F(x-\frac{\pi }{6})^2 + G(x-\frac{\pi }{6})^3</m> 
 
 
 
@@ -4481,24 +4151,24 @@ where
 
 
 
-<m>D=f(\pi )=-1 = -1</m> 
+<m>D=f(\frac{\pi }{6})=\frac{\sqrt{3}}{2} = 0.866025403784439</m> 
 
 
 
-<m>E=f'(\pi )=0 =0</m> 
+<m>E=f'(\frac{\pi }{6})=-\frac{1}{2} =-0.5</m> 
 
 
 
-<m>F=\frac{f''(\pi )}{2!}=\frac{1}{2} =0.5</m> 
+<m>F=\frac{f''(\frac{\pi }{6})}{2!}=-\frac{\sqrt{3}}{4} =-0.433012701892219</m> 
 
 
 
-<m>G=\frac{f'''(\pi )}{3!}=0=0</m> 
+<m>G=\frac{f'''(\frac{\pi }{6})}{3!}=\frac{1}{12}=0.0833333333333333</m> 
 
 
 
 Thus, 
-<me>T_3(x) = -1 + 0 (x - \pi ) + \frac{1}{2} (x - \pi )^2 + 0 (x - \pi )^3</me>
+<me>T_3(x) = \frac{\sqrt{3}}{2}  - \frac{1}{2} (x - \frac{\pi }{6})  - \frac{\sqrt{3}}{4} (x - \frac{\pi }{6})^2 + \frac{1}{12} (x - \frac{\pi }{6})^3</me>
 
 
 
@@ -4506,7 +4176,7 @@ or
 
 
 
-<me>T_3(x)  = 0.5\mathopen{}\left(x-\pi \right)^{2}-1</me>
+<me>T_3(x)  = 0.866025-0.5\mathopen{}\left(x-\frac{\pi }{6}\right)-0.433013\mathopen{}\left(x-\frac{\pi }{6}\right)^{2}+0.0833333\mathopen{}\left(x-\frac{\pi }{6}\right)^{3}</me>
 
 
 </solution>
@@ -4514,20 +4184,20 @@ or
     <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-70" ww-id="webwork-70">
-    <static seed="70" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg">
-      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = 8</m> for <m>f(x) = \ln\mathopen{}\left(x+1\right)</m>.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-64" ww-id="webwork-64">
+    <static seed="64" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg">
+      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = 0</m> for <m>f(x) = \ln\mathopen{}\left(x+1\right)</m>.</p>
 <p><m>T_2(x) =</m> <fillin characters="80" name="AnSwEr0001"/></p>
 <p><m>T_3(x) = T_2(x) +</m> <fillin characters="60" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>2.19722+0.111111\mathopen{}\left(x-8\right)-0.00617285\mathopen{}\left(x-8\right)^{2}</m>
+          <m>x-0.5x^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.000457247\mathopen{}\left(x-8\right)^{3}</m>
+          <m>0.333333x^{3}</m>
         </p>
       </answer>
       <solution><m>x</m> = a:
@@ -4546,7 +4216,7 @@ So, in this case, <m>f(x) = \ln\mathopen{}\left(x+1\right)</m> and
 
 
 
-<m>T_2(x) = A + B(x-8) + C(x-8)^2</m> 
+<m>T_2(x) = A + B(x-0) + C(x-0)^2</m> 
 
 
 
@@ -4554,15 +4224,15 @@ where
 
 
 
-<m>A=f(8)=\ln (9)=2.19722</m> 
+<m>A=f(0)=\ln (1)=0</m> 
 
 
 
-<m>B=f'(8)=\frac{1}{(9)}=0.111111</m> 
+<m>B=f'(0)=\frac{1}{(1)}=1</m> 
 
 
 
-<m>C=\frac{f''(8)}{2!}=-\frac{1}{(162)}=-0.00617284</m> 
+<m>C=\frac{f''(0)}{2!}=-\frac{1}{(2)}=-0.5</m> 
 
 
 
@@ -4570,7 +4240,7 @@ Thus,
 
 
 
-<me>T_2(x) = \ln (9) + \frac{1}{(9)} (x - 8)  - \frac{1}{(162)} (x - 8)^2</me>
+<me>T_2(x) = \ln (1) + \frac{1}{(1)} (x - 0)  - \frac{1}{(2)} (x - 0)^2</me>
 
 
 
@@ -4578,7 +4248,7 @@ or,
 
 
 
-<me>T_2(x) = 2.19722+0.111111\mathopen{}\left(x-8\right)-0.00617285\mathopen{}\left(x-8\right)^{2}</me>
+<me>T_2(x) = x-0.5x^{2}</me>
 
 
 
@@ -4586,7 +4256,7 @@ Similarly,
 
 
 
-<m>T_3(x) = D + E(x-8) + F(x-8)^2 + G(x-8)^3</m> 
+<m>T_3(x) = D + E(x-0) + F(x-0)^2 + G(x-0)^3</m> 
 
 
 
@@ -4594,19 +4264,19 @@ where
 
 
 
-<m>D=f(8)=\ln (9)=2.19722</m> 
+<m>D=f(0)=\ln (1)=0</m> 
 
 
 
-<m>E=f'(8)=\frac{1}{(9)}=0.111111</m> 
+<m>E=f'(0)=\frac{1}{(1)}=1</m> 
 
 
 
-<m>F=\frac{f''(8)}{2!}=-\frac{1}{(162)}=-0.00617284</m> 
+<m>F=\frac{f''(0)}{2!}=-\frac{1}{(2)}=-0.5</m> 
 
 
 
-<m>G=\frac{f'''(8)}{3!}=\frac{1}{(2187)}=0.000457247</m> 
+<m>G=\frac{f'''(0)}{3!}=\frac{1}{(3)}=0.333333</m> 
 
 
 
@@ -4614,7 +4284,7 @@ Thus,
 
 
 
-<me>T_3(x) = \ln (9) + \frac{1}{(9)} (x - 8)  - \frac{1}{(162)} (x - 8)^2 + \frac{1}{(2187)}  (x - 8)^3</me>
+<me>T_3(x) = \ln (1) + \frac{1}{(1)} (x - 0)  - \frac{1}{(2)} (x - 0)^2 + \frac{1}{(3)}  (x - 0)^3</me>
 
 
 
@@ -4622,7 +4292,7 @@ or,
 
 
 
-<me>T_3(x) = T_2(x)  + 0.000457 (x-8)^3</me>
+<me>T_3(x) = T_2(x)  + 0.333 (x-0)^3</me>
 
 
 
@@ -4633,20 +4303,20 @@ or,
     <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-71" ww-id="webwork-71">
-    <static seed="71" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg">
-      <statement><p>Compute <m>T_2(x)</m> at <m>x = 0.9</m> for <m>y = e^{x}</m> and use a calculator to compute the error <m>|e^{x} - T_2(x)|</m> at <m>x = -0.2</m>.</p>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-65" ww-id="webwork-65">
+    <static seed="65" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg">
+      <statement><p>Compute <m>T_2(x)</m> at <m>x = 0.2</m> for <m>y = e^{x}</m> and use a calculator to compute the error <m>|e^{x} - T_2(x)|</m> at <m>x = 0</m>.</p>
 <p><m>T_2(x) =</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>|e^{x} - T_2(x)|</m> = <fillin characters="20" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>e^{0.9}+e^{0.9}\mathopen{}\left(x-0.9\right)+\frac{e^{0.9}}{2}\mathopen{}\left(x-0.9\right)^{2}</m>
+          <m>e^{0.2}+e^{0.2}\mathopen{}\left(x-0.2\right)+\frac{e^{0.2}}{2}\mathopen{}\left(x-0.2\right)^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.423369</m>
+          <m>0.00155026</m>
         </p>
       </answer>
       <solution><me>T(x) = f(a) + \frac{f'(a)}{1!} (x-a) + \frac{f''(a)}{2!} (x-a)^2 + ... + \frac{f^n(a)}{n!} (x-a)^n</me>
@@ -4662,11 +4332,11 @@ So, in this case,
 
 
 
-<me>T_2(x) = e^{0.9}+e^{0.9}\mathopen{}\left(x-0.9\right)+\frac{e^{0.9}}{2}\mathopen{}\left(x-0.9\right)^{2}</me>
+<me>T_2(x) = e^{0.2}+e^{0.2}\mathopen{}\left(x-0.2\right)+\frac{e^{0.2}}{2}\mathopen{}\left(x-0.2\right)^{2}</me>
 
 
 
-<me>|e^{x} - T_2(x)| = \left|e^{0.9}+e^{0.9}\mathopen{}\left(-1.1\right)+\frac{e^{0.9}}{2}\cdot 1.21-e^{-0.2}\right| = 0.423369</me>
+<me>|e^{x} - T_2(x)| = \left|e^{0.2}+e^{0.2}\mathopen{}\left(-0.2\right)+\frac{e^{0.2}}{2}\cdot 0.04-e^{0}\right| = 0.00155026</me>
 
 
 </solution>
@@ -4674,28 +4344,28 @@ So, in this case,
     <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-72" ww-id="webwork-72">
-    <static seed="72" source="csafranski/8.2HW_prob5.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-66" ww-id="webwork-66">
+    <static seed="66" source="csafranski/8.2HW_prob5.pg">
       <statement><p>Find the second-degree Taylor polynomial for
-<m>f(x)=5 x^2 - 3 x + 7</m> about
+<m>f(x)=3 x^2 - 4 x + 3</m> about
 <m>x=0</m>.</p>
 <p><m>T_2(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
 <p>What do you notice about your polynomial?</p>
 </statement>
       <answer>
         <p>
-          <m>5x^{2}-3x+7</m>
+          <m>3x^{2}-4x+3</m>
         </p>
       </answer>
-      <solution><m>f(0) = 7</m>;
-<m>f'(x) = 10 x - 3</m>, so that <m>f'(0) = -3</m>; and
-<m>f''(x) = 10</m>, so that <m>f''(0) = 10</m>.
+      <solution><m>f(0) = 3</m>;
+<m>f'(x) = 6 x - 4</m>, so that <m>f'(0) = -4</m>; and
+<m>f''(x) = 6</m>, so that <m>f''(0) = 6</m>.
 
 
 
 Thus
-<me>T_2(x) = 7 - 3 x + {10\over 2!} x^2
-          = 7 - 3 x + 5 x^2.</me>
+<me>T_2(x) = 3 - 4 x + {6\over 2!} x^2
+          = 3 - 4 x + 3 x^2.</me>
 
 We notice that <m>f(x) = T_2(x)</m> in this case, which makes
 sense because <m>f(x)</m> is a polynomial.
@@ -4707,75 +4377,75 @@ sense because <m>f(x)</m> is a polynomial.
     <server-data sourceFilePath="csafranski/8.2HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.2HW_prob5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-73" ww-id="webwork-73">
-    <static seed="73" source="csafranski/8.2HW_prob6.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-67" ww-id="webwork-67">
+    <static seed="67" source="csafranski/8.2HW_prob6.pg">
       <statement><p>Suppose <m>g</m> is a function which has continuous derivatives, and that
-<m>g(1)=3, g'(1)=-3</m>, <m>g''(1)=5</m>,
-<m>g'''(1)=5</m>.</p>
+<m>g(4)=3, g'(4)=2</m>, <m>g''(4)=1</m>,
+<m>g'''(4)=-5</m>.</p>
 <p><alert>(a)</alert>
 What is the Taylor polynomial of degree 2 for <m>g</m> near 
-<m>1</m>?</p>
+<m>4</m>?</p>
 <p><m>T_2(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
 <p><alert>(b)</alert>
 What is the Taylor polynomial of degree 3 for <m>g</m> near 
-<m>1</m>?</p>
+<m>4</m>?</p>
 <p><m>T_3(x) =</m> <fillin characters="45" name="AnSwEr0002"/></p>
 <p><alert>(c)</alert>
 Use the two polynomials that you found in parts (a) and (b) to
-approximate <m>g(0.9)</m>.</p>
-<p>With <m>T_2</m>, <m>g(0.9)\approx</m> <fillin characters="15" name="AnSwEr0003"/></p>
-<p>With <m>T_3</m>, <m>g(0.9)\approx</m> <fillin characters="15" name="AnSwEr0004"/></p>
+approximate <m>g(3.9)</m>.</p>
+<p>With <m>T_2</m>, <m>g(3.9)\approx</m> <fillin characters="15" name="AnSwEr0003"/></p>
+<p>With <m>T_3</m>, <m>g(3.9)\approx</m> <fillin characters="15" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>3+-3\mathopen{}\left(x-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(x-1\right)^{2}</m>
+          <m>3+2\mathopen{}\left(x-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(x-4\right)^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3+-3\mathopen{}\left(x-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(x-1\right)^{2}+\frac{1}{3!}\cdot 5\mathopen{}\left(x-1\right)^{3}</m>
+          <m>3+2\mathopen{}\left(x-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(x-4\right)^{2}+\frac{1}{3!}\mathopen{}\left(-5\right)\mathopen{}\left(x-4\right)^{3}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.325</m>
+          <m>2.805</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.32417</m>
+          <m>2.80583</m>
         </p>
       </answer>
-      <solution><me>g(x) = g(1) + g'(1)(x-1) + \frac{g''(1)}{2!}(x-1)^2
-+\frac{g'''(1)}{3!}(x-1)^3+\cdots</me>
+      <solution><me>g(x) = g(4) + g'(4)(x-4) + \frac{g''(4)}{2!}(x-4)^2
++\frac{g'''(4)}{3!}(x-4)^3+\cdots</me>
 Substituting gives
-<me>g(x) = 3  - 3(x-1) + \frac{5}{2!}(x-1)^2
-  +\frac{5}{3!}(x-1)^3+\cdots</me>
+<me>g(x) = 3 + 2(x-4) + \frac{1}{2!}(x-4)^2
+  +\frac{-5}{3!}(x-4)^3+\cdots</me>
 
 
 
 
 <alert>(a)</alert>
 The degree 2 Taylor polynomial, <m>T_2 (x)</m>, is obtained by truncating
-after the <m>(x-1)^2</m> term:
-<me>T_2(x) = 3+\left(-3\right)\mathopen{}\left(x-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(x-1\right)^{2}.</me>
+after the <m>(x-4)^2</m> term:
+<me>T_2(x) = 3+2\mathopen{}\left(x-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(x-4\right)^{2}.</me>
 
 
 
 <alert>(b)</alert>
 The degree 3 Taylor polynomial, <m>T_3 (x)</m>, is obtained by truncating
 after the
-<m>(x-1)^3</m> term:
-<me>T_3 (x) = 3+\left(-3\right)\mathopen{}\left(x-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(x-1\right)^{2}+\frac{1}{3!}\cdot 5\mathopen{}\left(x-1\right)^{3}</me>
+<m>(x-4)^3</m> term:
+<me>T_3 (x) = 3+2\mathopen{}\left(x-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(x-4\right)^{2}+\frac{1}{3!}\mathopen{}\left(-5\right)\mathopen{}\left(x-4\right)^{3}</me>
 
 
 
 
 <alert>(c)</alert>
-Substitute <m>x=0.9</m> into the Taylor polynomial of degree 2:
-<me>T_2(4.9) = 3+\left(-3\right)\mathopen{}\left(0.9-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(0.9-1\right)^{2} = 3.325.</me>
+Substitute <m>x=3.9</m> into the Taylor polynomial of degree 2:
+<me>T_2(4.9) = 3+2\mathopen{}\left(3.9-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(3.9-4\right)^{2} = 2.805.</me>
 From the Taylor polynomial of degree 3, we obtain
-<me>T_3(4.9) = 3+\left(-3\right)\mathopen{}\left(0.9-1\right)+\frac{1}{2!}\cdot 5\mathopen{}\left(0.9-1\right)^{2}+\frac{1}{3!}\cdot 5\mathopen{}\left(0.9-1\right)^{3} = 3.32417.</me>
+<me>T_3(4.9) = 3+2\mathopen{}\left(3.9-4\right)+\frac{1}{2!}\cdot 1\mathopen{}\left(3.9-4\right)^{2}+\frac{1}{3!}\mathopen{}\left(-5\right)\mathopen{}\left(3.9-4\right)^{3} = 2.80583.</me>
 
 
 
@@ -4784,12 +4454,12 @@ From the Taylor polynomial of degree 3, we obtain
     <server-data sourceFilePath="csafranski/8.2HW_prob6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.2HW_prob6.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-74" ww-id="webwork-74">
-    <static seed="74" source="Library/Michigan/Chap9Sec2/Q05.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-68" ww-id="webwork-68">
+    <static seed="68" source="Library/Michigan/Chap9Sec2/Q05.pg">
       <statement><p>For each of the following, decide if the given series is a geometric
 series.</p>
 <p><alert>A.</alert>
-<m>2 + 2 x + 4 x + 6 x + 8 x + \cdots</m> :</p>
+<m>5 x^3 + 5 x^{4} + 5 x^{5} + 5 x^{6} + \cdots</m> :</p>
 <p>Is this a geometric series?
 <var form="buttons">
 <li>
@@ -4805,7 +4475,7 @@ series.</p>
 <p><em>(Enter </em> <alert>na</alert> <em>for the first
 term and ratio if this is not a geometric series.)</em></p>
 <p><alert>B.</alert>
-<m>2 + 2 x + 2 x^2 + 2 x^4 + 2 x^8 + \cdots</m> :</p>
+<m>5 - 15 + 45 - 135 + 405 - \cdots</m> :</p>
 <p>Is this a geometric series?
 <var form="buttons">
 <li>
@@ -4821,7 +4491,7 @@ term and ratio if this is not a geometric series.)</em></p>
 <p><em>(Enter </em> <alert>na</alert> <em>for the first
 term and ratio if this is not a geometric series.)</em></p>
 <p><alert>C.</alert>
-<m>2 x^6 + 3 x^{7} + 4 x^{8} + 5 x^{9} + \cdots</m> :</p>
+<m>5 + 5 x + 10 x + 15 x + 20 x + \cdots</m> :</p>
 <p>Is this a geometric series?
 <var form="buttons">
 <li>
@@ -4838,45 +4508,45 @@ term and ratio if this is not a geometric series.)</em></p>
 term and ratio if this is not a geometric series.)</em></p>
 </statement>
       <answer>
-        <p>B</p>
+        <p>A</p>
       </answer>
       <answer>
         <p>
-          <m>na</m>
+          <m>5x^{3}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>na</m>
+          <m>x</m>
         </p>
       </answer>
       <answer>
-        <p>B</p>
+        <p>A</p>
       </answer>
       <answer>
         <p>
-          <m>na</m>
+          <m>5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>na</m>
+          <m>-3</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
-<m>2 + 2 x + 4 x + 6 x + 8 x + \cdots</m> is not a geometric series.
+<m>5 x^3 + 5 x^{4} + 5 x^{5} + 5 x^{6} + \cdots</m> is a geometric series with first term <m>5 x^{3}</m> and ratio <m>x</m>.
 
 
 
 
 <alert>B.</alert>
-<m>2 + 2 x + 2 x^2 + 2 x^4 + 2 x^8 + \cdots</m> is not a geometric series.
+<m>5 - 15 + 45 - 135 + 405 - \cdots</m> is a geometric series with first term <m>5</m> and ratio <m>-3</m>.
 
 
 
 
 <alert>C.</alert>
-<m>2 x^6 + 3 x^{7} + 4 x^{8} + 5 x^{9} + \cdots</m> is not a geometric series.
+<m>5 + 5 x + 10 x + 15 x + 20 x + \cdots</m> is not a geometric series.
 
 
 
@@ -4885,60 +4555,60 @@ term and ratio if this is not a geometric series.)</em></p>
     <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap9Sec2/Q05.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-75" ww-id="webwork-75">
-    <static seed="75" source="Library/Michigan/Chap9Sec2/Q15.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-69" ww-id="webwork-69">
+    <static seed="69" source="Library/Michigan/Chap9Sec2/Q15.pg">
       <statement><p>For each of the finite geometric series given below, indicate the
 number of terms in the sum and find the sum.  For the value of the
 sum, enter an expression that gives the exact value, rather than
 entering an approximation.</p>
 <p><alert>A.</alert>
-<m>3 + 3 (0.15) + 3 (0.15)^2 + \cdots + 3 (0.15)^{11}</m></p>
+<m>4 + 4 (0.15) + 4 (0.15)^2 + \cdots + 4 (0.15)^{13}</m></p>
 <p>number of terms = <fillin characters="5" name="AnSwEr0001"/></p>
 <p>value of sum = <fillin characters="35" name="AnSwEr0002"/></p>
 <p><alert>B.</alert>
-<m>3 (0.15)^{4} + 3 (0.15)^{5} + 3 (0.15)^{6} + \cdots + 
-    3 (0.15)^{12}</m></p>
+<m>4 (0.15)^{3} + 4 (0.15)^{4} + 4 (0.15)^{5} + \cdots + 
+    4 (0.15)^{8}</m></p>
 <p>number of terms = <fillin characters="5" name="AnSwEr0003"/></p>
 <p>value of sum = <fillin characters="35" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>12</m>
+          <m>14</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.52941176424795</m>
+          <m>4.70588235292744</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>9</m>
+          <m>6</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.00178676463719312</m>
+          <m>0.01588217203125</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
-The series <m>3 + 3 (0.15) + 3 (0.15)^2 + \cdots + 3 (0.15)^{11}</m>
-has 12 terms, and its sum is
-<me>3 + 3 (0.15) + 3 (0.15)^2 + \cdots + 3 (0.15)^{11} =
-   {3 (1 - 0.15^{12})\over 1 - 0.15}.</me>
+The series <m>4 + 4 (0.15) + 4 (0.15)^2 + \cdots + 4 (0.15)^{13}</m>
+has 14 terms, and its sum is
+<me>4 + 4 (0.15) + 4 (0.15)^2 + \cdots + 4 (0.15)^{13} =
+   {4 (1 - 0.15^{14})\over 1 - 0.15}.</me>
 
 
 
 
 <alert>B.</alert>
 The series 
-<m>3 (0.15)^{4} + 3 (0.15)^{5} + 3 (0.15)^{6} + \cdots + 3 (0.15)^{12}</m>
-has <m>12 - 4 + 1 = 9</m> terms.  We can write it as 
-<me>3 (0.15)^{4} + 3 (0.15)^{5} + 3 (0.15)^{6} + \cdots + 
-    3 (0.15)^{12} = (3 (0.15)^{4}) (1 + 0.15 + \cdots + 0.15^{8}),</me>
+<m>4 (0.15)^{3} + 4 (0.15)^{4} + 4 (0.15)^{5} + \cdots + 4 (0.15)^{8}</m>
+has <m>8 - 3 + 1 = 6</m> terms.  We can write it as 
+<me>4 (0.15)^{3} + 4 (0.15)^{4} + 4 (0.15)^{5} + \cdots + 
+    4 (0.15)^{8} = (4 (0.15)^{3}) (1 + 0.15 + \cdots + 0.15^{5}),</me>
 so its sum is 
-<me>(3 (0.15)^{4}) (1 + 0.15 + \cdots + 0.15^{8}) = 
-    {3 (0.15)^{4} (1 - 0.15^{9})\over 1 - 0.15}.</me>
+<me>(4 (0.15)^{3}) (1 + 0.15 + \cdots + 0.15^{5}) = 
+    {4 (0.15)^{3} (1 - 0.15^{6})\over 1 - 0.15}.</me>
 
 
 
@@ -4947,34 +4617,34 @@ so its sum is
     <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap9Sec2/Q15.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-76" ww-id="webwork-76">
-    <static seed="76" source="Library/Michigan/Chap9Sec2/Q19.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-70" ww-id="webwork-70">
+    <static seed="70" source="Library/Michigan/Chap9Sec2/Q19.pg">
       <statement><p>Find the sum of each of the geometric series given below.  For the
 value of the sum, enter an expression that gives the exact value,
 rather than entering an approximation.</p>
 <p><alert>A.</alert>
-<m>-12 + 3 - {3\over 4} + {3\over 16} - {3\over 64} + {3\over 256} - \cdots =</m> <fillin characters="35" name="AnSwEr0001"/></p>
+<m>-20 + 5 - {5\over 4} + {5\over 16} - {5\over 64} + {5\over 256} - \cdots =</m> <fillin characters="35" name="AnSwEr0001"/></p>
 <p><alert>B.</alert>
-<m>\sum\limits_{n=4}^{12} \left({1\over 4}\right)^n =</m> <fillin characters="35" name="AnSwEr0002"/></p>
+<m>\sum\limits_{n=6}^{18} \left({1\over 4}\right)^n =</m> <fillin characters="35" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>-9.6</m>
+          <m>-16</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.00520831346511841</m>
+          <m>0.000325520828482695</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
-<m>-12 + 3 - {3\over 4} + {3\over 16} - {3\over 64} + {3\over 256} - \cdots = {-12\over 1 + {1\over 4}} = {-48\over5}</m>.
+<m>-20 + 5 - {5\over 4} + {5\over 16} - {5\over 64} + {5\over 256} - \cdots = {-20\over 1 + {1\over 4}} = -16</m>.
 
 
 
 
 <alert>B.</alert>
-<m>\sum\limits_{n=4}^{12} \left({1\over 4}\right)^n = {1\over 4^{4}}\cdot {1 - ({1\over 4})^{9}\over 1 - {1\over 4}} = {1\over 4^{3}}\cdot {(1 - ({1\over 4})^{9})\over 3}</m>.
+<m>\sum\limits_{n=6}^{18} \left({1\over 4}\right)^n = {1\over 4^{6}}\cdot {1 - ({1\over 4})^{13}\over 1 - {1\over 4}} = {1\over 4^{5}}\cdot {(1 - ({1\over 4})^{13})\over 3}</m>.
 
 
 
@@ -4983,43 +4653,43 @@ rather than entering an approximation.</p>
     <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q19.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap9Sec2/Q19.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-77" ww-id="webwork-77">
-    <static seed="77" source="Library/ASU-topics/setSequenceandSeries/jj12.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-71" ww-id="webwork-71">
+    <static seed="71" source="Library/ASU-topics/setSequenceandSeries/jj12.pg">
       <statement><p>Find the sum of the infinite geometric series
-<me>1- \frac{1}{4}+\frac{1}{16} - \frac{1}{64} + \cdots</me></p>
+<me>1- \frac{1}{5}+\frac{1}{25} - \frac{1}{125} + \cdots</me></p>
 <p>Enter <em> DNE</em> if the sum does not exist.</p>
 <p>Sum =  <fillin characters="40" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.8</m>
+          <m>0.833333333333333</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/ASU-topics/setSequenceandSeries/jj12.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/ASU-topics/setSequenceandSeries/jj12.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-78" ww-id="webwork-78">
-    <static seed="78" source="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-72" ww-id="webwork-72">
+    <static seed="72" source="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg">
       <statement><p>Find the sum of the series</p>
-<p><m>\displaystyle 3 + \frac{3}{6} + \frac{3}{36} + ... + \frac{3}{6^{n-1}} + ...</m>.</p>
+<p><m>\displaystyle 10 + \frac{10}{2} + \frac{10}{4} + ... + \frac{10}{2^{n-1}} + ...</m>.</p>
 <p>Answer: <fillin characters="20" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>3.6</m>
+          <m>20</m>
         </p>
       </answer>
       <solution><m>a + ar + ar^2 + ... + ar^{n-1} + ...</m> 
 
 
 
-with <m>a = 3</m> and <m>\displaystyle r=\frac{1}{6}</m>. 
+with <m>a = 10</m> and <m>\displaystyle r=\frac{1}{2}</m>. 
 
 
 
 The sum of the series is 
-<m>\displaystyle \frac{3}{1-\frac{1}{6}} = \frac{18}{6-1} = 3.6</m>. 
+<m>\displaystyle \frac{10}{1-\frac{1}{2}} = \frac{20}{2-1} = 20</m>. 
 
 
 </solution>
@@ -5027,21 +4697,21 @@ The sum of the series is
     <server-data sourceFilePath="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-79" ww-id="webwork-79">
-    <static seed="79" source="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-73" ww-id="webwork-73">
+    <static seed="73" source="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg">
       <statement><p>Determine whether the series converges, and if so find its sum.</p>
-<p><m>\displaystyle \sum_{k=1}^{\infty} \frac{2^{k+4}}{7^{k}} =</m> <fillin characters="50" name="AnSwEr0001"/></p>
+<p><m>\displaystyle \sum_{k=1}^{\infty} \frac{2^{k+2}}{3^{k+1}} =</m> <fillin characters="50" name="AnSwEr0001"/></p>
 <p>(Enter DNE if the sum does not exist.)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{7\cdot 2^{4+1}}{7^{0+1}\mathopen{}\left(7-2\right)}</m>
+          <m>\frac{3\cdot 2^{2+1}}{3^{1+1}\mathopen{}\left(3-2\right)}</m>
         </p>
       </answer>
-      <solution><m>a={\frac{32}{7}}</m> and <m>r={\frac{2}{7}}</m>, <m>|r|\lt 1</m> so 
+      <solution><m>a={\frac{8}{9}}</m> and <m>r={\frac{2}{3}}</m>, <m>|r|\lt 1</m> so 
 
 
-<m>\displaystyle \sum_{k=1}^{\infty} \frac{2^{k+4}}{7^{k}} ={\frac{32}{7}} \sum_{k=0}^{\infty} \left({\frac{2}{7}}\right)^{k} =\frac{{\frac{32}{7}}}{1-\left({\frac{2}{7}}\right)}={\frac{32}{5}}</m>
+<m>\displaystyle \sum_{k=1}^{\infty} \frac{2^{k+2}}{3^{k+1}} ={\frac{8}{9}} \sum_{k=0}^{\infty} \left({\frac{2}{3}}\right)^{k} =\frac{{\frac{8}{9}}}{1-\left({\frac{2}{3}}\right)}={\frac{8}{3}}</m>
 
 
 </solution>
@@ -5049,20 +4719,20 @@ The sum of the series is
     <server-data sourceFilePath="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-80" ww-id="webwork-80">
-    <static seed="80" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-74" ww-id="webwork-74">
+    <static seed="74" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg">
       <statement><p>Write out the first four terms of the Maclaurin series of <m>f(x)</m> if 
-<me>f(0) = 11, \qquad f'(0) = -6, \qquad f''(0) = -12, \qquad f'''(0) = -15</me></p>
+<me>f(0) = -9, \qquad f'(0) = -4, \qquad f''(0) = 4, \qquad f'''(0) = 5</me></p>
 <p><m>f(x)</m> = <fillin characters="20" name="AnSwEr0001"/> <m>+ \cdots</m></p>
 </statement>
       <answer>
         <p>
-          <m>11-6x-\frac{12x^{2}}{2}-\frac{15x^{3}}{6}</m>
+          <m>\frac{4x^{2}}{2}-\left(9+4x\right)+\frac{5x^{3}}{6}</m>
         </p>
       </answer>
       <solution><m>f(x)</m> are
 <me>f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3</me> 
-<me>= 11-6x-\frac{12x^{2}}{2}-\frac{15x^{3}}{6}.</me>
+<me>= \frac{4x^{2}}{2}-\left(9+4x\right)+\frac{5x^{3}}{6}.</me>
 
 
 
@@ -5071,12 +4741,12 @@ The sum of the series is
     <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-81" ww-id="webwork-81">
-    <static seed="81" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-75" ww-id="webwork-75">
+    <static seed="75" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg">
       <statement><p>Find the first four terms of the Taylor series for the function 
-<m>\displaystyle \frac{5}{x}</m> about the point <m>a = 4</m>.  (Your answers should 
+<m>\displaystyle \frac{2}{x}</m> about the point <m>a = -2</m>.  (Your answers should 
 include the variable x when appropriate.)</p>
-<p><m>\displaystyle \frac{5}{x} =</m>
+<p><m>\displaystyle \frac{2}{x} =</m>
 <fillin characters="15" name="AnSwEr0001"/> +
 <fillin characters="15" name="AnSwEr0002"/> +
 <fillin characters="15" name="AnSwEr0003"/> +
@@ -5084,29 +4754,29 @@ include the variable x when appropriate.)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{5}{4}</m>
+          <m>\frac{2}{-2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-5\mathopen{}\left(x-4\right)}{4^{2}}</m>
+          <m>\frac{-2\mathopen{}\left(x--2\right)}{\left(-2\right)^{2}}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{5\mathopen{}\left(x-4\right)^{2}}{4^{3}}</m>
+          <m>\frac{2\mathopen{}\left(x--2\right)^{2}}{\left(-2\right)^{3}}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-5\mathopen{}\left(x-4\right)^{3}}{4^{4}}</m>
+          <m>\frac{-2\mathopen{}\left(x--2\right)^{3}}{\left(-2\right)^{4}}</m>
         </p>
       </answer>
-      <solution><m>\displaystyle \frac{5}{x}</m> and its first three derivatives are
+      <solution><m>\displaystyle \frac{2}{x}</m> and its first three derivatives are
 
 
-<m>f(x) = \displaystyle \frac{5}{x}</m>, <m>f'(x) = -{5\over x^2}</m>, <m>f''(x) = {10\over x^3}</m>, 
-and <m>f'''(x) = -{30\over x^4}</m>.  Thus, evaluating these at <m>x = 4</m>,
+<m>f(x) = \displaystyle \frac{2}{x}</m>, <m>f'(x) = -{2\over x^2}</m>, <m>f''(x) = {4\over x^3}</m>, 
+and <m>f'''(x) = -{12\over x^4}</m>.  Thus, evaluating these at <m>x = -2</m>,
 we get the terms 
 
 
@@ -5114,24 +4784,24 @@ we get the terms
 
 
 
-term 0 = <m>{{5\over4}}</m>
+term 0 = <m>{-1}</m>
 
 
 
-term 1 = <m>-{{5\over16}}(x - 4)</m>
+term 1 = <m>-{{1\over2}}(x  + 2)</m>
 
 
 
-term 2 = <m>{{5\over64}}(x - 4)^2</m>, and
+term 2 = <m>{{2\over-8}}(x  + 2)^2</m>, and
 
 
 
-term 3 = <m>-{{5\over256}}(x - 4)^3</m>.
+term 3 = <m>-{{1\over8}}(x  + 2)^3</m>.
 
 
 
 Thus the series is 
-<me>\displaystyle \frac{5}{x} = {{5\over4}}  - {{5\over16}}(x - 4) + {{5\over64}}(x - 4)^2  - {{5\over256}}(x - 4)^3 + \cdots.</me>
+<me>\displaystyle \frac{2}{x} = {-1}  - {{1\over2}}(x  + 2) + {{2\over-8}}(x  + 2)^2  - {{1\over8}}(x  + 2)^3 + \cdots.</me>
 
 
 
@@ -5140,10 +4810,10 @@ Thus the series is
     <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-82" ww-id="webwork-82">
-    <static seed="82" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-76" ww-id="webwork-76">
+    <static seed="76" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg">
       <statement><p>Find the first five terms of the Taylor series for
-the function <m>f(x) = \ln\mathopen{}\left(x\right)</m> about the point <m>a = 2</m>.
+the function <m>f(x) = \ln\mathopen{}\left(x\right)</m> about the point <m>a = 5</m>.
 (Your answers should include the variable x when appropriate.)</p>
 <p><m>\ln\mathopen{}\left(x\right) =</m>
 <fillin characters="15" name="AnSwEr0001"/> +
@@ -5154,39 +4824,39 @@ the function <m>f(x) = \ln\mathopen{}\left(x\right)</m> about the point <m>a = 2
 </statement>
       <answer>
         <p>
-          <m>\ln\mathopen{}\left(2\right)</m>
+          <m>\ln\mathopen{}\left(5\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{1}{2}\mathopen{}\left(x-2\right)</m>
+          <m>\frac{1}{5}\mathopen{}\left(x-5\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-\left(\frac{1}{2}\right)^{2}}{2}\mathopen{}\left(x-2\right)^{2}</m>
+          <m>\frac{-\left(\frac{1}{5}\right)^{2}}{2}\mathopen{}\left(x-5\right)^{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{\left(\frac{1}{2}\right)^{3}}{3}\mathopen{}\left(x-2\right)^{3}</m>
+          <m>\frac{\left(\frac{1}{5}\right)^{3}}{3}\mathopen{}\left(x-5\right)^{3}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-\left(\frac{1}{2}\right)^{4}}{4}\mathopen{}\left(x-2\right)^{4}</m>
+          <m>\frac{-\left(\frac{1}{5}\right)^{4}}{4}\mathopen{}\left(x-5\right)^{4}</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-83" ww-id="webwork-83">
-    <static seed="83" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-77" ww-id="webwork-77">
+    <static seed="77" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg">
       <statement><p>Find the first four terms of the Taylor series for the function 
-<m>\sin(x)</m> about the point <m>a = \pi/4</m>.  (Your answers should 
+<m>3 \sin(x)</m> about the point <m>a = \pi/6</m>.  (Your answers should 
 include the variable x when appropriate.)</p>
-<p><m>\sin(x) =</m>
+<p><m>3 \sin(x) =</m>
 <fillin characters="20" name="AnSwEr0001"/> +
 <fillin characters="20" name="AnSwEr0002"/> +
 <fillin characters="20" name="AnSwEr0003"/> +
@@ -5194,29 +4864,29 @@ include the variable x when appropriate.)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{1}{\sqrt{2}}</m>
+          <m>\frac{3}{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{1\mathopen{}\left(x-\frac{\pi }{4}\right)}{\sqrt{2}}</m>
+          <m>\frac{\sqrt{3}\cdot 3\mathopen{}\left(x-\frac{\pi }{6}\right)}{2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1\mathopen{}\left(x-\frac{\pi }{4}\right)^{2}}{2\sqrt{2}}</m>
+          <m>\frac{-3\mathopen{}\left(x-\frac{\pi }{6}\right)^{2}}{4}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1\mathopen{}\left(x-\frac{\pi }{4}\right)^{3}}{6\sqrt{2}}</m>
+          <m>\frac{-3\mathopen{}\left(x-\frac{\pi }{6}\right)^{3}}{4\sqrt{3}}</m>
         </p>
       </answer>
-      <solution><m>\sin(x)</m> and its first three derivatives are
+      <solution><m>3 \sin(x)</m> and its first three derivatives are
 
 
-<m>f(x) =  \sin(x)</m>, <m>f'(x) =  \cos(x)</m>, <m>f''(x) = - \sin(x)</m>, 
-and <m>f'''(x) = - \cos(x)</m>.  Thus, evaluating these at <m>x = \pi/4</m>,
+<m>f(x) = 3 \sin(x)</m>, <m>f'(x) = 3 \cos(x)</m>, <m>f''(x) = -3 \sin(x)</m>, 
+and <m>f'''(x) = -3 \cos(x)</m>.  Thus, evaluating these at <m>x = \pi/6</m>,
 we get the terms 
 
 
@@ -5224,24 +4894,24 @@ we get the terms
 
 
 
-term 0 = <m>{1\over\sqrt2}</m>
+term 0 = <m>{{3\over2}}</m>
 
 
 
-term 1 = <m>{1\over\sqrt2}(x - {\pi\over4})</m>
+term 1 = <m>{{3\sqrt3\over2}}(x - {\pi\over6})</m>
 
 
 
-term 2 = <m>-{1\over2\sqrt2}(x - {\pi\over4})^2</m>, and
+term 2 = <m>-{{3\over4}}(x-{\pi\over6})^2</m>, and
 
 
 
-term 3 = <m>-{{1\over6\sqrt2}}(x - {\pi\over4})^3</m>.
+term 3 = <m>-{{3\over4\sqrt3}}(x-{\pi\over6})^3</m>.
 
 
 
 Thus the series is 
-<me>\sin(x) = {1\over\sqrt2} + {1\over\sqrt2}(x - {\pi\over4})  - {1\over2\sqrt2}(x - {\pi\over4})^2  - {{1\over6\sqrt2}}(x - {\pi\over4})^3 + \cdots.</me>
+<me>3 \sin(x) = {{3\over2}} + {{3\sqrt3\over2}}(x - {\pi\over6})  - {{3\over4}}(x-{\pi\over6})^2  - {{3\over4\sqrt3}}(x-{\pi\over6})^3 + \cdots.</me>
 
 
 
@@ -5250,30 +4920,30 @@ Thus the series is
     <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-84" ww-id="webwork-84">
-    <static seed="84" source="Library/Michigan/5e/Chap10Sec2/Q43.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-78" ww-id="webwork-78">
+    <static seed="78" source="Library/Michigan/5e/Chap10Sec2/Q43.pg">
       <statement><p>For each of the following, solve exactly for the variable <m>x</m>.</p>
 <p><alert>(a)</alert>
-<m>1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = 6</m></p>
+<m>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = 0.8</m></p>
 <p><m>x =</m> <fillin characters="25" name="AnSwEr0001"/></p>
 <p><alert>(b)</alert>
-<m>1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots = 0.6</m></p>
+<m>1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots = 0.7</m></p>
 <p><m>x =</m> <fillin characters="25" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>\ln\mathopen{}\left(6\right)</m>
+          <m>\sin^{-1}\mathopen{}\left(0.8\right)</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\cos^{-1}\mathopen{}\left(0.6\right)</m>
+          <m>\cos^{-1}\mathopen{}\left(0.7\right)</m>
         </p>
       </answer>
       <solution><alert>(a)</alert>
-Since <m>1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots</m> is the Taylor series for <m>e^x</m>, we know its sum:
-<me>1 + x + \frac{x^2}{2!} + \frac{x^3}{3!} + \cdots = e^x = 6.</me>
-Solving for <m>x</m>, we get <m>x = \ln(6)</m>.
+Since <m>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots</m> is the Taylor series for <m>\sin(x)</m>, we know its sum:
+<me>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = \sin(x) = 0.8.</me>
+Solving for <m>x</m>, we get <m>x = \arcsin(0.8)</m>.
 
 
 
@@ -5282,8 +4952,8 @@ Solving for <m>x</m>, we get <m>x = \ln(6)</m>.
 <alert>(b)</alert>
 Similarly, since <m>1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots</m> is the Taylor series for <m>\cos(x)</m>, we know its sum
 as well:
-<me>1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots = \cos(x) = 0.6.</me>
-Solving for <m>x</m>, we get <m>x = \arccos(0.6)</m>.
+<me>1 - \frac{x^2}{2!} + \frac{x^4}{4!} - \cdots = \cos(x) = 0.7.</me>
+Solving for <m>x</m>, we get <m>x = \arccos(0.7)</m>.
 
 
 
@@ -5292,35 +4962,35 @@ Solving for <m>x</m>, we get <m>x = \arccos(0.6)</m>.
     <server-data sourceFilePath="Library/Michigan/5e/Chap10Sec2/Q43.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/5e/Chap10Sec2/Q43.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-85" ww-id="webwork-85">
-    <static seed="85" source="Library/Michigan/Chap10Sec2/Q31.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-79" ww-id="webwork-79">
+    <static seed="79" source="Library/Michigan/Chap10Sec2/Q31.pg">
       <statement><p>By recognizing each series below as a Taylor series evaluated at a
 particular value of <m>x</m>, find the sum of each convergent series.</p>
 <p><alert>A.</alert>
-<m>1 - {3^2\over 2!} + {3^4\over 4!} - {3^6\over 6!} + \cdots + {(-1)^{n} 3^{2n}\over (2n)!} + \cdots =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<m>5 - {5^3\over 3!} + {5^5\over 5!} - {5^7\over 7!} + \cdots + {(-1)^{n} 5^{2n+1}\over (2n+1)!} + \cdots =</m> <fillin characters="10" name="AnSwEr0001"/></p>
 <p><alert>B.</alert>
-<m>1 + {1\over 4} + ({1\over 4})^2 + ({1\over 4})^3 + ({1\over 4})^4 + \cdots + ({1\over 4})^n + \cdots =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<m>1 + {1\over 6} + ({1\over 6})^2 + ({1\over 6})^3 + ({1\over 6})^4 + \cdots + ({1\over 6})^n + \cdots =</m> <fillin characters="10" name="AnSwEr0002"/></p>
 </statement>
       <answer>
         <p>
-          <m>-0.989992496600445</m>
+          <m>-0.958924274663138</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1.33333333333333</m>
+          <m>1.2</m>
         </p>
       </answer>
       <solution><alert>A.</alert>
-This is the series for <m>\cos(x)</m> with <m>x</m> replaced by <m>3</m>, so the
-series converges to <m>\cos(3)</m>.
+This is the series for <m>\sin(x)</m> with <m>x</m> replaced by <m>5</m>, so the
+series converges to <m>\sin(5)</m>.
 
 
 
 
 <alert>B.</alert>
-This is the series for <m>{1\over 1-x}</m> with <m>x</m> replaced by <m>{1\over 4}</m>, so the
-series converges to <m>{1\over1 - {1\over 4}}</m>.
+This is the series for <m>{1\over 1-x}</m> with <m>x</m> replaced by <m>{1\over 6}</m>, so the
+series converges to <m>{1\over1 - {1\over 6}}</m>.
 
 
 
@@ -5329,10 +4999,10 @@ series converges to <m>{1\over1 - {1\over 4}}</m>.
     <server-data sourceFilePath="Library/Michigan/Chap10Sec2/Q31.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Michigan/Chap10Sec2/Q31.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-86" ww-id="webwork-86">
-    <static seed="86" source="csafranski/8.4HW_prob7.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-80" ww-id="webwork-80">
+    <static seed="80" source="csafranski/8.4HW_prob7.pg">
       <statement><p>Use the ratio test to find the open interval of convergence of
-<me>\sum_{n=1}^\infty\,{n^3\,x^{2 n}\over 4^{2 n}}.</me></p>
+<me>\sum_{n=1}^\infty\,{n^4\,x^{2 n}\over 2^{2 n}}.</me></p>
 <p>interval of convergence = <fillin characters="15" name="AnSwEr0001"/></p>
 <p><em>(Enter your answer as an interval: thus, if the interval
 of convergence were <m>-3 \lt  x\lt  5</m>, you would enter <alert>(-3,5)</alert>.
@@ -5340,26 +5010,26 @@ Use <alert>Inf</alert> for any endpoint at infinity.)</em></p>
 </statement>
       <answer>
         <p>
-          <m>\left(-4,4\right)</m>
+          <m>\left(-2,2\right)</m>
         </p>
       </answer>
       <solution><p>We use the ratio test:
 <me>\left|{a_{n+1} \over {a_n}}\right| =
-\left|{{(n+1)^3 x^{2(n+1)}} \over {4^{2(n+1)}}} \cdot
-      {{4^{2 n}} \over {n^3 x^{2 n}}}\right| =
-\left({{n+1} \over n}\right)^2 \cdot {{x^2} \over 16}.</me>
+\left|{{(n+1)^4 x^{2(n+1)}} \over {2^{2(n+1)}}} \cdot
+      {{2^{2 n}} \over {n^4 x^{2 n}}}\right| =
+\left({{n+1} \over n}\right)^2 \cdot {{x^2} \over 4}.</me>
 Since <m>{{(n+1)}/ n} \rightarrow 1</m> as <m>n \rightarrow \infty</m>,
 we have
-<me>\lim_{n\to\infty} \left|{{a_{n+1}} \over {a_n}}\right|={{x^2}\over 16}.</me>
-We have <m>{{x^2}/ 16} \lt  1</m> when <m>|x| \lt  4</m>.  The radius of
-convergence is 4 and the series converges for <m>-4 \lt  x \lt  4</m>. (And we don't know what happens at <m>x=2</m> or <m>x=-2</m>.)</p>
+<me>\lim_{n\to\infty} \left|{{a_{n+1}} \over {a_n}}\right|={{x^2}\over 4}.</me>
+We have <m>{{x^2}/ 4} \lt  1</m> when <m>|x| \lt  2</m>.  The radius of
+convergence is 2 and the series converges for <m>-2 \lt  x \lt  2</m>. (And we don't know what happens at <m>x=2</m> or <m>x=-2</m>.)</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.4HW_prob7.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.4HW_prob7.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-87" ww-id="webwork-87">
-    <static seed="87" source="Library/AlfredUniv/diffeq/series/differentiateseries.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-81" ww-id="webwork-81">
+    <static seed="81" source="Library/AlfredUniv/diffeq/series/differentiateseries.pg">
       <statement><p>If  <m>y = \sum_{k=0}^\infty \left(k+1\right)x^{k+3}</m> then <m>y^\prime = \sum_{k=0}^\infty</m> <fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
       <answer>
@@ -5371,70 +5041,70 @@ convergence is 4 and the series converges for <m>-4 \lt  x \lt  4</m>. (And we d
     <server-data sourceFilePath="Library/AlfredUniv/diffeq/series/differentiateseries.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/AlfredUniv/diffeq/series/differentiateseries.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-88" ww-id="webwork-88">
-    <static seed="88" source="csafranski/8.5HW_prob2.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-82" ww-id="webwork-82">
+    <static seed="82" source="csafranski/8.5HW_prob2.pg">
       <task><title>Part 1</title>
 <statement><p>Note that when the constant in the denominator is not 1, we still can use the geometric series, but we have to multiply by
-a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
-<me>\frac{1}{(7+x)}=\frac{\frac{1}{7}}{\frac{1}{7}(7+x)}=\frac{\frac{1}{7}}{1+\frac{1}{7}x}=\frac{1}{7}\cdot \frac{1}{1+\frac{1}{7}x}</me></p>
+a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{2}}{\frac{1}{2}}</m>.
+<me>\frac{1}{(2+x)}=\frac{\frac{1}{2}}{\frac{1}{2}(2+x)}=\frac{\frac{1}{2}}{1+\frac{1}{2}x}=\frac{1}{2}\cdot \frac{1}{1+\frac{1}{2}x}</me></p>
 <p>And now we can use the geometric series expression to get 
-<me>\frac{1}{(7+x)}=\frac{1}{7}\cdot \frac{1}{1+\frac{1}{7}x}=\frac{1}{7}\sum_{n=0}^{\infty}\left(\frac{-1}{7}x\right)^n=\frac{1}{7}\sum_{n=0}^{\infty}\left(\frac{-1}{7}\right)^nx^n</me></p>
+<me>\frac{1}{(2+x)}=\frac{1}{2}\cdot \frac{1}{1+\frac{1}{2}x}=\frac{1}{2}\sum_{n=0}^{\infty}\left(\frac{-1}{2}x\right)^n=\frac{1}{2}\sum_{n=0}^{\infty}\left(\frac{-1}{2}\right)^nx^n</me></p>
 <p>Bringing the coefficient inside the sum means that
-<me>\frac{1}{(7+x)}=\sum_{n=0}^{\infty}\frac{(-1)^n}{7^{n+1}}x^n</me></p>
+<me>\frac{1}{(2+x)}=\sum_{n=0}^{\infty}\frac{(-1)^n}{2^{n+1}}x^n</me></p>
 <p>Differentiate both sides of the equation above and use the result to express the following function as a power series centered at <m>x=0</m>.</p>
-<p><me>f(x) = \frac{1}{(7+x)^2}</me></p>
+<p><me>f(x) = \frac{1}{(2+x)^2}</me></p>
 <p><m>f(x) = \displaystyle \sum\limits_{n=1}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
-</statement><answer><p><m>\left(-0.142857\right)^{n+1}nx^{n-1}</m></p></answer></task>
+</statement><answer><p><m>\left(-0.5\right)^{n+1}nx^{n-1}</m></p></answer></task>
       <task><title>Part 2</title>
 <statement><p>Use your answer above and more differentiation to now express the following function as a power series centered at <m>x=0</m>.</p>
-<p><me>g(x) = \frac{1}{(7+x)^3}</me></p>
+<p><me>g(x) = \frac{1}{(2+x)^3}</me></p>
 <p><m>g(x) = \displaystyle \sum\limits_{n=2}^{\infty}</m> <fillin characters="20" name="AnSwEr0002"/></p>
-</statement><answer><p><m>\frac{-\left(-0.142857\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n-2}</m></p></answer></task>
+</statement><answer><p><m>\frac{-\left(-0.5\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n-2}</m></p></answer></task>
       <task><title>Part 3</title>
 <statement><p>Use your answers above to now express the function as a power series centered at <m>x=0</m>.</p>
-<p><me>h(x) = \frac{x^2}{(7+x)^3}</me></p>
+<p><me>h(x) = \frac{x^2}{(2+x)^3}</me></p>
 <p><m>h(x) =  \displaystyle \sum\limits_{n=2}^{\infty}</m> <fillin characters="20" name="AnSwEr0003"/></p>
-</statement><answer><p><m>\frac{-\left(-0.142857\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n}</m></p></answer></task>
+</statement><answer><p><m>\frac{-\left(-0.5\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n}</m></p></answer></task>
     </static>
     <server-data sourceFilePath="csafranski/8.5HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.5HW_prob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-89" ww-id="webwork-89">
-    <static seed="89" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-83" ww-id="webwork-83">
+    <static seed="83" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg">
       <statement><p>For the following indefinite integral, find the full power series centered at <m>t=0</m> and then give the first 5 nonzero terms of the power series and the open interval of convergence.</p>
-<p><me>f(t) = \int \frac{t}{1+t^{8}}\ dt</me></p>
+<p><me>f(t) = \int \frac{t}{1+t^{4}}\ dt</me></p>
 <p><m>f(t) = C + \displaystyle\sum\limits_{n=0}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>f(t) = C +</m> <fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="AnSwEr0003"/> <m>+</m> <fillin characters="10" name="AnSwEr0004"/> <m>+</m> <fillin characters="10" name="AnSwEr0005"/> <m>+</m> <fillin characters="10" name="AnSwEr0006"/> <m>+ \cdots</m></p>
 <p>The open interval of convergence is: <fillin characters="20" name="AnSwEr0007"/> (Give your answer in .)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{\left(-1\right)^{n}t^{8n+2}}{8n+2}</m>
+          <m>\frac{\left(-1\right)^{n}t^{4n+2}}{4n+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 0+2}}{8\cdot 0+2}</m>
+          <m>\frac{t^{4\cdot 0+2}}{4\cdot 0+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1t^{8\cdot 1+2}}{8\cdot 1+2}</m>
+          <m>\frac{-1t^{4\cdot 1+2}}{4\cdot 1+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 2+2}}{8\cdot 2+2}</m>
+          <m>\frac{t^{4\cdot 2+2}}{4\cdot 2+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1t^{8\cdot 3+2}}{8\cdot 3+2}</m>
+          <m>\frac{-1t^{4\cdot 3+2}}{4\cdot 3+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 4+2}}{8\cdot 4+2}</m>
+          <m>\frac{t^{4\cdot 4+2}}{4\cdot 4+2}</m>
         </p>
       </answer>
       <answer>
@@ -5446,42 +5116,42 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
     <server-data sourceFilePath="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-90" ww-id="webwork-90">
-    <static seed="90" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-84" ww-id="webwork-84">
+    <static seed="84" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg">
       <statement><p>For the following indefinite integral, find the full power series centered at <m>x=0</m> and then give the first 5 nonzero terms of the power series and the open interval of convergence.</p>
-<p><me>f(x) = \int x^5 \ln(1+x)\ dx</me></p>
+<p><me>f(x) = \int x \cdot \ln(1+x)\ dx</me></p>
 <p><m>f(x) = C + \displaystyle\sum\limits_{n=1}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>f(x) = C +</m> <fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="AnSwEr0003"/> <m>+</m> <fillin characters="10" name="AnSwEr0004"/> <m>+</m> <fillin characters="10" name="AnSwEr0005"/> <m>+</m> <fillin characters="10" name="AnSwEr0006"/> <m>+ \cdots</m></p>
 <p>The open interval of convergence is: <fillin characters="20" name="AnSwEr0007"/> (Give your answer in .)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{\left(-1\right)^{n+1}x^{5+n+1}}{n\mathopen{}\left(5+n+1\right)}</m>
+          <m>\frac{\left(-1\right)^{n+1}x^{1+n+1}}{n\mathopen{}\left(1+n+1\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+2}}{1\cdot \left(5+2\right)}</m>
+          <m>\frac{x^{1+2}}{1\cdot \left(1+2\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1x^{5+3}}{2\cdot \left(5+3\right)}</m>
+          <m>\frac{-1x^{1+3}}{2\cdot \left(1+3\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+4}}{3\cdot \left(5+4\right)}</m>
+          <m>\frac{x^{1+4}}{3\cdot \left(1+4\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1x^{5+5}}{4\cdot \left(5+5\right)}</m>
+          <m>\frac{-1x^{1+5}}{4\cdot \left(1+5\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+6}}{5\cdot \left(5+6\right)}</m>
+          <m>\frac{x^{1+6}}{5\cdot \left(1+6\right)}</m>
         </p>
       </answer>
       <answer>
@@ -5493,9 +5163,9 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
     <server-data sourceFilePath="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-91" ww-id="webwork-91">
-    <static seed="91" source="Library/Rochester/setSeries8Power/eva8_6b_a.pg">
-      <statement><p>Represent the function <m>\displaystyle \frac{2}{(1 - 6 x)}</m> as a power series 
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-85" ww-id="webwork-85">
+    <static seed="85" source="Library/Rochester/setSeries8Power/eva8_6b_a.pg">
+      <statement><p>Represent the function <m>\displaystyle \frac{5}{(1 - 7 x)}</m> as a power series 
 <m>\displaystyle f(x) = \sum_{n=0}^\infty c_n x^n</m></p>
 <p><m>c_0 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>c_1 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
@@ -5506,50 +5176,50 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
 </statement>
       <answer>
         <p>
-          <m>2</m>
+          <m>5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>12</m>
+          <m>35</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>72</m>
+          <m>245</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>432</m>
+          <m>1715</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>2592</m>
+          <m>12005</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.166666666666667</m>
+          <m>0.142857142857143</m>
         </p>
       </answer>
-      <solution><m>\displaystyle \frac{2}{1-6 x} = 2 \cdot \sum_{n=0}^\infty (6 x)^n</m>.
+      <solution><m>\displaystyle \frac{5}{1-7 x} = 5 \cdot \sum_{n=0}^\infty (7 x)^n</m>.
 Then we can
-see that <m>c_n = 2 \cdot 6^n</m>, making
-<m>c_0 = 2</m>, <m>c_1 = 2 \cdot 6 = 12</m>,
-<m>c_2 = 2 \cdot 6^2 = 72</m>, etc.  
+see that <m>c_n = 5 \cdot 7^n</m>, making
+<m>c_0 = 5</m>, <m>c_1 = 5 \cdot 7 = 35</m>,
+<m>c_2 = 5 \cdot 7^2 = 245</m>, etc.  
 
   
 
 
 
 Regarding the radius of convergence, we perform the standard ratio test:
-<me>\lim_{n\to\infty} \left| \frac{2(6 x)^{n+1}}{2(6 x)^n} \right|
-=	\lim_{n\to\infty} \left| 6 x \right|
-=	\left| 6 x \right|</me>
-And then <m>\left| 6 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {6}</m>,
-making <m>R = \frac 1 {6}</m>.
+<me>\lim_{n\to\infty} \left| \frac{5(7 x)^{n+1}}{5(7 x)^n} \right|
+=	\lim_{n\to\infty} \left| 7 x \right|
+=	\left| 7 x \right|</me>
+And then <m>\left| 7 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {7}</m>,
+making <m>R = \frac 1 {7}</m>.
 
 
 
@@ -5558,10 +5228,10 @@ making <m>R = \frac 1 {6}</m>.
     <server-data sourceFilePath="Library/Rochester/setSeries8Power/eva8_6b_a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries8Power/eva8_6b_a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-92" ww-id="webwork-92">
-    <static seed="92" source="Library/Rochester/setSeries8Power/eva8_6e.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-86" ww-id="webwork-86">
+    <static seed="86" source="Library/Rochester/setSeries8Power/eva8_6e.pg">
       <statement><p>The function 
-	<m>f(x) = 3 x \arctan (2 x)</m>
+	<m>f(x) = 6 x \arctan (3 x)</m>
 is represented as a power series</p>
 <p><m>\displaystyle f(x) = \sum_{n=0}^\infty c_n x^n .</m></p>
 <p>Find the first few coefficients in the power series.</p>
@@ -5585,7 +5255,7 @@ is represented as a power series</p>
       </answer>
       <answer>
         <p>
-          <m>6</m>
+          <m>18</m>
         </p>
       </answer>
       <answer>
@@ -5595,12 +5265,12 @@ is represented as a power series</p>
       </answer>
       <answer>
         <p>
-          <m>-8</m>
+          <m>-54</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.5</m>
+          <m>0.333333333333333</m>
         </p>
       </answer>
       <solution><m>\displaystyle c_n = \frac{f^{(n)}(0)}{n!}</m>, e.g. 
@@ -5615,8 +5285,8 @@ is represented as a power series</p>
 
 
 
-<m>\displaystyle f'(x)=3 \arctan(2 x) + 3 x\frac{1}{(2 x)^2+1}2 
-= 3 \arctan(2 x) + \frac{6 x}{4 x^2+1}</m>; 
+<m>\displaystyle f'(x)=6 \arctan(3 x) + 6 x\frac{1}{(3 x)^2+1}3 
+= 6 \arctan(3 x) + \frac{18 x}{9 x^2+1}</m>; 
 
 
  
@@ -5629,22 +5299,22 @@ is represented as a power series</p>
 
 
 <m>\displaystyle 
-f''(x) = \left( 3 \arctan(2 x) + \frac{6 x}{4 x^2+1} \right)'</m> 
+f''(x) = \left( 6 \arctan(3 x) + \frac{18 x}{9 x^2+1} \right)'</m> 
 
 
  
 <m>\displaystyle = 
-\frac{6}{4 x^2+1} + \frac{6(4 x^2+1)-6 x4\cdot 2x}{(4 x^2+1)^2}</m>
+\frac{18}{9 x^2+1} + \frac{18(9 x^2+1)-18 x9\cdot 2x}{(9 x^2+1)^2}</m>
 
 
  
 <m>\displaystyle
-= \frac{24 x^2 + 6}{(4 x^2+1)^2} + \frac{6 - 24 x^2}{(4 x^2+1)^2}
-= \frac{12}{(4 x^2+1)^2}</m>;
+= \frac{162 x^2 + 18}{(9 x^2+1)^2} + \frac{18 - 162 x^2}{(9 x^2+1)^2}
+= \frac{36}{(9 x^2+1)^2}</m>;
 
 
 
-<m>\displaystyle c_2 = \frac{12}{2} = 6</m>;
+<m>\displaystyle c_2 = \frac{36}{2} = 18</m>;
 
 
 
@@ -5661,23 +5331,23 @@ Then
 
 
 
-<m>\displaystyle 3 x \arctan(2 x) = 
-3 x \sum_{n=0}^\infty (-1)^n \frac{(2 x)^{2n+1}}{2n+1} = 
-\sum_{n=0}^\infty (-1)^n \frac{3\cdot 2^{2n+1}}{2n+1} x^{2n+2}</m>
+<m>\displaystyle 6 x \arctan(3 x) = 
+6 x \sum_{n=0}^\infty (-1)^n \frac{(3 x)^{2n+1}}{2n+1} = 
+\sum_{n=0}^\infty (-1)^n \frac{6\cdot 3^{2n+1}}{2n+1} x^{2n+2}</m>
 <m>\displaystyle  
-= 6 x^2 - \frac{24}{3} x^4 + \frac{96}{5} x^6 - \frac{384}{7} x^7+...</m>. 
+= 18 x^2 - \frac{162}{3} x^4 + \frac{1458}{5} x^6 - \frac{13122}{7} x^7+...</m>. 
 
 
 
-So <m>c_0=0</m>, <m>c_1=0</m>, <m>c_2=6</m>, <m>c_3=0</m>, <m>c_4=-\frac{24}{3}=-8</m>...
+So <m>c_0=0</m>, <m>c_1=0</m>, <m>c_2=18</m>, <m>c_3=0</m>, <m>c_4=-\frac{162}{3}=-54</m>...
 
 
 
 This is an alternating series. It converges if and only if 
-<m>\displaystyle \lim_{n\to\infty}\frac{3 \cdot (2 x)^{2n+1}}{2n+1}=0</m>. 
-This limit is equal to 0 if and only if <m>|2 x| \le 1</m>, 
-so <m>\displaystyle |x|\le \frac{1}{2}</m>. 
-Therefore the radius of convergence is <m>\displaystyle \frac{1}{2}</m>. 
+<m>\displaystyle \lim_{n\to\infty}\frac{6 \cdot (3 x)^{2n+1}}{2n+1}=0</m>. 
+This limit is equal to 0 if and only if <m>|3 x| \le 1</m>, 
+so <m>\displaystyle |x|\le \frac{1}{3}</m>. 
+Therefore the radius of convergence is <m>\displaystyle \frac{1}{3}</m>. 
 
 
 </solution>
@@ -5685,11 +5355,11 @@ Therefore the radius of convergence is <m>\displaystyle \frac{1}{2}</m>.
     <server-data sourceFilePath="Library/Rochester/setSeries8Power/eva8_6e.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries8Power/eva8_6e.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-93" ww-id="webwork-93">
-    <static seed="93" source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-87" ww-id="webwork-87">
+    <static seed="87" source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg">
       <statement><p>For the following alternating series,</p>
-<p><m>\displaystyle \sum_{n=1}^\infty a_n = 0.45 - \frac{(0.45)^3}{3!} + \frac{(0.45)^5}{5!} -
-\frac{(0.45)^7}{7!} + ...</m></p>
+<p><m>\displaystyle \sum_{n=1}^\infty a_n = 0.55 - \frac{(0.55)^3}{3!} + \frac{(0.55)^5}{5!} -
+\frac{(0.55)^7}{7!} + ...</m></p>
 <p>how many terms do you have to compute in order for your approximation (your partial sum) to be within 0.0000001 from the convergent value of that series?</p>
 <p><fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
@@ -5722,23 +5392,23 @@ The given series satisfies the above conditions. Therefore we have to find the f
 
 
  
-<m>b_1 = 0.45 &gt; 0.0000001</m>,
+<m>b_1 = 0.55 &gt; 0.0000001</m>,
 
 
 
-<m>b_2 = \frac{(0.45)^3}{3!} = 0.0151875 &gt; 0.0000001</m>,
+<m>b_2 = \frac{(0.55)^3}{3!} = 0.0277291666666667 &gt; 0.0000001</m>,
 
 
 
-<m>b_3 = \frac{(0.45)^5}{5!} = 0.0001537734375 &gt; 0.0000001</m>,
+<m>b_3 = \frac{(0.55)^5}{5!} = 0.000419403645833333 &gt; 0.0000001</m>,
 
 
 
-<m>b_4 = \frac{(0.45)^7}{7!} = 7.41407645089286e-07 &gt; 0.0000001</m>,
+<m>b_4 = \frac{(0.55)^7}{7!} = 3.02070483010913e-06 &gt; 0.0000001</m>,
 
 
 
-<m>b_5 = \frac{(0.45)^9}{9!} = 2.08520900181362e-09 \lt  0.0000001</m>.
+<m>b_5 = \frac{(0.55)^9}{9!} = 1.26911557098335e-08 \lt  0.0000001</m>.
 
 
 
@@ -5750,47 +5420,47 @@ Therefore we have to compute the sum of the first 4 terms.
     <server-data sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-94" ww-id="webwork-94">
-    <static seed="94" source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-88" ww-id="webwork-88">
+    <static seed="88" source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg">
       <statement><p>For the following alternating series,</p>
 <p><m>\displaystyle \sum_{n=1}^\infty a_n = 1 - \frac{1}{10} + \frac{1}{100} - \frac{1}{1000} + ...</m></p>
-<p>how many terms do you have to go for your approximation (your partial sum) to be within 1e-05
+<p>how many terms do you have to go for your approximation (your partial sum) to be within 1e-08
 from the convergent value of that series?</p>
 <p><fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>5</m>
+          <m>8</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-95" ww-id="webwork-95">
-    <static seed="95" source="csafranski/8.6HW_prob3.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-89" ww-id="webwork-89">
+    <static seed="89" source="csafranski/8.6HW_prob3.pg">
       <statement><p>Consider the function <m>f(x) = \frac{1}{x^2}</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
 <p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(1.05) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
-<p><m>T_{2}(1.05) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
-<p><m>T_{2}(1.05)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(1.08) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p><m>T_{2}(1.08) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p><m>T_{2}(1.08)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(1.05)</m>.</p>
+</li></ul> estimate of <m>f(1.08)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(1.05)-T_{2}(1.05)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(1.08)-T_{2}(1.08)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.9</m>
+          <m>0.84</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.9075</m>
+          <m>0.8592</m>
         </p>
       </answer>
       <answer>
@@ -5800,53 +5470,53 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>-\left(-0.0005\right)</m>
+          <m>-\left(-0.002048\right)</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(1.05)</m> about <m>x=1</m> is given by:</p>
-<p><m>T_n(x) = f(1) + f'(1)(1.05-1) + \cdots + \frac{f^n(1)}{n!}(1.05-1)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(1.08)</m> about <m>x=1</m> is given by:</p>
+<p><m>T_n(x) = f(1) + f'(1)(1.08-1) + \cdots + \frac{f^n(1)}{n!}(1.08-1)^n</m></p>
 <p><m>f'(x) = -\frac{2}{x^3}</m>,</p>
 <p><m>f''(x) = \frac{6}{x^4}</m>,</p>
 <p><m>f'''(x) = -\frac{24}{x^5}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(1.05) = 0.9</m>,</p>
-<p><m>T_2(1.05) = 0.9075</m>,</p>
-<p><m>f''(x)</m> is always positive in the interval [1,1.05] so <m>T_{2}(1.05)</m> is a overestimate of <m>f(1.05)</m>.</p>
+<p><m>T_1(1.08) = 0.84</m>,</p>
+<p><m>T_2(1.08) = 0.8592</m>,</p>
+<p><m>f''(x)</m> is always positive in the interval [1,1.08] so <m>T_{2}(1.08)</m> is a overestimate of <m>f(1.08)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(1.05)-T_{2}(1.05)\right| \le \frac{M}{3 !}\left|1.05-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.05].</p>
+<p><m>\left|f(1.08)-T_{2}(1.08)\right| \le \frac{M}{3 !}\left|1.08-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.08].</p>
 <p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
 <p>By calculation we find:
-<m>|f(1.05)-T_{2}(1.05)| \le 0.0005</m>.</p>
+<m>|f(1.08)-T_{2}(1.08)| \le 0.002048</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-96" ww-id="webwork-96">
-    <static seed="96" source="csafranski/8.6HW_prob4.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-90" ww-id="webwork-90">
+    <static seed="90" source="csafranski/8.6HW_prob4.pg">
       <statement><p>Consider the function <m>f(x) = \sqrt{x+1}</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 8</m>.</p>
 <p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(10) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
-<p><m>T_{2}(10) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
-<p><m>T_{2}(10)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(11) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
+<p><m>T_{2}(11) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
+<p><m>T_{2}(11)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(10)</m>.</p>
+</li></ul> estimate of <m>f(11)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(11)-T_{2}(11)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>3.3333</m>
+          <m>3.5</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.3148</m>
+          <m>3.4583</m>
         </p>
       </answer>
       <answer>
@@ -5856,31 +5526,31 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>0.0021</m>
+          <m>0.0069</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(10)</m> about <m>x=8</m> is given by:</p>
-<p><m>T_n(10) = f(8) + f'(8)(10-8) + \cdots + \frac{f^n(8)}{n!}(10-8)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(11)</m> about <m>x=8</m> is given by:</p>
+<p><m>T_n(11) = f(8) + f'(8)(11-8) + \cdots + \frac{f^n(8)}{n!}(11-8)^n</m></p>
 <p><m>f'(x) = \frac{1}{2\sqrt{1+x}}</m>,</p>
 <p><m>f''(x) = -\frac{1}{4(1+x)^{\frac{3}{2}}}</m>,</p>
 <p><m>f'''(x) = \frac{3}{8(1+x)^{\frac{5}{2}}}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(10) = 3.3333</m>,</p>
-<p><m>T_2(10) = 3.3148</m>,</p>
-<p><m>f''(x)</m> is always negative in the interval [8,10] so <m>T_{2}(10)</m> is a underestimate of <m>f(10)</m>.</p>
+<p><m>T_1(11) = 3.5000</m>,</p>
+<p><m>T_2(11) = 3.4583</m>,</p>
+<p><m>f''(x)</m> is always negative in the interval [8,11] so <m>T_{2}(11)</m> is a underestimate of <m>f(11)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le \frac{M}{3 !}\left|10-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [8,10].</p>
+<p><m>\left|f(11)-T_{2}(11)\right| \le \frac{M}{3 !}\left|11-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [8,11].</p>
 <p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=8</m>.   Therefore, a suitable choice is <m>M=f'''(8)</m>.</p>
 <p>By calculation we find:
-<m>\left|f(10)-T_{2}(10)\right| \le 0.0021</m>.</p>
+<m>\left|f(11)-T_{2}(11)\right| \le 0.0069</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob4.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-97" ww-id="webwork-97">
-    <static seed="97" source="csafranski/8.6HW_prob5.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-91" ww-id="webwork-91">
+    <static seed="91" source="csafranski/8.6HW_prob5.pg">
       <statement><p>Consider the function <m>f(x) = x \ln(x)</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
 <p><alert> Use 3 decimal places in your three answers below, but make sure you carry all decimals when performing calculations. </alert></p>
@@ -5943,10 +5613,10 @@ from the convergent value of that series?</p>
     <server-data sourceFilePath="csafranski/8.6HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-98" ww-id="webwork-98">
-    <static seed="98" source="Library/Dartmouth/setStewartCh12S10/problem_11.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-92" ww-id="webwork-92">
+    <static seed="92" source="Library/Dartmouth/setStewartCh12S10/problem_11.pg">
       <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
-<me>\int_0^{0.7} \sin(x^3)\,dx, \textrm{ with an error } \lt  10^{-6}</me></p>
+<me>\int_0^{1.1} \sin(x^3)\,dx, \textrm{ with an error } \lt  10^{-3}</me></p>
 <p>Note: The answer you derive here should be the partial sum of an
 appropriate series (the number of terms determined by an error
 estimate).  This number is not necessarily the correct value of the integral
@@ -5955,17 +5625,17 @@ truncated to the correct number of decimal places.</p>
 </statement>
       <answer>
         <p>
-          <m>0.0595559388001338</m>
+          <m>0.325189174095394</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Dartmouth/setStewartCh12S10/problem_11.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-99" ww-id="webwork-99">
-    <static seed="99" source="Library/Dartmouth/setStewartCh12S10/problem_12.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-93" ww-id="webwork-93">
+    <static seed="93" source="Library/Dartmouth/setStewartCh12S10/problem_12.pg">
       <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
-<me>\int_0^{0.4} e^{-x^3}\,dx, \textrm{ with an error } \lt  10^{-4}</me></p>
+<me>\int_0^{0.4} e^{-x^2}\,dx, \textrm{ with an error } \lt  10^{-4}</me></p>
 <p>Note: The answer you derive here should be the partial sum of an
 appropriate series (the number of terms determined by an error
 estimate).  This number is not necessarily the correct value of the integral
@@ -5974,7 +5644,7 @@ truncated to the correct number of decimal places.</p>
 </statement>
       <answer>
         <p>
-          <m>0.393717028571429</m>
+          <m>0.379690666666667</m>
         </p>
       </answer>
     </static>
