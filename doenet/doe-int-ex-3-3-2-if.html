@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US" dir="ltr">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+<link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
+<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<script>
+var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
+window.MathJax = {
+  "tex": {
+    "inlineMath": [
+      [
+        "\\(",
+        "\\)"
+      ]
+    ],
+    "tags": "none",
+    "tagSide": "right",
+    "tagIndent": ".8em",
+    "packages": {
+      "[+]": [
+        "base",
+        "extpfeil",
+        "ams",
+        "amscd",
+        "color",
+        "newcommand",
+        "knowl"
+      ]
+    }
+  },
+  "options": {
+    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
+    "processHtmlClass": "process-math",
+    "renderActions": {
+      "findScript": [
+        10,
+        function (doc) {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(function(node) {
+                var display = !!node.type.match(/; *mode=display/);
+                var math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                var text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = {node: text, delim: '', n: 0};
+                math.end = {node: text, delim: '', n: 0};
+                doc.math.push(math);
+            });
+        },
+        ""
+      ]
+    }
+  },
+  "chtml": {
+    "scale": 0.98,
+    "mtextInheritFont": true
+  },
+  "loader": {
+    "load": [
+      "input/asciimath",
+      "[tex]/extpfeil",
+      "[tex]/amscd",
+      "[tex]/color",
+      "[tex]/newcommand",
+      "[pretext]/mathjaxknowl3.js"
+    ],
+    "paths": {
+      "pretext": "_static/pretext/js/lib"
+    }
+  },
+  "startup": {
+    pageReady() {
+      return MathJax.startup.defaultPageReady().then(function () {
+      console.log("in ready function");
+      rsMathReady();
+      }
+    )}
+  }
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</head>
+<body class="ptx-content ignore-math" id="ac-single">
+<div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
+\DeclareMathOperator{\erf}{erf}
+\DeclareMathOperator{\arctanh}{arctanh}
+              \DeclareMathOperator{\arcsec}{arcsec}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\definecolor{fillinmathshade}{gray}{0.9}
+\newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
+\)</span></div>
+<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true">
+<div class="doenetml-loading" style="text-align:center">
+<p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
+<p>Waiting on the page to load...</p>
+</div>
+<script type="text/doenetml">   
+          <!-- **********************************************************************-->
+<!-- Copyright 2012-2025                                                   -->
+<!-- Matthew Boelkins                                                      -->
+<!--                                                                       -->
+<!-- This file is part of Active Calculus.                                 -->
+<!--                                                                       -->
+<!-- Permission is granted to copy, distribute and/or modify this document -->
+<!-- under the terms of the Creative Commons BY-SA license.  The work      -->
+<!-- may be used for free by any party so long as attribution is given to  -->
+<!-- the author(s), the work and its derivatives are used in the spirit of -->
+<!-- "share and share alike".  All trademarks are the registered marks of  -->
+<!-- their respective owners.                                              -->
+<!-- **********************************************************************-->
+
+<setup>
+  <selectFromSequence name = "a" from = "2" to = "3" step = "1"/>
+  <selectFromSequence name = "b" from = "0" to = "2" step = "1"/>
+  <selectFromSequence name = "c" from = "2" to = "3" step = "1" exclude="$a"/> 
+
+  <selectFromSequence name = "k" from = "0.33" to = "0.99" step = "0.33"/> 
+  <selectFromSequence name = "s" from = "-1" to = "1" step = "2"/> 
+  
+  <function name="fP">$s*$k*1/4*(x+$a)*x*(x-$c)</function>
+  <derivative name="fPP">$fP</derivative>
+
+  <point name="A" styleNumber="2">(0,$$fP(0))
+    <constraints>
+      <constrainTo>$fP</constrainTo>
+    </constraints>
+  </point>
+
+  <point name="B" styleNumber="1" draggable="false">($POI1,$$fP($POI1))</point>
+  <point name="C" styleNumber="1" draggable="false">($POI2,$$fP($POI2))</point>
+
+  <mathList name="correctCrNum">-$a 0 $c</mathList>
+
+  <number name="POI1"> 1/3 * (-sqrt($a^2 + $a*$c + $c^2) - $a + $c)</number>
+  <number name="POI2"> 1/3 * (sqrt($a^2 + $a*$c + $c^2) - $a + $c)</number>
+
+  <number name="midPOI">($POI1 + $POI2)/2</number>
+  
+  <mathList name="correctPOI">$POI1 $POI2</mathList>
+  
+</setup>  
+
+<p>
+  Consider the function <m>y = f(x)</m> whose <em>derivative</em> is given by the following graph.  Note that you can drag the included red point along the graph and see its coordinates.
+</p>  
+      <graph xmin="-4" xmax="4" ymin="-4" ymax="4" size="medium" grid="true" showNavigation="false" fixAxes="true"> 
+        $fP  
+        $A
+        <label fixLocation anchor="(-3-0.2,$$fP(-3)+$s*0.25)"><m>f'</m></label>
+        $B
+        <label fixLocation anchor="($POI1-0.2,$$fP($POI1)+$s*0.25)"><m>($POI1, $$fP($POI1))</m></label>
+        $C
+        <label fixLocation anchor="($POI2+0.2,$$fP($POI2)-$s*0.25)"><m>($POI2, $$fP($POI2))</m></label>
+      </graph>
+
+<p>
+  Again, the graph above is <m>y = f'(x)</m>.  Two key points on the graph of <m>y = f'(x)</m> are also labeled.
+</p>  
+
+<p>
+  <ol marker="a.">
+    <li>
+      <p>
+        Use the given graph of <m>y = f'(x)</m> to estimate the critical numbers of <m>f</m> and report your results below.  If there is more than one critical number, enter them as a list separated by commas.  If there are none, enter <em>none</em>.
+      </p>
+      <p>
+        The critical numbers of <m>f</m> are: <mathInput name="crNum" /> <answer unorderedCompare matchPartial allowedErrorInNumbers="0.1" allowedErrorIsAbsolute><award><when> $crNum=$correctCrNum</when></award></answer>.
+      </p>  
+    </li>
+    <li>
+      <p>
+        Use the given graph of <m>y = f'(x)</m> to estimate the points of inflection of <m>f</m> and report your results below.  If there is more than one inflection point, enter them as a list separated by commas.  If there are none, enter <em>none</em>.
+      </p>
+      <p>
+        The inflection points of <m>f</m> are: <mathInput name="POI" /> <answer unorderedCompare matchPartial allowedErrorInNumbers="0.25" allowedErrorIsAbsolute><award><when> $POI=$correctPOI</when></award></answer>.
+      </p> 
+
+      <!--
+      <p>
+        <m>POI1 = </m><number >$POI1</number>, <m>POI2 = </m><number >$POI2</number>
+      </p>
+      -->
+      
+    </li>
+    <li>
+      <p>
+        On each of the following intervals, decide whether <m>f</m> is increasing, decreasing, or sometimes increasing and sometimes decreasing.
+      </p>
+      <p>
+        On <m>(-\infty, -$a)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(-$a-1) < 0">decreasing</choice>
+          <choice credit="$$fP(-$a-1) > 0">increasing</choice>
+          <choice credit="0">sometimes increasing and sometimes decreasing</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(-$a-1) < 0">always negative</choice>
+          <choice credit="$$fP(-$a-1) > 0">always positive</choice>
+          <choice credit="0">sometimes negative and sometimes positive</choice>
+        </choiceInput></answer> on <m>(-\infty, -$a)</m>.
+      </p>  
+      <p>
+        On <m>(-\$a, 0)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(-$a+0.5) < 0">decreasing</choice>
+          <choice credit="$$fP(-$a+0.5) > 0">increasing</choice>
+          <choice credit="0">sometimes increasing and sometimes decreasing</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(-$a+0.5) < 0">always negative</choice>
+          <choice credit="$$fP(-$a+0.5) > 0">always positive</choice>
+          <choice credit="0">sometimes negative and sometimes positive</choice>
+        </choiceInput></answer> on <m>(-\$a, 0)</m>.
+      </p>  
+      <p>
+        On <m>(0, $c)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(0.5) < 0">decreasing</choice>
+          <choice credit="$$fP(0.5) > 0">increasing</choice>
+          <choice credit="0">sometimes increasing and sometimes decreasing</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP(0.5) < 0">always negative</choice>
+          <choice credit="$$fP(0.5) > 0">always positive</choice>
+          <choice credit="0">sometimes negative and sometimes positive</choice>
+        </choiceInput></answer> on <m>(-\$a, 0)</m>.
+      </p>  
+      <p>
+        On <m>($c, \infty)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP($c+1) < 0">decreasing</choice>
+          <choice credit="$$fP($c+1) > 0">increasing</choice>
+          <choice credit="0">sometimes increasing and sometimes decreasing</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fP($c+1) < 0">always negative</choice>
+          <choice credit="$$fP($c+1) > 0">always positive</choice>
+          <choice credit="0">sometimes negative and sometimes positive</choice>
+        </choiceInput></answer> on <m>(-\infty, -$a)</m>.
+      </p>       
+    </li> 
+    <li>
+      <p>
+        On each of the following intervals, decide whether <m>f</m> is concave up (CCU), concave down (CCD), linear, or sometimes CCUp and sometimes CCD.
+      </p>
+      <p>
+        On <m>(-\infty, $POI1)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($POI1-1) < 0">CCD</choice>
+          <choice credit="$$fPP($POI1-1) > 0">CCU</choice>
+          <choice credit="0">linear</choice>
+          <choice credit="0">sometimes CCU and sometimes CCD</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($POI1-1) < 0">always decreasing</choice>
+          <choice credit="$$fPP($POI1-1) > 0">always increasing</choice>
+          <choice credit="0">always constant</choice>
+          <choice credit="0">sometimes decreasing and sometimes increasing</choice>
+        </choiceInput></answer> on <m>(-\infty, $POI1)</m>.
+      </p>  
+      <p>
+        On <m>($POI1,$POI2)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($midPOI) < 0">CCD</choice>
+          <choice credit="$$fPP($midPOI) > 0">CCU</choice>
+          <choice credit="0">linear</choice>
+          <choice credit="0">sometimes CCU and sometimes CCD</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($midPOI) < 0">always decreasing</choice>
+          <choice credit="$$fPP($midPOI) > 0">always increasing</choice>
+          <choice credit="0">always constant</choice>
+          <choice credit="0">sometimes decreasing and sometimes increasing</choice>
+        </choiceInput></answer> on <m>($POI1,$POI2)</m>.
+      </p>  
+      <p>
+        On <m>($POI1, \infty)</m>, <m>f</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($POI2+1) < 0">CCD</choice>
+          <choice credit="$$fPP($POI2+1) > 0">CCU</choice>
+          <choice credit="0">linear</choice>
+          <choice credit="0">sometimes CCU and sometimes CCD</choice>
+        </choiceInput></answer>  
+        because <m>f'(x)</m> is <answer><choiceInput inline>
+          <choice>?</choice>
+          <choice credit="$$fPP($POI2+1) < 0">always decreasing</choice>
+          <choice credit="$$fPP($POI2+1) > 0">always increasing</choice>
+          <choice credit="0">always constant</choice>
+          <choice credit="0">sometimes decreasing and sometimes increasing</choice>
+        </choiceInput></answer> on <m>($POI1, \infty)</m>.
+      </p> 
+    </li>     
+  </ol>  
+</p>
+  
+
+  
+        </script>
+</div></div>
+</body>
+</html>

@@ -800,1033 +800,7 @@ area under the graph.  Here,
     <pg source="Library/Michigan/Chap7Sec5/Q13.pg"/>
   </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-31" ww-id="webwork-31">
-    <static seed="31" source="csafranski/8.2HW_prob1.pg">
-      <statement><p>Find the Taylor polynomials
-of degree <m>n</m> approximating
-<m>\sin\mathopen{}\left(2x\right)</m>
-for <m>x</m> near 0:</p>
-<p>For <m>n=1</m>, <m>T_{1}(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
-<p>For <m>n=3</m>, <m>T_{3}(x) =</m> <fillin characters="45" name="AnSwEr0002"/></p>
-<p>For <m>n=5</m>, <m>T_{5}(x) =</m> <fillin characters="45" name="AnSwEr0003"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>2x</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2x-1.33333x^{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2x-1.33333x^{3}+0.266667x^{5}</m>
-        </p>
-      </answer>
-      <solution><m>f(x) = \sin\mathopen{}\left(2x\right)</m> Then <m>f(0) = \sin(0) = 0</m>, and
-<me>f'(x) = 2\cos\mathopen{}\left(2x\right),\qquad \hbox{so}\quad f'(0) = 2,</me>
-<me>f''(x) = -4\sin\mathopen{}\left(2x\right),\qquad \hbox{so}\quad f''(0) = 0,</me>
-<me>f'''(x) = -8\cos\mathopen{}\left(2x\right),\qquad \hbox{so}\quad f'''(0) = -8,</me>
-<me>f^{4}(x) = 16\sin\mathopen{}\left(2x\right),\qquad \hbox{so}\quad f^{4}(0) = 0,</me>
-<me>f^{5}(x) = 32\cos\mathopen{}\left(2x\right),\qquad \hbox{so}\quad f^{5}(0) = 32,</me>
-
-
-
-
-Thus,
-<me>T_{1}(x) = 2 x,</me>
-<me>T_{3}(x) = 2 x - {4\over3} x^3,</me>
-and
-<me>T_{5}(x) = 2 x - {4\over3} x^3 + {4\over15} x^5.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/8.2HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/8.2HW_prob1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
-    <static seed="32" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg">
-      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = \pi</m> for <m>f(x) = \cos\mathopen{}\left(x\right)</m>.</p>
-</statement>
-      <answer>
-        <p>
-          <m>-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0</m>
-        </p>
-      </answer>
-      <solution><me>\begin{array}{lcll} 
-T(x) \amp  = \amp \amp  f(a)  \cr\cr 
-\amp  \amp  + \amp  \frac{f'(a)}{1!} (x-a) \cr \cr
-\amp  \amp  + \amp  \frac{f''(a)}{2!} (x-a)^2 \cr \cr
-\amp  \amp  + \amp  \ldots \cr \cr
-\amp  \amp  + \amp  \frac{f^n(a)}{n!} (x-a)^n 
-\end{array}</me>
-
-
-
-So, in this case, <m>f(x) = \cos\mathopen{}\left(x\right)</m> and 
-
-
-
-<m>T_2(x) = A + B(x-\pi ) + C(x-\pi )^2</m> 
-
-
-
-where 
-
-
-
-<m>A=f(\pi )=-1=-1</m> 
-
-
-
-<m>B=f'(\pi )=0=0</m> 
-
-
-
-<m>C=\frac{f''(\pi )}{2!}=\frac{1}{2}=0.5</m> 
-
-
-
-Thus, 
-
-
-
-<me>T_2(x) = -1 + 0 (x - \pi ) + \frac{1}{2} (x - \pi )^2</me>
-
-
-
-or
-
-
-
-<me>T_2(x) = 0.5\mathopen{}\left(x-\pi \right)^{2}-1</me>
-
-
-
-Similarly, 
-
-
-
-<m>T_3(x) = D + E(x-\pi ) + F(x-\pi )^2 + G(x-\pi )^3</m> 
-
-
-
-where 
-
-
-
-<m>D=f(\pi )=-1 = -1</m> 
-
-
-
-<m>E=f'(\pi )=0 =0</m> 
-
-
-
-<m>F=\frac{f''(\pi )}{2!}=\frac{1}{2} =0.5</m> 
-
-
-
-<m>G=\frac{f'''(\pi )}{3!}=0=0</m> 
-
-
-
-Thus, 
-<me>T_3(x) = -1 + 0 (x - \pi ) + \frac{1}{2} (x - \pi )^2 + 0 (x - \pi )^3</me>
-
-
-
-or
-
-
-
-<me>T_3(x)  = 0.5\mathopen{}\left(x-\pi \right)^{2}-1</me>
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
-    <static seed="33" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg">
-      <statement><p>Calculate the Taylor polynomials <m>T_2(x)</m> and <m>T_3(x)</m> centered at <m>x = 7</m> for <m>f(x) = \ln\mathopen{}\left(x+1\right)</m>.</p>
-<p><m>T_2(x) =</m> <fillin characters="80" name="AnSwEr0001"/></p>
-<p><m>T_3(x) = T_2(x) +</m> <fillin characters="60" name="AnSwEr0002"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>2.07944+0.125\mathopen{}\left(x-7\right)-0.0078125\mathopen{}\left(x-7\right)^{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.000651042\mathopen{}\left(x-7\right)^{3}</m>
-        </p>
-      </answer>
-      <solution><m>x</m> = a:
-<me>T(x) = f(a) + \frac{f'(a)}{1!} (x-a) + \frac{f''(a)}{2!} (x-a)^2 + ... + \frac{f^n(a)}{n!} (x-a)^n</me>
-
-
-
-<me>f(x) = \ln\mathopen{}\left(x+1\right)</me>
-<me>f'(x) = \frac{1}{x+1}</me>
-<me>f''(x) = \frac{-1}{\left(x+1\right)^{2}}</me>
-<me>f'''(x) = \frac{2}{\left(x+1\right)^{3}}</me>
-
-
-
-So, in this case, <m>f(x) = \ln\mathopen{}\left(x+1\right)</m> and 
-
-
-
-<m>T_2(x) = A + B(x-7) + C(x-7)^2</m> 
-
-
-
-where 
-
-
-
-<m>A=f(7)=\ln (8)=2.07944</m> 
-
-
-
-<m>B=f'(7)=\frac{1}{(8)}=0.125</m> 
-
-
-
-<m>C=\frac{f''(7)}{2!}=-\frac{1}{(128)}=-0.0078125</m> 
-
-
-
-Thus, 
-
-
-
-<me>T_2(x) = \ln (8) + \frac{1}{(8)} (x - 7)  - \frac{1}{(128)} (x - 7)^2</me>
-
-
-
-or,
-
-
-
-<me>T_2(x) = 2.07944+0.125\mathopen{}\left(x-7\right)-0.0078125\mathopen{}\left(x-7\right)^{2}</me>
-
-
-
-Similarly, 
-
-
-
-<m>T_3(x) = D + E(x-7) + F(x-7)^2 + G(x-7)^3</m> 
-
-
-
-where 
-
-
-
-<m>D=f(7)=\ln (8)=2.07944</m> 
-
-
-
-<m>E=f'(7)=\frac{1}{(8)}=0.125</m> 
-
-
-
-<m>F=\frac{f''(7)}{2!}=-\frac{1}{(128)}=-0.0078125</m> 
-
-
-
-<m>G=\frac{f'''(7)}{3!}=\frac{1}{(1536)}=0.000651042</m> 
-
-
-
-Thus, 
-
-
-
-<me>T_3(x) = \ln (8) + \frac{1}{(8)} (x - 7)  - \frac{1}{(128)} (x - 7)^2 + \frac{1}{(1536)}  (x - 7)^3</me>
-
-
-
-or,
-
-
-
-<me>T_3(x) = T_2(x)  + 0.000651 (x-7)^3</me>
-
-
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.14.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
-    <static seed="34" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg">
-      <statement><p>Compute <m>T_2(x)</m> at <m>x = 0.8</m> for <m>y = e^{x}</m> and use a calculator to compute the error <m>|e^{x} - T_2(x)|</m> at <m>x = -0.7</m>.</p>
-<p><m>T_2(x) =</m> <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>|e^{x} - T_2(x)|</m> = <fillin characters="20" name="AnSwEr0002"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>e^{0.8}+e^{0.8}\mathopen{}\left(x-0.8\right)+\frac{e^{0.8}}{2}\mathopen{}\left(x-0.8\right)^{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.894378</m>
-        </p>
-      </answer>
-      <solution><me>T(x) = f(a) + \frac{f'(a)}{1!} (x-a) + \frac{f''(a)}{2!} (x-a)^2 + ... + \frac{f^n(a)}{n!} (x-a)^n</me>
-
-
-
-<me>f'(x) = e^{x}</me>
-<me>f''(x) = e^{x}</me>
-
-
-
-So, in this case, 
-
-
-
-<me>T_2(x) = e^{0.8}+e^{0.8}\mathopen{}\left(x-0.8\right)+\frac{e^{0.8}}{2}\mathopen{}\left(x-0.8\right)^{2}</me>
-
-
-
-<me>|e^{x} - T_2(x)| = \left|e^{0.8}+e^{0.8}\mathopen{}\left(-1.5\right)+\frac{e^{0.8}}{2}\cdot 2.25-e^{-0.7}\right| = 0.894378</me>
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/8_Further_Applications_of_the_Integral_and_Taylor_Polynomials/8.4_Taylor_Polynomials/8.4.25.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
-    <static seed="35" source="csafranski/8.2HW_prob5.pg">
-      <statement><p>Find the second-degree Taylor polynomial for
-<m>f(x)=5 x^2 - 9 x + 3</m> about
-<m>x=0</m>.</p>
-<p><m>T_2(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
-<p>What do you notice about your polynomial?</p>
-</statement>
-      <answer>
-        <p>
-          <m>5x^{2}-9x+3</m>
-        </p>
-      </answer>
-      <solution><m>f(0) = 3</m>;
-<m>f'(x) = 10 x - 9</m>, so that <m>f'(0) = -9</m>; and
-<m>f''(x) = 10</m>, so that <m>f''(0) = 10</m>.
-
-
-
-Thus
-<me>T_2(x) = 3 - 9 x + {10\over 2!} x^2
-          = 3 - 9 x + 5 x^2.</me>
-
-We notice that <m>f(x) = T_2(x)</m> in this case, which makes
-sense because <m>f(x)</m> is a polynomial.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/8.2HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/8.2HW_prob5.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
-    <static seed="36" source="csafranski/8.2HW_prob6.pg">
-      <statement><p>Suppose <m>g</m> is a function which has continuous derivatives, and that
-<m>g(8)=1, g'(8)=3</m>, <m>g''(8)=-3</m>,
-<m>g'''(8)=-1</m>.</p>
-<p><alert>(a)</alert>
-What is the Taylor polynomial of degree 2 for <m>g</m> near 
-<m>8</m>?</p>
-<p><m>T_2(x) =</m> <fillin characters="45" name="AnSwEr0001"/></p>
-<p><alert>(b)</alert>
-What is the Taylor polynomial of degree 3 for <m>g</m> near 
-<m>8</m>?</p>
-<p><m>T_3(x) =</m> <fillin characters="45" name="AnSwEr0002"/></p>
-<p><alert>(c)</alert>
-Use the two polynomials that you found in parts (a) and (b) to
-approximate <m>g(8.1)</m>.</p>
-<p>With <m>T_2</m>, <m>g(8.1)\approx</m> <fillin characters="15" name="AnSwEr0003"/></p>
-<p>With <m>T_3</m>, <m>g(8.1)\approx</m> <fillin characters="15" name="AnSwEr0004"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>1+3\mathopen{}\left(x-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(x-8\right)^{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1+3\mathopen{}\left(x-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(x-8\right)^{2}+\frac{1}{3!}\mathopen{}\left(-1\right)\mathopen{}\left(x-8\right)^{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.285</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1.28483</m>
-        </p>
-      </answer>
-      <solution><me>g(x) = g(8) + g'(8)(x-8) + \frac{g''(8)}{2!}(x-8)^2
-+\frac{g'''(8)}{3!}(x-8)^3+\cdots</me>
-Substituting gives
-<me>g(x) = 1 + 3(x-8) + \frac{-3}{2!}(x-8)^2
-  +\frac{-1}{3!}(x-8)^3+\cdots</me>
-
-
-
-
-<alert>(a)</alert>
-The degree 2 Taylor polynomial, <m>T_2 (x)</m>, is obtained by truncating
-after the <m>(x-8)^2</m> term:
-<me>T_2(x) = 1+3\mathopen{}\left(x-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(x-8\right)^{2}.</me>
-
-
-
-<alert>(b)</alert>
-The degree 3 Taylor polynomial, <m>T_3 (x)</m>, is obtained by truncating
-after the
-<m>(x-8)^3</m> term:
-<me>T_3 (x) = 1+3\mathopen{}\left(x-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(x-8\right)^{2}+\frac{1}{3!}\mathopen{}\left(-1\right)\mathopen{}\left(x-8\right)^{3}</me>
-
-
-
-
-<alert>(c)</alert>
-Substitute <m>x=8.1</m> into the Taylor polynomial of degree 2:
-<me>T_2(4.9) = 1+3\mathopen{}\left(8.1-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(8.1-8\right)^{2} = 1.285.</me>
-From the Taylor polynomial of degree 3, we obtain
-<me>T_3(4.9) = 1+3\mathopen{}\left(8.1-8\right)+\frac{1}{2!}\mathopen{}\left(-3\right)\mathopen{}\left(8.1-8\right)^{2}+\frac{1}{3!}\mathopen{}\left(-1\right)\mathopen{}\left(8.1-8\right)^{3} = 1.28483.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/8.2HW_prob6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/8.2HW_prob6.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
-    <static seed="37" source="Library/Michigan/Chap9Sec2/Q05.pg">
-      <statement><p>For each of the following, decide if the given series is a geometric
-series.</p>
-<p><alert>A.</alert>
-<m>2 + 2 x + 2 x^2 + 2 x^4 + 2 x^8 + \cdots</m> :</p>
-<p>Is this a geometric series?
-<var form="buttons">
-<li>
-<p>Yes</p>
-</li>
-<li>
-<p>No</p>
-</li>
-</var></p>
-<p>If this is a geometric series, enter</p>
-<p>the first term: <fillin characters="15" name="AnSwEr0001"/></p>
-<p>and the ratio between successive terms: <fillin characters="15" name="AnSwEr0002"/></p>
-<p><em>(Enter </em> <alert>na</alert> <em>for the first
-term and ratio if this is not a geometric series.)</em></p>
-<p><alert>B.</alert>
-<m>2 x^3 + 2 x^{4} + 2 x^{5} + 2 x^{6} + \cdots</m> :</p>
-<p>Is this a geometric series?
-<var form="buttons">
-<li>
-<p>Yes</p>
-</li>
-<li>
-<p>No</p>
-</li>
-</var></p>
-<p>If this is a geometric series, enter</p>
-<p>the first term: <fillin characters="15" name="AnSwEr0003"/></p>
-<p>and the ratio between successive terms: <fillin characters="15" name="AnSwEr0004"/></p>
-<p><em>(Enter </em> <alert>na</alert> <em>for the first
-term and ratio if this is not a geometric series.)</em></p>
-<p><alert>C.</alert>
-<m>1 + 2 x + 4 x^2 + 8 x^3 + 16 x^4 + \cdots</m> :</p>
-<p>Is this a geometric series?
-<var form="buttons">
-<li>
-<p>Yes</p>
-</li>
-<li>
-<p>No</p>
-</li>
-</var></p>
-<p>If this is a geometric series, enter</p>
-<p>the first term: <fillin characters="15" name="AnSwEr0005"/></p>
-<p>and the ratio between successive terms: <fillin characters="15" name="AnSwEr0006"/></p>
-<p><em>(Enter </em> <alert>na</alert> <em>for the first
-term and ratio if this is not a geometric series.)</em></p>
-</statement>
-      <answer>
-        <p>B</p>
-      </answer>
-      <answer>
-        <p>
-          <m>na</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>na</m>
-        </p>
-      </answer>
-      <answer>
-        <p>A</p>
-      </answer>
-      <answer>
-        <p>
-          <m>2x^{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>x</m>
-        </p>
-      </answer>
-      <solution><alert>A.</alert>
-<m>2 + 2 x + 2 x^2 + 2 x^4 + 2 x^8 + \cdots</m> is not a geometric series.
-
-
-
-
-<alert>B.</alert>
-<m>2 x^3 + 2 x^{4} + 2 x^{5} + 2 x^{6} + \cdots</m> is a geometric series with first term <m>2 x^{3}</m> and ratio <m>x</m>.
-
-
-
-
-<alert>C.</alert>
-<m>1 + 2 x + 4 x^2 + 8 x^3 + 16 x^4 + \cdots</m> is a geometric series with first term <m>1</m> and ratio <m>2 x</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q05.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap9Sec2/Q05.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
-    <static seed="38" source="Library/Michigan/Chap9Sec2/Q15.pg">
-      <statement><p>For each of the finite geometric series given below, indicate the
-number of terms in the sum and find the sum.  For the value of the
-sum, enter an expression that gives the exact value, rather than
-entering an approximation.</p>
-<p><alert>A.</alert>
-<m>2 + 2 (0.5) + 2 (0.5)^2 + \cdots + 2 (0.5)^{14}</m></p>
-<p>number of terms = <fillin characters="5" name="AnSwEr0001"/></p>
-<p>value of sum = <fillin characters="35" name="AnSwEr0002"/></p>
-<p><alert>B.</alert>
-<m>2 (0.5)^{6} + 2 (0.5)^{7} + 2 (0.5)^{8} + \cdots + 
-    2 (0.5)^{12}</m></p>
-<p>number of terms = <fillin characters="5" name="AnSwEr0003"/></p>
-<p>value of sum = <fillin characters="35" name="AnSwEr0004"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>15</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>3.9998779296875</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>7</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.06201171875</m>
-        </p>
-      </answer>
-      <solution><alert>A.</alert>
-The series <m>2 + 2 (0.5) + 2 (0.5)^2 + \cdots + 2 (0.5)^{14}</m>
-has 15 terms, and its sum is
-<me>2 + 2 (0.5) + 2 (0.5)^2 + \cdots + 2 (0.5)^{14} =
-   {2 (1 - 0.5^{15})\over 1 - 0.5}.</me>
-
-
-
-
-<alert>B.</alert>
-The series 
-<m>2 (0.5)^{6} + 2 (0.5)^{7} + 2 (0.5)^{8} + \cdots + 2 (0.5)^{12}</m>
-has <m>12 - 6 + 1 = 7</m> terms.  We can write it as 
-<me>2 (0.5)^{6} + 2 (0.5)^{7} + 2 (0.5)^{8} + \cdots + 
-    2 (0.5)^{12} = (2 (0.5)^{6}) (1 + 0.5 + \cdots + 0.5^{6}),</me>
-so its sum is 
-<me>(2 (0.5)^{6}) (1 + 0.5 + \cdots + 0.5^{6}) = 
-    {2 (0.5)^{6} (1 - 0.5^{7})\over 1 - 0.5}.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap9Sec2/Q15.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
-    <static seed="39" source="Library/Michigan/Chap9Sec2/Q19.pg">
-      <statement><p>Find the sum of each of the geometric series given below.  For the
-value of the sum, enter an expression that gives the exact value,
-rather than entering an approximation.</p>
-<p><alert>A.</alert>
-<m>-9 + 3 - {3\over 3} + {3\over 3^2} - {3\over 3^3} + \cdots + {3\over 3^{14}} =</m> <fillin characters="35" name="AnSwEr0001"/></p>
-<p><alert>B.</alert>
-<m>\sum\limits_{n=3}^{\infty} \left({1\over 3}\right)^n =</m> <fillin characters="35" name="AnSwEr0002"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>-6.74999984319363</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.0555555555555555</m>
-        </p>
-      </answer>
-      <solution><alert>A.</alert>
-<m>-9 + 3 - {3\over 3} + {3\over 3^2} - {3\over 3^3} + \cdots + {3\over 3^{14}} = {-9(1 - (-{1\over 3})^{16}\over 1 + {1\over 3}} = {-27(1 - (-{1\over 3})^{16})\over 4}</m>.
-
-
-
-
-<alert>B.</alert>
-<m>\sum\limits_{n=3}^{\infty} \left({1\over 3}\right)^n = {({1\over 3})^{3}\over 1 - {1\over 3}} = ({3\over2})\cdot({1\over 3})^{3}</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap9Sec2/Q19.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap9Sec2/Q19.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
-    <static seed="40" source="Library/ASU-topics/setSequenceandSeries/jj12.pg">
-      <statement><p>Find the sum of the infinite geometric series
-<me>1- \frac{1}{3}+\frac{1}{9} - \frac{1}{27} + \cdots</me></p>
-<p>Enter <em> DNE</em> if the sum does not exist.</p>
-<p>Sum =  <fillin characters="40" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>0.75</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/ASU-topics/setSequenceandSeries/jj12.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/ASU-topics/setSequenceandSeries/jj12.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
-    <static seed="41" source="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg">
-      <statement><p>Find the sum of the series</p>
-<p><m>\displaystyle 1 + \frac{1}{6} + \frac{1}{36} + ... + \frac{1}{6^{n-1}} + ...</m>.</p>
-<p>Answer: <fillin characters="20" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>1.2</m>
-        </p>
-      </answer>
-      <solution><m>a + ar + ar^2 + ... + ar^{n-1} + ...</m> 
-
-
-
-with <m>a = 1</m> and <m>\displaystyle r=\frac{1}{6}</m>. 
-
-
-
-The sum of the series is 
-<m>\displaystyle \frac{1}{1-\frac{1}{6}} = \frac{6}{6-1} = 1.2</m>. 
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Rochester/setSeries4Geometric/ur_sr_4_16.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-42" ww-id="webwork-42">
-    <static seed="42" source="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg">
-      <statement><p>Determine whether the series converges, and if so find its sum.</p>
-<p><m>\displaystyle \sum_{k=1}^{\infty} \frac{4^{k+4}}{5^{k}} =</m> <fillin characters="50" name="AnSwEr0001"/></p>
-<p>(Enter DNE if the sum does not exist.)</p>
-</statement>
-      <answer>
-        <p>
-          <m>\frac{5\cdot 4^{4+1}}{5^{0+1}\mathopen{}\left(5-4\right)}</m>
-        </p>
-      </answer>
-      <solution><m>a={\frac{1024}{5}}</m> and <m>r={\frac{4}{5}}</m>, <m>|r|\lt 1</m> so 
-
-
-<m>\displaystyle \sum_{k=1}^{\infty} \frac{4^{k+4}}{5^{k}} ={\frac{1024}{5}} \sum_{k=0}^{\infty} \left({\frac{4}{5}}\right)^{k} =\frac{{\frac{1024}{5}}}{1-\left({\frac{4}{5}}\right)}=1024</m>
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Wiley/setAnton_Section_9.3/Anton9_3Q13.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-43" ww-id="webwork-43">
-    <static seed="43" source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg">
-      <statement><p>Write out the first four terms of the Maclaurin series of <m>f(x)</m> if 
-<me>f(0) = 8, \qquad f'(0) = -10, \qquad f''(0) = 6, \qquad f'''(0) = -7</me></p>
-<p><m>f(x)</m> = <fillin characters="20" name="AnSwEr0001"/> <m>+ \cdots</m></p>
-</statement>
-      <answer>
-        <p>
-          <m>8-10x+\frac{6x^{2}}{2}-\frac{7x^{3}}{6}</m>
-        </p>
-      </answer>
-      <solution><m>f(x)</m> are
-<me>f(0) + f'(0)x + \frac{f''(0)}{2!}x^2 + \frac{f'''(0)}{3!}x^3</me> 
-<me>= 8-10x+\frac{6x^{2}}{2}-\frac{7x^{3}}{6}.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-44" ww-id="webwork-44">
-    <static seed="44" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg">
-      <statement><p>Find the first four terms of the Taylor series for the function 
-<m>\displaystyle \frac{5}{x}</m> about the point <m>a = 3</m>.  (Your answers should 
-include the variable x when appropriate.)</p>
-<p><m>\displaystyle \frac{5}{x} =</m>
-<fillin characters="15" name="AnSwEr0001"/> +
-<fillin characters="15" name="AnSwEr0002"/> +
-<fillin characters="15" name="AnSwEr0003"/> +
-<fillin characters="15" name="AnSwEr0004"/> + ...</p>
-</statement>
-      <answer>
-        <p>
-          <m>\frac{5}{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-5\mathopen{}\left(x-3\right)}{3^{2}}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{5\mathopen{}\left(x-3\right)^{2}}{3^{3}}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-5\mathopen{}\left(x-3\right)^{3}}{3^{4}}</m>
-        </p>
-      </answer>
-      <solution><m>\displaystyle \frac{5}{x}</m> and its first three derivatives are
-
-
-<m>f(x) = \displaystyle \frac{5}{x}</m>, <m>f'(x) = -{5\over x^2}</m>, <m>f''(x) = {10\over x^3}</m>, 
-and <m>f'''(x) = -{30\over x^4}</m>.  Thus, evaluating these at <m>x = 3</m>,
-we get the terms 
-
-
-
-
-
-
-term 0 = <m>{{5\over3}}</m>
-
-
-
-term 1 = <m>-{{5\over9}}(x - 3)</m>
-
-
-
-term 2 = <m>{{5\over27}}(x - 3)^2</m>, and
-
-
-
-term 3 = <m>-{{5\over81}}(x - 3)^3</m>.
-
-
-
-Thus the series is 
-<me>\displaystyle \frac{5}{x} = {{5\over3}}  - {{5\over9}}(x - 3) + {{5\over27}}(x - 3)^2  - {{5\over81}}(x - 3)^3 + \cdots.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-45" ww-id="webwork-45">
-    <static seed="45" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg">
-      <statement><p>Find the first five terms of the Taylor series for
-the function <m>f(x) = \ln\mathopen{}\left(x\right)</m> about the point <m>a = 10</m>.
-(Your answers should include the variable x when appropriate.)</p>
-<p><m>\ln\mathopen{}\left(x\right) =</m>
-<fillin characters="15" name="AnSwEr0001"/> +
-<fillin characters="15" name="AnSwEr0002"/> +
-<fillin characters="15" name="AnSwEr0003"/> +
-<fillin characters="15" name="AnSwEr0004"/> +
-<fillin characters="15" name="AnSwEr0005"/> + ...</p>
-</statement>
-      <answer>
-        <p>
-          <m>\ln\mathopen{}\left(10\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{1}{10}\mathopen{}\left(x-10\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-\left(\frac{1}{10}\right)^{2}}{2}\mathopen{}\left(x-10\right)^{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{\left(\frac{1}{10}\right)^{3}}{3}\mathopen{}\left(x-10\right)^{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-\left(\frac{1}{10}\right)^{4}}{4}\mathopen{}\left(x-10\right)^{4}</m>
-        </p>
-      </answer>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-46" ww-id="webwork-46">
-    <static seed="46" source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg">
-      <statement><p>Find the first four terms of the Taylor series for the function 
-<m>\sin(x)</m> about the point <m>a = \pi/6</m>.  (Your answers should 
-include the variable x when appropriate.)</p>
-<p><m>\sin(x) =</m>
-<fillin characters="20" name="AnSwEr0001"/> +
-<fillin characters="20" name="AnSwEr0002"/> +
-<fillin characters="20" name="AnSwEr0003"/> +
-<fillin characters="20" name="AnSwEr0004"/> + ...</p>
-</statement>
-      <answer>
-        <p>
-          <m>\frac{1}{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{\sqrt{3}\cdot 1\mathopen{}\left(x-\frac{\pi }{6}\right)}{2}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-1\mathopen{}\left(x-\frac{\pi }{6}\right)^{2}}{4}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{-1\mathopen{}\left(x-\frac{\pi }{6}\right)^{3}}{4\sqrt{3}}</m>
-        </p>
-      </answer>
-      <solution><m>\sin(x)</m> and its first three derivatives are
-
-
-<m>f(x) =  \sin(x)</m>, <m>f'(x) =  \cos(x)</m>, <m>f''(x) = - \sin(x)</m>, 
-and <m>f'''(x) = - \cos(x)</m>.  Thus, evaluating these at <m>x = \pi/6</m>,
-we get the terms 
-
-
-
-
-
-
-term 0 = <m>{{1\over2}}</m>
-
-
-
-term 1 = <m>{{1\sqrt3\over2}}(x - {\pi\over6})</m>
-
-
-
-term 2 = <m>-{{1\over4}}(x-{\pi\over6})^2</m>, and
-
-
-
-term 3 = <m>-{{1\over4\sqrt3}}(x-{\pi\over6})^3</m>.
-
-
-
-Thus the series is 
-<me>\sin(x) = {{1\over2}} + {{1\sqrt3\over2}}(x - {\pi\over6})  - {{1\over4}}(x-{\pi\over6})^2  - {{1\over4\sqrt3}}(x-{\pi\over6})^3 + \cdots.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-47" ww-id="webwork-47">
-    <static seed="47" source="Library/Michigan/5e/Chap10Sec2/Q43.pg">
-      <statement><p>For each of the following, solve exactly for the variable <m>x</m>.</p>
-<p><alert>(a)</alert>
-<m>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = 0.3</m></p>
-<p><m>x =</m> <fillin characters="25" name="AnSwEr0001"/></p>
-<p><alert>(b)</alert>
-<m>1 +  x +  x^2 +  x^3 + \cdots = 3</m></p>
-<p><m>x =</m> <fillin characters="25" name="AnSwEr0002"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>\sin^{-1}\mathopen{}\left(0.3\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{3-1}{1\cdot 3}</m>
-        </p>
-      </answer>
-      <solution><alert>(a)</alert>
-Since <m>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots</m> is the Taylor series for <m>\sin(x)</m>, we know its sum:
-<me>x - \frac{x^3}{3!} + \frac{x^5}{5!} - \cdots = \sin(x) = 0.3.</me>
-Solving for <m>x</m>, we get <m>x = \arcsin(0.3)</m>.
-
-
-
-
-
-<alert>(b)</alert>
-Similarly, since <m>1 +  x +  x^2 +  x^3 + \cdots</m> is a geometric series with base <m>- x</m>, we know its sum
-as well:
-<me>1 +  x +  x^2 +  x^3 + \cdots = \frac{1}{1 -  x} = 3.</me>
-Solving for <m>x</m>, we get <m>x = \frac{2}{3}</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/5e/Chap10Sec2/Q43.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/5e/Chap10Sec2/Q43.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-48" ww-id="webwork-48">
-    <static seed="48" source="Library/Michigan/Chap10Sec2/Q31.pg">
-      <statement><p>By recognizing each series below as a Taylor series evaluated at a
-particular value of <m>x</m>, find the sum of each convergent series.</p>
-<p><alert>A.</alert>
-<m>1 + {1\over 3} + ({1\over 3})^2 + ({1\over 3})^3 + ({1\over 3})^4 + \cdots + ({1\over 3})^n + \cdots =</m> <fillin characters="10" name="AnSwEr0001"/></p>
-<p><alert>B.</alert>
-<m>4 - {4^3\over 3!} + {4^5\over 5!} - {4^7\over 7!} + \cdots + {(-1)^{n} 4^{2n+1}\over (2n+1)!} + \cdots =</m> <fillin characters="10" name="AnSwEr0002"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>1.5</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>-0.756802495307928</m>
-        </p>
-      </answer>
-      <solution><alert>A.</alert>
-This is the series for <m>{1\over 1-x}</m> with <m>x</m> replaced by <m>{1\over 3}</m>, so the
-series converges to <m>{1\over1 - {1\over 3}}</m>.
-
-
-
-
-<alert>B.</alert>
-This is the series for <m>\sin(x)</m> with <m>x</m> replaced by <m>4</m>, so the
-series converges to <m>\sin(4)</m>.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="Library/Michigan/Chap10Sec2/Q31.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap10Sec2/Q31.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-49" ww-id="webwork-49">
-    <static seed="49" source="csafranski/8.4HW_prob7.pg">
-      <statement><p>Use the ratio test to find the open interval of convergence of
-<me>\sum_{n=1}^\infty\,{n^3\,x^{2 n}\over 2^{2 n}}.</me></p>
-<p>interval of convergence = <fillin characters="15" name="AnSwEr0001"/></p>
-<p><em>(Enter your answer as an interval: thus, if the interval
-of convergence were <m>-3 \lt  x\lt  5</m>, you would enter <alert>(-3,5)</alert>.
-Use <alert>Inf</alert> for any endpoint at infinity.)</em></p>
-</statement>
-      <answer>
-        <p>
-          <m>\left(-2,2\right)</m>
-        </p>
-      </answer>
-      <solution><p>We use the ratio test:
-<me>\left|{a_{n+1} \over {a_n}}\right| =
-\left|{{(n+1)^3 x^{2(n+1)}} \over {2^{2(n+1)}}} \cdot
-      {{2^{2 n}} \over {n^3 x^{2 n}}}\right| =
-\left({{n+1} \over n}\right)^2 \cdot {{x^2} \over 4}.</me>
-Since <m>{{(n+1)}/ n} \rightarrow 1</m> as <m>n \rightarrow \infty</m>,
-we have
-<me>\lim_{n\to\infty} \left|{{a_{n+1}} \over {a_n}}\right|={{x^2}\over 4}.</me>
-We have <m>{{x^2}/ 4} \lt  1</m> when <m>|x| \lt  2</m>.  The radius of
-convergence is 2 and the series converges for <m>-2 \lt  x \lt  2</m>. (And we don't know what happens at <m>x=2</m> or <m>x=-2</m>.)</p>
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/8.4HW_prob7.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/8.4HW_prob7.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-50" ww-id="webwork-50">
-    <static seed="50" source="Library/AlfredUniv/diffeq/series/differentiateseries.pg">
+    <static seed="31" source="Library/AlfredUniv/diffeq/series/differentiateseries.pg">
       <statement><p>If  <m>y = \sum_{k=0}^\infty \left(k+1\right)x^{k+3}</m> then <m>y^\prime = \sum_{k=0}^\infty</m> <fillin characters="30" name="AnSwEr0001"/></p>
 </statement>
       <answer>
@@ -1838,70 +812,70 @@ convergence is 2 and the series converges for <m>-2 \lt  x \lt  2</m>. (And we d
     <server-data sourceFilePath="Library/AlfredUniv/diffeq/series/differentiateseries.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/AlfredUniv/diffeq/series/differentiateseries.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-51" ww-id="webwork-51">
-    <static seed="51" source="csafranski/8.5HW_prob2.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-32" ww-id="webwork-32">
+    <static seed="32" source="csafranski/8.5HW_prob2.pg">
       <task><title>Part 1</title>
 <statement><p>Note that when the constant in the denominator is not 1, we still can use the geometric series, but we have to multiply by
-a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
-<me>\frac{1}{(7+x)}=\frac{\frac{1}{7}}{\frac{1}{7}(7+x)}=\frac{\frac{1}{7}}{1+\frac{1}{7}x}=\frac{1}{7}\cdot \frac{1}{1+\frac{1}{7}x}</me></p>
+a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{6}}{\frac{1}{6}}</m>.
+<me>\frac{1}{(6+x)}=\frac{\frac{1}{6}}{\frac{1}{6}(6+x)}=\frac{\frac{1}{6}}{1+\frac{1}{6}x}=\frac{1}{6}\cdot \frac{1}{1+\frac{1}{6}x}</me></p>
 <p>And now we can use the geometric series expression to get 
-<me>\frac{1}{(7+x)}=\frac{1}{7}\cdot \frac{1}{1+\frac{1}{7}x}=\frac{1}{7}\sum_{n=0}^{\infty}\left(\frac{-1}{7}x\right)^n=\frac{1}{7}\sum_{n=0}^{\infty}\left(\frac{-1}{7}\right)^nx^n</me></p>
+<me>\frac{1}{(6+x)}=\frac{1}{6}\cdot \frac{1}{1+\frac{1}{6}x}=\frac{1}{6}\sum_{n=0}^{\infty}\left(\frac{-1}{6}x\right)^n=\frac{1}{6}\sum_{n=0}^{\infty}\left(\frac{-1}{6}\right)^nx^n</me></p>
 <p>Bringing the coefficient inside the sum means that
-<me>\frac{1}{(7+x)}=\sum_{n=0}^{\infty}\frac{(-1)^n}{7^{n+1}}x^n</me></p>
+<me>\frac{1}{(6+x)}=\sum_{n=0}^{\infty}\frac{(-1)^n}{6^{n+1}}x^n</me></p>
 <p>Differentiate both sides of the equation above and use the result to express the following function as a power series centered at <m>x=0</m>.</p>
-<p><me>f(x) = \frac{1}{(7+x)^2}</me></p>
+<p><me>f(x) = \frac{1}{(6+x)^2}</me></p>
 <p><m>f(x) = \displaystyle \sum\limits_{n=1}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
-</statement><answer><p><m>\left(-0.142857\right)^{n+1}nx^{n-1}</m></p></answer></task>
+</statement><answer><p><m>\left(-0.166667\right)^{n+1}nx^{n-1}</m></p></answer></task>
       <task><title>Part 2</title>
 <statement><p>Use your answer above and more differentiation to now express the following function as a power series centered at <m>x=0</m>.</p>
-<p><me>g(x) = \frac{1}{(7+x)^3}</me></p>
+<p><me>g(x) = \frac{1}{(6+x)^3}</me></p>
 <p><m>g(x) = \displaystyle \sum\limits_{n=2}^{\infty}</m> <fillin characters="20" name="AnSwEr0002"/></p>
-</statement><answer><p><m>\frac{-\left(-0.142857\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n-2}</m></p></answer></task>
+</statement><answer><p><m>\frac{-\left(-0.166667\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n-2}</m></p></answer></task>
       <task><title>Part 3</title>
 <statement><p>Use your answers above to now express the function as a power series centered at <m>x=0</m>.</p>
-<p><me>h(x) = \frac{x^2}{(7+x)^3}</me></p>
+<p><me>h(x) = \frac{x^2}{(6+x)^3}</me></p>
 <p><m>h(x) =  \displaystyle \sum\limits_{n=2}^{\infty}</m> <fillin characters="20" name="AnSwEr0003"/></p>
-</statement><answer><p><m>\frac{-\left(-0.142857\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n}</m></p></answer></task>
+</statement><answer><p><m>\frac{-\left(-0.166667\right)^{n+1}}{2}n\mathopen{}\left(n-1\right)x^{n}</m></p></answer></task>
     </static>
     <server-data sourceFilePath="csafranski/8.5HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.5HW_prob2.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-52" ww-id="webwork-52">
-    <static seed="52" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-33" ww-id="webwork-33">
+    <static seed="33" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg">
       <statement><p>For the following indefinite integral, find the full power series centered at <m>t=0</m> and then give the first 5 nonzero terms of the power series and the open interval of convergence.</p>
-<p><me>f(t) = \int \frac{t}{1+t^{8}}\ dt</me></p>
+<p><me>f(t) = \int \frac{t}{1+t^{7}}\ dt</me></p>
 <p><m>f(t) = C + \displaystyle\sum\limits_{n=0}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>f(t) = C +</m> <fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="AnSwEr0003"/> <m>+</m> <fillin characters="10" name="AnSwEr0004"/> <m>+</m> <fillin characters="10" name="AnSwEr0005"/> <m>+</m> <fillin characters="10" name="AnSwEr0006"/> <m>+ \cdots</m></p>
 <p>The open interval of convergence is: <fillin characters="20" name="AnSwEr0007"/> (Give your answer in .)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{\left(-1\right)^{n}t^{8n+2}}{8n+2}</m>
+          <m>\frac{\left(-1\right)^{n}t^{7n+2}}{7n+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 0+2}}{8\cdot 0+2}</m>
+          <m>\frac{t^{7\cdot 0+2}}{7\cdot 0+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1t^{8\cdot 1+2}}{8\cdot 1+2}</m>
+          <m>\frac{-1t^{7\cdot 1+2}}{7\cdot 1+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 2+2}}{8\cdot 2+2}</m>
+          <m>\frac{t^{7\cdot 2+2}}{7\cdot 2+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1t^{8\cdot 3+2}}{8\cdot 3+2}</m>
+          <m>\frac{-1t^{7\cdot 3+2}}{7\cdot 3+2}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{t^{8\cdot 4+2}}{8\cdot 4+2}</m>
+          <m>\frac{t^{7\cdot 4+2}}{7\cdot 4+2}</m>
         </p>
       </answer>
       <answer>
@@ -1913,42 +887,42 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
     <server-data sourceFilePath="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-53" ww-id="webwork-53">
-    <static seed="53" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-34" ww-id="webwork-34">
+    <static seed="34" source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg">
       <statement><p>For the following indefinite integral, find the full power series centered at <m>x=0</m> and then give the first 5 nonzero terms of the power series and the open interval of convergence.</p>
-<p><me>f(x) = \int x^5 \ln(1+x)\ dx</me></p>
+<p><me>f(x) = \int x^4 \ln(1+x)\ dx</me></p>
 <p><m>f(x) = C + \displaystyle\sum\limits_{n=1}^{\infty}</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>f(x) = C +</m> <fillin characters="10" name="AnSwEr0002"/> <m>+</m> <fillin characters="10" name="AnSwEr0003"/> <m>+</m> <fillin characters="10" name="AnSwEr0004"/> <m>+</m> <fillin characters="10" name="AnSwEr0005"/> <m>+</m> <fillin characters="10" name="AnSwEr0006"/> <m>+ \cdots</m></p>
 <p>The open interval of convergence is: <fillin characters="20" name="AnSwEr0007"/> (Give your answer in .)</p>
 </statement>
       <answer>
         <p>
-          <m>\frac{\left(-1\right)^{n+1}x^{5+n+1}}{n\mathopen{}\left(5+n+1\right)}</m>
+          <m>\frac{\left(-1\right)^{n+1}x^{4+n+1}}{n\mathopen{}\left(4+n+1\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+2}}{1\cdot \left(5+2\right)}</m>
+          <m>\frac{x^{4+2}}{1\cdot \left(4+2\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1x^{5+3}}{2\cdot \left(5+3\right)}</m>
+          <m>\frac{-1x^{4+3}}{2\cdot \left(4+3\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+4}}{3\cdot \left(5+4\right)}</m>
+          <m>\frac{x^{4+4}}{3\cdot \left(4+4\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{-1x^{5+5}}{4\cdot \left(5+5\right)}</m>
+          <m>\frac{-1x^{4+5}}{4\cdot \left(4+5\right)}</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>\frac{x^{5+6}}{5\cdot \left(5+6\right)}</m>
+          <m>\frac{x^{4+6}}{5\cdot \left(4+6\right)}</m>
         </p>
       </answer>
       <answer>
@@ -1960,9 +934,9 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
     <server-data sourceFilePath="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-027.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-54" ww-id="webwork-54">
-    <static seed="54" source="Library/Rochester/setSeries8Power/eva8_6b_a.pg">
-      <statement><p>Represent the function <m>\displaystyle \frac{10}{(1 - 5 x)}</m> as a power series 
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-35" ww-id="webwork-35">
+    <static seed="35" source="Library/Rochester/setSeries8Power/eva8_6b_a.pg">
+      <statement><p>Represent the function <m>\displaystyle \frac{9}{(1 - 10 x)}</m> as a power series 
 <m>\displaystyle f(x) = \sum_{n=0}^\infty c_n x^n</m></p>
 <p><m>c_0 =</m> <fillin characters="20" name="AnSwEr0001"/></p>
 <p><m>c_1 =</m> <fillin characters="20" name="AnSwEr0002"/></p>
@@ -1973,50 +947,50 @@ a form of 1 that helps us.  We'll use <m>\frac{\frac{1}{7}}{\frac{1}{7}}</m>.
 </statement>
       <answer>
         <p>
-          <m>10</m>
+          <m>9</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>50</m>
+          <m>90</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>250</m>
+          <m>900</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>1250</m>
+          <m>9000</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>6250</m>
+          <m>90000</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.2</m>
+          <m>0.1</m>
         </p>
       </answer>
-      <solution><m>\displaystyle \frac{10}{1-5 x} = 10 \cdot \sum_{n=0}^\infty (5 x)^n</m>.
+      <solution><m>\displaystyle \frac{9}{1-10 x} = 9 \cdot \sum_{n=0}^\infty (10 x)^n</m>.
 Then we can
-see that <m>c_n = 10 \cdot 5^n</m>, making
-<m>c_0 = 10</m>, <m>c_1 = 10 \cdot 5 = 50</m>,
-<m>c_2 = 10 \cdot 5^2 = 250</m>, etc.  
+see that <m>c_n = 9 \cdot 10^n</m>, making
+<m>c_0 = 9</m>, <m>c_1 = 9 \cdot 10 = 90</m>,
+<m>c_2 = 9 \cdot 10^2 = 900</m>, etc.  
 
   
 
 
 
 Regarding the radius of convergence, we perform the standard ratio test:
-<me>\lim_{n\to\infty} \left| \frac{10(5 x)^{n+1}}{10(5 x)^n} \right|
-=	\lim_{n\to\infty} \left| 5 x \right|
-=	\left| 5 x \right|</me>
-And then <m>\left| 5 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {5}</m>,
-making <m>R = \frac 1 {5}</m>.
+<me>\lim_{n\to\infty} \left| \frac{9(10 x)^{n+1}}{9(10 x)^n} \right|
+=	\lim_{n\to\infty} \left| 10 x \right|
+=	\left| 10 x \right|</me>
+And then <m>\left| 10 x \right| \lt  1 \iff \left| x \right| \lt  \frac 1 {10}</m>,
+making <m>R = \frac 1 {10}</m>.
 
 
 
@@ -2025,10 +999,10 @@ making <m>R = \frac 1 {5}</m>.
     <server-data sourceFilePath="Library/Rochester/setSeries8Power/eva8_6b_a.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries8Power/eva8_6b_a.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-55" ww-id="webwork-55">
-    <static seed="55" source="Library/Rochester/setSeries8Power/eva8_6e.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-36" ww-id="webwork-36">
+    <static seed="36" source="Library/Rochester/setSeries8Power/eva8_6e.pg">
       <statement><p>The function 
-	<m>f(x) = 2 x \arctan (8 x)</m>
+	<m>f(x) = 9 x \arctan (6 x)</m>
 is represented as a power series</p>
 <p><m>\displaystyle f(x) = \sum_{n=0}^\infty c_n x^n .</m></p>
 <p>Find the first few coefficients in the power series.</p>
@@ -2052,7 +1026,7 @@ is represented as a power series</p>
       </answer>
       <answer>
         <p>
-          <m>16</m>
+          <m>54</m>
         </p>
       </answer>
       <answer>
@@ -2062,12 +1036,12 @@ is represented as a power series</p>
       </answer>
       <answer>
         <p>
-          <m>-341.333333333333</m>
+          <m>-648</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.125</m>
+          <m>0.166666666666667</m>
         </p>
       </answer>
       <solution><m>\displaystyle c_n = \frac{f^{(n)}(0)}{n!}</m>, e.g. 
@@ -2082,8 +1056,8 @@ is represented as a power series</p>
 
 
 
-<m>\displaystyle f'(x)=2 \arctan(8 x) + 2 x\frac{1}{(8 x)^2+1}8 
-= 2 \arctan(8 x) + \frac{16 x}{64 x^2+1}</m>; 
+<m>\displaystyle f'(x)=9 \arctan(6 x) + 9 x\frac{1}{(6 x)^2+1}6 
+= 9 \arctan(6 x) + \frac{54 x}{36 x^2+1}</m>; 
 
 
  
@@ -2096,22 +1070,22 @@ is represented as a power series</p>
 
 
 <m>\displaystyle 
-f''(x) = \left( 2 \arctan(8 x) + \frac{16 x}{64 x^2+1} \right)'</m> 
+f''(x) = \left( 9 \arctan(6 x) + \frac{54 x}{36 x^2+1} \right)'</m> 
 
 
  
 <m>\displaystyle = 
-\frac{16}{64 x^2+1} + \frac{16(64 x^2+1)-16 x64\cdot 2x}{(64 x^2+1)^2}</m>
+\frac{54}{36 x^2+1} + \frac{54(36 x^2+1)-54 x36\cdot 2x}{(36 x^2+1)^2}</m>
 
 
  
 <m>\displaystyle
-= \frac{1024 x^2 + 16}{(64 x^2+1)^2} + \frac{16 - 1024 x^2}{(64 x^2+1)^2}
-= \frac{32}{(64 x^2+1)^2}</m>;
+= \frac{1944 x^2 + 54}{(36 x^2+1)^2} + \frac{54 - 1944 x^2}{(36 x^2+1)^2}
+= \frac{108}{(36 x^2+1)^2}</m>;
 
 
 
-<m>\displaystyle c_2 = \frac{32}{2} = 16</m>;
+<m>\displaystyle c_2 = \frac{108}{2} = 54</m>;
 
 
 
@@ -2128,23 +1102,23 @@ Then
 
 
 
-<m>\displaystyle 2 x \arctan(8 x) = 
-2 x \sum_{n=0}^\infty (-1)^n \frac{(8 x)^{2n+1}}{2n+1} = 
-\sum_{n=0}^\infty (-1)^n \frac{2\cdot 8^{2n+1}}{2n+1} x^{2n+2}</m>
+<m>\displaystyle 9 x \arctan(6 x) = 
+9 x \sum_{n=0}^\infty (-1)^n \frac{(6 x)^{2n+1}}{2n+1} = 
+\sum_{n=0}^\infty (-1)^n \frac{9\cdot 6^{2n+1}}{2n+1} x^{2n+2}</m>
 <m>\displaystyle  
-= 16 x^2 - \frac{1024}{3} x^4 + \frac{65536}{5} x^6 - \frac{4194304}{7} x^7+...</m>. 
+= 54 x^2 - \frac{1944}{3} x^4 + \frac{69984}{5} x^6 - \frac{2519424}{7} x^7+...</m>. 
 
 
 
-So <m>c_0=0</m>, <m>c_1=0</m>, <m>c_2=16</m>, <m>c_3=0</m>, <m>c_4=-\frac{1024}{3}=-341.333333333333</m>...
+So <m>c_0=0</m>, <m>c_1=0</m>, <m>c_2=54</m>, <m>c_3=0</m>, <m>c_4=-\frac{1944}{3}=-648</m>...
 
 
 
 This is an alternating series. It converges if and only if 
-<m>\displaystyle \lim_{n\to\infty}\frac{2 \cdot (8 x)^{2n+1}}{2n+1}=0</m>. 
-This limit is equal to 0 if and only if <m>|8 x| \le 1</m>, 
-so <m>\displaystyle |x|\le \frac{1}{8}</m>. 
-Therefore the radius of convergence is <m>\displaystyle \frac{1}{8}</m>. 
+<m>\displaystyle \lim_{n\to\infty}\frac{9 \cdot (6 x)^{2n+1}}{2n+1}=0</m>. 
+This limit is equal to 0 if and only if <m>|6 x| \le 1</m>, 
+so <m>\displaystyle |x|\le \frac{1}{6}</m>. 
+Therefore the radius of convergence is <m>\displaystyle \frac{1}{6}</m>. 
 
 
 </solution>
@@ -2152,11 +1126,11 @@ Therefore the radius of convergence is <m>\displaystyle \frac{1}{8}</m>.
     <server-data sourceFilePath="Library/Rochester/setSeries8Power/eva8_6e.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries8Power/eva8_6e.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-56" ww-id="webwork-56">
-    <static seed="56" source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-37" ww-id="webwork-37">
+    <static seed="37" source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg">
       <statement><p>For the following alternating series,</p>
-<p><m>\displaystyle \sum_{n=1}^\infty a_n = 0.45 - \frac{(0.45)^3}{3!} + \frac{(0.45)^5}{5!} -
-\frac{(0.45)^7}{7!} + ...</m></p>
+<p><m>\displaystyle \sum_{n=1}^\infty a_n = 0.4 - \frac{(0.4)^3}{3!} + \frac{(0.4)^5}{5!} -
+\frac{(0.4)^7}{7!} + ...</m></p>
 <p>how many terms do you have to compute in order for your approximation (your partial sum) to be within 0.0000001 from the convergent value of that series?</p>
 <p><fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
@@ -2189,23 +1163,23 @@ The given series satisfies the above conditions. Therefore we have to find the f
 
 
  
-<m>b_1 = 0.45 &gt; 0.0000001</m>,
+<m>b_1 = 0.4 &gt; 0.0000001</m>,
 
 
 
-<m>b_2 = \frac{(0.45)^3}{3!} = 0.0151875 &gt; 0.0000001</m>,
+<m>b_2 = \frac{(0.4)^3}{3!} = 0.0106666666666667 &gt; 0.0000001</m>,
 
 
 
-<m>b_3 = \frac{(0.45)^5}{5!} = 0.0001537734375 &gt; 0.0000001</m>,
+<m>b_3 = \frac{(0.4)^5}{5!} = 8.53333333333334e-05 &gt; 0.0000001</m>,
 
 
 
-<m>b_4 = \frac{(0.45)^7}{7!} = 7.41407645089286e-07 &gt; 0.0000001</m>,
+<m>b_4 = \frac{(0.4)^7}{7!} = 3.25079365079365e-07 &gt; 0.0000001</m>,
 
 
 
-<m>b_5 = \frac{(0.45)^9}{9!} = 2.08520900181362e-09 \lt  0.0000001</m>.
+<m>b_5 = \frac{(0.4)^9}{9!} = 7.22398589065256e-10 \lt  0.0000001</m>.
 
 
 
@@ -2217,47 +1191,47 @@ Therefore we have to compute the sum of the first 4 terms.
     <server-data sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-57" ww-id="webwork-57">
-    <static seed="57" source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-38" ww-id="webwork-38">
+    <static seed="38" source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg">
       <statement><p>For the following alternating series,</p>
 <p><m>\displaystyle \sum_{n=1}^\infty a_n = 1 - \frac{1}{10} + \frac{1}{100} - \frac{1}{1000} + ...</m></p>
-<p>how many terms do you have to go for your approximation (your partial sum) to be within 0.0001
+<p>how many terms do you have to go for your approximation (your partial sum) to be within 0.001
 from the convergent value of that series?</p>
 <p><fillin characters="35" name="AnSwEr0001"/></p>
 </statement>
       <answer>
         <p>
-          <m>4</m>
+          <m>3</m>
         </p>
       </answer>
     </static>
     <server-data sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-58" ww-id="webwork-58">
-    <static seed="58" source="csafranski/8.6HW_prob3.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-39" ww-id="webwork-39">
+    <static seed="39" source="csafranski/8.6HW_prob3.pg">
       <statement><p>Consider the function <m>f(x) = \frac{1}{x^2}</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
 <p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(1.04) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
-<p><m>T_{2}(1.04) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
-<p><m>T_{2}(1.04)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(1.03) =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p><m>T_{2}(1.03) =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p><m>T_{2}(1.03)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(1.04)</m>.</p>
+</li></ul> estimate of <m>f(1.03)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(1.04)-T_{2}(1.04)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(1.03)-T_{2}(1.03)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>0.92</m>
+          <m>0.94</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>0.9248</m>
+          <m>0.9427</m>
         </p>
       </answer>
       <answer>
@@ -2267,53 +1241,53 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>-\left(-0.000256\right)</m>
+          <m>-\left(-0.000108\right)</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(1.04)</m> about <m>x=1</m> is given by:</p>
-<p><m>T_n(x) = f(1) + f'(1)(1.04-1) + \cdots + \frac{f^n(1)}{n!}(1.04-1)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(1.03)</m> about <m>x=1</m> is given by:</p>
+<p><m>T_n(x) = f(1) + f'(1)(1.03-1) + \cdots + \frac{f^n(1)}{n!}(1.03-1)^n</m></p>
 <p><m>f'(x) = -\frac{2}{x^3}</m>,</p>
 <p><m>f''(x) = \frac{6}{x^4}</m>,</p>
 <p><m>f'''(x) = -\frac{24}{x^5}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(1.04) = 0.92</m>,</p>
-<p><m>T_2(1.04) = 0.9248</m>,</p>
-<p><m>f''(x)</m> is always positive in the interval [1,1.04] so <m>T_{2}(1.04)</m> is a overestimate of <m>f(1.04)</m>.</p>
+<p><m>T_1(1.03) = 0.94</m>,</p>
+<p><m>T_2(1.03) = 0.9427</m>,</p>
+<p><m>f''(x)</m> is always positive in the interval [1,1.03] so <m>T_{2}(1.03)</m> is a overestimate of <m>f(1.03)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(1.04)-T_{2}(1.04)\right| \le \frac{M}{3 !}\left|1.04-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.04].</p>
+<p><m>\left|f(1.03)-T_{2}(1.03)\right| \le \frac{M}{3 !}\left|1.03-1\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [1,1.03].</p>
 <p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=1</m>.   Therefore, a suitable choice is <m>M=f'''(1)</m>.</p>
 <p>By calculation we find:
-<m>|f(1.04)-T_{2}(1.04)| \le 0.000256</m>.</p>
+<m>|f(1.03)-T_{2}(1.03)| \le 0.000108</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob3.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-59" ww-id="webwork-59">
-    <static seed="59" source="csafranski/8.6HW_prob4.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-40" ww-id="webwork-40">
+    <static seed="40" source="csafranski/8.6HW_prob4.pg">
       <statement><p>Consider the function <m>f(x) = \sqrt{x+1}</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 8</m>.</p>
 <p><alert> Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations. </alert></p>
 <p>Calculate:</p>
-<p><m>T_{1}(10) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
-<p><m>T_{2}(10) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
-<p><m>T_{2}(10)</m> is an <ul form="popup" name="AnSwEr0003"><li>
+<p><m>T_{1}(9.5) =</m> <fillin characters="15" name="AnSwEr0001"/></p>
+<p><m>T_{2}(9.5) =</m> <fillin characters="15" name="AnSwEr0002"/></p>
+<p><m>T_{2}(9.5)</m> is an <ul form="popup" name="AnSwEr0003"><li>
 <p>over</p>
 </li><li>
 <p>under</p>
-</li></ul> estimate of <m>f(10)</m>.</p>
+</li></ul> estimate of <m>f(9.5)</m>.</p>
 <p>Using the Lagrange Error Bound for <m>T_n(x)</m>, calculate:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
+<p><m>\left|f(9.5)-T_{2}(9.5)\right| \le</m> <fillin characters="10" name="AnSwEr0004"/></p>
 </statement>
       <answer>
         <p>
-          <m>3.3333</m>
+          <m>3.25</m>
         </p>
       </answer>
       <answer>
         <p>
-          <m>3.3148</m>
+          <m>3.2396</m>
         </p>
       </answer>
       <answer>
@@ -2323,31 +1297,31 @@ from the convergent value of that series?</p>
       </answer>
       <answer>
         <p>
-          <m>0.0021</m>
+          <m>0.0009</m>
         </p>
       </answer>
       <solution><p>SOLUTION</p>
-<p>The <m>n^{th}</m> degree approximation of <m>f(10)</m> about <m>x=8</m> is given by:</p>
-<p><m>T_n(10) = f(8) + f'(8)(10-8) + \cdots + \frac{f^n(8)}{n!}(10-8)^n</m></p>
+<p>The <m>n^{th}</m> degree approximation of <m>f(9.5)</m> about <m>x=8</m> is given by:</p>
+<p><m>T_n(9.5) = f(8) + f'(8)(9.5-8) + \cdots + \frac{f^n(8)}{n!}(9.5-8)^n</m></p>
 <p><m>f'(x) = \frac{1}{2\sqrt{1+x}}</m>,</p>
 <p><m>f''(x) = -\frac{1}{4(1+x)^{\frac{3}{2}}}</m>,</p>
 <p><m>f'''(x) = \frac{3}{8(1+x)^{\frac{5}{2}}}</m>.</p>
 <p>Therefore,</p>
-<p><m>T_1(10) = 3.3333</m>,</p>
-<p><m>T_2(10) = 3.3148</m>,</p>
-<p><m>f''(x)</m> is always negative in the interval [8,10] so <m>T_{2}(10)</m> is a underestimate of <m>f(10)</m>.</p>
+<p><m>T_1(9.5) = 3.2500</m>,</p>
+<p><m>T_2(9.5) = 3.2396</m>,</p>
+<p><m>f''(x)</m> is always negative in the interval [8,9.5] so <m>T_{2}(9.5)</m> is a underestimate of <m>f(9.5)</m>.</p>
 <p>Using the Lagrange Error Bound we find an M such that:</p>
-<p><m>\left|f(10)-T_{2}(10)\right| \le \frac{M}{3 !}\left|10-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [8,10].</p>
+<p><m>\left|f(9.5)-T_{2}(9.5)\right| \le \frac{M}{3 !}\left|9.5-8\right|^{3}</m>, where <m>M \ge \left|f^{3}(t)\right|</m> for all <m>t</m> in the interval [8,9.5].</p>
 <p>By examining <m>\left|f'''(x)\right|</m> we find that it is biggest when <m>t=8</m>.   Therefore, a suitable choice is <m>M=f'''(8)</m>.</p>
 <p>By calculation we find:
-<m>\left|f(10)-T_{2}(10)\right| \le 0.0021</m>.</p>
+<m>\left|f(9.5)-T_{2}(9.5)\right| \le 0.0009</m>.</p>
 </solution>
     </static>
     <server-data sourceFilePath="csafranski/8.6HW_prob4.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob4.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-60" ww-id="webwork-60">
-    <static seed="60" source="csafranski/8.6HW_prob5.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-41" ww-id="webwork-41">
+    <static seed="41" source="csafranski/8.6HW_prob5.pg">
       <statement><p>Consider the function <m>f(x) = x \ln(x)</m>.</p>
 <p>Let <m>T_n(x)</m> be the <m>n^{th}</m> degree Taylor approximation of <m>f(x)</m> about <m>x = 1</m>.</p>
 <p><alert> Use 3 decimal places in your three answers below, but make sure you carry all decimals when performing calculations. </alert></p>
@@ -2410,10 +1384,10 @@ from the convergent value of that series?</p>
     <server-data sourceFilePath="csafranski/8.6HW_prob5.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="csafranski/8.6HW_prob5.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-61" ww-id="webwork-61">
-    <static seed="61" source="Library/Dartmouth/setStewartCh12S10/problem_11.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-42" ww-id="webwork-42">
+    <static seed="42" source="Library/Dartmouth/setStewartCh12S10/problem_11.pg">
       <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
-<me>\int_0^{0.9} \sin(x^3)\,dx, \textrm{ with an error } \lt  10^{-6}</me></p>
+<me>\int_0^{0.9} \sin(x^3)\,dx, \textrm{ with an error } \lt  10^{-5}</me></p>
 <p>Note: The answer you derive here should be the partial sum of an
 appropriate series (the number of terms determined by an error
 estimate).  This number is not necessarily the correct value of the integral
@@ -2429,8 +1403,8 @@ truncated to the correct number of decimal places.</p>
     <server-data sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_11.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
     <pg source="Library/Dartmouth/setStewartCh12S10/problem_11.pg"/>
   </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-62" ww-id="webwork-62">
-    <static seed="62" source="Library/Dartmouth/setStewartCh12S10/problem_12.pg">
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-43" ww-id="webwork-43">
+    <static seed="43" source="Library/Dartmouth/setStewartCh12S10/problem_12.pg">
       <statement><p>Use series to approximate the definite integral to within the indicated accuracy:
 <me>\int_0^{0.4} e^{-x^3}\,dx, \textrm{ with an error } \lt  10^{-4}</me></p>
 <p>Note: The answer you derive here should be the partial sum of an
