@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.1';
+eBookConfig.runestone_version = '7.11.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
 <script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -1328,7 +1328,7 @@ T(x) = 3 - x + \frac{1}{3}x^2 - \frac{1}{9}x^3 + \cdots + 3 \cdot \left(- \frac{
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.1.a"><a href="#PA-8-4-task-0" title="Copy heading and permalink for Task 8.4.1.a" aria-label="Copy heading and permalink for Task 8.4.1.a">🔗</a></div></article><article class="task exercise-like" id="PA-8-4-task-1"><h6 class="heading"><span class="codenumber">(b)</span></h6>
-<div class="para" id="PA-8-4-task-1-1-1">Recall that the sum of an infinite geometric series with first term <span class="process-math">\(a\)</span> and constant ratio <span class="process-math">\(r\)</span> is <span class="process-math">\(S = \frac{1}{1-r}\text{,}\)</span> provided <span class="process-math">\(|r| \lt 1\text{.}\)</span>  Use this result to find a single fraction that represents the value of <span class="process-math">\(T(x)\text{.}\)</span>  For which values of <span class="process-math">\(x\)</span> is this representation valid?<div class="autopermalink" data-description="Paragraph"><a href="#PA-8-4-task-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="PA-8-4-task-1-1-1">Recall that the sum of an infinite geometric series with first term <span class="process-math">\(a\)</span> and constant ratio <span class="process-math">\(r\)</span> is <span class="process-math">\(S = \frac{a}{1-r}\text{,}\)</span> provided <span class="process-math">\(|r| \lt 1\text{.}\)</span>  Use this result to find a single fraction that represents the value of <span class="process-math">\(T(x)\text{.}\)</span>  For which values of <span class="process-math">\(x\)</span> is this representation valid?<div class="autopermalink" data-description="Paragraph"><a href="#PA-8-4-task-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="workspace" data-space="3cm"></div>
 <div class="autopermalink" data-description="Task 8.4.1.b"><a href="#PA-8-4-task-1" title="Copy heading and permalink for Task 8.4.1.b" aria-label="Copy heading and permalink for Task 8.4.1.b">🔗</a></div></article><article class="task exercise-like" id="PA-8-4-task-2"><h6 class="heading"><span class="codenumber">(c)</span></h6>
@@ -1471,10 +1471,13 @@ r_n(x) \approx -x\text{.}
 <div class="para" id="Ex-8a-4-ln-1-plus-x-2-4">Graphical evidence supports the conclusion that for <span class="process-math">\(|x| \lt 1\text{,}\)</span> the series <span class="process-math">\(T_f(x)\)</span> converges in the same way that a geometric one would, and also that the interval of convergence is <span class="process-math">\(-1 \lt x \lt 1\text{.}\)</span>  In <a href="sec-8-4-taylor-series.html#F-8a-4-ln-10-20" class="xref" data-knowl="./knowl/xref/F-8a-4-ln-10-20.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.4.3">Figure 8.4.3</a>, we plot <span class="process-math">\(f(x) = \ln(1+x)\text{,}\)</span> <span class="process-math">\(T_{10}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{10}x^{10}\text{,}\)</span> and <span class="process-math">\(T_{20}(x) = x - \frac{1}{2}x^2 + \cdots - \frac{1}{20}x^{20}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-ln-1-plus-x-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="F-8a-4-ln-10-20"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;">
-<img src="external/images/8a_4_Ex_1.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-4-ln-10-20-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-4-ln-10-20-2-description"><div class="para" id="F-8a-4-ln-10-20-2-1-1">The function <span class="process-math">\(f(x)=\ln(1+x)\)</span> and its degree <span class="process-math">\(10\)</span> and <span class="process-math">\(20\)</span> Taylor polynomial approximations  <span class="process-math">\(T_{10}(x)\)</span> and <span class="process-math">\(T_{20}(x)\)</span> near the point <span class="process-math">\((0,f(0))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-ln-10-20-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<img src="external/images/8a_4_Ex_1.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-4-ln-10-20-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-4-ln-10-20-2-description">
+<div class="para" id="F-8a-4-ln-10-20-2-1-1">The function <span class="process-math">\(f(x)=\ln(1+x)\)</span> and its degree <span class="process-math">\(10\)</span> and <span class="process-math">\(20\)</span> Taylor polynomial approximations near the point <span class="process-math">\((0,f(0))\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-ln-10-20-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="F-8a-4-ln-10-20-2-1-2">All three functions look very close together on the interval <span class="process-math">\((-0.9,0.9)\text{,}\)</span> and then some separation between the graphs can start to be seen.  Greater differences appear after <span class="process-math">\(x=1\)</span> when the function <span class="process-math">\(f(x)\)</span> continues increasing but the degree <span class="process-math">\(10\)</span> and <span class="process-math">\(20\)</span> Taylor approximations start decreasing.<div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-ln-10-20-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.3<span class="period">.</span></span><span class="space"> </span>The function <span class="process-math">\(f(x)=\ln(1+x)\)</span> and its degree <span class="process-math">\(10\)</span> and <span class="process-math">\(20\)</span> Taylor polynomial approximations  <span class="process-math">\(T_{10}(x)\)</span> and <span class="process-math">\(T_{20}(x)\)</span> near the point <span class="process-math">\((0,f(0))\text{.}\)</span><div class="autopermalink" data-description="Figure 8.4.3"><a href="#F-8a-4-ln-10-20" title="Copy heading and permalink for Figure 8.4.3" aria-label="Copy heading and permalink for Figure 8.4.3">🔗</a></div></figcaption></figure><div class="para logical" id="Ex-8a-4-ln-1-plus-x-2-6">
+</div></details>
+</div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.3<span class="period">.</span></span><span class="space"> </span>The function <span class="process-math">\(f(x)=\ln(1+x)\)</span> and its degree <span class="process-math">\(10\)</span> and <span class="process-math">\(20\)</span> Taylor polynomial approximations <span class="process-math">\(T_{10}(x)\)</span> and <span class="process-math">\(T_{20}(x)\)</span> near the point <span class="process-math">\((0,f(0))\text{.}\)</span><div class="autopermalink" data-description="Figure 8.4.3"><a href="#F-8a-4-ln-10-20" title="Copy heading and permalink for Figure 8.4.3" aria-label="Copy heading and permalink for Figure 8.4.3">🔗</a></div></figcaption></figure><div class="para logical" id="Ex-8a-4-ln-1-plus-x-2-6">
 <div class="para">In <a href="sec-8-4-taylor-series.html#F-8a-4-ln-10-20" class="xref" data-knowl="./knowl/xref/F-8a-4-ln-10-20.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.4.3">Figure 8.4.3</a> we see that on the interval <span class="process-math">\(-0.8 \lt x \lt 0.8\text{,}\)</span> <span class="process-math">\(f(x)\text{,}\)</span> <span class="process-math">\(T_{10}(x)\text{,}\)</span> and <span class="process-math">\(T_{20}(x)\)</span> are nearly indistinguishable.  Furthermore, we see that if we widen the interval to <span class="process-math">\(-0.9 \lt x \lt 0.9\text{,}\)</span> <span class="process-math">\(T_{20}(x)\)</span> remains a very good approximation of <span class="process-math">\(f(x)\text{.}\)</span>  For example, we can do some computations and find that</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/F-8a-4-ln-10-20.html">
 \begin{equation*}
@@ -1770,8 +1773,12 @@ r(x) = \lim_{n \to \infty} r_n(x) = \lim_{n \to \infty} (-1) \cdot \frac{1}{(2n+
 <div class="para" id="Ex-8a-4-sine-2-5">Finally, we investigate whether the Taylor series appears to converge to <span class="process-math">\(f(x) = \sin(x)\)</span> or not.  In <a href="sec-8-4-taylor-series.html#F-8a-4-T159" class="xref" data-knowl="./knowl/xref/F-8a-4-T159.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.4.5">Figure 8.4.5</a>, we see the Taylor polynomials of degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\text{,}\)</span> and the significant improvement of the approximation as the degree increases.<div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="F-8a-4-T159"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;">
-<img src="generated/prefigure/Fig-8a-4-T159.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-4-T159-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-4-T159-2-description"><div class="para" id="F-8a-4-T159-2-1-1">The degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\)</span> Taylor polynomials centered at <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> along with the sine function.<div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-T159-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<img src="generated/prefigure/Fig-8a-4-T159.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-4-T159-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-4-T159-2-description">
+<div class="para" id="F-8a-4-T159-2-1-1">A graph of <span class="process-math">\(f(x)=\sin(x)\)</span> along with its degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\)</span> Taylor polynomials centered at <span class="process-math">\(x = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-T159-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="F-8a-4-T159-2-1-2">The graph shows that the function and its Taylor approximations intersect at the point <span class="process-math">\((0,f(0))\text{,}\)</span> have the same slope at that point, and are curving together at that point.<div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-T159-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="F-8a-4-T159-2-1-3">The degree <span class="process-math">\(5\)</span> Taylor approximation is indistinguishable from <span class="process-math">\(\sin(x)\)</span> on the interval <span class="process-math">\((-1.7,1.7)\text{,}\)</span> and is still very close on the interval <span class="process-math">\((-2,2)\text{,}\)</span> while the degree <span class="process-math">\(9\)</span> Taylor approximation is practically indistinguishable from <span class="process-math">\(\sin(x)\)</span> on the interval <span class="process-math">\((-4,4)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-4-T159-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
 </div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.4.5<span class="period">.</span></span><span class="space"> </span>The degree <span class="process-math">\(5\)</span> and <span class="process-math">\(9\)</span> Taylor polynomials centered at <span class="process-math">\(x = 0\)</span> for <span class="process-math">\(f(x) = \sin(x)\text{,}\)</span> along with the sine function.<div class="autopermalink" data-description="Figure 8.4.5"><a href="#F-8a-4-T159" title="Copy heading and permalink for Figure 8.4.5" aria-label="Copy heading and permalink for Figure 8.4.5">🔗</a></div></figcaption></figure><div class="para" id="Ex-8a-4-sine-2-7">For the degree <span class="process-math">\(9\)</span> approximation, we see that <span class="process-math">\(T_9(x)\)</span> and <span class="process-math">\(f(x) = \sin(x)\)</span> are almost indistinguishable on <span class="process-math">\(-4 \lt x \lt 4\text{,}\)</span> which is much wider than the interval <span class="process-math">\(-2 \lt x \lt 2\)</span> on which the <span class="process-math">\(T_5(x)\)</span> approximation is accurate.  Experimenting with even higher degree Taylor polynomials shows that increasing the degree of the approximation appears to widen the interval on which the approximation is accurate and seems to do so without bound, which suggests that the Taylor series of <span class="process-math">\(f(x) = \sin(x)\)</span> in fact converges to <span class="process-math">\(f(x) = \sin(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ex-8a-4-sine-2-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1943,43 +1950,6 @@ r(x) = \lim_{n \to \infty} r_n(x)\text{,}
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.4.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__10_Infinite_Series__10-_7_Taylor_Series__10-_7-_1"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div id="webwork-329" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="329" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/WHFreeman/Rogawski_Calculus_Early_Transcendentals_Second_Edition/10_Infinite_Series/10.7_Taylor_Series/10.7.1.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-329')">Activate</button></div>
-<div class="problem-contents">
-<div class="para logical" id="extracted-webwork-329-1-1-1">
-<div class="para">Write out the first four terms of the Maclaurin series of <span class="process-math">\(f(x)\)</span> if</div>
-<div class="displaymath process-math">
-\begin{equation*}
-f(0) = -2, \qquad f'(0) = 7, \qquad f''(0) = 13, \qquad f'''(0) = -15
-\end{equation*}
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-329-1-1-2">
-<span class="process-math">\(f(x)\)</span> = <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> <span class="process-math">\(+ \cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-329-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.4.5.1"><a href="#Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__10_Infinite_Series__10-_7_Taylor_Series__10-_7-_1" title="Copy heading and permalink for Exercise 8.4.5.1" aria-label="Copy heading and permalink for Exercise 8.4.5.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div id="webwork-330" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="330" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-01.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-330')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-330-1-1-1">Find the first four terms of the Taylor series for the function <span class="process-math">\(\displaystyle \frac{3}{x}\)</span> about the point <span class="process-math">\(a = 3\text{.}\)</span>  (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-330-1-1-2">
-<span class="process-math">\(\displaystyle \frac{3}{x} =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-330-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.4.5.2"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01" title="Copy heading and permalink for Exercise 8.4.5.2" aria-label="Copy heading and permalink for Exercise 8.4.5.2">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div id="webwork-331" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="331" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-04.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-331')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-331-1-1-1">Find the first five terms of the Taylor series for the function <span class="process-math">\(f(x) = \ln\mathopen{}\left(x\right)\)</span> about the point <span class="process-math">\(a = 7\text{.}\)</span> (Your answers should include the variable x when appropriate.)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-331-1-1-2">
-<span class="process-math">\(\ln\mathopen{}\left(x\right) =\)</span> <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span> + ...<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-331-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.4.5.3"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04" title="Copy heading and permalink for Exercise 8.4.5.3" aria-label="Copy heading and permalink for Exercise 8.4.5.3">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div id="webwork-332" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="332" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/FortLewis/Calc2/10-2-Taylor-series/Taylor-series-02.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-332')">Activate</button></div>
 <div class="problem-contents">
@@ -1989,7 +1959,7 @@ f(0) = -2, \qquad f'(0) = 7, \qquad f''(0) = 13, \qquad f'''(0) = -15
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.4.5.4"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02" title="Copy heading and permalink for Exercise 8.4.5.4" aria-label="Copy heading and permalink for Exercise 8.4.5.4">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__5e__Chap10Sec2__Q43"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.4.5.1"><a href="#Library__WHFreeman__Rogawski_Calculus_Early_Transcendentals_Second_Edition__10_Infinite_Series__10-_7_Taylor_Series__10-_7-_1" title="Copy heading and permalink for Exercise 8.4.5.1" aria-label="Copy heading and permalink for Exercise 8.4.5.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div id="webwork-333" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="333" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/5e/Chap10Sec2/Q43.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-333')">Activate</button></div>
 <div class="problem-contents">
@@ -2005,7 +1975,7 @@ f(0) = -2, \qquad f'(0) = 7, \qquad f''(0) = 13, \qquad f'''(0) = -15
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.4.5.5"><a href="#Library__Michigan__5e__Chap10Sec2__Q43" title="Copy heading and permalink for Exercise 8.4.5.5" aria-label="Copy heading and permalink for Exercise 8.4.5.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__Chap10Sec2__Q31"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.4.5.2"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-01" title="Copy heading and permalink for Exercise 8.4.5.2" aria-label="Copy heading and permalink for Exercise 8.4.5.2">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div id="webwork-334" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="334" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Michigan/Chap10Sec2/Q31.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-334')">Activate</button></div>
 <div class="problem-contents">
@@ -2017,7 +1987,7 @@ f(0) = -2, \qquad f'(0) = 7, \qquad f''(0) = 13, \qquad f'''(0) = -15
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.4.5.6"><a href="#Library__Michigan__Chap10Sec2__Q31" title="Copy heading and permalink for Exercise 8.4.5.6" aria-label="Copy heading and permalink for Exercise 8.4.5.6">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8_4HW_prob7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.4.5.3"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-04" title="Copy heading and permalink for Exercise 8.4.5.3" aria-label="Copy heading and permalink for Exercise 8.4.5.3">🔗</a></div></article><article class="exercise exercise-like" id="Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div id="webwork-335" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="335" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.4HW_prob7.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-335')">Activate</button></div>
 <div class="problem-contents">
@@ -2032,6 +2002,106 @@ f(0) = -2, \qquad f'(0) = 7, \qquad f''(0) = 13, \qquad f'''(0) = -15
 </div> <div class="para" id="extracted-webwork-335-1-1-2">interval of convergence = <span class="fillin underline" role="img" aria-label="15-character blank" style="width: 6.818181818181818em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-335-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para" id="extracted-webwork-335-1-1-3">
 <em class="emphasis">(Enter your answer as an interval: thus, if the interval of convergence were <span class="process-math">\(-3 \lt  x\lt  5\text{,}\)</span> you would enter <em class="alert">(-3,5)</em>. Use <em class="alert">Inf</em> for any endpoint at infinity.)</em><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-335-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 8.4.5.4"><a href="#Library__FortLewis__Calc2__10-2-Taylor-series__Taylor-series-02" title="Copy heading and permalink for Exercise 8.4.5.4" aria-label="Copy heading and permalink for Exercise 8.4.5.4">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__5e__Chap10Sec2__Q43"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div id="webwork-336" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="336" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/AlfredUniv/diffeq/series/differentiateseries.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-336')">Activate</button></div>
+<div class="problem-contents"><div class="para" id="extracted-webwork-336-1-1-1">If  <span class="process-math">\(y = \sum_{k=0}^\infty \left(k+1\right)x^{k+3}\)</span> then <span class="process-math">\(y^\prime = \sum_{k=0}^\infty\)</span> <span class="fillin underline" role="img" aria-label="30-character blank" style="width: 13.6363636363636em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-336-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div></div>
+</div>
+<div class="autopermalink" data-description="Exercise 8.4.5.5"><a href="#Library__Michigan__5e__Chap10Sec2__Q43" title="Copy heading and permalink for Exercise 8.4.5.5" aria-label="Copy heading and permalink for Exercise 8.4.5.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Michigan__Chap10Sec2__Q31"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div id="webwork-337" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="337" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.5HW_prob2.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-337')">Activate</button></div>
+<div class="problem-contents">
+<article class="task exercise-like" id="extracted-webwork-337-1-1"><h5 class="heading">
+<span class="codenumber">(a)</span><span class="space"> </span><span class="title">Part 1.</span>
+</h5>
+<div class="para logical" id="extracted-webwork-337-1-1-2-1">
+<div class="para">Note that when the constant in the denominator is not 1, we still can use the geometric series, but we have to multiply by a form of 1 that helps us.  We’ll use <span class="process-math">\(\frac{\frac{1}{4}}{\frac{1}{4}}\text{.}\)</span>
+</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{(4+x)}=\frac{\frac{1}{4}}{\frac{1}{4}(4+x)}=\frac{\frac{1}{4}}{1+\frac{1}{4}x}=\frac{1}{4}\cdot \frac{1}{1+\frac{1}{4}x}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-337-1-1-2-2">
+<div class="para">And now we can use the geometric series expression to get</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{(4+x)}=\frac{1}{4}\cdot \frac{1}{1+\frac{1}{4}x}=\frac{1}{4}\sum_{n=0}^{\infty}\left(\frac{-1}{4}x\right)^n=\frac{1}{4}\sum_{n=0}^{\infty}\left(\frac{-1}{4}\right)^nx^n
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-337-1-1-2-3">
+<div class="para">Bringing the coefficient inside the sum means that</div>
+<div class="displaymath process-math">
+\begin{equation*}
+\frac{1}{(4+x)}=\sum_{n=0}^{\infty}\frac{(-1)^n}{4^{n+1}}x^n
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-337-1-1-2-4">Differentiate both sides of the equation above and use the result to express the following function as a power series centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-337-1-1-2-5">
+<div class="displaymath process-math">
+\begin{equation*}
+f(x) = \frac{1}{(4+x)^2}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-337-1-1-2-6">
+<span class="process-math">\(f(x) = \displaystyle \sum\limits_{n=1}^{\infty}\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-1-2-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.4.5.6.a: Part 1"><a href="#extracted-webwork-337-1-1" title="Copy heading and permalink for Task 8.4.5.6.a: Part 1" aria-label="Copy heading and permalink for Task 8.4.5.6.a: Part 1">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-337-1-2"><h5 class="heading">
+<span class="codenumber">(b)</span><span class="space"> </span><span class="title">Part 2.</span>
+</h5>
+<div class="para" id="extracted-webwork-337-1-2-2-1">Use your answer above and more differentiation to now express the following function as a power series centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-337-1-2-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+g(x) = \frac{1}{(4+x)^3}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-2-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-337-1-2-2-3">
+<span class="process-math">\(g(x) = \displaystyle \sum\limits_{n=2}^{\infty}\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-2-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.4.5.6.b: Part 2"><a href="#extracted-webwork-337-1-2" title="Copy heading and permalink for Task 8.4.5.6.b: Part 2" aria-label="Copy heading and permalink for Task 8.4.5.6.b: Part 2">🔗</a></div></article><article class="task exercise-like" id="extracted-webwork-337-1-3"><h5 class="heading">
+<span class="codenumber">(c)</span><span class="space"> </span><span class="title">Part 3.</span>
+</h5>
+<div class="para" id="extracted-webwork-337-1-3-2-1">Use your answers above to now express the function as a power series centered at <span class="process-math">\(x=0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-337-1-3-2-2">
+<div class="displaymath process-math">
+\begin{equation*}
+h(x) = \frac{x^2}{(4+x)^3}
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-3-2-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-337-1-3-2-3">
+<span class="process-math">\(h(x) =  \displaystyle \sum\limits_{n=2}^{\infty}\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-337-1-3-2-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Task 8.4.5.6.c: Part 3"><a href="#extracted-webwork-337-1-3" title="Copy heading and permalink for Task 8.4.5.6.c: Part 3" aria-label="Copy heading and permalink for Task 8.4.5.6.c: Part 3">🔗</a></div></article>
+</div>
+</div>
+<div class="autopermalink" data-description="Exercise 8.4.5.6"><a href="#Library__Michigan__Chap10Sec2__Q31" title="Copy heading and permalink for Exercise 8.4.5.6" aria-label="Copy heading and permalink for Exercise 8.4.5.6">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8_4HW_prob7"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div id="webwork-338" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="338" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/WinonaState/StewartCalcEarlyTran7ed/Chap11Section09/SCalcET7-11-9-026.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
+<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-338')">Activate</button></div>
+<div class="problem-contents">
+<div class="para" id="extracted-webwork-338-1-1-1">For the following indefinite integral, find the full power series centered at <span class="process-math">\(t=0\)</span> and then give the first 5 nonzero terms of the power series and the open interval of convergence.<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="extracted-webwork-338-1-1-2">
+<div class="displaymath process-math">
+\begin{equation*}
+f(t) = \int \frac{t}{1+t^{5}}\ dt
+\end{equation*}
+</div>
+<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-338-1-1-3">
+<span class="process-math">\(f(t) = C + \displaystyle\sum\limits_{n=0}^{\infty}\)</span> <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-338-1-1-4">
+<span class="process-math">\(f(t) = C +\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(+\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(+\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(+\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(+\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span> <span class="process-math">\(+ \cdots\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="extracted-webwork-338-1-1-5">The open interval of convergence is: <span class="fillin underline" role="img" aria-label="20-character blank" style="width: 9.090909090909092em;"></span> (Give your answer in .)<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-338-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 </div>
 </div>

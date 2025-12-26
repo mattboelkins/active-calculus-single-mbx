@@ -119,14 +119,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '7.11.1';
+eBookConfig.runestone_version = '7.11.5';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.49eb29f446982553.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.731d8387162b79c1.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
+<script src="_static/prefix-runtime.42217a82c75796c8.bundle.js"></script><script src="_static/prefix-723.3e6434f80549315a.bundle.js"></script><script src="_static/prefix-runestone.7e141ad8414abf4a.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-723.3bccd435914aa0ff.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.f4ab138da65f4203.css">
 <script src="_static/pretext/js/pretext-webwork/2.20/pretext-webwork.js"></script><script src="https://webwork-dev.uleth.ca/webwork2_files/node_modules/iframe-resizer/js/iframeResizer.min.js"></script><script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -1336,12 +1336,18 @@ S = \frac{a}{1-r} = \frac{1}{1-\left(\frac{-4}{5}\right)} = \frac{1}{\frac{9}{5}
 <div class="para">Recall that the <span class="process-math">\(n\)</span>th partial sum, <span class="process-math">\(S_n\text{,}\)</span> is the sum of the first <span class="process-math">\(n\)</span> terms of the infinite geometric series <span class="process-math">\(S\text{.}\)</span>  This means that</div>
 <div class="displaymath process-math">
 \begin{equation*}
-S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}\text{.}
+S_n = \sum_{k=0}^{n-1} (-1)^k \left( \frac{4}{5} \right)^k = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1}\text{,}
 \end{equation*}
 </div>
-<div class="para">Note that the exact fractional values of <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_6\text{,}\)</span> have been recorded below along with their decimal representations.  Your task is to use this information to do some related computations that help us understand the behavior of the series and its partial sums.</div>
+<div class="para">which we view as being in the form</div>
+<div class="displaymath process-math">
+\begin{equation*}
+S_n = a_0 - a_1 + a_2 - \cdots + (-1)^{n-1}a_{n-1}\text{.}
+\end{equation*}
+</div>
+<div class="para">Note that the exact fractional values of <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_6\text{,}\)</span> have been recorded below along with their decimal representations. Your task is to use this information to do some related computations that help us understand the behavior of the series and its partial sums.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#PA-8-6-task-0-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="PA-8-6-task-0-1-2">First, by computing the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> for several different values of <span class="process-math">\(n\)</span> (recalling that <span class="process-math">\(S = \frac{5}{9} = 0.\overline{5}\)</span>), fill in the first column of blank spaces provided below.  Then, by viewing the series <span class="process-math">\(S = 1 - \frac{4}{5} + \frac{16}{25} - \cdots + (-1)^{n-1} \left( \frac{4}{5} \right)^{n-1} + \cdots\)</span> as being in the form <span class="process-math">\(S = a_0 + a_1 + a_2 + \cdots\text{,}\)</span> fill in the last column of blank spaces.<div class="autopermalink" data-description="Paragraph"><a href="#PA-8-6-task-0-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="PA-8-6-task-0-1-2">First, by computing the differences between <span class="process-math">\(S_n\)</span> and <span class="process-math">\(S\)</span> for several different values of <span class="process-math">\(n\)</span> (recalling that <span class="process-math">\(S = \frac{5}{9} = 0.\overline{5}\)</span>), fill in the first column of blank spaces provided below.   In addition, fill in decimal representations of <span class="process-math">\(a_3\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(a_6\)</span> to compare to the differences in the preceding adjacent column. For decimal representations you enter, be accurate to within <span class="process-math">\(0.00001\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#PA-8-6-task-0-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="PA-8-6-task-0-1-3">
 <div class="displaymath process-math" id="PA-8-6-task-0-1-3-1">
 \begin{align*}
@@ -1419,8 +1425,12 @@ e^{-x^2} = 1 - x^2 + \frac{1}{2!}x^4 - \frac{1}{3!}x^6 + \cdots + (-1)^n \frac{1
 <div class="para" id="sec-8-6-accuracy-of-approx-4-6">If we plot the partial sums as ordered pairs of the form <span class="process-math">\((n,S_n)\text{,}\)</span> as shown in <a href="sec-8-6-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.2">Figure 8.6.2</a>, we see important patterns in how the partial sums both approach and differ from the exact value of the infinite sum.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8-6-accuracy-of-approx-4-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <figure class="figure figure-like" id="F-8a-5x-alt-partial-sums"><div class="image-box" style="width: 55%; margin-left: 22.5%; margin-right: 22.5%;">
-<img src="generated/prefigure/Fig-8a-5x-alt-partial-sums.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-5x-alt-partial-sums-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-5x-alt-partial-sums-2-description"><div class="para" id="F-8a-5x-alt-partial-sums-2-1-1">Plotting the partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{.}\)</span>  The dashed horizontal line represents the exact sum of the infinite series, <span class="process-math">\(S = \frac{5}{9}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-5x-alt-partial-sums-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div></div></details>
+<img src="generated/prefigure/Fig-8a-5x-alt-partial-sums.svg" role="img" class="contained" alt="described in detail following the image" aria-describedby="F-8a-5x-alt-partial-sums-2-description"><details class="image-description" aria-live="polite"><summary title="details"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe88e;</span></summary><div id="F-8a-5x-alt-partial-sums-2-description">
+<div class="para" id="F-8a-5x-alt-partial-sums-2-1-1">A plot of the partial sums by index, so points <span class="process-math">\((1,S_1)\text{,}\)</span> <span class="process-math">\((2,S_2)\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\((8,S_8)\)</span> along with a horizontal line <span class="process-math">\(S = \frac{5}{9}\)</span> which is the exact sum of the infinite series.<div class="autopermalink" data-description="Paragraph"><a href="#F-8a-5x-alt-partial-sums-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="F-8a-5x-alt-partial-sums-2-1-2">The odd-indexed partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_3\text{,}\)</span> <span class="process-math">\(S_5\)</span> and <span class="process-math">\(S_7\)</span> all lie above the line <span class="process-math">\(S = \frac{5}{9}\text{,}\)</span> while the even-indexed partial sums all lie below the line <span class="process-math">\(S = \frac{5}{9}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#F-8a-5x-alt-partial-sums-2-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="F-8a-5x-alt-partial-sums-2-1-3">Each successive partial sum is closer to the infinite sum than the previous partial sum is.<div class="autopermalink" data-description="Paragraph"><a href="#F-8a-5x-alt-partial-sums-2-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+</div></details>
 </div>
 <figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">8.6.2<span class="period">.</span></span><span class="space"> </span>Plotting the partial sums <span class="process-math">\(S_1\text{,}\)</span> <span class="process-math">\(S_2\text{,}\)</span> <span class="process-math">\(\ldots\text{,}\)</span> <span class="process-math">\(S_8\text{.}\)</span>  The dashed horizontal line represents the exact sum of the infinite series, <span class="process-math">\(S = \frac{5}{9}\text{.}\)</span><div class="autopermalink" data-description="Figure 8.6.2"><a href="#F-8a-5x-alt-partial-sums" title="Copy heading and permalink for Figure 8.6.2" aria-label="Copy heading and permalink for Figure 8.6.2">🔗</a></div></figcaption></figure><div class="para" id="sec-8-6-accuracy-of-approx-4-8">In both our work in the Preview Activity and in <a href="sec-8-6-accuracy-of-approx.html#F-8a-5x-alt-partial-sums" class="xref" data-knowl="./knowl/xref/F-8a-5x-alt-partial-sums.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 8.6.2">Figure 8.6.2</a>, we see how consecutive partial sums oscillate back and forth above and below the exact sum of the infinite series, <span class="process-math">\(\frac{5}{9}\text{,}\)</span> and moreover how the absolute difference between <span class="process-math">\(S\)</span> and <span class="process-math">\(S_n\)</span> decreases as <span class="process-math">\(n\)</span> increases.<div class="autopermalink" data-description="Paragraph"><a href="#sec-8-6-accuracy-of-approx-4-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
@@ -1778,66 +1788,6 @@ f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">8.6.5</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
 <article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_8"><h4 class="heading"><span class="codenumber">1<span class="period">.</span></span></h4>
-<div id="webwork-342" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="342" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_8.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-342')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-342-1-1-1">For the following alternating series,<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-342-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-342-1-1-2">
-<span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n = 0.6 - \frac{(0.6)^3}{3!} + \frac{(0.6)^5}{5!} -
-\frac{(0.6)^7}{7!} + ...\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-342-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-342-1-1-3">how many terms do you have to compute in order for your approximation (your partial sum) to be within 0.0000001 from the convergent value of that series?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-342-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.6.5.1"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_8" title="Copy heading and permalink for Exercise 8.6.5.1" aria-label="Copy heading and permalink for Exercise 8.6.5.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_10"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
-<div id="webwork-343" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="343" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Rochester/setSeries3Convergent/ur_sr_3_10.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-343')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-343-1-1-1">For the following alternating series,<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-343-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-343-1-1-2">
-<span class="process-math">\(\displaystyle \sum_{n=1}^\infty a_n = 1 - \frac{1}{10} + \frac{1}{100} - \frac{1}{1000} + ...\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-343-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-343-1-1-3">how many terms do you have to go for your approximation (your partial sum) to be within 1e-10 from the convergent value of that series?<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-343-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.6.5.2"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_10" title="Copy heading and permalink for Exercise 8.6.5.2" aria-label="Copy heading and permalink for Exercise 8.6.5.2">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob3.pg"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
-<div id="webwork-344" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="344" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.6HW_prob3.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
-<div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-344')">Activate</button></div>
-<div class="problem-contents">
-<div class="para" id="extracted-webwork-344-1-1-1">Consider the function <span class="process-math">\(f(x) = \frac{1}{x^2}\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-2">Let <span class="process-math">\(T_n(x)\)</span> be the <span class="process-math">\(n^{th}\)</span> degree Taylor approximation of <span class="process-math">\(f(x)\)</span> about <span class="process-math">\(x = 1\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-3">
-<em class="alert">Use 4 decimal places in your two answers below, but make sure you carry all decimals when performing calculations.</em><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-4">Calculate:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-4" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-5">
-<span class="process-math">\(T_{1}(1.01) =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-5" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-6">
-<span class="process-math">\(T_{2}(1.01) =\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-6" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="extracted-webwork-344-1-1-7">
-<div class="para">
-<span class="process-math">\(T_{2}(1.01)\)</span> is an</div>
-<ul class="square" id="extracted-webwork-344-1-1-7-2">
-<li id="extracted-webwork-344-1-1-7-2-1">
-<div class="para" id="extracted-webwork-344-1-1-7-2-1-1">over<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-7-2-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-344-1-1-7-2-1" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-<li id="extracted-webwork-344-1-1-7-2-2">
-<div class="para" id="extracted-webwork-344-1-1-7-2-2-1">under<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-7-2-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item"><a href="#extracted-webwork-344-1-1-7-2-2" title="Copy heading and permalink for Item" aria-label="Copy heading and permalink for Item">🔗</a></div>
-</li>
-</ul>
-<div class="para">estimate of <span class="process-math">\(f(1.01)\text{.}\)</span>
-</div>
-<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-7" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-8">Using the Lagrange Error Bound for <span class="process-math">\(T_n(x)\text{,}\)</span> calculate:<div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-8" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="extracted-webwork-344-1-1-9">
-<span class="process-math">\(\left|f(1.01)-T_{2}(1.01)\right| \le\)</span> <span class="fillin underline" role="img" aria-label="10-character blank" style="width: 4.545454545454546em;"></span><div class="autopermalink" data-description="Paragraph"><a href="#extracted-webwork-344-1-1-9" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-</div>
-</div>
-<div class="autopermalink" data-description="Exercise 8.6.5.3"><a href="#csafranski__8.6HW_prob3.pg" title="Copy heading and permalink for Exercise 8.6.5.3" aria-label="Copy heading and permalink for Exercise 8.6.5.3">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob4.pg"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div id="webwork-345" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="345" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.6HW_prob4.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-345')">Activate</button></div>
 <div class="problem-contents">
@@ -1874,7 +1824,7 @@ f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.6.5.4"><a href="#csafranski__8.6HW_prob4.pg" title="Copy heading and permalink for Exercise 8.6.5.4" aria-label="Copy heading and permalink for Exercise 8.6.5.4">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob5.pg"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.5.1"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_8" title="Copy heading and permalink for Exercise 8.6.5.1" aria-label="Copy heading and permalink for Exercise 8.6.5.1">🔗</a></div></article><article class="exercise exercise-like" id="Library__Rochester__setSeries3Convergent__ur_sr_3_10"><h4 class="heading"><span class="codenumber">2<span class="period">.</span></span></h4>
 <div id="webwork-346" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="346" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="csafranski/8.6HW_prob5.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-346')">Activate</button></div>
 <div class="problem-contents">
@@ -1913,7 +1863,7 @@ f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.6.5.5"><a href="#csafranski__8.6HW_prob5.pg" title="Copy heading and permalink for Exercise 8.6.5.5" aria-label="Copy heading and permalink for Exercise 8.6.5.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Dartmouth__setStewartCh12S10__problem_11.pg"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.5.2"><a href="#Library__Rochester__setSeries3Convergent__ur_sr_3_10" title="Copy heading and permalink for Exercise 8.6.5.2" aria-label="Copy heading and permalink for Exercise 8.6.5.2">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob3.pg"><h4 class="heading"><span class="codenumber">3<span class="period">.</span></span></h4>
 <div id="webwork-347" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="347" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_11.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-347')">Activate</button></div>
 <div class="problem-contents">
@@ -1929,7 +1879,7 @@ f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
 </div>
 </div>
 </div>
-<div class="autopermalink" data-description="Exercise 8.6.5.6"><a href="#Library__Dartmouth__setStewartCh12S10__problem_11.pg" title="Copy heading and permalink for Exercise 8.6.5.6" aria-label="Copy heading and permalink for Exercise 8.6.5.6">🔗</a></div></article><article class="exercise exercise-like" id="Library__Dartmouth__setStewartCh12S10__problem_12.pg"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.5.3"><a href="#csafranski__8.6HW_prob3.pg" title="Copy heading and permalink for Exercise 8.6.5.3" aria-label="Copy heading and permalink for Exercise 8.6.5.3">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob4.pg"><h4 class="heading"><span class="codenumber">4<span class="period">.</span></span></h4>
 <div id="webwork-348" class="exercise-wrapper" data-domain="https://webwork-dev.uleth.ca" data-seed="348" data-localize-correct="Correct" data-localize-incorrect="Incorrect" data-localize-blank="Blank" data-localize-submit="Submit" data-localize-check-responses="Check Responses" data-localize-reveal="Reveal" data-localize-randomize="Randomize" data-localize-reset="Reset" data-localize-hint="Hint" data-localize-solution="Solution" data-sourceFilePath="Library/Dartmouth/setStewartCh12S10/problem_12.pg" data-courseID="chrissy-playground" data-userID="anonymous" data-coursePassword="anonymous" aria-live="polite">
 <div class="problem-buttons"><button class="webwork-button" onclick="handleWW('webwork-348')">Activate</button></div>
 <div class="problem-contents">
@@ -1945,6 +1895,9 @@ f^{(n)}(x) = \frac{(-1)^{n-1}(n-1)!}{(1+x)^n}\text{.}
 </div>
 </div>
 </div>
+<div class="autopermalink" data-description="Exercise 8.6.5.4"><a href="#csafranski__8.6HW_prob4.pg" title="Copy heading and permalink for Exercise 8.6.5.4" aria-label="Copy heading and permalink for Exercise 8.6.5.4">🔗</a></div></article><article class="exercise exercise-like" id="csafranski__8.6HW_prob5.pg"><h4 class="heading"><span class="codenumber">5<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.5.5"><a href="#csafranski__8.6HW_prob5.pg" title="Copy heading and permalink for Exercise 8.6.5.5" aria-label="Copy heading and permalink for Exercise 8.6.5.5">🔗</a></div></article><article class="exercise exercise-like" id="Library__Dartmouth__setStewartCh12S10__problem_11.pg"><h4 class="heading"><span class="codenumber">6<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 8.6.5.6"><a href="#Library__Dartmouth__setStewartCh12S10__problem_11.pg" title="Copy heading and permalink for Exercise 8.6.5.6" aria-label="Copy heading and permalink for Exercise 8.6.5.6">🔗</a></div></article><article class="exercise exercise-like" id="Library__Dartmouth__setStewartCh12S10__problem_12.pg"><h4 class="heading"><span class="codenumber">7<span class="period">.</span></span></h4>
 <div class="autopermalink" data-description="Exercise 8.6.5.7"><a href="#Library__Dartmouth__setStewartCh12S10__problem_12.pg" title="Copy heading and permalink for Exercise 8.6.5.7" aria-label="Copy heading and permalink for Exercise 8.6.5.7">🔗</a></div></article><article class="exercise exercise-like" id="ez-8-6-3"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
 <div class="para logical" id="ez-8-6-3-1-1">
 <div class="para">In this exercise we consider the definite integral</div>
