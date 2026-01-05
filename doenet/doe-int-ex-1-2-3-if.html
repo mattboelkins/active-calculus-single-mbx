@@ -115,7 +115,7 @@ window.MathJax = {
 
 <select name="graphSelect" numToSelect="4">
   <option>
-    <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
       <function> $line </function>
       <text anchor="(1,-.5)">
       a
@@ -124,7 +124,7 @@ window.MathJax = {
     <boolean>0</boolean>
   </option>
   <option>
-    <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
       <function domain="[-2.5,1-$k)"> $line </function>
       <function domain="[1+$k,2.5)"> $line </function>
       <endpoint open="true" draggable="false">(1, $$line(1))</endpoint>
@@ -135,7 +135,7 @@ window.MathJax = {
     <boolean>1</boolean>
   </option>
   <option>
-    <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
       <function domain="[-2.5,-1-$k)"> $line </function>
       <function domain="[-1+$k,2.5)"> $line </function>
       <endpoint open="true" draggable="false">(-1, $$line(-1))</endpoint>
@@ -146,7 +146,7 @@ window.MathJax = {
     <boolean>0</boolean>
   </option>
   <option>
-    <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
       <function domain="[-2.5,1-$k)"> $line </function>
       <function domain="[1+$k,2.5)"> $line2 </function>
       <endpoint open="true" draggable="false">(1, $$line(1))</endpoint>
