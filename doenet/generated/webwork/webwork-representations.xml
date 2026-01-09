@@ -1,378 +1,558 @@
 <?xml version='1.0' encoding='utf-8'?>
 <webwork-representations>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-19" ww-id="webwork-19">
-    <static seed="19" source="csafranski/5.6HW_prob1.pg">
-      <statement><p>Calculate the integral approximations <m>T_{6}</m> , <m>M_{6}</m> and <m>S_{12}</m> for</p>
-<p><m>\int^{4}_{0} x^{6} \, dx</m>.</p>
-<p><m>T_{6}</m> = <fillin characters="20" name="AnSwEr0001"/></p>
-<p><m>M_{6}</m> = <fillin characters="20" name="AnSwEr0002"/></p>
-<p><m>S_{12}</m> = <fillin characters="20" name="AnSwEr0003"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>2566.03</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2228.63</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2341.1</m>
-        </p>
-      </answer>
-      <solution><m>f(x) = x^{6}</m>.  We divide [0, 4] into 6 subintervals of width
-
-
-
-<m>\Delta x = \frac{4 - 0}{6} = 0.666667</m>
-
-
-
-with endpoints <m>x_i</m> = 0, 0.666667, 1.33333, 2, 2.66667, 3.33333, 4, and midpoints <m>c_j</m> = 0.333333, 1, 1.66667, 2.33333, 3, 3.66667.  With this data, we get
-
-
-
-<m>T_{6} = \frac{1}{2} \Delta x \left( f(x_0) + 2  f(x_1) + ... + 2  f(x_{N-1}) + f(x_N) \right) = \frac{1}{2} \cdotp 0.666667 \left( 0 + 0.175583 + 11.2373 + 128 + 719.188 + 2743.48 + 4096 \right) = 2566.03</m>
-
-
-
-<m>M_{6} = \Delta x \left( f(c_1) + ... + f(c_N) \right) =  0.666667 \left( 0.00137174 + 1 + 21.4335 + 161.384 + 729 + 2430.12 \right) = 2228.63</m>
-
-
-
-<m>S_{12} = \frac{2 M_{6}+T_{6}}{3}  = 2341.1</m>
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/5.6HW_prob1.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/5.6HW_prob1.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-20" ww-id="webwork-20">
-    <static seed="20" source="csafranski/5.6HW_prob2.pg">
-      <statement><p>Estimate <m>\int_0^{4}x^{2}\, dx</m> using SIMP(4).</p>
-<p><m>\int_0^{4}x^{2}\, dx \approx</m> <fillin characters="35" name="AnSwEr0001"/></p>
-</statement>
-      <answer>
-        <p>
-          <m>\frac{2\cdot 20+24}{3}</m>
-        </p>
-      </answer>
-      <solution><m>= 2(0 + 2^{2}) = 8</m> and
-RIGHT(2) <m>= 2(2^{2} + 4^{2}) = 40</m>, so
-TRAP(2) <m>= 24</m>.
-
-
-
-Then
-MID(2) <m>= 2( (1)^{2} + (3)^{2} ) = 20</m>.
-
-
-
-Thus,
-<me>\mbox{SIMP(4)} = {{2\mbox{MID(2)} + \mbox{TRAP(2)}} \over 3} =
-    21.3333.</me>
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/5.6HW_prob2.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/5.6HW_prob2.pg"/>
-  </webwork-reps>
-  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-21" ww-id="webwork-21">
-    <static seed="21" source="csafranski/5.6HW_prob3.pg">
-      <statement><p><em><alert>Note: for this problem, because later answers depend
-on earlier ones, you must enter answers for all answer blanks for the
-problem to be correctly graded.  If you would like to get feedback
-before you completed all computations, enter a "1" for each answer
-you did not yet compute and then submit the problem.  (But note that
-this will, obviously, result in a problem submission.)</alert></em></p>
-<p><alert>(a)</alert>
-What is the exact value of <m>\int_{0}^{4}\,e^x\,dx</m>?</p>
-<p><m>\int_{0}^{4}\,e^x\,dx =</m> <fillin characters="10" name="AnSwEr0001"/></p>
-<p><alert>(b)</alert></p>
-<p>Find LEFT(2), RIGHT(2), TRAP(2), MID(2), and SIMP(4); compute the
-error for each.</p>
-<tabular bottom="medium" left="medium" right="medium" top="medium">
-<row>
-<cell/>
-<cell>LEFT(2)</cell>
-<cell>RIGHT(2)</cell>
-<cell>TRAP(2)</cell>
-<cell>MID(2)</cell>
-<cell>SIMP(4)</cell>
-</row>
-<row>
-<cell>value</cell>
-<cell><fillin characters="10" name="AnSwEr0002"/></cell>
-<cell><fillin characters="10" name="AnSwEr0003"/></cell>
-<cell><fillin characters="10" name="AnSwEr0004"/></cell>
-<cell><fillin characters="10" name="AnSwEr0005"/></cell>
-<cell><fillin characters="10" name="AnSwEr0006"/></cell>
-</row>
-<row>
-<cell>error</cell>
-<cell><fillin characters="10" name="AnSwEr0007"/></cell>
-<cell><fillin characters="10" name="AnSwEr0008"/></cell>
-<cell><fillin characters="10" name="AnSwEr0009"/></cell>
-<cell><fillin characters="10" name="AnSwEr0010"/></cell>
-<cell><fillin characters="10" name="AnSwEr0011"/></cell>
-</row>
-</tabular>
-<p><alert>(c)</alert></p>
-<p>Repeat part (b) with <m>n=4</m> (instead of <m>n=2</m>).</p>
-<tabular bottom="medium" left="medium" right="medium" top="medium">
-<row>
-<cell/>
-<cell>LEFT(4)</cell>
-<cell>RIGHT(4)</cell>
-<cell>TRAP(4)</cell>
-<cell>MID(4)</cell>
-<cell>SIMP(8)</cell>
-</row>
-<row>
-<cell>value</cell>
-<cell><fillin characters="10" name="AnSwEr0012"/></cell>
-<cell><fillin characters="10" name="AnSwEr0013"/></cell>
-<cell><fillin characters="10" name="AnSwEr0014"/></cell>
-<cell><fillin characters="10" name="AnSwEr0015"/></cell>
-<cell><fillin characters="10" name="AnSwEr0016"/></cell>
-</row>
-<row>
-<cell>error</cell>
-<cell><fillin characters="10" name="AnSwEr0017"/></cell>
-<cell><fillin characters="10" name="AnSwEr0018"/></cell>
-<cell><fillin characters="10" name="AnSwEr0019"/></cell>
-<cell><fillin characters="10" name="AnSwEr0020"/></cell>
-<cell><fillin characters="10" name="AnSwEr0021"/></cell>
-</row>
-</tabular>
-</statement>
-      <answer>
-        <p>
-          <m>e^{4}-1</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2\mathopen{}\left(1+e^{2}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2\mathopen{}\left(e^{2}+e^{4}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1\mathopen{}\left(1+2e^{2}+e^{4}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>2\mathopen{}\left(e^{1}+e^{3\cdot 1}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{2\cdot 45.6076+70.3763}{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-16.7781</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-123.974</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-70.3763</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-45.6076</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-53.8638</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1\mathopen{}\left(1+e^{1}+e^{2}+e^{3\cdot 1}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1\mathopen{}\left(e^{1}+e^{2}+e^{3\cdot 1}+e^{4}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>0.5\mathopen{}\left(1+2e^{1}+2e^{2}+2e^{3\cdot 1}+e^{4}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>1\mathopen{}\left(e^{0.5}+e^{3\cdot 0.5}+e^{5\cdot 0.5}+e^{7\cdot 0.5}\right)</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>\frac{2\cdot 51.4284+57.9919}{3}</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-31.1929</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-84.791</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-57.9919</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-51.4284</m>
-        </p>
-      </answer>
-      <answer>
-        <p>
-          <m>53.5982-53.6162</m>
-        </p>
-      </answer>
-      <solution><alert>(a)</alert>
-<m>\int_{0}^{4}\,e^x\,dx = e^x\bigg|_{0}^{4} = e^4 - e^0 
-  \approx 53.5982\ldots</m>
-
-
-
-
-<alert>(b)</alert>
-Computing the sums directly, since <m>\Delta x=2</m>, we have
-
-
-
-LEFT(2) <m>= 2\cdot e^0 + 2\cdot e^{2} \approx 16.7782</m> 
-
-
-RIGHT(2) <m>= 2\cdot e^{2} + 2\cdot e^{4} \approx 123.974</m> 
-
-
-TRAP(2) <m>= \frac 1 2 ( 16.7782 + 123.974 ) \approx 70.3763</m> 
-
-
-MID(2) <m>= 2\cdot e^{1} + 2\cdot e^{3\cdot 1} \approx 45.6077</m> 
-
-
-and
-SIMP(4) = (2 MID(2) + TRAP(2))/3 <m>\approx 53.8638</m>.
-
-
-
-And the errors are just the actual value minus the approximate values,
-or
-
-
-
-error(LEFT(2)) = 36.8201; error(RIGHT(2)) = -70.3758;
-error(TRAP(2)) = -16.7782; error(MID(2)) = 7.9906;
-and error(SIMP(4)) = -0.2656.
-
-
-
-
-<alert>(c)</alert>
-Similarly, since <m>\Delta x = 0.5</m>, we have
-
-
-
-LEFT(4) = 31.1929; error = 22.4053 
-
-
-RIGHT(4) = 84.7911; error = -31.1928 
-
-
-TRAP(4) = 57.992; error = -4.3937 
-
-
-MID(4) = 51.4284; error = 2.1698 
-
-
-SIMP(8) = 53.6162; error = -0.018.
-
-
-
-
-<alert>(d)</alert>
-For LEFT and RIGHT, we expect the error to go down by 1/2, and this
-is very roughly what we see.  For MID and TRAP, we expect the error to
-go down by 1/4, and this is approximately what we see.  For SIMP, we
-expect the error to go down by 1/16, again as observed.
-
-
-
-</solution>
-    </static>
-    <server-data sourceFilePath="csafranski/5.6HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="csafranski/5.6HW_prob3.pg"/>
-  </webwork-reps>
   <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-22" ww-id="webwork-22">
-    <static seed="22" source="Library/Michigan/Chap7Sec5/Q13.pg">
-      <statement><p>Using the figure showing <m>f(x)</m> below, order the following
-approximations to the integral <m>\int_0^3\,f(x)\,dx</m> and its exact
-value from smallest to largest.</p>
-<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-1.png" width="33%"/>
-<p><em>(Click on the graph for a larger version.)</em></p>
-<p>Enter each of "LEFT(n)", "RIGHT(n)", "TRAP(n)", "MID(n)" and "Exact"
-in one of the following answer blanks to indicate the correct
-ordering:</p>
-<p><fillin characters="10" name="AnSwEr0001"/> <m>\lt </m>
-<fillin characters="10" name="AnSwEr0002"/> <m>\lt </m>
-<fillin characters="10" name="AnSwEr0003"/> <m>\lt </m>
-<fillin characters="10" name="AnSwEr0004"/> <m>\lt </m>
-<fillin characters="10" name="AnSwEr0005"/></p>
+    <static seed="22" source="Library/Michigan/Chap2Sec3/Q09.pg">
+      <statement><p>Consider the function <m>f(x)</m> shown in the graph below.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-1.png" width="41%"/>
+<p><em>(Note that you can click on the graph to get a larger version of
+it, and that it may be useful to print that larger version to be able to
+work with it by hand.)</em></p>
+<p>Carefully sketch the derivative function of the given function (you
+will want to estimate values on the derivative function at different
+<m>x</m> values as you do this).  Use your derivative function graph to
+estimate the following values on the derivative function.</p>
+<tabular bottom="medium" left="medium" right="medium" top="medium">
+<row>
+<cell>at <m>x =</m></cell>
+<cell>-3</cell>
+<cell>-1</cell>
+<cell>1</cell>
+<cell>3</cell>
+</row>
+<row>
+<cell>the derivative is</cell>
+<cell><fillin characters="5" name="AnSwEr0001"/></cell>
+<cell><fillin characters="5" name="AnSwEr0002"/></cell>
+<cell><fillin characters="5" name="AnSwEr0003"/></cell>
+<cell><fillin characters="5" name="AnSwEr0004"/></cell>
+</row>
+</tabular>
 </statement>
       <answer>
-        <p>LEFT(n)</p>
+        <p>
+          <m>2</m>
+        </p>
       </answer>
       <answer>
-        <p>MID(n)</p>
+        <p>
+          <m>0</m>
+        </p>
       </answer>
       <answer>
-        <p>Exact</p>
+        <p>
+          <m>1</m>
+        </p>
       </answer>
       <answer>
-        <p>TRAP(n)</p>
+        <p>
+          <m>-2</m>
+        </p>
       </answer>
-      <answer>
-        <p>RIGHT(n)</p>
-      </answer>
-      <solution><m>f(x)</m> to see how they over- or under- estimate the
-area under the graph.  Here, 
-<m>LEFT(n)\lt MID(n)\lt Exact\lt TRAP(n)\lt RIGHT(n).</m>
+      <solution><m>x</m>, we estimate the derivative by estimating the 
+slope (=rise/run) from the graph.  This allows us to both sketch the
+graph of the derivative and estimate the derivatives that are requested.
+The derivative (in red) is shown with the original function (in blue)
+below.
+
+
+
+
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-22-image-2.png" width="33%"/>
+
+
+
+
+From the graph and our calculations, it appears that
+
+
+
+<m>f'(-3) \approx 2</m>, 
+
+
+<m>f'(-1) \approx 0</m>, 
+
+
+<m>f'(1) \approx 1</m>, and 
+
+
+<m>f'(3) \approx -2</m>. 
+
+
 
 
 
 </solution>
     </static>
-    <server-data sourceFilePath="Library/Michigan/Chap7Sec5/Q13.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
-    <pg source="Library/Michigan/Chap7Sec5/Q13.pg"/>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q09.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q09.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-23" ww-id="webwork-23">
+    <static seed="23" source="Library/Michigan/Chap2Sec3/Q31.pg">
+      <statement><p>For the function <m>f(x)</m> shown in the graph below, sketch a graph of
+the derivative.  You will then be picking which of the following is the
+correct derivative graph, but should be sure to first sketch the
+derivative yourself.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-23-image-1.png" width="41%"/>
+<p>Which of the following graphs is the derivative of <m>f(x)</m>?
+<ul form="popup" name="AnSwEr0001"><li>
+<p>?</p>
+</li><li>
+<p>1</p>
+</li><li>
+<p>2</p>
+</li><li>
+<p>3</p>
+</li><li>
+<p>4</p>
+</li><li>
+<p>5</p>
+</li><li>
+<p>6</p>
+</li><li>
+<p>7</p>
+</li><li>
+<p>8</p>
+</li></ul></p>
+<p><em>(Click on a graph to enlarge it.)</em></p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="medium" left="medium" right="medium" top="medium">
+<row>
+<cell><alert>1.</alert>
+<image pi:generated="webwork/images/webwork-23-image-2.png" width="16%"/>
+</cell>
+<cell><alert>2.</alert>
+<image pi:generated="webwork/images/webwork-23-image-3.png" width="16%"/>
+</cell>
+<cell><alert>3.</alert>
+<image pi:generated="webwork/images/webwork-23-image-4.png" width="16%"/>
+</cell>
+<cell><alert>4.</alert>
+<image pi:generated="webwork/images/webwork-23-image-5.png" width="16%"/>
+</cell>
+</row>
+<row>
+<cell><alert>5.</alert>
+<image pi:generated="webwork/images/webwork-23-image-6.png" width="16%"/>
+</cell>
+<cell><alert>6.</alert>
+<image pi:generated="webwork/images/webwork-23-image-7.png" width="16%"/>
+</cell>
+<cell><alert>7.</alert>
+<image pi:generated="webwork/images/webwork-23-image-8.png" width="16%"/>
+</cell>
+<cell><alert>8.</alert>
+<image pi:generated="webwork/images/webwork-23-image-9.png" width="16%"/>
+<p/></cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>\text{1}</m>
+        </p>
+      </answer>
+      <solution><m>x</m>, we know that the derivative is negative where
+<m>f(x)</m> is decreasing and positive where it is increasing.  Applying
+this to <m>f(x)</m>, we see that the derivative must be
+
+
+
+
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-23-image-2.png" width="33%"/>
+
+
+
+
+which is answer 1.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q31.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q31.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-24" ww-id="webwork-24">
+    <static seed="24" source="csafranski/1.4HW_prob3.pg">
+      <statement><p>(Click on a graph to enlarge it.)</p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="none" left="none" right="none" top="none">
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-1.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-2.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-3.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-4.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+<p/></cell>
+</row>
+<row halign="center" valign="middle">
+<cell>1</cell>
+<cell>2</cell>
+<cell>3</cell>
+<cell>4</cell>
+</row>
+</tabular>
+<p>The graphs of 4 functions are shown above, and the graphs of the derivatives of those functions are shown below.</p>
+<p>Match the number of each graph of <m>f(x)</m> above with the letter of the graph of its derivative below.</p>
+<p>1. <fillin characters="5" name="AnSwEr0001"/>      <m>\ \ \ \ \ </m>       2. <fillin characters="5" name="AnSwEr0002"/>  <m>\ \ \ \ \ </m>        3. <fillin characters="5" name="AnSwEr0003"/>    <m>\ \ \ \ \ </m>         4. <fillin characters="5" name="AnSwEr0004"/></p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="none" left="none" right="none" top="none">
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-5.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-6.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-7.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-24-image-8.png" width="33%">
+<shortdescription>Graph of a function.</shortdescription>
+</image>
+<p/></cell>
+</row>
+<row halign="center" valign="middle">
+<cell>A</cell>
+<cell>B</cell>
+<cell>C</cell>
+<cell>D</cell>
+</row>
+</tabular>
+<p>(Click on a graph to enlarge it.)</p>
+</statement>
+      <hint><p>Look for where the function <m>f(x)</m> is increasing - that's where the slope (derivative) is positive.  When the top function <m>f(x)</m> is decreasing is where the slope (derivative) is negative.</p>
+<p>You can also look for where there are any horizontal tangent lines - the derivative function will cross the x-axis at that point.</p>
+</hint>
+      <answer>
+        <p>A</p>
+      </answer>
+      <answer>
+        <p>B</p>
+      </answer>
+      <answer>
+        <p>C</p>
+      </answer>
+      <answer>
+        <p>D</p>
+      </answer>
+      <solution><p>The function shown in Graph 1 has the derivative function shown in Graph A.</p>
+<p>The function shown in Graph 2 has the derivative function shown in Graph B.</p>
+<p>The function shown in Graph 3 has the derivative function shown in Graph C.</p>
+<p>The function shown in Graph 4 has the derivative function shown in Graph D.</p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/1.4HW_prob3.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/1.4HW_prob3.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-25" ww-id="webwork-25">
+    <static seed="25" source="Library/Michigan/Chap2Sec3/Q41.pg">
+      <statement><p>On a piece of paper, draw the graph of a continuous function
+<m>y=f(x)</m> that satisfies the
+following three conditions.
+<me>f'(x) \lt  0\quad\mbox{for}\quad x \lt  -3,</me>
+<me>f'(x) \lt  0\quad\mbox{for}\quad -3 \lt  x \lt  3,</me>
+<me>f'(x) &gt; 0\quad\mbox{for}\quad 3 \lt  x</me></p>
+<p>Approximate your function by picking a segment from the following for
+each of the sections of your graph, first for <m>x \lt  -3</m>, then for
+<m>-3 \lt  x \lt  3</m>, and then for <m>3 \lt  x</m>.  (You should, of course,
+imagine sliding the pieces vertically up or down to make the function
+you create be continuous.)</p>
+<p>For <m>x \lt  -3</m>, use segment <fillin characters="5" name="AnSwEr0001"/></p>
+<p>For <m>-3 \lt  x \lt  3</m>, use segment <fillin characters="5" name="AnSwEr0002"/></p>
+<p>For <m>3 \lt  x</m>, use segment <fillin characters="5" name="AnSwEr0003"/></p>
+<tabular xmlns:pi="http://pretextbook.org/2020/pretext/internal" bottom="none" left="none" right="none" top="none">
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-1.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-2.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-3.png" width="16%"/>
+</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>1</cell>
+<cell>2</cell>
+<cell>3</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-4.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-5.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-6.png" width="16%"/>
+</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>4</cell>
+<cell>5</cell>
+<cell>6</cell>
+</row>
+<row halign="center" valign="middle">
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-7.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-8.png" width="16%"/>
+</cell>
+<cell>
+<image pi:generated="webwork/images/webwork-25-image-9.png" width="16%"/>
+<p/></cell>
+</row>
+<row halign="center" valign="middle">
+<cell>7</cell>
+<cell>8</cell>
+<cell>9</cell>
+</row>
+</tabular>
+</statement>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>2</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <solution><m>f'(x) \lt  0</m> for <m>x \lt  -3</m>, the first segment must be
+one of 2, 5, or 6.  Similarly, because <m>f'(x) \lt  0</m> for <m>-3 \lt  x \lt  3</m>,
+the second segment must be one of 2, 5, or 6.  And lastly, the third segment
+must be 3, 4, or 9.
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q41.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q41.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-26" ww-id="webwork-26">
+    <static seed="26" source="Library/Michigan/Chap2Sec3/Q37.pg">
+      <statement><p>A child inflates a balloon, admires it for a while and then lets the
+air out.  If <m>V(t)</m> gives the volume  of the
+balloon at time <m>t</m>, then the figure below shows  <m>V'(t)</m> as a
+function of <m>t</m>.</p>
+<image xmlns:pi="http://pretextbook.org/2020/pretext/internal" pi:generated="webwork/images/webwork-26-image-1.png" width="66%"/>
+<p>At what time does the child:</p>
+<p><alert>A.</alert>
+Begin to inflate the balloon?
+<m>t =</m> <fillin characters="5" name="AnSwEr0001"/></p>
+<p><alert>B.</alert>
+Finish inflating the balloon?
+<m>t =</m> <fillin characters="5" name="AnSwEr0002"/></p>
+<p><alert>C.</alert>
+Begin to let the air out?
+<m>t =</m> <fillin characters="5" name="AnSwEr0003"/></p>
+<p><em>(What would the graph of <m>V'(t)</m> look like if the child had alternated between pinching and releasing the open end of the balloon, instead of letting the air out at constant rate?)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>9</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>14</m>
+        </p>
+      </answer>
+      <solution><m>V'(t)</m> becomes positive,
+which is when the volume of the balloon starts increasing.  This is at 
+<m>t = 3</m>.  The child finishes inflating the balloon when the volume stops
+increasing, which is at <m>t = 9</m>.  The child begins letting the air out
+of the balloon when the volume starts decreasing, which is where 
+<m>V'(t)</m> first becomes negative, which is at <m>t=14</m>.
+
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q37.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q37.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-27" ww-id="webwork-27">
+    <static seed="27" source="csafranski/1.4HW_prob6.pg">
+      <statement><p>Let <m>f(x)</m> be the function <m>12 x^2 - 9 x + 2</m>. Then the quotient</p>
+<p><m>\frac{f(7+h)-f(7)}{h}</m> can be simplified to <m>ah+b</m> for:</p>
+<p><m>a=</m><fillin characters="10" name="AnSwEr0001"/></p>
+<p>and</p>
+<p><m>b=</m> <fillin characters="10" name="AnSwEr0002"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>12</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>159</m>
+        </p>
+      </answer>
+    </static>
+    <server-data sourceFilePath="csafranski/1.4HW_prob6.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/1.4HW_prob6.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-28" ww-id="webwork-28">
+    <static seed="28" source="csafranski/1.4HW_prob7.pg">
+      <statement><p>Suppose that
+<me>f(x+h)-f(x) = -7 h x^2  -    2 h x  -    1 h^2 x  -    1 h^2  +    1 h^3.</me>
+Find <m>f'(x)</m>.</p>
+<p><m>f'(x) =</m> <fillin characters="25" name="AnSwEr0001"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-7x^{2}+\left(-2\right)x</m>
+        </p>
+      </answer>
+      <solution><p>The definition of the derivative is
+<me>f'(x)= \lim_{h\to 0} \frac{f(x+h)-f(x)}{h}</me>
+This problem gives us the numerator, <m>f(x+h)-f(x)</m>.  So,</p>
+<p><me>f'(x)= \lim_{h\to 0} \frac{-7 h x^2  -    2 h x  -    1 h^2 x  -    1 h^2  +    1 h^3}{h} = \lim_{h\to 0} -7 x^2  -    2 x  -    1 h x  -    1 h  +    1 h^2 = -7 x^2 - 2 x</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/1.4HW_prob7.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/1.4HW_prob7.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-29" ww-id="webwork-29">
+    <static seed="29" source="Library/Michigan/Chap2Sec3/Q15.pg">
+      <statement><p>Find a formula for the derivative of the function
+<m>g(x) = 2x^{2}-1</m> using difference quotients:</p>
+<p><m>g'(x) = \lim\limits_{h\to0}\, [(</m> <fillin characters="35" name="AnSwEr0001"/> <m>) / h]</m></p>
+<p><m>\qquad =</m> <fillin characters="35" name="AnSwEr0002"/>.</p>
+<p><em>(In the first answer blank, fill in the numerator of the
+difference quotient you use to evaluate the derivative.  In the second,
+fill out the derivative you obtain after completing the limit calculation.)</em></p>
+</statement>
+      <answer>
+        <p>
+          <m>2\mathopen{}\left(x+h\right)^{2}-1-\left(2x^{2}-1\right)</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>4x</m>
+        </p>
+      </answer>
+      <solution><me>g'(x) = \lim_{h \to 0} \frac{g(x+h)-g(x)}{h} = 
+    \lim_{h \to 0} \frac{2\mathopen{}\left(x+h\right)^{2}-1-\left(2x^{2}-1\right)}{h}</me>
+<me>= \lim_{h \to 0} \frac{2(x^2+2xh+h^2)-1-2 x^2+1}{h} = 
+    \lim_{h \to 0} \frac{4 xh+2 h^2}{h}</me>
+<me>= \lim_{h \to 0}(4 x+2h) = 4 x.</me>
+
+
+
+</solution>
+    </static>
+    <server-data sourceFilePath="Library/Michigan/Chap2Sec3/Q15.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="Library/Michigan/Chap2Sec3/Q15.pg"/>
+  </webwork-reps>
+  <webwork-reps version="2" ww_major_version="2" ww_minor_version="20" xml:id="extracted-webwork-30" ww-id="webwork-30">
+    <static seed="30" source="csafranski/1.4HW_prob9.pg">
+      <statement><p>Let <m>f(x) = 3  -    3 \sqrt{x}</m>.  Then the expression
+<me>\frac{f(x + h) - f(x)}{h}</me>
+can be written in the form
+<me>\frac{A}{\left(\sqrt{Bx + Ch} \right) + \left(\sqrt{x} \right)},</me>
+where <m>A</m>, <m>B</m>, and <m>C</m> are
+constants.  (Note: It's possible for one or more of these
+constants to be 0.)  Find the constants.</p>
+<p><m>A =</m> <fillin characters="10" name="AnSwEr0001"/></p>
+<p><m>B =</m> <fillin characters="10" name="AnSwEr0002"/></p>
+<p><m>C =</m> <fillin characters="10" name="AnSwEr0003"/></p>
+<p>Use your answer from above to find
+<m>\displaystyle{\lim_{h\rightarrow 0} \frac{f(x + h) -
+f(x)}{h}}</m>.</p>
+<p><m>\displaystyle{\lim_{h\rightarrow 0} \frac{f(x + h) -
+f(x)}{h}} =</m> <fillin characters="20" name="AnSwEr0004"/></p>
+<p>Finally, find each of the following:</p>
+<p><m>f'(1) =</m> <fillin characters="10" name="AnSwEr0005"/></p>
+<p><m>f'(2) =</m> <fillin characters="10" name="AnSwEr0006"/></p>
+<p><m>f'(3) =</m> <fillin characters="10" name="AnSwEr0007"/></p>
+</statement>
+      <answer>
+        <p>
+          <m>-3</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>1</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-3}{2\sqrt{x}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-3}{2\sqrt{1}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-3}{2\sqrt{2}}</m>
+        </p>
+      </answer>
+      <answer>
+        <p>
+          <m>\frac{-3}{2\sqrt{3}}</m>
+        </p>
+      </answer>
+      <solution><p>We simplify the expression <me>\frac{f(x+h)-f(x)}{h} = \frac{3-3\sqrt{x+h}-(3-3\sqrt{x})}{h}</me> by multiplying both numerator and denominator by the conjugate and simplifying.</p>
+<p><me>\frac{3-3\sqrt{x+h}-(3-3\sqrt{x})}{h} = \frac{-3\sqrt{x+h} + 3\sqrt{x}}{h} =\frac{(-3\sqrt{x+h} + 3\sqrt{x})(-3\sqrt{x+h} - 3\sqrt{x})}{h(-3\sqrt{x+h} - 3\sqrt{x})}</me> 
+<me>= \frac{-9\mathopen{}\left(x+h\right) + 9x}{h(-3\sqrt{x+h} - 3\sqrt{x})} = \frac{9h}{h(-3\sqrt{x+h} - 3\sqrt{x})} = \frac{9h}{-3 h(\sqrt{x+h}+\sqrt{x})}</me> 
+Finally, we can divide to get
+<me>=\frac{-3}{\sqrt{x+h}+\sqrt{x}}</me>
+That means A=-3, while B=C=1.</p>
+<p>Now, we can take <me>\lim_{h\to 0} \frac{-3}{\sqrt{x+h}+\sqrt{x}} = \frac{-3}{2\sqrt{x}} .</me></p>
+<p>Lastly, we can use this to calculate:
+<me>f'(1)= \frac{-3}{2\sqrt{1}}</me>
+<me>f'(2)= \frac{-3}{2\sqrt{2}}</me>
+<me>f'(3)= \frac{-3}{2\sqrt{3}}</me></p>
+</solution>
+    </static>
+    <server-data sourceFilePath="csafranski/1.4HW_prob9.pg" domain="https://webwork-dev.uleth.ca" course-id="chrissy-playground" user-id="anonymous" password="anonymous" language="en-US"/>
+    <pg source="csafranski/1.4HW_prob9.pg"/>
   </webwork-reps>
 </webwork-representations>
