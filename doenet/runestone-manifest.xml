@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <runestone-services version="7.11.7"/>
+  <runestone-services version="7.11.11"/>
   <default-language>python</default-language>
   <library-metadata publisher="pretext">
     <title>Active Calculus</title>
