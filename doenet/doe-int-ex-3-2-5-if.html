@@ -68,8 +68,8 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
@@ -110,17 +110,15 @@ window.MathJax = {
   <selectFromSequence name = "k" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d"/>
   <selectFromSequence name = "m" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k"/>
   <selectFromSequence name = "n" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k $m"/>
-  <selectFromSequence name = "p" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k $m $n"/>  
-  <selectFromSequence name = "q" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k $m $n $p"/>    
-  
-  <number name="y1">$z1</number>
-  
+  <selectFromSequence name = "p" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k $m $n"/>
+  <selectFromSequence name = "q" from = "-6" to = "8" step = "1" exclude="-1 0 1 $a $b $c $d $k $m $n $p"/>
+
   <function name="f" styleNumber="1">
     $a*x^3 - $b*x^2 + $c
   </function>
   <derivative name="fP">$f</derivative>
   <function name="g" styleNumber="2">
-    $d*x^3 + $k*x^2 - $m*x 
+    $d*x^3 + $k*x^2 - $m*x
   </function>
   <derivative name="gP">$g</derivative>
   <function name="h"  styleNumber="3">
@@ -130,37 +128,37 @@ window.MathJax = {
   <function name="j"  styleNumber="4">
     $p*x^3 - $c
   </function>
-  
+
 </setup>
 
 <p>
   Evaluate each of the following limits.  If the limit is <q><m>+\infty</m></q>, enter <q>INF</q>; if the limit is <q><m>-\infty</m></q>, enter <q>-INF</q>; if the limit does not exist, enter <q>DNE</q>. Otherwise, enter the numerical value of the limit.
 </p>
-  
+
 <p>
   <ol marker="a.">
     <li>
-      <p> 
+      <p>
         <m>\displaystyle \lim_{x \to \infty} \frac{<math simplify>$$f(x)</math>}{<math simplify>$$g(x)</math>} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$a/$d</answer>
       </p>
-    </li> 
+    </li>
     <li>
-      <p> 
+      <p>
         <m>\displaystyle \lim_{x \to -\infty} \frac{<math simplify>$$g(x)</math>}{<math simplify>$$h(x)</math>} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>0</answer>
       </p>
-    </li> 
+    </li>
     <li>
-      <p> 
-        <m>\displaystyle \lim_{x \to -\infty} \frac{<math simplify>$$h(x)</math>}{<math simplify>$$g(x)</math>} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>-INF</answer>
+      <p>
+        <m>\displaystyle \lim_{x \to -\infty} \frac{<math simplify>$$h(x)</math>}{<math simplify>$$g(x)</math>} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute><sign>$m/$d</sign>INF</answer>
       </p>
-    </li> 
+    </li>
     <li>
-      <p> 
+      <p>
         <m>\displaystyle \lim_{x \to \infty} \frac{<math simplify>$$j(x)</math>}{<math simplify>$$f(x)</math>} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$p/$a</answer>
       </p>
-    </li>     
-  </ol>  
-</p>  
+    </li>
+  </ol>
+</p>
         </script>
 </div></div>
 </body>

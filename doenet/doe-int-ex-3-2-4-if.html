@@ -68,8 +68,8 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
@@ -108,9 +108,7 @@ window.MathJax = {
   <selectFromSequence name = "c" from = "2" to = "8" step = "1" exclude="$a $b"/>
   <selectFromSequence name = "d" from = "2" to = "8" step = "1" exclude="$a $b $c"/>
   <selectFromSequence name = "k" from = "2" to = "8" step = "1" exclude="$a $b $c $d"/>
-  
-  <number name="y1">$z1</number>
-  
+
   <function name="f" symbolic="false" styleNumber="1">
     sin($a*x)
   </function>
@@ -123,41 +121,41 @@ window.MathJax = {
     cos($c*x)
   </function>
   <derivative name="hP">$h</derivative>
-   
+
 </setup>
 
 <p>
   Evaluate each of the following limits.  Think carefully about whether or not L'Hopital's Rule applies.
 </p>
-  
+
 <p>
   <ol marker="a.">
     <li>
-      <p> 
+      <p>
         <m>\displaystyle \lim_{x \to 0} \frac{\sin($a x)}{$d x} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$a/$d</answer>
       </p>
-    </li> 
+    </li>
     <li>
       <p>
         <m>\displaystyle \lim_{x \to 0} \frac{\cos($c x)}{$d x + $b} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>1/$b</answer>
       </p>
-    </li> 
+    </li>
     <li>
       <p>
         <m>\displaystyle \lim_{x \to 0} \frac{\sin($a x)}{\tan($b x)} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$a/$b</answer>
       </p>
-    </li> 
+    </li>
     <li>
       <p>
-        <m>\displaystyle \lim_{x \to 0} \frac{\cos($k x) - 1}{$b x} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>$a/$d</answer>
+        <m>\displaystyle \lim_{x \to 0} \frac{\cos($k x) - 1}{$b x} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>0</answer>
       </p>
-    </li>  
+    </li>
     <li>
       <p>
         <m>\displaystyle \lim_{x \to 0} \frac{\sin($k x) - $k x}{$c x^3} = </m><answer allowedErrorInNumbers="0.01" allowedErrorIsAbsolute>-1*$k^3/(6*$c)</answer>
       </p>
-    </li>      
-  </ol>  
+    </li>
+  </ol>
 </p>  
         </script>
 </div></div>

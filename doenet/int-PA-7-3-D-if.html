@@ -68,8 +68,8 @@ window.MathJax = {
     )}
   }
 };
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@latest/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
@@ -142,9 +142,9 @@ window.MathJax = {
       </li>
       <li>
         <p>
-          Use the point <mathInput disabled>$point</mathInput> and
-          slope <mathInput disabled>$slope</mathInput> that you've found to find the equation
-          of the line tangent to the solution at <m>t=0</m>.  Be sure to write the tangent line equation as a function of <m>t</m>.
+          Use the point <mathInput disabled><conditionalContent condition="$point.creditAchieved=1">$point</conditionalContent></mathInput> and
+          slope <mathInput minWidth="30" disabled><conditionalContent condition="$slope.creditAchieved=1">$slope</conditionalContent></mathInput> that you've found above to write the equation
+          of the line tangent to the solution <m>y(t)</m> at <m>t=0</m>.  Be sure to write the tangent line equation as a function of <m>t</m>.
         </p>
         <p>
           <m>y=</m><answer name="approx0Exp">t/2</answer>
@@ -205,10 +205,10 @@ window.MathJax = {
 
       <li>
         <p>
-          It turns out that the given initial value problem, 
+          It turns out that the given initial value problem,
           <me>
             \frac{dy}{dt} = \frac12 (y + 1), \ y(0) = 0,
-          </me> 
+          </me>
           has a solution
           of the form <m>y=ke^{t/2} - 1</m>.
         </p>
@@ -217,7 +217,7 @@ window.MathJax = {
           <m>k</m>?
         </p>
         <p>
-          <m>k=</m><mathInput name="kEntered"/><answer name="kExp"><award><when>$kExp=1</when></award></answer>
+          <answer name="kEntered"><label><m>k=</m></label>1</answer>
         </p>
 
       </li>
@@ -225,11 +225,11 @@ window.MathJax = {
       <!--
       <li>
         <setup>
-          <conditionalContent name="nextStep" condition="$kExp.creditAchieved = 1"> 
+          <conditionalContent name="nextStep" condition="$kExp.creditAchieved = 1">
             <math name="correctkEntered" extend="$kEntered.value"/>
             <math name="IVPsoln" simplify>$correctkEntered.value*e^(t/2) - 1</math>
           </conditionalContent>
-        </setup>      
+        </setup>
         <p>
           Then verify that
           <m>y=</m><mathInput disabled><math simplify>$k e^(t/2) - 1</math></mathInput>
