@@ -102,14 +102,14 @@ eBookConfig.allow_pairs = false;
 eBookConfig.enableScratchAC = false;
 eBookConfig.build_info = "";
 eBookConfig.python3 = null;
-eBookConfig.runestone_version = '8.1.1';
+eBookConfig.runestone_version = '8.1.6';
 eBookConfig.jobehost = '';
 eBookConfig.proxyuri_runs = '';
 eBookConfig.proxyuri_files = '';
 eBookConfig.enable_chatcodes =  false;
 </script>
 <!--*** Runestone Services ***-->
-<script src="_static/prefix-runtime.dcab57465a404e85.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.79fbb790b185d712.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
+<script src="_static/prefix-runtime.53a23d1b65c1dce2.bundle.js"></script><script src="_static/prefix-713.de0ab26248766350.bundle.js"></script><script src="_static/prefix-runestone.4787412a251795e3.bundle.js"></script><link rel="stylesheet" type="text/css" href="_static/prefix-713.f43ced6a6134ea74.css">
 <link rel="stylesheet" type="text/css" href="_static/prefix-runestone.87414d180ebeebd6.css">
 <script src="_static/pretext/js/lti_iframe_resizer.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script><script src="lunr-pretext-search-index.js" async=""></script><script src="_static/pretext/js/pretext_search.js"></script><script src="_static/pretext/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script>sagecellEvalName='Evaluate (Sage)';
 </script>
@@ -1443,7 +1443,7 @@ G(x) = \frac{1}{3}x^3 + C\text{,}
 G'(x) = \frac{1}{-x} \cdot (-1) = \frac{1}{x}
 \end{equation*}
 </div>
-<div class="para">so <span class="process-math">\(G(x) = \ln(-x)\)</span> is an antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> when <span class="process-math">\(x \lt 0\text{.}\)</span>  Since <span class="process-math">\(|x|=x\)</span> when <span class="process-math">\(x \gt 0\)</span> and <span class="process-math">\(|x|=-x\)</span> when <span class="process-math">\(x \lt 0\text{,}\)</span> we can say that <span class="process-math">\(F(x) = \ln(|x|)\)</span> is an antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> for all <span class="process-math">\(x \ne 0\text{.}\)</span>  This situation is explored in more detail in <a href="sec-4-4-FTC.html#Ez-4-4-antid-of-1-over-x" class="xref" data-knowl="./knowl/xref/Ez-4-4-antid-of-1-over-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 4.4.6.12">Exercise 4.4.6.12</a>.</div>
+<div class="para">so <span class="process-math">\(G(x) = \ln(-x)\)</span> is an antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> when <span class="process-math">\(x \lt 0\text{.}\)</span>  Since <span class="process-math">\(|x|=x\)</span> when <span class="process-math">\(x \gt 0\)</span> and <span class="process-math">\(|x|=-x\)</span> when <span class="process-math">\(x \lt 0\text{,}\)</span> we can say that <span class="process-math">\(F(x) = \ln(|x|)\)</span> is an antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> for all <span class="process-math">\(x \ne 0\text{.}\)</span>  This situation is explored in more detail in <a href="sec-4-4-FTC.html#Ez-4-4-antid-of-1-over-x" class="xref" data-knowl="./knowl/xref/Ez-4-4-antid-of-1-over-x.html" data-reveal-label="Reveal" data-close-label="Close" title="Exercise 4.4.6.13">Exercise 4.4.6.13</a>.</div>
 <div class="autopermalink" data-description="Paragraph"><a href="#sec-4-4-FTC-5-13" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="para" id="sec-4-4-FTC-5-14">Since <span class="process-math">\(F(x) = \ln(|x|)\)</span> is an antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> for all <span class="process-math">\(x \ne 0\text{,}\)</span> it seems natural to write that the general antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> is <span class="process-math">\(F(x) = \ln(|x|) + C\text{.}\)</span>  But doing so is technically incorrect.  This is due to the discontinuity of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> at <span class="process-math">\(x = 0\)</span> and the fact that there’s one antiderivative, <span class="process-math">\(\ln(-x) + C_1\text{,}\)</span> for <span class="process-math">\(x \lt 0\text{,}\)</span> and a second, <span class="process-math">\(\ln(x) + C_2\text{,}\)</span> for <span class="process-math">\(x \gt 0\text{.}\)</span>  While we will still sometimes write “<span class="process-math">\(F(x) = \ln(|x|) + C\)</span>” as the general antiderivative, we should be especially careful when the value <span class="process-math">\(x = 0\text{,}\)</span> where <span class="process-math">\(\frac{1}{x}\)</span> is undefined, is included in the interval of values in which we are interested.<div class="autopermalink" data-description="Paragraph"><a href="#sec-4-4-FTC-5-14" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
@@ -1658,29 +1658,32 @@ r_{\operatorname{AVG} [4,10]} = \frac{1}{10-4} \int_4^{10} r(t) \, dt \approx \f
 <div class="autopermalink" data-description="Subsection 4.4.5: Summary"><a href="#sec-4-4-FTC-7" title="Copy heading and permalink for Subsection 4.4.5: Summary" aria-label="Copy heading and permalink for Subsection 4.4.5: Summary">🔗</a></div></section><section class="exercises" id="ez-4-4"><h3 class="heading hide-type">
 <span class="type">Exercises</span><span class="space"> </span><span class="codenumber">4.4.6</span><span class="space"> </span><span class="title">Exercises</span>
 </h3>
-<article class="exercise exercise-like" id="ez-4-4-doenet-1"><h4 class="heading">
-<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals.</span>
+<article class="exercise exercise-like" id="ez-4-4-doenet-10-PROTEUS"><h4 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Comparing distance traveled and change in position for a lap swimmer.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-1" width="600" height="600" src="doe-int-ex-4-4-1-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.1: Applying the Fundamental Theorem of Calculus to evaluate definite integrals"><a href="#ez-4-4-doenet-1" title="Copy heading and permalink for Exercise 4.4.6.1: Applying the Fundamental Theorem of Calculus to evaluate definite integrals" aria-label="Copy heading and permalink for Exercise 4.4.6.1: Applying the Fundamental Theorem of Calculus to evaluate definite integrals">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-2"><h4 class="heading">
-<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions.</span>
+<iframe id="doe-int-ex-4-4-10" width="600" height="600" src="doe-int-ex-4-4-10-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.1: Comparing distance traveled and change in position for a lap swimmer"><a href="#ez-4-4-doenet-10-PROTEUS" title="Copy heading and permalink for Exercise 4.4.6.1: Comparing distance traveled and change in position for a lap swimmer" aria-label="Copy heading and permalink for Exercise 4.4.6.1: Comparing distance traveled and change in position for a lap swimmer">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-1"><h4 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-2" width="600" height="600" src="doe-int-ex-4-4-2-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions"><a href="#ez-4-4-doenet-2" title="Copy heading and permalink for Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions" aria-label="Copy heading and permalink for Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-3"><h4 class="heading">
-<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions.</span>
+<iframe id="doe-int-ex-4-4-1" width="600" height="600" src="doe-int-ex-4-4-1-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals"><a href="#ez-4-4-doenet-1" title="Copy heading and permalink for Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals" aria-label="Copy heading and permalink for Exercise 4.4.6.2: Applying the Fundamental Theorem of Calculus to evaluate definite integrals">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-2"><h4 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-3" width="600" height="600" src="doe-int-ex-4-4-3-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions"><a href="#ez-4-4-doenet-3" title="Copy heading and permalink for Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions" aria-label="Copy heading and permalink for Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-4"><h4 class="heading">
-<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Determining change in position and distance traveled from a linear velocity function.</span>
+<iframe id="doe-int-ex-4-4-2" width="600" height="600" src="doe-int-ex-4-4-2-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions"><a href="#ez-4-4-doenet-2" title="Copy heading and permalink for Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions" aria-label="Copy heading and permalink for Exercise 4.4.6.3: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving trig functions">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-3"><h4 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-4" width="600" height="600" src="doe-int-ex-4-4-4-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.4: Determining change in position and distance traveled from a linear velocity function"><a href="#ez-4-4-doenet-4" title="Copy heading and permalink for Exercise 4.4.6.4: Determining change in position and distance traveled from a linear velocity function" aria-label="Copy heading and permalink for Exercise 4.4.6.4: Determining change in position and distance traveled from a linear velocity function">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-5"><h4 class="heading">
-<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Determining change in position and distance traveled from a quadratic velocity function.</span>
+<iframe id="doe-int-ex-4-4-3" width="600" height="600" src="doe-int-ex-4-4-3-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.4: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions"><a href="#ez-4-4-doenet-3" title="Copy heading and permalink for Exercise 4.4.6.4: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions" aria-label="Copy heading and permalink for Exercise 4.4.6.4: Applying the Fundamental Theorem of Calculus to evaluate definite integrals involving exponential and logarithmic functions">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-4"><h4 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Determining change in position and distance traveled from a linear velocity function.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-5" width="600" height="600" src="doe-int-ex-4-4-5-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.5: Determining change in position and distance traveled from a quadratic velocity function"><a href="#ez-4-4-doenet-5" title="Copy heading and permalink for Exercise 4.4.6.5: Determining change in position and distance traveled from a quadratic velocity function" aria-label="Copy heading and permalink for Exercise 4.4.6.5: Determining change in position and distance traveled from a quadratic velocity function">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-6"><h4 class="heading">
-<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Using information about the rate at which a tank is draining.</span>
+<iframe id="doe-int-ex-4-4-4" width="600" height="600" src="doe-int-ex-4-4-4-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.5: Determining change in position and distance traveled from a linear velocity function"><a href="#ez-4-4-doenet-4" title="Copy heading and permalink for Exercise 4.4.6.5: Determining change in position and distance traveled from a linear velocity function" aria-label="Copy heading and permalink for Exercise 4.4.6.5: Determining change in position and distance traveled from a linear velocity function">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-5"><h4 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Determining change in position and distance traveled from a quadratic velocity function.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-6" width="600" height="600" src="doe-int-ex-4-4-6-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.6: Using information about the rate at which a tank is draining"><a href="#ez-4-4-doenet-6" title="Copy heading and permalink for Exercise 4.4.6.6: Using information about the rate at which a tank is draining" aria-label="Copy heading and permalink for Exercise 4.4.6.6: Using information about the rate at which a tank is draining">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-7"><h4 class="heading">
-<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Finding a parameter value from information about a definite integral.</span>
+<iframe id="doe-int-ex-4-4-5" width="600" height="600" src="doe-int-ex-4-4-5-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.6: Determining change in position and distance traveled from a quadratic velocity function"><a href="#ez-4-4-doenet-5" title="Copy heading and permalink for Exercise 4.4.6.6: Determining change in position and distance traveled from a quadratic velocity function" aria-label="Copy heading and permalink for Exercise 4.4.6.6: Determining change in position and distance traveled from a quadratic velocity function">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-6"><h4 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Using information about the rate at which a tank is draining.</span>
 </h4>
-<iframe id="doe-int-ex-4-4-7" width="600" height="600" src="doe-int-ex-4-4-7-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.7: Finding a parameter value from information about a definite integral"><a href="#ez-4-4-doenet-7" title="Copy heading and permalink for Exercise 4.4.6.7: Finding a parameter value from information about a definite integral" aria-label="Copy heading and permalink for Exercise 4.4.6.7: Finding a parameter value from information about a definite integral">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-8"><h4 class="heading"><span class="codenumber">8<span class="period">.</span></span></h4>
-<div class="para logical" id="ez-4-4-8-1-1">
+<iframe id="doe-int-ex-4-4-6" width="600" height="600" src="doe-int-ex-4-4-6-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.7: Using information about the rate at which a tank is draining"><a href="#ez-4-4-doenet-6" title="Copy heading and permalink for Exercise 4.4.6.7: Using information about the rate at which a tank is draining" aria-label="Copy heading and permalink for Exercise 4.4.6.7: Using information about the rate at which a tank is draining">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-doenet-7"><h4 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Finding a parameter value from information about a definite integral.</span>
+</h4>
+<iframe id="doe-int-ex-4-4-7" width="600" height="600" src="doe-int-ex-4-4-7-if.html"></iframe><div class="autopermalink" data-description="Exercise 4.4.6.8: Finding a parameter value from information about a definite integral"><a href="#ez-4-4-doenet-7" title="Copy heading and permalink for Exercise 4.4.6.8: Finding a parameter value from information about a definite integral" aria-label="Copy heading and permalink for Exercise 4.4.6.8: Finding a parameter value from information about a definite integral">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
+<div class="para logical" id="ez-4-4-9-1-1">
 <div class="para">A function <span class="process-math">\(f\)</span> is given piecewise by the formula</div>
 <div class="displaymath process-math">
 \begin{equation*}
@@ -1692,55 +1695,55 @@ x^2 - 8x + 15, \amp  \ \text{if}  \ 3 \le x \le 5
 \end{cases}\text{.}
 \end{equation*}
 </div>
-<ol class="lower-alpha ol-marker-1" id="ez-4-4-8-1-1-3">
-<li id="ez-4-4-8-1-1-3-1">
-<div class="para" id="ez-4-4-8-1-1-3-1-1">Determine the exact value of the net signed area enclosed by <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([2,5]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-8-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="lower-alpha ol-marker-1" id="ez-4-4-9-1-1-3">
+<li id="ez-4-4-9-1-1-3-1">
+<div class="para" id="ez-4-4-9-1-1-3-1-1">Determine the exact value of the net signed area enclosed by <span class="process-math">\(f\)</span> and the <span class="process-math">\(x\)</span>-axis on the interval <span class="process-math">\([2,5]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-1-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.8.a"><a href="#ez-4-4-8-1-1-3-1" title="Copy heading and permalink for Item 4.4.6.8.a" aria-label="Copy heading and permalink for Item 4.4.6.8.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.9.a"><a href="#ez-4-4-9-1-1-3-1" title="Copy heading and permalink for Item 4.4.6.9.a" aria-label="Copy heading and permalink for Item 4.4.6.9.a">🔗</a></div>
 </li>
-<li id="ez-4-4-8-1-1-3-2">
-<div class="para" id="ez-4-4-8-1-1-3-2-1">Compute the exact average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-8-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ez-4-4-9-1-1-3-2">
+<div class="para" id="ez-4-4-9-1-1-3-2-1">Compute the exact average value of <span class="process-math">\(f\)</span> on <span class="process-math">\([0,5]\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-1-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.8.b"><a href="#ez-4-4-8-1-1-3-2" title="Copy heading and permalink for Item 4.4.6.8.b" aria-label="Copy heading and permalink for Item 4.4.6.8.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.9.b"><a href="#ez-4-4-9-1-1-3-2" title="Copy heading and permalink for Item 4.4.6.9.b" aria-label="Copy heading and permalink for Item 4.4.6.9.b">🔗</a></div>
 </li>
-<li id="ez-4-4-8-1-1-3-3">
-<div class="para" id="ez-4-4-8-1-1-3-3-1">Find a formula for a function <span class="process-math">\(g\)</span> on <span class="process-math">\(5 \le x \le 7\)</span> so that if we extend the above definition of <span class="process-math">\(f\)</span> so that <span class="process-math">\(f(x) = g(x)\)</span> if <span class="process-math">\(5 \le x \le 7\text{,}\)</span> it follows that <span class="process-math">\(\int_0^7 f(x) \, dx = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-8-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ez-4-4-9-1-1-3-3">
+<div class="para" id="ez-4-4-9-1-1-3-3-1">Find a formula for a function <span class="process-math">\(g\)</span> on <span class="process-math">\(5 \le x \le 7\)</span> so that if we extend the above definition of <span class="process-math">\(f\)</span> so that <span class="process-math">\(f(x) = g(x)\)</span> if <span class="process-math">\(5 \le x \le 7\text{,}\)</span> it follows that <span class="process-math">\(\int_0^7 f(x) \, dx = 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-1-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.8.c"><a href="#ez-4-4-8-1-1-3-3" title="Copy heading and permalink for Item 4.4.6.8.c" aria-label="Copy heading and permalink for Item 4.4.6.8.c">🔗</a></div>
-</li>
-</ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-8-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Exercise 4.4.6.8"><a href="#ez-4-4-8" title="Copy heading and permalink for Exercise 4.4.6.8" aria-label="Copy heading and permalink for Exercise 4.4.6.8">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-9"><h4 class="heading"><span class="codenumber">9<span class="period">.</span></span></h4>
-<div class="para" id="ez-4-4-9-1-1">The instantaneous velocity (in meters per minute) of a moving object is given by the function <span class="process-math">\(v\)</span> as pictured in <a href="sec-4-4-FTC.html#F-4-4-Ez2" class="xref" data-knowl="./knowl/xref/F-4-4-Ez2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.9">Figure 4.4.9</a>. Assume that on the interval <span class="process-math">\(0 \le t \le 4\text{,}\)</span> <span class="process-math">\(v(t)\)</span> is given by <span class="process-math">\(v(t) = -\frac{1}{4}t^3 + \frac{3}{2}t^2 + 1\text{,}\)</span> and that on every other interval <span class="process-math">\(v\)</span> is piecewise linear, as shown.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <figure class="figure figure-like" id="F-4-4-Ez2"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/4_4_Ez2.svg" role="img" class="contained"></div>
-<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.9<span class="period">.</span></span><span class="space"> </span>The velocity function of a moving body.<div class="autopermalink" data-description="Figure 4.4.9"><a href="#F-4-4-Ez2" title="Copy heading and permalink for Figure 4.4.9" aria-label="Copy heading and permalink for Figure 4.4.9">🔗</a></div></figcaption></figure> <div class="para logical" id="ez-4-4-9-1-3">
-<ol class="lower-alpha ol-marker-1" id="ez-4-4-9-1-3-1">
-<li id="ez-4-4-9-1-3-1-1">
-<div class="para" id="ez-4-4-9-1-3-1-1-1">Determine the exact distance traveled by the object on the time interval <span class="process-math">\(0 \le t \le 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 4.4.6.9.a"><a href="#ez-4-4-9-1-3-1-1" title="Copy heading and permalink for Item 4.4.6.9.a" aria-label="Copy heading and permalink for Item 4.4.6.9.a">🔗</a></div>
-</li>
-<li id="ez-4-4-9-1-3-1-2">
-<div class="para" id="ez-4-4-9-1-3-1-2-1">What is the object’s average velocity on <span class="process-math">\([12,24]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 4.4.6.9.b"><a href="#ez-4-4-9-1-3-1-2" title="Copy heading and permalink for Item 4.4.6.9.b" aria-label="Copy heading and permalink for Item 4.4.6.9.b">🔗</a></div>
-</li>
-<li id="ez-4-4-9-1-3-1-3">
-<div class="para" id="ez-4-4-9-1-3-1-3-1">At what time is the object’s acceleration greatest?<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 4.4.6.9.c"><a href="#ez-4-4-9-1-3-1-3" title="Copy heading and permalink for Item 4.4.6.9.c" aria-label="Copy heading and permalink for Item 4.4.6.9.c">🔗</a></div>
-</li>
-<li id="ez-4-4-9-1-3-1-4">
-<div class="para" id="ez-4-4-9-1-3-1-4-1">Suppose that the velocity of the object is increased by a constant value <span class="process-math">\(c\)</span> for all values of <span class="process-math">\(t\text{.}\)</span> What value of <span class="process-math">\(c\)</span> will make the object’s total distance traveled on <span class="process-math">\([12,24]\)</span> be 210 meters?<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div>
-<div class="autopermalink" data-description="Item 4.4.6.9.d"><a href="#ez-4-4-9-1-3-1-4" title="Copy heading and permalink for Item 4.4.6.9.d" aria-label="Copy heading and permalink for Item 4.4.6.9.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.9.c"><a href="#ez-4-4-9-1-1-3-3" title="Copy heading and permalink for Item 4.4.6.9.c" aria-label="Copy heading and permalink for Item 4.4.6.9.c">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-9-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
 <div class="autopermalink" data-description="Exercise 4.4.6.9"><a href="#ez-4-4-9" title="Copy heading and permalink for Exercise 4.4.6.9" aria-label="Copy heading and permalink for Exercise 4.4.6.9">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-10"><h4 class="heading"><span class="codenumber">10<span class="period">.</span></span></h4>
-<div class="para" id="ez-4-4-10-1-1">When an aircraft attempts to climb as rapidly as possible, its climb rate (in feet per minute) decreases as altitude increases, because the air is less dense at higher altitudes. Given below is a table showing performance data for a certain single engine aircraft, giving its climb rate at various altitudes, where <span class="process-math">\(c(h)\)</span> denotes the climb rate of the airplane at an altitude <span class="process-math">\(h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="para" id="ez-4-4-10-1-1">The instantaneous velocity (in meters per minute) of a moving object is given by the function <span class="process-math">\(v\)</span> as pictured in <a href="sec-4-4-FTC.html#F-4-4-Ez2" class="xref" data-knowl="./knowl/xref/F-4-4-Ez2.html" data-reveal-label="Reveal" data-close-label="Close" title="Figure 4.4.9">Figure 4.4.9</a>. Assume that on the interval <span class="process-math">\(0 \le t \le 4\text{,}\)</span> <span class="process-math">\(v(t)\)</span> is given by <span class="process-math">\(v(t) = -\frac{1}{4}t^3 + \frac{3}{2}t^2 + 1\text{,}\)</span> and that on every other interval <span class="process-math">\(v\)</span> is piecewise linear, as shown.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <figure class="figure figure-like" id="F-4-4-Ez2"><div class="image-box" style="width: 47%; margin-left: 26.5%; margin-right: 26.5%;"><img src="external/images/4_4_Ez2.svg" role="img" class="contained"></div>
+<figcaption><span class="type">Figure</span><span class="space"> </span><span class="codenumber">4.4.9<span class="period">.</span></span><span class="space"> </span>The velocity function of a moving body.<div class="autopermalink" data-description="Figure 4.4.9"><a href="#F-4-4-Ez2" title="Copy heading and permalink for Figure 4.4.9" aria-label="Copy heading and permalink for Figure 4.4.9">🔗</a></div></figcaption></figure> <div class="para logical" id="ez-4-4-10-1-3">
+<ol class="lower-alpha ol-marker-1" id="ez-4-4-10-1-3-1">
+<li id="ez-4-4-10-1-3-1-1">
+<div class="para" id="ez-4-4-10-1-3-1-1-1">Determine the exact distance traveled by the object on the time interval <span class="process-math">\(0 \le t \le 4\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.4.6.10.a"><a href="#ez-4-4-10-1-3-1-1" title="Copy heading and permalink for Item 4.4.6.10.a" aria-label="Copy heading and permalink for Item 4.4.6.10.a">🔗</a></div>
+</li>
+<li id="ez-4-4-10-1-3-1-2">
+<div class="para" id="ez-4-4-10-1-3-1-2-1">What is the object’s average velocity on <span class="process-math">\([12,24]\text{?}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.4.6.10.b"><a href="#ez-4-4-10-1-3-1-2" title="Copy heading and permalink for Item 4.4.6.10.b" aria-label="Copy heading and permalink for Item 4.4.6.10.b">🔗</a></div>
+</li>
+<li id="ez-4-4-10-1-3-1-3">
+<div class="para" id="ez-4-4-10-1-3-1-3-1">At what time is the object’s acceleration greatest?<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.4.6.10.c"><a href="#ez-4-4-10-1-3-1-3" title="Copy heading and permalink for Item 4.4.6.10.c" aria-label="Copy heading and permalink for Item 4.4.6.10.c">🔗</a></div>
+</li>
+<li id="ez-4-4-10-1-3-1-4">
+<div class="para" id="ez-4-4-10-1-3-1-4-1">Suppose that the velocity of the object is increased by a constant value <span class="process-math">\(c\)</span> for all values of <span class="process-math">\(t\text{.}\)</span> What value of <span class="process-math">\(c\)</span> will make the object’s total distance traveled on <span class="process-math">\([12,24]\)</span> be 210 meters?<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Item 4.4.6.10.d"><a href="#ez-4-4-10-1-3-1-4" title="Copy heading and permalink for Item 4.4.6.10.d" aria-label="Copy heading and permalink for Item 4.4.6.10.d">🔗</a></div>
+</li>
+</ol>
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div>
+<div class="autopermalink" data-description="Exercise 4.4.6.10"><a href="#ez-4-4-10" title="Copy heading and permalink for Exercise 4.4.6.10" aria-label="Copy heading and permalink for Exercise 4.4.6.10">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-11"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
+<div class="para" id="ez-4-4-11-1-1">When an aircraft attempts to climb as rapidly as possible, its climb rate (in feet per minute) decreases as altitude increases, because the air is less dense at higher altitudes. Given below is a table showing performance data for a certain single engine aircraft, giving its climb rate at various altitudes, where <span class="process-math">\(c(h)\)</span> denotes the climb rate of the airplane at an altitude <span class="process-math">\(h\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="sidebyside"><div class="sbsrow" style="margin-left:0%;margin-right:0%;"><div class="sbspanel fixed-width top" style="width:100%;"><table class="tabular">
 <tr>
 <td class="l m b1 r0 l0 t1 lines">
@@ -1772,64 +1775,64 @@ x^2 - 8x + 15, \amp  \ \text{if}  \ 3 \le x \le 5
 <td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(490\)</span></td>
 <td class="l m b1 r0 l0 t0 lines"><span class="process-math">\(440\)</span></td>
 </tr>
-</table></div></div></div> <div class="para logical" id="ez-4-4-10-1-3">
+</table></div></div></div> <div class="para logical" id="ez-4-4-11-1-3">
 <div class="para">Let a new function called <span class="process-math">\(m(h)\)</span> measure the number of minutes required for a plane at altitude <span class="process-math">\(h\)</span> to climb the next foot of altitude.</div>
-<ol class="lower-alpha ol-marker-1" id="ez-4-4-10-1-3-3">
-<li id="ez-4-4-10-1-3-3-1">
-<div class="para" id="ez-4-4-10-1-3-3-1-1">Determine a similar table of values for <span class="process-math">\(m(h)\)</span> and explain how it is related to the table above. Be sure to explain the units.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<ol class="lower-alpha ol-marker-1" id="ez-4-4-11-1-3-3">
+<li id="ez-4-4-11-1-3-3-1">
+<div class="para" id="ez-4-4-11-1-3-3-1-1">Determine a similar table of values for <span class="process-math">\(m(h)\)</span> and explain how it is related to the table above. Be sure to explain the units.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3-3-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.10.a"><a href="#ez-4-4-10-1-3-3-1" title="Copy heading and permalink for Item 4.4.6.10.a" aria-label="Copy heading and permalink for Item 4.4.6.10.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.11.a"><a href="#ez-4-4-11-1-3-3-1" title="Copy heading and permalink for Item 4.4.6.11.a" aria-label="Copy heading and permalink for Item 4.4.6.11.a">🔗</a></div>
 </li>
-<li id="ez-4-4-10-1-3-3-2">
-<div class="para" id="ez-4-4-10-1-3-3-2-1">Give a careful interpretation of a function whose derivative is <span class="process-math">\(m(h)\text{.}\)</span> Describe what the input is and what the output is. Also, explain in plain English what the function tells us.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ez-4-4-11-1-3-3-2">
+<div class="para" id="ez-4-4-11-1-3-3-2-1">Give a careful interpretation of a function whose derivative is <span class="process-math">\(m(h)\text{.}\)</span> Describe what the input is and what the output is. Also, explain in plain English what the function tells us.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3-3-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.10.b"><a href="#ez-4-4-10-1-3-3-2" title="Copy heading and permalink for Item 4.4.6.10.b" aria-label="Copy heading and permalink for Item 4.4.6.10.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.11.b"><a href="#ez-4-4-11-1-3-3-2" title="Copy heading and permalink for Item 4.4.6.11.b" aria-label="Copy heading and permalink for Item 4.4.6.11.b">🔗</a></div>
 </li>
-<li id="ez-4-4-10-1-3-3-3">
-<div class="para" id="ez-4-4-10-1-3-3-3-1">Determine a definite integral whose value tells us exactly the number of minutes required for the airplane to ascend to 10,000 feet of altitude. Clearly explain why the value of this integral has the required meaning.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ez-4-4-11-1-3-3-3">
+<div class="para" id="ez-4-4-11-1-3-3-3-1">Determine a definite integral whose value tells us exactly the number of minutes required for the airplane to ascend to 10,000 feet of altitude. Clearly explain why the value of this integral has the required meaning.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3-3-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.10.c"><a href="#ez-4-4-10-1-3-3-3" title="Copy heading and permalink for Item 4.4.6.10.c" aria-label="Copy heading and permalink for Item 4.4.6.10.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.11.c"><a href="#ez-4-4-11-1-3-3-3" title="Copy heading and permalink for Item 4.4.6.11.c" aria-label="Copy heading and permalink for Item 4.4.6.11.c">🔗</a></div>
 </li>
-<li id="ez-4-4-10-1-3-3-4">
-<div class="para" id="ez-4-4-10-1-3-3-4-1">Use the Riemann sum <span class="process-math">\(M_5\)</span> to estimate the value of the integral you found in (c). Include units on your result.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<li id="ez-4-4-11-1-3-3-4">
+<div class="para" id="ez-4-4-11-1-3-3-4-1">Use the Riemann sum <span class="process-math">\(M_5\)</span> to estimate the value of the integral you found in (c). Include units on your result.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3-3-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.10.d"><a href="#ez-4-4-10-1-3-3-4" title="Copy heading and permalink for Item 4.4.6.10.d" aria-label="Copy heading and permalink for Item 4.4.6.10.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.11.d"><a href="#ez-4-4-11-1-3-3-4" title="Copy heading and permalink for Item 4.4.6.11.d" aria-label="Copy heading and permalink for Item 4.4.6.11.d">🔗</a></div>
 </li>
 </ol>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-10-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 4.4.6.10"><a href="#ez-4-4-10" title="Copy heading and permalink for Exercise 4.4.6.10" aria-label="Copy heading and permalink for Exercise 4.4.6.10">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-11"><h4 class="heading"><span class="codenumber">11<span class="period">.</span></span></h4>
-<div class="para logical" id="ez-4-4-11-1-1">
+<div class="autopermalink" data-description="Exercise 4.4.6.11"><a href="#ez-4-4-11" title="Copy heading and permalink for Exercise 4.4.6.11" aria-label="Copy heading and permalink for Exercise 4.4.6.11">🔗</a></div></article><article class="exercise exercise-like" id="ez-4-4-12"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="para logical" id="ez-4-4-12-1-1">
 <div class="para">In <a href="C-1.html" class="internal" title="Chapter 1: Understanding the Derivative">Chapter 1</a>, we showed that for an object moving along a straight line with position function <span class="process-math">\(s(t)\text{,}\)</span> the object’s “average velocity on the interval <span class="process-math">\([a,b]\)</span>” is given by</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/C-1.html">
 \begin{equation*}
 AV_{[a,b]} =  \frac{s(b)-s(a)}{b-a}\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para logical" id="ez-4-4-11-1-2">
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-12-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para logical" id="ez-4-4-12-1-2">
 <div class="para">More recently in <a href="C-4.html" class="internal" title="Chapter 4: The Definite Integral">Chapter 4</a>, we found that for an object moving along a straight line with velocity function <span class="process-math">\(v(t)\text{,}\)</span> the object’s “average value of its velocity function on <span class="process-math">\([a,b]\)</span>” is</div>
 <div class="displaymath process-math" data-contains-math-knowls="./knowl/xref/C-4.html">
 \begin{equation*}
 \displaystyle v_{\operatorname{AVG} [a,b]}  = \frac{1}{b-a} \int_a^b v(t) \, dt\text{.}
 \end{equation*}
 </div>
-<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
-</div> <div class="para" id="ez-4-4-11-1-3">Are the “average velocity on the interval <span class="process-math">\([a,b]\)</span>” and the “average value of the velocity function on <span class="process-math">\([a,b]\)</span>” the same thing? Why or why not? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-11-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-12-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
+</div> <div class="para" id="ez-4-4-12-1-3">Are the “average velocity on the interval <span class="process-math">\([a,b]\)</span>” and the “average value of the velocity function on <span class="process-math">\([a,b]\)</span>” the same thing? Why or why not? Explain.<div class="autopermalink" data-description="Paragraph"><a href="#ez-4-4-12-1-3" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 4.4.6.11"><a href="#ez-4-4-11" title="Copy heading and permalink for Exercise 4.4.6.11" aria-label="Copy heading and permalink for Exercise 4.4.6.11">🔗</a></div></article><article class="exercise exercise-like" id="Ez-4-4-antid-of-1-over-x"><h4 class="heading"><span class="codenumber">12<span class="period">.</span></span></h4>
+<div class="autopermalink" data-description="Exercise 4.4.6.12"><a href="#ez-4-4-12" title="Copy heading and permalink for Exercise 4.4.6.12" aria-label="Copy heading and permalink for Exercise 4.4.6.12">🔗</a></div></article><article class="exercise exercise-like" id="Ez-4-4-antid-of-1-over-x"><h4 class="heading"><span class="codenumber">13<span class="period">.</span></span></h4>
 <div class="para" id="Ez-4-4-antid-of-1-over-x-1-1">In <a href="sec-4-4-FTC.html#T-4-4-Act2" class="xref" data-knowl="./knowl/xref/T-4-4-Act2.html" data-reveal-label="Reveal" data-close-label="Close" title="Table 4.4.5: Familiar basic functions and their antiderivatives.">Table 4.4.5</a> in <a href="sec-4-4-FTC.html#act-4-4-2" class="xref" data-knowl="./knowl/xref/act-4-4-2.html" data-reveal-label="Reveal" data-close-label="Close" title="Activity 4.4.3">Activity 4.4.3</a>, we noted that for <span class="process-math">\(x \gt 0\text{,}\)</span> an antiderivative of <span class="process-math">\(f(x) = \frac{1}{x}\)</span> is <span class="process-math">\(F(x) = \ln(x)\text{.}\)</span>  Here we observe that a key difference between <span class="process-math">\(f(x)\)</span> and <span class="process-math">\(F(x)\)</span> is that <span class="process-math">\(f\)</span> is defined for all <span class="process-math">\(x \ne 0\text{,}\)</span> while <span class="process-math">\(F\)</span> is only defined for <span class="process-math">\(x \gt 0\text{,}\)</span> and see how we can actually define an antiderivative of <span class="process-math">\(f\)</span> for all values of <span class="process-math">\(x\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div> <div class="para logical" id="Ez-4-4-antid-of-1-over-x-1-2">
 <ol class="lower-alpha ol-marker-1" id="Ez-4-4-antid-of-1-over-x-1-2-1">
 <li id="Ez-4-4-antid-of-1-over-x-1-2-1-1">
 <div class="para" id="Ez-4-4-antid-of-1-over-x-1-2-1-1-1">Suppose that <span class="process-math">\(x \lt 0\text{,}\)</span> and let <span class="process-math">\(G(x) = \ln(-x)\text{.}\)</span>  Compute <span class="process-math">\(G'(x)\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-1-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.12.a"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-1" title="Copy heading and permalink for Item 4.4.6.12.a" aria-label="Copy heading and permalink for Item 4.4.6.12.a">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.13.a"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-1" title="Copy heading and permalink for Item 4.4.6.13.a" aria-label="Copy heading and permalink for Item 4.4.6.13.a">🔗</a></div>
 </li>
 <li id="Ez-4-4-antid-of-1-over-x-1-2-1-2">
 <div class="para" id="Ez-4-4-antid-of-1-over-x-1-2-1-2-1">Explain why <span class="process-math">\(G\)</span> is an antiderivative of <span class="process-math">\(f\)</span> for <span class="process-math">\(x \lt 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-2-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.12.b"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-2" title="Copy heading and permalink for Item 4.4.6.12.b" aria-label="Copy heading and permalink for Item 4.4.6.12.b">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.13.b"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-2" title="Copy heading and permalink for Item 4.4.6.13.b" aria-label="Copy heading and permalink for Item 4.4.6.13.b">🔗</a></div>
 </li>
 <li id="Ez-4-4-antid-of-1-over-x-1-2-1-3">
 <div class="para logical" id="Ez-4-4-antid-of-1-over-x-1-2-1-3-1">
@@ -1847,17 +1850,17 @@ x, \amp  \ \text{if}   \ x \ge 0
 </div>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-3-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.12.c"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-3" title="Copy heading and permalink for Item 4.4.6.12.c" aria-label="Copy heading and permalink for Item 4.4.6.12.c">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.13.c"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-3" title="Copy heading and permalink for Item 4.4.6.13.c" aria-label="Copy heading and permalink for Item 4.4.6.13.c">🔗</a></div>
 </li>
 <li id="Ez-4-4-antid-of-1-over-x-1-2-1-4">
 <div class="para" id="Ez-4-4-antid-of-1-over-x-1-2-1-4-1">Now discuss why we say that an antiderivative of <span class="process-math">\(\frac{1}{x}\)</span> is <span class="process-math">\(\ln(|x|)\)</span> for all <span class="process-math">\(x \ne 0\text{.}\)</span><div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-4-1" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Item 4.4.6.12.d"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-4" title="Copy heading and permalink for Item 4.4.6.12.d" aria-label="Copy heading and permalink for Item 4.4.6.12.d">🔗</a></div>
+<div class="autopermalink" data-description="Item 4.4.6.13.d"><a href="#Ez-4-4-antid-of-1-over-x-1-2-1-4" title="Copy heading and permalink for Item 4.4.6.13.d" aria-label="Copy heading and permalink for Item 4.4.6.13.d">🔗</a></div>
 </li>
 </ol>
 <div class="autopermalink" data-description="Paragraph"><a href="#Ez-4-4-antid-of-1-over-x-1-2" title="Copy heading and permalink for Paragraph" aria-label="Copy heading and permalink for Paragraph">🔗</a></div>
 </div>
-<div class="autopermalink" data-description="Exercise 4.4.6.12"><a href="#Ez-4-4-antid-of-1-over-x" title="Copy heading and permalink for Exercise 4.4.6.12" aria-label="Copy heading and permalink for Exercise 4.4.6.12">🔗</a></div></article><div class="autopermalink" data-description="Exercises 4.4.6"><a href="#ez-4-4" title="Copy heading and permalink for Exercises 4.4.6" aria-label="Copy heading and permalink for Exercises 4.4.6">🔗</a></div></section><div class="autopermalink" data-description="Section 4.4: The Fundamental Theorem of Calculus"><a href="#sec-4-4-FTC" title="Copy heading and permalink for Section 4.4: The Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Section 4.4: The Fundamental Theorem of Calculus">🔗</a></div></section></div>
+<div class="autopermalink" data-description="Exercise 4.4.6.13"><a href="#Ez-4-4-antid-of-1-over-x" title="Copy heading and permalink for Exercise 4.4.6.13" aria-label="Copy heading and permalink for Exercise 4.4.6.13">🔗</a></div></article><div class="autopermalink" data-description="Exercises 4.4.6"><a href="#ez-4-4" title="Copy heading and permalink for Exercises 4.4.6" aria-label="Copy heading and permalink for Exercises 4.4.6">🔗</a></div></section><div class="autopermalink" data-description="Section 4.4: The Fundamental Theorem of Calculus"><a href="#sec-4-4-FTC" title="Copy heading and permalink for Section 4.4: The Fundamental Theorem of Calculus" aria-label="Copy heading and permalink for Section 4.4: The Fundamental Theorem of Calculus">🔗</a></div></section></div>
 <div id="ptx-content-footer" class="ptx-content-footer">
 <a class="previous-button button" href="sec-4-3-definite-integral.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="C-5.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>

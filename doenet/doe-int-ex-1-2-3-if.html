@@ -109,13 +109,14 @@ window.MathJax = {
   <selectFromSequence name="c" from="1" to="4" />
 
   <math name="k">0</math>
-  
+
   <function name="line"> x+1</function>
   <function name="line2">x</function>
 
 <select name="graphSelect" numToSelect="4">
   <option>
-    <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph1" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4" fixed>
+      <shortDescription>an unbroken line</shortDescription>
       <function> $line </function>
       <text anchor="(1,-.5)">
       a
@@ -124,7 +125,8 @@ window.MathJax = {
     <boolean>0</boolean>
   </option>
   <option>
-    <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph2" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4" fixed>
+      <shortDescription>a line with a hole whose y-value could be 2</shortDescription>
       <function domain="[-2.5,1-$k)"> $line </function>
       <function domain="[1+$k,2.5)"> $line </function>
       <endpoint open="true" draggable="false">(1, $$line(1))</endpoint>
@@ -135,7 +137,8 @@ window.MathJax = {
     <boolean>1</boolean>
   </option>
   <option>
-    <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph3" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4" fixed>
+      <shortDescription>a line with a hole whose x-value could be 2</shortDescription>
       <function domain="[-2.5,-1-$k)"> $line </function>
       <function domain="[-1+$k,2.5)"> $line </function>
       <endpoint open="true" draggable="false">(-1, $$line(-1))</endpoint>
@@ -146,7 +149,8 @@ window.MathJax = {
     <boolean>0</boolean>
   </option>
   <option>
-    <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4">
+    <graph name="graph4" displayXAxisTickLabels="false" displayYAxisTickLabels="false" showNavigation="false" fixAxes="true" xmin="-2.5" xmax="2.5" ymin="-4" ymax="4" fixed>
+      <shortDescription>a function with a jump where one side could have a y value of 2</shortDescription>
       <function domain="[-2.5,1-$k)"> $line </function>
       <function domain="[1+$k,2.5)"> $line2 </function>
       <endpoint open="true" draggable="false">(1, $$line(1))</endpoint>
@@ -159,7 +163,7 @@ window.MathJax = {
   </option>
 </select>
 
- 
+
 <mathList name="correctLabels">
 <repeatForSequence from="A" to="D" type="letters" name="correctMap" valueName="letter" indexName="i">
     <conditionalContent>
@@ -177,8 +181,8 @@ window.MathJax = {
 <!-- <p>checkLists = $checkLists</p> -->
 <!-- /testing -->
 
- <p>Consider the function <m>\displaystyle f(x) = \frac{(x+b)(x-a)}{x-a}</m>, where <m>a</m> and <m>b</m> are fixed numbers.  In addition, suppose that <m>\displaystyle \lim_{x\to a} \frac{(x+b)(x-a)}{x-a}= $c </m>. Which of the graphs below could be the graph of <m>f(x)</m>? Enter the (capital) letters corresponding to each such graph, separated by commas if there is more than one. 
-   <mathInput name="mi1" /></p>
+ <p>Consider the function <m>\displaystyle f(x) = \frac{(x+b)(x-a)}{x-a}</m>, where <m>a</m> and <m>b</m> are fixed numbers.  In addition, suppose that <m>\displaystyle \lim_{x\to a} \frac{(x+b)(x-a)}{x-a}= $c </m>. Which of the graphs below could be the graph of <m>f(x)</m>? Enter the (capital) letters corresponding to each such graph, separated by commas if there is more than one.
+   <mathInput name="mi1" ><shortDescription>letter of the graph which satisfies the given conditions</shortDescription></mathInput></p>
  <answer>
     <award>
       <when>$checkLists</when>
