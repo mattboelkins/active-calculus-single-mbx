@@ -107,8 +107,8 @@ window.MathJax = {
 <setup>
   <select name="s1" hide> 0 1 2 </select>
   <select name="s2" hide> 6 7 8</select>
-  <function name="f1"> x^2/$s2 </function>
-  <function name="f2"> $s2-x^2/$s2 </function>
+  <function name="f1"> 1/$s2 * x^2 </function>
+  <function name="f2"> $s2-1/$s2*x^2 </function>
 
   <number name="n1">$s1+4</number>
   <number name="a1"> 0.5*$$f1($s1)+0.5*$$f1($s1+0.5)+0.5*$$f1($s1+1)+0.5*$$f1($s1+1.5)+0.5*$$f1($s1+2)+0.5*$$f1($s1+2.5)+0.5*$$f1($s1+3)+0.5*$$f1($s1+3.5)
@@ -151,6 +151,9 @@ window.MathJax = {
 </p>
 
   <graph name="g1" xmin="-1" xmax="9" ymin="-1" ymax="9" showNavigation="false" fixAxes="true" size="small">
+    <shortDescription>
+      A plot of the function f and a left Riemann sum
+    </shortDescription>
     $f1
 <!--  <label fixed anchor="(4.5,8)"> Left endpoint Riemann sum for <m>f(x)=$f1</m> on <m>[$s1,$n1]</m> </label> -->
   <rectangle fixed name="rt1" vertices="($s1,0) ($s1+0.5,$$f1($s1))" styleNumber="3" filled/>
@@ -165,6 +168,7 @@ window.MathJax = {
 
 <p>
   Compared to the exact area under the curve on <m>[$s1, $n1]</m>, the left Riemann sum's value is <answer><choiceInput inline name="c1">
+    <shortDescription>comparison options</shortDescription>
     <choice credit="$a1 > $A + 0.25"> an overestimate of the exact area </choice>
     <choice credit="$a1 = $A"> equal to the exact area </choice>
     <choice credit="$a1 < $A - 0.25"> an underestimate of the exact area </choice>
@@ -184,6 +188,9 @@ window.MathJax = {
 
 
   <graph name="g2" xmin="-1" xmax="9" ymin="-1" ymax="9" showNavigation="false" fixAxes="true" size="small">
+    <shortDescription>
+      A plot of the function f and a right Riemann sum
+    </shortDescription>
     $f1
 <!--  <label fixed anchor="(4.5,8)"> Left endpoint Riemann sum for <m>f(x)=$f1</m> on <m>[$s1,$n1]</m> </label> -->
   <rectangle fixed name="rt11" vertices="($s1,0) ($s1+0.5,$$f1($s1+0.5))" styleNumber="3" filled/>
@@ -197,6 +204,7 @@ window.MathJax = {
   </graph>
 
 <p> Compared to the exact area under the curve on <m>[$s1, $n1]</m>, the right Riemann sum's value is <answer><choiceInput inline name="c2">
+  <shortDescription>comparison options</shortDescription>
     <choice credit="$a2 > $A + 0.25"> an overestimate of the exact area </choice>
     <choice credit="$a2 = $A"> equal to the exact area </choice>
     <choice credit="$a2 < $A - 0.25"> an underestimate of the exact area </choice>
@@ -206,10 +214,13 @@ window.MathJax = {
     </li>
     <li>
 <p>
-  The rectangles in the third graph below illustrate a left endpoint Riemann sum for <m>f(x)=$f2</m> on the interval <m>[$s1, $n1]</m>.
+  The rectangles in the third graph below illustrate a left endpoint Riemann sum for <m>g(x)=$f2</m> on the interval <m>[$s1, $n1]</m>.
 </p>
 
   <graph name="g3" xmin="-1" xmax="9" ymin="-1" ymax="9" showNavigation="false" fixAxes="true" size="small">
+    <shortDescription>
+      A plot of the function g and a left Riemann sum
+    </shortDescription>
     $f2
 <!--  <label fixed anchor="(4.5,8)"> Left endpoint Riemann sum for <m>f(x)=$f1</m> on <m>[$s1,$n1]</m> </label> -->
   <rectangle fixed name="rt1" vertices="($s1,0) ($s1+0.5,$$f2($s1))" styleNumber="3" filled/>
@@ -224,6 +235,7 @@ window.MathJax = {
 
 <p>
   Compared to the exact area under the curve on <m>[$s1, $n1]</m>, the left Riemann sum's value is <answer><choiceInput inline name="c3">
+    <shortDescription>comparison options</shortDescription>
     <choice credit="$a3 > $B + 0.25"> an overestimate of the exact area </choice>
     <choice credit="$a3 = $B"> equal to the exact area </choice>
     <choice credit="$a3 < $B - 0.25"> an underestimate of the exact area </choice>
@@ -241,10 +253,13 @@ window.MathJax = {
   <li>
 
 <p>
-  The rectangles in the fourth graph below illustrate a right endpoint Riemann sum for <m>f(x)=$f2</m> on the interval <m>[$s1, $n1]</m>.
+  The rectangles in the fourth graph below illustrate a right endpoint Riemann sum for <m>g(x)=$f2</m> on the interval <m>[$s1, $n1]</m>.
 </p>
 
   <graph name="g2" xmin="-1" xmax="9" ymin="-1" ymax="9" showNavigation="false" fixAxes="true" size="small">
+    <shortDescription>
+      A plot of the function g and a right Riemann sum
+    </shortDescription>
     $f2
 <!--  <label fixed anchor="(4.5,8)"> Left endpoint Riemann sum for <m>f(x)=$f1</m> on <m>[$s1,$n1]</m> </label> -->
   <rectangle fixed name="rt11" vertices="($s1,0) ($s1+0.5,$$f2($s1+0.5))" styleNumber="3" filled/>
@@ -259,6 +274,7 @@ window.MathJax = {
 
 <p>
   Compared to the exact area under the curve on <m>[$s1, $n1]</m>, the right Riemann sum's value is <answer><choiceInput inline name="c4">
+    <shortDescription>comparison options</shortDescription>
     <choice credit="$a4 > $B + 0.25"> an overestimate of the exact area </choice>
     <choice credit="$a4 = $B"> equal to the exact area </choice>
     <choice credit="$a4 < $B - 0.25"> an underestimate of the exact area </choice>
@@ -269,34 +285,99 @@ window.MathJax = {
     </li>
     <li>
       <p>
-        The ideas in the four examples above can be generalized based on important characteristics of a function <m>f</m> that is positive and continuous on the interval <m>[a,b]</m>.  For such a function, complete the following sentences to make conclusions about how left and right Riemann sums compare to the value of the true area under the curve.  Assume that <m>A</m> represents the exact area between <m>f(x)</m> and the <m>x</m>-axis on <m>[a,b]</m>, and that <m>L_n</m> and <m>R_n</m> are left and right Riemann sums of <m>f</m> on that same interval.  Then, we can say:
+        The ideas in the four examples above can be generalized based on important characteristics of a function <m>f</m> that is positive and continuous on the interval <m>[a,b]</m>: in particular, if the function is either always decreasing or always increasing on the interval, we can be sure about which Riemann sums are under- or over-estimates of the true area bounded by <m>f</m>.  Assume that <m>A</m> represents the exact area between <m>f(x)</m> and the <m>x</m>-axis on <m>[a,b]</m>, and that <m>L_n</m> and <m>R_n</m> are left and right Riemann sums of <m>f</m> on that same interval.  
       </p>
       <p>
-        When <m>f</m> is an increasing function on <m>[a,b]</m>, then <m>L_n</m> will always <answer><choiceInput inline name="c5">
-    <choice>?</choice>
-    <choice>overestimate</choice>
-    <choice credit="1">underestimate</choice>
-    <choice>equal</choice>
-  </choiceInput></answer> the exact value of <m>A</m> because every rectangle will lie <answer><choiceInput inline name="c55">
-    <choice>?</choice>
-    <choice>completely above</choice>
-    <choice credit="1">completely below</choice>
-    <choice>partly above and partly below</choice>
-  </choiceInput></answer> the curve.  Alternatively, if <m>f</m> is a decreasing function on <m>[a,b]</m>, then <m>L_n</m> will always <answer><choiceInput inline name="c6">
-    <choice>?</choice>
-    <choice credit="1">overestimate</choice>
-    <choice>underestimate</choice>
-    <choice>equal</choice>
-  </choiceInput></answer> the exact value of <m>A</m>, because every rectangle will lie <answer><choiceInput inline name="c65">
-    <choice>?</choice>
-    <choice credit="1">completely above</choice>
-    <choice>completely below</choice>
-    <choice>partly above and partly below</choice>
-  </choiceInput></answer> the curve.
+        For such a function, complete the following sentences to make conclusions about how left and right Riemann sums compare to the value of the true area under the curve.
+      </p>
+      <p>
+        When <m>f</m> is an increasing function on <m>[a,b]</m>, then <m>L_n</m> will always 
+          <choiceInput inline name="c5">
+            <shortDescription>over or under options</shortDescription>
+            <choice>?</choice>
+            <choice>overestimate</choice>
+            <choice>underestimate</choice>
+            <choice>equal</choice>
+          </choiceInput>
+        the exact value of <m>A</m> because every rectangle will lie 
+          <choiceInput inline name="c55">
+            <shortDescription>above or below options</shortDescription>
+            <choice>?</choice>
+            <choice>completely above</choice>
+            <choice>completely below</choice>
+            <choice>partly above and partly below</choice>
+          </choiceInput> 
+        the curve.  Alternatively, if <m>f</m> is a decreasing function on <m>[a,b]</m>, then <m>L_n</m> will always 
+        <choiceInput inline name="c6">
+          <shortDescription>over or under options</shortDescription>
+          <choice>?</choice>
+          <choice>overestimate</choice>
+          <choice>underestimate</choice>
+          <choice>equal</choice>
+        </choiceInput> 
+        the exact value of <m>A</m>, because every rectangle will lie 
+        <choiceInput inline name="c65">
+          <shortDescription>above or below options</shortDescription>
+          <choice>?</choice>
+          <choice>completely above</choice>
+          <choice>completely below</choice>
+          <choice>partly above and partly below</choice>
+        </choiceInput> the curve.
   </p>
+      <answer>
+        <award>
+          <when>
+            $c5.selectedIndices=3 and $c55.selectedIndices=3 and $c6.selectedIndices=2 and $c65.selectedIndices=2
+          </when>
+        </award>
+      </answer>
+
+      <p>
+        When <m>f</m> is an increasing function on <m>[a,b]</m>, then <m>R_n</m> will always 
+          <choiceInput inline name="d5">
+            <shortDescription>over or under options</shortDescription>
+            <choice>?</choice>
+            <choice>overestimate</choice>
+            <choice>underestimate</choice>
+            <choice>equal</choice>
+          </choiceInput>
+        the exact value of <m>A</m> because every rectangle will lie 
+          <choiceInput inline name="d55">
+            <shortDescription>above or below options</shortDescription>
+            <choice>?</choice>
+            <choice>completely above</choice>
+            <choice>completely below</choice>
+            <choice>partly above and partly below</choice>
+          </choiceInput> 
+        the curve.  Alternatively, if <m>f</m> is a decreasing function on <m>[a,b]</m>, then <m>R_n</m> will always 
+        <choiceInput inline name="d6">
+          <shortDescription>over or under options</shortDescription>
+          <choice>?</choice>
+          <choice>overestimate</choice>
+          <choice>underestimate</choice>
+          <choice>equal</choice>
+        </choiceInput> 
+        the exact value of <m>A</m>, because every rectangle will lie 
+        <choiceInput inline name="d65">
+          <shortDescription>above or below options</shortDescription>
+          <choice>?</choice>
+          <choice>completely above</choice>
+          <choice>completely below</choice>
+          <choice>partly above and partly below</choice>
+        </choiceInput> the curve.
+  </p>
+      <answer>
+        <award>
+          <when>
+            $d5.selectedIndices=2 and $d55.selectedIndices=2 and $d6.selectedIndices=3 and $d65.selectedIndices=3
+          </when>
+        </award>
+      </answer>
+      
     </li>
   </ol>
 </p>
+
         </script>
 </div></div>
 </body>

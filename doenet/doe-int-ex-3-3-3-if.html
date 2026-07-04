@@ -114,9 +114,7 @@ window.MathJax = {
   <derivative name="fPP">$fP</derivative>
 
   <point name="A" styleNumber="2">(0,$$fP(0))
-    <constraints>
-      <constrainTo>$fP</constrainTo>
-    </constraints>
+    <constrainTo>$fP</constrainTo>
   </point>
 
   <point name="B" styleNumber="1" draggable="false">($POI1,$$fP($POI1))</point>
@@ -144,9 +142,10 @@ window.MathJax = {
 -->
 
       <graph xmin="-4" xmax="4" ymin="-4" ymax="4" size="medium" grid="true" showNavigation="false" fixAxes="true">
+        <shortDescription>plot of f-prime, which is sinusoidal</shortDescription>
         $fP
         $A
-        <label fixLocation anchor="(-2+0.2,$$fP(-2)-$s*0.25)"><m>f'</m></label>
+        <label fixLocation anchor="(0.3,$$fP(0)+$s*0.25)"><m>f'</m></label>
         <!--
         $B
         <label fixLocation anchor="($POI1-0.2,$$fP($POI1)+$s*0.25)"><m>($POI1, $$fP($POI1))</m></label>
@@ -161,7 +160,7 @@ window.MathJax = {
 
 <p>
   <ol marker="a.">
-    <li>
+    <li sectionWideCheckWork>
       <p>
         At <m>x = <math simplify>-1/(2*$a)</math></m>, <m>f</m> <answer><choiceInput inline>
           <choice>?</choice>
@@ -179,7 +178,7 @@ window.MathJax = {
         </choiceInput></answer> at <m>x = <math simplify>-1/(2*$a)</math></m>.
       </p>
     </li>
-    <li>
+    <li sectionWideCheckWork>
       <p>
         At <m>x = <math simplify>0</math></m>, <m>f</m> <answer><choiceInput inline>
           <choice>?</choice>
@@ -197,7 +196,7 @@ window.MathJax = {
         </choiceInput></answer> at <m>x = <math simplify>-1/(2*$a)</math></m>.
       </p>
     </li>
-    <li>
+    <li sectionWideCheckWork>
       <p>
         At <m>x = <math simplify>1/(2*$a)</math></m>, <m>f</m> <answer><choiceInput inline>
           <choice>?</choice>
