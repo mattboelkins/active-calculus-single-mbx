@@ -13,62 +13,14 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
 <link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
-<script>
-var runestoneMathReady = new Promise((resolve) => window.rsMathReady = resolve);
-window.MathJax = {
-  "tex": {
-    "inlineMath": [
-      [
-        "\\(",
-        "\\)"
-      ]
-    ],
-    "tags": "none",
-    "tagSide": "right",
-    "tagIndent": ".8em",
-    "packages": {
-      "[+]": [
-        "base",
-        "extpfeil",
-        "ams",
-        "amscd",
-        "color",
-        "newcommand",
-        "knowl"
-      ]
-    }
-  },
-  "options": {
-    "ignoreHtmlClass": "tex2jax_ignore|ignore-math",
-    "processHtmlClass": "process-math"
-  },
-  "chtml": {
-    "scale": 0.98,
-    "mtextInheritFont": true
-  },
-  "loader": {
-    "load": [
-      "input/asciimath",
-      "[tex]/extpfeil",
-      "[tex]/amscd",
-      "[tex]/color",
-      "[tex]/newcommand",
-      "[pretext]/mathjaxknowl3.js"
-    ],
-    "paths": {
-      "pretext": "_static/pretext/js/lib"
-    }
-  },
-  "startup": {
-    pageReady() {
-      return MathJax.startup.defaultPageReady().then(function () {
-      console.log("in ready function");
-      rsMathReady();
-      }
-    )}
-  }
-};
-</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
+startMathJax({
+hasWebworkReps: false,
+hasSage: false,
+isReact: false,
+htmlPresentation: false,
+});
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
 <script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
@@ -82,7 +34,7 @@ window.MathJax = {
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="width:600px; height:600px; display: block; box-sizing: border-box; -moz-box-sizing: border-box; -webkit-box-sizing: border-box;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true">
+<div style="aspect-ratio: ;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true">
 <div class="doenetml-loading" style="text-align:center">
 <p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
 <p>Waiting on the page to load...</p>
@@ -146,7 +98,12 @@ window.MathJax = {
   Next, we choose the inner function in the composite function to be <m>u</m>.  Fill in the following blank to state <m>u</m> as a function of <m>x</m> and then calculate <m>du</m>. Note that the dropdown is part of your answer.
 </p>
 <p>
-  <m>u = </m><mathInput name="uChoice"/> <answer><award><when>$uChoice = $u</when></award></answer>
+  <answer forceSmallCheckWorkButton>
+    <mathInput name="uChoice">
+      <label><m>u = </m></label>
+    </mathInput>
+    <award><when>$uChoice = $u</when></award>
+  </answer>
 </p>
 <p>
   <m>du = </m><mathInput name="duChoice"/><choiceInput name="duordx1" inline>
@@ -155,7 +112,7 @@ window.MathJax = {
             <choice><m>du</m></choice>
           </choiceInput>
     <m> =</m> <mathInput disabled> $duChoice $duordx1 </mathInput>
-  <answer name="duequals"><award><when>$duChoice = $du and $duordx1.selectedIndices=2</when></award></answer>
+  <answer name="duequals" forceSmallCheckWorkButton><award><when>$duChoice = $du and $duordx1.selectedIndices=2</when></award></answer>
 </p>
 <feedback condition = "$duChoice != $du and $duChoice.responseHasBeenSubmitted">Take the derivative of what <m>u</m> equals.</feedback>
 <feedback condition = "$duequals.justSubmitted and !$choseduordx1">You must pick <m>du</m> or <m>dx</m>.</feedback>
@@ -172,7 +129,7 @@ Now, notice that <m>du</m> is almost present in the integrand, up to a constant.
             <choice><m>du</m></choice>
           </choiceInput>
     <m> =</m> <mathInput disabled> $xkdxChoice $duordx2 </mathInput>
-  <answer name="xkdxequals"><award><when>$xkdxChoice = 1/$k and $duordx2.selectedIndices=3</when></award></answer>
+  <answer name="xkdxequals" forceSmallCheckWorkButton><award><when>$xkdxChoice = 1/$k and $duordx2.selectedIndices=3</when></award></answer>
 </p>
 <feedback condition = "$xkdxequals.justSubmitted and !$choseduordx2">You must pick <m>du</m> or <m>dx</m>.</feedback>
 <feedback condition = "$xkdxChoice = 1/$k and $duordx2.selectedIndices!=3 and $xkdxequals.justSubmitted and $choseduordx2">You still need to correctly pick <m>du</m> or <m>dx</m>.</feedback>
@@ -189,7 +146,7 @@ Now, notice that <m>du</m> is almost present in the integrand, up to a constant.
             <choice><m>du</m></choice>
           </choiceInput>
     <m> = \displaystyle \int</m><mathInput disabled> $uSubsChoice $duordx3 </mathInput>
-  <answer name="usubsequals"><award><when> $uSubs = $uSubsChoice and $duordx3.selectedIndices=3</when></award></answer>
+  <answer name="usubsequals" forceSmallCheckWorkButton><award><when> $uSubs = $uSubsChoice and $duordx3.selectedIndices=3</when></award></answer>
 </p>
 <feedback condition = "$usubsequals.justSubmitted and !$choseduordx3">You must pick <m>du</m> or <m>dx</m>.</feedback>
 <feedback condition = "$uSubs = $uSubsChoice and $duordx3.selectedIndices!=3 and $usubsequals.justSubmitted and $choseduordx3">You still need to correctly pick <m>du</m> or <m>dx</m>.</feedback>
@@ -203,7 +160,7 @@ Now, notice that <m>du</m> is almost present in the integrand, up to a constant.
     Finally, we evaluate the simpler integral in <m>u</m> and then substitute back to write our final result in terms of <m>x</m>.
   </p>
   <p>
-    <m>\displaystyle\int <math simplify>x^($k-1)</math> (x^$k - $a)^$b \, dx = </m> <mathInput name="antiDuChoice"/> <m>+ C</m> <answer simplifyOnCompare><award><when> $antiDu = $antiDuChoice</when></award></answer> <m> = </m> <mathInput name="antiDxChoice"/> <m>+ C</m> <answer simplifyOnCompare><award><when> $antiDx = $antiDxChoice</when></award></answer>.
+    <m>\displaystyle\int <math simplify>x^($k-1)</math> (x^$k - $a)^$b \, dx = </m> <mathInput name="antiDuChoice"/> <m>+ C</m> <answer symbolicEquality simplifyOnCompare forceSmallCheckWorkButton><award><when> $antiDu = $antiDuChoice</when></award></answer> <m> = </m> <mathInput name="antiDxChoice"/> <m>+ C</m> <answer symbolicEquality simplifyOnCompare forceSmallCheckWorkButton><award><when> $antiDx = $antiDxChoice</when></award></answer>.
   </p>
 </div>
 
