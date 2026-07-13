@@ -69,6 +69,7 @@ htmlPresentation: false,
   <function name="g" styleNumber="2"> $a1*($m*(x - $x1) + $y1)</function>
   
   <math name="intValue" simplify>abs(1/3*($x2-$h)^3 + $k*$x2 - $m/2*($x2-$x1)^2 - $y1*$x2 - (1/3*($x1-$h)^3 + $k*$x1 - $m/2*($x1-$x1)^2 - $y1*$x1)) </math>
+  <number name="error">abs($intVal - $intValue)</number>
 
 </setup>  
 
@@ -96,7 +97,7 @@ htmlPresentation: false,
         <p>
           Plot <m>f</m> and <m>g</m> and use the graph or algebra to find the exact points of intersection between <m>f</m> and <m>g</m>.  State each intersection point as an ordered pair in the space below; if there is more than one, separate them with commas.
         </p>
-        <p><answer><mathList unordered>($x1,$y1) ($x2,$y2)</mathList></answer></p>
+        <p><answer><label>the intersection points are:</label><mathList unordered>($x1,$y1) ($x2,$y2)</mathList></answer></p>
       </li>
 
       <li>
@@ -106,17 +107,17 @@ htmlPresentation: false,
         </p>
 
         <p>
-          lower limit of integration: <m>a = </m> <answer name="a">$x1</answer>
+          lower limit of integration:  <answer name="a"><label><m>a = </m></label>$x1</answer>
         </p>
         <p>
-          upper limit of integration: <m>b = </m> <answer name="b">$x2</answer>
+          upper limit of integration: <answer name="b"><label><m>b = </m></label>$x2</answer>
         </p>
 
         <p>
-          Integral expression for area, <m>A</m> between <m>y = f(x)</m> and the <m>y = g(x)</m>: 
+          Integral expression for area, <m>A</m>, between <m>y = f(x)</m> and the <m>y = g(x)</m>: 
         </p>
         <p>
-          <m>A = \displaystyle\int_{$a}^{$b}</m><mathInput name="int1" minWidth="100" /><m>dx \,</m><answer><award><when>($$f($h) > $$g($h) and $int1 = $f - $g) or ($$f($h) < $$g($h) and $int1 = $g - $f) </when></award></answer> <!--, <m>$$f($h), $$g($h), $f - $g</m> -->
+          <m>A = \displaystyle\int_{$a}^{$b}</m><mathInput name="int1" minWidth="100"><shortDescription>integrand</shortDescription></mathInput><m>dx \,</m><answer forceSmallCheckWorkButton><award><when>($$f($h) > $$g($h) and $int1 = $f - $g) or ($$f($h) < $$g($h) and $int1 = $g - $f) </when></award></answer> <!--, <m>$$f($h), $$g($h), $f - $g</m> -->
         </p> 
       </li>
       <li>
@@ -124,8 +125,14 @@ htmlPresentation: false,
           Evaluate the integral exactly to find the numerical value of the area, <m>A</m>, between <m>y = f(x)</m> and <m>y = g(x)</m>, on the interval between their intersection points, and report the value below. 
         </p>
         <p>
-          <m>A = </m><mathInput name="intVal" minWidth="40" /> <answer><award><when>$intValue=$intVal </when></award></answer>
+          <m>A = </m><mathInput name="intVal" minWidth="40" ><shortDescription>
+            exact value of A
+          </shortDescription></mathInput> 
+          <answer forceSmallCheckWorkButton name="AEntered"><award><when>$intValue=$intVal </when></award></answer>
         </p>  
+        <feedback condition="$AEntered.creditAchieved!=1 and ($error < 0.011) and $AEntered.justSubmitted">
+          You have a very close decimal representation of <m>A</m>, but it's important to use the Fundamental Theorem of Calculus to find the value of <m>A</m> exactly.
+        </feedback>
       </li>
     </ol>
   </p>
