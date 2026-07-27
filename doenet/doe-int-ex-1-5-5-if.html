@@ -20,8 +20,8 @@ hasSage: false,
 isReact: false,
 htmlPresentation: false,
 });
-</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.20-dev.339/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.20-dev.339/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
@@ -88,7 +88,7 @@ htmlPresentation: false,
     <!--    <math>($$v($c+0.1)-$$v($c-0.1))/(0.2)</math> -->
       </p>
     </li>
-    <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <li sectionWideCheckWork colorAnswersSeparately>
         <setup>
           <math simplify name="inst">$c-1.5</math>
           <math simplify name="vel">$$v($c-1.5)</math>
@@ -111,7 +111,7 @@ htmlPresentation: false,
     </choiceInput></answer>.  This means that if one more second of time elapsed from <m>t = $inst</m> to <m>t = <math simplify>$inst + 1</math></m>, we'd expect the car's velocity to decrease to approximately <answer><shortDescription>velocity after some time</shortDescription><award allowedErrorInNumbers="0.1" allowedErrorIsAbsolute>$vel + $velP</award></answer> feet per second.
       </p>
     </li>
-    <li sectionWideCheckWork forceIndividualAnswerColoring>
+    <li sectionWideCheckWork colorAnswersSeparately>
       <p>
         Now let <m>s(t)</m> represent the distance the car has traveled since it started braking at <m>t = 0</m>.
       </p>

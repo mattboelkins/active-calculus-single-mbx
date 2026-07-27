@@ -20,8 +20,8 @@ hasSage: false,
 isReact: false,
 htmlPresentation: false,
 });
-</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.20-dev.339/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7.20-dev.339/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
 <body class="ptx-content ignore-math" id="ac-single">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
@@ -93,7 +93,7 @@ htmlPresentation: false,
     </li>
     <li>
       <p>
-        Use <m>T_3(x)</m> to estimate the value of <m>f($c) = \sqrt{$c}</m>.  Report your result using at least <m>6</m> places after the decimal point, if applicable.
+        Use <m>T_3(x)</m> to estimate the value of <m>f($c) = \sqrt{$c}</m>.  Report your result to an accuracy of at least <m>0.000001</m>.
       </p>
       <p>
         <answer name="fEst" allowedErrorInNumbers="0.000001" allowedErrorIsAbsolute><label><m>\sqrt{$c} = f($c) \approx T_3($c) = </m></label>$$T3($c)</answer>
@@ -106,7 +106,7 @@ htmlPresentation: false,
       <p>
         Note that we used the degree <m>3</m> Taylor polynomial of <m>f</m> centered at <m>a=$a</m> to approximate <m>f($c)</m>, which means that in the Lagrange Error Bound formula
       </p>
-      <div sectionWideCheckWork forceIndividualAnswerColoring>
+      <div sectionWideCheckWork colorAnswersSeparately>
       <p>
         <answer><label><m>n + 1 = </m></label>4</answer> and
       </p>
