@@ -71,9 +71,13 @@
         <figure xml:id="F-2-6-Ez4" >
           <caption>A function <m>y = f(x)</m>
           </caption>
-          <image source="images/2_6_Ez4"><description><p>A function <m>y = f(x)</m>
-          </p>
-          </description></image>
+          <image source="images/2_6_Ez4">
+            <description>
+              <p>
+                The graph of a function <m>y = f(x)</m> that is always increasing, concave up for <m>x \lt 1 </m>, concave down for <m>x \gt 1 </m>, and passes through the point <m>(1,-1)</m>.  The plot is given on the interval <m>-4 \lt x \lt 4</m> along with the line <m>y = x</m>; the graph of <m>y = f(x)</m> lies almost entirely below the line, crossing close to the point <m>(-4,-4)</m>.
+              </p>
+            </description>
+          </image>
         </figure>
       </sidebyside>
     </statement>
@@ -87,7 +91,16 @@
           </li>
           <li >
             <sidebyside width="50%" >
-              <image source="images/2_6_Ez4Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/2_6_Ez4Soln">
+                <description>
+                  <p>
+                    The graph of a function <m>y = f(x)</m> that is always increasing, concave up for <m>x \lt 1 </m>, concave down for <m>x \gt 1 </m>, and passes through the point <m>(1,-1)</m>.  The plot is given on the interval <m>-4 \lt x \lt 4</m> along with the line <m>y = x</m>; the graph of <m>y = f(x)</m> lies almost entirely below the line, crossing close to the point <m>(-4,-4)</m>.
+                  </p>
+                  <p>
+                    Three points on the graph of <m>y = f(x)</m> are emphasized: <m>(-1/2, -3)</m>, <m>(1,-1)</m>, and <m>(3.5,1)</m>.  To generate the plot of <m>y = f^{-1}(x)</m>, which is the reflection of the graph of <m>y = f(x)</m> across the line <m>y = x</m>, the reflections of these three points are also plotted: <m>(-3,-1/2)</m>, <m>(-1,1)</m>, and <m>(1,3.5)</m>.  The graphs of <m>y = f^{-1}(x)</m> and <m>y = f(x)</m> intersect at a single point, approximately <m>(-3.75,-3.75)</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -118,7 +131,16 @@
               we see the following figure.
             </p>
             <sidebyside width="50%" >
-              <image source="images/2_6_Ez4Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/2_6_Ez4Soln">
+                <description>
+                  <p>
+                    The graph of a function <m>y = f(x)</m> that is always increasing, concave up for <m>x \lt 1 </m>, concave down for <m>x \gt 1 </m>, and passes through the point <m>(1,-1)</m>.  The plot is given on the interval <m>-4 \lt x \lt 4</m> along with the line <m>y = x</m>; the graph of <m>y = f(x)</m> lies almost entirely below the line, crossing close to the point <m>(-4,-4)</m>.
+                  </p>
+                  <p>
+                    Three points on the graph of <m>y = f(x)</m> are emphasized: <m>(-1/2, -3)</m>, <m>(1,-1)</m>, and <m>(3.5,1)</m>.  To generate the plot of <m>y = f^{-1}(x)</m>, which is the reflection of the graph of <m>y = f(x)</m> across the line <m>y = x</m>, the reflections of these three points are also plotted: <m>(-3,-1/2)</m>, <m>(-1,1)</m>, and <m>(1,3.5)</m>.  The graphs of <m>y = f^{-1}(x)</m> and <m>y = f(x)</m> intersect at a single point, approximately <m>(-3.75,-3.75)</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
