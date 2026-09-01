@@ -68,11 +68,17 @@
         and <m>(1.8437, 1.235)</m>.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_7_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_7_Ez1Soln">
+          <description>
+            <p>
+              On the window <m>[-3,4] \times [-2,2]</m>, a plot of the implicit curve <m>2y^3+y^2-y^5 = x^4 - 2x^3 + x^2</m> that has two small loops amidst one large loop.  The points for the horizontal and vertical tangent lines are also labeled on the plot.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </answer>
     <solution >
-      <p >
+      <p>
         First, we compute <m>\frac{dy}{dx}</m> by implicit differentiation.
         Differentiating both sides of the given equation with respect to <m>x</m> while treating <m>y</m> as a function of <m>x</m>,
         we see that
@@ -155,7 +161,13 @@
         All of our above work is summarized in the following figure.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_7_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_7_Ez1Soln">
+          <description>
+            <p>
+              On the window <m>[-3,4] \times [-2,2]</m>, a plot of the implicit curve <m>2y^3+y^2-y^5 = x^4 - 2x^3 + x^2</m> that has two small loops amidst one large loop.  The points for the horizontal and vertical tangent lines are also labeled on the plot.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </solution>
   </exercise>
@@ -171,7 +183,13 @@
         <m>y = \frac{\pi}{2} - \left(x-\frac{\pi}{2}\right)</m>.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_7_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_7_Ez2Soln">
+          <description>
+            <p>
+              The implicit curve <m>\sin(x+y) + \cos(x-y) = 1</m> is periodic and results in a collection of non-overlapping loops that are roughly circular.  This plot focuses on the loop centered at <m>(\frac{\pi}{4}, \frac{\pi}{4})</m> that passes through <m>(0,0)</m>, <m>(0, \frac{\pi}{2})</m>, <m>(\frac{\pi}{2}, \frac{\pi}{2})</m>, and <m>(\frac{\pi}{2}, 0)</m>.  In addition, we plot the tangent line to this part of the curve at <m>(\frac{\pi}{2}, \frac{\pi}{2})</m>, which is given by <m>y = \frac{\pi}{2} - \left(x-\frac{\pi}{2}\right)</m>.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </answer>
     <solution >
@@ -207,7 +225,13 @@
         <m>\left(\frac{\pi}{2}, \frac{\pi}{2}\right)</m> are shown in the following figure.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_7_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_7_Ez2Soln">
+          <description>
+            <p>
+              The implicit curve <m>\sin(x+y) + \cos(x-y) = 1</m> is periodic and results in a collection of non-overlapping loops that are roughly circular.  This plot focuses on the loop centered at <m>(\frac{\pi}{4}, \frac{\pi}{4})</m> that passes through <m>(0,0)</m>, <m>(0, \frac{\pi}{2})</m>, <m>(\frac{\pi}{2}, \frac{\pi}{2})</m>, and <m>(\frac{\pi}{2}, 0)</m>.  In addition, we plot the tangent line to this part of the curve at <m>(\frac{\pi}{2}, \frac{\pi}{2})</m>, which is given by <m>y = \frac{\pi}{2} - \left(x-\frac{\pi}{2}\right)</m>.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </solution>
   </exercise>

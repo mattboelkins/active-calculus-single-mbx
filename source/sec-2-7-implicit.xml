@@ -46,9 +46,22 @@
     </p>
 
     <figure xml:id="F-2-7-Intro">
-      <caption>At left, the circle given by <m>x^2 + y^2 = 16</m>.  In the middle, the portion of the circle <m>x^2 + y^2 = 16</m> that has been highlighted in the box at left.  And at right, the curve given by <m>x^3 - y^3 = 6xy</m>.</caption>
-      <image width="100%" source="images/2_7_Intro"><description><p>At left, the circle given by <m>x^2 + y^2 = 16</m>.  In the middle, the portion of the circle <m>x^2 + y^2 = 16</m> that has been highlighted in the box at left.  And at right, the curve given by <m>x^3 - y^3 = 6xy</m>.</p>
-      </description></image>
+      <caption>
+        At left, the circle given by <m>x^2 + y^2 = 16</m>.  In the middle, the portion of the circle <m>x^2 + y^2 = 16</m> that has been highlighted in the box at left.  And at right, the curve given by <m>x^3 - y^3 = 6xy</m>.
+      </caption>
+      <image width="100%" source="images/2_7_Intro">
+        <description>
+          <p>
+            This image is a panel of three figures: at left, in the window <m>[-5,5] \times [-5,5]</m>, we see the circle <m>x^2 + y^2 = 16</m> with points <m>A \approx (-3,2.7)</m> and <m>B \approx (-3,-2.7)</m> shown, plus a box that highlights the portion of the circle that lies in the window <m>[1,4] \times [1,4]</m>.   
+          </p>
+          <p>
+            In the middle, the image zooms in on the box from the left figure and shows only the portion of the circle that falls in the window <m>[1,4] \times [1,4]</m>.
+          </p>
+          <p>
+            At right, in the window <m>[-5,5] \times [-5,5]</m>, a plot of the implicit curve given by <m>x^3 - y^3 = 6xy</m>, which has a loop in quadrant III.  The curve passes through <m>(0,0)</m> in two directions to form the base of the loop, and the top of the loop occurs at <m>(-3,3)</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -181,9 +194,16 @@
       </p>
 
       <figure width="85%" xml:id="F-2-7-Circle">
-        <caption>The circle given by <m>x^2 + y^2 = 16</m> with point <m>(a,b)</m> on the circle and the tangent line at that point, with labeled slopes of the radial line, <m>m_r</m>, and tangent line, <m>m_t</m>.</caption>
-        <image source="images/2_7_Circle"><description><p>The circle given by <m>x^2 + y^2 = 16</m> with point <m>(a,b)</m> on the circle and the tangent line at that point, with labeled slopes of the radial line, <m>m_r</m>, and tangent line, <m>m_t</m>.</p>
-        </description></image>
+        <caption>
+          The circle given by <m>x^2 + y^2 = 16</m> with point <m>(a,b)</m> on the circle and the tangent line at that point, with labeled slopes of the radial line, <m>m_r</m>, and tangent line, <m>m_t</m>.
+        </caption>
+        <image source="images/2_7_Circle">
+          <description>
+            <p>
+              In the window <m>[-5,5] \times [-5,5]</m>, a plot of the circle <m>x^2 + y^2 = 16</m> with point <m>(a,b)</m> on the circle in the first quadrant and the tangent line at that point.  The radial line that connects <m>(0,0)</m> and <m>(a,b)</m> is shown along with its slope <m>m_r = \frac{b}{a}</m>, as well as the tangent line to the circle at <m>(a,b)</m>, with slope <m>m_t = -\frac{a}{b}</m>.
+            </p>
+          </description>
+        </image>
       </figure>
     </sidebyside>
 
@@ -263,9 +283,16 @@
           we see that the slope we have found matches the graph and confirms the local linearity of this curve at <m>(-1,1)</m>.
         </p>
         <figure xml:id="F-2-7-Ex1">
-          <caption>The curve <m>x^3 + y^2 - 2xy = 2</m> and its tangent line at <m>(-1,1)</m>.</caption>
-          <image width="47%" source="images/2_7_Ex1"><description><p>The curve <m>x^3 + y^2 - 2xy = 2</m> and its tangent line at <m>(-1,1)</m>.</p>
-          </description></image>
+          <caption>
+            The curve <m>x^3 + y^2 - 2xy = 2</m> and its tangent line at <m>(-1,1)</m>.
+          </caption>
+          <image width="47%" source="images/2_7_Ex1">
+            <description>
+              <p>
+                In the window <m>[-4,4] \times [-4,4]</m>, a plot of the curve <m>x^3 + y^2 - 2xy = 2</m> and its tangent line at <m>(-1,1)</m>.  The equation of the tangent line is <m>y = 1 - \frac{1}{4}(x+1)</m>.
+              </p>
+            </description>
+          </image>
         </figure>
       </solution>
     </example>

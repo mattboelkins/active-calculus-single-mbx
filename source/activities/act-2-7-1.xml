@@ -18,7 +18,13 @@
         <p>
           Consider the curve defined by the equation <m>x = y^5 - 5y^3 + 4y</m>, whose graph is pictured in the following figure
         </p>
-        <image width="40%" source="images/2_7_Act1"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image width="40%" source="images/2_7_Act1">
+          <description>
+            <p>
+              In the window <m>[-4,4] \times [-4,4]</m>, a plot of the curve <m>x = y^5 - 5y^3 + 4y</m>, which passes through the points <m>(0,-2)</m>, <m>(0,-1)</m>, <m>(0,0)</m>, <m>(0,1)</m>, and <m>(0,2)</m>.  The curve looks like a standard degree <m>5</m> polynomial, but rotated <m>90^\circ</m>.
+            </p>
+          </description>
+        </image>
       </introduction>
       <task workspace="3cm" xml:id="act-2-7-1-task-0">
         <statement>
