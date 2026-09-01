@@ -174,9 +174,16 @@
     </p>
 
     <figure xml:id="F-2-6-Inverse-Plot">
-      <caption>A graph of a function <m>y = f(x)</m> along with its inverse, <m>y = f^{-1}(x)</m>.</caption>
-      <image width="47%" source="images/2_6_InversePlot"><description><p>A graph of a function <m>y = f(x)</m> along with its inverse, <m>y = f^{-1}(x)</m>.</p>
-      </description></image>
+      <caption>
+        A graph of a function <m>y = f(x)</m> along with its inverse, <m>y = f^{-1}(x)</m>.
+        </caption>
+        <image width="47%" source="images/2_6_InversePlot">
+          <description>
+            <p>
+              In the window <m>[-4,4] \times [-4,4]</m>, a plot of the function <m>f(x) = 2^x</m>, the line <m>y = x</m>, and the reflection of <m>y = 2^x</m> across the line <m>y = x</m>, which results in the third function's graph, that of <m>y = f^{-1}(x)</m>.  The points <m>(-1,\frac{1}{2})</m> and <m>(\frac{1}{2},-1)</m> are also plotted, with <m>(-1,\frac{1}{2})</m> on the graph of <m>y = 2^x</m> and the other on the graph of its inverse function.
+            </p>
+          </description>
+          </image>
     </figure>
 
 
@@ -265,16 +272,20 @@
         the tangent line's slope is <m>m_B = 5</m>.
         At the corresponding points <m>A'</m> and <m>B'</m> on the graph of the natural logarithm function
         (which come from reflecting <m>A</m> and <m>B</m> across the line <m>y = x</m>),
-        we know that the slope of the tangent line is the reciprocal of the <m>x</m>-coordinate of the point (since <m>\frac{d}{dx}[\ln(x)] = \frac{1}{x}</m>).  Thus, at <m>A' = (0.5, \ln(0.5))</m>,
-      we have <m>m_{A'} = \frac{1}{0.5} = 2</m>,
-      and at <m>B' = (5, \ln(5))</m>,
-      <m>m_{B'} = \frac{1}{5}</m>.
+        we know that the slope of the tangent line is the reciprocal of the <m>x</m>-coordinate of the point (since <m>\frac{d}{dx}[\ln(x)] = \frac{1}{x}</m>).  Thus, at <m>A' = (0.5, \ln(0.5))</m>, we have <m>m_{A'} = \frac{1}{0.5} = 2</m>, and at <m>B' = (5, \ln(5))</m>, <m>m_{B'} = \frac{1}{5}</m>.
       </p>
 
       <figure xml:id="F-2-6-Log-Exp">
-        <caption>A graph of the function <m>y = e^x</m> along with its inverse, <m>y = \ln(x)</m>, where both functions are viewed using the input variable <m>x</m>.</caption>
-        <image width="80%" source="images/2_6_LogExp"><description><p>A graph of the function <m>y = e^x</m> along with its inverse, <m>y = \ln(x)</m>, where both functions are viewed using the input variable <m>x</m>.</p>
-        </description></image>
+        <caption>
+          A graph of the function <m>y = e^x</m> along with its inverse, <m>y = \ln(x)</m>, where both functions are viewed using the input variable <m>x</m>.
+          </caption>
+          <image width="80%" source="images/2_6_LogExp">
+            <description>
+              <p>
+                In the window <m>[-4.5,9] \times [-4.5,9]</m>, a plot of the function <m>y = e^x</m>, the line <m>y = x</m>, and the reflection of <m>y = e^x</m> across the line <m>y = x</m>, which results in the third function's graph, that of <m>y = \ln(x)</m>.  The points <m>A = (\ln(0.5), 0.5)</m> and <m>B = (\ln(5), 5)</m> are also plotted on <m>y = e^x</m> along with corresponding small segments of the tangent lines at each point; the reflections of these points, <m>A' = (0.5, \ln(0.5))</m> and <m>B' = (5, \ln(5))</m>, lie on the graph of <m>y = \ln(x)</m>, and the corresponding tangent line segments at these points are also shown.
+              </p>
+            </description>
+          </image>
       </figure>
     </sidebyside>
 
@@ -321,13 +332,20 @@
         <md>
           y = \sin(x) \ \ \text{and}  \ \ x = \arcsin(y)
         </md>
-      say the same thing.
+        say the same thing.
       </p>
 
       <figure xml:id="F-2-6-arcsine">
-        <caption>A graph of <m>f(x) = \sin(x)</m> (in blue), restricted to the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, along with its inverse, <m>f^{-1}(x) = \arcsin(x)</m> (in magenta).</caption>
-        <image source="images/2_6_arcsine"><description><p>A graph of <m>f(x) = \sin(x)</m> (in blue), restricted to the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, along with its inverse, <m>f^{-1}(x) = \arcsin(x)</m> (in magenta).</p>
-        </description></image>
+        <caption>
+          A graph of <m>f(x) = \sin(x)</m> (in blue), restricted to the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, along with its inverse, <m>f^{-1}(x) = \arcsin(x)</m> (in magenta).
+        </caption>
+        <image source="images/2_6_arcsine">
+           <description>
+            <p>
+               In the window <m>[-\frac{3\pi}{4}, \frac{3\pi}{4}] \times [-\frac{3\pi}{4}, \frac{3\pi}{4}]</m>, a plot of the function <m>y = f(x) = \sin(x)</m> restricted to the domain <m>[-\frac{\pi}{2}, \frac{\pi}{2}]</m>, the line <m>y = x</m>, and the reflection of <m>y = \sin(x)</m> across the line <m>y = x</m>, which results in the third function's graph, that of <m>y = f^{-1}(x) = \arcsin(x)</m>.  The point <m>(\frac{\pi}{2}, 1)</m> is plotted on <m>y = \sin(x)</m>; the reflection of this point, <m>(1,\frac{\pi}{2})</m>, lies on the graph of <m>y = \arcsin(x)</m>.
+            </p>
+          </description>
+        </image>
       </figure>
     </sidebyside>
 
@@ -394,9 +412,16 @@
       </p>
 
       <figure width="80%" xml:id="F-2-6-cosarcsin">
-        <caption>The right triangle that corresponds to <m>\theta = \arcsin(x)</m>.</caption>
-        <image source="images/2_6_cosarcsin"><description><p>The right triangle that corresponds to <m>\theta = \arcsin(x)</m>.</p>
-        </description></image>
+        <caption>
+          The right triangle that corresponds to <m>\theta = \arcsin(x)</m>.
+        </caption>
+        <image source="images/2_6_cosarcsin">
+          <description>
+            <p>
+              A right triangle with a hypotenuse of length <m>1</m>, a vertical leg of length <m>x</m>, and a horizontal leg of length <m>\sqrt{1-x^2}</m>.  The angle <m>\theta</m> lies opposite the vertical leg. 
+            </p>
+          </description>
+        </image>
       </figure>
     </sidebyside>
 
@@ -474,9 +499,16 @@
     </p>
 
     <figure xml:id="F-2-6-Gen-Inv">
-      <caption>A graph of function <m>y = f(x)</m> along with its inverse, <m>y = g(x) = f^{-1}(x)</m>.  Observe that the slopes of the two tangent lines are reciprocals of one another.</caption>
-      <image width="50%" source="images/2_6_GenInv"><description><p>A graph of function <m>y = f(x)</m> along with its inverse, <m>y = g(x) = f^{-1}(x)</m>.  Observe that the slopes of the two tangent lines are reciprocals of one another.</p>
-      </description></image>
+      <caption>
+        A graph of function <m>y = f(x)</m> along with its inverse, <m>y = g(x) = f^{-1}(x)</m>.  Observe that the slopes of the two tangent lines are reciprocals of one another.
+      </caption>
+      <image width="50%" source="images/2_6_GenInv">
+        <description>
+          <p>
+            A more general plot of an always-increasing function <m>y = f(x)</m> along with its inverse, <m>y = g(x) = f^{-1}(x)</m>, and the line <m>y = x</m>.  An arbitrary point <m>(a,b)</m> is plotted on <m>y = f(x)</m> along with a portion of the tangent line there; the reflection of the point, <m>(b,a)</m>, on <m>y = g(x) = f^{-1}(x)</m> is also shown along with a portion of the corresponding tangent line.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
