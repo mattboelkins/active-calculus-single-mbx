@@ -40,7 +40,13 @@
           </p>
         </hint>
         <answer>
-          <image width="40%" source="images/3_5_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="40%" source="images/3_5_Act2Soln">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </answer>
         <solution>
           <p>

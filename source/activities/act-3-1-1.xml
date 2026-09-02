@@ -32,7 +32,13 @@
         </statement>
         <hint/>
         <answer>
-          <image width="50%" source="images/3_5_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%" source="images/3_5_Act1Soln">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </answer>
         <solution>
           <p>

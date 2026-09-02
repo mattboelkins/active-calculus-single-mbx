@@ -77,9 +77,16 @@
           as pictured in <xref ref="F-3-5-ConeEx">Figure</xref>.  How are the instantaneous rates of change of the sand's volume, height, and radius related to one another?
         </p>
         <figure xml:id="F-3-5-ConeEx">
-          <caption>A conical pile of sand.</caption>
-          <image width="40%" source="images/3_5_ConeEx"><description><p>A conical pile of sand.</p>
-          </description></image>
+          <caption>
+            A conical pile of sand.
+          </caption>
+          <image width="40%" source="images/3_5_ConeEx">
+            <description>
+              <p>
+                sand
+              </p>
+            </description>
+          </image>
         </figure>        
       </statement>
       <solution>

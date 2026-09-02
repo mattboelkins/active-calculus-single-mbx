@@ -63,7 +63,13 @@
         Using the given information, we construct the figure shown below.
       </p>
       <sidebyside >
-        <image source="images/3_5_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/3_5_Ez1Soln">
+          <description>
+            <p>
+              ADD ALT TEXT TO THIS IMAGE
+            </p>
+          </description>
+        </image>
       </sidebyside>
       <p >
         As pictured,
