@@ -66,7 +66,7 @@
         <image source="images/3_5_Ez1Soln">
           <description>
             <p>
-              ADD ALT TEXT TO THIS IMAGE
+              This diagram shows the boat approaching the dock and how its horizontal distance from the dock, <m>x</m>, the length of the rope from the bow of the boat to the pulley, <m>z</m>, and the post on which the pulley is mounted result in a right triangle with vertical leg <m>5</m>, horizontal leg <m>x</m>, and hypotenuse <m>z</m>.
             </p>
           </description>
         </image>
@@ -122,8 +122,13 @@
       </p>
       <figure xml:id="F-3-5-Ez3" >
         <caption>The swimming pool.</caption>
-        <image width="50%" source="images/3_5_Ez3"><description><p>The swimming pool.</p>
-        </description></image>
+        <image width="50%" source="images/3_5_Ez3">
+          <description>
+            <p>
+              The swimming pool has the shape of a trapezoidal prism.  The diagram shows the near side of the pool with vertical height on the deep end being <m>15</m>, vertical height in the shallow end being <m>3</m>, and the horizontal length of that side being <m>60</m>.  The width of the pool is <m>25</m>, and that is noted on the edge in the diagram that corresponds to the deep end of the pool.
+            </p>
+          </description>
+        </image>
       </figure>
       <p >
         Suppose the pool has been emptied and is now being filled with water at a rate of <m>800</m> cubic feet per minute.
@@ -158,7 +163,13 @@
         The height of the triangular cross section is <m>h</m> and the length is distance of the dotted line indicated in the figure.
       </p>
       <sidebyside width="65%" >
-        <image source="images/3_5_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/3_5_Ez2Soln">
+          <description>
+            <p>
+              This diagram focuses the near side of the pool, which is in the shape of a trapezoid.  The top two corners are labeled with the points <m>(0,0)</m> and <m>(60,0)</m>, and the point at the bottom of the deep end is labeled <m>(0,-15)</m>.  A dashed horizontal line shows the water level in the pool, with the depth of that water in the deepest part of the pool being labeled <m>h</m>.  The diagonal line that connects  <m>(0,-15)</m> to  <m>(60,-3)</m> is labeled with the line's equation: <m>y = 0.2x-15</m>.
+            </p>
+          </description>
+        </image>
       </sidebyside>
       <p >
         Placing the cross section on a coordinate system as in the figure,
@@ -218,7 +229,13 @@
         See the figure below.
       </p>
       <sidebyside >
-        <image source="images/3_5_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/3_5_Ez3Soln">
+          <description>
+              <p>
+                The diagram shows a square rotated <m>45^\circ</m> to be oriented like a baseball diamond.  On the diagram, there's a right triangle that uses the right angle at third base: <m>x</m> represents the distance from the ball to third base (shown as a segment that falls on the side of the square that connects second and third base), the distance from third base to home is labeled <m>90</m>, and the hypotenuse of this right triangle is labeled <m>z</m>.  The small angle in the right triangle across from <m>x</m> is labeled <m>\theta</m>.
+              </p>
+            </description>
+        </image>
       </sidebyside>
       <p >
         Each of <m>x</m>, <m>z</m>,

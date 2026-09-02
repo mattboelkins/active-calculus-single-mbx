@@ -35,7 +35,7 @@
           <image width="50%" source="images/3_5_Act1Soln">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The diagram shows a right cylindrical cone with its point facing down.  The circular top has its radius labeled <m>6</m> and the cone's height is labeled <m>8</m>.  The cone is shown partially filled with water; the circular top of the water has its radius labeled <m>r</m>, while the height of the water from the cone's point up to the circular top is labeled <m>h</m>.
               </p>
             </description>
           </image>
@@ -45,7 +45,13 @@
             Letting <m>r</m> represent the water's radius at time <m>t</m> and <m>h</m> the water's depth,
             we see the following situation:
           </p>
-          <image width="50%" source="images/3_5_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%" source="images/3_5_Act1Soln">
+            <description>
+              <p>
+                The diagram shows a right cylindrical cone with its point facing down.  The circular top has its radius labeled <m>6</m> and the cone's height is labeled <m>8</m>.  The cone is shown partially filled with water; the circular top of the water has its radius labeled <m>r</m>, while the height of the water from the cone's point up to the circular top is labeled <m>h</m>.
+              </p>
+            </description>
+          </image>
         </solution>
       </task>
       <task workspace="4cm" xml:id="act-3-1-1-task-1">

@@ -43,7 +43,7 @@
           <image width="40%" source="images/3_5_Act2Soln">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The diagram shows a right triangle with horizontal leg labeled <m>4000</m>, vertical leg labeled <m>h</m>, and hypotenuse labeled <m>z</m>.  The angle across from the vertical leg is labeled <m>\theta</m> and that vertex of the triangle is labeled <q>camera</q>.  The vertex where the hypotenuse and vertical leg meet is labeled <q>rocket</q>.
               </p>
             </description>
           </image>
@@ -55,7 +55,13 @@
             and <m>z</m> the distance from the camera to the rocket,
             we have the following situation at a given point in time:
           </p>
-          <image width="40%" source="images/3_5_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="40%" source="images/3_5_Act2Soln">
+            <description>
+              <p>
+                The diagram shows a right triangle with horizontal leg labeled <m>4000</m>, vertical leg labeled <m>h</m>, and hypotenuse labeled <m>z</m>.  The angle across from the vertical leg is labeled <m>\theta</m> and that vertex of the triangle is labeled <q>camera</q>.  The vertex where the hypotenuse and vertical leg meet is labeled <q>rocket</q>.
+              </p>
+            </description>
+          </image>
         </solution>
       </task>
       <task workspace="4cm" xml:id="act-3-1-2-task-1">
