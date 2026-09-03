@@ -69,8 +69,13 @@
       </p>
       <figure xml:id="F-3-1-Ez1" >
         <caption>At center, a graph of <m>y = f'(x)</m>; at left, axes for plotting <m>y = f(x)</m>; at right, axes for plotting <m>y = f''(x)</m>.</caption>
-        <image width="100%" source="images/3_1_Ez1"><description><p>At center, a graph of <m>y = f'(x)</m>; at left, axes for plotting <m>y = f(x)</m>; at right, axes for plotting <m>y = f''(x)</m>.</p>
-        </description></image>
+        <image width="100%" source="images/3_1_Ez1">
+          <description>
+            <p>
+              At center, a graph of <m>y = f'(x)</m>; at left, axes for plotting <m>y = f(x)</m>; at right, axes for plotting <m>y = f''(x)</m>.
+            </p>
+          </description>
+        </image>
       </figure>
       <p >
         <ol marker="a." >
@@ -131,7 +136,13 @@
               A possible graph of <m>y = f(x)</m> is shown at left in the figure.
             </p>
             <sidebyside >
-              <image source="images/3_1_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_1_Ez1Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -190,7 +201,13 @@
               we arrive at the graph shown at left below.
             </p>
             <sidebyside >
-              <image source="images/3_1_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_1_Ez1Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -324,8 +341,13 @@
         </p>
         <figure xml:id="F-3-1-Ez3" >
           <caption>The graph of <m>y = h'(x)</m>.</caption>
-          <image source="images/3_1_Ez3"><description><p>The graph of <m>y = h'(x)</m>.</p>
-          </description></image>
+          <image source="images/3_1_Ez3">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </figure>
       </sidebyside>
     </statement>
@@ -337,7 +359,13 @@
               <m>h</m> can have no, one, or two real zeros.
             </p>
             <sidebyside width="50%" >
-              <image source="images/3_1_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_1_Ez3Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -372,7 +400,13 @@
               one real zero, or two real zeros.
             </p>
             <sidebyside width="50%" >
-              <image source="images/3_1_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_1_Ez3Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -495,7 +529,13 @@
               </p>
 
               <sidebyside width="50%">
-                <image width="50%" source="images/3_1_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+                <image width="50%" source="images/3_1_Act1Soln">
+                  <description>
+                    <p>
+                      ADD ALT TEXT TO THIS IMAGE
+                    </p>
+                  </description>
+                </image>
               </sidebyside>
 
             </li>
@@ -571,7 +611,13 @@
               </p>
 
               <sidebyside width="50%">
-                <image source="images/3_1_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+                <image source="images/3_1_Act1Soln">
+                  <description>
+                    <p>
+                      ADD ALT TEXT TO THIS IMAGE
+                    </p>
+                  </description>
+                </image>
               </sidebyside>
 
             </li>

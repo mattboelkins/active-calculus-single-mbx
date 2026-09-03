@@ -16,11 +16,17 @@
     <activity xml:id="act-3-3-2" workspace="3cm">
       <introduction>
         <p>
-      Suppose that <m>g</m> is a function whose second derivative,
-      <m>g''</m>,
-      is given by the graph in the following figure.
-    </p>
-          <image width="47%" source="images/3_1_Act2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          Suppose that <m>g</m> is a function whose second derivative,
+          <m>g''</m>,
+          is given by the graph in the following figure.
+        </p>
+        <image width="47%" source="images/3_1_Act2">
+          <description>
+            <p>
+              A plot of <m>y = g''(x)</m> is shown on the window <m>[-2,3] \times [-2,3]</m>.  The function <m>g''(x)</m> appears to be a cubic polynomial with a root at <m>x = -1</m> and a repeated root at <m>x = 2</m>.  The formula for <m>g''</m> is <m>g''(x) = -k(x+1)(x-2)^2</m> for some positive value of <m>k</m>.
+            </p>
+          </description>
+        </image>
 
       </introduction>
 

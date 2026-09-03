@@ -16,9 +16,9 @@
     <activity xml:id="act-3-3-3" workspace="3cm">
       <introduction>
         <p>
-      Consider the family of functions given by <m>h(x) = x^2 + \cos(kx)</m>,
-      where <m>k</m> is an arbitrary positive real number.
-    </p>
+          Consider the family of functions given by <m>h(x) = x^2 + \cos(kx)</m>,
+          where <m>k</m> is an arbitrary positive real number.
+        </p>
         <p/>
       </introduction>
       <task workspace="1.5cm" xml:id="act-3-3-3-task-0">
@@ -32,7 +32,13 @@
             at least one inflection point on the graph of <m>h</m>?
           </p>
 
-          <image width="47%" source="images/3_1_Act3"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="47%" source="images/3_1_Act3">
+            <description>
+              <p>
+                Axes for plotting the graph of <m>h</m> using different <m>k</m>-values.  The axes and grid are on the window <m>[-4,4] \times [-2,14]</m>.
+              </p>
+            </description>
+          </image>
         </statement>
         <hint>
           <p>

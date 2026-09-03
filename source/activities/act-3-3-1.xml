@@ -105,10 +105,16 @@
     </hint>
     <answer>
             <figure xml:id="F-act-3-3-1-ans">
-              <caption>A plot of a possible function <m>y = g(x)</m> whose derivative is the given formula for <m>g'(x)</m>.</caption>
-            <image width="60%">
-              <description><p>A plot of a possible function <m>y = g(x)</m> whose derivative is the given formula for <m>g'(x)</m>.</p>
-            </description><prefigure xmlns="https://prefigure.org" label="Fig-act-3-3-1-ans">
+              <caption>
+                A plot of a possible function <m>y = g(x)</m> whose derivative is the given formula for <m>g'(x)</m>.
+              </caption>
+              <image width="60%">
+                <description>
+                  <p>
+                    A plot of a possible function <m>y = g(x)</m> that is increasing for <m>x \lt -4</m>, decreasing for <m>-4 \lt x \lt 2</m>, and increasing for <m>x \gt 2</m>.  The graph is xhown on the window <m>[-15,15] \times [-15,15]</m> and the points <m>(-4,g(-4)</m> and <m>(2,g(2))</m> are labeled with <m>g(-4) \approx 9</m> and <m>g(2) \approx -9</m>.
+                  </p>
+                </description>
+                <prefigure xmlns="https://prefigure.org" label="Fig-act-3-3-1-ans">
                 <diagram dimensions="(300,300)" margins="5">
                   <definition>f(x) = log(x^2+1) + x - 9*atan(x) - 2</definition>
                   <definition>a = -4</definition>
@@ -126,7 +132,7 @@
                 </diagram>
               </prefigure>
             </image>  
-            </figure>
+          </figure>
     </answer>
     <solution>
       <p>
@@ -135,8 +141,12 @@
         <figure xml:id="F-act-3-3-1-soln">
           <caption>A plot of a possible function <m>y = g(x)</m> whose derivative is the given formula for <m>g'(x)</m>.</caption>
             <image width="60%">
-              <description><p>A plot of a possible function <m>y = g(x)</m> whose derivative is the given formula for <m>g'(x)</m>.</p>
-            </description><prefigure xmlns="https://prefigure.org" label="Fig-act-3-3-1-soln">
+              <description>
+                <p>
+                  A plot of a possible function <m>y = g(x)</m> that is increasing for <m>x \lt -4</m>, decreasing for <m>-4 \lt x \lt 2</m>, and increasing for <m>x \gt 2</m>.  The graph is xhown on the window <m>[-15,15] \times [-15,15]</m> and the points <m>(-4,g(-4)</m> and <m>(2,g(2))</m> are labeled with <m>g(-4) \approx 9</m> and <m>g(2) \approx -9</m>.
+                </p>
+              </description>
+              <prefigure xmlns="https://prefigure.org" label="Fig-act-3-3-1-soln">
                 <diagram dimensions="(300,300)" margins="5">
                   <definition>f(x) = log(x^2+1) + x - 9*atan(x) - 2</definition>
                   <definition>a = -4</definition>

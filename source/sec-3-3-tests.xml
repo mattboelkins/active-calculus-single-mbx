@@ -53,9 +53,16 @@
     </p>
 
     <figure xml:id="F-3-1-Intro">
-      <caption>At left, <m>s(t) = -16t^2 + 24t + 32</m> whose vertex is <m>(\frac{3}{4}, 41)</m>; at right, a function <m>g</m> that demonstrates several high and low points.</caption>
-      <image width="100%" source="images/3_1_Intro"><description><p>At left, <m>s(t) = -16t^2 + 24t + 32</m> whose vertex is <m>(\frac{3}{4}, 41)</m>; at right, a function <m>g</m> that demonstrates several high and low points.</p>
-      </description></image>
+      <caption>
+        At left, <m>s(t) = -16t^2 + 24t + 32</m> whose vertex is <m>(\frac{3}{4}, 41)</m>; at right, a function <m>g</m> that demonstrates several high and low points.
+      </caption>
+      <image width="100%" source="images/3_1_Intro">
+        <description>
+          <p>
+            At left, in the window <m>[-0.5 \times 2.5] \times [-10,50]</m>, a plot of <m>s(t) = -16t^2 + 24t + 32</m> whose vertex is <m>(\frac{3}{4}, 41)</m>.  At right, a quartic polynomial <m>g</m> that demonstrates two peaks and one valley at <m>(a,g(a))</m>, <m>(b,g(b))</m>, and <m>(c,g(c))</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <definition>
@@ -138,9 +145,45 @@
   <subsection>
     <title>Critical numbers and the first derivative test</title>
     <figure xml:id="F-3-1-extremes">
-      <caption>Five different possible behaviors of a function near one of its critical numbers.</caption>
-      <image width="100%" source="images/3_1_extremes"><description><p>Five different possible behaviors of a function near one of its critical numbers.</p>
-      </description></image>
+      <caption>
+        Five different possible behaviors of a function near one of its critical numbers.
+      </caption>
+      <image width="100%" source="images/3_1_extremes">
+        <description>
+          <p>
+            This image shows five small graphs of functions that have a critical number at the same <m>x</m>-value in the first quadrant for which the function passes through the same <m>y</m>-value at the critical number.  The graphs represent five different possible behaviors (ordered from left to right):
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  a critical number at the vertex of a concave down parabola;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a sharp corner where two concave-up pieces of parabolas meet -- the left piece is increasing and concave up, the right piece is decreasing and concave up
+                </p>
+              </li>
+              <li>
+                <p>
+                  a critical number where an otherwise-increasing cubic function has a horizontal tangent line;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a critical number at the vertex of a concave up parabola;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a sharp corner where two concave-down pieces of parabolas meet -- the left piece is decreasing and concave down, the right piece is increasing and concave down.
+                </p>
+              </li>
+            </ul>
+          </p>
+        </description>
+      </image>
     </figure>
 
     <!--From left to right, a function with a relative maximum where its derivative is zero; a function with a relative maximum where its derivative is undefined; a function with neither a maximum nor a minimum at a point where its derivative is zero; a function with a relative minimum where its derivative is zero; and a function with a relative minimum where its derivative is undefined.-->
@@ -269,8 +312,13 @@
 
         <figure xml:id="F-3-1-signchart">
           <caption>The first derivative sign chart for a function <m>f</m> whose derivative is given by the formula <m>f'(x) = e^{-2x}(3-x)(x+1)^2</m>.</caption>
-          <image width="65%" source="images/3_1_signchart"><description><p>The first derivative sign chart for a function <m>f</m> whose derivative is given by the formula <m>f'(x) = e^{-2x}(3-x)(x+1)^2</m>.</p>
-          </description></image>
+          <image width="65%" source="images/3_1_signchart">
+            <description>
+              <p>
+                A pictorial representation of the first derivative sign chart for a function <m>f</m> whose derivative is given by the formula <m>f'(x) = e^{-2x}(3-x)(x+1)^2</m>.  The number line is marked at <m>-1</m> and <m>3</m>, and above the number line on each subinterval we indicate the sign of <m>f'</m>, and below the number line on each subinterval we indicate the behavior of <m>f</m>.  More description is found in the paragraph that precedes the image.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>
@@ -303,8 +351,37 @@
 
     <figure xml:id="F-3-1-2Dtest">
       <caption>Four possible graphs of a function <m>f</m> with a horizontal tangent line at a critical point.</caption>
-      <image width="100%" source="images/3_1_2Dtest"><description><p>Four possible graphs of a function <m>f</m> with a horizontal tangent line at a critical point.</p>
-      </description></image>
+      <image width="100%" source="images/3_1_2Dtest">
+        <description>
+          <p>
+            This image shows four small graphs of functions that have a horizontal tangent line at a critical number at the same <m>x</m>-value in the first quadrant for which the function passes through the same <m>y</m>-value at the critical number.  The graphs represent four different possible behaviors (ordered from left to right):
+          </p>
+          <p>
+            <ul>
+              <li>
+                <p>
+                  a critical number at the vertex of a concave down parabola;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a critical number at the vertex of a concave up parabola;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a critical number where an otherwise-increasing cubic function has a horizontal tangent line;
+                </p>
+              </li>
+              <li>
+                <p>
+                  a critical number where an otherwise-decreasing cubic function has a horizontal tangent line;
+                </p>
+              </li>
+            </ul>
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -377,8 +454,13 @@
 
         <figure xml:id="F-3-1-signchart2">
           <caption>The first derivative sign chart for <m>f</m> when <m>f'(x) = 3x^4 - 9x^2 = 3x^2(x^2-3)</m>.</caption>
-          <image width="100%" source="images/3_1_signchart2"><description><p>The first derivative sign chart for <m>f</m> when <m>f'(x) = 3x^4 - 9x^2 = 3x^2(x^2-3)</m>.</p>
-          </description></image>
+          <image width="100%" source="images/3_1_signchart2">
+            <description>
+              <p>
+                The sign chart shows the critical numbers <m>x = -\sqrt{3}, 0, \sqrt{3}</m> on the number line, and then on the resulting four subintervals from left to right labels the sign of <m>f'</m> as <m>+, -, -, +</m>.  This means that, for example, on the interval <m>-\sqrt{3} \lt x \lt 0</m>, <m>f'(x)</m> is negative and thus <m>f(x)</m> is decreasing.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>
@@ -410,8 +492,13 @@
 
         <figure xml:id="F-3-1-signchart3">
           <caption>The second derivative sign chart for <m>f</m> when <m>f''(x) = 12x^3-18x = 12x^2\left(x^2-\frac{3}{2} \right)</m>.</caption>
-          <image width="100%" source="images/3_1_signchart3"><description><p>The second derivative sign chart for <m>f</m> when <m>f''(x) = 12x^3-18x = 12x^2\left(x^2-\frac{3}{2} \right)</m>.</p>
-          </description></image>
+          <image width="100%" source="images/3_1_signchart3">
+            <description>
+              <p>
+                The sign chart shows the three <m>x</m>-values <m>x = -\sqrt{\frac{3}{2}}, 0, \sqrt{\frac{3}{2}}</m> on the number line for which <m>f''(x) = 0</m>, and then on the resulting four subintervals from left to right labels the sign of <m>f''</m> as <m>-, +, -, +</m>.  This means that, for example, on the interval <m>0 \lt x \lt \sqrt{\frac{3}{2}}</m>, <m>f''(x)</m> is negative and thus <m>f(x)</m> is concave down.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>
@@ -427,8 +514,13 @@
 
         <figure xml:id="F-3-1-Ex2">
           <caption>A possible graph of the function <m>f</m> in <xref ref="Ex-3-2">Example</xref>.</caption>
-          <image width="65%" source="images/3_1_Ex2"><description><p>A possible graph of the function <m>f</m> in <xref ref="Ex-3-2">Example</xref>.</p>
-          </description></image>
+          <image width="65%" source="images/3_1_Ex2">
+            <description>
+              <p>
+                The possible graph of the function <m>f</m> in <xref ref="Ex-3-2">Example</xref> is shown on the interval <m>-2 \lt x \lt 2</m> with five key points identified ont he graph, labeled (from left to right) as <m>A</m>, <m>B</m>, <m>C</m>, <m>D</m>, and <m>E</m>.  The <m>x</m>-values of these points (from left to right) are <m>-\sqrt{3}</m>,  <m>-\sqrt{1.5}</m>, <m>0</m>, <m>\sqrt{1.5}</m>, and <m>\sqrt{3}</m>. The behavior of the function near each of these points is described in the paragraph that follows the figure.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>

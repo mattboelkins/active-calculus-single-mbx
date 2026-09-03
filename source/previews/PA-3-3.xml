@@ -16,13 +16,44 @@
     <exploration xml:id="PA-3-3">
       <introduction>
         <p>
-    Consider the function <m>h</m> given by the graph in <xref ref="F-3-1-PA1">Figure</xref>.
-    Use the graph to answer each of the following questions.
-  </p>
+          Consider the function <m>h</m> given by the graph in <xref ref="F-3-1-PA1">Figure</xref>.
+          Use the graph to answer each of the following questions.
+        </p>
         <figure xml:id="F-3-1-PA1">
-          <caption>The graph of a function <m>h</m> on the interval <m>[-3,3]</m>.</caption>
-          <image width="50%" source="images/3_1_PA1"><description><p>The graph of a function <m>h</m> on the interval <m>[-3,3]</m>.</p>
-          </description></image>
+          <caption>
+            The graph of a function <m>h</m> on the interval <m>[-3,3]</m>.
+          </caption>
+          <image width="50%" source="images/3_1_PA1">
+            <description>
+              <p>
+                The graph of a piecewise function <m>h</m> on the interval <m>[-3,3]</m>.  The pieces are:
+              </p>
+              <p>
+                <ul>
+                  <li>
+                    <p>
+                      a cubic-looking, increasing curve that passes through <m>(-3,-3)</m>, <m>(-2.5,-2)</m>, and <m>(-2,-1)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a straight line from <m>(-2,-1)</m> to <m>(0,-2)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a quadratic curve that passes through <m>(0,-2)</m>, <m>(1,2)</m>, and <m>(1.5,1)</m>, with its vertex at <m>(1,2)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a quadratic curve that passes through <m>(1.5,1)</m> and  <m>(3, -1.5)</m> with its vertex at <m>(1,2)</m>.
+                    </p>
+                  </li>
+                </ul>
+              </p>
+            </description>
+          </image>
         </figure>
         <p/>
       </introduction>
