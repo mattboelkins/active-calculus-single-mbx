@@ -75,8 +75,16 @@
     <title>Using derivatives to evaluate indeterminate limits of the form <m>\frac{0}{0}</m>.</title>
     <figure xml:id="F-2-8-LHR">
       <caption>At left, the graphs of <m>f</m> and <m>g</m> near the value <m>a</m>, along with their tangent line approximations <m>L_f</m> and <m>L_g</m> at <m>x = a</m>.  At right, zooming in on the point <m>a</m> and the four graphs.</caption>
-      <image width="100%" source="images/2_8_LHR"><description><p>At left, the graphs of <m>f</m> and <m>g</m> near the value <m>a</m>, along with their tangent line approximations <m>L_f</m> and <m>L_g</m> at <m>x = a</m>.  At right, zooming in on the point <m>a</m> and the four graphs.</p>
-      </description></image>
+      <image width="100%" source="images/2_8_LHR">
+        <description>
+          <p>
+            Two figures are shown.  At left, on the window <m>[0,4] \times [0,4]</m>, two quadratic functions <m>f</m> and <m>g</m> are shown that both pass through the point <m>(2,0)</m>, for which the <m>x</m>-value is labeled <m>a</m>.  Near <m>a</m>, <m>f</m> is increasing and concave up, while <m>g</m> is decreasing and concave down.  In addition to these functions, their respective tangent lines at <m>x = a</m> are shown.  There is also a small box around the point where all four graphs intersect at <m>x = a</m>.
+          </p>
+          <p>  
+            At right, we zoom in on the small box in the left figure and emphasize the local linearity of <m>f</m> and <m>g</m>.  In this image, the two quadratic functions are nearly indistinguishable from their tangent lines.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -184,8 +192,16 @@
 
     <figure xml:id="F-2-8-LHR2">
       <caption>Two functions <m>f</m> and <m>g</m> that satisfy L'H&#244;pital's Rule.</caption>
-      <image width="100%" source="images/2_8_LHR2"><description><p>Two functions <m>f</m> and <m>g</m> that satisfy L'H&#244;pital's Rule.</p>
-      </description></image>
+      <image width="100%" source="images/2_8_LHR2">
+        <description>
+          <p>
+            This is the same image as <xref ref="F-2-8-LHR"/>, with some minor labeling updates. Two figures are shown.  At left, on the window <m>[0,4] \times [0,4]</m>, two quadratic functions <m>f</m> and <m>g</m> are shown that both pass through the point <m>(2,0)</m>, for which the <m>x</m>-value is labeled <m>a</m>.  Near <m>a</m>, <m>f</m> is increasing and concave up, while <m>g</m> is decreasing and concave down.  In addition to these functions, their respective tangent lines at <m>x = a</m> are shown, and their respective slopes are labeled <m>m = f'(a)</m> and <m>m = g'(a)</m>.  There is also a small box around the point where all four graphs intersect at <m>x = a</m>.
+          </p>
+          <p>  
+            At right, we zoom in on the small box in the left figure and emphasize the local linearity of <m>f</m> and <m>g</m>, with their respective tangent line slopes labeled <m>m = f'(a)</m> and <m>m = g'(a)</m>.  In this image, the two quadratic functions are nearly indistinguishable from their tangent lines.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -238,8 +254,13 @@
 
     <figure xml:id="F-2-8-Infty">
       <caption>The graph of <m>f(x) = \frac{1}{x}</m>.</caption>
-      <image width="47%" source="images/2_8_Infty"><description><p>The graph of <m>f(x) = \frac{1}{x}</m>.</p>
-      </description></image>
+      <image width="47%" source="images/2_8_Infty">
+        <description>
+            <p>
+              The graph of <m>f(x) = \frac{1}{x}</m> is shown in the window <m>[-5,5] \times [-5,5]</m>.  The graph demonstrates that <m>f</m> has a vertical asymptote at <m>x = 0</m> and that the function's limit fails to exist at that <m>x</m>-value.  In addition, <m>f</m> has a horizontal asymptote at <m>y = 0</m>.
+            </p>
+          </description>
+      </image>
     </figure>
 
     <p>
@@ -316,8 +337,13 @@
 
     <figure xml:id="F-2-8-InftyLib">
       <caption>Graphs of some familiar functions whose end behavior as <m>x \to \pm \infty</m> is known.  In the middle graph, <m>f(x) = x^3 - 16x</m> and <m>g(x) = x^4 - 16x^2 - 8</m>.</caption>
-      <image width="100%" source="images/2_8_InftyLib"><description><p>Graphs of some familiar functions whose end behavior as <m>x \to \pm \infty</m> is known.  In the middle graph, <m>f(x) = x^3 - 16x</m> and <m>g(x) = x^4 - 16x^2 - 8</m>.</p>
-      </description></image>
+      <image width="100%" source="images/2_8_InftyLib">
+        <description>
+            <p>
+              Three graphs of familiar functions on wide windows that show their overall behaviors.  At left, <m>y = e^x</m> and <m>y = \ln(x)</m>.  At center, <m>f(x) = x^3 - 16x</m> and <m>g(x) = x^4 - 16x^2 - 8</m>. At right, <m>y = \sin(x)</m>.
+            </p>
+          </description>
+      </image>
     </figure>
 
     <p>

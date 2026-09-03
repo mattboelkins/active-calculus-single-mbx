@@ -82,7 +82,13 @@
         <m>\lim_{x \to 3} h(x) = -2</m>.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_8_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_8_Ez1Soln">
+          <description>
+            <p>
+              This possible graph shows two quadratic functions <m>f</m> and <m>g</m> that intersect at <m>(3,0)</m>, which is the vertex of each function so their respective tangent lines are horizontal there.  The function <m>g</m> is concave up near <m>x = 3</m>, while <m>f</m> is concave down.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </answer>
     <solution >
@@ -102,7 +108,13 @@
         Hence, <m>\lim_{x \to 3} h(x) = -2</m>.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_8_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_8_Ez1Soln">
+          <description>
+            <p>
+              This possible graph shows two quadratic functions <m>f</m> and <m>g</m> that intersect at <m>(3,0)</m>, which is the vertex of each function so their respective tangent lines are horizontal there.  The function <m>g</m> is concave up near <m>x = 3</m>, while <m>f</m> is concave down.
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </solution>
   </exercise>
@@ -128,7 +140,13 @@
         <m>(a, \frac{3(a-b)}{5(a-c)})</m>. <m>R</m> is not continuous at <m>x = a</m> and <m>x = c</m>.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_8_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_8_Ez2Soln">
+          <description>
+            <p>
+              The graph shows a rational function along with its vertical and horizontal asymptotes.  The horizontal asymptote is <m>y = 3/5</m> and the vertical asymptote is <m>x = c</m>.  These two asymptotes divide the plane into four quadrants:  the graph of the rational function <m>R</m> lies in the top left and bottom right quadrants.  In the top left, <m>R</m> is increasing and concave up, and its graph approaches the horizontal asymptote to the left and the vertical asymptote to the right.  In the bottom right, <m>R</m> is increasing and concave down, and its graph approaches the horizontal asymptote to the right and the vertical asymptote to the left. In addition, the graph of <m>R</m> passes through the point <m>(b,0)</m> and has a hole at <m>x = a</m>.   
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </answer>
     <solution >
@@ -166,7 +184,13 @@
         A possible graph of <m>R</m> is shown in the following figure.
       </p>
       <sidebyside width="50%" >
-        <image source="images/2_8_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image source="images/2_8_Ez2Soln">
+          <description>
+            <p>
+              The graph shows a rational function along with its vertical and horizontal asymptotes.  The horizontal asymptote is <m>y = 3/5</m> and the vertical asymptote is <m>x = c</m>.  These two asymptotes divide the plane into four quadrants:  the graph of the rational function <m>R</m> lies in the top left and bottom right quadrants.  In the top left, <m>R</m> is increasing and concave up, and its graph approaches the horizontal asymptote to the left and the vertical asymptote to the right.  In the bottom right, <m>R</m> is increasing and concave down, and its graph approaches the horizontal asymptote to the right and the vertical asymptote to the left. In addition, the graph of <m>R</m> passes through the point <m>(b,0)</m> and has a hole at <m>x = a</m>.   
+            </p>
+          </description>
+        </image>
       </sidebyside>
     </solution>
   </exercise>

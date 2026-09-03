@@ -16,11 +16,26 @@
     <activity xml:id="act-3-2-2" workspace="3cm">
       <introduction>
         <p>
-      In this activity,
-      we reason graphically from the following figure to evaluate limits of ratios of functions about which some information is known.
-    </p>
+          In this activity,
+          we reason graphically from the following figure to evaluate limits of ratios of functions about which some information is known.
+        </p>
 
-          <image width="100%" source="images/2_8_Act2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image width="100%" source="images/2_8_Act2">
+          <description>
+            <p>
+              Three different graphs are shown.  In each, there are two quadratic functions that intersect at a point, along with their respective tangent lines at the intersection point.
+            </p>
+            <p>
+              At left, two increasing, concave up quadratic functions <m>f</m> and <m>g</m> intersect at <m>(2,0)</m>.  The tangent line to <m>f</m> also passes through <m>(3,0.5)</m>; the tangent line to <m>g</m> also passes through <m>(2.5,2)</m>.
+            </p>
+            <p>
+              At center, two concave down quadratic functions <m>p</m> and <m>q</m> intersect at <m>(2,1.5)</m>; <m>p</m> is decreasing near <m>x = 2</m>, while <m>(2,1.5)</m> is the vertex of <m>q</m>.  The tangent line to <m>p</m> also passes through <m>(3,0.5)</m>; the tangent line to <m>q</m> also passes through <m>(3,1.5)</m>.
+            </p>
+            <p>
+              At right, two quadratic functions <m>r</m> and <m>s</m> intersect at <m>(2,0)</m>, which is the vertex of each function so their respective tangent lines are horizontal.  The function <m>r</m> is concave up near <m>x = 2</m>, while <m>q</m> is concave down.
+            </p>
+          </description>
+        </image>
 
       </introduction>
       <task workspace="3cm" xml:id="act-3-2-2-task-0">
