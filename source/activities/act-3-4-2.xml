@@ -166,7 +166,13 @@
           </p>
         </hint>
         <answer>
-          <image width="50%" source="images/3_2_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%" source="images/3_2_Act2Soln">
+            <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+          </image>
         </answer>
         <solution>
           <p>
@@ -174,7 +180,13 @@
             along with the facts that <m>h</m> is always increasing and always concave down,
             we see that a typical member of this family looks like the following graph.
           </p>
-          <image width="50%" source="images/3_2_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="50%" source="images/3_2_Act2Soln">
+            <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+            </description>
+          </image>
         </solution>
       </task>
     </activity>

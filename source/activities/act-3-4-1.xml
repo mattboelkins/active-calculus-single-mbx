@@ -146,7 +146,13 @@
           </p>
         </hint>
         <answer>
-          <image width="80%" source="images/3_2_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="80%" source="images/3_2_Act1Soln">
+            <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+          </image>
         </answer>
         <solution>
           <p>
@@ -159,7 +165,13 @@
             Note, too,
             that <m>p</m> has its <m>x</m>-intercepts at <m>x = \pm \sqrt{a}</m>.
           </p>
-          <image width="80%" source="images/3_2_Act1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="80%" source="images/3_2_Act1Soln">
+            <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+          </image>
         </solution>
       </task>
     </activity>

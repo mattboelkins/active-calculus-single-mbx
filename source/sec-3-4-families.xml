@@ -46,8 +46,13 @@
 
     <figure xml:id="F-3-2-SineFam">
       <caption>The graph of <m>f(t) = a \sin(b(t-c)) + d</m> based on parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.</caption>
-      <image width="65%" source="images/3_2_SineFam"><description><p>The graph of <m>f(t) = a \sin(b(t-c)) + d</m> based on parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.</p>
-      </description></image>
+      <image width="65%" source="images/3_2_SineFam">
+        <description>
+          <p>
+            The graph of <m>f(t) = a \sin(b(t-c)) + d</m> based on parameters <m>a</m>, <m>b</m>, <m>c</m>, and <m>d</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -149,8 +154,13 @@
 
         <figure xml:id="F-3-2-signchartg">
           <caption>The first derivative sign chart for <m>g(x) = axe^{-bx}</m>.</caption>
-          <image width="45%" source="images/3_2_signchartg"><description><p>The first derivative sign chart for <m>g(x) = axe^{-bx}</m>.</p>
-          </description></image>
+          <image width="45%" source="images/3_2_signchartg">
+            <description>
+              <p>
+                The first derivative sign chart for <m>g(x) = axe^{-bx}</m>.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>
@@ -182,8 +192,13 @@
 
         <figure xml:id="F-3-2-signchartg2">
           <caption>The second derivative sign chart for <m>g(x) = axe^{-bx}</m>.</caption>
-          <image width="45%" source="images/3_2_signchartg2"><description><p>The second derivative sign chart for <m>g(x) = axe^{-bx}</m>.</p>
-          </description></image>
+          <image width="45%" source="images/3_2_signchartg2">
+            <description>
+              <p>
+                The second derivative sign chart for <m>g(x) = axe^{-bx}</m>.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>
@@ -228,8 +243,13 @@
 
         <figure xml:id="F-3-2-SurgeFam">
           <caption>The graph of <m>g(x) = axe^{-bx}</m>.</caption>
-          <image width="80%" source="images/3_2_SurgeFam"><description><p>The graph of <m>g(x) = axe^{-bx}</m>.</p>
-          </description></image>
+          <image width="80%" source="images/3_2_SurgeFam">
+            <description>
+              <p>
+                The graph of <m>g(x) = axe^{-bx}</m>.
+              </p>
+            </description>
+          </image>
         </figure>
 
         <p>

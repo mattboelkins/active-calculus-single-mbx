@@ -76,7 +76,13 @@
         <ol marker="a." >
           <li >
             <sidebyside width="50%" >
-              <image source="images/3_2_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez1Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -112,7 +118,13 @@
               A typical such function is plotted below.
             </p>
             <sidebyside width="50%" >
-              <image source="images/3_2_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez1Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -216,7 +228,13 @@
           </li>
           <li >
             <sidebyside width="50%" >
-              <image source="images/3_2_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez2Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -289,7 +307,13 @@
               Note how <m>q</m> is increasing and decreasing according to our earlier work in (d).
             </p>
             <sidebyside width="50%" >
-              <image source="images/3_2_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez2Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -363,7 +387,13 @@
           </li>
           <li >
             <sidebyside width="100%" >
-              <image source="images/3_2_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez3Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -428,7 +458,13 @@
               All of these properties are reflected in the following figure.
             </p>
             <sidebyside width="100%" >
-              <image source="images/3_2_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/3_2_Ez3Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
