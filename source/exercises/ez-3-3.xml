@@ -72,7 +72,7 @@
         <image width="100%" source="images/3_1_Ez1">
           <description>
             <p>
-              At center, a graph of <m>y = f'(x)</m>; at left, axes for plotting <m>y = f(x)</m>; at right, axes for plotting <m>y = f''(x)</m>.
+              As stated in the caption, there are three adjacent grids in this image:  all three are on the window <m>[-2,2] \times [-2,2]</m>.  The left and right ones are blank for eventually plotting <m>y = f(x)</m> and <m>y = f''(x)</m>, respectively.  The middle graph of <m>y = f'(x)</m> shows that <m>f'(x)</m> is a cubic polynomial with a zero at <m>x=-1</m> and a repeated zero at <m>x=1</m>.  Notice that <m>f'(x)</m> is negative for <m>x \lt -1</m> and positive for <m>x \gt -1</m> except at <m>x = 1</m> since <m>f'(1)=0</m>.
             </p>
           </description>
         </image>
@@ -114,7 +114,7 @@
         <ol marker="a." >
           <li >
             <p >
-              <m>f'</m> is positive for <m>-1 \lt x lt 1</m> and for <m>x \gt 1</m>;
+              <m>f'</m> is positive for <m>-1 \lt x \lt 1</m> and for <m>x \gt 1</m>;
               <m>f'</m> is negative for all
               <m>x \lt -1</m>. <m>f</m> has a local minimum at <m>x = -1</m>.
             </p>
@@ -139,7 +139,13 @@
               <image source="images/3_1_Ez1Soln">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    There are three adjacent grids in this image:  all three are on the window <m>[-2,2] \times [-2,2]</m>.  The middle graph of <m>y = f'(x)</m> is given and shows that <m>f'(x)</m> is a cubic polynomial with a zero at <m>x=-1</m> and a repeated zero at <m>x=1</m>.  
+                  </p>
+                  <p>
+                    The lefthand image show a possible graph of <m>y = f(x)</m> that has the properties described in parts (a) and (c) of this question: <m>f</m> is increasing for <m>-1 \lt x \lt 1</m> and for <m>x \gt 1</m>; <m>f</m> is decreasing for all <m>x \lt -1</m>. Thus, <m>f</m> has a local minimum at <m>x = -1</m>.  We don't know the exact height, but in the graph the minimum is at approximately <m>(-1,-0.6)</m>.  In addition, the graph matches all of the concavity described in (c).  Note the horizontal tangent line at <m>x = 1</m> where <m>f</m> also has an inflection point.
+                  </p>
+                  <p>
+                    The right hand image show a possible graph of <m>y = f''(x)</m>, which is a quadratic function that is concave up with a vertex at <m>x \approx 0.67</m> and zeros at <m>x \approx -0.35</m> and <m>x = 1</m>.  The graph demonstrates all of the properties of the second derivative identified in (c).
                   </p>
                 </description>
               </image>
@@ -204,7 +210,13 @@
               <image source="images/3_1_Ez1Soln">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    There are three adjacent grids in this image:  all three are on the window <m>[-2,2] \times [-2,2]</m>.  The middle graph of <m>y = f'(x)</m> is given and shows that <m>f'(x)</m> is a cubic polynomial with a zero at <m>x=-1</m> and a repeated zero at <m>x=1</m>.  
+                  </p>
+                  <p>
+                    The lefthand image show a possible graph of <m>y = f(x)</m> that has the properties described in parts (a) and (c) of this question: <m>f</m> is increasing for <m>-1 \lt x \lt 1</m> and for <m>x \gt 1</m>; <m>f</m> is decreasing for all <m>x \lt -1</m>. Thus, <m>f</m> has a local minimum at <m>x = -1</m>.  We don't know the exact height, but in the graph the minimum is at approximately <m>(-1,-0.6)</m>.  In addition, the graph matches all of the concavity described in (c).  Note the horizontal tangent line at <m>x = 1</m> where <m>f</m> also has an inflection point.
+                  </p>
+                  <p>
+                    The right hand image show a possible graph of <m>y = f''(x)</m>, which is a quadratic function that is concave up with a vertex at <m>x \approx 0.67</m> and zeros at <m>x \approx -0.35</m> and <m>x = 1</m>.  The graph demonstrates all of the properties of the second derivative identified in (c).
                   </p>
                 </description>
               </image>
@@ -344,7 +356,7 @@
           <image source="images/3_1_Ez3">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The plot is shown on the window <m>[-4,4] \times [4,4]</m>.  The function <m>h'(x)</m> is always increasing, passes through <m>(0,0)</m>, and looks similar to the arctangent function's shape.  The graph has horizontal asymptotes of <m>y = -3</m> (as <m>x</m> decreases without bound) and <m>y = 3</m> as <m>x</m> increases without bound.
               </p>
             </description>
           </image>
@@ -362,7 +374,7 @@
               <image source="images/3_1_Ez3Soln">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    There are three possible graphs shown of <m>y = h(x)</m>; each is a vertical shift of the other.  Each graph is always concave up with a global minimum at <m>x = 0</m>, and each is approximately linear as <m>x</m> gets further from the origin. The lowest graph has zeros at <m>x = \pm 1</m>, the middle graph has a single repeated zero at <m>x = 0</m>, and the top graph has no zeros with its minimum at <m>(0,1)</m>.
                   </p>
                 </description>
               </image>
@@ -403,7 +415,7 @@
               <image source="images/3_1_Ez3Soln">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    There are three possible graphs shown of <m>y = h(x)</m>; each is a vertical shift of the other.  Each graph is always concave up with a global minimum at <m>x = 0</m>, and each is approximately linear as <m>x</m> gets further from the origin. The lowest graph has zeros at <m>x = \pm 1</m>, the middle graph has a single repeated zero at <m>x = 0</m>, and the top graph has no zeros with its minimum at <m>(0,1)</m>.
                   </p>
                 </description>
               </image>
@@ -532,7 +544,7 @@
                 <image width="50%" source="images/3_1_Act1Soln">
                   <description>
                     <p>
-                      ADD ALT TEXT TO THIS IMAGE
+                      The graph is shown for <m>-8 \lt x \lt 4</m> with no scale on the vertical axis.  The graph demonstrates all of the characteristics discussed in parts (a) through (d), plus it shows a vertical asymptote at <m>x = 2</m> where <m>g(x)</m> decreases without bound on either side of the asymptote.
                     </p>
                   </description>
                 </image>
@@ -614,7 +626,7 @@
                 <image source="images/3_1_Act1Soln">
                   <description>
                     <p>
-                      ADD ALT TEXT TO THIS IMAGE
+                      The graph is shown for <m>-8 \lt x \lt 4</m> with no scale on the vertical axis.  The graph demonstrates all of the characteristics discussed in parts (a) through (d), plus it shows a vertical asymptote at <m>x = 2</m> where <m>g(x)</m> decreases without bound on either side of the asymptote.
                     </p>
                   </description>
                 </image>
