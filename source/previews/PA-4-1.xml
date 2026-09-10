@@ -16,21 +16,26 @@
     <exploration xml:id="PA-4-1">
       <introduction>
         <p>
-    Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.
-
-    </p>
+          Suppose that a person is taking a walk along a long straight path and walks at a constant rate of 3 miles per hour.
+        </p>
       </introduction>
       <task workspace="0.2cm" xml:id="PA-4-1-task-0">
         <statement>
           <p>
-          On the left-hand axes provided in the following figure,
-          sketch a labeled graph of the velocity function <m>v(t) = 3</m>.
-          Note that while the scale on the two sets of axes is the same,
-          the units on the right-hand axes differ from those on the left.
-          The right-hand axes will be used in question (d).
-        </p>
+            On the left-hand axes provided in the following figure,
+            sketch a labeled graph of the velocity function <m>v(t) = 3</m>.
+            Note that while the scale on the two sets of axes is the same,
+            the units on the right-hand axes differ from those on the left.
+            The right-hand axes will be used in question (d).
+          </p>
 
-        <image width="100%" source="images/4_1_PA1"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+        <image width="100%" source="images/4_1_PA1">
+          <description>
+            <p>
+              Two adjacent sets of axes with grids are provided, each on the window <m>[-0.25, 2.5] \times [-1,9]</m>; note that each grid box is <m>0.25 \times 1</m>.  On the left axes, the units on the vertical axes are <q>mph</q>; on the right axes, the units on the vertical axes are <q>miles</q>.  On both axes, units on the horizontal axes are <q>hours</q>.
+            </p>
+          </description>
+        </image>
 
         </statement>
         <hint/>

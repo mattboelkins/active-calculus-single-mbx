@@ -112,8 +112,13 @@
 
     <figure xml:id="F-4-1-VelArea">
       <caption>At left, a constant velocity function; at right, a non-constant velocity function.</caption>
-      <image width="74%" source="images/4_1_VelArea"><description><p>At left, a constant velocity function; at right, a non-constant velocity function.</p>
-      </description></image>
+      <image width="74%" source="images/4_1_VelArea">
+        <description>
+          <p>
+            Two adjacent sets of axes and grids are shown, each on the window <m>[-0.5, 3.5] \times [-0.5,3.5]</m>, with units <q>hrs</q> on the horizontal axes and <q>mph</q> on the vertical axes.  In the lefthand image, the constant velocity function <m>v(t) = 2</m> is plotted along with a rectangle whose base lies on the interval <m>[1,1.5]</m> and whose height is <m>v(1)</m>.  In the righthand image, a non-constant velocity function <m>v(t) = 2.05 + 0.5\sin(2t)</m> is plotted along with a rectangle whose base lies on the interval <m>[1,1.5]</m> and whose height is <m>v(1)</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -176,8 +181,13 @@
 
     <figure xml:id="F-4-1-VelArea2">
       <caption>Estimating the area under <m>y = v(t)</m> on <m>[0,3]</m>.</caption>
-      <image width="42%" source="images/4_1_VelArea2"><description><p>Estimating the area under <m>y = v(t)</m> on <m>[0,3]</m>.</p>
-      </description></image>
+      <image width="42%" source="images/4_1_VelArea2">
+        <description>
+          <p>
+            On the window <m>[-0.5, 3.5] \times [-0.5,3.5]</m>, with units <q>hrs</q> on the horizontal axes and <q>mph</q> on the vertical axes, the function <m>v(t) = 2.05 + 0.5\sin(2t)</m> is plotted.  The interval <m>[0,3]</m> is divided into six subintervals of length <m>0.5</m>, and each of the function values at the left endpoints of these subintervals (<m>v(0)</m>, <m>v(0.5)</m>, <m>v(1)</m>, <m>\ldots</m>, <m>v(2.5)</m>) are used to create rectangles whose height is given by those function values.  These six rectangles are sketched and shaded along with the curve itself.
+          </p>
+        </description>
+      </image>
     </figure>
 
   </sidebyside>
@@ -261,8 +271,16 @@
 
     <figure xml:id="F-4-1-PA1Soln">
       <caption>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</caption>
-      <image width="90%" source="images/4_1_PA1Soln"><description><p>The velocity function <m>v(t) = 3</m> and corresponding position function <m>s(t) = 3t</m>.</p>
-      </description></image>
+      <image width="90%" source="images/4_1_PA1Soln">
+        <description>
+            <p>
+              The two adjacent plots in this figure form the solution to Preview Activity 4.1.  Two adjacent sets of axes with grids are provided, each on the window <m>[-0.25, 2.5] \times [-1,9]</m>; note that each grid box is <m>0.25 \times 1</m>.  On the left axes, the units on the vertical axes are <q>mph</q>; on the right axes, the units on the vertical axes are <q>miles</q>.  On both axes, units on the horizontal axes are <q>hours</q>.
+            </p>
+            <p>
+              In addition, on the left axes we plot the velocity function <m>v(t) = 3</m> along with the rectangle having its base along the <m>t</m>-axis on the interval <m>[0.5,1.5]</m> and whose height is <m>3</m>.  On the right axes, we plot the position function <m>s(t) = 3t</m> along with the heights <m>s(0.25) = 0.75</m> and <m>s(1.5) = 4.5</m>.
+            </p>
+          </description>
+      </image>
     </figure>
 
     <p>

@@ -26,7 +26,13 @@
           while movement to the left is in the negative direction.
         </p>
 
-          <image width="100%" source="images/4_1_Act3"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="100%" source="images/4_1_Act3">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
 
         <p>
       Suppose further that the object's initial position at time <m>t = 0</m> is <m>s(0) = 1</m>.

@@ -53,8 +53,13 @@
       </p>
       <figure xml:id="F-4-1-Ez1" >
         <caption>The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.</caption>
-        <image width="80%" source="images/4_1_Ez1"><description><p>The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.</p>
-        </description></image>
+        <image width="80%" source="images/4_1_Ez1">
+          <description>
+            <p>
+              The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.
+            </p>
+          </description>
+        </image>
       </figure>
       <p >
         <ol marker="a." >

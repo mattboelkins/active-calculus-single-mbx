@@ -119,7 +119,12 @@
               </coordinates>
             </diagram>
           </prefigure>
-        <description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <description>
+            <p>
+              On the window <m>[-0.5,2.5] \times [-0.5,3.5]</m>, a plot of the function <m>v(t) = 0.5(t-1)^3 + 2</m>, which passes through <m>(0,1.5)</m>, <m>(1,2)</m>, and <m>(2,2.5)</m>, with a horizontal tangent line at <m>t = 1</m>.
+            </p>
+          </description>
+        </image>
 
 <!--
             <image width="35%" source="images/4_1_Act1"/>

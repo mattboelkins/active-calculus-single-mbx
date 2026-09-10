@@ -16,10 +16,10 @@
     <activity xml:id="act-4-1-2" workspace="3cm">
       <introduction>
         <p>
-      A ball is tossed vertically in such a way that its velocity function is given by <m>v(t) = 32 - 32t</m>,
-      where <m>t</m> is measured in seconds and <m>v</m> in feet per second.
-      Assume that this function is valid for <m>0 \le t \le 2</m>.
-    </p>
+          A ball is tossed vertically in such a way that its velocity function is given by <m>v(t) = 32 - 32t</m>,
+          where <m>t</m> is measured in seconds and <m>v</m> in feet per second.
+          Assume that this function is valid for <m>0 \le t \le 2</m>.
+        </p>
         <p/>
       </introduction>
       <task workspace="3cm" xml:id="act-4-1-2-task-0">
@@ -107,7 +107,13 @@
             What is the meaning of the value you find?
           </p>
 
-          <image width="47%" source="images/4_1_Act2"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="47%" source="images/4_1_Act2">
+            <description>
+              <p>
+                On the window <m>[-0.5,2.5] \times [-36,36]</m>, a plot of the linear velocity function <m>f(t) = 32-32t</m> over the domain <m>0 \le t \le 2</m>.  The function passes through the points <m>(0,32)</m>, <m>(1, 0)</m>, and <m>(2,-32)</m>.
+              </p>
+            </description>
+          </image>
 
         </statement>
         <hint>
