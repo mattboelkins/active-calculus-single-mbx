@@ -52,11 +52,19 @@
         and that <m>s(0) = 1</m>.
       </p>
       <figure xml:id="F-4-1-Ez1" >
-        <caption>The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.</caption>
+        <caption>
+          The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.
+        </caption>
         <image width="80%" source="images/4_1_Ez1">
           <description>
             <p>
-              The graph of the biker's velocity, <m>y = v(t)</m>, at left.  At right, axes to plot an approximate sketch of <m>y = s(t)</m>.
+              Two adjacent sets of axes are provided, each on the window <m>[-0.5,5.5] \times [-12,12]</m>.  Each horizontal axis has units <q>hrs</q>; the vertical axis of the left image has units <q>mph</q>, while the vertical axis of the right image has units <q>miles</q>.
+            </p>
+            <p>
+              On the left axes, we plot the graph of the biker's velocity, <m>y = v(t)</m>, which is nearly piecewise constant.  The graph has <m>t</m>-intercepts at <m>(0,0)</m>, <m>(1,0)</m>, <m>(3,0)</m>, and <m>(4,0)</m>.  On nearly all of the interval <m>0 \lt t \lt 1</m>, <m>v(t) = 11</m>; on nearly all of the interval <m>1 \lt t \lt 3</m>, <m>v(t) = -10</m>; on nearly all of the interval <m>3 \lt t \lt 4</m>, <m>v(t) = 9</m>.
+            </p>
+            <p>
+              The right axes are blank for the reader to plot the corresponding position function, <m>s(t)</m>.
             </p>
           </description>
         </image>
@@ -113,7 +121,13 @@
           </li>
           <li >
             <sidebyside width="80%" >
-              <image source="images/4_1_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_1_Ez1Soln">
+                <description>
+                  <p>
+                    This is an updated version of the image provided at the start of the exercise.  The update includes the graph of the position function <m>s(t)</m> on the righthand axes.  The function <m>s(t)</m> is piecewise linear and consists of <m>3</m> line segments that pass through the following points: <m>(0,s(0)) = (0,1)</m>, <m>(1,s(1)) = (1,12)</m>, <m>(3,s(3)) = (3,-8)</m>, and <m>(4,s(4)) = (4,1)</m>.  
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -180,7 +194,13 @@
               the position function passes through the points we've established above like <m>(3,-8)</m>.
             </p>
             <sidebyside width="80%" >
-              <image source="images/4_1_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_1_Ez1Soln">
+                <description>
+                  <p>
+                    This is an updated version of the image provided at the start of the exercise.  The update includes the graph of the position function <m>s(t)</m> on the righthand axes.  The function <m>s(t)</m> is piecewise linear and consists of <m>3</m> line segments that pass through the following points: <m>(0,s(0)) = (0,1)</m>, <m>(1,s(1)) = (1,12)</m>, <m>(3,s(3)) = (3,-8)</m>, and <m>(4,s(4)) = (4,1)</m>.  
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -321,9 +341,48 @@
         Assume that the curves that make up the parts of the graph of <m>y=v(t)</m> are either portions of straight lines or portions of circles.
       </p>
       <figure xml:id="F-4-1-Ez3" >
-        <caption>The graph of <m>y = v(t)</m>, the velocity function of a moving object.</caption>
-        <image width="60%" source="images/4_1_Ez3"><description><p>The graph of <m>y = v(t)</m>, the velocity function of a moving object.</p>
-        </description></image>
+        <caption>
+          The graph of <m>y = v(t)</m>, the velocity function of a moving object.
+        </caption>
+        <image width="60%" source="images/4_1_Ez3">
+          <description>
+            <p>
+              The graph of a piecewise velocity function, <m>y = v(t)</m>, whose pieces consist of either line segments or portions of circles.  The pieces are:
+              <ul>
+                <li>
+                  <p>
+                    a line segment from <m>(0,0)</m> to <m>(1,1)</m>;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    a quarter circle of radius <m>1</m> centered at <m>(1,0)</m> passing from <m>(1,1)</m> to <m>(2,0)</m>;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    a line segment from <m>(2,0)</m> to <m>(3,-1)</m>;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    a line segment from <m>(3,-1)</m> to <m>(4,-1)</m>;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    a line segment from <m>(4,-1)</m> to <m>(5,0)</m>;
+                  </p>
+                </li>
+                <li>
+                  <p>
+                    the top half of the circle of radius <m>1</m> centered at <m>(6,0)</m> going from <m>(5,0)</m> to <m>(7,0)</m>.
+                  </p>
+                </li>
+              </ul>
+            </p>
+          </description>
+        </image>
       </figure>
       <p >
         <ol marker="a." >
@@ -531,7 +590,13 @@
         <ol marker="a." >
           <li >
             <sidebyside width="50%" >
-              <image source="images/4_1_Ez4Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_1_Ez4Soln">
+                <description>
+                  <p>
+                    A plot of the data given in the table in the exercise statement.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -555,7 +620,13 @@
               The plot below shows that the rate of pollution appears to be increasing at an increasing rate as time goes on.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_1_Ez4Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_1_Ez4Soln">
+                <description>
+                  <p>
+                    A plot of the data given in the table in the exercise statement.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >

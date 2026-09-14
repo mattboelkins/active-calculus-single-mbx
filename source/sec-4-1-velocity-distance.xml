@@ -396,9 +396,22 @@
     </p>
 
     <figure xml:id="F-4-1-NegVel">
-      <caption>At left, the velocity function of the person walking; at right, the corresponding position function.</caption>
-      <image width="90%" source="images/4_1_NegVel"><description><p>At left, the velocity function of the person walking; at right, the corresponding position function.</p>
-      </description></image>
+      <caption>
+        At left, the velocity function of the person walking; at right, the corresponding position function.
+      </caption>
+      <image width="90%" source="images/4_1_NegVel">
+        <description>
+          <p>
+            Two adjacent sets of axes are shown, each on the window <m>[-0.5,3.5] \times [-6,6]</m>.  The units on the horizontal axes in both figures are <q>hrs</q>; the units on the vertical axis in the left image are <q>mph</q>, while the units on the vertical axis in the right image are <q>miles</q>. 
+          </p>
+          <p>
+            On the left axes, the piecewise constant velocity function is plotted along with the area the function bounds along with the <m>t</m>-axis.  On the interval <m>[0,3]</m>, <m>v(t) = 3</m> for all <m>t</m> except for <m>1.5 \lt t \lt 2</m>, for which <m>v(t) = -4</m>.  On the interval <m>[0,1.5]</m>, the shaded area bounded by <m>v(t)</m> and the horizontal axis is <m>A_1 = 4.5</m>; on the interval <m>[1.5,2]</m>, the shaded area bounded by <m>v(t)</m> and the horizontal axis is <m>A_2 = 2</m>; and on the interval <m>[2,3]</m>, the shaded area bounded by <m>v(t)</m> and the horizontal axis is <m>A_3 = 3</m>.
+          </p>
+          <p>
+            On the right axes, the continuous, piecewise linear position function <m>s(t)</m> is plotted.  Its graph consists of three straight line sections that pass through the points <m>(0,0)</m>, <m>(1.5,4.5)</m>, <m>(2,2.5)</m>, and <m>(3,5.5)</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
