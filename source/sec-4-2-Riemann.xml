@@ -65,8 +65,13 @@
 
       <figure xml:id="F-4-2-Intro">
         <caption>A velocity function that is sometimes negative.</caption>
-        <image source="images/4_2_Intro"><description><p>A velocity function that is sometimes negative.</p>
-        </description></image>
+        <image source="images/4_2_Intro">
+          <description>
+            <p>
+              *************A velocity function that is sometimes negative.
+            </p>
+          </description>
+        </image>
       </figure>
     </sidebyside>
 

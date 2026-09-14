@@ -88,7 +88,13 @@
               <m>M_4 = 43.5</m>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez1Soln">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >

@@ -17,18 +17,23 @@
     <exploration xml:id="PA-4-2">
       <introduction>
         <p>
-    A person walking along a straight path has her velocity in miles per hour at time <m>t</m> given by the function <m>v(t) = 0.25t^3-1.5t^2+3t+0.25</m>,
-    for times in the interval <m>0 \le t \le 2</m>.
-    The graph of this function is also given in each of the three diagrams in the following figure.
-  </p>
-          <image width="97%" source="images/4_2_PA1"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          A person walking along a straight path has her velocity in miles per hour at time <m>t</m> given by the function <m>v(t) = 0.25t^3-1.5t^2+3t+0.25</m>,
+          for times in the interval <m>0 \le t \le 2</m>.
+          The graph of this function is also given in each of the three diagrams in the following figure.
+        </p>
+          <image width="97%" source="images/4_2_PA1">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         <p>
-    Note that in each diagram,
-    we use four rectangles to estimate the area under
-    <m>y = v(t)</m> on the interval <m>[0,2]</m>,
-    but the method by which the four rectangles' respective heights are decided varies among the three individual graphs.
-
-    </p>
+          Note that in each diagram,
+          we use four rectangles to estimate the area under
+          <m>y = v(t)</m> on the interval <m>[0,2]</m>,
+          but the method by which the four rectangles' respective heights are decided varies among the three individual graphs.
+        </p>
       </introduction>
       <task workspace="2cm" xml:id="PA-4-2-task-0">
         <statement>

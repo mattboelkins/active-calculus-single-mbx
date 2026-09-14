@@ -16,9 +16,8 @@
     <activity xml:id="act-4-2-2" workspace="3cm">
       <introduction>
         <p>
-      Suppose that an object moving along a straight line path has its velocity in feet per second at time <m>t</m> in seconds given by <m>v(t) = \frac{2}{9}(t-3)^2 + 2</m>.
-
-      </p>
+          Suppose that an object moving along a straight line path has its velocity in feet per second at time <m>t</m> in seconds given by <m>v(t) = \frac{2}{9}(t-3)^2 + 2</m>.
+        </p>
       </introduction>
       <task workspace="6cm" xml:id="act-4-2-2-task-0">
         <statement>
@@ -32,13 +31,25 @@
           </p>
         </hint>
         <answer>
-          <image width="40%" source="images/4_2_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="40%" source="images/4_2_Act2Soln">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </answer>
         <solution>
           <p>
             The region whose exact area tells us the value of the distance the object traveled on the time interval <m>2 \le t \le 5</m> is shown below.
           </p>
-          <image width="40%" source="images/4_2_Act2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="40%" source="images/4_2_Act2Soln">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </solution>
       </task>
       <task workspace="9cm" xml:id="act-4-2-2-task-1">
