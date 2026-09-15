@@ -24,7 +24,7 @@
           <image width="97%" source="images/4_2_PA1">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The figure shows three adjacent plots of the same function <m>v(t) = 0.25t^3-1.5t^2+3t+0.25</m>, all on the interval <m>0 \le t \le 2</m>.  Each shows four rectangles of width <m>0.5</m> whose combined area approximates the total area under the curve on the noted interval.  In the first plot, the heights of the four rectangles are given by <m>v(0)</m>, <m>v(0.5)</m>, <m>v(1)</m>, and <m>v(1.5)</m>. In the plot diagram, the heights of the four rectangles are given by <m>v(0.5)</m>, <m>v(1)</m>, <m>v(1.5)</m>, and <m>v(2)</m>. In the third plot, the heights of the four rectangles are given by <m>v(0.25)</m>, <m>v(0.75)</m>, <m>v(1.25)</m>, and <m>v(1.75)</m>. 
               </p>
             </description>
           </image>
@@ -38,18 +38,18 @@
       <task workspace="2cm" xml:id="PA-4-2-task-0">
         <statement>
           <p>
-          How are the heights of rectangles in the left-most diagram being chosen?
-          Explain, and hence determine the value of
-          <md>
-            S = A_1 + A_2 + A_3 + A_4
-          </md>
-          by evaluating the function
-          <m>y = v(t)</m> at appropriately chosen values and observing the width of each rectangle.
-          Note, for example, that
-          <md>
-            A_3 = v(1) \cdot \frac{1}{2} = 2 \cdot \frac{1}{2} = 1
-          </md>.
-        </p>
+            How are the heights of rectangles in the left-most diagram being chosen?
+            Explain, and hence determine the value of
+            <md>
+              S = A_1 + A_2 + A_3 + A_4
+            </md>
+            by evaluating the function
+            <m>y = v(t)</m> at appropriately chosen values and observing the width of each rectangle.
+            Note, for example, that
+            <md>
+              A_3 = v(1) \cdot \frac{1}{2} = 2 \cdot \frac{1}{2} = 1
+            </md>.
+          </p>
         </statement>
         <hint/>
          

@@ -68,7 +68,7 @@
         <image source="images/4_2_Intro">
           <description>
             <p>
-              *************A velocity function that is sometimes negative.
+              This figure shows a periodic velocity function, primarily in the first and fourth quadrants, that might have a formula like <m>v(t) = 1 - 1.5 \cos(t)</m>.  (Since there isn't scale on either axis, it's not possible to determine the function's formula.)  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  On the first interval where <m>v(t)</m> is  positive, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
             </p>
           </description>
         </image>
@@ -173,9 +173,16 @@
     </p>
 
     <figure xml:id="F-4-2-Interval">
-      <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m>.</caption>
-      <image width="80%" source="images/4_2_Interval"><description><p>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m>.</p>
-      </description></image>
+      <caption>
+        Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m>.
+      </caption>
+      <image width="80%" source="images/4_2_Interval">
+        <description>
+          <p>
+            The image shows the interval <m>[a,b]</m> subdivided into <m>n</m> subintervals of equal length <m>\Delta x</m>.  At the left endpoint, <m>a</m>, the value <m>x_0</m> is also labeled, and then for every step of length <m>\Delta x</m> to the right, a new hash mark labels the next <m>x_i</m> value: <m>x_1</m>, <m>x_2</m>, and so on.  The rightmost subinterval endpoint is <m>x_n</m>, which is the same as the right endpoint <m>b</m> of the overall interval; the next-to-last subinterval endpoint is <m>x_{n-1}</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -224,9 +231,16 @@
     </p>
 
     <figure xml:id="F-4-2-LeftSum">
-      <caption>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.</caption>
-      <image width="65%" source="images/4_2_LeftSum"><description><p>Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.</p>
-      </description></image>
+      <caption>
+        Subdividing the interval <m>[a,b]</m> into <m>n</m> subintervals of equal length <m>\Delta x</m> and approximating the area under <m>y = f(x)</m> over <m>[a,b]</m> using left rectangles.
+      </caption>
+      <image width="65%" source="images/4_2_LeftSum">
+        <description>
+          <p>
+            The figure shows a continuous function <m>f(x)</m> that is positive and decreasing throughout the first quadrant, which includes the interval <m>[a,b]</m>.  The interval <m>[a,b]</m> is subdivided into <m>n</m> subintervals of equal length <m>\Delta x</m> with the subinterval endpoints denoted <m>x_0, x_1, x_2, \ldots, x_{n-1}, x_n</m>.  The specific endpoints shown in the diagram are <m>x_0, x_1, x_2, x_i, x_{i+1}, x_{n-1}, x_n</m>, and on the subintervals <m>[x_0,x_1]</m>, <m>[x_1,x_2]</m>, <m>[x_i,x_{i+1}]</m>, <m>[x_{n-1},x_n]</m>, left rectangles are also plotted and shaded; the respective heights of these rectangles are <m>f(x_0)</m>, <m>f(x_1)</m>, <m>f(x_i)</m>, and <m>f(x_{n-1})</m>, and the areas of these rectangles are labeled <m>A_1</m>, <m>A_2</m>, <m>A_{i+1}</m>, and <m>A_n</m>. 
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -245,8 +259,19 @@
 
     <figure xml:id="F-4-2-RightMidSum">
       <caption>Riemann sums using right endpoints and midpoints.</caption>
-      <image width="100%" source="images/4_2_RightMidSum"><description><p>Riemann sums using right endpoints and midpoints.</p>
-      </description></image>
+      <image width="100%" source="images/4_2_RightMidSum">
+        <description>
+          <p>
+            Two adjacent figures show the same continuous function <m>f(x)</m> from the preceding figure that is positive and decreasing throughout the first quadrant, which includes the interval <m>[a,b]</m>.  As in the prior figure, the interval <m>[a,b]</m> is subdivided into <m>n</m> subintervals of equal length <m>\Delta x</m> with the specific subinterval endpoints shown in the diagram being <m>x_0, x_1, x_2, x_i, x_{i+1}, x_{n-1}, x_n</m>.
+          </p>
+          <p> 
+            In the left figure, on the subintervals <m>[x_0,x_1]</m>, <m>[x_1,x_2]</m>, <m>[x_i,x_{i+1}]</m>, <m>[x_{n-1},x_n]</m>, right rectangles are also plotted and shaded; the respective heights of these rectangles are <m>f(x_1)</m>, <m>f(x_2)</m>, <m>f(x_{i+1})</m>, and <m>f(x_{n})</m>, and the areas of these rectangles are labeled <m>B_1</m>, <m>B_2</m>, <m>B_{i+1}</m>, and <m>B_n</m>. 
+          </p>
+          <p> 
+            In the right figure, on the subintervals <m>[x_0,x_1]</m>, <m>[x_1,x_2]</m>, <m>[x_i,x_{i+1}]</m>, <m>[x_{n-1},x_n]</m>, midpoint rectangles are also plotted and shaded; the respective heights of these rectangles are <m>f(\overline{x}_1)</m>, <m>f(\overline{x}_2)</m>, <m>f(\overline{x}_{i+1})</m>, and <m>f(\overline{x}_n)</m>, where <m>\overline{x}_{i+1} = \frac{x_i + x_{i+1}}{2}</m>, and the areas of these rectangles are labeled <m>C_1</m>, <m>C_2</m>, <m>C_{i+1}</m>, and <m>C_n</m>. 
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -305,9 +330,16 @@
     </p>
 
     <figure xml:id="F-4-2-RenaultAppletRS">
-      <caption>A snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url>.</caption>
-      <image width="71%" source="images/4_2_RenaultAppletRS"><description><p>A snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url>.</p>
-      </description></image>
+      <caption>
+        A snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url>.
+      </caption>
+      <image width="71%" source="images/4_2_RenaultAppletRS">
+        <description>
+          <p>
+            The image is a snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url> which shows the function <m>f(x) = \sin(2x) - \frac{1}{10}x^2 + 3</m> on the interval <m>[1,7]</m> with <m>10</m> shaded left rectangles.  The panel to the left of the image shows information about the type of Riemann sum, the number of rectangles, and some Riemann sum values.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -370,9 +402,25 @@
     </p>
 
     <figure xml:id="F-4-2-NegF">
-      <caption>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</caption>
-      <image width="100%" source="images/4_2_NegF"><description><p>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</p>
-      </description></image>
+      <caption>
+        At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the areas bounded by <m>f</m> on the interval <m>[a,d]</m>.
+      </caption>
+      <image width="100%" source="images/4_2_NegF">
+        <description>
+            <p>
+              This figure shows three adjacent copies of the plot of the periodic velocity function from the introduction to this section, which might have a formula like <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  The two locations where <m>v(t) = 0</m> within <m>[a,b]</m> are denoted by <m>x = c</m> and <m>x = d</m>.
+            </p>
+            <p>
+              In the leftmost image, a left Riemann sum with <m>12</m> subintervals is shown with the rectangles plotted and sketched.
+            </p>
+            <p>
+              In the middle image, a left Riemann sum with <m>24</m> subintervals is shown with the rectangles plotted and sketched.
+            </p>
+            <p>  
+              In the rightmost image, on the first where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+            </p>
+          </description>
+      </image>
     </figure>
 
     <p>
