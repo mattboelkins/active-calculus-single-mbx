@@ -43,9 +43,16 @@
     </p>
 
     <figure xml:id="F-4-3-IncreaseN">
-      <caption>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</caption>
-      <image width="100%" source="images/4_2_NegF"><description><p>At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.</p>
-      </description></image>
+      <caption>
+        At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.
+      </caption>
+      <image width="100%" source="images/4_2_NegF">
+        <description>
+          <p>
+            At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>

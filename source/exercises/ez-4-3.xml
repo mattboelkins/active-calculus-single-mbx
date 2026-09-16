@@ -81,8 +81,13 @@
         </p>
         <figure xml:id="F-4-3-Ez1" >
           <caption>The velocity function of a moving object.</caption>
-          <image source="images/4_3_Ez1"><description><p>The velocity function of a moving object.</p>
-          </description></image>
+          <image source="images/4_3_Ez1">
+            <description>
+              <p>
+                The velocity function of a moving object.
+              </p>
+            </description>
+          </image>
         </figure>
       </sidebyside>
     </statement>
