@@ -91,7 +91,7 @@
               <image source="images/4_2_Ez1Soln">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    A plot of the linear function <m>f(x) = 3x+4</m> on the interval <m>[2,5]</m> along with the <m>4</m> rectangles that correspond to the midpoint Riemann sum, <m>M_4</m>.
                   </p>
                 </description>
               </image>
@@ -108,7 +108,13 @@
               The rectangles with heights that come from the midpoint have the same area as the trapezoids that are formed by the function values at the two endpoints of each subinterval.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez1Solnc"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez1Solnc">
+                <description>
+                  <p>
+                    This image zooms in on the function <m>f(x) = 3x+4</m> at the top of one of the rectangles in <m>M_4</m> and shows visually that the extra area of the rectangle that lies above the line is the same as the missing area below the line that's not captured by the rectangle.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
             <p >
               <m>M_n</m> will give the exact area for any value of <m>n</m>.
@@ -148,7 +154,13 @@
               An overall sketch of the key parts of <m>M_4</m> is seen in the figure below.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez1Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez1Soln">
+                <description>
+                  <p>
+                    A plot of the linear function <m>f(x) = 3x+4</m> on the interval <m>[2,5]</m> along with the <m>4</m> rectangles that correspond to the midpoint Riemann sum, <m>M_4</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -172,7 +184,13 @@
               the areas of the midpoint rectangles give us the exact area under the curve.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez1Solnc"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez1Solnc">
+                <description>
+                  <p>
+                    This image zooms in on the function <m>f(x) = 3x+4</m> at the top of one of the rectangles in <m>M_4</m> and shows visually that the extra area of the rectangle that lies above the line is the same as the missing area below the line that's not captured by the rectangle.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
             <p >
               Indeed, the value of <m>M_n</m> will give the exact area under <m>g</m> on <m>[2,5]</m> for any value of <m>n</m>.
@@ -406,7 +424,13 @@
         <ol marker="a." >
           <li >
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez3Soln">
+                <description>
+                  <p>
+                    A plot of the given data in the window <m>[0,4] \times [0,120]</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -446,7 +470,13 @@
               A plot of the given data is shown in the figure below.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez3Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez3Soln">
+                <description>
+                  <p>
+                    A plot of the given data in the window <m>[0,4] \times [0,120]</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -529,9 +559,16 @@
         </ol>
       </p>
       <figure xml:id="F-4-2-Ez4" >
-        <caption>The rate, <m>r(t)</m>, of pollution in tons per week.</caption>
-        <image width="47%" source="images/4_2_Ez4"><description><p>The rate, <m>r(t)</m>, of pollution in tons per week.</p>
-        </description></image>
+        <caption>
+          The rate, <m>r(t)</m>, of pollution in tons per week.
+        </caption>
+        <image width="47%" source="images/4_2_Ez4">
+          <description>
+            <p>
+              A plot of the function <m>r(t) = 0.5 e^{0.5t}</m> on the window <m>[0,5] \times [0,5]</m>.
+            </p>
+          </description>
+        </image>
       </figure>
       <!--
       </sidebyside>
@@ -546,7 +583,13 @@
               M_4 \approx 6.4</m>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez4aSoln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez4aSoln">
+                <description>
+                  <p>
+                    A plot of the function <m>r(t) = 0.5 e^{0.5t}</m> on the window <m>[0,5] \times [0,5]</m> along with the four rectangles that correspond to the Riemann sum <m>M_4</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -560,7 +603,13 @@
               L_5 \approx 5.19620599</m>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez4bSoln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez4bSoln">
+                <description>
+                  <p>
+                    A plot of the function <m>r(t) = 0.5 e^{0.5t}</m> on the window <m>[0,5] \times [0,5]</m> along with the four rectangles that correspond to the Riemann sum <m>L_4</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -586,7 +635,13 @@
               \[\]
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez4aSoln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez4aSoln">
+                <description>
+                  <p>
+                    A plot of the function <m>r(t) = 0.5 e^{0.5t}</m> on the window <m>[0,5] \times [0,5]</m> along with the four rectangles that correspond to the Riemann sum <m>M_4</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -610,7 +665,13 @@
               </md>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_2_Ez4bSoln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_2_Ez4bSoln">
+                <description>
+                  <p>
+                    A plot of the function <m>r(t) = 0.5 e^{0.5t}</m> on the window <m>[0,5] \times [0,5]</m> along with the four rectangles that correspond to the Riemann sum <m>L_4</m>.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
