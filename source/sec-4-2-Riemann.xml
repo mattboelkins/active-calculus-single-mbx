@@ -417,7 +417,7 @@
               In the middle image, a left Riemann sum with <m>24</m> subintervals is shown with the rectangles plotted and sketched.
             </p>
             <p>  
-              In the rightmost image, on the first where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+              In the rightmost image, on the first interval where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
             </p>
           </description>
       </image>

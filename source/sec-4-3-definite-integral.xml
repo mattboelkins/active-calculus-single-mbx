@@ -48,10 +48,19 @@
       </caption>
       <image width="100%" source="images/4_2_NegF">
         <description>
-          <p>
-            At left and center, two left Riemann sums for a function <m>f</m> that is sometimes negative; at right, the exact areas bounded by <m>f</m> on the interval <m>[a,d]</m>.
-          </p>
-        </description>
+            <p>
+              This figure shows three adjacent copies of the plot of a periodic velocity function that might have a formula like <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  The two locations where <m>v(t) = 0</m> within <m>[a,b]</m> are denoted by <m>x = c</m> and <m>x = d</m>.
+            </p>
+            <p>
+              In the leftmost image, a left Riemann sum with <m>12</m> subintervals is shown with the rectangles plotted and sketched.
+            </p>
+            <p>
+              In the middle image, a left Riemann sum with <m>24</m> subintervals is shown with the rectangles plotted and sketched.
+            </p>
+            <p>  
+              In the rightmost image, on the first interval where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+            </p>
+          </description>
       </image>
     </figure>
 
@@ -152,9 +161,16 @@
     </p>
 
     <figure xml:id="F-4-3-DefIntInterp">
-      <caption>A continuous function <m>f</m> on the interval <m>[a,d]</m>.</caption>
-      <image width="47%" source="images/4_3_DefIntInterp"><description><p>A continuous function <m>f</m> on the interval <m>[a,d]</m>.</p>
-      </description></image>
+      <caption>
+        A continuous function <m>f</m> on the interval <m>[a,d]</m>.
+      </caption>
+      <image width="47%" source="images/4_3_DefIntInterp">
+        <description>
+            <p>
+              This figure shows a periodic velocity function that might have a formula such as <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  The two locations where <m>v(t) = 0</m> within <m>[a,b]</m> are denoted by <m>x = c</m> and <m>x = d</m>. On the first interval where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+            </p>
+          </description>
+      </image>
     </figure>
   <!--</sidebyside>-->
     <p>
@@ -208,8 +224,13 @@
 
     <figure xml:id="F-4-3-TrapArea">
       <caption>The area bounded by <m>f(x)=2x+1</m> and the <m>x</m>-axis on the interval <m>[1,4]</m>.</caption>
-      <image width="47%" source="images/4_3_TrapArea"><description><p>The area bounded by <m>f(x)=2x+1</m> and the <m>x</m>-axis on the interval <m>[1,4]</m>.</p>
-      </description></image>
+      <image width="47%" source="images/4_3_TrapArea">
+        <description>
+          <p>
+            In the window <m>[0,6] \times [0,11]</m>, ****
+          </p>
+        </description>
+      </image>
     </figure>
 <!--</sidebyside>-->
     <xi:include href="./activities/act-4-3-1.xml"/>

@@ -23,7 +23,7 @@
           <image width="60%" source="images/4_3_GGBApplet">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The image is a snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url> which shows the function <m>f(x) = 2x + 1</m> on the interval <m>[1,4]</m> with <m>5</m> shaded left rectangles.  The panel to the left of the image shows information about the type of Riemann sum, the number of rectangles, and some Riemann sum values.
               </p>
             </description>
           </image>
@@ -56,19 +56,19 @@
           <image width="60%" source="images/4_3_GGBApplet2">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The image is a snapshot of the interactive graphic found at <url href="https://gvsu.edu/s/a9" visual="">gvsu.edu/s/a9</url> which shows the function <m>f(x) = \sin(2x) - \frac{1}{10}x^2 + 3</m> on the interval <m>[1,7]</m> with <m>10</m> shaded left rectangles.  The panel to the left of the image shows information about the type of Riemann sum, the number of rectangles, and some Riemann sum values.
               </p>
             </description>
           </image>
 
-        <p>
-          For this function on this interval,
-          compute <m>L_{n}</m>, <m>M_{n}</m>,
-          <m>R_{n}</m> for <m>n = 5</m>,
-          <m>n = 25</m>, and <m>n = 100</m>.
-          What appears to be the exact area bounded by
-          <m>f(x) = 2x+1</m> and the <m>x</m>-axis on <m>[1,4]</m>?
-        </p>
+          <p>
+            For this function on this interval,
+            compute <m>L_{n}</m>, <m>M_{n}</m>,
+            <m>R_{n}</m> for <m>n = 5</m>,
+            <m>n = 25</m>, and <m>n = 100</m>.
+            What appears to be the exact area bounded by
+            <m>f(x) = 2x+1</m> and the <m>x</m>-axis on <m>[1,4]</m>?
+          </p>
         </statement>
         <hint/>
          
