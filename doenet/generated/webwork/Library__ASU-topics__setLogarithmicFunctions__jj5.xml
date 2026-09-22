@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-Library__ASU-topics__setLogarithmicFunctions__jj5" assembly-id="Library__ASU-topics__setLogarithmicFunctions__jj5">
+  <static seed="27" source="Library/ASU-topics/setLogarithmicFunctions/jj5.pg">
+    <statement><p>The velocity (in ft/s) of a sky diver <m>t</m> seconds after jumping is given by
+<me>v(t) = 90 (1-e^{-0.2 t})</me>
+After how many seconds is the velocity 85 ft/s?</p>
+<p><fillin characters="50" name="AnSwEr0001"/> seconds</p>
+</statement>
+    <answer>
+      <p>
+        <m>14.4518587894808</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Library/ASU-topics/setLogarithmicFunctions/jj5.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="Library/ASU-topics/setLogarithmicFunctions/jj5.pg"/>
+</webwork-reps>

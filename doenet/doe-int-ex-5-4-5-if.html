@@ -12,18 +12,28 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
 <link href="_static/pretext/css/theme.css" rel="stylesheet" type="text/css">
-<link href="_static/pretext/css/ol-markers.css" rel="stylesheet" type="text/css">
+<style>
+@counter-style ptx-marker-1 { system: extends lower-alpha; prefix: ''; suffix: '. '; }
+@counter-style ptx-marker-2 { system: extends decimal; prefix: ''; suffix: '. '; }
+@counter-style ptx-marker-3 { system: extends lower-roman; prefix: ''; suffix: '. '; }
+@counter-style ptx-marker-4 { system: extends lower-roman; prefix: '('; suffix: ') '; }
+@counter-style ptx-marker-5 { system: extends lower-roman; prefix: ''; suffix: ') '; }
+@counter-style ptx-marker-6 { system: extends upper-alpha; prefix: ''; suffix: ' '; }
+@counter-style ptx-marker-7 { system: extends upper-alpha; prefix: ''; suffix: '. '; }
+@counter-style ptx-marker-0 { system: extends lower-alpha; prefix: '('; suffix: ') '; }
+</style>
 <script type="module">import { startMathJax } from './_static/pretext/js/dist/mathjax_startup.js';
 startMathJax({
-hasWebworkReps: false,
+hasWebworkReps: true,
 hasSage: false,
 isReact: false,
 htmlPresentation: false,
+lang: "en-US",
 });
-</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/style.css">
-<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@dev/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
+</script><script defer src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js"></script><link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7/style.css">
+<script onload="onLoad()" type="module" src="https://cdn.jsdelivr.net/npm/@doenet/standalone@0.7/doenet-standalone.js"></script><script>function onLoad() {window.renderDoenetViewerToContainer(document.querySelector(".doenetml-applet"))}</script>
 </head>
-<body class="ptx-content ignore-math" id="ac-single">
+<body class="ptx-content ignore-math" id="ac-single-d">
 <div id="latex-macros" class="hidden-content process-math" style="display:none"><span class="process-math">\(\newcommand{\dollar}{\$}
 \DeclareMathOperator{\erf}{erf}
 \DeclareMathOperator{\arctanh}{arctanh}
@@ -34,7 +44,7 @@ htmlPresentation: false,
 \definecolor{fillinmathshade}{gray}{0.9}
 \newcommand{\fillinmath}[1]{\mathchoice{\colorbox{fillinmathshade}{$\displaystyle     \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\textstyle        \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptstyle      \phantom{\,#1\,}$}}{\colorbox{fillinmathshade}{$\scriptscriptstyle\phantom{\,#1\,}$}}}
 \)</span></div>
-<div style="aspect-ratio: ;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true">
+<div style="aspect-ratio: ;"><div class="doenetml-applet" data-doenet-add-virtual-keyboard="false" data-doenet-send-resize-events="true" data-doenet-message-parent="true">
 <div class="doenetml-loading" style="text-align:center">
 <p><img src="https://www.doenet.org/Doenet_Logo_Frontpage.png"></p>
 <p>Waiting on the page to load...</p>
@@ -80,24 +90,6 @@ htmlPresentation: false,
 
   <function name="u1v1" variable="w">$u1*$v1</function>
   <function name="v1du1"  variable="w">$v1*$du1</function>
-   
-  <boolean name="correctuvSubsFound1">
-    $udvChoice1.creditAchieved=1 and $vduChoice1.creditAchieved=1
-  </boolean>
-  <boolean name="correctSubsFound1">
-    ($correctwSubsFound1 or $correctwSubsFound2) and $correctuvSubsFound1
-  </boolean>
-
-  <boolean name="udvisintegrand1">$uChoice1*$dvChoice1 = $wInt1</boolean>
-  <boolean name="almostu1"> $uChoice1 = <math>w</math> </boolean>
-  <boolean name="possibleu1"> $almostu1 or $uChoice1 = $u1 </boolean>
-
-  <derivative name="derivuChoice1" variable="w"> $uChoice1 </derivative>
-
-  <boolean name="udvanddu1">$duChoice1 = <derivative variable="w">$uChoice1</derivative> <!--and $udvChoice1.creditAchieved=1--></boolean>
-  <boolean name="udvandv1"><derivative variable="w">$vChoice1</derivative> = $dvChoice1 <!--and $udvChoice1.creditAchieved=1--></boolean>
-
-  <boolean name="wIBPFound1">$uvChoice1=$u1v1 and $vduChoiceinw1=$v1du1</boolean>
 
   <function name="u2" variable="w">1/($k^2*$n)*w</function>
   <function name="du2" variable="w">1/($k^2*$n)</function>
@@ -108,24 +100,10 @@ htmlPresentation: false,
   <function name="u2v2" variable="w">$u2*$v2</function>
   <function name="v2du2"  variable="w">$v2*$du2</function>
 
-  <derivative name="derivuChoice2" variable="w"> $uChoice2 </derivative>
-   
-  <boolean name="udvisintegrand2">$uChoice2*$dvChoice2 = $wInt2</boolean>   
-  <boolean name="almostu2"> $uChoice2 = <math>w</math> </boolean>
-  <boolean name="possibleu2"> $almostu2 or $uChoice2 = $u2 </boolean>
 
-  <boolean name="udvanddu2">$duChoice2 = <derivative variable="w">$uChoice2</derivative> <!--and $udvChoice1.creditAchieved=1--></boolean>
-  <boolean name="udvandv2"><derivative variable="w">$vChoice2</derivative> = $dvChoice2 <!--and $udvChoice1.creditAchieved=1--></boolean>
-
-  <boolean name="correctuvSubsFound2">
-    $udvChoice2.creditAchieved=1 and $vduChoice2.creditAchieved=1
-  </boolean>   
-  <boolean name="correctSubsFound2">
-    ($correctwSubsFound1 or $correctwSubsFound2) and $correctuvSubsFound2
-  </boolean>
-
-  <boolean name="wIBPFound2">$uvChoice2=$u2v2 and $vduChoiceinw2=$v2du2</boolean>
-   
+   <!-- <integer name="path1">1</integer>
+   <integer name="path2">1</integer> -->
+  
 </setup>
 
 <p>
@@ -144,12 +122,12 @@ htmlPresentation: false,
   <me>
     \int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx
   </me>
-  use an appropriate substitution (think about the composite function <m>e^{-$k x^$n}</m> that's present) to find an updated integral in terms of <m>w</m> to evaluate.  Determine and enter both <m>w</m> and<m>dw</m> below, and then fill in the updated integral provided.
+  use an appropriate substitution (think about the composite function <m>e^{-$k x^$n}</m> that's present) to find an updated integral in terms of <m>w</m> to evaluate.  Determine and enter both <m>w</m> and <m>dw</m> below, and then fill in the updated integral provided.
 </p>
 
 <p>
-  <m>w = </m><mathInput name="wChoice"/>, 
-  <m>dw = </m><mathInput name="dwChoice"/><m>dx</m> <answer forceSmallCheckWorkButton>
+  <mathInput name="wChoice"><label><m>w = </m></label></mathInput>, 
+  <mathInput name="dwChoice"><label><m>dw = </m></label></mathInput><m>dx</m> <answer forceSmallCheckWorkButton>
     <award>
       <when>
         <or>
@@ -161,7 +139,7 @@ htmlPresentation: false,
   </answer>
 </p>
 <p>
-  <m>\displaystyle \int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx = \int </m><mathInput name="wIntEntered"/><m>dw</m> 
+  <mathInput name="wIntEntered"><label><m>\displaystyle \int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx = \int </m></label></mathInput><m>dw</m> 
   <answer forceSmallCheckWorkButton>
     <award>
       <when>
@@ -174,13 +152,36 @@ htmlPresentation: false,
   </answer>
 </p>
 
+
   <p hide="$correctwSubsFound1 or $correctwSubsFound2">
     (<em>A subsequent prompt will appear here after you correctly identify a valid <m>w</m>-substitution.</em>)
   </p>
 
+<conditionalContent>
+  <!-- <p>This is the path when <m>w = $w</m></p> -->
+  <case condition="$correctwSubsFound1">
 
-<!-- <p>This is the path when <m>w = $w</m></p> -->
-  <div hide="not $correctwSubsFound1 ">
+  <setup>
+    <boolean name="correctuvSubsFound1">
+    $udvChoice1.creditAchieved=1 and $vduChoice1.creditAchieved=1
+  </boolean>
+  <boolean name="correctSubsFound1">
+    ($correctwSubsFound1 or $correctwSubsFound2) and $correctuvSubsFound1
+  </boolean>
+
+  <boolean name="udvisintegrand1">$uChoice1*$dvChoice1 = $wInt1</boolean>
+  <boolean name="almostu1"> $uChoice1 = <math>w</math> </boolean>
+  <boolean name="possibleu1"> $almostu1 or $uChoice1 = $u1 </boolean>
+
+  <derivative name="derivuChoice1" variable="w"> $uChoice1 </derivative>
+
+  <boolean name="udvanddu1">$duChoice1 = <derivative variable="w">$uChoice1</derivative> <!--and $udvChoice1.creditAchieved=1--></boolean>
+  <boolean name="udvandv1"><derivative variable="w">$vChoice1</derivative> = $dvChoice1 <!--and $udvChoice1.creditAchieved=1--></boolean>
+
+  <boolean name="wIBPFound1">$uvChoice1=$u1v1 and $vduChoiceinw1=$v1du1</boolean>
+  </setup>
+
+  <div hide="not $correctwSubsFound1">
     <p>
       Now the integral you have found in <m>w</m>, 
       <me>\int \frac{1}{$n} w e^{-$k w} \, dw</me>
@@ -188,19 +189,19 @@ htmlPresentation: false,
     </p>
 
     <p>
-      <m>u = </m><mathInput name="uChoice1"/>  <m>\qquad \qquad dv = </m><mathInput name="dvChoice1"/><m>dw =</m><mathInput disabled>$dvChoice1 dw </mathInput>
+      <mathInput name="uChoice1"><label><m>u = </m></label></mathInput>  <mathInput name="dvChoice1"><label><m>\qquad \qquad dv = </m></label></mathInput><m>dw =</m><mathInput disabled><shortDescription>what students entered along with the differential</shortDescription>$dvChoice1 dw </mathInput>
       <answer forceSmallCheckWorkButton name="udvChoice1"><award><when>$possibleu1 and $udvisintegrand1 </when></award></answer>
         <!-- <when matchPartial>$uChoice = $u and $dvChoice = $dv</when> -->
       <!-- This lets students pick where to put the constant multiple. -->
     </p>
-    <feedback condition="!$udvisintegrand and $udvChoice.justSubmitted">You are rewriting the given integral, which means that <m>u</m> and <m>dv</m> must multiply to <m>$wInt dw</m>.
+    <feedback condition="!$udvisintegrand1 and $udvChoice1.justSubmitted">You are rewriting the given integral, which means that <m>u</m> and <m>dv</m> must multiply to <m>$wIntEntered dw</m>.
     </feedback>
     <!-- <feedback condition="$udvisintegrand and $almostu">You did rewrite the integral and this would work, but for integration by parts we recommend making any constant multiple part of <m>u</m> instead of <m>dv</m>.
     </feedback> -->
     <p>
-      <m>du = </m><mathInput name="duChoice1"/><m>dw</m>
+      <mathInput name="duChoice1"><label><m>du = </m></label></mathInput><m>dw</m>
     
-      <m>\qquad \quad v = </m><mathInput name="vChoice1"/> <answer forceSmallCheckWorkButton name="vduChoice1"><award><when matchPartial> $udvanddu1 and $udvandv1</when></award></answer>
+      <mathInput name="vChoice1"><label><m>\qquad \quad v = </m></label></mathInput> <answer forceSmallCheckWorkButton name="vduChoice1"><award><when matchPartial> $udvanddu1 and $udvandv1</when></award></answer>
       <!-- <when matchPartial>$duChoice = $du and $vChoice = $v</when> -->
     </p>
 
@@ -213,7 +214,7 @@ htmlPresentation: false,
         </p>
         <p>
           <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx = \int \frac{1}{$n} w e^{-$k w} \, dw</m></p>
-        <p><m> \qquad \qquad \qquad = </m> <mathInput name="uvChoice1"/><m>\displaystyle - \int</m>  <mathInput name="vduChoiceinw1"/><m>dw</m> <answer forceSmallCheckWorkButton><award><when matchPartial>($uvChoice1=$u1v1) and ($vduChoiceinw1=$v1du1)</when></award></answer>
+        <p><m> \qquad \qquad \qquad = </m> <mathInput name="uvChoice1"><shortDescription>first part of the integration by parts formula</shortDescription></mathInput><m>\displaystyle - \int</m>  <mathInput name="vduChoiceinw1"><shortDescription>second part of the integration by parts formula</shortDescription></mathInput><m>dw</m> <answer forceSmallCheckWorkButton><award><when matchPartial>($uvChoice1=$u1v1) and ($vduChoiceinw1=$v1du1)</when></award></answer>
         </p>
 
       <p hide="$wIBPFound1">
@@ -225,18 +226,38 @@ htmlPresentation: false,
           </p>
           <p>
             <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = -\frac{1}{<math simplify>($k*$n)</math>}w e^{-$k w} + \int \frac{1}{<math simplify>($k*$n)</math>} e^{-$k w} \, dw </m></p>
-          <p><m>\qquad \qquad \qquad = </m> <mathInput name="finalW1" minWidth="150"/> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalW1 = -1/$n*w*1/$k*e^(-$k*w) - 1/$n*1/$k^2*e^(-$k*w)</when></award></answer>
+          <p><m>\qquad \qquad \qquad = </m> <mathInput name="finalW1" minWidth="150"><shortDescription>final answer still in terms of w</shortDescription></mathInput> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalW1 = -1/$n*w*1/$k*e^(-$k*w) - 1/$n*1/$k^2*e^(-$k*w)</when></award></answer>
           </p>
           <p>
-            <m>\qquad \qquad \qquad =</m> <mathInput name="finalX1" minWidth="150"/> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalX1 = -1/$n*x^$n*1/$k*e^(-$k*x^$n) - 1/$n*1/$k^2*e^(-$k*x^$n)</when></award></answer>
+            <m>\qquad \qquad \qquad =</m> <mathInput name="finalX1" minWidth="150"><shortDescription>final answer in terms of x</shortDescription></mathInput> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalX1 = -1/$n*x^$n*1/$k*e^(-$k*x^$n) - 1/$n*1/$k^2*e^(-$k*x^$n)</when></award></answer>
           </p>
         </div>
     </div>
   </div>
 
-
-
+</case>
+<else>
 <!-- <p>This is the path when <m>w = -$k*$w</m></p> -->
+
+<setup>
+  <derivative name="derivuChoice2" variable="w"> $uChoice2 </derivative>
+   
+  <boolean name="udvisintegrand2">$uChoice2*$dvChoice2 = $wInt2</boolean>   
+  <boolean name="almostu2"> $uChoice2 = <math>w</math> </boolean>
+  <boolean name="possibleu2"> $almostu2 or $uChoice2 = $u2 </boolean>
+
+  <boolean name="udvanddu2">$duChoice2 = <derivative variable="w">$uChoice2</derivative> <!--and $udvChoice1.creditAchieved=1--></boolean>
+  <boolean name="udvandv2"><derivative variable="w">$vChoice2</derivative> = $dvChoice2 <!--and $udvChoice1.creditAchieved=1--></boolean>
+
+  <boolean name="correctuvSubsFound2">
+    $udvChoice2.creditAchieved=1 and $vduChoice2.creditAchieved=1
+  </boolean>   
+  <boolean name="correctSubsFound2">
+    ($correctwSubsFound1 or $correctwSubsFound2) and $correctuvSubsFound2
+  </boolean>
+
+  <boolean name="wIBPFound2">$uvChoice2=$u2v2 and $vduChoiceinw2=$v2du2</boolean>
+</setup>
   <div hide="not $correctwSubsFound2 ">
     <p>
       Now the integral you have found in <m>w</m>, 
@@ -245,21 +266,19 @@ htmlPresentation: false,
     </p>
 
     <p>
-      <m>u = </m><mathInput name="uChoice2"/>  <m>\qquad \qquad dv = </m><mathInput name="dvChoice2"/><m>dw =</m><mathInput disabled>$dvChoice2 dw </mathInput>
+      <mathInput name="uChoice2"><label><m>u = </m></label></mathInput>  <mathInput name="dvChoice2"><label><m>\qquad \qquad dv = </m></label></mathInput><m>dw =</m><mathInput disabled><shortDescription>what students entered and the differential</shortDescription>$dvChoice2 dw </mathInput>
       <answer forceSmallCheckWorkButton name="udvChoice2"><award><when>$possibleu2 and $udvisintegrand2 </when></award></answer>
-        <!-- <when matchPartial>$uChoice = $u and $dvChoice = $dv</when> -->
-      <!-- This lets students pick where to put the constant multiple. -->
       
     </p>
-    <feedback condition="!$udvisintegrand2 and $udvChoice2.justSubmitted">You are rewriting the given integral, which means that <m>u</m> and <m>dv</m> must multiply to <m>$wInt dw</m>.
+    <feedback condition="!$udvisintegrand2 and $udvChoice2.justSubmitted">You are rewriting the given integral, which means that <m>u</m> and <m>dv</m> must multiply to <m>$wIntEntered dw</m>.
     </feedback>
     <!-- <feedback condition="$udvisintegrand and $almostu">You did rewrite the integral and this would work, but for integration by parts we recommend making any constant multiple part of <m>u</m> instead of <m>dv</m>.
     </feedback> -->
 
     <p>
-      <m>du = </m><mathInput name="duChoice2"/><m>dw</m>
+      <mathInput name="duChoice2"><label><m>du = </m></label></mathInput><m>dw</m>
     
-      <m>\qquad \quad v = </m><mathInput name="vChoice2"/> <answer forceSmallCheckWorkButton name="vduChoice2"><award><when matchPartial> $udvanddu2 and $udvandv2</when></award></answer>
+      <mathInput name="vChoice2"><label><m>\qquad \quad v = </m></label></mathInput> <answer forceSmallCheckWorkButton name="vduChoice2"><award><when matchPartial> $udvanddu2 and $udvandv2</when></award></answer>
       <!-- <when matchPartial>$duChoice = $du and $vChoice = $v</when> -->
     </p>
 
@@ -272,8 +291,8 @@ htmlPresentation: false,
           Next, fill in the blanks in the Integration by Parts formula using the substitutions you found above.
         </p>
         <p>
-          <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx = \int \frac{1}{$k^2*$n} w e^{w} \, dw</m></p>
-        <p><m> \qquad \qquad \qquad = </m> <mathInput name="uvChoice2"/><m>\displaystyle - \int</m>  <mathInput name="vduChoiceinw2"/><m>dw</m> <answer forceSmallCheckWorkButton><award><when matchPartial>($uvChoice2=$u2v2) and ($vduChoiceinw2=$v2du2)</when></award></answer>
+          <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \int x^{<math simplify>$n-1</math>} \cdot x^{$n} e^{-$k x^$n} \, dx = \int \frac{1}{<math simplify>($k^2 * $n)</math>} w e^{w} \, dw</m></p>
+        <p><m> \qquad \qquad \qquad = </m> <mathInput name="uvChoice2"><shortDescription>first part of the integration by parts formula</shortDescription></mathInput><m>\displaystyle - \int</m>  <mathInput name="vduChoiceinw2"><shortDescription>second part of the integration by parts formula</shortDescription></mathInput><m>dw</m> <answer forceSmallCheckWorkButton><award><when matchPartial>($uvChoice2=$u2v2) and ($vduChoiceinw2=$v2du2)</when></award></answer>
         </p>
        <p hide="$wIBPFound2">
       (<em>A final prompt will appear here after you correctly complete the most recent steps above.</em>)
@@ -283,16 +302,18 @@ htmlPresentation: false,
             Now let's put everything together to completely evaluate the original indefinite integral by evaluating the one remaining integral in <m>w</m> and then substituting back to the original variable <m>x</m>.
           </p>
           <p>
-            <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \frac{1}{<math simplify>($k^2*$n)</math>}w e^{w} - \int \frac{1}{<math simplify>($k^2*$n)</math>} e^{w} \, dw </m></p>
-          <p><m>\qquad \qquad \qquad = </m> <mathInput name="finalW2" minWidth="150"/> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalW2 = 1/($k^2*$n)*w*e^(w) - 1/($k^2*$n)*e^(w) </when></award></answer>
+            <m>\displaystyle\int x^{<math simplify>2$n-1</math>} e^{-$k x^$n} \, dx = \frac{1}{<math simplify>($k^2*$n)</math>}w e^{w} - \int \frac{1}{<math simplify>($k^2 * $n)</math>} e^{w} \, dw </m></p>
+          <p><m>\qquad \qquad \qquad = </m> <mathInput name="finalW2" minWidth="150"><shortDescription>final answer still in terms of w</shortDescription></mathInput> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalW2 = 1/($k^2*$n)*w*e^(w) - 1/($k^2*$n)*e^(w) </when></award></answer>
           </p>
           <p>
-            <m>\qquad \qquad \qquad =</m> <mathInput name="finalX2" minWidth="150"/> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalX2 = -1/$n*x^$n*1/$k*e^(-$k*x^$n) - 1/$n*1/$k^2*e^(-$k*x^$n)</when></award></answer>
+            <m>\qquad \qquad \qquad =</m> <mathInput name="finalX2" minWidth="150"><shortDescription>final answer in terms of x</shortDescription></mathInput> <m>+C</m> <answer forceSmallCheckWorkButton><award><when>$finalX2 = -1/$n*x^$n*1/$k*e^(-$k*x^$n) - 1/$n*1/$k^2*e^(-$k*x^$n)</when></award></answer>
           </p>
         </div>
     </div>
     
   </div>
+</else>
+</conditionalContent>
 
         </script>
 </div></div>

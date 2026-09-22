@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-Library__ma122DB__set6__s3_8_4" assembly-id="Library__ma122DB__set6__s3_8_4">
+  <static seed="39" source="Library/ma122DB/set6/s3_8_4.pg">
+    <statement><p>If <m>f(x) = 3 \cos(5\ln(x))</m>, find <m>f'( x )</m>.</p>
+<p>Answer: <fillin characters="50" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{-3\sin\mathopen{}\left(5\ln\mathopen{}\left(x\right)\right)\cdot 5}{x}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="Library/ma122DB/set6/s3_8_4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="Library/ma122DB/set6/s3_8_4.pg"/>
+</webwork-reps>

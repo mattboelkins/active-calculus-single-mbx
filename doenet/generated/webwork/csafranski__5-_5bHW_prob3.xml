@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__5-_5bHW_prob3" assembly-id="csafranski__5-_5bHW_prob3">
+  <static seed="61" source="csafranski/5.5bHW_prob3.pg">
+    <statement><p>Evaluate the indefinite integral.</p>
+<p><m>\displaystyle \int 4\cot^{3}\mathopen{}\left(12x\right)\csc^{3}\mathopen{}\left(12x\right) \,dx \ = \ </m> <fillin characters="45" name="AnSwEr0001"/></p>
+<p>Select the trigonometric identity you used in solving this problem.</p>
+<p><var form="buttons">
+<li>
+<p><m>\displaystyle  \cos^2 u = \frac{1+\cos(2 u)}{2}</m></p>
+</li>
+<li>
+<p><m>\displaystyle  \sin^2 u = \frac{1-\cos(2 u)}{2}</m></p>
+</li>
+<li>
+<p><m>\displaystyle  \sin^2 u + \cos^2 u = 1</m></p>
+</li>
+<li>
+<p><m>\displaystyle 1+ \cot^2 u = \csc^2 u</m></p>
+</li>
+<li>
+<p><m>\displaystyle \tan^2 u +1 = \sec^2 u</m></p>
+</li>
+<li>
+<p>None of the above</p>
+</li>
+</var></p>
+</statement>
+    <hint><p>The integral involves <m>\cot u</m> and <m>\csc u</m> where the exponent of <m>\cot u</m> is odd and positive.  So we rewrite in order to have a copy of <m>\csc(12 x) \cot(12 x)</m> and use a trigonometric identity to turn the remaining even powers of <m>\cot(12 x)</m> into an expression of <m>\csc^2(12 x)</m>.  Then use u-substitution with <m>u= \csc(12 x)</m>.</p>
+<p>Thus the integral can be rewritten as
+<me>\int 4\cot^{3}\mathopen{}\left(12x\right)\csc^{3}\mathopen{}\left(12x\right) \, dx  =   4 \int \cot^2(12 x) \csc^2(12 x) \csc(12 x) \cot(12 x) \, dx</me>    
+<me>= 4 \int \bigg( \csc^2(12 x)-1 \bigg) \csc^2(12 x) \csc(12 x) \cot(12 x) \, dx</me>    
+Now let <m>u= \csc(12 x)</m>.</p>
+<p>Letting <m>u= \csc(12 x)</m> means that <m>du= -12 \csc(12 x)\cot(12 x) \, dx</m>, and thus <m>dx= \frac{du}{-12\csc(12 x)\cot(12 x)}</m>.</p>
+<p>So the integral turns into
+<me>= 4 \int \bigg( u^2-1 \bigg) u^2 \csc(12 x) \cot(12 x) \frac{du}{-12\csc(12 x)\cot(12 x)}</me></p>
+</hint>
+    <answer>
+      <p>
+        <m>-0.333333\mathopen{}\left(\frac{\csc^{5}\mathopen{}\left(12x\right)}{5}-\frac{\csc^{3}\mathopen{}\left(12x\right)}{3}\right)+C</m>
+      </p>
+    </answer>
+    <solution><p>The integral involves <m>\cot u</m> and <m>\csc u</m> where the exponent of <m>\cot u</m> is odd and positive.  So we rewrite in order to have a copy of <m>\csc(12 x) \cot(12 x)</m> and use a trigonometric identity to turn the remaining even powers of <m>\cot(12 x)</m> into an expression of <m>\csc^2(12 x)</m>.</p>
+<p>Then let <m>u= \csc(12 x)</m>, which means that <m>du= -12 \csc(12 x)\cot(12 x) \, dx</m>, and thus <m>dx= \frac{du}{-12\csc(12 x)\cot(12 x)}</m>.  
+<me>\begin{aligned}
+\int 4\cot^{3}\mathopen{}\left(12x\right)\csc^{3}\mathopen{}\left(12x\right) \, dx
+\amp =      4 \int \cot^2(12 x) \csc^2(12 x) \csc(12 x) \cot(12 x) \, dx        \\\\
+\amp =     4 \int \bigg( \csc^2(12 x)-1 \bigg) \csc^2(12 x) \csc(12 x) \cot(12 x) \, dx        \\\\
+\amp =      4 \int \bigg( u^2-1 \bigg) u^2 \csc(12 x) \cot(12 x) \frac{du}{-12\csc(12 x)\cot(12 x)} \\\\
+\amp =     \frac{4}{-12} \int \bigg( u^2-1 \bigg) u^2 \, du  \\\\
+\amp =      \frac{4}{-12} \int \bigg( u^4-u^2 \bigg) \, du  \\\\
+\amp =      \frac{4}{-12} \bigg[\frac{ u^5}{5}-\frac{u^3}{3}\bigg]+C   \\\\
+\amp =      \frac{4}{-12} \bigg[\frac{ \csc^5(12 x)}{5}-\frac{\csc^3(12 x)}{3}\bigg]+C
+\end{aligned}</me></p>
+<p>The correct trigonometric identity used is D.</p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5bHW_prob3.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5bHW_prob3.pg"/>
+</webwork-reps>

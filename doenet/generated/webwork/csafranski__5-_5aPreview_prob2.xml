@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__5-_5aPreview_prob2" assembly-id="csafranski__5-_5aPreview_prob2">
+  <static seed="43" source="csafranski/5.5aPreview_prob2nicer.pg">
+    <statement><p>First, note that we can use algebra to combine <m>\frac{5}{x+2}+\frac{-6}{x-2}</m> into one fraction by finding a common denominator.</p>
+<p><me>\frac{5}{x+2}+\frac{-6}{x-2} = \frac{5}{x+2}\cdot\frac{x-2}{x-2}+\frac{-6}{x-2}\cdot \frac{x+2}{x+2}=\frac{-\left(x+22\right)}{x^{2}-4}</me></p>
+<p>Also note that we know how to integrate</p>
+<p><m>\displaystyle \int \frac{5}{x+2} \, dx =</m> <fillin characters="25" name="AnSwEr0001"/> and</p>
+<p><m>\displaystyle \int \frac{-6}{x-2} \, dx =</m> <fillin characters="25" name="AnSwEr0002"/></p>
+<p>Which means we can integrate both sides of <m>\frac{5}{x+2}+\frac{-6}{x-2} = \frac{-\left(x+22\right)}{x^{2}-4}</m> to get</p>
+<p><m>\displaystyle \int \frac{-\left(x+22\right)}{x^{2}-4} \, dx =</m> <fillin characters="25" name="AnSwEr0003"/></p>
+</statement>
+    <hint><p>Remember that you really should use absolute value instead of parentheses when you integrate to get <m>\ln</m>.  Sometimes WeBWorK doesn't care about the difference, but sometimes it does.  For example, <m>\int \frac{1}{x+11} \, dx = \ln |x+11| +C</m>, not <m>\ln(x+11) +C</m>.</p>
+</hint>
+    <answer>
+      <p>
+        <m>5\ln\mathopen{}\left(\left|x-\left(-2\right)\right|\right)+C</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>-6\ln\mathopen{}\left(\left|x-2\right|\right)+C</m>
+      </p>
+    </answer>
+    <answer>
+      <p>
+        <m>5\ln\mathopen{}\left(\left|x+2\right|\right)+\left(-6\right)\ln\mathopen{}\left(\left|x-2\right|\right)+C</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5aPreview_prob2nicer.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5aPreview_prob2nicer.pg"/>
+</webwork-reps>

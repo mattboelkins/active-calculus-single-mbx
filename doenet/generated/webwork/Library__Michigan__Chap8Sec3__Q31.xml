@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-Library__Michigan__Chap8Sec3__Q31" assembly-id="Library__Michigan__Chap8Sec3__Q31">
+  <static seed="83" source="Library/Michigan/Chap8Sec3/Q31.pg">
+    <statement><p>Find the equation (in terms of <m>x</m> and <m>y</m>) of the tangent line to
+the curve <m>r=2\sin3\theta</m> at <m>\theta=\pi/4</m>.</p>
+<p><m>y =</m> <fillin characters="35" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2\sin\mathopen{}\left(3\cdot 0.785398\right)\sin\mathopen{}\left(0.785398\right)+0.5\mathopen{}\left(x-2\sin\mathopen{}\left(3\cdot 0.785398\right)\cos\mathopen{}\left(0.785398\right)\right)</m>
+      </p>
+    </answer>
+    <solution><m>x</m> and
+<m>y</m> as being parametrically equations with parameter <m>\theta</m>:
+<me>x = r\cos(\theta) = 2 \sin(3\theta) \cos(\theta),
+\ \hbox{and}\ 
+y = r\sin(\theta) = 2 \sin(3\theta) \sin(\theta).</me>
+Then we know that the slope of the tangent line is 
+<m>{dy\over dx} = {dy/d\theta\over dx/d\theta}</m>.  Taking the
+derivatives, 
+<m>{dx\over d\theta} = 2(3\cos(3\theta)\cos(\theta) -
+    \sin(3\theta)\sin(\theta))</m> and
+<m>{dy\over d\theta} = 2(3\cos(3\theta)\sin(\theta) +
+    \sin(3\theta)\cos(\theta))</m>.  
+Thus
+<me>{dy\over dx} = {3\cos(3\theta)\sin(\theta) + \sin(3\theta)\cos(\theta)
+    \over
+    3\cos(3\theta)\cos(\theta) - \sin(3\theta)\sin(\theta) }.</me>
+We want this at <m>\theta = \pi/4</m>, so that we get 
+<m>{dy\over dx}\approx 0.5</m>.  Then, at <m>\theta = \pi/4</m>, 
+<m>x(\pi/4) = 2 \sin(3\cdot \pi/4)\cos(\pi/4) \approx 1</m>,
+and 
+<m>y(\pi/4) = 2 \sin(3\cdot \pi/4)\sin(\pi/4) \approx 1</m>,
+so that the tangent line is
+<me>y \approx 1 + (0.5)(x - 1).</me>
+(Note, however, that the correct answer may require more significant 
+figures than are shown in this solution.)
+
+
+
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Library/Michigan/Chap8Sec3/Q31.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="Library/Michigan/Chap8Sec3/Q31.pg"/>
+</webwork-reps>

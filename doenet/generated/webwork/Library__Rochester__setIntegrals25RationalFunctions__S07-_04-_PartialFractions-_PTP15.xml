@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-Library__Rochester__setIntegrals25RationalFunctions__S07-_04-_PartialFractions-_PTP15" assembly-id="Library__Rochester__setIntegrals25RationalFunctions__S07-_04-_PartialFractions-_PTP15">
+  <static seed="48" source="csafranski/5.5aHW_prob3.pg">
+    <statement><p>What is the correct form of the partial fraction decomposition for the following integral? <me>\int \frac{x - 8}{x^3 + 8 x^2 - 33 x} \, dx</me></p>
+<p><ol form="buttons" marker="A" name="AnSwEr0001">
+<li>
+<p>There is no partial fraction decomposition yet because there is cancellation.</p>
+</li>
+<li>
+<p><m>\displaystyle \int \left( \frac{A}{x - 8} + \frac{B}{x - 11} + \frac{C}{x + 3}  \right)\, dx </m></p>
+</li>
+<li>
+<p>There is no partial fraction decomposition yet because long division must be done first.</p>
+</li>
+<li>
+<p><m>\displaystyle \int \left( \frac{A}{x} + \frac{B x + C}{x - 8} + \frac{D x + E}{x + 3} \right)\, dx </m></p>
+</li>
+<li>
+<p>There is no partial fraction decomposition because the denominator does not factor.</p>
+</li>
+<li>
+<p><m>\displaystyle \int \left( \frac{A x + B}{x} + \frac{C x + D}{x - 3} + \frac{E x + F}{x + 11} \right)\, dx </m></p>
+</li>
+<li>
+<p><m>\displaystyle \int \left( \frac{A}{x} + \frac{B}{x - 8} + \frac{C}{x + 3} \right)\, dx </m></p>
+</li>
+<li>
+<p><m>\displaystyle \int \left( \frac{A}{x} + \frac{B}{x - 3} + \frac{C}{x + 11} \right)\, dx </m></p>
+</li>
+</ol></p>
+</statement>
+    <answer>
+      <p>
+        <m>\text{H}</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5aHW_prob3.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5aHW_prob3.pg"/>
+</webwork-reps>

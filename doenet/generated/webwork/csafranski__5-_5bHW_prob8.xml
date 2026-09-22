@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__5-_5bHW_prob8" assembly-id="csafranski__5-_5bHW_prob8">
+  <static seed="66" source="csafranski/5.5bHW_prob8.pg">
+    <statement><p>Evaluate the indefinite integral.</p>
+<p><m>\displaystyle\int \sin(3 x)\cos(5 x)\ dx=</m>
+<fillin characters="30" name="AnSwEr0001"/> <m>+C</m></p>
+</statement>
+    <answer>
+      <p>
+        <m>-0.5\mathopen{}\left(\frac{\cos\mathopen{}\left(8x\right)}{8}+\frac{\cos\mathopen{}\left(-2x\right)}{-2}\right)</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5bHW_prob8.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5bHW_prob8.pg"/>
+</webwork-reps>

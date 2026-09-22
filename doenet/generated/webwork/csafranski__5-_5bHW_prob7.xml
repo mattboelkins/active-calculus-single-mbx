@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__5-_5bHW_prob7" assembly-id="csafranski__5-_5bHW_prob7">
+  <static seed="65" source="csafranski/5.5bHW_prob7.pg">
+    <statement><p>Evaluate the integral 
+<m>\displaystyle \int {2 \cot^5(x) \sin^4(x)}\, dx\ =</m> <fillin characters="45" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>2\ln\mathopen{}\left(\left|\sin\mathopen{}\left(x\right)\right|\right)-2\sin^{2}\mathopen{}\left(x\right)+0.5\sin^{4}\mathopen{}\left(x\right)+C</m>
+      </p>
+    </answer>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5bHW_prob7.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5bHW_prob7.pg"/>
+</webwork-reps>

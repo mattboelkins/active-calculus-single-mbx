@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-Library__Michigan__Chap8Sec3__Q27" assembly-id="Library__Michigan__Chap8Sec3__Q27">
+  <static seed="87" source="Library/Michigan/Chap8Sec3/Q27.pg">
+    <statement><p>Find the area lying outside <m>r=6\cos\theta</m> and inside
+<m>r=3 + 3 \cos\theta</m>.</p>
+<p>Area = <fillin characters="35" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>14.1371669411541</m>
+      </p>
+    </answer>
+    <solution><m>r=6\cos\theta</m> is a circle with radius 3 centered on
+(3,0), while <m>r=3 + 3 \cos\theta</m> is a cardioid that entirely encloses the
+circle.   Therefore, to find the area, we subtract the area enclosed
+by the circle from that enclosed by the cardioid.
+
+
+
+The cardioid, <m>r=3 + 3 \cos\theta</m>, is traced out as <m>\theta</m> goes from
+<m>\theta=0</m> to <m>\theta=2\pi</m>.  Thus, remembering that the area
+enclosed by a region lying within the polar equation <m>r = f(\theta)</m>
+is Area<m>= \int_\alpha^\beta\,{1\over2}(f(\theta))^2\,d\theta</m>, 
+<me>\hbox{Area of cardioid } = \int_0^{2\pi}{1\over2}(3 + 3 \cos\theta)^2\,d\theta.</me>
+The circle is traced out as <m>\theta</m> goes from <m>\theta=0</m> to
+<m>\theta=\pi</m>, so its area is 
+<me>\hbox{Area of circle }= \int_0^{\pi}{1\over2}(6\cos\theta)^2\,d\theta.</me>
+Of course, because the circle has radius 3, we know this second
+integral will evaluate to <m>9 \pi</m>.
+
+
+
+
+We can find the area of the cardioid, 
+<me>\int_0^{2\pi}{1\over2}(3 + 3 \cos\theta)^2\,d\theta = 
+  {1\over2}\int_0^{2\pi} 9 (1 + 2\cos\theta + \cos^2\theta)\,d\theta,</me>
+numerically by using a calculator, or by parts, or using a table of
+integrals, to find that the area of the cardioid is <m>A = {27\pi\over 2}</m>.
+
+
+
+
+Thus, the area enclosed by the cardioid that lies outside of the
+circle is given by <m>A = {27\pi\over 2} - 9\pi = {9\pi\over 2}</m>.
+
+
+
+</solution>
+  </static>
+  <rendering-data sourceFilePath="Library/Michigan/Chap8Sec3/Q27.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="Library/Michigan/Chap8Sec3/Q27.pg"/>
+</webwork-reps>

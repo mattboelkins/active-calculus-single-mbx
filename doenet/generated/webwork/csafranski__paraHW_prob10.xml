@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__paraHW_prob10" assembly-id="csafranski__paraHW_prob10">
+  <static seed="78" source="csafranski/paraHW_prob10.pg">
+    <statement><p>Find the area of the region enclosed by the parametric equation</p>
+<p><me>x =  t^3 - 6 t</me>
+<me>y = 9 t^2</me>
+<fillin characters="20" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>423.271827552933</m>
+      </p>
+    </answer>
+    <solution><m>t = \sqrt {6}</m> and <m>t = -\sqrt {6}</m> yields the same x and y coordinates, namely (0,54).  These two values of t are going to be the upper and lower limits of integration.
+
+
+
+The area under a curve defined by
+parameters <m>x = f(t)</m> and <m>y = g(t)</m> can be expressed
+<me>A = \int ydx =\int g(t)f'(t)dt</me>
+Plugging in the functions and the upper and lower limits of integration, we have
+<me>A = \int_{-\sqrt{6}}^{\sqrt{6}} 9 t^2 (3 t^2 - 6) dt</me>
+<me>= (2) (9) \int_{0}^{\sqrt{6}} (3 t^4 - 6 t^2) dt</me>
+<me>= 18 \left[ \frac {3}{5} t^5 - \frac {6}{3} t^3                             \right]_{0}^{\sqrt{6}}</me>
+<me>= 18 \left[ \frac {3}{5} 6^{5/2} - \frac {6}{3} 6^{3/2}                             \right]</me>
+<me>= 423.271827552933</me>
+
+</solution>
+  </static>
+  <rendering-data sourceFilePath="csafranski/paraHW_prob10.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/paraHW_prob10.pg"/>
+</webwork-reps>

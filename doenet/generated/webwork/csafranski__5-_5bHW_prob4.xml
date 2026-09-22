@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<webwork-reps version="2" webwork2_major_version="2" webwork2_minor_version="20" xml:id="extracted-csafranski__5-_5bHW_prob4" assembly-id="csafranski__5-_5bHW_prob4">
+  <static seed="62" source="csafranski/5.5bHW_prob4.pg">
+    <statement><p>Evaluate the indefinite integral.</p>
+<p><m>\displaystyle \int 216 \cos^4(18 x) dx \ =</m>  <fillin characters="50" name="AnSwEr0001"/></p>
+</statement>
+    <answer>
+      <p>
+        <m>\frac{648x}{8}+12\mathopen{}\left(\frac{\sin\mathopen{}\left(36x\right)}{4}+\frac{\sin\mathopen{}\left(72x\right)}{32}\right)+C</m>
+      </p>
+    </answer>
+    <solution><p><me>\begin{aligned}
+\int 216 \cos^4(18 x)dx
+\amp =	216 \int \left( \cos^2(18 x) \right)^2 dx	\\\\
+\amp =	216 \int \left( \frac 1 2 (1 + \cos(36 x)) \right)^2 dx	\\\\
+\amp =	54 \left( \int dx + 2 \int \cos(36 x) dx
+		+ \int \cos^2(36 x) dx \right)	\\\\
+\amp =	54 \left( x + \frac{1}{18} \sin(36 x)
+		+ \int \frac 1 2 \left(1 + \cos(72 x)\right) dx
+		    \right)	\\\\
+\amp =	54 \left( x + \frac{1}{18} \sin(36 x)
+		+ \frac 1 2 \int dx + \frac 1 2 \int \cos(72 x)dx
+		    \right)	\\\\
+\amp =	54 \left( x + \frac{1}{18} \sin(36 x) + \frac x 2
+		+ \frac{1}{144} \sin(72 x) \right)	\\\\
+\amp =	81 x + 3 \sin(36 x)
+		+ \frac{54}{144} \sin(72 x)
+\end{aligned}</me></p>
+</solution>
+  </static>
+  <rendering-data sourceFilePath="csafranski/5.5bHW_prob4.pg" origin="webwork2" domain="https://webwork-ptx.aimath.org" course-id="anonymous" user-id="anonymous" passwd="anonymous" language="en-US"/>
+  <pg source="csafranski/5.5bHW_prob4.pg"/>
+</webwork-reps>
