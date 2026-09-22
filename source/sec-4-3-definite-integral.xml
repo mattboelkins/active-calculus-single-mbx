@@ -227,7 +227,7 @@
       <image width="47%" source="images/4_3_TrapArea">
         <description>
           <p>
-            In the window <m>[0,6] \times [0,11]</m>, ****
+            In the window <m>[0,6] \times [0,11]</m>, a plot of the function <m>f(x)=2x+1</m> and the area it bounds along with the <m>x</m>-axis on the interval <m>[1,4]</m>.  The region is a trapezoid, is shaded, and is labeled with integral notation: <m>\int_1^4 (2x+1) \, dx</m>.
           </p>
         </description>
       </image>
@@ -273,9 +273,16 @@
     </p>
 
     <figure xml:id="F-4-3-AdditiveProp">
-      <caption>The area bounded by <m>y=f(x)</m> on the interval <m>[a,c]</m>.</caption>
-      <image width="47%" source="images/4_3_AdditiveProp"><description><p>The area bounded by <m>y=f(x)</m> on the interval <m>[a,c]</m>.</p>
-      </description></image>
+      <caption>
+        The area bounded by <m>y=f(x)</m> on the interval <m>[a,c]</m>.
+      </caption>
+      <image width="47%" source="images/4_3_AdditiveProp">
+        <description>
+          <p>
+            On axes without scale, a plot of a cubic polynomial function that passes through <m>(0,0)</m>, is positive in the first quadrant.  On the <m>x</m> axis, three values are noted and labeled that satisfy <m>0 \lt a \lt b \lt c</m>.  In the first quadrant, <m>f</m> is first increasing, then is decreasing, and then again increasing as <m>x</m> increases. The area bounded by <m>y=f(x)</m> and the <m>x</m>-axis on the interval <m>[a,c]</m> is shaded and subdivided: on <m>[a,b]</m> the area is labeled <m>A_1</m>, while on <m>[b,c]</m> the area is labeled <m>A_2</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 <!--</sidebyside>-->
     <assemblage>
@@ -344,9 +351,19 @@
     </p>
 
     <figure xml:id="F-4-3-ConstMult">
-      <caption>The areas bounded by <m>y = f(x)</m> and <m>y = 2f(x)</m> on <m>[a,b]</m>.</caption>
-      <image width="90%" source="images/4_3_ConstMult"><description><p>The areas bounded by <m>y = f(x)</m> and <m>y = 2f(x)</m> on <m>[a,b]</m>.</p>
-      </description></image>
+      <caption>
+        The areas bounded by <m>y = f(x)</m> and <m>y = 2f(x)</m> on <m>[a,b]</m>.
+      </caption>
+      <image width="90%" source="images/4_3_ConstMult">
+        <description>
+          <p>
+            Two adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, a sinusoidal function <m>y = f(x)</m> is shown that is always positive with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
+          </p>
+          <p>
+            In the right graph, the sinusoidal function <m>y = 2f(x)</m> is shown along with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  The factor of <m>2</m> scales the original graph vertically by that factor.  There's also a representative rectangle of area <m>B = 2f(x_i) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = 2f(x)</m> in this graph is twice the area seen in the left graph.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -382,9 +399,19 @@
     </p>
 
     <figure xml:id="F-4-3-Sum">
-      <caption>The areas bounded by <m>y = f(x)</m> and <m>y = g(x)</m> on <m>[a,b]</m>, as well as the area bounded by <m>y = f(x) + g(x)</m>.</caption>
-      <image width="100%" source="images/4_3_Sum"><description><p>The areas bounded by <m>y = f(x)</m> and <m>y = g(x)</m> on <m>[a,b]</m>, as well as the area bounded by <m>y = f(x) + g(x)</m>.</p>
-      </description></image>
+      <caption>
+        The areas bounded by <m>y = f(x)</m> and <m>y = g(x)</m> on <m>[a,b]</m>, as well as the area bounded by <m>y = f(x) + g(x)</m>.
+      </caption>
+      <image width="100%" source="images/4_3_Sum">
+        <description>
+          <p>
+            Three *** adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, a sinusoidal function <m>y = f(x)</m> is shown that is always positive with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
+          </p>
+          <p>
+            In the right graph, the sinusoidal function <m>y = 2f(x)</m> is shown along with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  The factor of <m>2</m> scales the original graph vertically by that factor.  There's also a representative rectangle of area <m>B = 2f(x_i) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = 2f(x)</m> in this graph is twice the area seen in the left graph.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
