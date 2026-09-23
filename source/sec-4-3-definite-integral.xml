@@ -357,10 +357,10 @@
       <image width="90%" source="images/4_3_ConstMult">
         <description>
           <p>
-            Two adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, a sinusoidal function <m>y = f(x)</m> is shown that is always positive with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
+            Two adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, an always positive sinusoidal function <m>y = f(x)</m> is shown along with the shaded area it bounds with the <m>x</m>-axis on <m>[a,b]</m>.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
           </p>
           <p>
-            In the right graph, the sinusoidal function <m>y = 2f(x)</m> is shown along with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  The factor of <m>2</m> scales the original graph vertically by that factor.  There's also a representative rectangle of area <m>B = 2f(x_i) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = 2f(x)</m> in this graph is twice the area seen in the left graph.
+            In the right graph, the sinusoidal function <m>y = 2f(x)</m> is shown along with the shaded area it bounds along with the <m>x</m>-axis on <m>[a,b]</m>.  There's also a representative rectangle of area <m>B = 2f(x_i) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = 2f(x)</m> is twice the area seen in the left graph.
           </p>
         </description>
       </image>
@@ -405,10 +405,13 @@
       <image width="100%" source="images/4_3_Sum">
         <description>
           <p>
-            Three *** adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, a sinusoidal function <m>y = f(x)</m> is shown that is always positive with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
+            Three adjacent graphs are shown on the same window that emphasizes the first quadrant.  In the left graph, the sinusoidal function <m>y = f(x)</m> from the preceding figure is shown: <m>f</m> is always positive on <m>[a,b]</m>, and the area it bounds along with the <m>x</m>-axis is shaded.  There's also a representative rectangle of area <m>A = f(x_i) \triangle x</m> sketched and shaded.  
           </p>
           <p>
-            In the right graph, the sinusoidal function <m>y = 2f(x)</m> is shown along with the area it bounds along with the <m>x</m>-axis on <m>[a,b]</m> shaded.  The factor of <m>2</m> scales the original graph vertically by that factor.  There's also a representative rectangle of area <m>B = 2f(x_i) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = 2f(x)</m> in this graph is twice the area seen in the left graph.
+            In the middle graph, a decreasing, concave up, always positive exponential function <m>y = g(x)</m> is shown, along with the area it bounds on <m>[a,b]</m>; the area is shaded.  There's also a representative rectangle of area <m>B = g(x_i) \triangle x</m> sketched and shaded.  
+          </p>
+          <p>
+            In the right graph, the function <m>y = f(x) + g(x)</m> is shown along with the shaded area it bounds along with the <m>x</m>-axis on <m>[a,b]</m>.  There's also a representative rectangle of area <m>C = (f(x_i) + g(x_i)) \triangle x</m> sketched and shaded, which emphasizes the point that the area bounded by <m>y = f(x) + g(x)</m> is the sum of the areas in the left and middle graphs.
           </p>
         </description>
       </image>
@@ -531,9 +534,25 @@
     </p>
 
     <figure xml:id="F-4-3-AvgVal">
-      <caption>A function <m>y = f(x)</m>, the area it bounds, and its average value on <m>[a,b]</m>.</caption>
-      <image width="100%" source="images/4_3_AvgVal"><description><p>A function <m>y = f(x)</m>, the area it bounds, and its average value on <m>[a,b]</m>.</p>
-      </description></image>
+      <caption>
+        A function <m>y = f(x)</m>, the area it bounds, and its average value on <m>[a,b]</m>.
+      </caption>
+      <image width="100%" source="images/4_3_AvgVal">
+        <description>
+          <p>
+            There are three adjacent copies of the same function and the area it bounds with different parts of the graph emphasized.  The function is a concave up parabola with its vertex in the first quadrant between <m>a</m> and <m>b</m> on the interval of interest, <m>[a,b]</m>.
+          </p>
+          <p>
+            In the leftmost image, the area bounded by <m>f(x)</m> on <m>[a,b]</m> is shaded and labeled <m>\int_a^b f(x) \, dx</m>.
+          </p>
+          <p>
+            In the middle image, the function's average value, <m>f_{\operatorname{AVG} [a,b]}</m>, is shown via the horizontal line <m>y = f_{\operatorname{AVG} [a,b]}</m>.  The rectangle formed by this line, the <m>x</m>-axis, and the lines <m>x = a</m> and <m>x = b</m> is shaded and labeled <m>(b-a) \cdot f_{\operatorname{AVG} [a,b]}</m>.
+          </p>
+          <p>
+            In the third image, which is a combination of the first two, the graph highlights the area, <m>A_1</m> that lies within the aforementioned rectangle but below the graph of <m>y = f(x)</m>, as well as the area <m>A_2</m> that lies outside the rectangle but still below the graph of <m>y = f(x)</m>.  It turns out that <m>A_1 = A_2</m>, which emphasizes how <m>f_{\operatorname{AVG} [a,b]}</m> is the average value of the function on the given interval.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>

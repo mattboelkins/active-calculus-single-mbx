@@ -114,7 +114,39 @@
           <image width="65%" source="images/4_3_Act1">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                The graph of a piecewise function, <m>y = g(x)</m>, whose pieces consist of either line segments or portions of circles.  The pieces are:
+                <ul>
+                  <li>
+                    <p>
+                      a line segment from <m>(-3,0)</m> to <m>(-2,1)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a quarter circle of radius <m>1</m> centered at <m>(-2,0)</m> passing from <m>(-2,1)</m> to <m>(-1,0)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a line segment from <m>(-1,0)</m> to <m>(0,-1)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a line segment from <m>(0,-1)</m> to <m>(1,-1)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      a line segment from <m>(1,-1)</m> to <m>(2,0)</m>;
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      the top half of the circle of radius <m>1</m> centered at <m>(3,0)</m> going from <m>(2,0)</m> to <m>(4,0)</m>.
+                    </p>
+                  </li>
+                </ul>
               </p>
             </description>
           </image>
