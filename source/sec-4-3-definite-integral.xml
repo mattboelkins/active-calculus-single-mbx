@@ -49,7 +49,7 @@
       <image width="100%" source="images/4_2_NegF">
         <description>
             <p>
-              This figure shows three adjacent copies of the plot of a periodic velocity function that might have a formula like <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  The two locations where <m>v(t) = 0</m> within <m>[a,b]</m> are denoted by <m>x = c</m> and <m>x = d</m>.
+              This figure shows three adjacent copies of the plot of a periodic function that might have a formula like <m>f(x) = 1 - 1.5 \cos(x)</m>.  On the noted interval <m>[a,d]</m> in the first quadrant, <m>f(x)</m> is mostly positive, but for a small portion of the interval, the function drops below the <m>x</m>-axis.  The two locations where <m>f(x) = 0</m> within <m>[a,d]</m> are denoted by <m>x = b</m> and <m>x = c</m>.
             </p>
             <p>
               In the leftmost image, a left Riemann sum with <m>12</m> subintervals is shown with the rectangles plotted and sketched.
@@ -58,7 +58,7 @@
               In the middle image, a left Riemann sum with <m>24</m> subintervals is shown with the rectangles plotted and sketched.
             </p>
             <p>  
-              In the rightmost image, on the first interval where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+              In the rightmost image, on the first interval where <m>f(x)</m> is  positive, <m>[a,b]</m> the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>f(x)</m> is negative, <m>[b,c]</m>, the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>f(x)</m> is again positive, <m>[c,d]</m>, the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_3</m>.  
             </p>
           </description>
       </image>
@@ -167,9 +167,9 @@
       <image width="47%" source="images/4_3_DefIntInterp">
         <description>
             <p>
-              This figure shows a periodic velocity function that might have a formula such as <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  The two locations where <m>v(t) = 0</m> within <m>[a,b]</m> are denoted by <m>x = c</m> and <m>x = d</m>. On the first interval where <m>v(t)</m> is  positive, <m>[a,c]</m> the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, <m>[c,d]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive, <m>[d,b]</m>, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+              This figure shows a periodic function that might have a formula such as <m>f(x) = 1 - 1.5 \cos(x)</m>.  On the noted interval <m>[a,d]</m> in the first quadrant, <m>f(x)</m> is mostly positive, but for a small portion of the interval, the function drops below the <m>t</m>-axis.  The two locations where <m>f(x) = 0</m> within <m>[a,d]</m> are denoted by <m>x = b</m> and <m>x = c</m>. On the first interval where <m>f(x)</m> is  positive, <m>[a,b]</m> the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>f(x)</m> is negative, <m>[b,c]</m>, the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>f(x)</m> is again positive, <m>[c,d]</m>, the area bounded by <m>f(x)</m> and the <m>x</m>-axis is labeled <m>A_3</m>.  
             </p>
-          </description>
+        </description>
       </image>
     </figure>
   <!--</sidebyside>-->

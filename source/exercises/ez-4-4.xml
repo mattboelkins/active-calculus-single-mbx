@@ -98,7 +98,13 @@
               <m>g(x) = -\frac{5}{4}(x - 5)</m> on <m>5 \le x \le 7</m>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_4_Ez2Solnc"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_4_Ez2Solnc">
+                <description>
+                  <p>
+                    ADD ALT TEXT TO THIS IMAGE
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>

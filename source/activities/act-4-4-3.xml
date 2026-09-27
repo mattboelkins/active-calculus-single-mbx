@@ -88,7 +88,13 @@
           <p>
             Determine the exact average rate at which the person burned calories during the 40-minute workout.  Sketch a representation of the average rate at which calories were burned on the provided graph of <m>c(t)</m>.
           </p>
-          <image width="80%" source="images/4_4_Act3"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+          <image width="80%" source="images/4_4_Act3">
+            <description>
+              <p>
+                ADD ALT TEXT TO THIS IMAGE
+              </p>
+            </description>
+          </image>
         </statement>
         <hint>
           <p>

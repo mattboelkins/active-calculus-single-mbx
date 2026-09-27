@@ -72,9 +72,18 @@
     </p>
 
     <figure xml:id="F-4-4-Intro">
-      <caption>A velocity function that is sometimes negative.</caption>
-      <image width="40%" source="images/4_2_Intro"><description><p>A velocity function that is sometimes negative.</p>
-      </description></image>
+      <caption>
+        A velocity function that is sometimes negative.
+      </caption>
+      <image width="40%" source="images/4_2_Intro">
+        <description>
+          <description>
+            <p>
+              This figure shows a periodic velocity function that might have a formula such as <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  On the first interval where <m>v(t)</m> is  positive, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive,  the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
+            </p>
+        </description>
+        </description>
+      </image>
     </figure>    
 
   </sidebyside>
