@@ -77,11 +77,9 @@
       </caption>
       <image width="40%" source="images/4_2_Intro">
         <description>
-          <description>
             <p>
               This figure shows a periodic velocity function that might have a formula such as <m>v(t) = 1 - 1.5 \cos(t)</m>.  On the noted interval <m>[a,b]</m> in the first quadrant, <m>v(t)</m> is mostly positive, but for a small portion of the interval, the velocity function drops below the <m>t</m>-axis.  On the first interval where <m>v(t)</m> is  positive, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_1</m>.  On the second interval where <m>v(t)</m> is negative, the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_2</m>. And on the third interval where <m>v(t)</m> is again positive,  the area bounded by <m>v(t)</m> and the <m>t</m>-axis is labeled <m>A_3</m>.  
             </p>
-        </description>
         </description>
       </image>
     </figure>    
@@ -128,9 +126,16 @@
     </p>
 
     <figure xml:id="F-4-4-FTCVel">
-      <caption>Finding distance traveled when we know a velocity function <m>v</m>.</caption>
-      <image width="27%" source="images/4_4_FTCVel"><description><p>Finding distance traveled when we know a velocity function <m>v</m>.</p>
-      </description></image>
+      <caption>
+        Finding distance traveled when we know a velocity function <m>v</m>.
+      </caption>
+      <image width="27%" source="images/4_4_FTCVel">
+        <description>
+          <p>
+            The figure shows a velocity function <m>v</m> that is a positive, concave down parabola over an interval <m>[a,b]</m> in the first quadrant.  The area under the curve on the interval <m>[a,b]</m> is shaded and labeled with the notation <m>D = \int_a^b v(t) \, dt = s(b) - s(a)</m>.
+          </p>
+        </description>
+      </image>
     </figure>
   </sidebyside>
 
@@ -186,9 +191,16 @@
     </p>
 
     <figure xml:id="F-4-4-FTCVel2">
-      <caption>The exact area of the region enclosed by <m>v(t) = 3t^2 + 40</m> on <m>[1,5]</m>.</caption>
-      <image width="47%" source="images/4_4_FTCVel2"><description><p>The exact area of the region enclosed by <m>v(t) = 3t^2 + 40</m> on <m>[1,5]</m>.</p>
-      </description></image>
+      <caption>
+        The exact area of the region enclosed by <m>v(t) = 3t^2 + 40</m> on <m>[1,5]</m>.
+      </caption>
+      <image width="47%" source="images/4_4_FTCVel2">
+        <description>
+          <p>
+            On the window <m>[0,6] \times [0,150]</m>, the figure shows the function  <m>v(t) = 3t^2 + 40</m>. and the area it bounds with the <m>t</m>-axis on <m>[1,5]</m>.  The area is shaded and labeled with the notation <m>D = \int_1^5 v(t) \, dt = 284</m>.
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -516,9 +528,22 @@
     </p>
 
     <figure xml:id="F-4-4-TCT">
-      <caption>The graphs of <m>f'(x) = 4 - 2x</m> (at left) and an antiderivative <m>f(x) = 4x - x^2</m> at right.  Differences in heights on <m>f</m> correspond to net signed areas bounded by <m>f'</m>.</caption>
-      <image width="65%" source="images/4_4_TCT"><description><p>The graphs of <m>f'(x) = 4 - 2x</m> (at left) and an antiderivative <m>f(x) = 4x - x^2</m> at right.  Differences in heights on <m>f</m> correspond to net signed areas bounded by <m>f'</m>.</p>
-      </description></image>
+      <caption>
+        The graphs of <m>f'(x) = 4 - 2x</m> (at left) and an antiderivative <m>f(x) = 4x - x^2</m> at right.  Differences in heights on <m>f</m> correspond to net signed areas bounded by <m>f'</m>.
+      </caption>
+      <image width="65%" source="images/4_4_TCT">
+        <description>
+          <p>
+            Two adjacent plots: on the left, the graph of <m>f'(x) = 4 - 2x</m>, and on the right the graph of <m>f(x) = 4x - x^2</m>.  Both graphs have <m>x</m> ranging horizontally from <m>-1</m> to <m>5</m>, and <m>y</m> ranging vertically from <m>-5</m> to <m>5</m>.
+          </p>
+          <p>
+            On the left, the graph of <m>f'(x) = 4 - 2x</m>, which is a line with <m>y</m>-intercept <m>(0,4)</m> and <m>x</m>-intercept and <m>(2,0)</m>.  In addition, <m>4</m> trapezoidal regions bounded by the line and the <m>x</m>-axis are labeled with their areas: area <m>3</m> on <m>[0,1]</m>, area <m>1</m> on <m>[1,2]</m>, area <m>1</m> on <m>[2,3]</m> (which is below the <m>x</m>-axis), and area <m>3</m> on <m>[3,4]</m> (which is below the <m>x</m>-axis).  These (signed) areas on the derivative graph match the corresponding changes across the same intervals on the graph of the original function at right.
+          </p>          
+          <p>
+            On the right, the graph of <m>f(x) = 4x - x^2</m>, which is a parabola with vertex <m>(2,4)</m> and <m>x</m>-intercepts <m>(0,0)</m> and <m>(4,0)</m>.  In addition, two other points are labeled:  <m>(1,3)</m> and <m>(3,3)</m>.  
+          </p>
+        </description>
+      </image>
     </figure>
 
     <p>
@@ -542,9 +567,16 @@
           It's helpful to think about the graph of <m>y=r(t)</m>, which is given in <xref ref="F-4-4-TCTEx">Figure</xref>.
         </p>  
           <figure xml:id="F-4-4-TCTEx">
-            <caption>The rate <m>r(t)</m> of pollution leaking from a tank, measured in gallons per day.</caption>
-            <image width="47%" source="images/4_4_TCTEx"><description><p>The rate <m>r(t)</m> of pollution leaking from a tank, measured in gallons per day.</p>
-            </description></image>
+            <caption>
+              The rate <m>r(t)</m> of pollution leaking from a tank, measured in gallons per day.
+            </caption>
+            <image width="47%" source="images/4_4_TCTEx">
+              <description>
+                <p>
+                  On the window <m>[0,13] \times [0,13]</m>, a plot of <m>r(t) = 0.0069t^3 -0.125t^2+11.079</m>, which is a positive, decreasing function that is concave down for <m>0 \lt t \lt 6</m>, and concave up for <m>6 \lt t \lt 12</m>.  The area bounded by the curve and the <m>t</m>-axis on the interval <m>[4,10]</m> is shaded.  Units on the vertical axis are gallons per day; units on the horizontal axis are days.
+                </p>
+              </description>
+            </image>
           </figure>  
         <p>
           Since <m>r(t) \ge 0</m>,

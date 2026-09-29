@@ -91,7 +91,7 @@
           <image width="80%" source="images/4_4_Act3">
             <description>
               <p>
-                ADD ALT TEXT TO THIS IMAGE
+                On the window <m>[0,40] \times [0,15]</m>, a plot of the function <m>c(t)</m>, which is defined piecewise.  On <m>[0,10]</m>, <m>c(t)</m> is a concave down parabola passing through <m>(0,10)</m> and <m>(10,15)</m> with vertex at <m>(10,15)</m>.  On <m>[10,30]</m>, <m>c(t) = 15</m>.  And on <m>[30,40]</m>, <m>c(t)</m> is a concave down parabola passing through <m>(30,15)</m> and <m>(40,15)</m> with vertex at <m>(30,15)</m>. 
               </p>
             </description>
           </image>

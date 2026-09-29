@@ -124,7 +124,7 @@
             On the left, the graph of <m>f(x) = 4x - x^2</m>, which is a parabola with vertex <m>(2,4)</m> and <m>x</m>-intercepts <m>(0,0)</m> and <m>(4,0)</m>.  In addition, portions of <m>5</m> tangent lines are shown:  at <m>(0,0)</m>, <m>(1,3)</m>, <m>(2,4)</m>, <m>(3,3)</m>, and <m>(4,0)</m>, with respective slopes <m>4</m>, <m>2</m>, <m>0</m>, <m>-2</m>, and <m>-4</m>.
           </p>
           <p>
-            On the left, the graph of <m>f'(x) = 4 - 2x</m>, which is a line with <m>y</m>-intercept <m>(0,4)</m> and <m>x</m>-intercept and <m>(2,0)</m>.  In addition, <m>5</m> points are labeled with their coordinates, showing the height of <m>f'(x)</m> at each of them: <m>(0,4)</m>, <m>(1,2)</m>, <m>(2,0)</m>, <m>(3,-2)</m>, and <m>(4,-4)</m>.  These heights on the derivative graph match the corresponding slopes (at each value of <m>x</m>) on the graph of the original function.
+            On the right, the graph of <m>f'(x) = 4 - 2x</m>, which is a line with <m>y</m>-intercept <m>(0,4)</m> and <m>x</m>-intercept and <m>(2,0)</m>.  In addition, <m>5</m> points are labeled with their coordinates, showing the height of <m>f'(x)</m> at each of them: <m>(0,4)</m>, <m>(1,2)</m>, <m>(2,0)</m>, <m>(3,-2)</m>, and <m>(4,-4)</m>.  These heights on the derivative graph match the corresponding slopes (at each value of <m>x</m>) on the graph of the original function.
           </p>
       </description></image>
     </figure>

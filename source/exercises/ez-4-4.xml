@@ -101,7 +101,7 @@
               <image source="images/4_4_Ez2Solnc">
                 <description>
                   <p>
-                    ADD ALT TEXT TO THIS IMAGE
+                    A plot of the continuous, piecewise function <m>g</m> that is described in earlier parts of the exercise.  The function consists of two quadratic pieces and two linear pieces.
                   </p>
                 </description>
               </image>
@@ -129,7 +129,13 @@
               </md>.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_4_Ez2Soln"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_4_Ez2Soln">
+                <description>
+                  <p>
+                    A plot of the continuous, piecewise function <m>f</m> that is given the exercise.  The function consists of two quadratic pieces and one linear piece.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
           <li >
@@ -173,7 +179,13 @@
               A graph of <m>g</m> is shown in the figure below.
             </p>
             <sidebyside width="50%" >
-              <image source="images/4_4_Ez2Solnc"><description><p>ADD ALT TEXT TO THIS IMAGE</p></description></image>
+              <image source="images/4_4_Ez2Solnc">
+                <description>
+                  <p>
+                    A plot of the continuous, piecewise function <m>g</m> that is described in earlier parts of the exercise.  The function consists of two quadratic pieces and two linear pieces.
+                  </p>
+                </description>
+              </image>
             </sidebyside>
           </li>
         </ol>
@@ -194,8 +206,13 @@
       </p>
       <figure xml:id="F-4-4-Ez2" >
         <caption>The velocity function of a moving body.</caption>
-        <image width="47%" source="images/4_4_Ez2"><description><p>The velocity function of a moving body.</p>
-        </description></image>
+        <image width="47%" source="images/4_4_Ez2">
+          <description>
+            <p>
+              The velocity function of a moving body.
+            </p>
+          </description>
+        </image>
       </figure>
       <p >
         <ol marker="a." >
